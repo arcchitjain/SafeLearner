@@ -1,0 +1,223 @@
+[LVL9] Output level						: 9
+[INFO] Arguments						: Data/apft_850_980.pl --log Logs/apft_850_980_cw_v1.log -v -v -v --ssh --cwLearning
+[INFO] Beam Size                        : 5
+[INFO] m-estimate Parameter             : 1
+[INFO] Tolerance Parameter              : 1e-12
+[INFO] Max Increments                   : [0.001, 0.0002]
+[INFO] Learning Rate                    : [1e-05, 1e-07]
+[INFO] Closed World Negatives' Factor   : 1
+[INFO] Open World Negatives' Factor     : 1
+[INFO] #Iterations in SGD               : 10000
+[INFO] Misclassification Cost of -ves   : 1
+[INFO] Min Significance                 : None
+[INFO] Max Rule Length                  : None
+[INFO] Open World Setting               : True
+[INFO] Test File                        : None
+[DEBUG] Created PSQL Database           : apft_850_980
+[DEBUG] Time - initialize PSQLDB        : 22.4s
+[INFO] Number of examples (M)           : 1141
+[INFO] Positive probabilistic part (P)  : 1119.3837
+[INFO] Negative probabilistic part (N)  : 21.6163
+[INFO] Target Base List                 : ['athlete', 'team']
+[INFO] Predicate Dict                   : {'athleteplaysforteam': ['athlete', 'team'], 'athleteplayssport': ['athlete', 'sport'], 'teamalsoknownas': ['team', 'team'], 'athleteplaysinleague': ['athlete', 'league'], 'athleteledsportsteam': ['athlete', 'team'], 'teamplayssport': ['team', 'sport'], 'teamplaysagainstteam': ['team', 'team'], 'teamplaysinleague': ['team', 'league']}
+[DEBUG] Time - readFile                 : 338.9s
+[DEBUG] Running AMIE+ : ssh himec04 "java -jar Documents/OpenProbFOIL/amie_plus.jar -minhc 1e-05 -minpca 1e-05 -htr '<athleteplaysforteam>' -bexr '<athleteplaysforteam>' -oute Documents/OpenProbFOIL/Data/apft_850_980_amie.tsv"
+[INFO] Removing Rule from AMIE List     : (athleteplaysforteam(A,B), [athleteplayssport(A,C), athleteplayssport(B,C)])
+[DEBUG] ================ Candidate Rules obtained from AMIE+ ================
+[DEBUG] (athleteplaysforteam(A,B), [athleteledsportsteam(A,C), teamalsoknownas(C,B)])	0.000876424	0.004032258	0.00729927
+[DEBUG] (athleteplaysforteam(A,B), [athleteledsportsteam(A,B)])	0.03768624	0.174796748	0.286666667
+[DEBUG] (athleteplaysforteam(A,B), [athleteledsportsteam(A,C), teamplaysagainstteam(B,C)])	0.009640666	0.002007666	0.003375268
+[DEBUG] (athleteplaysforteam(A,B), [athleteledsportsteam(A,C), teamplaysagainstteam(C,B)])	0.009640666	0.00198556	0.003347535
+[DEBUG] (athleteplaysforteam(A,B), [athleteplaysinleague(A,C), teamplaysinleague(B,C)])	0.174408414	0.003282095	0.011062931
+[DEBUG] (athleteplaysforteam(A,B), [athleteplayssport(A,C), teamplayssport(B,C)])	0.158632778	0.001783322	0.008246765
+[DEBUG] ====================================================================
+[INFO] Total positive examples (#P)     : 1141
+[LVL9] CREATE TABLE dummyA AS (select distinct * from (select distinct athleteplaysforteam.v0 as v0 from athleteplaysforteam union select distinct athleteplayssport.v0 as v0 from athleteplayssport union select distinct athleteplaysinleague.v0 as v0 from athleteplaysinleague union select distinct athleteledsportsteam.v0 as v0 from athleteledsportsteam) as a);
+[LVL9] CREATE TABLE dummyB AS (select distinct * from (select distinct athleteplaysforteam.v1 as v0 from athleteplaysforteam union select distinct teamalsoknownas.v0 as v0 from teamalsoknownas union select distinct teamalsoknownas.v1 as v0 from teamalsoknownas union select distinct athleteledsportsteam.v1 as v0 from athleteledsportsteam union select distinct teamplayssport.v0 as v0 from teamplayssport union select distinct teamplaysagainstteam.v0 as v0 from teamplaysagainstteam union select distinct teamplaysagainstteam.v1 as v0 from teamplaysagainstteam union select distinct teamplaysinleague.v0 as v0 from teamplaysinleague) as a);
+[LVL9] CREATE TABLE dummy0 AS (select distinct athleteplayssport.v0 as v0, athleteplayssport.v1 as v1, teamplayssport.v0 as v2 from athleteplayssport as athleteplayssport inner join teamplayssport as teamplayssport on athleteplayssport.v1 = teamplayssport.v1);
+[LVL9] CREATE TABLE dummy1 AS (select distinct v0 as v0, v2 as v1 from dummy0);
+[LVL9] CREATE TABLE dummy2 AS (select distinct athleteplaysinleague.v0 as v0, athleteplaysinleague.v1 as v1, teamplaysinleague.v0 as v2 from athleteplaysinleague as athleteplaysinleague inner join teamplaysinleague as teamplaysinleague on athleteplaysinleague.v1 = teamplaysinleague.v1);
+[LVL9] CREATE TABLE dummy3 AS (select distinct v0 as v0, v2 as v1 from dummy2);
+[LVL9] CREATE TABLE dummy4 AS (select distinct dummy1.v0 as v0, dummy1.v1 as v1 from dummy1 union select distinct dummy3.v0 as v0, dummy3.v1 as v1 from dummy3);
+[LVL9] CREATE TABLE dummy5 AS (select distinct athleteledsportsteam.v0 as v0, athleteledsportsteam.v1 as v1, teamplaysagainstteam.v1 as v2 from athleteledsportsteam as athleteledsportsteam inner join teamplaysagainstteam as teamplaysagainstteam on athleteledsportsteam.v1 = teamplaysagainstteam.v0);
+[LVL9] CREATE TABLE dummy6 AS (select distinct v0 as v0, v2 as v1 from dummy5);
+[LVL9] CREATE TABLE dummy7 AS (select distinct dummy4.v0 as v0, dummy4.v1 as v1 from dummy4 union select distinct dummy6.v0 as v0, dummy6.v1 as v1 from dummy6);
+[LVL9] CREATE TABLE dummy8 AS (select distinct athleteledsportsteam.v0 as v0, athleteledsportsteam.v1 as v1, teamplaysagainstteam.v0 as v2 from athleteledsportsteam as athleteledsportsteam inner join teamplaysagainstteam as teamplaysagainstteam on athleteledsportsteam.v1 = teamplaysagainstteam.v1);
+[LVL9] CREATE TABLE dummy9 AS (select distinct v0 as v0, v2 as v1 from dummy8);
+[LVL9] CREATE TABLE dummy10 AS (select distinct dummy7.v0 as v0, dummy7.v1 as v1 from dummy7 union select distinct dummy9.v0 as v0, dummy9.v1 as v1 from dummy9);
+[LVL9] CREATE TABLE dummy11 AS (select distinct v0 as v0, v1 as v1 from athleteledsportsteam);
+[LVL9] CREATE TABLE dummy12 AS (select distinct dummy10.v0 as v0, dummy10.v1 as v1 from dummy10 union select distinct dummy11.v0 as v0, dummy11.v1 as v1 from dummy11);
+[LVL9] CREATE TABLE dummy13 AS (select distinct athleteledsportsteam.v0 as v0, athleteledsportsteam.v1 as v1, teamalsoknownas.v1 as v2 from athleteledsportsteam as athleteledsportsteam inner join teamalsoknownas as teamalsoknownas on athleteledsportsteam.v1 = teamalsoknownas.v0);
+[LVL9] CREATE TABLE dummy14 AS (select distinct v0 as v0, v2 as v1 from dummy13);
+[LVL9] CREATE TABLE dummy15 AS (select distinct dummy12.v0 as v0, dummy12.v1 as v1 from dummy12 union select distinct dummy14.v0 as v0, dummy14.v1 as v1 from dummy14);
+[LVL9] CREATE TABLE dummy16 AS (select distinct v0, v1 from dummy15);
+[INFO] Total CW Predictions             : 128080
+[LVL9] CREATE TABLE dummy17 AS (select distinct dummy16.v0, dummy16.v1 from dummy16 where not exists (select 1 from athleteplaysforteam where athleteplaysforteam.v0 = dummy16.v0 and athleteplaysforteam.v1 = dummy16.v1));
+[INFO] Total CW Negative Predictions    : 127839
+[LVL9] select * from dummy17 order by random() limit 2282;
+[INFO] Total CW negative examples       : 1141
+[LVL9] CW Negative Weight               : 112.041191937
+[LVL9] #CW Negative Examples            : 1141
+[LVL9] CREATE TABLE dummy18 AS (select distinct dummy16.v0 as v0, dummy16.v1 as v1 from dummy16 union select distinct athleteplaysforteam.v0 as v0, athleteplaysforteam.v1 as v1 from athleteplaysforteam);
+[INFO] Total OW negative examples       : 4245804
+[LVL9] OW Negative Weight               : 3721.12532866
+[LVL9] #OW Negative Examples            : 1141
+[LVL9] Total time in getting negatives  : 8.21586203575s
+[INFO] Self.lams                        : {'p_5': 0.003282095, 'athleteplayssport': 0, 'teamalsoknownas': 0, 'athleteplaysinleague': 0, 'p_6': 0.001783322, 'p_2': 0.174796748, 'p_0': 0.00026081287670431274, 'p_4': 0.00198556, 'athleteledsportsteam': 0, 'p_1': 0.004032258, 'teamplayssport': 0, 'p_3': 0.002007666, 'teamplaysagainstteam': 0, 'teamplaysinleague': 0}
+[INFO] Hypothesis                       : [athleteplaysforteam(A,B) :- fail, athleteplaysforteam(A,B) :- true, athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamalsoknownas(C,B), athleteplaysforteam(A,B) :- athleteledsportsteam(A,B), athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(B,C), athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(C,B), athleteplaysforteam(A,B) :- athleteplaysinleague(A,C), teamplaysinleague(B,C), athleteplaysforteam(A,B) :- athleteplayssport(A,C), teamplayssport(B,C)]
+[INFO] Probability List                 : [0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999]
+[INFO] Body List                        : [[], [athleteledsportsteam(A,C), teamalsoknownas(C,B)], [athleteledsportsteam(A,B)], [athleteledsportsteam(A,C), teamplaysagainstteam(B,C)], [athleteledsportsteam(A,C), teamplaysagainstteam(C,B)], [athleteplaysinleague(A,C), teamplaysinleague(B,C)], [athleteplayssport(A,C), teamplayssport(B,C)]]
+[INFO] Predicate List                   : ['teamalsoknownas', 'teamplaysagainstteam', 'athleteledsportsteam', 'teamplaysinleague', 'athleteplaysinleague', 'teamplayssport', 'athleteplayssport', 'p_0', 'p_1', 'p_2', 'p_3', 'p_4', 'p_5', 'p_6']
+[INFO] Time - parseRules                : 0.8s
+[INFO] Body List                        : [[p_0(V0)], [athleteledsportsteam(A,V1), teamalsoknownas(V1,B), p_1(V2)], [athleteledsportsteam(A,B), p_2(V3)], [athleteledsportsteam(A,V4), teamplaysagainstteam(B,V4), p_3(V5)], [athleteledsportsteam(A,V6), teamplaysagainstteam(V6,B), p_4(V7)], [athleteplaysinleague(A,V8), teamplaysinleague(B,V8), p_5(V9)], [athleteplayssport(A,V10), teamplayssport(B,V10), p_6(V11)]]
+[INFO] Query String                     : p_0(V0) v athleteledsportsteam(A,V1),teamalsoknownas(V1,B),p_1(V2) v athleteledsportsteam(A,B),p_2(V3) v athleteledsportsteam(A,V4),teamplaysagainstteam(B,V4),p_3(V5) v athleteledsportsteam(A,V6),teamplaysagainstteam(V6,B),p_4(V7) v athleteplaysinleague(A,V8),teamplaysinleague(B,V8),p_5(V9) v athleteplayssport(A,V10),teamplayssport(B,V10),p_6(V11)
+[INFO] Time - getQueryString            : 0.0s
+[LVL9] Query List						: p_0(V0) v athleteledsportsteam_3696_all(V1),teamalsoknownas_all_151(V1),p_1(V2) v athleteledsportsteam_3696_151(V12),p_2(V3) v athleteledsportsteam_3696_all(V4),teamplaysagainstteam_151_all(V4),p_3(V5) v athleteledsportsteam_3696_all(V6),teamplaysagainstteam_all_151(V6),p_4(V7) v athleteplaysinleague_3696_all(V8),teamplaysinleague_151_all(V8),p_5(V9) v athleteplayssport_3696_all(V10),teamplayssport_151_all(V10),p_6(V11)
+[DEBUG] Time - getQueryList				: 1809.1s
+[DEBUG] GScore - Cross Entropy			: -16602.3246781
+[INFO] GScore before optimization		: -16602.3246781
+[INFO] Got GScore in					: 69.3550448418s
+[LVL9] [athleteplaysforteam(A,B) :- fail, athleteplaysforteam(A,B) :- true, athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamalsoknownas(C,B), athleteplaysforteam(A,B) :- athleteledsportsteam(A,B), athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(B,C), athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(C,B), athleteplaysforteam(A,B) :- athleteplaysinleague(A,C), teamplaysinleague(B,C), athleteplaysforteam(A,B) :- athleteplayssport(A,C), teamplayssport(B,C)]
+[LVL9] CREATE TABLE dummy19 AS (select distinct athleteledsportsteam.v0 as v0, athleteledsportsteam.v1 as v1, teamalsoknownas.v1 as v2 from athleteledsportsteam as athleteledsportsteam inner join teamalsoknownas as teamalsoknownas on athleteledsportsteam.v1 = teamalsoknownas.v0);
+[LVL9] CREATE TABLE dummy20 AS (select distinct v0 as v0, v2 as v1 from dummy19);
+[LVL9] CREATE TABLE dummy21 AS (select distinct athleteplaysforteam.v0 as v0, athleteplaysforteam.v1 as v1 from athleteplaysforteam as athleteplaysforteam inner join dummy20 as dummy20 on athleteplaysforteam.v0 = dummy20.v0 and athleteplaysforteam.v1 = dummy20.v1);
+[LVL9] # Predictions of Rule0 intersected with examples: 1.0
+[LVL9] # Predictions of Rule0           : 248.0
+[LVL9] Amie Confidence Value for athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamalsoknownas(C,B) is 0.004032258
+[LVL9] Conditional Probability for athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamalsoknownas(C,B) is 0.00403225806452
+[LVL9] CREATE TABLE dummy22 AS (select distinct v0 as v0, v1 as v1 from athleteledsportsteam);
+[LVL9] CREATE TABLE dummy23 AS (select distinct athleteplaysforteam.v0 as v0, athleteplaysforteam.v1 as v1 from athleteplaysforteam as athleteplaysforteam inner join dummy22 as dummy22 on athleteplaysforteam.v0 = dummy22.v0 and athleteplaysforteam.v1 = dummy22.v1);
+[LVL9] # Predictions of Rule1 intersected with examples: 43.0
+[LVL9] # Predictions of Rule1           : 246.0
+[LVL9] Amie Confidence Value for athleteplaysforteam(A,B) :- athleteledsportsteam(A,B) is 0.174796748
+[LVL9] Conditional Probability for athleteplaysforteam(A,B) :- athleteledsportsteam(A,B) is 0.174796747967
+[LVL9] CREATE TABLE dummy24 AS (select distinct athleteledsportsteam.v0 as v0, athleteledsportsteam.v1 as v1, teamplaysagainstteam.v0 as v2 from athleteledsportsteam as athleteledsportsteam inner join teamplaysagainstteam as teamplaysagainstteam on athleteledsportsteam.v1 = teamplaysagainstteam.v1);
+[LVL9] CREATE TABLE dummy25 AS (select distinct v0 as v0, v2 as v1 from dummy24);
+[LVL9] CREATE TABLE dummy26 AS (select distinct athleteplaysforteam.v0 as v0, athleteplaysforteam.v1 as v1 from athleteplaysforteam as athleteplaysforteam inner join dummy25 as dummy25 on athleteplaysforteam.v0 = dummy25.v0 and athleteplaysforteam.v1 = dummy25.v1);
+[LVL9] # Predictions of Rule2 intersected with examples: 11.0
+[LVL9] # Predictions of Rule2           : 5479.0
+[LVL9] Amie Confidence Value for athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(B,C) is 0.002007666
+[LVL9] Conditional Probability for athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(B,C) is 0.00200766563241
+[LVL9] CREATE TABLE dummy27 AS (select distinct athleteledsportsteam.v0 as v0, athleteledsportsteam.v1 as v1, teamplaysagainstteam.v1 as v2 from athleteledsportsteam as athleteledsportsteam inner join teamplaysagainstteam as teamplaysagainstteam on athleteledsportsteam.v1 = teamplaysagainstteam.v0);
+[LVL9] CREATE TABLE dummy28 AS (select distinct v0 as v0, v2 as v1 from dummy27);
+[LVL9] CREATE TABLE dummy29 AS (select distinct athleteplaysforteam.v0 as v0, athleteplaysforteam.v1 as v1 from athleteplaysforteam as athleteplaysforteam inner join dummy28 as dummy28 on athleteplaysforteam.v0 = dummy28.v0 and athleteplaysforteam.v1 = dummy28.v1);
+[LVL9] # Predictions of Rule3 intersected with examples: 11.0
+[LVL9] # Predictions of Rule3           : 5540.0
+[LVL9] Amie Confidence Value for athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(C,B) is 0.00198556
+[LVL9] Conditional Probability for athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(C,B) is 0.00198555956679
+[LVL9] CREATE TABLE dummy30 AS (select distinct athleteplaysinleague.v0 as v0, athleteplaysinleague.v1 as v1, teamplaysinleague.v0 as v2 from athleteplaysinleague as athleteplaysinleague inner join teamplaysinleague as teamplaysinleague on athleteplaysinleague.v1 = teamplaysinleague.v1);
+[LVL9] CREATE TABLE dummy31 AS (select distinct v0 as v0, v2 as v1 from dummy30);
+[LVL9] CREATE TABLE dummy32 AS (select distinct athleteplaysforteam.v0 as v0, athleteplaysforteam.v1 as v1 from athleteplaysforteam as athleteplaysforteam inner join dummy31 as dummy31 on athleteplaysforteam.v0 = dummy31.v0 and athleteplaysforteam.v1 = dummy31.v1);
+[LVL9] # Predictions of Rule4 intersected with examples: 199.0
+[LVL9] # Predictions of Rule4           : 60632.0
+[LVL9] Amie Confidence Value for athleteplaysforteam(A,B) :- athleteplaysinleague(A,C), teamplaysinleague(B,C) is 0.003282095
+[LVL9] Conditional Probability for athleteplaysforteam(A,B) :- athleteplaysinleague(A,C), teamplaysinleague(B,C) is 0.00328209526323
+[LVL9] CREATE TABLE dummy33 AS (select distinct athleteplayssport.v0 as v0, athleteplayssport.v1 as v1, teamplayssport.v0 as v2 from athleteplayssport as athleteplayssport inner join teamplayssport as teamplayssport on athleteplayssport.v1 = teamplayssport.v1);
+[LVL9] CREATE TABLE dummy34 AS (select distinct v0 as v0, v2 as v1 from dummy33);
+[LVL9] CREATE TABLE dummy35 AS (select distinct athleteplaysforteam.v0 as v0, athleteplaysforteam.v1 as v1 from athleteplaysforteam as athleteplaysforteam inner join dummy34 as dummy34 on athleteplaysforteam.v0 = dummy34.v0 and athleteplaysforteam.v1 = dummy34.v1);
+[LVL9] # Predictions of Rule5 intersected with examples: 181.0
+[LVL9] # Predictions of Rule5           : 101496.0
+[LVL9] Amie Confidence Value for athleteplaysforteam(A,B) :- athleteplayssport(A,C), teamplayssport(B,C) is 0.001783322
+[LVL9] Conditional Probability for athleteplaysforteam(A,B) :- athleteplayssport(A,C), teamplayssport(B,C) is 0.00178332151021
+[INFO] Lambdas initialized to           : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.00026081287670431274, 0.004032258064516129, 0.17479674796747968, 0.002007665632414674, 0.0019855595667870036, 0.003282095263227339, 0.0017833215102072988]
+[LVL9] Returning old loss string for cross entropy
+[DEBUG] 0 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0002590332433065146, 0.004030478310521352, 0.17479674796747968, 0.001007665632414674, 0.0019855595667870036, 0.003282095263227339, 0.0017790370451456032] ==> 12920.5875141
+[DEBUG] 500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.4113730238372502e-05, 0.011529678494881079, 0.174883235147126, 0.001000000005, 0.0019855595667870036, 0.003282095263227339, 0.000406925987910785] ==> 12742.890371
+[DEBUG] 1000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1434163191098407e-05, 0.01362155747969253, 0.17385968596783996, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28659.2479004
+[DEBUG] 1500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0008370309548457728, 0.019141834396968534, 0.17383639654140526, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28601.1002277
+[DEBUG] 2000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.1632651791530656e-12, 0.02041638363706683, 0.17080911998729464, 0.001000000005, 0.0019855595667870036, 0.003282095263227339, 0.00018588772378721978] ==> 12688.6746213
+[DEBUG] 2500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.627370027808525e-05, 0.02164416759629639, 0.16785402923289874, 0.003000000005, 0.0019855595667870036, 0.003282095263227339, 0.001414581543189572] ==> 20502.983692
+[DEBUG] 3000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5e-12, 0.02532217052363201, 0.16783537496043816, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28738.2091144
+[DEBUG] 3500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 9.483031744192155e-06, 0.027100448794109694, 0.16681751859996016, 5e-12, 0.0019855595667870036, 0.003282095263227339, 0.0006197959202711125] ==> 12266.5717119
+[DEBUG] 4000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0010417429186286714, 0.025845625621437815, 0.16585774598469102, 0.0050000000050000005, 0.0019855595667870036, 0.003282095263227339, 0.001016143492661091] ==> 28688.5930447
+[DEBUG] 4500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0831009705488945e-12, 0.02573488583950066, 0.16589606640315163, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28729.4131031
+[DEBUG] 5000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 7.802326255902244e-06, 0.02749872221651004, 0.16587175057392833, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28593.1250327
+[DEBUG] 5500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5e-12, 0.029147176697545442, 0.16484100276185487, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28718.0780755
+[DEBUG] 6000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.6570565469028364e-05, 0.028883954202953598, 0.16488763943416826, 0.0040000000050000005, 0.0019855595667870036, 0.003282095263227339, 0.0009159944838224602] ==> 24496.0336497
+[DEBUG] 6500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5e-12, 0.030758280143074943, 0.16386991948145493, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28711.0111205
+[DEBUG] 7000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.001015570975069166, 0.03222951667257622, 0.16385207291425666, 0.0070000000050000006, 0.0019855595667870036, 0.003282095263227339, 0.00021133406127335527] ==> 36935.8301422
+[DEBUG] 7500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.895584954369574e-10, 0.033050055793832085, 0.16383641751697328, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28669.1106235
+[DEBUG] 8000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.00022588322294678377, 0.033734751827282534, 0.1628095353350135, 0.001000000005, 0.0019855595667870036, 0.003282095263227339, 0.0002170500765532817] ==> 12653.3736826
+[DEBUG] 8500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.00018745649941558494, 0.03591920148671761, 0.16080282404792356, 5e-12, 0.0019855595667870036, 0.003282095263227339, 0.0017145166729701867] ==> 11187.7320495
+[DEBUG] 9000 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5e-12, 0.03677297776113446, 0.16077936612542937, 5e-12, 0.0019855595667870036, 0.003282095263227339, 0.0006261525663727941] ==> 11990.2860138
+[DEBUG] 9500 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1196084914880897e-05, 0.03825294502368332, 0.15975778675159738, 5e-12, 0.0019855595667870036, 0.003282095263227339, 3.820206389124921e-08] ==> 22126.833604
+[DEBUG] 9999 Loss: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.6232428279734694e-05, 0.03912187550593349, 0.1588044507900525, 5e-12, 0.0019855595667870036, 0.003282095263227339, 5e-12] ==> 28531.7510352
+[DEBUG] Closed World Loss: [0, 0, 0, 0, 0, 0, 0, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999] ==> 120848819.368
+[DEBUG] Loss List						: [12920.587514108878, 12742.890371009244, 28659.247900432958, 28601.10022765116, 12688.674621267382, 20502.983691988975, 28738.209114393678, 12266.57171185823, 28688.593044670026, 28729.41310311444, 28593.12503269882, 28718.078075526515, 24496.033649683857, 28711.011120546693, 36935.83014222141, 28669.110623540913, 12653.373682554009, 11187.732049471238, 11990.286013780034, 22126.83360403162, 28531.75103518765]
+[DEBUG] Selected Iteration of SGD 		: 8500
+[DEBUG] Updated Lambda					: {'teamplayssport': 0.0, 'athleteplayssport': 0.0, 'teamalsoknownas': 0.0, 'p_2': 0.16080282404792356, 'teamplaysinleague': 0.0, 'p_3': 5e-12, 'teamplaysagainstteam': 0.0, 'p_6': 0.0017145166729701867, 'p_4': 0.0019855595667870036, 'p_5': 0.003282095263227339, 'athleteplaysinleague': 0.0, 'athleteledsportsteam': 0.0, 'p_0': 0.00018745649941558494, 'p_1': 0.03591920148671761}
+[DEBUG] Time - SGD						: 642.9s
+[INFO] GScore after optimization		: -11187.7320495
+[DEBUG] Current Score					: None
+[DEBUG] New Score						: -11187.7320495
+[INFO] Rule ACCEPTED in hypothesis
+[DEBUG] Time - deciding on hypothesis	: 0.0s
+[DEBUG] 
+[INFO] Semi - Final Hypothesis          : [athleteplaysforteam(A,B) :- fail, 0.000187456499416::athleteplaysforteam(A,B) :- true, 0.0359192014867::athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamalsoknownas(C,B), 0.160802824048::athleteplaysforteam(A,B) :- athleteledsportsteam(A,B), 5e-12::athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(B,C), 0.00198555956679::athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(C,B), 0.00328209526323::athleteplaysforteam(A,B) :- athleteplaysinleague(A,C), teamplaysinleague(B,C), 0.00171451667297::athleteplaysforteam(A,B) :- athleteplayssport(A,C), teamplayssport(B,C)]
+[INFO] Final Hypothesis                 : [athleteplaysforteam(A,B) :- fail, 0.000187456499416::athleteplaysforteam(A,B) :- true, 0.0359192014867::athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamalsoknownas(C,B), 0.160802824048::athleteplaysforteam(A,B) :- athleteledsportsteam(A,B), 0.00198555956679::athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(C,B), 0.00328209526323::athleteplaysforteam(A,B) :- athleteplaysinleague(A,C), teamplaysinleague(B,C), 0.00171451667297::athleteplaysforteam(A,B) :- athleteplayssport(A,C), teamplayssport(B,C)]
+[INFO] Probability List                 : [0.00018745649941558494, 0.03591920148671761, 0.16080282404792356, 0.0019855595667870036, 0.003282095263227339, 0.0017145166729701867]
+[INFO] Body List                        : [[], [athleteledsportsteam(A,C), teamalsoknownas(C,B)], [athleteledsportsteam(A,B)], [athleteledsportsteam(A,C), teamplaysagainstteam(C,B)], [athleteplaysinleague(A,C), teamplaysinleague(B,C)], [athleteplayssport(A,C), teamplayssport(B,C)]]
+[INFO] Predicate List                   : ['teamalsoknownas', 'teamplaysagainstteam', 'athleteledsportsteam', 'teamplaysinleague', 'athleteplaysinleague', 'teamplayssport', 'athleteplayssport', 'p_0', 'p_1', 'p_2', 'p_3', 'p_4', 'p_5']
+[INFO] Time - parseRules                : 0.2s
+[INFO] Body List                        : [[p_0(V0)], [athleteledsportsteam(A,V1), teamalsoknownas(V1,B), p_1(V2)], [athleteledsportsteam(A,B), p_2(V3)], [athleteledsportsteam(A,V4), teamplaysagainstteam(V4,B), p_3(V5)], [athleteplaysinleague(A,V6), teamplaysinleague(B,V6), p_4(V7)], [athleteplayssport(A,V8), teamplayssport(B,V8), p_5(V9)]]
+[INFO] Query String                     : p_0(V0) v athleteledsportsteam(A,V1),teamalsoknownas(V1,B),p_1(V2) v athleteledsportsteam(A,B),p_2(V3) v athleteledsportsteam(A,V4),teamplaysagainstteam(V4,B),p_3(V5) v athleteplaysinleague(A,V6),teamplaysinleague(B,V6),p_4(V7) v athleteplayssport(A,V8),teamplayssport(B,V8),p_5(V9)
+[INFO] Time - getQueryString            : 0.0s
+[LVL9] Query List						: p_0(V0) v athleteledsportsteam_3696_all(V1),teamalsoknownas_all_151(V1),p_1(V2) v athleteledsportsteam_3696_151(V10),p_2(V3) v athleteledsportsteam_3696_all(V4),teamplaysagainstteam_all_151(V4),p_3(V5) v athleteplaysinleague_3696_all(V6),teamplaysinleague_151_all(V6),p_4(V7) v athleteplayssport_3696_all(V8),teamplayssport_151_all(V8),p_5(V9)
+[DEBUG] Time - getQueryList				: 99.0s
+[DEBUG] Loss - Absolute Error			: 1946.63352704
+[DEBUG] GScore - totalWeightedExamples	: 4374784.0
+[DEBUG] GScore - Weighted Accuracy		: 0.999555033225
+[DEBUG] Loss - squared_loss			: 20.9711444166
+[DEBUG] GScore - squared_loss			: -20.9711444166
+[INFO] DROP DATABASE					: apft_850_980
+[INFO] 
+[INFO] ==================== OUTPUT ====================
+[INFO] 
+[INFO] =================== SETTINGS ===================
+[INFO]                files:	['Data/apft_850_980.pl']
+[INFO]         global_score:	cross_entropy
+[INFO]              verbose:	3
+[INFO]               minpca:	1e-05
+[INFO]               quotes:	False
+[INFO]                minhc:	1e-05
+[INFO]      candidate_rules:	amie
+[INFO]                    l:	None
+[INFO]           cwLearning:	True
+[INFO]         closed_world:	False
+[INFO]                    p:	None
+[INFO]            beam_size:	5
+[INFO]                 cost:	1.0
+[INFO]                  log:	Logs/apft_850_980_cw_v1.log
+[INFO]           iterations:	10000
+[INFO]               target:	None
+[INFO]                 test:	None
+[INFO]  optimization_method:	incremental
+[INFO]    symmetry_breaking:	False
+[INFO]                  ssh:	True
+[INFO]            probfoil1:	False
+[INFO] ================= FINAL THEORY =================
+[INFO] Open World Probabilities = {}
+[INFO] 0.000187456499416::athleteplaysforteam(A,B) :- true
+[INFO] 0.0359192014867::athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamalsoknownas(C,B)
+[INFO] 0.160802824048::athleteplaysforteam(A,B) :- athleteledsportsteam(A,B)
+[INFO] 0.00198555956679::athleteplaysforteam(A,B) :- athleteledsportsteam(A,C), teamplaysagainstteam(C,B)
+[INFO] 0.00328209526323::athleteplaysforteam(A,B) :- athleteplaysinleague(A,C), teamplaysinleague(B,C)
+[INFO] 0.00171451667297::athleteplaysforteam(A,B) :- athleteplayssport(A,C), teamplayssport(B,C)
+[INFO] ==================== SCORES ====================
+[INFO]    Weighted Accuracy:	0.999555033225
+[INFO]        Cross Entropy:	-11187.7320495
+[INFO]         Squared Loss:	-20.9711444166
+[INFO]            Precision:	0.606205845712
+[INFO]               Recall:	0.0071080430277
+[INFO]       True Positives:	7.95662719117
+[INFO]       True Negatives:	2298.44768177
+[INFO]      False Positives:	5.1686622587
+[INFO]      False Negatives:	1111.42702878
+[INFO] ================== STATISTICS ==================
+[INFO]  Get SQL Query calls:	3
+[INFO] Get Expression calls:	3
+[INFO]            Read Time:	338.85s
+[INFO]       Get Expression:	0.14s
+[INFO]         Optimization:	642.92s
+[INFO]           Learn time:	2667.68s
+[INFO]           Total time:	3006.5340s
