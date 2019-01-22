@@ -2,7 +2,7 @@ This is a documentation on how to install and use the codes for 'SafeLearner':
 
 1. Check Pre-Requisites:
 	a. Python 2.7: 
-		Essential: problog, psycopg2, ad, nltk (Prover9)
+		Essential: problog, psycopg2, ad, nltk (Prover9), sqlparse
 		Standard : logging, copy, sys, argparse, os, random, time, subprocess
 		Optional : scipy, pickle, numpy. 
 			You may need to comment out few lines of code or change some parameters, if you are running without optional packages.
