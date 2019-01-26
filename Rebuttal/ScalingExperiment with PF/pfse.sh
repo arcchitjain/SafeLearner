@@ -1,0 +1,13 @@
+time probfoil pfse_10.pl
+time probfoil pfse_20.pl
+time probfoil pfse_50.pl
+time probfoil pfse_100.pl
+time probfoil pfse_200.pl
+time probfoil pfse_500.pl
+time probfoil pfse_1000.pl
+time probfoil pfse_2000.pl
+time probfoil pfse_5000.pl
+time probfoil pfse_10000.pl
+time probfoil pfse_20000.pl
+time probfoil pfse_50000.pl
+time probfoil pfse_100000.pl
