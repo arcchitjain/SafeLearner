@@ -1,0 +1,4 @@
+time python probfoil_1.py Data/apft_850.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_850_1.log -v -v -v -i 10000 -t athleteplaysforteam/2 --ssh --cwLearning &
+time python probfoil_2.py Data/apft_850.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_850_2.log -v -v -v -i 10000 -t athleteplaysforteam/2 --ssh --cwLearning &
+time python probfoil_3.py Data/apft_850.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_850_3.log -v -v -v -i 10000 -t athleteplaysforteam/2 --ssh --cwLearning &
+time python probfoil_4.py Data/apft_850.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_850_4.log -v -v -v -i 10000 -t athleteplaysforteam/2 --ssh --cwLearning &

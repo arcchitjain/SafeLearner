@@ -1,4 +1,0 @@
-python probfoil_1.py Data/NELL_1115_v3.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_1115_1.log -v -v -v -i 10000 -q -t athleteplaysforteam/2 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &
-python probfoil_2.py Data/NELL_1115_v3.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_1115_2.log -v -v -v -i 10000 -q -t athleteplaysforteam/2 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &
-python probfoil_3.py Data/NELL_1115_v3.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_1115_3.log -v -v -v -i 10000 -q -t athleteplaysforteam/2 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &
-python probfoil_4.py Data/NELL_1115_v3.pl --log Rebuttal/RuntimeSpeedUpComparison/apft_1115_4.log -v -v -v -i 10000 -q -t athleteplaysforteam/2 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &

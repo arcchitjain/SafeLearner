@@ -1,0 +1,4 @@
+time python probfoil_1.py Data/yago.pl --log Rebuttal/RuntimeSpeedUpComparison/yago_ico_1.log -v -v -v -i 10000 -q -t iscitizenof/2 --ssh --cwLearning --disableTypeConstraints --lr1 0.001 --lr2 0.0001 -a 3 --minpca 0.00001 --minhc 0.00001 &&
+time python probfoil_2.py Data/yago.pl --log Rebuttal/RuntimeSpeedUpComparison/yago_ico_2.log -v -v -v -i 10000 -q -t iscitizenof/2 --ssh --cwLearning --disableTypeConstraints --lr1 0.001 --lr2 0.0001 -a 3 --minpca 0.00001 --minhc 0.00001 &&
+time python probfoil_3.py Data/yago.pl --log Rebuttal/RuntimeSpeedUpComparison/yago_ico_3.log -v -v -v -i 10000 -q -t iscitizenof/2 --ssh --cwLearning --disableTypeConstraints --lr1 0.001 --lr2 0.0001 -a 3 --minpca 0.00001 --minhc 0.00001 &&
+time python probfoil_4.py Data/yago.pl --log Rebuttal/RuntimeSpeedUpComparison/yago_ico_4.log -v -v -v -i 10000 -q -t iscitizenof/2 --ssh --cwLearning --disableTypeConstraints --lr1 0.001 --lr2 0.0001 -a 3 --minpca 0.00001 --minhc 0.00001 

@@ -1,0 +1,150 @@
+[LVL9] Output level						: 9
+[INFO] Arguments						: Data/yago.pl --log Rebuttal/RuntimeSpeedUpComparison/yago_ico_4.log -v -v -v -i 10000 -q -t iscitizenof/2 --ssh --cwLearning --disableTypeConstraints --lr1 0.001 --lr2 0.0001 -a 3 --minpca 0.00001 --minhc 0.00001
+[INFO] Beam Size                        : 5
+[INFO] m-estimate Parameter             : 1
+[INFO] Tolerance Parameter              : 1e-12
+[INFO] Max Increments                   : [1e-05, 1e-05]
+[INFO] Learning Rate                    : [0.001, 0.0001]
+[INFO] Closed World Negatives' Factor   : 1
+[INFO] Open World Negatives' Factor     : 1
+[INFO] #Iterations in SGD               : 10000
+[INFO] Misclassification Cost of -ves   : 1
+[INFO] Min Significance                 : None
+[INFO] Max Rule Length                  : None
+[INFO] Open World Setting               : True
+[DEBUG] Created PSQL Database           : yago
+[DEBUG] Time - initialize PSQLDB        : 1.6s
+[INFO] Number of examples (M)           : 14554
+[INFO] Positive probabilistic part (P)  : 14285.0415
+[INFO] Negative probabilistic part (N)  : 268.9585
+[INFO] Target Base List                 : ['wordnet_person_100007846', 'wordnet_country_108544813']
+[INFO] Predicate Dict                   : {'livesin': ['wordnet_person_100007846', 'wordnet_location_100027167'], 'iscitizenof': ['wordnet_person_100007846', 'wordnet_country_108544813'], 'imports': ['wordnet_location_100027167', 'yagoclass'], 'isaffiliatedto': ['yagolegalactor', 'yagolegalactor'], 'ismarriedto': ['wordnet_person_100007846', 'wordnet_person_100007846'], 'exports': ['wordnet_location_100027167', 'yagoclass'], 'produced': ['yagolegalactor', 'wordnet_movie_106613686'], 'isknownfor': ['yagolegalactor', 'wordnet_entity_100001740'], 'diedin': ['wordnet_person_100007846', 'wordnet_city_108524735'], 'hasofficiallanguage': ['wordnet_location_100027167', 'wordnet_language_106282651'], 'hasmusicalrole': ['wordnet_person_100007846', 'yagoclass'], 'isleaderof': ['wordnet_person_100007846', 'yagolegalactorgeo'], 'isinterestedin': ['wordnet_person_100007846', 'wordnet_entity_100001740'], 'influences': ['wordnet_person_100007846', 'wordnet_person_100007846'], 'graduatedfrom': ['wordnet_person_100007846', 'wordnet_university_108286163'], 'hascurrency': ['wordnet_location_100027167', 'wordnet_entity_100001740'], 'haschild': ['wordnet_person_100007846', 'wordnet_person_100007846'], 'participatedin': ['yagolegalactorgeo', 'wordnet_entity_100001740'], 'islocatedin': ['wordnet_entity_100001740', 'wordnet_location_100027167'], 'ispoliticianof': ['wordnet_person_100007846', 'wordnet_location_100027167'], 'haslanguagecode': ['wordnet_language_106282651', 'yagostring'], 'hascapital': ['wordnet_location_100027167', 'wordnet_location_100027167'], 'playsfor': ['wordnet_person_100007846', 'wordnet_organization_108008335'], 'hasacademicadvisor': ['wordnet_person_100007846', 'wordnet_person_100007846'], 'directed': ['wordnet_person_100007846', 'wordnet_movie_106613686'], 'worksat': ['wordnet_person_100007846', 'wordnet_organization_108008335'], 'haswonprize': ['yagolegalactorgeo', 'wordnet_award_106696483'], 'actedin': ['wordnet_actor_109765278', 'wordnet_movie_106613686'], 'created': ['yagolegalactor', 'wordnet_entity_100001740'], 'wasbornin': ['wordnet_person_100007846', 'wordnet_city_108524735'], 'hasgeonamesid': ['wordnet_location_100027167', 'geonamesid'], 'holdspoliticalposition': ['wordnet_person_100007846', 'wordnet_person_100007846'], 'dealswith': ['wordnet_location_100027167', 'wordnet_location_100027167']}
+[DEBUG] Time - readFile                 : 11679.5s
+[DEBUG] Running AMIE+ : ssh himec04 "java -jar Documents/OpenProbFOIL/amie_plus.jar -minhc 1e-05 -minpca 1e-05 -htr '<iscitizenof>' -bexr '<iscitizenof>' -oute Documents/OpenProbFOIL/Data/yago_amie.tsv"
+[DEBUG] ================ Candidate Rules obtained from AMIE+ ================
+[DEBUG] (iscitizenof(A,B), [hascapital(B,C), holdspoliticalposition(A,C)])	0.000137419	0.2	0.285714286
+[DEBUG] (iscitizenof(A,B), [hasacademicadvisor(C,A), livesin(C,B)])	0.002473547	0.104347826	0.378947368
+[DEBUG] (iscitizenof(A,B), [livesin(A,C), participatedin(B,C)])	0.00006871	0.1	0.166666667
+[DEBUG] ====================================================================
+[INFO] Total positive examples (#P)     : 14554
+[LVL9] CREATE TABLE dummyA AS (select distinct * from (select distinct iscitizenof.v0 as v0 from iscitizenof union select distinct livesin.v0 as v0 from livesin union select distinct ismarriedto.v0 as v0 from ismarriedto union select distinct ismarriedto.v1 as v0 from ismarriedto union select distinct diedin.v0 as v0 from diedin union select distinct hasmusicalrole.v0 as v0 from hasmusicalrole union select distinct isleaderof.v0 as v0 from isleaderof union select distinct isinterestedin.v0 as v0 from isinterestedin union select distinct influences.v0 as v0 from influences union select distinct influences.v1 as v0 from influences union select distinct graduatedfrom.v0 as v0 from graduatedfrom union select distinct haschild.v0 as v0 from haschild union select distinct haschild.v1 as v0 from haschild union select distinct ispoliticianof.v0 as v0 from ispoliticianof union select distinct playsfor.v0 as v0 from playsfor union select distinct hasacademicadvisor.v0 as v0 from hasacademicadvisor union select distinct hasacademicadvisor.v1 as v0 from hasacademicadvisor union select distinct directed.v0 as v0 from directed union select distinct worksat.v0 as v0 from worksat union select distinct wasbornin.v0 as v0 from wasbornin union select distinct holdspoliticalposition.v0 as v0 from holdspoliticalposition union select distinct holdspoliticalposition.v1 as v0 from holdspoliticalposition) as a);
+[LVL9] CREATE TABLE dummyB AS (select distinct * from (select distinct iscitizenof.v1 as v0 from iscitizenof) as a);
+[LVL9] CREATE TABLE dummy0 AS (select distinct livesin.v0 as v0, livesin.v1 as v1, participatedin.v0 as v2 from livesin as livesin inner join participatedin as participatedin on livesin.v1 = participatedin.v1);
+[LVL9] CREATE TABLE dummy1 AS (select distinct v0 as v0, v2 as v1 from dummy0);
+[LVL9] CREATE TABLE dummy2 AS (select distinct hasacademicadvisor.v0 as v0, hasacademicadvisor.v1 as v1, livesin.v1 as v2 from hasacademicadvisor as hasacademicadvisor inner join livesin as livesin on hasacademicadvisor.v0 = livesin.v0);
+[LVL9] CREATE TABLE dummy3 AS (select distinct v1 as v0, v2 as v1 from dummy2);
+[LVL9] CREATE TABLE dummy4 AS (select distinct dummy1.v0 as v0, dummy1.v1 as v1 from dummy1 union select distinct dummy3.v0 as v0, dummy3.v1 as v1 from dummy3);
+[LVL9] CREATE TABLE dummy5 AS (select distinct hascapital.v0 as v0, hascapital.v1 as v1, holdspoliticalposition.v0 as v2 from hascapital as hascapital inner join holdspoliticalposition as holdspoliticalposition on hascapital.v1 = holdspoliticalposition.v1);
+[LVL9] CREATE TABLE dummy6 AS (select distinct v2 as v0, v0 as v1 from dummy5);
+[LVL9] CREATE TABLE dummy7 AS (select distinct dummy4.v0 as v0, dummy4.v1 as v1 from dummy4 union select distinct dummy6.v0 as v0, dummy6.v1 as v1 from dummy6);
+[LVL9] CREATE TABLE dummy8 AS (select distinct v0, v1 from dummy7);
+[INFO] Total CW Predictions             : 365
+[LVL9] CREATE TABLE dummy9 AS (select distinct dummy8.v0, dummy8.v1 from dummy8 where not exists (select 1 from iscitizenof where iscitizenof.v0 = dummy8.v0 and iscitizenof.v1 = dummy8.v1));
+[INFO] Total CW Negative Predictions    : 326
+[LVL9] select * from dummy9 order by random() limit 29108;
+[INFO] Total CW negative examples       : 326
+[LVL9] CW Negative Weight               : 1.0
+[LVL9] #CW Negative Examples            : 326
+[LVL9] CREATE TABLE dummy10 AS (select distinct dummy8.v0 as v0, dummy8.v1 as v1 from dummy8 union select distinct iscitizenof.v0 as v0, iscitizenof.v1 as v1 from iscitizenof);
+[INFO] Total OW negative examples       : 2222883
+[LVL9] OW Negative Weight               : 152.733475333
+[LVL9] #OW Negative Examples            : 14554
+[LVL9] Total time in getting negatives  : 46.7744159698s
+[INFO] Self.lams                        : {'livesin': 0, 'imports': 0, 'isaffiliatedto': 0, 'ismarriedto': 0, 'exports': 0, 'produced': 0, 'isknownfor': 0, 'diedin': 0, 'hasofficiallanguage': 0, 'hasmusicalrole': 0, 'isleaderof': 0, 'isinterestedin': 0, 'influences': 0, 'graduatedfrom': 0, 'hascurrency': 0, 'p_1': 0.2, 'haschild': 0, 'participatedin': 0, 'islocatedin': 0, 'ispoliticianof': 0, 'haslanguagecode': 0, 'hascapital': 0, 'playsfor': 0, 'p_2': 0.104347826, 'p_3': 0.1, 'p_0': 0.006510966532202025, 'hasacademicadvisor': 0, 'directed': 0, 'worksat': 0, 'haswonprize': 0, 'actedin': 0, 'created': 0, 'wasbornin': 0, 'hasgeonamesid': 0, 'holdspoliticalposition': 0, 'dealswith': 0}
+[INFO] Hypothesis                       : [iscitizenof(A,B) :- fail, iscitizenof(A,B) :- true, iscitizenof(A,B) :- hascapital(B,C), holdspoliticalposition(A,C), iscitizenof(A,B) :- hasacademicadvisor(C,A), livesin(C,B), iscitizenof(A,B) :- livesin(A,C), participatedin(B,C)]
+[INFO] Probability List                 : [0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999]
+[INFO] Body List                        : [[], [hascapital(B,C), holdspoliticalposition(A,C)], [hasacademicadvisor(C,A), livesin(C,B)], [livesin(A,C), participatedin(B,C)]]
+[INFO] Predicate List                   : ['holdspoliticalposition', 'hascapital', 'hasacademicadvisor', 'participatedin', 'livesin', 'p_0', 'p_1', 'p_2', 'p_3']
+[INFO] Time - parseRules                : 0.1s
+[INFO] Body List                        : [[p_0(V0)], [hascapital(B,V1), holdspoliticalposition(A,V1), p_1(V2)], [hasacademicadvisor(V3,A), livesin(V3,B), p_2(V4)], [livesin(A,V5), participatedin(B,V5), p_3(V6)]]
+[INFO] Query String                     : p_0(V0) v hascapital(B,V1),holdspoliticalposition(A,V1),p_1(V2) v hasacademicadvisor(V3,A),livesin(V3,B),p_2(V4) v livesin(A,V5),participatedin(B,V5),p_3(V6)
+[INFO] Time - getQueryString            : 0.0s
+[LVL9] [iscitizenof(A,B) :- fail, iscitizenof(A,B) :- true, iscitizenof(A,B) :- hascapital(B,C), holdspoliticalposition(A,C), iscitizenof(A,B) :- hasacademicadvisor(C,A), livesin(C,B), iscitizenof(A,B) :- livesin(A,C), participatedin(B,C)]
+[LVL9] CREATE TABLE dummy11 AS (select distinct hascapital.v0 as v0, hascapital.v1 as v1, holdspoliticalposition.v0 as v2 from hascapital as hascapital inner join holdspoliticalposition as holdspoliticalposition on hascapital.v1 = holdspoliticalposition.v1);
+[LVL9] CREATE TABLE dummy12 AS (select distinct v2 as v0, v0 as v1 from dummy11);
+[LVL9] CREATE TABLE dummy13 AS (select distinct iscitizenof.v0 as v0, iscitizenof.v1 as v1 from iscitizenof as iscitizenof inner join dummy12 as dummy12 on iscitizenof.v0 = dummy12.v0 and iscitizenof.v1 = dummy12.v1);
+[LVL9] # Predictions of Rule0 intersected with examples: 2.0
+[LVL9] # Predictions of Rule0           : 10.0
+[LVL9] Conditional Probability for iscitizenof(A,B) :- hascapital(B,C), holdspoliticalposition(A,C) is 0.2
+[LVL9] CREATE TABLE dummy14 AS (select distinct hasacademicadvisor.v0 as v0, hasacademicadvisor.v1 as v1, livesin.v1 as v2 from hasacademicadvisor as hasacademicadvisor inner join livesin as livesin on hasacademicadvisor.v0 = livesin.v0);
+[LVL9] CREATE TABLE dummy15 AS (select distinct v1 as v0, v2 as v1 from dummy14);
+[LVL9] CREATE TABLE dummy16 AS (select distinct iscitizenof.v0 as v0, iscitizenof.v1 as v1 from iscitizenof as iscitizenof inner join dummy15 as dummy15 on iscitizenof.v0 = dummy15.v0 and iscitizenof.v1 = dummy15.v1);
+[LVL9] # Predictions of Rule1 intersected with examples: 36.0
+[LVL9] # Predictions of Rule1           : 345.0
+[LVL9] Amie Confidence Value for iscitizenof(A,B) :- hasacademicadvisor(C,A), livesin(C,B) is 0.104347826
+[LVL9] Conditional Probability for iscitizenof(A,B) :- hasacademicadvisor(C,A), livesin(C,B) is 0.104347826087
+[LVL9] CREATE TABLE dummy17 AS (select distinct livesin.v0 as v0, livesin.v1 as v1, participatedin.v0 as v2 from livesin as livesin inner join participatedin as participatedin on livesin.v1 = participatedin.v1);
+[LVL9] CREATE TABLE dummy18 AS (select distinct v0 as v0, v2 as v1 from dummy17);
+[LVL9] CREATE TABLE dummy19 AS (select distinct iscitizenof.v0 as v0, iscitizenof.v1 as v1 from iscitizenof as iscitizenof inner join dummy18 as dummy18 on iscitizenof.v0 = dummy18.v0 and iscitizenof.v1 = dummy18.v1);
+[LVL9] # Predictions of Rule2 intersected with examples: 1.0
+[LVL9] # Predictions of Rule2           : 10.0
+[LVL9] Conditional Probability for iscitizenof(A,B) :- livesin(A,C), participatedin(B,C) is 0.1
+[INFO] Lambdas initialized to           : [0.0, 0.0, 0.0, 0.0, 0.0, 0.006510966532202025, 0.2, 0.10434782608695652, 0.1]
+[DEBUG] 1548767642.31 : 0 iterations completed out of 10000
+[DEBUG] 1548768511.28 : 500 iterations completed out of 10000
+[DEBUG] 1548769455.54 : 1000 iterations completed out of 10000
+[DEBUG] 1548770374.45 : 1500 iterations completed out of 10000
+[DEBUG] 1548771306.22 : 2000 iterations completed out of 10000
+[DEBUG] 1548772223.99 : 2500 iterations completed out of 10000
+[DEBUG] 1548773187.3 : 3000 iterations completed out of 10000
+[DEBUG] 1548774119.95 : 3500 iterations completed out of 10000
+[DEBUG] 1548775021.52 : 4000 iterations completed out of 10000
+[DEBUG] 1548776000.05 : 4500 iterations completed out of 10000
+[DEBUG] 1548776966.95 : 5000 iterations completed out of 10000
+[DEBUG] 1548777964.79 : 5500 iterations completed out of 10000
+[DEBUG] 1548778899.97 : 6000 iterations completed out of 10000
+[DEBUG] 1548779865.98 : 6500 iterations completed out of 10000
+[DEBUG] 1548780810.61 : 7000 iterations completed out of 10000
+[DEBUG] 1548781758.07 : 7500 iterations completed out of 10000
+[DEBUG] 1548782634.1 : 8000 iterations completed out of 10000
+[DEBUG] 1548783595.92 : 8500 iterations completed out of 10000
+[DEBUG] 1548784573.27 : 9000 iterations completed out of 10000
+[DEBUG] 1548785513.26 : 9500 iterations completed out of 10000
+[DEBUG] Updated Lambda					: {'hasgeonamesid': 0, 'imports': 0, 'ismarriedto': 0, 'haschild': 0, 'produced': 0, 'isknownfor': 0, 'playsfor': 0, 'diedin': 0, 'isaffiliatedto': 0, 'hasmusicalrole': 0, 'isleaderof': 0, 'actedin': 0, 'hasofficiallanguage': 0, 'influences': 0, 'graduatedfrom': 0, 'hascurrency': 0, 'exports': 0, 'participatedin': 0.0, 'islocatedin': 0, 'ispoliticianof': 0, 'hascapital': 0.0, 'haslanguagecode': 0, 'p_2': 0.10434782608695652, 'p_3': 0.1, 'p_0': 0.006510966532202025, 'p_1': 0.2, 'directed': 0, 'worksat': 0, 'haswonprize': 0, 'hasacademicadvisor': 0.0, 'livesin': 0.0, 'wasbornin': 0, 'created': 0, 'holdspoliticalposition': 0.0, 'dealswith': 0, 'isinterestedin': 0}
+[DEBUG] Time - SGD						: 18790.2s
+[DEBUG] Time - deciding on hypothesis	: 0.0s
+[DEBUG] 
+[INFO] Semi - Final Hypothesis          : [iscitizenof(A,B) :- fail, 0.0065109665322::iscitizenof(A,B) :- true, 0.2::iscitizenof(A,B) :- hascapital(B,C), holdspoliticalposition(A,C), 0.104347826087::iscitizenof(A,B) :- hasacademicadvisor(C,A), livesin(C,B), 0.1::iscitizenof(A,B) :- livesin(A,C), participatedin(B,C)]
+[INFO] Final Hypothesis                 : [iscitizenof(A,B) :- fail, 0.0065109665322::iscitizenof(A,B) :- true, 0.2::iscitizenof(A,B) :- hascapital(B,C), holdspoliticalposition(A,C), 0.104347826087::iscitizenof(A,B) :- hasacademicadvisor(C,A), livesin(C,B), 0.1::iscitizenof(A,B) :- livesin(A,C), participatedin(B,C)]
+[INFO] DROP DATABASE					: yago
+[INFO] 
+[INFO] ==================== OUTPUT ====================
+[INFO] 
+[INFO] =================== SETTINGS ===================
+[INFO]               minpca:	1e-05
+[INFO]         maxAmieRules:	3
+[INFO]              verbose:	3
+[INFO]                  lr1:	0.001
+[INFO]               quotes:	True
+[INFO]                 cost:	1.0
+[INFO]           iterations:	10000
+[INFO]            probfoil1:	False
+[INFO]         global_score:	cross_entropy
+[INFO]                  log:	Rebuttal/RuntimeSpeedUpComparison/yago_ico_4.log
+[INFO] disableTypeConstraints:	True
+[INFO]  optimization_method:	incremental
+[INFO]                files:	['Data/yago.pl']
+[INFO]                  ssh:	True
+[INFO]    symmetry_breaking:	False
+[INFO]               target:	iscitizenof/2
+[INFO]                minhc:	1e-05
+[INFO]      candidate_rules:	amie
+[INFO]                    l:	None
+[INFO]           cwLearning:	True
+[INFO]                    p:	None
+[INFO]            beam_size:	5
+[INFO]                  lr2:	0.0001
+[INFO]         closed_world:	False
+[INFO] ================= FINAL THEORY =================
+[INFO] 0.0065109665322::iscitizenof(A,B) :- true
+[INFO] 0.2::iscitizenof(A,B) :- hascapital(B,C), holdspoliticalposition(A,C)
+[INFO] 0.104347826087::iscitizenof(A,B) :- hasacademicadvisor(C,A), livesin(C,B)
+[INFO] 0.1::iscitizenof(A,B) :- livesin(A,C), participatedin(B,C)
+[INFO] ================== STATISTICS ==================
+[INFO]  Get SQL Query calls:	0
+[INFO] Get Expression calls:	8524
+[INFO]            Read Time:	11679.5s
+[INFO]       Get Expression:	9659.69s
+[INFO]         Optimization:	18790.22s
+[INFO]           Learn time:	18854.7s
+[INFO]           Total time:	30535.0265s

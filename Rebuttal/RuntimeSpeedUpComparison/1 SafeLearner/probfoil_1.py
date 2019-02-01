@@ -61,7 +61,8 @@ class ProbFOIL(LearnEntail):
         self.minpca = minpca
         self.minhc = minhc
         self.tolerance = 1e-12
-        self.maxIncrement = [0.001, 0.0002]
+        #self.maxIncrement = [0.001, 0.0002]
+        self.maxIncrement = [0.00001, 0.00001]
         self.iterations = iterations
         self.misclassificationCost = 1
         #self.testFile = test

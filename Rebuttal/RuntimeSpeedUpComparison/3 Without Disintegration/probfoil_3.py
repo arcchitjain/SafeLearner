@@ -61,7 +61,8 @@ class ProbFOIL(LearnEntail):
         self.minpca = minpca
         self.minhc = minhc
         self.tolerance = 1e-12
-        self.maxIncrement = [0.001, 0.0002]
+        #self.maxIncrement = [0.001, 0.0002]
+        self.maxIncrement = [0.00001, 0.00001]
         self.iterations = iterations
         self.misclassificationCost = 1
         #self.testFile = test
@@ -1730,6 +1731,7 @@ class ProbFOIL(LearnEntail):
         outputString = self.executeCanonicalExpression(canonicalExpression, tableList, variableMapping)
         
         return outputString
+
     
     def getConjunctExpression(self, query):
         # query = subpartof_10_14([),p_11(N) #Test
@@ -1748,15 +1750,7 @@ class ProbFOIL(LearnEntail):
         outputString = self.executeCanonicalExpression(canonicalExpression, tableList, variableMapping)
         
         return outputString
-        '''
-        expression = getExpression(query, self.open_world)
-        self.cursor.execute(expression)
-        output = self.cursor.fetchall()
-            
-        if output[0][0] not in ["Failed to parse", None, "Query is unsafe"]:
-            outputString = "(1 - exp(" + output[0][0] + "))"
-        return outputString
-        '''
+        
     
     def getLossForExample(self, hypothesis, i):
         

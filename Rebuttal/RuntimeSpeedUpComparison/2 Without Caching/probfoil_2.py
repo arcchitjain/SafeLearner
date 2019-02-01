@@ -61,7 +61,8 @@ class ProbFOIL(LearnEntail):
         self.minpca = minpca
         self.minhc = minhc
         self.tolerance = 1e-12
-        self.maxIncrement = [0.001, 0.0002]
+        #self.maxIncrement = [0.001, 0.0002]
+        self.maxIncrement = [0.00001, 0.00001]
         self.iterations = iterations
         self.misclassificationCost = 1
         #self.testFile = test
@@ -1718,8 +1719,12 @@ class ProbFOIL(LearnEntail):
     
     def getConjunctExpression(self, query):
         # query = subpartof_10_14([),p_11(N) #Test
-        '''
+        time_start = time()
         canonicalQuery, tableList, variableMapping = self.getCanonicalForm(query)
+        canonicalExpression = getExpression(canonicalQuery, self.open_world)
+        self._time_getExpression = self._time_getExpression + time() - time_start
+        self._stats_getExpression += 1
+        '''
         canonicalExpression = ""
         if canonicalQuery in self.symbolicQueryDict:
             canonicalExpression = self.symbolicQueryDict[canonicalQuery]
@@ -1729,17 +1734,9 @@ class ProbFOIL(LearnEntail):
             self._time_getExpression = self._time_getExpression + time() - time_start
             self._stats_getExpression += 1
             self.symbolicQueryDict[canonicalQuery] = canonicalExpression
-            
+        '''
         outputString = self.executeCanonicalExpression(canonicalExpression, tableList, variableMapping)
         
-        return outputString
-        '''
-        expression = getExpression(query, self.open_world)
-        self.cursor.execute(expression)
-        output = self.cursor.fetchall()
-            
-        if output[0][0] not in ["Failed to parse", None, "Query is unsafe"]:
-            outputString = "(1 - exp(" + output[0][0] + "))"
         return outputString
 
 
