@@ -1,0 +1,13 @@
+python probfoil_fast.py --ssh Rebuttal/slse_10.pl --log Rebuttal/slse_10.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_20.pl --log Rebuttal/slse_20.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_50.pl --log Rebuttal/slse_50.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_100.pl --log Rebuttal/slse_100.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_200.pl --log Rebuttal/slse_200.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_500.pl --log Rebuttal/slse_500.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_1000.pl --log Rebuttal/slse_1000.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_2000.pl --log Rebuttal/slse_2000.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_5000.pl --log Rebuttal/slse_5000.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_10000.pl --log Rebuttal/slse_10000.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_20000.pl --log Rebuttal/slse_20000.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_50000.pl --log Rebuttal/slse_50000.log -v -v -v --cwLearning
+python probfoil_fast.py --ssh Rebuttal/slse_100000.pl --log Rebuttal/slse_100000.log -v -v -v --cwLearning

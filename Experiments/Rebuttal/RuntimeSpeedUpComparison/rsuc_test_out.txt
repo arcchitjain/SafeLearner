@@ -1,0 +1,75 @@
+
+=================== SETTINGS ===================
+              minpca:	0.01
+        maxAmieRules:	None
+             verbose:	3
+                 lr1:	0.001
+              quotes:	False
+                cost:	1.0
+          iterations:	10000
+           probfoil1:	False
+        global_score:	cross_entropy
+                 log:	Rebuttal/RuntimeSpeedUpComparison/test_full_1.log
+disableTypeConstraints:	False
+ optimization_method:	incremental
+               files:	['Data/test_full.pl']
+                 ssh:	True
+   symmetry_breaking:	False
+              target:	None
+               minhc:	0.01
+     candidate_rules:	amie
+                   l:	None
+          cwLearning:	True
+                   p:	None
+           beam_size:	5
+                 lr2:	0.0001
+        closed_world:	False
+================= FINAL THEORY =================
+0.625::coauthor(A,B) :- location(A,C), location(B,C)
+0.615384615385::coauthor(A,B) :- author(A,C), author(B,C)
+================== STATISTICS ==================
+ Get SQL Query calls:	0
+Get Expression calls:	3
+           Read Time:	1.61s
+      Get Expression:	0.3s
+        Optimization:	186.15s
+          Learn time:	187.97s
+          Total time:	189.5907s
+
+=================== SETTINGS ===================
+              minpca:	0.01
+        maxAmieRules:	None
+             verbose:	3
+                 lr1:	0.001
+              quotes:	False
+                cost:	1.0
+          iterations:	10000
+           probfoil1:	False
+        global_score:	cross_entropy
+                 log:	Rebuttal/RuntimeSpeedUpComparison/test_full_2.log
+disableTypeConstraints:	False
+ optimization_method:	incremental
+               files:	['Data/test_full.pl']
+                 ssh:	True
+   symmetry_breaking:	False
+              target:	None
+               minhc:	0.01
+     candidate_rules:	amie
+                   l:	None
+          cwLearning:	True
+                   p:	None
+           beam_size:	5
+                 lr2:	0.0001
+        closed_world:	False
+================= FINAL THEORY =================
+0.001000000005::coauthor(A,B) :- true
+0.625::coauthor(A,B) :- location(A,C), location(B,C)
+0.615384615385::coauthor(A,B) :- author(A,C), author(B,C)
+================== STATISTICS ==================
+ Get SQL Query calls:	0
+Get Expression calls:	162
+           Read Time:	1.81s
+      Get Expression:	14.02s
+        Optimization:	197.67s
+          Learn time:	199.27s
+          Total time:	201.0780s

@@ -1,0 +1,127 @@
+[LVL9] Output level						: 9
+[INFO] Arguments						: Data/Ragni16/processed/ragni_v4_aa1.pl -t ra/2 --log Experiments/Ragni16/test_v4_aa1.log -v -v -v --cwLearning
+[INFO] Beam Size                        : 5
+[INFO] m-estimate Parameter             : 1
+[INFO] Tolerance Parameter              : 1e-12
+[INFO] Max Increments                   : [0.001, 0.0002]
+[INFO] Learning Rate                    : [0.001, 0.0001]
+[INFO] Closed World Negatives' Factor   : 1
+[INFO] Open World Negatives' Factor     : 1
+[INFO] #Iterations in SGD               : 10000
+[INFO] Misclassification Cost of -ves   : 1
+[INFO] Min Significance                 : None
+[INFO] Max Rule Length                  : None
+[INFO] Open World Setting               : True
+[DEBUG] Created PSQL Database           : ragni_v4_aa1
+[DEBUG] Time - initialize PSQLDB        : 0.7s
+[INFO] Number of examples (M)           : 278
+[INFO] Positive probabilistic part (P)  : 96.0000
+[INFO] Negative probabilistic part (N)  : 182.0000
+[INFO] Target Base List                 : ['object', 'object']
+[INFO] Predicate Dict                   : {'a': ['object', 'object'], 're': ['object', 'object'], 'nvc': ['object', 'object'], 'ra': ['object', 'object'], 'ro': ['object', 'object'], 'ri': ['object', 'object']}
+[DEBUG] Time - readFile                 : 1.3s
+[DEBUG] Running AMIE+ : java -jar amie_plus.jar -minhc 1e-05 -minpca 1e-05 -htr '<ra>' -bexr '<ra>' -oute Data/Ragni16/processed/ragni_v4_aa1_amie.tsv
+[DEBUG] ================ Candidate Rules obtained from AMIE+ ================
+[DEBUG] (ra(A,B), [a(C,B), a(A,C)])	1	0.690647482	1
+[DEBUG] ====================================================================
+[INFO] Total positive examples (#P)     : 278
+[LVL9] CREATE TABLE dummyA AS (select distinct * from (select distinct ra.v0 as v0 from ra union select distinct a.v0 as v0 from a union select distinct a.v1 as v0 from a union select distinct re.v0 as v0 from re union select distinct re.v1 as v0 from re union select distinct nvc.v0 as v0 from nvc union select distinct nvc.v1 as v0 from nvc union select distinct ro.v0 as v0 from ro union select distinct ro.v1 as v0 from ro union select distinct ri.v0 as v0 from ri union select distinct ri.v1 as v0 from ri) as a);
+[LVL9] CREATE TABLE dummyB AS (select distinct * from (select distinct ra.v1 as v0 from ra union select distinct a.v0 as v0 from a union select distinct a.v1 as v0 from a union select distinct re.v0 as v0 from re union select distinct re.v1 as v0 from re union select distinct nvc.v0 as v0 from nvc union select distinct nvc.v1 as v0 from nvc union select distinct ro.v0 as v0 from ro union select distinct ro.v1 as v0 from ro union select distinct ri.v0 as v0 from ri union select distinct ri.v1 as v0 from ri) as a);
+[LVL9] CREATE TABLE dummy0 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy1 AS (select distinct v2 as v0, v1 as v1 from dummy0);
+[LVL9] CREATE TABLE dummy2 AS (select distinct v0, v1 from dummy1);
+[INFO] Total CW Predictions             : 139
+[LVL9] CREATE TABLE dummy3 AS (select distinct dummy2.v0, dummy2.v1 from dummy2 where not exists (select 1 from ra where ra.v0 = dummy2.v0 and ra.v1 = dummy2.v1));
+[INFO] Total CW Negative Predictions    : 0
+[LVL9] select * from dummy3 order by random() limit 556;
+[INFO] Total CW negative examples       : 0
+[LVL9] CW Negative Weight               : 1
+[LVL9] #CW Negative Examples            : 0
+[LVL9] CREATE TABLE dummy4 AS (select distinct dummy2.v0 as v0, dummy2.v1 as v1 from dummy2 union select distinct ra.v0 as v0, ra.v1 as v1 from ra);
+[INFO] Total OW negative examples       : 173611
+[LVL9] OW Negative Weight               : 624.5
+[LVL9] #OW Negative Examples            : 278
+[LVL9] Total time in getting negatives  : 0.0566630363464s
+[INFO] Self.lams                        : {'a': 0, 're': 0, 'nvc': 0, 'ro': 0, 'ri': 0, 'p_0': 0.0015987210231814548, 'p_1': 0.690647482}
+[INFO] Hypothesis                       : [ra(A,B) :- fail, ra(A,B) :- true, ra(A,B) :- a(C,B), a(A,C)]
+[INFO] Probability List                 : [0.999999999999, 0.999999999999]
+[INFO] Body List                        : [[], [a(C,B), a(A,C)]]
+[INFO] Predicate List                   : ['a', 'p_0', 'p_1']
+[INFO] Time - parseRules                : 0.0s
+[INFO] Body List                        : [[p_0(V0)], [a(V1,B), a(A,V1), p_1(V2)]]
+[INFO] Query String                     : p_0(V0) v a(V1,B),a(A,V1),p_1(V2)
+[INFO] Time - getQueryString            : 0.0s
+[LVL9] [ra(A,B) :- fail, ra(A,B) :- true, ra(A,B) :- a(C,B), a(A,C)]
+[LVL9] CREATE TABLE dummy5 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy6 AS (select distinct v2 as v0, v1 as v1 from dummy5);
+[LVL9] CREATE TABLE dummy7 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy6 as dummy6 on ra.v0 = dummy6.v0 and ra.v1 = dummy6.v1);
+[LVL9] # Predictions of Rule0 intersected with examples: 139.0
+[LVL9] # Predictions of Rule0           : 139.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), a(A,C) is 0.690647482
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), a(A,C) is 1.0
+[INFO] Lambdas initialized to           : [0.0, 0.0015987210231814548, 0.999999999995]
+[DEBUG] 1550765557.42 : 0 iterations completed out of 10000
+[DEBUG] 1550765564.61 : 500 iterations completed out of 10000
+[DEBUG] 1550765570.45 : 1000 iterations completed out of 10000
+[DEBUG] 1550765575.99 : 1500 iterations completed out of 10000
+[DEBUG] 1550765581.42 : 2000 iterations completed out of 10000
+[DEBUG] 1550765586.74 : 2500 iterations completed out of 10000
+[DEBUG] 1550765592.02 : 3000 iterations completed out of 10000
+[DEBUG] 1550765598.39 : 3500 iterations completed out of 10000
+[DEBUG] 1550765603.75 : 4000 iterations completed out of 10000
+[DEBUG] 1550765609.11 : 4500 iterations completed out of 10000
+[DEBUG] 1550765614.62 : 5000 iterations completed out of 10000
+[DEBUG] 1550765620.23 : 5500 iterations completed out of 10000
+[DEBUG] 1550765626.2 : 6000 iterations completed out of 10000
+[DEBUG] 1550765631.54 : 6500 iterations completed out of 10000
+[DEBUG] 1550765636.74 : 7000 iterations completed out of 10000
+[DEBUG] 1550765641.86 : 7500 iterations completed out of 10000
+[DEBUG] 1550765647.32 : 8000 iterations completed out of 10000
+[DEBUG] 1550765652.73 : 8500 iterations completed out of 10000
+[DEBUG] 1550765658.14 : 9000 iterations completed out of 10000
+[DEBUG] 1550765663.35 : 9500 iterations completed out of 10000
+[DEBUG] Updated Lambda					: {'a': 0.0, 're': 0, 'nvc': 0, 'ro': 0, 'ri': 0, 'p_0': 5e-12, 'p_1': 0.999999999995}
+[DEBUG] Time - SGD						: 111.9s
+[DEBUG] Time - deciding on hypothesis	: 0.0s
+[DEBUG] 
+[INFO] Semi - Final Hypothesis          : [ra(A,B) :- fail, 5e-12::ra(A,B) :- true, 0.999999999995::ra(A,B) :- a(C,B), a(A,C)]
+[INFO] Final Hypothesis                 : [ra(A,B) :- fail, ra(A,B) :- a(C,B), a(A,C)]
+[INFO] DROP DATABASE					: ragni_v4_aa1
+[INFO] 
+[INFO] ==================== OUTPUT ====================
+[INFO] 
+[INFO] =================== SETTINGS ===================
+[INFO]               minpca:	1e-05
+[INFO]         maxAmieRules:	None
+[INFO]              verbose:	3
+[INFO]                  lr1:	0.001
+[INFO]               quotes:	False
+[INFO]                 cost:	1.0
+[INFO]           iterations:	10000
+[INFO]            probfoil1:	False
+[INFO]         global_score:	cross_entropy
+[INFO]                  log:	Experiments/Ragni16/test_v4_aa1.log
+[INFO] disableTypeConstraints:	False
+[INFO]  optimization_method:	incremental
+[INFO]                files:	['Data/Ragni16/processed/ragni_v4_aa1.pl']
+[INFO]                  ssh:	False
+[INFO]    symmetry_breaking:	False
+[INFO]               target:	ra/2
+[INFO]                minhc:	1e-05
+[INFO]      candidate_rules:	amie
+[INFO]                    l:	None
+[INFO]           cwLearning:	True
+[INFO]                    p:	None
+[INFO]            beam_size:	5
+[INFO]                  lr2:	0.0001
+[INFO]         closed_world:	False
+[INFO] ================= FINAL THEORY =================
+[INFO] ra(A,B) :- a(C,B), a(A,C)
+[INFO] ================== STATISTICS ==================
+[INFO]  Get SQL Query calls:	0
+[INFO] Get Expression calls:	2
+[INFO]            Read Time:	1.29s
+[INFO]       Get Expression:	0.36s
+[INFO]         Optimization:	111.88s
+[INFO]           Learn time:	112.84s
+[INFO]           Total time:	114.1283s

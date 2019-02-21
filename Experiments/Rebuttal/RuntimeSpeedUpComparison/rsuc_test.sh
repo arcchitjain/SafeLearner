@@ -1,0 +1,4 @@
+time python probfoil_1.py Data/test_full.pl --log Rebuttal/RuntimeSpeedUpComparison/test_full_1.log -v -v -v -i 10000 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &&
+time python probfoil_2.py Data/test_full.pl --log Rebuttal/RuntimeSpeedUpComparison/test_full_2.log -v -v -v -i 10000 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &&
+time python probfoil_3.py Data/test_full.pl --log Rebuttal/RuntimeSpeedUpComparison/test_full_3.log -v -v -v -i 10000 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &&
+time python probfoil_4.py Data/test_full.pl --log Rebuttal/RuntimeSpeedUpComparison/test_full_4.log -v -v -v -i 10000 --ssh --minpca 0.01 --minhc 0.01 --cwLearning &&

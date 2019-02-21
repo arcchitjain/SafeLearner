@@ -1,0 +1,152 @@
+[LVL9] Output level						: 9
+[INFO] Arguments						: Data/test_full.pl --log Rebuttal/RuntimeSpeedUpComparison/test_full_3.log -v -v -v -i 10000 --ssh --minpca 0.01 --minhc 0.01 --cwLearning
+[INFO] Beam Size                        : 5
+[INFO] m-estimate Parameter             : 1
+[INFO] Tolerance Parameter              : 1e-12
+[INFO] Max Increments                   : [0.001, 0.0002]
+[INFO] Learning Rate                    : [0.001, 0.0001]
+[INFO] Closed World Negatives' Factor   : 1
+[INFO] Open World Negatives' Factor     : 1
+[INFO] #Iterations in SGD               : 10000
+[INFO] Misclassification Cost of -ves   : 1
+[INFO] Min Significance                 : None
+[INFO] Max Rule Length                  : None
+[INFO] Open World Setting               : True
+[ERROR] Exception Occurred              : database "test_full" already exists
+[ERROR] Exception Occurred              : database "test_full1" already exists
+[ERROR] Exception Occurred              : database "test_full2" already exists
+[ERROR] Exception Occurred              : database "test_full3" already exists
+[ERROR] Exception Occurred              : database "test_full4" already exists
+[ERROR] Exception Occurred              : database "test_full5" already exists
+[ERROR] Exception Occurred              : database "test_full6" already exists
+[ERROR] Exception Occurred              : database "test_full7" already exists
+[ERROR] Exception Occurred              : database "test_full8" already exists
+[ERROR] Exception Occurred              : database "test_full9" already exists
+[ERROR] Exception Occurred              : duplicate key value violates unique constraint "pg_database_datname_index"
+[ERROR] DETAIL:  Key (datname)=(test_full10) already exists.
+[ERROR] Exception Occurred              : duplicate key value violates unique constraint "pg_database_datname_index"
+[ERROR] DETAIL:  Key (datname)=(test_full11) already exists.
+[DEBUG] Created PSQL Database           : test_full12
+[DEBUG] Time - initialize PSQLDB        : 11.3s
+[INFO] Number of examples (M)           : 23
+[INFO] Positive probabilistic part (P)  : 7.1670
+[INFO] Negative probabilistic part (N)  : 15.8330
+[INFO] Target Base List                 : ['researcher', 'researcher']
+[INFO] Predicate Dict                   : {'author': ['researcher', 'paper'], 'location': ['researcher', 'university'], 'coauthor': ['researcher', 'researcher']}
+[DEBUG] Time - readFile                 : 12.4s
+[DEBUG] Running AMIE+ : ssh himec04 "java -jar Documents/OpenProbFOIL/amie_plus.jar -minhc 0.01 -minpca 0.01 -htr '<coauthor>' -bexr '<coauthor>' -oute Documents/OpenProbFOIL/Data/test_full_amie.tsv"
+[DEBUG] ================ Candidate Rules obtained from AMIE+ ================
+[DEBUG] (coauthor(A,B), [location(A,C), location(B,C)])	0.217391304	0.625	0.625
+[DEBUG] (coauthor(A,B), [author(A,C), author(B,C)])	0.347826087	0.615384615	0.615384615
+[DEBUG] ====================================================================
+[INFO] Total positive examples (#P)     : 23
+[LVL9] CREATE TABLE dummyA AS (select distinct * from (select distinct coauthor.v0 as v0 from coauthor union select distinct author.v0 as v0 from author union select distinct location.v0 as v0 from location) as a);
+[LVL9] CREATE TABLE dummyB AS (select distinct * from (select distinct coauthor.v1 as v0 from coauthor union select distinct author.v0 as v0 from author union select distinct location.v0 as v0 from location) as a);
+[LVL9] CREATE TABLE dummy0 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from author as table0 inner join author as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy1 AS (select distinct v0 as v0, v2 as v1 from dummy0);
+[LVL9] CREATE TABLE dummy2 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from location as table0 inner join location as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy3 AS (select distinct v0 as v0, v2 as v1 from dummy2);
+[LVL9] CREATE TABLE dummy4 AS (select distinct dummy1.v0 as v0, dummy1.v1 as v1 from dummy1 union select distinct dummy3.v0 as v0, dummy3.v1 as v1 from dummy3);
+[LVL9] CREATE TABLE dummy5 AS (select distinct v0, v1 from dummy4);
+[INFO] Total CW Predictions             : 21
+[LVL9] CREATE TABLE dummy6 AS (select distinct dummy5.v0, dummy5.v1 from dummy5 where not exists (select 1 from coauthor where coauthor.v0 = dummy5.v0 and coauthor.v1 = dummy5.v1));
+[INFO] Total CW Negative Predictions    : 8
+[LVL9] select * from dummy6 order by random() limit 46;
+[INFO] Total CW negative examples       : 8
+[LVL9] CW Negative Weight               : 1.0
+[LVL9] #CW Negative Examples            : 8
+[LVL9] CREATE TABLE dummy7 AS (select distinct dummy5.v0 as v0, dummy5.v1 as v1 from dummy5 union select distinct coauthor.v0 as v0, coauthor.v1 as v1 from coauthor);
+[INFO] Total OW negative examples       : 50
+[LVL9] OW Negative Weight               : 2.17391304348
+[LVL9] #OW Negative Examples            : 23
+[LVL9] Total time in getting negatives  : 0.649220943451s
+[INFO] Self.lams                        : {'author': 0, 'p_2': 0.615384615, 'location': 0, 'p_0': 0.2839506172839506, 'p_1': 0.625}
+[INFO] Hypothesis                       : [coauthor(A,B) :- fail, coauthor(A,B) :- true, coauthor(A,B) :- location(A,C), location(B,C), coauthor(A,B) :- author(A,C), author(B,C)]
+[INFO] Probability List                 : [0.999999999999, 0.999999999999, 0.999999999999]
+[INFO] Body List                        : [[], [location(A,C), location(B,C)], [author(A,C), author(B,C)]]
+[INFO] Predicate List                   : ['location', 'author', 'p_0', 'p_1', 'p_2']
+[INFO] Time - parseRules                : 0.1s
+[INFO] Body List                        : [[p_0(V0)], [location(A,V1), location(B,V1), p_1(V2)], [author(A,V3), author(B,V3), p_2(V4)]]
+[INFO] Query String                     : p_0(V0) v location(A,V1),location(B,V1),p_1(V2) v author(A,V3),author(B,V3),p_2(V4)
+[INFO] Time - getQueryString            : 0.0s
+[LVL9] [coauthor(A,B) :- fail, coauthor(A,B) :- true, coauthor(A,B) :- location(A,C), location(B,C), coauthor(A,B) :- author(A,C), author(B,C)]
+[LVL9] CREATE TABLE dummy8 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from location as table0 inner join location as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy9 AS (select distinct v0 as v0, v2 as v1 from dummy8);
+[LVL9] CREATE TABLE dummy10 AS (select distinct coauthor.v0 as v0, coauthor.v1 as v1 from coauthor as coauthor inner join dummy9 as dummy9 on coauthor.v0 = dummy9.v0 and coauthor.v1 = dummy9.v1);
+[LVL9] # Predictions of Rule0 intersected with examples: 5.0
+[LVL9] # Predictions of Rule0           : 8.0
+[LVL9] Conditional Probability for coauthor(A,B) :- location(A,C), location(B,C) is 0.625
+[LVL9] CREATE TABLE dummy11 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from author as table0 inner join author as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy12 AS (select distinct v0 as v0, v2 as v1 from dummy11);
+[LVL9] CREATE TABLE dummy13 AS (select distinct coauthor.v0 as v0, coauthor.v1 as v1 from coauthor as coauthor inner join dummy12 as dummy12 on coauthor.v0 = dummy12.v0 and coauthor.v1 = dummy12.v1);
+[LVL9] # Predictions of Rule1 intersected with examples: 8.0
+[LVL9] # Predictions of Rule1           : 13.0
+[LVL9] Amie Confidence Value for coauthor(A,B) :- author(A,C), author(B,C) is 0.615384615
+[LVL9] Conditional Probability for coauthor(A,B) :- author(A,C), author(B,C) is 0.615384615385
+[INFO] Lambdas initialized to           : [0.0, 0.0, 0.2839506172839506, 0.625, 0.6153846153846154]
+[DEBUG] 1548421133.95 : 0 iterations completed out of 10000
+[DEBUG] 1548421145.08 : 500 iterations completed out of 10000
+[DEBUG] 1548421154.29 : 1000 iterations completed out of 10000
+[DEBUG] 1548421163.67 : 1500 iterations completed out of 10000
+[DEBUG] 1548421172.66 : 2000 iterations completed out of 10000
+[DEBUG] 1548421181.38 : 2500 iterations completed out of 10000
+[DEBUG] 1548421190.28 : 3000 iterations completed out of 10000
+[DEBUG] 1548421199.74 : 3500 iterations completed out of 10000
+[DEBUG] 1548421209.09 : 4000 iterations completed out of 10000
+[DEBUG] 1548421218.11 : 4500 iterations completed out of 10000
+[DEBUG] 1548421227.51 : 5000 iterations completed out of 10000
+[DEBUG] 1548421236.54 : 5500 iterations completed out of 10000
+[DEBUG] 1548421245.59 : 6000 iterations completed out of 10000
+[DEBUG] 1548421253.98 : 6500 iterations completed out of 10000
+[DEBUG] 1548421263.04 : 7000 iterations completed out of 10000
+[DEBUG] 1548421272.02 : 7500 iterations completed out of 10000
+[DEBUG] 1548421281.18 : 8000 iterations completed out of 10000
+[DEBUG] 1548421290.2 : 8500 iterations completed out of 10000
+[DEBUG] 1548421299.01 : 9000 iterations completed out of 10000
+[DEBUG] 1548421307.75 : 9500 iterations completed out of 10000
+[DEBUG] Updated Lambda					: {'p_1': 0.625, 'p_2': 0.6153846153846154, 'location': 0.0, 'p_0': 5e-12, 'author': 0.0}
+[DEBUG] Time - SGD						: 183.6s
+[DEBUG] Time - deciding on hypothesis	: 0.0s
+[DEBUG] 
+[INFO] Semi - Final Hypothesis          : [coauthor(A,B) :- fail, 5e-12::coauthor(A,B) :- true, 0.625::coauthor(A,B) :- location(A,C), location(B,C), 0.615384615385::coauthor(A,B) :- author(A,C), author(B,C)]
+[INFO] Final Hypothesis                 : [coauthor(A,B) :- fail, 0.625::coauthor(A,B) :- location(A,C), location(B,C), 0.615384615385::coauthor(A,B) :- author(A,C), author(B,C)]
+[INFO] DROP DATABASE					: test_full12
+[INFO] 
+[INFO] ==================== OUTPUT ====================
+[INFO] 
+[INFO] =================== SETTINGS ===================
+[INFO]               minpca:	0.01
+[INFO]         maxAmieRules:	None
+[INFO]              verbose:	3
+[INFO]                  lr1:	0.001
+[INFO]               quotes:	False
+[INFO]                 cost:	1.0
+[INFO]           iterations:	10000
+[INFO]            probfoil1:	False
+[INFO]         global_score:	cross_entropy
+[INFO]                  log:	Rebuttal/RuntimeSpeedUpComparison/test_full_3.log
+[INFO] disableTypeConstraints:	False
+[INFO]  optimization_method:	incremental
+[INFO]                files:	['Data/test_full.pl']
+[INFO]                  ssh:	True
+[INFO]    symmetry_breaking:	False
+[INFO]               target:	None
+[INFO]                minhc:	0.01
+[INFO]      candidate_rules:	amie
+[INFO]                    l:	None
+[INFO]           cwLearning:	True
+[INFO]                    p:	None
+[INFO]            beam_size:	5
+[INFO]                  lr2:	0.0001
+[INFO]         closed_world:	False
+[INFO] ================= FINAL THEORY =================
+[INFO] 0.625::coauthor(A,B) :- location(A,C), location(B,C)
+[INFO] 0.615384615385::coauthor(A,B) :- author(A,C), author(B,C)
+[INFO] ================== STATISTICS ==================
+[INFO]  Get SQL Query calls:	0
+[INFO] Get Expression calls:	3
+[INFO]            Read Time:	12.43s
+[INFO]       Get Expression:	0.27s
+[INFO]         Optimization:	183.57s
+[INFO]           Learn time:	185.47s
+[INFO]           Total time:	197.8996s
