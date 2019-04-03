@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_133.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rnvc133.log
+              target:	rnvc133/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc133(A,B) :- no133(C,A), \+all133(B,C)
+rnvc133(A,B) :- no133(A,C), \+all133(C,B)
+rnvc133(A,B) :- somenot133(A,C), \+all133(C,B)
+rnvc133(A,B) :- some133(C,A), \+all133(C,B), \+all133(B,C)
+rnvc133(A,B) :- somenot133(C,A), \+all133(C,B), \+all133(B,C)
+rnvc133(A,B) :- some133(A,C), \+all133(C,B), \+all133(B,C), \+no133(B,C)
+rnvc133(A,B) :- all133(A,C), \+all133(C,B), \+some133(C,B), \+no133(C,B), \+somenot133(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.982456140351
+           Precision:	 1.0
+              Recall:	 0.972972972973
+================== STATISTICS ==================
+    Rule evaluations:	7760
+          Total time:	170.8784s

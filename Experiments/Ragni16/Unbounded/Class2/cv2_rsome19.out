@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_19.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsome19.log
+              target:	rsome19/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome19(A,B) :- all19(C,B), \+all19(A,C), \+all19(C,A), \+some19(C,A), \+no19(C,A), \+no19(A,C)
+rsome19(A,B) :- somenot19(C,B), no19(C,A)
+rsome19(A,B) :- somenot19(A,C), \+some19(C,B), \+all19(B,C), \+no19(C,B), \+somenot19(C,B), \+somenot19(B,C)
+rsome19(A,B) :- somenot19(C,A), some19(C,B)
+rsome19(A,B) :- some19(B,C), some19(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.830357142857
+           Precision:	 1.0
+              Recall:	 0.366666666667
+================== STATISTICS ==================
+    Rule evaluations:	101127
+          Total time:	1919.8786s

@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_60.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rsomenot60.log
+              target:	rsomenot60/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot60(A,B) :- all60(A,C), \+all60(C,B), \+all60(B,C), \+no60(C,B), \+some60(B,C), \+no60(B,C), \+somenot60(B,C)
+rsomenot60(A,B) :- no60(B,C), no60(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.950980392157
+           Precision:	 1.0
+              Recall:	 0.444444444444
+================== STATISTICS ==================
+    Rule evaluations:	25612
+          Total time:	488.6169s

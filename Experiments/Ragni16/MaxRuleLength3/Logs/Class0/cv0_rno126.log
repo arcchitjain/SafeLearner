@@ -1,0 +1,70 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.365466465498
+[INFO] Computing scores: 0.0660s
+[INFO] Number of examples (M): 116
+[INFO] Positive weight (P): 1.0000
+[INFO] Negative weight (N): 115.0000
+[DEBUG] Best rule so far: rno126(A,B) :- true [0.00862068965517]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno126(A,B) :- true 0.00862068965517
+[DEBUG] ==================================
+[LVL9] rno126(A,B) :- all126(B,C) 0.0630387931034 (1.0, 14.0, 101.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] BETTER RULE rno126(A,B) :- all126(B,C) (0.06303879310344827, 1.0) > (0.008620689655172414, 1.0)
+[LVL9] rno126(A,B) :- all126(C,A) 0.0593306288032 (1.0, 15.0, 100.0, 0.0) 0.504310344828 [ACCEPT]
+[DEBUG] Best rule so far: rno126(A,B) :- all126(B,C) [0.0630387931034]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno126(A,B) :- all126(B,C) 0.0630387931034
+[DEBUG] rno126(A,B) :- all126(C,A) 0.0593306288032
+[DEBUG] ==================================
+[LVL9] rno126(A,B) :- all126(B,C), all126(C,A) 0.336206896552 (1.0, 1.0, 114.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] BETTER RULE rno126(A,B) :- all126(B,C), all126(C,A) (0.33620689655172414, 1.0) > (0.06303879310344827, 1.0)
+[LVL9] rno126(A,B) :- all126(B,C), all126(C,D) 0.336206896552 (1.0, 1.0, 114.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), all126(D,A) 0.336206896552 (1.0, 1.0, 114.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), \+all126(A,C) 0.0720443349754 (1.0, 12.0, 103.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), \+some126(A,C) 0.0720443349754 (1.0, 12.0, 103.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), \+some126(C,A) 0.0720443349754 (1.0, 12.0, 103.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), \+no126(A,C) 0.0720443349754 (1.0, 12.0, 103.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), \+no126(C,A) 0.0720443349754 (1.0, 12.0, 103.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), \+somenot126(A,C) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(B,C), \+somenot126(C,A) 0.0720443349754 (1.0, 12.0, 103.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), all126(B,D) 0.336206896552 (1.0, 1.0, 114.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), all126(D,C) 0.336206896552 (1.0, 1.0, 114.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), \+all126(C,B) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), \+some126(C,B) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), \+some126(B,C) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), \+no126(C,B) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), \+no126(B,C) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), \+somenot126(C,B) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[LVL9] rno126(A,B) :- all126(C,A), \+somenot126(B,C) 0.0672413793103 (1.0, 13.0, 102.0, 0.0) 0.504310344828 [ACCEPT]
+[DEBUG] Best rule so far: rno126(A,B) :- all126(B,C), all126(C,A) [0.336206896552]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno126(A,B) :- all126(B,C), all126(C,A) 0.336206896552
+[DEBUG] rno126(A,B) :- all126(B,C), all126(C,D) 0.336206896552
+[DEBUG] rno126(A,B) :- all126(B,C), all126(D,A) 0.336206896552
+[DEBUG] rno126(A,B) :- all126(C,A), all126(B,D) 0.336206896552
+[DEBUG] rno126(A,B) :- all126(C,A), all126(D,C) 0.336206896552
+[DEBUG] rno126(A,B) :- all126(B,C), \+all126(A,C) 0.0720443349754
+[DEBUG] rno126(A,B) :- all126(B,C), \+some126(A,C) 0.0720443349754
+[DEBUG] rno126(A,B) :- all126(B,C), \+some126(C,A) 0.0720443349754
+[DEBUG] rno126(A,B) :- all126(B,C), \+no126(A,C) 0.0720443349754
+[DEBUG] rno126(A,B) :- all126(B,C), \+no126(C,A) 0.0720443349754
+[DEBUG] rno126(A,B) :- all126(B,C), \+somenot126(C,A) 0.0720443349754
+[DEBUG] rno126(A,B) :- all126(B,C), \+somenot126(A,C) 0.0672413793103
+[DEBUG] rno126(A,B) :- all126(C,A), \+all126(C,B) 0.0672413793103
+[DEBUG] rno126(A,B) :- all126(C,A), \+some126(C,B) 0.0672413793103
+[DEBUG] rno126(A,B) :- all126(C,A), \+some126(B,C) 0.0672413793103
+[DEBUG] rno126(A,B) :- all126(C,A), \+no126(C,B) 0.0672413793103
+[DEBUG] rno126(A,B) :- all126(C,A), \+no126(B,C) 0.0672413793103
+[DEBUG] rno126(A,B) :- all126(C,A), \+somenot126(C,B) 0.0672413793103
+[DEBUG] rno126(A,B) :- all126(C,A), \+somenot126(B,C) 0.0672413793103
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno126(A,B) :- all126(B,C), all126(C,A) 0.991379310345
+[DEBUG] Best rule so far: rno126(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno126(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno126(A,B) :- true 0.991379310345

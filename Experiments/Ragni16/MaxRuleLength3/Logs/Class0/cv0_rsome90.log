@@ -1,0 +1,206 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.0956507051266
+[INFO] Computing scores: 0.0499s
+[INFO] Number of examples (M): 124
+[INFO] Positive weight (P): 7.0000
+[INFO] Negative weight (N): 117.0000
+[DEBUG] Best rule so far: rsome90(A,B) :- true [0.0564516129032]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- true 0.0564516129032
+[DEBUG] ==================================
+[LVL9] rsome90(A,B) :- some90(B,C) 0.179791271347 (3.0, 13.0, 104.0, 4.0) 0.764112903226 [ACCEPT]
+[LVL9] BETTER RULE rsome90(A,B) :- some90(B,C) (0.1797912713472486, 3.0) > (0.056451612903225805, 7.0)
+[LVL9] rsome90(A,B) :- some90(C,A) 0.128528225806 (2.0, 13.0, 104.0, 5.0) 0.685483870968 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B) 0.0660282258065 (1.0, 14.0, 103.0, 6.0) 0.528225806452 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(A,C) 0.120967741935 (2.0, 14.0, 103.0, 5.0) 0.685483870968 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C) 0.0621442125237 (1.0, 15.0, 102.0, 6.0) 0.528225806452 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A) 0.0660282258065 (1.0, 14.0, 103.0, 6.0) 0.528225806452 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C) 0.120967741935 (2.0, 14.0, 103.0, 5.0) 0.685483870968 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(B,C) 0.120967741935 (2.0, 14.0, 103.0, 5.0) 0.685483870968 [ACCEPT]
+[DEBUG] Best rule so far: rsome90(A,B) :- some90(B,C) [0.179791271347]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- some90(B,C) 0.179791271347
+[DEBUG] rsome90(A,B) :- some90(C,A) 0.128528225806
+[DEBUG] rsome90(A,B) :- no90(A,C) 0.120967741935
+[DEBUG] rsome90(A,B) :- somenot90(A,C) 0.120967741935
+[DEBUG] rsome90(A,B) :- somenot90(B,C) 0.120967741935
+[DEBUG] rsome90(A,B) :- some90(C,B) 0.0660282258065
+[DEBUG] rsome90(A,B) :- no90(C,A) 0.0660282258065
+[DEBUG] rsome90(A,B) :- no90(B,C) 0.0621442125237
+[DEBUG] ==================================
+[LVL9] rsome90(A,B) :- some90(B,C), some90(C,A) 0.685483870968 (2.0, 0.0, 117.0, 5.0) 0.685483870968 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome90(A,B) :- some90(B,C), some90(C,A) (0.685483870967742, 2.0) > (0.1797912713472486, 3.0)
+[LVL9] rsome90(A,B) :- some90(B,C), \+all90(A,C) 0.20376344086 (3.0, 11.0, 106.0, 4.0) 0.764112903226 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+all90(C,A) 0.20376344086 (3.0, 11.0, 106.0, 4.0) 0.764112903226 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+some90(A,C) 0.20376344086 (3.0, 11.0, 106.0, 4.0) 0.764112903226 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+no90(A,C) 0.20376344086 (3.0, 11.0, 106.0, 4.0) 0.764112903226 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+no90(C,A) 0.20376344086 (3.0, 11.0, 106.0, 4.0) 0.764112903226 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+somenot90(C,A) 0.20376344086 (3.0, 11.0, 106.0, 4.0) 0.764112903226 [ACCEPT]
+[DEBUG] Best rule so far: rsome90(A,B) :- some90(B,C), some90(C,A) [0.685483870968]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- some90(B,C), \+all90(A,C) 0.20376344086
+[DEBUG] rsome90(A,B) :- some90(B,C), \+all90(C,A) 0.20376344086
+[DEBUG] rsome90(A,B) :- some90(B,C), \+some90(A,C) 0.20376344086
+[DEBUG] rsome90(A,B) :- some90(B,C), \+no90(A,C) 0.20376344086
+[DEBUG] rsome90(A,B) :- some90(B,C), \+no90(C,A) 0.20376344086
+[DEBUG] rsome90(A,B) :- some90(B,C), \+somenot90(C,A) 0.20376344086
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome90(A,B) :- some90(B,C), some90(C,A) 0.959677419355
+[DEBUG] Best rule so far: rsome90(A,B) :- true [0.0409836065574]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- true 0.0409836065574
+[DEBUG] ==================================
+[LVL9] rsome90(A,B) :- some90(B,C) 0.0693989071038 (3.0, 13.0, 104.0, 4.0) 0.520491803279 [ACCEPT]
+[LVL9] BETTER RULE rsome90(A,B) :- some90(B,C) (0.06939890710382514, 3.0) > (0.04098360655737705, 7.0)
+[LVL9] rsome90(A,B) :- some90(C,B) 0.0650614754098 (3.0, 14.0, 103.0, 4.0) 0.520491803279 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(A,C) 0.120057859209 (4.0, 14.0, 103.0, 3.0) 0.680327868852 [ACCEPT]
+[LVL9] BETTER RULE rsome90(A,B) :- no90(A,C) (0.12005785920925748, 4.0) > (0.06939890710382514, 3.0)
+[LVL9] rsome90(A,B) :- no90(B,C) 0.0612343297975 (3.0, 15.0, 102.0, 4.0) 0.520491803279 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A) 0.0650614754098 (3.0, 14.0, 103.0, 4.0) 0.520491803279 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C) 0.120057859209 (4.0, 14.0, 103.0, 3.0) 0.680327868852 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(B,C) 0.120057859209 (4.0, 14.0, 103.0, 3.0) 0.680327868852 [ACCEPT]
+[DEBUG] Best rule so far: rsome90(A,B) :- no90(A,C) [0.120057859209]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- no90(A,C) 0.120057859209
+[DEBUG] rsome90(A,B) :- somenot90(A,C) 0.120057859209
+[DEBUG] rsome90(A,B) :- somenot90(B,C) 0.120057859209
+[DEBUG] rsome90(A,B) :- some90(B,C) 0.0693989071038
+[DEBUG] rsome90(A,B) :- some90(C,B) 0.0650614754098
+[DEBUG] rsome90(A,B) :- no90(C,A) 0.0650614754098
+[DEBUG] rsome90(A,B) :- no90(B,C) 0.0612343297975
+[DEBUG] ==================================
+[LVL9] rsome90(A,B) :- no90(A,C), somenot90(B,C) 0.680327868852 (4.0, 0.0, 117.0, 3.0) 0.680327868852 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsome90(A,B) :- no90(A,C), somenot90(B,C) (0.680327868852459, 4.0) > (0.12005785920925748, 4.0)
+[INFO] RULE LEARNED: rsome90(A,B) :- no90(A,C), somenot90(B,C) 0.975806451613
+[DEBUG] Best rule so far: rsome90(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome90(A,B) :- some90(B,C) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] BETTER RULE rsome90(A,B) :- some90(B,C) (0.06833333333333333, 5.0) > (0.0, 7.0)
+[LVL9] rsome90(A,B) :- some90(C,B) 0.0640625 (5.0, 14.0, 103.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C) 0.0602941176471 (5.0, 15.0, 102.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A) 0.0640625 (5.0, 14.0, 103.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C) 0.119117647059 (6.0, 14.0, 103.0, 1.0) 0.675 [ACCEPT]
+[LVL9] BETTER RULE rsome90(A,B) :- somenot90(A,C) (0.11911764705882352, 6.0) > (0.06833333333333333, 5.0)
+[DEBUG] Best rule so far: rsome90(A,B) :- somenot90(A,C) [0.119117647059]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- somenot90(A,C) 0.119117647059
+[DEBUG] rsome90(A,B) :- some90(B,C) 0.0683333333333
+[DEBUG] rsome90(A,B) :- some90(C,B) 0.0640625
+[DEBUG] rsome90(A,B) :- no90(C,A) 0.0640625
+[DEBUG] rsome90(A,B) :- no90(B,C) 0.0602941176471
+[DEBUG] ==================================
+[LVL9] rsome90(A,B) :- somenot90(A,C), some90(C,B) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] BETTER RULE rsome90(A,B) :- somenot90(A,C), some90(C,B) (0.3416666666666666, 5.0) > (0.11911764705882352, 6.0)
+[LVL9] rsome90(A,B) :- somenot90(A,C), some90(B,C) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), some90(C,D) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), some90(B,D) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), some90(D,C) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), some90(D,B) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+all90(C,B) 0.135 (6.0, 12.0, 105.0, 1.0) 0.675 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+all90(B,C) 0.135 (6.0, 12.0, 105.0, 1.0) 0.675 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+some90(C,B) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+some90(B,C) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+no90(C,B) 0.135 (6.0, 12.0, 105.0, 1.0) 0.675 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+no90(B,C) 0.135 (6.0, 12.0, 105.0, 1.0) 0.675 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+somenot90(C,B) 0.135 (6.0, 12.0, 105.0, 1.0) 0.675 [ACCEPT]
+[LVL9] rsome90(A,B) :- somenot90(A,C), \+somenot90(B,C) 0.135 (6.0, 12.0, 105.0, 1.0) 0.675 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), somenot90(A,D) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), somenot90(D,C) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+all90(A,C) 0.0788461538462 (5.0, 11.0, 106.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+all90(C,A) 0.0788461538462 (5.0, 11.0, 106.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+some90(A,C) 0.0788461538462 (5.0, 11.0, 106.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+no90(A,C) 0.0788461538462 (5.0, 11.0, 106.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+no90(C,A) 0.0788461538462 (5.0, 11.0, 106.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(B,C), \+somenot90(C,A) 0.0788461538462 (5.0, 11.0, 106.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), somenot90(A,D) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), somenot90(D,C) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), \+all90(A,C) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), \+all90(C,A) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), \+some90(A,C) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), \+some90(C,A) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), \+no90(A,C) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), \+no90(C,A) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- some90(C,B), \+somenot90(C,A) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), no90(B,C) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), no90(B,D) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), no90(D,C) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), \+all90(C,B) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), \+all90(B,C) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), \+some90(C,B) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), \+some90(B,C) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), \+no90(C,B) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), \+somenot90(C,B) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(C,A), \+somenot90(B,C) 0.0732142857143 (5.0, 12.0, 105.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), no90(C,D) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), no90(D,A) 0.341666666667 (5.0, 1.0, 116.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), \+all90(A,C) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), \+all90(C,A) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), \+some90(A,C) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), \+some90(C,A) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), \+no90(A,C) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), \+somenot90(A,C) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[LVL9] rsome90(A,B) :- no90(B,C), \+somenot90(C,A) 0.0683333333333 (5.0, 13.0, 104.0, 2.0) 0.5125 [ACCEPT]
+[DEBUG] Best rule so far: rsome90(A,B) :- somenot90(A,C), some90(C,B) [0.341666666667]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome90(A,B) :- somenot90(A,C), some90(C,B) 0.341666666667
+[DEBUG] rsome90(A,B) :- somenot90(A,C), some90(B,C) 0.341666666667
+[DEBUG] rsome90(A,B) :- somenot90(A,C), some90(C,D) 0.341666666667
+[DEBUG] rsome90(A,B) :- somenot90(A,C), some90(B,D) 0.341666666667
+[DEBUG] rsome90(A,B) :- somenot90(A,C), some90(D,C) 0.341666666667
+[DEBUG] rsome90(A,B) :- somenot90(A,C), some90(D,B) 0.341666666667
+[DEBUG] rsome90(A,B) :- some90(B,C), somenot90(A,D) 0.341666666667
+[DEBUG] rsome90(A,B) :- some90(B,C), somenot90(D,C) 0.341666666667
+[DEBUG] rsome90(A,B) :- some90(C,B), somenot90(A,D) 0.341666666667
+[DEBUG] rsome90(A,B) :- some90(C,B), somenot90(D,C) 0.341666666667
+[DEBUG] rsome90(A,B) :- no90(C,A), no90(B,C) 0.341666666667
+[DEBUG] rsome90(A,B) :- no90(C,A), no90(B,D) 0.341666666667
+[DEBUG] rsome90(A,B) :- no90(C,A), no90(D,C) 0.341666666667
+[DEBUG] rsome90(A,B) :- no90(B,C), no90(C,D) 0.341666666667
+[DEBUG] rsome90(A,B) :- no90(B,C), no90(D,A) 0.341666666667
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+all90(C,B) 0.135
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+all90(B,C) 0.135
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+no90(C,B) 0.135
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+no90(B,C) 0.135
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+somenot90(C,B) 0.135
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+somenot90(B,C) 0.135
+[DEBUG] rsome90(A,B) :- some90(B,C), \+all90(A,C) 0.0788461538462
+[DEBUG] rsome90(A,B) :- some90(B,C), \+all90(C,A) 0.0788461538462
+[DEBUG] rsome90(A,B) :- some90(B,C), \+some90(A,C) 0.0788461538462
+[DEBUG] rsome90(A,B) :- some90(B,C), \+no90(A,C) 0.0788461538462
+[DEBUG] rsome90(A,B) :- some90(B,C), \+no90(C,A) 0.0788461538462
+[DEBUG] rsome90(A,B) :- some90(B,C), \+somenot90(C,A) 0.0788461538462
+[DEBUG] rsome90(A,B) :- some90(C,B), \+all90(A,C) 0.0732142857143
+[DEBUG] rsome90(A,B) :- some90(C,B), \+all90(C,A) 0.0732142857143
+[DEBUG] rsome90(A,B) :- some90(C,B), \+some90(A,C) 0.0732142857143
+[DEBUG] rsome90(A,B) :- some90(C,B), \+some90(C,A) 0.0732142857143
+[DEBUG] rsome90(A,B) :- some90(C,B), \+no90(A,C) 0.0732142857143
+[DEBUG] rsome90(A,B) :- some90(C,B), \+somenot90(C,A) 0.0732142857143
+[DEBUG] rsome90(A,B) :- no90(C,A), \+all90(C,B) 0.0732142857143
+[DEBUG] rsome90(A,B) :- no90(C,A), \+all90(B,C) 0.0732142857143
+[DEBUG] rsome90(A,B) :- no90(C,A), \+some90(B,C) 0.0732142857143
+[DEBUG] rsome90(A,B) :- no90(C,A), \+no90(C,B) 0.0732142857143
+[DEBUG] rsome90(A,B) :- no90(C,A), \+somenot90(C,B) 0.0732142857143
+[DEBUG] rsome90(A,B) :- no90(C,A), \+somenot90(B,C) 0.0732142857143
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+some90(C,B) 0.0683333333333
+[DEBUG] rsome90(A,B) :- somenot90(A,C), \+some90(B,C) 0.0683333333333
+[DEBUG] rsome90(A,B) :- some90(C,B), \+no90(C,A) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(C,A), \+some90(C,B) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(B,C), \+all90(A,C) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(B,C), \+all90(C,A) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(B,C), \+some90(A,C) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(B,C), \+some90(C,A) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(B,C), \+no90(A,C) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(B,C), \+somenot90(A,C) 0.0683333333333
+[DEBUG] rsome90(A,B) :- no90(B,C), \+somenot90(C,A) 0.0683333333333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome90(A,B) :- somenot90(A,C), some90(C,B) 0.975806451613

@@ -1,0 +1,28 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_21.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rnvc21.log
+              target:	rnvc21/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc21(A,B) :- somenot21(B,C)
+rnvc21(A,B) :- somenot21(C,B), \+all21(C,A)
+rnvc21(A,B) :- somenot21(A,C), \+all21(B,C)
+rnvc21(A,B) :- no21(A,C), \+all21(B,C), \+some21(B,C)
+rnvc21(A,B) :- some21(B,C), \+all21(C,A), \+no21(A,C), \+no21(C,A)
+rnvc21(A,B) :- no21(B,C), \+some21(A,C), \+somenot21(C,A)
+rnvc21(A,B) :- some21(C,B), \+all21(C,A), \+no21(C,A)
+rnvc21(A,B) :- no21(C,B), \+all21(A,C), \+all21(C,A), \+some21(A,C), \+some21(C,A)
+rnvc21(A,B) :- all21(B,C), \+all21(C,A), \+some21(C,A), \+no21(A,C), \+no21(C,A), \+somenot21(A,C), \+somenot21(C,A)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	14577
+          Total time:	357.2330s

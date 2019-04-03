@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_82.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsomenot82.log
+              target:	rsomenot82/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot82(A,B) :- some82(B,C), all82(C,A)
+rsomenot82(A,B) :- somenot82(A,C), all82(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.862068965517
+           Precision:	 1.0
+              Recall:	 0.111111111111
+================== STATISTICS ==================
+    Rule evaluations:	97647
+          Total time:	5459.5205s

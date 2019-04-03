@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/ragni_v5_fold7.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/cv5_fold7_rnvc.log
+              target:	rnvc/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc(A,B) :- task_no(C,A), task_no(C,B)
+rnvc(A,B) :- task_no(A,C), task_no(B,C)
+rnvc(A,B) :- task_somenot(B,C), task_somenot(A,C)
+rnvc(A,B) :- task_somenot(C,B), task_somenot(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.736010037641
+           Precision:	 0.630303030303
+              Recall:	 0.139722346619
+================== STATISTICS ==================
+    Rule evaluations:	6400
+          Total time:	48402.2251s

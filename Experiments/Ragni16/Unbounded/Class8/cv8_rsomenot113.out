@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_113.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rsomenot113.log
+              target:	rsomenot113/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot113(A,B) :- somenot113(A,C), \+no113(C,B), \+no113(B,C), \+somenot113(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.879310344828
+           Precision:	 0.5
+              Recall:	 0.285714285714
+================== STATISTICS ==================
+    Rule evaluations:	79655
+          Total time:	1279.1726s

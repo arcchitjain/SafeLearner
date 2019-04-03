@@ -1,0 +1,385 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.558358737638
+[INFO] Computing scores: 0.0404s
+[INFO] Number of examples (M): 108
+[INFO] Positive weight (P): 11.0000
+[INFO] Negative weight (N): 97.0000
+[DEBUG] Best rule so far: rsome97(A,B) :- true [0.101851851852]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome97(A,B) :- true 0.101851851852
+[DEBUG] ==================================
+[LVL9] rsome97(A,B) :- all97(A,C) 0.206790123457 (3.0, 11.0, 86.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] BETTER RULE rsome97(A,B) :- all97(A,C) (0.2067901234567901, 3.0) > (0.10185185185185185, 11.0)
+[LVL9] rsome97(A,B) :- all97(B,C) 0.0 (1.0, 13.0, 84.0, 10.0) 0.550925925926 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,A) 0.0 (1.0, 12.0, 85.0, 10.0) 0.550925925926 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,B) 0.0 (1.0, 12.0, 85.0, 10.0) 0.550925925926 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C) 0.206790123457 (3.0, 11.0, 86.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C) 0.14012345679 (2.0, 12.0, 85.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,A) 0.0 (1.0, 12.0, 85.0, 10.0) 0.550925925926 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B) 0.221560846561 (3.0, 10.0, 87.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] BETTER RULE rsome97(A,B) :- some97(C,B) (0.22156084656084654, 3.0) > (0.2067901234567901, 3.0)
+[LVL9] rsome97(A,B) :- somenot97(A,C) 0.14012345679 (2.0, 12.0, 85.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C) 0.14012345679 (2.0, 12.0, 85.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,A) 0.0 (1.0, 12.0, 85.0, 10.0) 0.550925925926 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B) 0.150132275132 (2.0, 11.0, 86.0, 9.0) 0.700617283951 [ACCEPT]
+[DEBUG] Best rule so far: rsome97(A,B) :- some97(C,B) [0.221560846561]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome97(A,B) :- some97(C,B) 0.221560846561
+[DEBUG] rsome97(A,B) :- all97(A,C) 0.206790123457
+[DEBUG] rsome97(A,B) :- some97(A,C) 0.206790123457
+[DEBUG] rsome97(A,B) :- somenot97(C,B) 0.150132275132
+[DEBUG] rsome97(A,B) :- some97(B,C) 0.14012345679
+[DEBUG] rsome97(A,B) :- somenot97(A,C) 0.14012345679
+[DEBUG] rsome97(A,B) :- somenot97(B,C) 0.14012345679
+[DEBUG] rsome97(A,B) :- all97(B,C) 0.0
+[DEBUG] rsome97(A,B) :- all97(C,A) 0.0
+[DEBUG] rsome97(A,B) :- all97(C,B) 0.0
+[DEBUG] rsome97(A,B) :- some97(C,A) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsome97(A,B) :- some97(C,B), all97(A,C) 0.550925925926 (1.0, 0.0, 97.0, 10.0) 0.550925925926 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome97(A,B) :- some97(C,B), all97(A,C) (0.5509259259259259, 1.0) > (0.22156084656084654, 3.0)
+[LVL9] rsome97(A,B) :- some97(C,B), \+all97(C,A) 0.175154320988 (2.0, 9.0, 88.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+some97(A,C) 0.175154320988 (2.0, 9.0, 88.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+some97(C,A) 0.258487654321 (3.0, 8.0, 89.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+no97(A,C) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+no97(C,A) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+somenot97(A,C) 0.258487654321 (3.0, 8.0, 89.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+somenot97(C,A) 0.258487654321 (3.0, 8.0, 89.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+all97(C,B) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+all97(B,C) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+some97(B,C) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+no97(C,B) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+no97(B,C) 0.221560846561 (3.0, 10.0, 87.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+somenot97(C,B) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+somenot97(B,C) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+all97(C,B) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+all97(B,C) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+some97(C,B) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+some97(B,C) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+no97(C,B) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+no97(B,C) 0.221560846561 (3.0, 10.0, 87.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+somenot97(C,B) 0.238603988604 (3.0, 9.0, 88.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+somenot97(B,C) 0.221560846561 (3.0, 10.0, 87.0, 8.0) 0.775462962963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+all97(A,C) 0.175154320988 (2.0, 9.0, 88.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+all97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+some97(A,C) 0.175154320988 (2.0, 9.0, 88.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+no97(A,C) 0.175154320988 (2.0, 9.0, 88.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+no97(C,A) 0.175154320988 (2.0, 9.0, 88.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+all97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+some97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+no97(A,C) 0.150132275132 (2.0, 11.0, 86.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+no97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+somenot97(A,C) 0.150132275132 (2.0, 11.0, 86.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+somenot97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+all97(C,B) 0.150132275132 (2.0, 11.0, 86.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+all97(B,C) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+some97(C,B) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+some97(B,C) 0.150132275132 (2.0, 11.0, 86.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+no97(C,B) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+no97(B,C) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+all97(C,A) 0.150132275132 (2.0, 11.0, 86.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+some97(A,C) 0.150132275132 (2.0, 11.0, 86.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+some97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+no97(A,C) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+no97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+somenot97(C,A) 0.161680911681 (2.0, 10.0, 87.0, 9.0) 0.700617283951 [ACCEPT]
+[DEBUG] Best rule so far: rsome97(A,B) :- some97(C,B), all97(A,C) [0.550925925926]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome97(A,B) :- some97(C,B), \+some97(C,A) 0.258487654321
+[DEBUG] rsome97(A,B) :- some97(C,B), \+somenot97(A,C) 0.258487654321
+[DEBUG] rsome97(A,B) :- some97(C,B), \+somenot97(C,A) 0.258487654321
+[DEBUG] rsome97(A,B) :- some97(C,B), \+no97(A,C) 0.238603988604
+[DEBUG] rsome97(A,B) :- some97(C,B), \+no97(C,A) 0.238603988604
+[DEBUG] rsome97(A,B) :- all97(A,C), \+all97(C,B) 0.238603988604
+[DEBUG] rsome97(A,B) :- all97(A,C), \+all97(B,C) 0.238603988604
+[DEBUG] rsome97(A,B) :- all97(A,C), \+no97(C,B) 0.238603988604
+[DEBUG] rsome97(A,B) :- all97(A,C), \+somenot97(C,B) 0.238603988604
+[DEBUG] rsome97(A,B) :- some97(A,C), \+all97(B,C) 0.238603988604
+[DEBUG] rsome97(A,B) :- some97(A,C), \+no97(C,B) 0.238603988604
+[DEBUG] rsome97(A,B) :- some97(A,C), \+somenot97(C,B) 0.238603988604
+[DEBUG] rsome97(A,B) :- all97(A,C), \+no97(B,C) 0.221560846561
+[DEBUG] rsome97(A,B) :- some97(A,C), \+no97(B,C) 0.221560846561
+[DEBUG] rsome97(A,B) :- some97(A,C), \+somenot97(B,C) 0.221560846561
+[DEBUG] rsome97(A,B) :- some97(C,B), \+all97(C,A) 0.175154320988
+[DEBUG] rsome97(A,B) :- some97(C,B), \+some97(A,C) 0.175154320988
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+all97(A,C) 0.175154320988
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+some97(A,C) 0.175154320988
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+no97(A,C) 0.175154320988
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+no97(C,A) 0.175154320988
+[DEBUG] rsome97(A,B) :- all97(A,C), \+some97(B,C) 0.161680911681
+[DEBUG] rsome97(A,B) :- all97(A,C), \+somenot97(B,C) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(A,C), \+all97(C,B) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(A,C), \+some97(C,B) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(A,C), \+some97(B,C) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+all97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(B,C), \+all97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(B,C), \+some97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(B,C), \+no97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(B,C), \+somenot97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+all97(B,C) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+some97(C,B) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+no97(C,B) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+no97(B,C) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+some97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+no97(A,C) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+no97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+somenot97(C,A) 0.161680911681
+[DEBUG] rsome97(A,B) :- some97(B,C), \+no97(A,C) 0.150132275132
+[DEBUG] rsome97(A,B) :- some97(B,C), \+somenot97(A,C) 0.150132275132
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+all97(C,B) 0.150132275132
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+some97(B,C) 0.150132275132
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+all97(C,A) 0.150132275132
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+some97(A,C) 0.150132275132
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome97(A,B) :- some97(C,B), all97(A,C) 0.907407407407
+[DEBUG] Best rule so far: rsome97(A,B) :- true [0.0934579439252]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome97(A,B) :- true 0.0934579439252
+[DEBUG] ==================================
+[LVL9] rsome97(A,B) :- all97(A,C) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] BETTER RULE rsome97(A,B) :- all97(A,C) (0.14953271028037382, 3.0) > (0.09345794392523364, 11.0)
+[LVL9] rsome97(A,B) :- all97(B,C) 0.0 (2.0, 13.0, 84.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,A) 0.0 (2.0, 12.0, 85.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,B) 0.0 (2.0, 12.0, 85.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C) 0.206230529595 (4.0, 11.0, 86.0, 7.0) 0.773364485981 [ACCEPT]
+[LVL9] BETTER RULE rsome97(A,B) :- some97(A,C) (0.20623052959501556, 4.0) > (0.14953271028037382, 3.0)
+[LVL9] rsome97(A,B) :- some97(B,C) 0.139563862928 (3.0, 12.0, 85.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,A) 0.0 (2.0, 12.0, 85.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C) 0.139563862928 (3.0, 12.0, 85.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C) 0.139563862928 (3.0, 12.0, 85.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,A) 0.0 (2.0, 12.0, 85.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[DEBUG] Best rule so far: rsome97(A,B) :- some97(A,C) [0.206230529595]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome97(A,B) :- some97(A,C) 0.206230529595
+[DEBUG] rsome97(A,B) :- some97(C,B) 0.161035226456
+[DEBUG] rsome97(A,B) :- all97(A,C) 0.14953271028
+[DEBUG] rsome97(A,B) :- somenot97(C,B) 0.14953271028
+[DEBUG] rsome97(A,B) :- some97(B,C) 0.139563862928
+[DEBUG] rsome97(A,B) :- somenot97(A,C) 0.139563862928
+[DEBUG] rsome97(A,B) :- somenot97(B,C) 0.139563862928
+[DEBUG] rsome97(A,B) :- all97(B,C) 0.0
+[DEBUG] rsome97(A,B) :- all97(C,A) 0.0
+[DEBUG] rsome97(A,B) :- all97(C,B) 0.0
+[DEBUG] rsome97(A,B) :- some97(C,A) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsome97(A,B) :- some97(A,C), all97(C,B) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] BETTER RULE rsome97(A,B) :- some97(A,C), all97(C,B) (0.3644859813084112, 2.0) > (0.20623052959501556, 4.0)
+[LVL9] rsome97(A,B) :- some97(A,C), all97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), all97(D,B) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), some97(C,B) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), some97(B,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), some97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), some97(B,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), some97(D,B) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+all97(C,B) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+all97(B,C) 0.237958303379 (4.0, 9.0, 88.0, 7.0) 0.773364485981 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+some97(C,B) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+some97(B,C) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+no97(C,B) 0.237958303379 (4.0, 9.0, 88.0, 7.0) 0.773364485981 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+no97(B,C) 0.220961281709 (4.0, 10.0, 87.0, 7.0) 0.773364485981 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+somenot97(C,B) 0.237958303379 (4.0, 9.0, 88.0, 7.0) 0.773364485981 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(A,C), \+somenot97(B,C) 0.220961281709 (4.0, 10.0, 87.0, 7.0) 0.773364485981 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), all97(C,A) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), all97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), all97(D,A) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), some97(A,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), some97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+all97(C,A) 0.0994052676296 (2.0, 9.0, 88.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+some97(A,C) 0.0994052676296 (2.0, 9.0, 88.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+some97(C,A) 0.190314358539 (3.0, 8.0, 89.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+no97(A,C) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+no97(C,A) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+somenot97(A,C) 0.190314358539 (3.0, 8.0, 89.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,B), \+somenot97(C,A) 0.190314358539 (3.0, 8.0, 89.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), some97(B,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), some97(B,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), some97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), somenot97(B,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), somenot97(B,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), somenot97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+all97(C,B) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+all97(B,C) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+some97(B,C) 0.0 (2.0, 10.0, 87.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+no97(C,B) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+no97(B,C) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+somenot97(C,B) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(A,C), \+somenot97(B,C) 0.0 (2.0, 10.0, 87.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), some97(C,A) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), some97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), some97(D,A) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), somenot97(A,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), somenot97(A,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), somenot97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+all97(A,C) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+all97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+some97(A,C) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+some97(C,A) 0.0 (2.0, 10.0, 87.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+no97(A,C) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+no97(C,A) 0.17445482866 (3.0, 9.0, 88.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,B), \+somenot97(A,C) 0.0 (2.0, 10.0, 87.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), all97(A,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), all97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), some97(A,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+all97(A,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+all97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+some97(A,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+some97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+no97(A,C) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+no97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+somenot97(A,C) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(B,C), \+somenot97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), somenot97(B,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), somenot97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), somenot97(B,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), somenot97(D,B) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+all97(C,B) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+all97(B,C) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+some97(C,B) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+some97(B,C) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+no97(C,B) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+no97(B,C) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+somenot97(C,B) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(A,C), \+somenot97(B,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), all97(A,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), all97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), somenot97(A,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+all97(A,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+all97(C,A) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+some97(A,C) 0.14953271028 (3.0, 11.0, 86.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+some97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+no97(A,C) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+no97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+somenot97(A,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(B,C), \+somenot97(C,A) 0.161035226456 (3.0, 10.0, 87.0, 8.0) 0.697819314642 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), somenot97(C,A) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), somenot97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), somenot97(D,A) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), \+all97(A,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), \+all97(C,A) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), \+some97(A,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), \+some97(C,A) 0.0 (2.0, 12.0, 85.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), \+no97(A,C) 0.0 (2.0, 12.0, 85.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), \+no97(C,A) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(B,C), \+somenot97(A,C) 0.0 (2.0, 11.0, 86.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,A), some97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,A), some97(D,B) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,B), some97(A,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- all97(C,B), some97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,A), somenot97(C,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- some97(C,A), somenot97(D,B) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,A), all97(B,D) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[LVL9] rsome97(A,B) :- somenot97(C,A), all97(D,C) 0.364485981308 (2.0, 1.0, 96.0, 9.0) 0.546728971963 [ACCEPT]
+[DEBUG] Best rule so far: rsome97(A,B) :- some97(A,C), all97(C,B) [0.364485981308]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome97(A,B) :- some97(A,C), all97(C,B) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), all97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), all97(D,B) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), some97(C,B) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), some97(B,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), some97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), some97(B,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), some97(D,B) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(C,B), all97(C,A) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(C,B), all97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(C,B), all97(D,A) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(C,B), some97(A,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(C,B), some97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(A,C), some97(B,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(A,C), some97(B,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(A,C), some97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(A,C), somenot97(B,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(A,C), somenot97(B,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(A,C), somenot97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,B), some97(C,A) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,B), some97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,B), some97(D,A) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,B), somenot97(A,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,B), somenot97(A,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,B), somenot97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(B,C), all97(A,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(B,C), all97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(B,C), some97(A,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(A,C), somenot97(B,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(A,C), somenot97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(A,C), somenot97(B,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(A,C), somenot97(D,B) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(B,C), all97(A,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(B,C), all97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(B,C), somenot97(A,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(B,C), somenot97(C,A) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(B,C), somenot97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(B,C), somenot97(D,A) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(C,A), some97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(C,A), some97(D,B) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(C,B), some97(A,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- all97(C,B), some97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(C,A), somenot97(C,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(C,A), somenot97(D,B) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,A), all97(B,D) 0.364485981308
+[DEBUG] rsome97(A,B) :- somenot97(C,A), all97(D,C) 0.364485981308
+[DEBUG] rsome97(A,B) :- some97(A,C), \+all97(B,C) 0.237958303379
+[DEBUG] rsome97(A,B) :- some97(A,C), \+no97(C,B) 0.237958303379
+[DEBUG] rsome97(A,B) :- some97(A,C), \+somenot97(C,B) 0.237958303379
+[DEBUG] rsome97(A,B) :- some97(A,C), \+no97(B,C) 0.220961281709
+[DEBUG] rsome97(A,B) :- some97(A,C), \+somenot97(B,C) 0.220961281709
+[DEBUG] rsome97(A,B) :- some97(C,B), \+some97(C,A) 0.190314358539
+[DEBUG] rsome97(A,B) :- some97(C,B), \+somenot97(A,C) 0.190314358539
+[DEBUG] rsome97(A,B) :- some97(C,B), \+somenot97(C,A) 0.190314358539
+[DEBUG] rsome97(A,B) :- some97(C,B), \+no97(A,C) 0.17445482866
+[DEBUG] rsome97(A,B) :- some97(C,B), \+no97(C,A) 0.17445482866
+[DEBUG] rsome97(A,B) :- all97(A,C), \+all97(C,B) 0.17445482866
+[DEBUG] rsome97(A,B) :- all97(A,C), \+all97(B,C) 0.17445482866
+[DEBUG] rsome97(A,B) :- all97(A,C), \+no97(C,B) 0.17445482866
+[DEBUG] rsome97(A,B) :- all97(A,C), \+somenot97(C,B) 0.17445482866
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+all97(A,C) 0.17445482866
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+some97(A,C) 0.17445482866
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+no97(A,C) 0.17445482866
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+no97(C,A) 0.17445482866
+[DEBUG] rsome97(A,B) :- some97(A,C), \+all97(C,B) 0.161035226456
+[DEBUG] rsome97(A,B) :- some97(A,C), \+some97(C,B) 0.161035226456
+[DEBUG] rsome97(A,B) :- some97(A,C), \+some97(B,C) 0.161035226456
+[DEBUG] rsome97(A,B) :- all97(A,C), \+no97(B,C) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+all97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- some97(B,C), \+all97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- some97(B,C), \+some97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- some97(B,C), \+no97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- some97(B,C), \+somenot97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+all97(B,C) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+some97(C,B) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+no97(C,B) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+no97(B,C) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+some97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+no97(A,C) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+no97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+somenot97(C,A) 0.161035226456
+[DEBUG] rsome97(A,B) :- some97(B,C), \+no97(A,C) 0.14953271028
+[DEBUG] rsome97(A,B) :- some97(B,C), \+somenot97(A,C) 0.14953271028
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+all97(C,B) 0.14953271028
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+some97(B,C) 0.14953271028
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+all97(C,A) 0.14953271028
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+some97(A,C) 0.14953271028
+[DEBUG] rsome97(A,B) :- some97(C,B), \+all97(C,A) 0.0994052676296
+[DEBUG] rsome97(A,B) :- some97(C,B), \+some97(A,C) 0.0994052676296
+[DEBUG] rsome97(A,B) :- all97(A,C), \+some97(B,C) 0.0
+[DEBUG] rsome97(A,B) :- all97(A,C), \+somenot97(B,C) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+some97(C,A) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(C,B), \+somenot97(A,C) 0.0
+[DEBUG] rsome97(A,B) :- some97(B,C), \+all97(A,C) 0.0
+[DEBUG] rsome97(A,B) :- some97(B,C), \+some97(A,C) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+somenot97(C,B) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(A,C), \+somenot97(B,C) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+all97(A,C) 0.0
+[DEBUG] rsome97(A,B) :- somenot97(B,C), \+somenot97(A,C) 0.0
+[DEBUG] rsome97(A,B) :- all97(B,C), \+all97(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome97(A,B) :- some97(A,C), all97(C,B) 0.907407407407

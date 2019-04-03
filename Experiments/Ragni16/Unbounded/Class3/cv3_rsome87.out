@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class3/cv3_train_87.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class3/cv3_rsome87.log
+              target:	rsome87/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome87(A,B) :- all87(C,B), \+all87(C,A), \+some87(A,C), \+no87(C,A), \+somenot87(A,C), \+no87(A,C), \+all87(A,C)
+rsome87(A,B) :- some87(B,C), no87(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.972727272727
+           Precision:	 1.0
+              Recall:	 0.5
+================== STATISTICS ==================
+    Rule evaluations:	15008
+          Total time:	272.5526s

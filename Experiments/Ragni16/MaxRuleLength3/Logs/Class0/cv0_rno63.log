@@ -1,0 +1,148 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.805664129362
+[INFO] Computing scores: 0.0740s
+[INFO] Number of examples (M): 122
+[INFO] Positive weight (P): 2.0000
+[INFO] Negative weight (N): 120.0000
+[DEBUG] Best rule so far: rno63(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno63(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rno63(A,B) :- all63(A,C) 0.118611378978 (2.0, 14.0, 106.0, 0.0) 0.672131147541 [ACCEPT]
+[LVL9] BETTER RULE rno63(A,B) :- all63(A,C) (0.11861137897782062, 2.0) > (0.0, 2.0)
+[LVL9] rno63(A,B) :- no63(B,C) 0.0635245901639 (1.0, 14.0, 106.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B) 0.0597878495661 (1.0, 15.0, 105.0, 1.0) 0.508196721311 [ACCEPT]
+[DEBUG] Best rule so far: rno63(A,B) :- all63(A,C) [0.118611378978]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno63(A,B) :- all63(A,C) 0.118611378978
+[DEBUG] rno63(A,B) :- no63(B,C) 0.0635245901639
+[DEBUG] rno63(A,B) :- no63(C,B) 0.0597878495661
+[DEBUG] ==================================
+[LVL9] rno63(A,B) :- all63(A,C), no63(C,B) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] BETTER RULE rno63(A,B) :- all63(A,C), no63(C,B) (0.33879781420765026, 1.0) > (0.11861137897782062, 2.0)
+[LVL9] rno63(A,B) :- all63(A,C), no63(B,C) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), no63(C,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), no63(B,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), no63(D,C) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), no63(D,B) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+all63(C,B) 0.134426229508 (2.0, 12.0, 108.0, 0.0) 0.672131147541 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+all63(B,C) 0.134426229508 (2.0, 12.0, 108.0, 0.0) 0.672131147541 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+some63(C,B) 0.134426229508 (2.0, 12.0, 108.0, 0.0) 0.672131147541 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+some63(B,C) 0.134426229508 (2.0, 12.0, 108.0, 0.0) 0.672131147541 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+no63(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+no63(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+somenot63(C,B) 0.134426229508 (2.0, 12.0, 108.0, 0.0) 0.672131147541 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+somenot63(B,C) 0.134426229508 (2.0, 12.0, 108.0, 0.0) 0.672131147541 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), all63(A,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), all63(D,C) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+all63(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+some63(A,C) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+some63(C,A) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+no63(A,C) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+no63(C,A) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+somenot63(A,C) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+somenot63(C,A) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), all63(A,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), all63(D,C) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), \+all63(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), \+some63(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), \+some63(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), \+no63(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), \+no63(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), \+somenot63(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(C,B), \+somenot63(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[DEBUG] Best rule so far: rno63(A,B) :- all63(A,C), no63(C,B) [0.338797814208]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno63(A,B) :- all63(A,C), no63(C,B) 0.338797814208
+[DEBUG] rno63(A,B) :- all63(A,C), no63(B,C) 0.338797814208
+[DEBUG] rno63(A,B) :- all63(A,C), no63(C,D) 0.338797814208
+[DEBUG] rno63(A,B) :- all63(A,C), no63(B,D) 0.338797814208
+[DEBUG] rno63(A,B) :- all63(A,C), no63(D,C) 0.338797814208
+[DEBUG] rno63(A,B) :- all63(A,C), no63(D,B) 0.338797814208
+[DEBUG] rno63(A,B) :- no63(B,C), all63(A,D) 0.338797814208
+[DEBUG] rno63(A,B) :- no63(B,C), all63(D,C) 0.338797814208
+[DEBUG] rno63(A,B) :- no63(C,B), all63(A,D) 0.338797814208
+[DEBUG] rno63(A,B) :- no63(C,B), all63(D,C) 0.338797814208
+[DEBUG] rno63(A,B) :- all63(A,C), \+all63(C,B) 0.134426229508
+[DEBUG] rno63(A,B) :- all63(A,C), \+all63(B,C) 0.134426229508
+[DEBUG] rno63(A,B) :- all63(A,C), \+some63(C,B) 0.134426229508
+[DEBUG] rno63(A,B) :- all63(A,C), \+some63(B,C) 0.134426229508
+[DEBUG] rno63(A,B) :- all63(A,C), \+somenot63(C,B) 0.134426229508
+[DEBUG] rno63(A,B) :- all63(A,C), \+somenot63(B,C) 0.134426229508
+[DEBUG] rno63(A,B) :- no63(B,C), \+some63(A,C) 0.0725995316159
+[DEBUG] rno63(A,B) :- no63(B,C), \+some63(C,A) 0.0725995316159
+[DEBUG] rno63(A,B) :- no63(B,C), \+no63(A,C) 0.0725995316159
+[DEBUG] rno63(A,B) :- no63(B,C), \+no63(C,A) 0.0725995316159
+[DEBUG] rno63(A,B) :- no63(B,C), \+somenot63(A,C) 0.0725995316159
+[DEBUG] rno63(A,B) :- no63(B,C), \+somenot63(C,A) 0.0725995316159
+[DEBUG] rno63(A,B) :- all63(A,C), \+no63(C,B) 0.0677595628415
+[DEBUG] rno63(A,B) :- all63(A,C), \+no63(B,C) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(B,C), \+all63(C,A) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(C,B), \+all63(C,A) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(C,B), \+some63(A,C) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(C,B), \+some63(C,A) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(C,B), \+no63(A,C) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(C,B), \+no63(C,A) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(C,B), \+somenot63(A,C) 0.0677595628415
+[DEBUG] rno63(A,B) :- no63(C,B), \+somenot63(C,A) 0.0677595628415
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno63(A,B) :- all63(A,C), no63(C,B) 0.983606557377
+[DEBUG] Best rule so far: rno63(A,B) :- true [0.00833333333333]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno63(A,B) :- true 0.00833333333333
+[DEBUG] ==================================
+[LVL9] rno63(A,B) :- all63(A,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] BETTER RULE rno63(A,B) :- all63(A,C) (0.06722222222222222, 2.0) > (0.008333333333333333, 2.0)
+[LVL9] rno63(A,B) :- no63(B,C) 0.0630208333333 (2.0, 15.0, 105.0, 0.0) 0.504166666667 [ACCEPT]
+[DEBUG] Best rule so far: rno63(A,B) :- all63(A,C) [0.0672222222222]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno63(A,B) :- all63(A,C) 0.0672222222222
+[DEBUG] rno63(A,B) :- no63(B,C) 0.0630208333333
+[DEBUG] ==================================
+[LVL9] rno63(A,B) :- all63(A,C), no63(B,C) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] BETTER RULE rno63(A,B) :- all63(A,C), no63(B,C) (0.3361111111111111, 2.0) > (0.06722222222222222, 2.0)
+[LVL9] rno63(A,B) :- all63(A,C), no63(B,D) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), no63(D,C) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+all63(C,B) 0.0775641025641 (2.0, 12.0, 108.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+all63(B,C) 0.0775641025641 (2.0, 12.0, 108.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+some63(C,B) 0.0775641025641 (2.0, 12.0, 108.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+some63(B,C) 0.0775641025641 (2.0, 12.0, 108.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+somenot63(C,B) 0.0775641025641 (2.0, 12.0, 108.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- all63(A,C), \+somenot63(B,C) 0.0775641025641 (2.0, 12.0, 108.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), all63(A,D) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), all63(D,C) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+all63(C,A) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+some63(A,C) 0.0720238095238 (2.0, 13.0, 107.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+some63(C,A) 0.0720238095238 (2.0, 13.0, 107.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+no63(A,C) 0.0720238095238 (2.0, 13.0, 107.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+no63(C,A) 0.0720238095238 (2.0, 13.0, 107.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+somenot63(A,C) 0.0720238095238 (2.0, 13.0, 107.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno63(A,B) :- no63(B,C), \+somenot63(C,A) 0.0720238095238 (2.0, 13.0, 107.0, 0.0) 0.504166666667 [ACCEPT]
+[DEBUG] Best rule so far: rno63(A,B) :- all63(A,C), no63(B,C) [0.336111111111]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno63(A,B) :- all63(A,C), no63(B,C) 0.336111111111
+[DEBUG] rno63(A,B) :- all63(A,C), no63(B,D) 0.336111111111
+[DEBUG] rno63(A,B) :- all63(A,C), no63(D,C) 0.336111111111
+[DEBUG] rno63(A,B) :- no63(B,C), all63(A,D) 0.336111111111
+[DEBUG] rno63(A,B) :- no63(B,C), all63(D,C) 0.336111111111
+[DEBUG] rno63(A,B) :- all63(A,C), \+all63(C,B) 0.0775641025641
+[DEBUG] rno63(A,B) :- all63(A,C), \+all63(B,C) 0.0775641025641
+[DEBUG] rno63(A,B) :- all63(A,C), \+some63(C,B) 0.0775641025641
+[DEBUG] rno63(A,B) :- all63(A,C), \+some63(B,C) 0.0775641025641
+[DEBUG] rno63(A,B) :- all63(A,C), \+somenot63(C,B) 0.0775641025641
+[DEBUG] rno63(A,B) :- all63(A,C), \+somenot63(B,C) 0.0775641025641
+[DEBUG] rno63(A,B) :- no63(B,C), \+some63(A,C) 0.0720238095238
+[DEBUG] rno63(A,B) :- no63(B,C), \+some63(C,A) 0.0720238095238
+[DEBUG] rno63(A,B) :- no63(B,C), \+no63(A,C) 0.0720238095238
+[DEBUG] rno63(A,B) :- no63(B,C), \+no63(C,A) 0.0720238095238
+[DEBUG] rno63(A,B) :- no63(B,C), \+somenot63(A,C) 0.0720238095238
+[DEBUG] rno63(A,B) :- no63(B,C), \+somenot63(C,A) 0.0720238095238
+[DEBUG] rno63(A,B) :- no63(B,C), \+all63(C,A) 0.0672222222222
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno63(A,B) :- all63(A,C), no63(B,C) 0.983606557377

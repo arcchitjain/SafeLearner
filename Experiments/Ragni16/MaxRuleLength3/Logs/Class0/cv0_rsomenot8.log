@@ -1,0 +1,441 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.260310476352
+[INFO] Computing scores: 0.1114s
+[INFO] Number of examples (M): 114
+[INFO] Positive weight (P): 16.0000
+[INFO] Negative weight (N): 98.0000
+[DEBUG] Best rule so far: rsomenot8(A,B) :- true [0.140350877193]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot8(A,B) :- true 0.140350877193
+[DEBUG] ==================================
+[LVL9] rsomenot8(A,B) :- all8(A,C) 0.164642375169 (2.0, 10.0, 88.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- all8(A,C) (0.16464237516869096, 2.0) > (0.14035087719298245, 16.0)
+[LVL9] rsomenot8(A,B) :- all8(B,C) 0.164642375169 (2.0, 10.0, 88.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A) 0.0 (2.0, 13.0, 85.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,B) 0.0 (1.0, 14.0, 84.0, 15.0) 0.570175438596 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C) 0.184726522188 (3.0, 13.0, 85.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- some8(A,C) (0.18472652218782248, 3.0) > (0.16464237516869096, 2.0)
+[LVL9] rsomenot8(A,B) :- some8(B,C) 0.0 (1.0, 15.0, 83.0, 15.0) 0.570175438596 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A) 0.302373581011 (5.0, 11.0, 87.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- some8(C,A) (0.3023735810113519, 5.0) > (0.18472652218782248, 3.0)
+[LVL9] rsomenot8(A,B) :- no8(B,C) 0.0 (1.0, 13.0, 85.0, 15.0) 0.570175438596 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,A) 0.0 (1.0, 12.0, 86.0, 15.0) 0.570175438596 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B) 0.224310776942 (3.0, 10.0, 88.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C) 0.0 (2.0, 13.0, 85.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C) 0.0 (2.0, 13.0, 85.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,A) 0.0 (1.0, 12.0, 86.0, 15.0) 0.570175438596 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B) 0.438596491228 (6.0, 7.0, 91.0, 10.0) 0.877192982456 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- somenot8(C,B) (0.4385964912280702, 6.0) > (0.3023735810113519, 5.0)
+[DEBUG] Best rule so far: rsomenot8(A,B) :- somenot8(C,B) [0.438596491228]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B) 0.438596491228
+[DEBUG] rsomenot8(A,B) :- some8(C,A) 0.302373581011
+[DEBUG] rsomenot8(A,B) :- no8(C,B) 0.224310776942
+[DEBUG] rsomenot8(A,B) :- some8(A,C) 0.184726522188
+[DEBUG] rsomenot8(A,B) :- all8(A,C) 0.164642375169
+[DEBUG] rsomenot8(A,B) :- all8(B,C) 0.164642375169
+[DEBUG] rsomenot8(A,B) :- all8(C,A) 0.0
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C) 0.0
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C) 0.0
+[DEBUG] rsomenot8(A,B) :- all8(C,B) 0.0
+[DEBUG] rsomenot8(A,B) :- some8(B,C) 0.0
+[DEBUG] rsomenot8(A,B) :- no8(B,C) 0.0
+[DEBUG] rsomenot8(A,B) :- no8(C,A) 0.0
+[DEBUG] rsomenot8(A,B) :- somenot8(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), all8(A,C) 0.570175438596 (1.0, 0.0, 98.0, 15.0) 0.570175438596 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot8(A,B) :- somenot8(C,B), all8(A,C) (0.5701754385964912, 1.0) > (0.4385964912280702, 6.0)
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+all8(C,A) 0.428362573099 (5.0, 6.0, 92.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+some8(A,C) 0.428362573099 (5.0, 6.0, 92.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+some8(C,A) 0.428362573099 (5.0, 6.0, 92.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+no8(A,C) 0.472334682861 (6.0, 6.0, 92.0, 10.0) 0.877192982456 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+no8(C,A) 0.472334682861 (6.0, 6.0, 92.0, 10.0) 0.877192982456 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(A,C) 0.428362573099 (5.0, 6.0, 92.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(C,A) 0.428362573099 (5.0, 6.0, 92.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+all8(C,B) 0.34269005848 (5.0, 9.0, 89.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+all8(B,C) 0.276023391813 (4.0, 10.0, 88.0, 12.0) 0.828070175439 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+some8(C,B) 0.34269005848 (5.0, 9.0, 89.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+some8(B,C) 0.34269005848 (5.0, 9.0, 89.0, 11.0) 0.856725146199 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+no8(C,B) 0.276023391813 (4.0, 10.0, 88.0, 12.0) 0.828070175439 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+no8(B,C) 0.276023391813 (4.0, 10.0, 88.0, 12.0) 0.828070175439 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+somenot8(C,B) 0.276023391813 (4.0, 10.0, 88.0, 12.0) 0.828070175439 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+somenot8(B,C) 0.276023391813 (4.0, 10.0, 88.0, 12.0) 0.828070175439 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+all8(A,C) 0.241565452092 (3.0, 9.0, 89.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+all8(C,A) 0.241565452092 (3.0, 9.0, 89.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+some8(A,C) 0.178362573099 (2.0, 9.0, 89.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+some8(C,A) 0.178362573099 (2.0, 9.0, 89.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+no8(A,C) 0.261695906433 (3.0, 8.0, 90.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+no8(C,A) 0.178362573099 (2.0, 9.0, 89.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+somenot8(A,C) 0.261695906433 (3.0, 8.0, 90.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+somenot8(C,A) 0.241565452092 (3.0, 9.0, 89.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+all8(C,B) 0.14269005848 (2.0, 12.0, 86.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+all8(B,C) 0.209356725146 (3.0, 11.0, 87.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+some8(C,B) 0.209356725146 (3.0, 11.0, 87.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+some8(B,C) 0.209356725146 (3.0, 11.0, 87.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+no8(C,B) 0.14269005848 (2.0, 12.0, 86.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+no8(B,C) 0.209356725146 (3.0, 11.0, 87.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+somenot8(C,B) 0.14269005848 (2.0, 12.0, 86.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+somenot8(B,C) 0.209356725146 (3.0, 11.0, 87.0, 13.0) 0.785087719298 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), \+all8(C,B) 0.194577352472 (2.0, 8.0, 90.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), \+some8(C,B) 0.194577352472 (2.0, 8.0, 90.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), \+no8(C,B) 0.178362573099 (2.0, 9.0, 89.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), \+no8(B,C) 0.194577352472 (2.0, 8.0, 90.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), \+somenot8(B,C) 0.194577352472 (2.0, 8.0, 90.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+all8(C,A) 0.194577352472 (2.0, 8.0, 90.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+some8(A,C) 0.194577352472 (2.0, 8.0, 90.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+no8(A,C) 0.194577352472 (2.0, 8.0, 90.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+no8(C,A) 0.178362573099 (2.0, 9.0, 89.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+somenot8(C,A) 0.178362573099 (2.0, 9.0, 89.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+all8(C,B) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+all8(B,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+some8(C,B) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+some8(B,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+no8(C,B) 0.14269005848 (2.0, 12.0, 86.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+no8(B,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+all8(C,B) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+some8(C,B) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+some8(B,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+no8(C,B) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+no8(B,C) 0.14269005848 (2.0, 12.0, 86.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+somenot8(B,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), \+all8(A,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), \+some8(A,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), \+no8(A,C) 0.14269005848 (2.0, 12.0, 86.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), \+no8(C,A) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), \+somenot8(A,C) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), \+somenot8(C,A) 0.152882205514 (2.0, 11.0, 87.0, 14.0) 0.713450292398 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot8(A,B) :- somenot8(C,B), all8(A,C) [0.570175438596]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+no8(A,C) 0.472334682861
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+no8(C,A) 0.472334682861
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+all8(C,A) 0.428362573099
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+some8(A,C) 0.428362573099
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+some8(C,A) 0.428362573099
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(A,C) 0.428362573099
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(C,A) 0.428362573099
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+all8(C,B) 0.34269005848
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+some8(C,B) 0.34269005848
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+some8(B,C) 0.34269005848
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+all8(B,C) 0.276023391813
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+no8(C,B) 0.276023391813
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+no8(B,C) 0.276023391813
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+somenot8(C,B) 0.276023391813
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+somenot8(B,C) 0.276023391813
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+no8(A,C) 0.261695906433
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+somenot8(A,C) 0.261695906433
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+all8(A,C) 0.241565452092
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+all8(C,A) 0.241565452092
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+somenot8(C,A) 0.241565452092
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+all8(B,C) 0.209356725146
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+some8(C,B) 0.209356725146
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+some8(B,C) 0.209356725146
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+no8(B,C) 0.209356725146
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+somenot8(B,C) 0.209356725146
+[DEBUG] rsomenot8(A,B) :- all8(A,C), \+all8(C,B) 0.194577352472
+[DEBUG] rsomenot8(A,B) :- all8(A,C), \+some8(C,B) 0.194577352472
+[DEBUG] rsomenot8(A,B) :- all8(A,C), \+no8(B,C) 0.194577352472
+[DEBUG] rsomenot8(A,B) :- all8(A,C), \+somenot8(B,C) 0.194577352472
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+all8(C,A) 0.194577352472
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+some8(A,C) 0.194577352472
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+no8(A,C) 0.194577352472
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+some8(A,C) 0.178362573099
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+some8(C,A) 0.178362573099
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+no8(C,A) 0.178362573099
+[DEBUG] rsomenot8(A,B) :- all8(A,C), \+no8(C,B) 0.178362573099
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+no8(C,A) 0.178362573099
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+somenot8(C,A) 0.178362573099
+[DEBUG] rsomenot8(A,B) :- all8(C,A), \+all8(C,B) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- all8(C,A), \+all8(B,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- all8(C,A), \+some8(C,B) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- all8(C,A), \+some8(B,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- all8(C,A), \+no8(B,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), \+all8(C,B) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), \+some8(C,B) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), \+some8(B,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), \+no8(C,B) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), \+somenot8(B,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), \+all8(A,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), \+some8(A,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), \+no8(C,A) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), \+somenot8(A,C) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), \+somenot8(C,A) 0.152882205514
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+all8(C,B) 0.14269005848
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+no8(C,B) 0.14269005848
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+somenot8(C,B) 0.14269005848
+[DEBUG] rsomenot8(A,B) :- all8(C,A), \+no8(C,B) 0.14269005848
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), \+no8(B,C) 0.14269005848
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), \+no8(A,C) 0.14269005848
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot8(A,B) :- somenot8(C,B), all8(A,C) 0.868421052632
+[DEBUG] Best rule so far: rsomenot8(A,B) :- true [0.132743362832]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot8(A,B) :- true 0.132743362832
+[DEBUG] ==================================
+[LVL9] rsomenot8(A,B) :- all8(A,C) 0.0 (2.0, 10.0, 88.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C) 0.164057181756 (3.0, 10.0, 88.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- all8(B,C) (0.1640571817562968, 3.0) > (0.13274336283185842, 16.0)
+[LVL9] rsomenot8(A,B) :- all8(C,A) 0.133296460177 (3.0, 13.0, 85.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,B) 0.0 (2.0, 14.0, 84.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C) 0.184279021343 (4.0, 13.0, 85.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- some8(A,C) (0.1842790213430505, 4.0) > (0.1640571817562968, 3.0)
+[LVL9] rsomenot8(A,B) :- some8(B,C) 0.0 (2.0, 15.0, 83.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A) 0.301926080167 (6.0, 11.0, 87.0, 10.0) 0.855457227139 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- some8(C,A) (0.3019260801665799, 6.0) > (0.1842790213430505, 4.0)
+[LVL9] rsomenot8(A,B) :- no8(B,C) 0.0 (2.0, 13.0, 85.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,A) 0.0 (2.0, 12.0, 86.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B) 0.223767383059 (4.0, 10.0, 88.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C) 0.133296460177 (3.0, 13.0, 85.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C) 0.133296460177 (3.0, 13.0, 85.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,A) 0.0 (2.0, 12.0, 86.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B) 0.394826412526 (6.0, 7.0, 91.0, 10.0) 0.855457227139 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- somenot8(C,B) (0.3948264125255276, 6.0) > (0.3019260801665799, 6.0)
+[DEBUG] Best rule so far: rsomenot8(A,B) :- somenot8(C,B) [0.394826412526]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B) 0.394826412526
+[DEBUG] rsomenot8(A,B) :- some8(C,A) 0.301926080167
+[DEBUG] rsomenot8(A,B) :- no8(C,B) 0.223767383059
+[DEBUG] rsomenot8(A,B) :- some8(A,C) 0.184279021343
+[DEBUG] rsomenot8(A,B) :- all8(B,C) 0.164057181756
+[DEBUG] rsomenot8(A,B) :- all8(C,A) 0.133296460177
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C) 0.133296460177
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C) 0.133296460177
+[DEBUG] rsomenot8(A,B) :- all8(A,C) 0.0
+[DEBUG] rsomenot8(A,B) :- all8(C,B) 0.0
+[DEBUG] rsomenot8(A,B) :- some8(B,C) 0.0
+[DEBUG] rsomenot8(A,B) :- no8(B,C) 0.0
+[DEBUG] rsomenot8(A,B) :- no8(C,A) 0.0
+[DEBUG] rsomenot8(A,B) :- somenot8(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), all8(C,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), all8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), all8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), some8(A,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), some8(C,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), some8(A,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), some8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), some8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), some8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), somenot8(A,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), somenot8(C,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), somenot8(A,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), somenot8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), somenot8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+all8(C,A) 0.375703942076 (5.0, 6.0, 92.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+some8(A,C) 0.375703942076 (5.0, 6.0, 92.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+some8(C,A) 0.375703942076 (5.0, 6.0, 92.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+no8(A,C) 0.427728613569 (6.0, 6.0, 92.0, 10.0) 0.855457227139 [ACCEPT]
+[LVL9] BETTER RULE rsomenot8(A,B) :- somenot8(C,B), \+no8(A,C) (0.4277286135693215, 6.0) > (0.3948264125255276, 6.0)
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+no8(C,A) 0.427728613569 (6.0, 6.0, 92.0, 10.0) 0.855457227139 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(A,C) 0.375703942076 (5.0, 6.0, 92.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(C,A) 0.375703942076 (5.0, 6.0, 92.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), all8(B,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), all8(B,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), all8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), no8(C,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), no8(B,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), no8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), no8(B,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), no8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), no8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), somenot8(B,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), somenot8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), somenot8(B,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), somenot8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), somenot8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+all8(C,B) 0.342182890855 (6.0, 9.0, 89.0, 10.0) 0.855457227139 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+all8(B,C) 0.275516224189 (5.0, 10.0, 88.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+some8(C,B) 0.342182890855 (6.0, 9.0, 89.0, 10.0) 0.855457227139 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+some8(B,C) 0.342182890855 (6.0, 9.0, 89.0, 10.0) 0.855457227139 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+no8(C,B) 0.275516224189 (5.0, 10.0, 88.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+no8(B,C) 0.275516224189 (5.0, 10.0, 88.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+somenot8(C,B) 0.275516224189 (5.0, 10.0, 88.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(C,A), \+somenot8(B,C) 0.275516224189 (5.0, 10.0, 88.0, 11.0) 0.826548672566 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), some8(A,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), some8(A,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), some8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), some8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), some8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), no8(C,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), no8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+all8(A,C) 0.240980258679 (4.0, 9.0, 89.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+all8(C,A) 0.240980258679 (4.0, 9.0, 89.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+some8(A,C) 0.177728613569 (3.0, 9.0, 89.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+some8(C,A) 0.177728613569 (3.0, 9.0, 89.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+no8(A,C) 0.261061946903 (4.0, 8.0, 90.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+no8(C,A) 0.177728613569 (3.0, 9.0, 89.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+somenot8(A,C) 0.261061946903 (4.0, 8.0, 90.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,B), \+somenot8(C,A) 0.240980258679 (4.0, 9.0, 89.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), all8(C,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), all8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), all8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), no8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), no8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), somenot8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), somenot8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+all8(C,B) 0.142182890855 (3.0, 12.0, 86.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+all8(B,C) 0.208849557522 (4.0, 11.0, 87.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+some8(C,B) 0.208849557522 (4.0, 11.0, 87.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+some8(B,C) 0.208849557522 (4.0, 11.0, 87.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+no8(C,B) 0.142182890855 (3.0, 12.0, 86.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+no8(B,C) 0.208849557522 (4.0, 11.0, 87.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+somenot8(C,B) 0.142182890855 (3.0, 12.0, 86.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(A,C), \+somenot8(B,C) 0.208849557522 (4.0, 11.0, 87.0, 12.0) 0.783185840708 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), some8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), some8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), somenot8(A,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), somenot8(A,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), somenot8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+all8(C,A) 0.193885760257 (3.0, 8.0, 90.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+some8(A,C) 0.193885760257 (3.0, 8.0, 90.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+some8(C,A) 0.0 (2.0, 9.0, 89.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+no8(A,C) 0.193885760257 (3.0, 8.0, 90.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+no8(C,A) 0.177728613569 (3.0, 9.0, 89.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+somenot8(A,C) 0.0 (2.0, 9.0, 89.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(B,C), \+somenot8(C,A) 0.177728613569 (3.0, 9.0, 89.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), somenot8(B,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), somenot8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), somenot8(B,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), somenot8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), somenot8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+all8(C,B) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+all8(B,C) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+some8(C,B) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+some8(B,C) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+no8(C,B) 0.142182890855 (3.0, 12.0, 86.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+no8(B,C) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+somenot8(C,B) 0.0 (2.0, 12.0, 86.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,A), \+somenot8(B,C) 0.0 (2.0, 12.0, 86.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), all8(B,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), all8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), somenot8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), somenot8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+all8(C,B) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+some8(C,B) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+some8(B,C) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+no8(C,B) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(A,C), \+somenot8(B,C) 0.152338811631 (3.0, 11.0, 87.0, 13.0) 0.710914454277 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), all8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), all8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), some8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(B,C), some8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), some8(B,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), some8(B,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(A,C), some8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,B), some8(A,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- all8(C,B), some8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(B,C), all8(A,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- some8(B,C), all8(D,C) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(B,C), some8(C,D) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(B,C), some8(D,A) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- no8(C,A), no8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[LVL9] rsomenot8(A,B) :- somenot8(C,A), somenot8(D,B) 0.377581120944 (2.0, 1.0, 97.0, 14.0) 0.566371681416 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot8(A,B) :- somenot8(C,B), \+no8(A,C) [0.427728613569]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+no8(A,C) 0.427728613569
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+no8(C,A) 0.427728613569
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), all8(C,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), all8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), all8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), some8(A,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), some8(C,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), some8(A,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), some8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), some8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), some8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), somenot8(A,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), somenot8(C,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), somenot8(A,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), somenot8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), somenot8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), all8(B,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), all8(B,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), all8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), no8(C,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), no8(B,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), no8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), no8(B,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), no8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), no8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), somenot8(B,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), somenot8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), somenot8(B,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), somenot8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(C,A), somenot8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,B), some8(A,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,B), some8(A,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,B), some8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,B), some8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,B), some8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,B), no8(C,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,B), no8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(A,C), all8(C,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(A,C), all8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(A,C), all8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(A,C), no8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(A,C), no8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(A,C), somenot8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(A,C), somenot8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(B,C), some8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(B,C), some8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(B,C), somenot8(A,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(B,C), somenot8(A,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(B,C), somenot8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(C,A), somenot8(B,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(C,A), somenot8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(C,A), somenot8(B,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(C,A), somenot8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(C,A), somenot8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), all8(B,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), all8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), somenot8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(A,C), somenot8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), all8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), all8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), some8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(B,C), some8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(A,C), some8(B,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(A,C), some8(B,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(A,C), some8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(C,B), some8(A,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- all8(C,B), some8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(B,C), all8(A,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- some8(B,C), all8(D,C) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(B,C), some8(C,D) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(B,C), some8(D,A) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- no8(C,A), no8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,A), somenot8(D,B) 0.377581120944
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+all8(C,A) 0.375703942076
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+some8(A,C) 0.375703942076
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+some8(C,A) 0.375703942076
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(A,C) 0.375703942076
+[DEBUG] rsomenot8(A,B) :- somenot8(C,B), \+somenot8(C,A) 0.375703942076
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+all8(C,B) 0.342182890855
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+some8(C,B) 0.342182890855
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+some8(B,C) 0.342182890855
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+all8(B,C) 0.275516224189
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+no8(C,B) 0.275516224189
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+no8(B,C) 0.275516224189
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+somenot8(C,B) 0.275516224189
+[DEBUG] rsomenot8(A,B) :- some8(C,A), \+somenot8(B,C) 0.275516224189
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+no8(A,C) 0.261061946903
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+somenot8(A,C) 0.261061946903
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+all8(A,C) 0.240980258679
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+all8(C,A) 0.240980258679
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+somenot8(C,A) 0.240980258679
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+all8(B,C) 0.208849557522
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+some8(C,B) 0.208849557522
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+some8(B,C) 0.208849557522
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+no8(B,C) 0.208849557522
+[DEBUG] rsomenot8(A,B) :- some8(A,C), \+somenot8(B,C) 0.208849557522
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+all8(C,A) 0.193885760257
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+some8(A,C) 0.193885760257
+[DEBUG] rsomenot8(A,B) :- all8(B,C), \+no8(A,C) 0.193885760257
+[DEBUG] rsomenot8(A,B) :- no8(C,B), \+some8(A,C) 0.177728613569
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot8(A,B) :- somenot8(C,B), \+no8(A,C) 0.859649122807

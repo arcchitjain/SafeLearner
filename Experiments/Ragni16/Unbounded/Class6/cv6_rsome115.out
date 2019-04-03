@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_115.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome115.log
+              target:	rsome115/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome115(A,B) :- all115(C,B), all115(A,C)
+rsome115(A,B) :- some115(B,C), no115(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.894736842105
+           Precision:	 1.0
+              Recall:	 0.142857142857
+================== STATISTICS ==================
+    Rule evaluations:	51382
+          Total time:	1638.9982s

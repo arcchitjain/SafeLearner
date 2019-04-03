@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_135.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc135.log
+              target:	rnvc135/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc135(A,B) :- no135(C,B), \+all135(A,C), \+some135(A,C), \+no135(A,C)
+rnvc135(A,B) :- somenot135(B,C), \+all135(C,A), \+some135(A,C), \+some135(C,A)
+rnvc135(A,B) :- some135(C,A), \+all135(C,B), \+all135(B,C), \+some135(C,B), \+some135(B,C), \+somenot135(B,C)
+rnvc135(A,B) :- no135(C,A), some135(B,C)
+rnvc135(A,B) :- somenot135(C,A), somenot135(C,B)
+rnvc135(A,B) :- no135(A,C), no135(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	13461
+          Total time:	405.2568s

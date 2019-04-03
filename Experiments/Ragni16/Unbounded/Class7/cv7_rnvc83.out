@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_83.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rnvc83.log
+              target:	rnvc83/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc83(A,B) :- no83(C,B), \+all83(A,C), \+somenot83(A,C)
+rnvc83(A,B) :- no83(B,C), \+all83(A,C), \+some83(A,C), \+some83(C,A), \+somenot83(C,A)
+rnvc83(A,B) :- somenot83(B,C), \+all83(A,C), \+all83(C,A), \+somenot83(A,C)
+rnvc83(A,B) :- some83(B,C), \+all83(C,A), \+no83(C,A), \+somenot83(A,C), \+somenot83(C,A)
+rnvc83(A,B) :- some83(C,B), \+all83(A,C), \+all83(C,A), \+no83(A,C), \+no83(C,A), \+somenot83(C,A)
+rnvc83(A,B) :- somenot83(C,B), \+all83(A,C), \+all83(C,A), \+some83(A,C), \+some83(C,A), \+no83(A,C)
+rnvc83(A,B) :- no83(A,C), all83(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	20457
+          Total time:	397.3802s

@@ -1,0 +1,22 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_32.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rsome32.log
+              target:	rsome32/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome32(A,B) :- somenot32(A,C), some32(B,C)
+rsome32(A,B) :- some32(C,A), no32(B,C)
+rsome32(A,B) :- somenot32(B,C), no32(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.905172413793
+           Precision:	 1.0
+              Recall:	 0.214285714286
+================== STATISTICS ==================
+    Rule evaluations:	59287
+          Total time:	6319.5763s

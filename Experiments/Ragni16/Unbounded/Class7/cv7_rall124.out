@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_124.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rall124.log
+              target:	rall124/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall124(A,B) :- no124(B,C), all124(C,A)
+rall124(A,B) :- all124(A,C), all124(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.964285714286
+           Precision:	 1.0
+              Recall:	 0.333333333333
+================== STATISTICS ==================
+    Rule evaluations:	26673
+          Total time:	544.6684s

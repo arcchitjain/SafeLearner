@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_57.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc57.log
+              target:	rnvc57/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc57(A,B) :- some57(C,B), \+some57(C,A), \+no57(A,C), \+somenot57(A,C)
+rnvc57(A,B) :- no57(C,B), \+all57(A,C), \+some57(C,A), \+no57(A,C), \+somenot57(A,C)
+rnvc57(A,B) :- no57(A,C), \+all57(B,C), \+some57(C,B), \+no57(C,B), \+somenot57(C,B)
+rnvc57(A,B) :- no57(B,C), \+all57(A,C), \+all57(C,A), \+somenot57(A,C), \+somenot57(C,A)
+rnvc57(A,B) :- somenot57(B,C), \+all57(A,C), \+some57(A,C), \+some57(C,A), \+no57(C,A)
+rnvc57(A,B) :- somenot57(C,A), all57(B,C)
+rnvc57(A,B) :- some57(B,C), some57(C,A)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	19098
+          Total time:	364.0332s

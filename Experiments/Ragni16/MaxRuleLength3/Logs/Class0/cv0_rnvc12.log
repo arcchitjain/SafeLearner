@@ -1,0 +1,946 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.0650282101727
+[INFO] Computing scores: 0.0471s
+[INFO] Number of examples (M): 58
+[INFO] Positive weight (P): 21.0000
+[INFO] Negative weight (N): 37.0000
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.362068965517]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.362068965517
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.4202586206896552, 3.0) > (0.3620689655172414, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.373563218391 (3.0, 5.0, 32.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,B) 0.0 (1.0, 7.0, 30.0, 20.0) 0.681034482759 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(A,C) 0.0 (1.0, 7.0, 30.0, 20.0) 0.681034482759 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.484674329502 (4.0, 4.0, 33.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.4846743295019157, 4.0) > (0.4202586206896552, 3.0)
+[LVL9] rnvc12(A,B) :- some12(C,A) 0.0 (2.0, 6.0, 31.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B) 0.0 (2.0, 5.0, 32.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.54525862069 (4.0, 3.0, 34.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.5452586206896551, 4.0) > (0.4846743295019157, 4.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.54525862069 (4.0, 3.0, 34.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(C,A) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(C,A) (0.6231527093596059, 4.0) > (0.5452586206896551, 4.0)
+[LVL9] rnvc12(A,B) :- no12(C,B) 0.67025862069 (5.0, 2.0, 35.0, 16.0) 0.89367816092 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(C,B) (0.6702586206896551, 5.0) > (0.6231527093596059, 4.0)
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.373563218391 (3.0, 5.0, 32.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.54525862069 (4.0, 3.0, 34.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.0 (1.0, 5.0, 32.0, 20.0) 0.681034482759 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,B) 0.0 (1.0, 6.0, 31.0, 20.0) 0.681034482759 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(C,B) [0.67025862069]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(C,B) 0.67025862069
+[DEBUG] rnvc12(A,B) :- no12(C,A) 0.62315270936
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.54525862069
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.54525862069
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.54525862069
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.484674329502
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.42025862069
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.373563218391
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.373563218391
+[DEBUG] rnvc12(A,B) :- some12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- all12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- some12(A,C) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(C,B), all12(A,C) 0.681034482759 (1.0, 0.0, 37.0, 20.0) 0.681034482759 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(C,B), all12(A,C) (0.6810344827586207, 1.0) > (0.6702586206896551, 5.0)
+[LVL9] rnvc12(A,B) :- no12(C,B), \+no12(A,C) 0.766009852217 (5.0, 1.0, 36.0, 16.0) 0.89367816092 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(C,B), \+no12(A,C) (0.7660098522167488, 5.0) > (0.6810344827586207, 1.0)
+[LVL9] rnvc12(A,B) :- no12(C,B), \+no12(C,A) 0.766009852217 (5.0, 1.0, 36.0, 16.0) 0.89367816092 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(C,A), \+all12(B,C) 0.727011494253 (4.0, 1.0, 36.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(C,A), \+no12(C,B) 0.727011494253 (4.0, 1.0, 36.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.62315270936 (4.0, 2.0, 35.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.54525862069 (4.0, 3.0, 34.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.54525862069 (4.0, 3.0, 34.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.54525862069 (4.0, 3.0, 34.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.54525862069 (4.0, 3.0, 34.0, 17.0) 0.872413793103 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+all12(C,B) 0.480295566502 (3.0, 3.0, 34.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+all12(B,C) 0.480295566502 (3.0, 3.0, 34.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+some12(C,B) 0.480295566502 (3.0, 3.0, 34.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+somenot12(C,B) 0.480295566502 (3.0, 3.0, 34.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.42025862069 (3.0, 4.0, 33.0, 18.0) 0.840517241379 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,A), \+all12(C,B) 0.0 (2.0, 5.0, 32.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,A), \+all12(B,C) 0.0 (2.0, 5.0, 32.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,A), \+some12(C,B) 0.0 (2.0, 5.0, 32.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,A), \+some12(B,C) 0.0 (2.0, 5.0, 32.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,A), \+no12(B,C) 0.0 (2.0, 5.0, 32.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,A), \+somenot12(C,B) 0.0 (2.0, 5.0, 32.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B), \+all12(A,C) 0.0 (2.0, 4.0, 33.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B), \+all12(C,A) 0.0 (2.0, 4.0, 33.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B), \+some12(A,C) 0.0 (2.0, 4.0, 33.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B), \+some12(C,A) 0.0 (2.0, 4.0, 33.0, 19.0) 0.787356321839 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B), \+somenot12(A,C) 0.0 (2.0, 4.0, 33.0, 19.0) 0.787356321839 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(C,B), \+no12(A,C) [0.766009852217]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(C,B), \+no12(A,C) 0.766009852217
+[DEBUG] rnvc12(A,B) :- no12(C,B), \+no12(C,A) 0.766009852217
+[DEBUG] rnvc12(A,B) :- no12(C,A), \+all12(B,C) 0.727011494253
+[DEBUG] rnvc12(A,B) :- no12(C,A), \+no12(C,B) 0.727011494253
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.62315270936
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.62315270936
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.62315270936
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.62315270936
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.62315270936
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.62315270936
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.62315270936
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.62315270936
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.62315270936
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.54525862069
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.54525862069
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.54525862069
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.54525862069
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+all12(C,B) 0.480295566502
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+all12(B,C) 0.480295566502
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+some12(C,B) 0.480295566502
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+somenot12(C,B) 0.480295566502
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.42025862069
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.42025862069
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.42025862069
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.42025862069
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.42025862069
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.42025862069
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.42025862069
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.42025862069
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.42025862069
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.42025862069
+[DEBUG] rnvc12(A,B) :- some12(C,A), \+all12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A), \+all12(B,C) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A), \+some12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A), \+some12(B,C) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A), \+no12(B,C) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A), \+somenot12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B), \+all12(A,C) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B), \+all12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B), \+some12(A,C) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B), \+some12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B), \+somenot12(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(C,B), \+no12(A,C) 0.706896551724
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.32967032967 (7.0, 5.0, 32.0, 14.0) 0.769230769231 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.32967032967032966, 7.0) > (0.0, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.0 (7.0, 6.0, 31.0, 14.0) 0.769230769231 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,B) 0.0 (6.0, 8.0, 29.0, 15.0) 0.653846153846 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.478632478632 (9.0, 5.0, 32.0, 12.0) 0.861538461538 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.4786324786324786, 9.0) > (0.32967032967032966, 7.0)
+[LVL9] rnvc12(A,B) :- some12(C,A) 0.0 (6.0, 7.0, 30.0, 15.0) 0.653846153846 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B) 0.0 (7.0, 6.0, 31.0, 14.0) 0.769230769231 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.538461538462 (9.0, 4.0, 33.0, 12.0) 0.861538461538 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.5384615384615384, 9.0) > (0.4786324786324786, 9.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.538461538462 (9.0, 4.0, 33.0, 12.0) 0.861538461538 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(C,A) 0.717948717949 (9.0, 2.0, 35.0, 12.0) 0.861538461538 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(C,A) (0.717948717948718, 9.0) > (0.5384615384615384, 9.0)
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.0 (7.0, 6.0, 31.0, 14.0) 0.769230769231 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.538461538462 (9.0, 4.0, 33.0, 12.0) 0.861538461538 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(C,A) [0.717948717949]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(C,A) 0.717948717949
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.538461538462
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.538461538462
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.538461538462
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.478632478632
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.32967032967
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.0
+[DEBUG] rnvc12(A,B) :- all12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(C,A), \+all12(B,C) 0.861538461538 (9.0, 1.0, 36.0, 12.0) 0.861538461538 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(C,A), \+all12(B,C) (0.8615384615384615, 9.0) > (0.717948717948718, 9.0)
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(C,A), \+all12(B,C) [0.861538461538]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(C,A), \+all12(B,C) 0.861538461538
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(C,A), \+all12(B,C) 0.775862068966
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.25]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.25
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.32142857142857145, 11.0) > (0.25, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.28125 (11.0, 6.0, 31.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.40625 (12.0, 5.0, 32.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.40625, 12.0) > (0.32142857142857145, 11.0)
+[LVL9] rnvc12(A,B) :- some12(C,A) 0.0 (10.0, 7.0, 30.0, 11.0) 0.625 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(C,B) 0.0 (10.0, 6.0, 31.0, 11.0) 0.625 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.53125 (13.0, 4.0, 33.0, 8.0) 0.85 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.53125, 13.0) > (0.40625, 12.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.53125 (13.0, 4.0, 33.0, 8.0) 0.85 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.28125 (11.0, 6.0, 31.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.464285714286 (12.0, 4.0, 33.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.0 (10.0, 6.0, 31.0, 11.0) 0.625 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,B) 0.0 (10.0, 7.0, 30.0, 11.0) 0.625 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(A,C) [0.53125]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.53125
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.53125
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.464285714286
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.40625
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.321428571429
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.28125
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.28125
+[DEBUG] rnvc12(A,B) :- some12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,B) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(A,C), some12(C,B) 0.625 (10.0, 1.0, 36.0, 11.0) 0.625 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C), some12(C,B) (0.625, 10.0) > (0.53125, 13.0)
+[LVL9] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.607142857143 (13.0, 3.0, 34.0, 8.0) 0.85 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.607142857143 (13.0, 3.0, 34.0, 8.0) 0.85 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.607142857143 (13.0, 3.0, 34.0, 8.0) 0.85 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.607142857143 (13.0, 3.0, 34.0, 8.0) 0.85 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.607142857143 (13.0, 3.0, 34.0, 8.0) 0.85 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.607142857143 (13.0, 3.0, 34.0, 8.0) 0.85 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.541666666667 (12.0, 3.0, 34.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.541666666667 (12.0, 3.0, 34.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.541666666667 (12.0, 3.0, 34.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.464285714286 (12.0, 4.0, 33.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.464285714286 (12.0, 4.0, 33.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.464285714286 (12.0, 4.0, 33.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.464285714286 (12.0, 4.0, 33.0, 9.0) 0.8125 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+all12(C,B) 0.375 (11.0, 4.0, 33.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+all12(B,C) 0.375 (11.0, 4.0, 33.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+some12(C,B) 0.375 (11.0, 4.0, 33.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+somenot12(C,B) 0.375 (11.0, 4.0, 33.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.321428571429 (11.0, 5.0, 32.0, 10.0) 0.75 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(A,C), some12(C,B) [0.625]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(A,C), some12(C,B) 0.625
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.607142857143
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.607142857143
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.607142857143
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.607142857143
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.607142857143
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.607142857143
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.541666666667
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.541666666667
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.541666666667
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.464285714286
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.464285714286
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.464285714286
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.464285714286
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+all12(C,B) 0.375
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+all12(B,C) 0.375
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+some12(C,B) 0.375
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+somenot12(C,B) 0.375
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.321428571429
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.321428571429
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.321428571429
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.321428571429
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.321428571429
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.321428571429
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.321428571429
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.321428571429
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.321428571429
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.321428571429
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(A,C), some12(C,B) 0.793103448276
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.234042553191]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.234042553191
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.3191489361702128, 12.0) > (0.23404255319148937, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.279255319149 (12.0, 6.0, 31.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.404255319149 (13.0, 5.0, 32.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.4042553191489362, 13.0) > (0.3191489361702128, 12.0)
+[LVL9] rnvc12(A,B) :- some12(C,A) 0.0 (11.0, 7.0, 30.0, 10.0) 0.617021276596 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.462006079027 (13.0, 4.0, 33.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.46200607902735563, 13.0) > (0.4042553191489362, 13.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.529255319149 (14.0, 4.0, 33.0, 7.0) 0.846808510638 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C) (0.5292553191489362, 14.0) > (0.46200607902735563, 13.0)
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.279255319149 (12.0, 6.0, 31.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.462006079027 (13.0, 4.0, 33.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.0 (11.0, 6.0, 31.0, 10.0) 0.617021276596 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,B) 0.0 (11.0, 7.0, 30.0, 10.0) 0.617021276596 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C) [0.529255319149]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.529255319149
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.462006079027
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.462006079027
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.404255319149
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.31914893617
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.279255319149
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.279255319149
+[DEBUG] rnvc12(A,B) :- some12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(B,C), all12(A,C) 0.617021276596 (11.0, 1.0, 36.0, 10.0) 0.617021276596 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C), all12(A,C) (0.6170212765957447, 11.0) > (0.5292553191489362, 14.0)
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.604863221884 (14.0, 3.0, 34.0, 7.0) 0.846808510638 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.604863221884 (14.0, 3.0, 34.0, 7.0) 0.846808510638 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.604863221884 (14.0, 3.0, 34.0, 7.0) 0.846808510638 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.539007092199 (13.0, 3.0, 34.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.539007092199 (13.0, 3.0, 34.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.539007092199 (13.0, 3.0, 34.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.539007092199 (13.0, 3.0, 34.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.539007092199 (13.0, 3.0, 34.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.539007092199 (13.0, 3.0, 34.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.462006079027 (13.0, 4.0, 33.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.462006079027 (13.0, 4.0, 33.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.462006079027 (13.0, 4.0, 33.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.462006079027 (13.0, 4.0, 33.0, 8.0) 0.808510638298 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+all12(C,B) 0.372340425532 (12.0, 4.0, 33.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+all12(B,C) 0.372340425532 (12.0, 4.0, 33.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+some12(C,B) 0.372340425532 (12.0, 4.0, 33.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(A,C), \+somenot12(C,B) 0.372340425532 (12.0, 4.0, 33.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.31914893617 (12.0, 5.0, 32.0, 9.0) 0.744680851064 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C), all12(A,C) [0.617021276596]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C), all12(A,C) 0.617021276596
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.604863221884
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.604863221884
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.604863221884
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.539007092199
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.539007092199
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.539007092199
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.539007092199
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.539007092199
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.539007092199
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.462006079027
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.462006079027
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.462006079027
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.462006079027
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+all12(C,B) 0.372340425532
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+all12(B,C) 0.372340425532
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+some12(C,B) 0.372340425532
+[DEBUG] rnvc12(A,B) :- all12(A,C), \+somenot12(C,B) 0.372340425532
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.31914893617
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.31914893617
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.31914893617
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.31914893617
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.31914893617
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.31914893617
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.31914893617
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.31914893617
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.31914893617
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.31914893617
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(B,C), all12(A,C) 0.810344827586
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.217391304348]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.217391304348
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.0 (12.0, 5.0, 32.0, 9.0) 0.608695652174 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.277173913043 (13.0, 6.0, 31.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(C,A) (0.27717391304347827, 13.0) > (0.21739130434782608, 21.0)
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.402173913043 (14.0, 5.0, 32.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.40217391304347827, 14.0) > (0.27717391304347827, 13.0)
+[LVL9] rnvc12(A,B) :- some12(C,A) 0.0 (12.0, 7.0, 30.0, 9.0) 0.608695652174 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.459627329193 (14.0, 4.0, 33.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.4596273291925466, 14.0) > (0.40217391304347827, 14.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.459627329193 (14.0, 4.0, 33.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.277173913043 (13.0, 6.0, 31.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.459627329193 (14.0, 4.0, 33.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.0 (12.0, 6.0, 31.0, 9.0) 0.608695652174 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,B) 0.0 (12.0, 7.0, 30.0, 9.0) 0.608695652174 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(A,C) [0.459627329193]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.459627329193
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.459627329193
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.459627329193
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.402173913043
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.277173913043
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.277173913043
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(A,C), some12(B,C) 0.608695652174 (12.0, 1.0, 36.0, 9.0) 0.608695652174 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C), some12(B,C) (0.6086956521739131, 12.0) > (0.4596273291925466, 14.0)
+[LVL9] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.536231884058 (14.0, 3.0, 34.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.459627329193 (14.0, 4.0, 33.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.459627329193 (14.0, 4.0, 33.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.459627329193 (14.0, 4.0, 33.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.459627329193 (14.0, 4.0, 33.0, 7.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.316770186335 (13.0, 5.0, 32.0, 8.0) 0.739130434783 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(A,C), some12(B,C) [0.608695652174]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(A,C), some12(B,C) 0.608695652174
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.536231884058
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.536231884058
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.536231884058
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.536231884058
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.536231884058
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.536231884058
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.536231884058
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.536231884058
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.536231884058
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.459627329193
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.459627329193
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.459627329193
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.459627329193
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.316770186335
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.316770186335
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.316770186335
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.316770186335
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.316770186335
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.316770186335
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.316770186335
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.316770186335
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.316770186335
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.316770186335
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(A,C), some12(B,C) 0.827586206897
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.0 (13.0, 5.0, 32.0, 8.0) 0.6 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.275 (14.0, 6.0, 31.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(C,A) (0.275, 14.0) > (0.0, 21.0)
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.31428571428571433, 14.0) > (0.275, 14.0)
+[LVL9] rnvc12(A,B) :- some12(C,A) 0.0 (13.0, 7.0, 30.0, 8.0) 0.6 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.366666666667 (14.0, 4.0, 33.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.3666666666666667, 14.0) > (0.31428571428571433, 14.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.457142857143 (15.0, 4.0, 33.0, 6.0) 0.8 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C) (0.4571428571428572, 15.0) > (0.3666666666666667, 14.0)
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.275 (14.0, 6.0, 31.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.457142857143 (15.0, 4.0, 33.0, 6.0) 0.8 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.0 (13.0, 6.0, 31.0, 8.0) 0.6 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,B) 0.0 (13.0, 7.0, 30.0, 8.0) 0.6 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C) [0.457142857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.457142857143
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.457142857143
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.366666666667
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.314285714286
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.275
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.275
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(B,C), all12(C,A) 0.6 (13.0, 1.0, 36.0, 8.0) 0.6 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C), all12(C,A) (0.6, 13.0) > (0.4571428571428572, 15.0)
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.533333333333 (15.0, 3.0, 34.0, 6.0) 0.8 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.533333333333 (15.0, 3.0, 34.0, 6.0) 0.8 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.533333333333 (15.0, 3.0, 34.0, 6.0) 0.8 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.533333333333 (15.0, 3.0, 34.0, 6.0) 0.8 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.533333333333 (15.0, 3.0, 34.0, 6.0) 0.8 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.533333333333 (15.0, 3.0, 34.0, 6.0) 0.8 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.44 (14.0, 3.0, 34.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.44 (14.0, 3.0, 34.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.44 (14.0, 3.0, 34.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.366666666667 (14.0, 4.0, 33.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.366666666667 (14.0, 4.0, 33.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.366666666667 (14.0, 4.0, 33.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.366666666667 (14.0, 4.0, 33.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.314285714286 (14.0, 5.0, 32.0, 7.0) 0.733333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C), all12(C,A) [0.6]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C), all12(C,A) 0.6
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.533333333333
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.533333333333
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.533333333333
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.533333333333
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.533333333333
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.533333333333
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.44
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.44
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.44
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.366666666667
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.366666666667
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.366666666667
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.366666666667
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(C,B) 0.314285714286
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+all12(B,C) 0.314285714286
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+some12(C,B) 0.314285714286
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(C,B) 0.314285714286
+[DEBUG] rnvc12(A,B) :- all12(C,A), \+somenot12(B,C) 0.314285714286
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.314285714286
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.314285714286
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.314285714286
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.314285714286
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.314285714286
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(B,C), all12(C,A) 0.844827586207
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.181818181818]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.181818181818
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.19696969697 (14.0, 5.0, 32.0, 7.0) 0.590909090909 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.196969696969697, 14.0) > (0.18181818181818182, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.0 (14.0, 6.0, 31.0, 7.0) 0.590909090909 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.311688311688 (15.0, 5.0, 32.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.3116883116883117, 15.0) > (0.196969696969697, 14.0)
+[LVL9] rnvc12(A,B) :- some12(C,A) 0.0 (14.0, 7.0, 30.0, 7.0) 0.590909090909 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.363636363636 (15.0, 4.0, 33.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.3636363636363636, 15.0) > (0.3116883116883117, 15.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.363636363636 (15.0, 4.0, 33.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.272727272727 (15.0, 6.0, 31.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.454545454545 (16.0, 4.0, 33.0, 5.0) 0.795454545455 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- somenot12(B,C) (0.45454545454545453, 16.0) > (0.3636363636363636, 15.0)
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.0 (14.0, 6.0, 31.0, 7.0) 0.590909090909 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,B) 0.0 (14.0, 7.0, 30.0, 7.0) 0.590909090909 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- somenot12(B,C) [0.454545454545]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.454545454545
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.363636363636
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.363636363636
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.311688311688
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.272727272727
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.19696969697
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- some12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.0
+[DEBUG] rnvc12(A,B) :- somenot12(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- somenot12(B,C), some12(C,A) 0.590909090909 (14.0, 1.0, 36.0, 7.0) 0.590909090909 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- somenot12(B,C), some12(C,A) (0.5909090909090909, 14.0) > (0.45454545454545453, 16.0)
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.530303030303 (16.0, 3.0, 34.0, 5.0) 0.795454545455 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.530303030303 (16.0, 3.0, 34.0, 5.0) 0.795454545455 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.530303030303 (16.0, 3.0, 34.0, 5.0) 0.795454545455 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.436363636364 (15.0, 3.0, 34.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.436363636364 (15.0, 3.0, 34.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.436363636364 (15.0, 3.0, 34.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.436363636364 (15.0, 3.0, 34.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.436363636364 (15.0, 3.0, 34.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.436363636364 (15.0, 3.0, 34.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.363636363636 (15.0, 4.0, 33.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.363636363636 (15.0, 4.0, 33.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.363636363636 (15.0, 4.0, 33.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.363636363636 (15.0, 4.0, 33.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.311688311688 (15.0, 5.0, 32.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.311688311688 (15.0, 5.0, 32.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.311688311688 (15.0, 5.0, 32.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.311688311688 (15.0, 5.0, 32.0, 6.0) 0.727272727273 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.311688311688 (15.0, 5.0, 32.0, 6.0) 0.727272727273 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- somenot12(B,C), some12(C,A) [0.590909090909]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), some12(C,A) 0.590909090909
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.530303030303
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.530303030303
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.530303030303
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.436363636364
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.436363636364
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.436363636364
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.436363636364
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.436363636364
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.436363636364
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.363636363636
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.363636363636
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.363636363636
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.363636363636
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.311688311688
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.311688311688
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.311688311688
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.311688311688
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.311688311688
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- somenot12(B,C), some12(C,A) 0.862068965517
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.162790697674]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.162790697674
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.193798449612 (15.0, 5.0, 32.0, 6.0) 0.581395348837 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.1937984496124031, 15.0) > (0.16279069767441862, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.166112956811 (15.0, 6.0, 31.0, 6.0) 0.581395348837 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.308970099668 (16.0, 5.0, 32.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.30897009966777406, 16.0) > (0.1937984496124031, 15.0)
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.360465116279 (16.0, 4.0, 33.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C) (0.36046511627906974, 16.0) > (0.30897009966777406, 16.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.360465116279 (16.0, 4.0, 33.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.270348837209 (16.0, 6.0, 31.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.360465116279 (16.0, 4.0, 33.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.166112956811 (15.0, 6.0, 31.0, 6.0) 0.581395348837 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,B) 0.0 (15.0, 7.0, 30.0, 6.0) 0.581395348837 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(A,C) [0.360465116279]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.360465116279
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.360465116279
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.360465116279
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.308970099668
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.270348837209
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.193798449612
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.166112956811
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.166112956811
+[DEBUG] rnvc12(A,B) :- somenot12(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(A,C), somenot12(C,B) 0.581395348837 (15.0, 1.0, 36.0, 6.0) 0.581395348837 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(A,C), somenot12(C,B) (0.5813953488372093, 15.0) > (0.36046511627906974, 16.0)
+[LVL9] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.432558139535 (16.0, 3.0, 34.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.360465116279 (16.0, 4.0, 33.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.360465116279 (16.0, 4.0, 33.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.360465116279 (16.0, 4.0, 33.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.360465116279 (16.0, 4.0, 33.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.308970099668 (16.0, 5.0, 32.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.308970099668 (16.0, 5.0, 32.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.308970099668 (16.0, 5.0, 32.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.308970099668 (16.0, 5.0, 32.0, 5.0) 0.720930232558 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.308970099668 (16.0, 5.0, 32.0, 5.0) 0.720930232558 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(A,C), somenot12(C,B) [0.581395348837]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(A,C), somenot12(C,B) 0.581395348837
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+all12(C,B) 0.432558139535
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(C,B) 0.432558139535
+[DEBUG] rnvc12(A,B) :- no12(A,C), \+no12(B,C) 0.432558139535
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.432558139535
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.432558139535
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.432558139535
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.432558139535
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.432558139535
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.432558139535
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.360465116279
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.360465116279
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.360465116279
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.360465116279
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.308970099668
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.308970099668
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.308970099668
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.308970099668
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.308970099668
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(A,C), somenot12(C,B) 0.879310344828
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.142857142857]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.142857142857
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.190476190476 (16.0, 5.0, 32.0, 5.0) 0.571428571429 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.19047619047619047, 16.0) > (0.14285714285714288, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.163265306122 (16.0, 6.0, 31.0, 5.0) 0.571428571429 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.30612244898 (17.0, 5.0, 32.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.30612244897959184, 17.0) > (0.19047619047619047, 16.0)
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.228571428571 (16.0, 4.0, 33.0, 5.0) 0.571428571429 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.357142857143 (17.0, 4.0, 33.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C) (0.35714285714285715, 17.0) > (0.30612244897959184, 17.0)
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.267857142857 (17.0, 6.0, 31.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.357142857143 (17.0, 4.0, 33.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.163265306122 (16.0, 6.0, 31.0, 5.0) 0.571428571429 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C) [0.357142857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.357142857143
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.357142857143
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.30612244898
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.267857142857
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.228571428571
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.190476190476
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.163265306122
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.163265306122
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(B,C), somenot12(A,C) 0.571428571429 (16.0, 1.0, 36.0, 5.0) 0.571428571429 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C), somenot12(A,C) (0.5714285714285714, 16.0) > (0.35714285714285715, 17.0)
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.428571428571 (17.0, 3.0, 34.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.428571428571 (17.0, 3.0, 34.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.428571428571 (17.0, 3.0, 34.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.428571428571 (17.0, 3.0, 34.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.428571428571 (17.0, 3.0, 34.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.428571428571 (17.0, 3.0, 34.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.357142857143 (17.0, 4.0, 33.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.357142857143 (17.0, 4.0, 33.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.357142857143 (17.0, 4.0, 33.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.357142857143 (17.0, 4.0, 33.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.30612244898 (17.0, 5.0, 32.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.30612244898 (17.0, 5.0, 32.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.30612244898 (17.0, 5.0, 32.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.30612244898 (17.0, 5.0, 32.0, 4.0) 0.714285714286 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.30612244898 (17.0, 5.0, 32.0, 4.0) 0.714285714286 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C), somenot12(A,C) [0.571428571429]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C), somenot12(A,C) 0.571428571429
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(A,C) 0.428571428571
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+some12(C,A) 0.428571428571
+[DEBUG] rnvc12(A,B) :- no12(B,C), \+no12(A,C) 0.428571428571
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.428571428571
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.428571428571
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.428571428571
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.357142857143
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.357142857143
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.357142857143
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.357142857143
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(C,B) 0.30612244898
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+all12(B,C) 0.30612244898
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(C,B) 0.30612244898
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+some12(B,C) 0.30612244898
+[DEBUG] rnvc12(A,B) :- somenot12(A,C), \+somenot12(C,B) 0.30612244898
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(B,C), somenot12(A,C) 0.896551724138
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.121951219512]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.121951219512
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.186991869919 (17.0, 5.0, 32.0, 4.0) 0.560975609756 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.1869918699186992, 17.0) > (0.12195121951219512, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.160278745645 (17.0, 6.0, 31.0, 4.0) 0.560975609756 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.303135888502 (18.0, 5.0, 32.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.30313588850174217, 18.0) > (0.1869918699186992, 17.0)
+[LVL9] rnvc12(A,B) :- no12(A,C) 0.224390243902 (17.0, 4.0, 33.0, 4.0) 0.560975609756 [ACCEPT]
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.224390243902 (17.0, 4.0, 33.0, 4.0) 0.560975609756 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.160278745645 (17.0, 6.0, 31.0, 4.0) 0.560975609756 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.353658536585 (18.0, 4.0, 33.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- somenot12(B,C) (0.3536585365853659, 18.0) > (0.30313588850174217, 18.0)
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.160278745645 (17.0, 6.0, 31.0, 4.0) 0.560975609756 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- somenot12(B,C) [0.353658536585]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.353658536585
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.303135888502
+[DEBUG] rnvc12(A,B) :- no12(A,C) 0.224390243902
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.224390243902
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.186991869919
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.160278745645
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.160278745645
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.160278745645
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- somenot12(B,C), no12(A,C) 0.560975609756 (17.0, 1.0, 36.0, 4.0) 0.560975609756 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- somenot12(B,C), no12(A,C) (0.5609756097560976, 17.0) > (0.3536585365853659, 18.0)
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.424390243902 (18.0, 3.0, 34.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.424390243902 (18.0, 3.0, 34.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.424390243902 (18.0, 3.0, 34.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.353658536585 (18.0, 4.0, 33.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.353658536585 (18.0, 4.0, 33.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.353658536585 (18.0, 4.0, 33.0, 3.0) 0.707317073171 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.353658536585 (18.0, 4.0, 33.0, 3.0) 0.707317073171 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- somenot12(B,C), no12(A,C) [0.560975609756]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), no12(A,C) 0.560975609756
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+all12(C,A) 0.424390243902
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+some12(A,C) 0.424390243902
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), \+somenot12(C,A) 0.424390243902
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.353658536585
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.353658536585
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.353658536585
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.353658536585
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- somenot12(B,C), no12(A,C) 0.913793103448
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(A,C) 0.183333333333 (18.0, 5.0, 32.0, 3.0) 0.55 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(A,C) (0.18333333333333335, 18.0) > (0.0, 21.0)
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.157142857143 (18.0, 6.0, 31.0, 3.0) 0.55 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.3 (19.0, 5.0, 32.0, 2.0) 0.7 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.3, 19.0) > (0.18333333333333335, 18.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.22 (18.0, 4.0, 33.0, 3.0) 0.55 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.157142857143 (18.0, 6.0, 31.0, 3.0) 0.55 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.22 (18.0, 4.0, 33.0, 3.0) 0.55 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.157142857143 (18.0, 6.0, 31.0, 3.0) 0.55 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- some12(B,C) [0.3]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.3
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.22
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.22
+[DEBUG] rnvc12(A,B) :- all12(A,C) 0.183333333333
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.157142857143
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.157142857143
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.157142857143
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- some12(B,C), all12(A,C) 0.55 (18.0, 1.0, 36.0, 3.0) 0.55 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C), all12(A,C) (0.55, 18.0) > (0.3, 19.0)
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.35 (19.0, 4.0, 33.0, 2.0) 0.7 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.35 (19.0, 4.0, 33.0, 2.0) 0.7 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.35 (19.0, 4.0, 33.0, 2.0) 0.7 [ACCEPT]
+[LVL9] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.35 (19.0, 4.0, 33.0, 2.0) 0.7 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- some12(B,C), all12(A,C) [0.55]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- some12(B,C), all12(A,C) 0.55
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(A,C) 0.35
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+some12(C,A) 0.35
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(A,C) 0.35
+[DEBUG] rnvc12(A,B) :- some12(B,C), \+somenot12(C,A) 0.35
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- some12(B,C), all12(A,C) 0.931034482759
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.0769230769231]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.0769230769231
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.153846153846 (19.0, 6.0, 31.0, 2.0) 0.538461538462 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(C,A) (0.15384615384615383, 19.0) > (0.07692307692307693, 21.0)
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.179487179487 (19.0, 5.0, 32.0, 2.0) 0.538461538462 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.1794871794871795, 19.0) > (0.15384615384615383, 19.0)
+[LVL9] rnvc12(A,B) :- no12(B,C) 0.215384615385 (19.0, 4.0, 33.0, 2.0) 0.538461538462 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C) (0.21538461538461537, 19.0) > (0.1794871794871795, 19.0)
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.153846153846 (19.0, 6.0, 31.0, 2.0) 0.538461538462 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.215384615385 (19.0, 4.0, 33.0, 2.0) 0.538461538462 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(C,A) 0.153846153846 (19.0, 6.0, 31.0, 2.0) 0.538461538462 [ACCEPT]
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C) [0.215384615385]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C) 0.215384615385
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.215384615385
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.179487179487
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.153846153846
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.153846153846
+[DEBUG] rnvc12(A,B) :- somenot12(C,A) 0.153846153846
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- no12(B,C), somenot12(C,A) 0.538461538462 (19.0, 1.0, 36.0, 2.0) 0.538461538462 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- no12(B,C), somenot12(C,A) (0.5384615384615384, 19.0) > (0.21538461538461537, 19.0)
+[DEBUG] Best rule so far: rnvc12(A,B) :- no12(B,C), somenot12(C,A) [0.538461538462]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- no12(B,C), somenot12(C,A) 0.538461538462
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- no12(B,C), somenot12(C,A) 0.948275862069
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.0526315789474]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.0526315789474
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.15037593985 (20.0, 6.0, 31.0, 1.0) 0.526315789474 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(C,A) (0.15037593984962405, 20.0) > (0.052631578947368425, 21.0)
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.175438596491 (20.0, 5.0, 32.0, 1.0) 0.526315789474 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.17543859649122806, 20.0) > (0.15037593984962405, 20.0)
+[LVL9] rnvc12(A,B) :- somenot12(A,C) 0.15037593985 (20.0, 6.0, 31.0, 1.0) 0.526315789474 [ACCEPT]
+[LVL9] rnvc12(A,B) :- somenot12(B,C) 0.210526315789 (20.0, 4.0, 33.0, 1.0) 0.526315789474 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- somenot12(B,C) (0.21052631578947367, 20.0) > (0.17543859649122806, 20.0)
+[DEBUG] Best rule so far: rnvc12(A,B) :- somenot12(B,C) [0.210526315789]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- somenot12(B,C) 0.210526315789
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.175438596491
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.15037593985
+[DEBUG] rnvc12(A,B) :- somenot12(A,C) 0.15037593985
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- somenot12(B,C), somenot12(A,C) 0.526315789474 (20.0, 1.0, 36.0, 1.0) 0.526315789474 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- somenot12(B,C), somenot12(A,C) (0.5263157894736842, 20.0) > (0.21052631578947367, 20.0)
+[DEBUG] Best rule so far: rnvc12(A,B) :- somenot12(B,C), somenot12(A,C) [0.526315789474]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- somenot12(B,C), somenot12(A,C) 0.526315789474
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- somenot12(B,C), somenot12(A,C) 0.965517241379
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- all12(C,A) 0.146718146718 (21.0, 6.0, 31.0, 0.0) 0.513513513514 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- all12(C,A) (0.1467181467181467, 21.0) > (0.0, 21.0)
+[LVL9] rnvc12(A,B) :- some12(B,C) 0.171171171171 (21.0, 5.0, 32.0, 0.0) 0.513513513514 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C) (0.17117117117117117, 21.0) > (0.1467181467181467, 21.0)
+[DEBUG] Best rule so far: rnvc12(A,B) :- some12(B,C) [0.171171171171]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- some12(B,C) 0.171171171171
+[DEBUG] rnvc12(A,B) :- all12(C,A) 0.146718146718
+[DEBUG] ==================================
+[LVL9] rnvc12(A,B) :- some12(B,C), all12(C,A) 0.513513513514 (21.0, 1.0, 36.0, 0.0) 0.513513513514 [ACCEPT]
+[LVL9] BETTER RULE rnvc12(A,B) :- some12(B,C), all12(C,A) (0.5135135135135135, 21.0) > (0.17117117117117117, 21.0)
+[DEBUG] Best rule so far: rnvc12(A,B) :- some12(B,C), all12(C,A) [0.513513513514]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- some12(B,C), all12(C,A) 0.513513513514
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- some12(B,C), all12(C,A) 0.98275862069
+[DEBUG] Best rule so far: rnvc12(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc12(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc12(A,B) :- true 0.98275862069

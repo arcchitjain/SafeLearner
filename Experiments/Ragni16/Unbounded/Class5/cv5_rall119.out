@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_119.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rall119.log
+              target:	rall119/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall119(A,B) :- no119(C,B), \+all119(C,A), \+no119(A,C), \+no119(C,A), \+some119(A,C), \+somenot119(A,C), \+somenot119(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.943396226415
+           Precision:	 1.0
+              Recall:	 0.25
+================== STATISTICS ==================
+    Rule evaluations:	21109
+          Total time:	411.6816s

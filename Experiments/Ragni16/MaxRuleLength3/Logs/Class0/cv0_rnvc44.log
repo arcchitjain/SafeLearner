@@ -1,0 +1,317 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.398606742833
+[INFO] Computing scores: 0.0296s
+[INFO] Number of examples (M): 58
+[INFO] Positive weight (P): 29.0000
+[INFO] Negative weight (N): 29.0000
+[DEBUG] Best rule so far: rnvc44(A,B) :- true [0.5]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- true 0.5
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- all44(A,C) 0.0 (2.0, 6.0, 23.0, 27.0) 0.833333333333 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(B,C) 0.0 (1.0, 6.0, 23.0, 28.0) 0.75 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A) 0.0 (2.0, 5.0, 24.0, 27.0) 0.833333333333 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,B) 0.0 (1.0, 6.0, 23.0, 28.0) 0.75 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C) 0.5 (4.0, 4.0, 25.0, 25.0) 0.9 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(B,C) 0.5 (3.0, 3.0, 26.0, 26.0) 0.875 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,A) 0.5 (3.0, 3.0, 26.0, 26.0) 0.875 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,B) 0.722222222222 (6.0, 2.0, 27.0, 23.0) 0.928571428571 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(C,B) (0.7222222222222222, 6.0) > (0.5, 29.0)
+[LVL9] rnvc44(A,B) :- no44(A,C) 0.0 (3.0, 5.0, 24.0, 26.0) 0.875 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C) 0.0 (3.0, 5.0, 24.0, 26.0) 0.875 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A) 0.5625 (4.0, 3.0, 26.0, 25.0) 0.9 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B) 0.0 (3.0, 5.0, 24.0, 26.0) 0.875 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(A,C) 0.8125 (6.0, 1.0, 28.0, 23.0) 0.928571428571 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- somenot44(A,C) (0.8125, 6.0) > (0.7222222222222222, 6.0)
+[LVL9] rnvc44(A,B) :- somenot44(B,C) 0.8125 (6.0, 1.0, 28.0, 23.0) 0.928571428571 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A) 0.6875 (5.0, 2.0, 27.0, 24.0) 0.916666666667 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,B) 0.8125 (6.0, 1.0, 28.0, 23.0) 0.928571428571 [ACCEPT]
+[DEBUG] Best rule so far: rnvc44(A,B) :- somenot44(A,C) [0.8125]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- somenot44(A,C) 0.8125
+[DEBUG] rnvc44(A,B) :- somenot44(B,C) 0.8125
+[DEBUG] rnvc44(A,B) :- somenot44(C,B) 0.8125
+[DEBUG] rnvc44(A,B) :- some44(C,B) 0.722222222222
+[DEBUG] rnvc44(A,B) :- somenot44(C,A) 0.6875
+[DEBUG] rnvc44(A,B) :- no44(C,A) 0.5625
+[DEBUG] rnvc44(A,B) :- some44(A,C) 0.5
+[DEBUG] rnvc44(A,B) :- some44(B,C) 0.5
+[DEBUG] rnvc44(A,B) :- some44(C,A) 0.5
+[DEBUG] rnvc44(A,B) :- no44(A,C) 0.0
+[DEBUG] rnvc44(A,B) :- no44(B,C) 0.0
+[DEBUG] rnvc44(A,B) :- no44(C,B) 0.0
+[DEBUG] rnvc44(A,B) :- all44(A,C) 0.0
+[DEBUG] rnvc44(A,B) :- all44(C,A) 0.0
+[DEBUG] rnvc44(A,B) :- all44(B,C) 0.0
+[DEBUG] rnvc44(A,B) :- all44(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- somenot44(A,C), \+no44(B,C) 0.928571428571 (6.0, 0.0, 29.0, 23.0) 0.928571428571 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc44(A,B) :- somenot44(A,C), \+no44(B,C) (0.9285714285714286, 6.0) > (0.8125, 6.0)
+[INFO] RULE LEARNED: rnvc44(A,B) :- somenot44(A,C), \+no44(B,C) 0.603448275862
+[DEBUG] Best rule so far: rnvc44(A,B) :- true [0.442307692308]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- true 0.442307692308
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- all44(A,C) 0.0 (8.0, 6.0, 23.0, 21.0) 0.814102564103 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(B,C) 0.0 (7.0, 6.0, 23.0, 22.0) 0.721153846154 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A) 0.0 (8.0, 5.0, 24.0, 21.0) 0.814102564103 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C) 0.49358974359 (10.0, 4.0, 25.0, 19.0) 0.888461538462 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(A,C) (0.4935897435897436, 10.0) > (0.44230769230769235, 29.0)
+[LVL9] rnvc44(A,B) :- some44(B,C) 0.0 (8.0, 3.0, 26.0, 21.0) 0.814102564103 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,A) 0.491758241758 (9.0, 3.0, 26.0, 20.0) 0.860576923077 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,B) 0.680288461538 (11.0, 2.0, 27.0, 18.0) 0.907051282051 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(C,B) (0.6802884615384616, 11.0) > (0.4935897435897436, 10.0)
+[LVL9] rnvc44(A,B) :- no44(A,C) 0.0 (9.0, 5.0, 24.0, 20.0) 0.860576923077 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C) 0.0 (9.0, 5.0, 24.0, 20.0) 0.860576923077 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A) 0.555288461538 (10.0, 3.0, 26.0, 19.0) 0.888461538462 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B) 0.0 (8.0, 5.0, 24.0, 21.0) 0.814102564103 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(B,C) 0.777472527473 (11.0, 1.0, 28.0, 18.0) 0.907051282051 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- somenot44(B,C) (0.7774725274725275, 11.0) > (0.6802884615384616, 11.0)
+[LVL9] rnvc44(A,B) :- somenot44(C,A) 0.680288461538 (11.0, 2.0, 27.0, 18.0) 0.907051282051 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,B) 0.777472527473 (11.0, 1.0, 28.0, 18.0) 0.907051282051 [ACCEPT]
+[DEBUG] Best rule so far: rnvc44(A,B) :- somenot44(B,C) [0.777472527473]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- somenot44(B,C) 0.777472527473
+[DEBUG] rnvc44(A,B) :- somenot44(C,B) 0.777472527473
+[DEBUG] rnvc44(A,B) :- some44(C,B) 0.680288461538
+[DEBUG] rnvc44(A,B) :- somenot44(C,A) 0.680288461538
+[DEBUG] rnvc44(A,B) :- no44(C,A) 0.555288461538
+[DEBUG] rnvc44(A,B) :- some44(A,C) 0.49358974359
+[DEBUG] rnvc44(A,B) :- some44(C,A) 0.491758241758
+[DEBUG] rnvc44(A,B) :- no44(A,C) 0.0
+[DEBUG] rnvc44(A,B) :- no44(B,C) 0.0
+[DEBUG] rnvc44(A,B) :- all44(A,C) 0.0
+[DEBUG] rnvc44(A,B) :- all44(C,A) 0.0
+[DEBUG] rnvc44(A,B) :- some44(B,C) 0.0
+[DEBUG] rnvc44(A,B) :- no44(C,B) 0.0
+[DEBUG] rnvc44(A,B) :- all44(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- somenot44(B,C), \+some44(A,C) 0.907051282051 (11.0, 0.0, 29.0, 18.0) 0.907051282051 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rnvc44(A,B) :- somenot44(B,C), \+some44(A,C) (0.907051282051282, 11.0) > (0.7774725274725275, 11.0)
+[INFO] RULE LEARNED: rnvc44(A,B) :- somenot44(B,C), \+some44(A,C) 0.689655172414
+[DEBUG] Best rule so far: rnvc44(A,B) :- true [0.382978723404]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- true 0.382978723404
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- all44(A,C) 0.0 (12.0, 6.0, 23.0, 17.0) 0.691489361702 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(B,C) 0.0 (12.0, 6.0, 23.0, 17.0) 0.691489361702 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A) 0.0 (13.0, 5.0, 24.0, 16.0) 0.794326241135 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C) 0.486997635934 (15.0, 4.0, 25.0, 14.0) 0.876595744681 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(A,C) (0.48699763593380613, 15.0) > (0.3829787234042554, 29.0)
+[LVL9] rnvc44(A,B) :- some44(B,C) 0.397163120567 (13.0, 3.0, 26.0, 16.0) 0.794326241135 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,A) 0.397163120567 (13.0, 3.0, 26.0, 16.0) 0.794326241135 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,B) 0.672872340426 (16.0, 2.0, 27.0, 13.0) 0.897163120567 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(C,B) (0.6728723404255319, 16.0) > (0.48699763593380613, 15.0)
+[LVL9] rnvc44(A,B) :- no44(A,C) 0.0 (13.0, 5.0, 24.0, 16.0) 0.794326241135 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C) 0.0 (14.0, 5.0, 24.0, 15.0) 0.845744680851 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A) 0.483282674772 (14.0, 3.0, 26.0, 15.0) 0.845744680851 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B) 0.0 (13.0, 5.0, 24.0, 16.0) 0.794326241135 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A) 0.626139817629 (15.0, 2.0, 27.0, 14.0) 0.876595744681 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,B) 0.768996960486 (16.0, 1.0, 28.0, 13.0) 0.897163120567 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- somenot44(C,B) (0.7689969604863222, 16.0) > (0.6728723404255319, 16.0)
+[DEBUG] Best rule so far: rnvc44(A,B) :- somenot44(C,B) [0.768996960486]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- somenot44(C,B) 0.768996960486
+[DEBUG] rnvc44(A,B) :- some44(C,B) 0.672872340426
+[DEBUG] rnvc44(A,B) :- somenot44(C,A) 0.626139817629
+[DEBUG] rnvc44(A,B) :- some44(A,C) 0.486997635934
+[DEBUG] rnvc44(A,B) :- no44(C,A) 0.483282674772
+[DEBUG] rnvc44(A,B) :- some44(B,C) 0.397163120567
+[DEBUG] rnvc44(A,B) :- some44(C,A) 0.397163120567
+[DEBUG] rnvc44(A,B) :- no44(B,C) 0.0
+[DEBUG] rnvc44(A,B) :- all44(C,A) 0.0
+[DEBUG] rnvc44(A,B) :- no44(A,C) 0.0
+[DEBUG] rnvc44(A,B) :- no44(C,B) 0.0
+[DEBUG] rnvc44(A,B) :- all44(A,C) 0.0
+[DEBUG] rnvc44(A,B) :- all44(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- somenot44(C,B), \+all44(C,A) 0.897163120567 (16.0, 0.0, 29.0, 13.0) 0.897163120567 [REJECT* fp] 11.0
+[LVL9] BETTER RULE rnvc44(A,B) :- somenot44(C,B), \+all44(C,A) (0.8971631205673759, 16.0) > (0.7689969604863222, 16.0)
+[INFO] RULE LEARNED: rnvc44(A,B) :- somenot44(C,B), \+all44(C,A) 0.775862068966
+[DEBUG] Best rule so far: rnvc44(A,B) :- true [0.309523809524]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- true 0.309523809524
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- all44(B,C) 0.0 (17.0, 6.0, 23.0, 12.0) 0.654761904762 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A) 0.0 (18.0, 5.0, 24.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C) 0.41369047619 (19.0, 4.0, 25.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(A,C) (0.41369047619047616, 19.0) > (0.30952380952380953, 29.0)
+[LVL9] rnvc44(A,B) :- some44(B,C) 0.384920634921 (18.0, 3.0, 26.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,A) 0.384920634921 (18.0, 3.0, 26.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,B) 0.66369047619 (21.0, 2.0, 27.0, 8.0) 0.884920634921 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(C,B) (0.6636904761904762, 21.0) > (0.41369047619047616, 19.0)
+[LVL9] rnvc44(A,B) :- no44(B,C) 0.367724867725 (19.0, 5.0, 24.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A) 0.384920634921 (18.0, 3.0, 26.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B) 0.0 (18.0, 5.0, 24.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A) 0.551587301587 (19.0, 2.0, 27.0, 10.0) 0.827380952381 [ACCEPT]
+[DEBUG] Best rule so far: rnvc44(A,B) :- some44(C,B) [0.66369047619]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- some44(C,B) 0.66369047619
+[DEBUG] rnvc44(A,B) :- somenot44(C,A) 0.551587301587
+[DEBUG] rnvc44(A,B) :- some44(A,C) 0.41369047619
+[DEBUG] rnvc44(A,B) :- some44(B,C) 0.384920634921
+[DEBUG] rnvc44(A,B) :- some44(C,A) 0.384920634921
+[DEBUG] rnvc44(A,B) :- no44(C,A) 0.384920634921
+[DEBUG] rnvc44(A,B) :- no44(B,C) 0.367724867725
+[DEBUG] rnvc44(A,B) :- all44(C,A) 0.0
+[DEBUG] rnvc44(A,B) :- no44(C,B) 0.0
+[DEBUG] rnvc44(A,B) :- all44(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- some44(C,B), \+all44(A,C) 0.758503401361 (21.0, 1.0, 28.0, 8.0) 0.884920634921 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(C,B), \+all44(A,C) (0.7585034013605442, 21.0) > (0.6636904761904762, 21.0)
+[LVL9] rnvc44(A,B) :- some44(C,B), \+no44(C,A) 0.758503401361 (21.0, 1.0, 28.0, 8.0) 0.884920634921 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A), \+all44(C,B) 0.661904761905 (19.0, 1.0, 28.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A), \+all44(B,C) 0.661904761905 (19.0, 1.0, 28.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+all44(C,B) 0.472789115646 (19.0, 3.0, 26.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+no44(C,B) 0.472789115646 (19.0, 3.0, 26.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+no44(B,C) 0.472789115646 (19.0, 3.0, 26.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+somenot44(B,C) 0.472789115646 (19.0, 3.0, 26.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(B,C), \+all44(A,C) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(B,C), \+all44(C,A) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(B,C), \+no44(A,C) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,A), \+all44(C,B) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,A), \+all44(B,C) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(C,A), \+no44(C,B) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A), \+all44(B,C) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A), \+some44(C,B) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A), \+no44(C,B) 0.461904761905 (18.0, 2.0, 27.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+all44(A,C) 0.41369047619 (19.0, 4.0, 25.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+all44(C,A) 0.41369047619 (19.0, 4.0, 25.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+some44(A,C) 0.41369047619 (19.0, 4.0, 25.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+no44(A,C) 0.41369047619 (19.0, 4.0, 25.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+somenot44(A,C) 0.41369047619 (19.0, 4.0, 25.0, 10.0) 0.827380952381 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A), \+all44(C,B) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A), \+all44(B,C) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A), \+some44(B,C) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A), \+no44(B,C) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A), \+somenot44(C,B) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+all44(A,C) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+some44(A,C) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+some44(C,A) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+no44(A,C) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+no44(C,A) 0.329931972789 (18.0, 4.0, 25.0, 11.0) 0.769841269841 [ACCEPT]
+[DEBUG] Best rule so far: rnvc44(A,B) :- some44(C,B), \+all44(A,C) [0.758503401361]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- some44(C,B), \+all44(A,C) 0.758503401361
+[DEBUG] rnvc44(A,B) :- some44(C,B), \+no44(C,A) 0.758503401361
+[DEBUG] rnvc44(A,B) :- somenot44(C,A), \+all44(C,B) 0.661904761905
+[DEBUG] rnvc44(A,B) :- somenot44(C,A), \+all44(B,C) 0.661904761905
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+all44(C,B) 0.472789115646
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+no44(C,B) 0.472789115646
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+no44(B,C) 0.472789115646
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+somenot44(B,C) 0.472789115646
+[DEBUG] rnvc44(A,B) :- some44(B,C), \+all44(A,C) 0.461904761905
+[DEBUG] rnvc44(A,B) :- some44(B,C), \+all44(C,A) 0.461904761905
+[DEBUG] rnvc44(A,B) :- some44(B,C), \+no44(A,C) 0.461904761905
+[DEBUG] rnvc44(A,B) :- some44(C,A), \+all44(C,B) 0.461904761905
+[DEBUG] rnvc44(A,B) :- some44(C,A), \+all44(B,C) 0.461904761905
+[DEBUG] rnvc44(A,B) :- some44(C,A), \+no44(C,B) 0.461904761905
+[DEBUG] rnvc44(A,B) :- no44(C,A), \+all44(B,C) 0.461904761905
+[DEBUG] rnvc44(A,B) :- no44(C,A), \+some44(C,B) 0.461904761905
+[DEBUG] rnvc44(A,B) :- no44(C,A), \+no44(C,B) 0.461904761905
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+all44(A,C) 0.41369047619
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+all44(C,A) 0.41369047619
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+some44(A,C) 0.41369047619
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+no44(A,C) 0.41369047619
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+somenot44(A,C) 0.41369047619
+[DEBUG] rnvc44(A,B) :- all44(C,A), \+all44(C,B) 0.329931972789
+[DEBUG] rnvc44(A,B) :- all44(C,A), \+all44(B,C) 0.329931972789
+[DEBUG] rnvc44(A,B) :- all44(C,A), \+some44(B,C) 0.329931972789
+[DEBUG] rnvc44(A,B) :- all44(C,A), \+no44(B,C) 0.329931972789
+[DEBUG] rnvc44(A,B) :- all44(C,A), \+somenot44(C,B) 0.329931972789
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+all44(A,C) 0.329931972789
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+some44(A,C) 0.329931972789
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+some44(C,A) 0.329931972789
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+no44(A,C) 0.329931972789
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+no44(C,A) 0.329931972789
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc44(A,B) :- some44(C,B), \+all44(A,C) 0.844827586207
+[DEBUG] Best rule so far: rnvc44(A,B) :- true [0.222222222222]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- true 0.222222222222
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- all44(B,C) 0.0 (22.0, 7.0, 22.0, 7.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc44(A,B) :- all44(C,A) 0.0 (22.0, 6.0, 23.0, 7.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C) 0.31746031746 (23.0, 5.0, 24.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(A,C) (0.3174603174603175, 23.0) > (0.2222222222222222, 29.0)
+[LVL9] rnvc44(A,B) :- some44(B,C) 0.37037037037 (23.0, 4.0, 25.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- some44(B,C) (0.3703703703703704, 23.0) > (0.3174603174603175, 23.0)
+[LVL9] rnvc44(A,B) :- some44(C,A) 0.244444444444 (22.0, 4.0, 25.0, 7.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C) 0.358024691358 (24.0, 6.0, 23.0, 5.0) 0.805555555556 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A) 0.444444444444 (23.0, 3.0, 26.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- no44(C,A) (0.4444444444444445, 23.0) > (0.3703703703703704, 23.0)
+[LVL9] rnvc44(A,B) :- no44(C,B) 0.277777777778 (23.0, 6.0, 23.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A) 0.444444444444 (23.0, 3.0, 26.0, 6.0) 0.740740740741 [ACCEPT]
+[DEBUG] Best rule so far: rnvc44(A,B) :- no44(C,A) [0.444444444444]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- no44(C,A) 0.444444444444
+[DEBUG] rnvc44(A,B) :- somenot44(C,A) 0.444444444444
+[DEBUG] rnvc44(A,B) :- some44(B,C) 0.37037037037
+[DEBUG] rnvc44(A,B) :- no44(B,C) 0.358024691358
+[DEBUG] rnvc44(A,B) :- some44(A,C) 0.31746031746
+[DEBUG] rnvc44(A,B) :- no44(C,B) 0.277777777778
+[DEBUG] rnvc44(A,B) :- some44(C,A) 0.244444444444
+[DEBUG] rnvc44(A,B) :- all44(B,C) 0.0
+[DEBUG] rnvc44(A,B) :- all44(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc44(A,B) :- no44(C,A), some44(B,C) 0.611111111111 (22.0, 1.0, 28.0, 7.0) 0.611111111111 [ACCEPT]
+[LVL9] BETTER RULE rnvc44(A,B) :- no44(C,A), some44(B,C) (0.6111111111111112, 22.0) > (0.4444444444444445, 23.0)
+[LVL9] rnvc44(A,B) :- no44(C,A), \+all44(B,C) 0.555555555556 (23.0, 2.0, 27.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,A), \+no44(C,B) 0.555555555556 (23.0, 2.0, 27.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A), \+all44(C,B) 0.555555555556 (23.0, 2.0, 27.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- somenot44(C,A), \+all44(B,C) 0.555555555556 (23.0, 2.0, 27.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(B,C), \+all44(A,C) 0.444444444444 (23.0, 3.0, 26.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(B,C), \+all44(C,A) 0.444444444444 (23.0, 3.0, 26.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(B,C), \+no44(A,C) 0.444444444444 (23.0, 3.0, 26.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+all44(A,C) 0.402777777778 (24.0, 5.0, 24.0, 5.0) 0.805555555556 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+all44(C,A) 0.402777777778 (24.0, 5.0, 24.0, 5.0) 0.805555555556 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+some44(A,C) 0.402777777778 (24.0, 5.0, 24.0, 5.0) 0.805555555556 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+no44(A,C) 0.402777777778 (24.0, 5.0, 24.0, 5.0) 0.805555555556 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(B,C), \+somenot44(A,C) 0.402777777778 (24.0, 5.0, 24.0, 5.0) 0.805555555556 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+all44(C,B) 0.37037037037 (23.0, 4.0, 25.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+no44(C,B) 0.37037037037 (23.0, 4.0, 25.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+no44(B,C) 0.37037037037 (23.0, 4.0, 25.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- some44(A,C), \+somenot44(B,C) 0.37037037037 (23.0, 4.0, 25.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+all44(A,C) 0.31746031746 (23.0, 5.0, 24.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+some44(A,C) 0.31746031746 (23.0, 5.0, 24.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+some44(C,A) 0.31746031746 (23.0, 5.0, 24.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+no44(A,C) 0.31746031746 (23.0, 5.0, 24.0, 6.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc44(A,B) :- no44(C,B), \+no44(C,A) 0.31746031746 (23.0, 5.0, 24.0, 6.0) 0.740740740741 [ACCEPT]
+[DEBUG] Best rule so far: rnvc44(A,B) :- no44(C,A), some44(B,C) [0.611111111111]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc44(A,B) :- no44(C,A), some44(B,C) 0.611111111111
+[DEBUG] rnvc44(A,B) :- no44(C,A), \+all44(B,C) 0.555555555556
+[DEBUG] rnvc44(A,B) :- no44(C,A), \+no44(C,B) 0.555555555556
+[DEBUG] rnvc44(A,B) :- somenot44(C,A), \+all44(C,B) 0.555555555556
+[DEBUG] rnvc44(A,B) :- somenot44(C,A), \+all44(B,C) 0.555555555556
+[DEBUG] rnvc44(A,B) :- some44(B,C), \+all44(A,C) 0.444444444444
+[DEBUG] rnvc44(A,B) :- some44(B,C), \+all44(C,A) 0.444444444444
+[DEBUG] rnvc44(A,B) :- some44(B,C), \+no44(A,C) 0.444444444444
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+all44(A,C) 0.402777777778
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+all44(C,A) 0.402777777778
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+some44(A,C) 0.402777777778
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+no44(A,C) 0.402777777778
+[DEBUG] rnvc44(A,B) :- no44(B,C), \+somenot44(A,C) 0.402777777778
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+all44(C,B) 0.37037037037
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+no44(C,B) 0.37037037037
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+no44(B,C) 0.37037037037
+[DEBUG] rnvc44(A,B) :- some44(A,C), \+somenot44(B,C) 0.37037037037
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+all44(A,C) 0.31746031746
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+some44(A,C) 0.31746031746
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+some44(C,A) 0.31746031746
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+no44(A,C) 0.31746031746
+[DEBUG] rnvc44(A,B) :- no44(C,B), \+no44(C,A) 0.31746031746
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc44(A,B) :- no44(C,A), some44(B,C) 0.862068965517

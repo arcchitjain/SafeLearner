@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_132.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rsome132.log
+              target:	rsome132/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome132(A,B) :- some132(A,C), \+no132(C,B), \+no132(B,C), \+somenot132(C,B), \+some132(C,B), \+some132(B,C)
+rsome132(A,B) :- somenot132(C,A), all132(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.846153846154
+           Precision:	 1.0
+              Recall:	 0.157894736842
+================== STATISTICS ==================
+    Rule evaluations:	44069
+          Total time:	711.1930s

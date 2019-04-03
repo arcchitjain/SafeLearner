@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_138.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rnvc138.log
+              target:	rnvc138/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc138(A,B) :- no138(A,C), \+all138(C,B), \+some138(C,B), \+some138(B,C), \+somenot138(C,B), \+somenot138(B,C)
+rnvc138(A,B) :- all138(A,C), \+some138(C,B), \+some138(B,C), \+no138(C,B), \+no138(B,C), \+somenot138(C,B), \+somenot138(B,C)
+rnvc138(A,B) :- somenot138(C,A), \+all138(C,B), \+all138(B,C), \+some138(C,B), \+no138(C,B), \+no138(B,C), \+somenot138(B,C)
+rnvc138(A,B) :- some138(A,C), some138(C,B)
+rnvc138(A,B) :- no138(C,B), no138(C,A)
+rnvc138(A,B) :- somenot138(A,C), somenot138(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	15652
+          Total time:	253.1191s

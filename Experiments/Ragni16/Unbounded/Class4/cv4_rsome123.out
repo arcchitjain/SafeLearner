@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_123.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsome123.log
+              target:	rsome123/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome123(A,B) :- all123(B,C), \+all123(A,C), \+all123(C,A), \+no123(C,A), \+some123(A,C), \+somenot123(A,C), \+somenot123(C,A)
+rsome123(A,B) :- all123(C,B), somenot123(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.919642857143
+           Precision:	 1.0
+              Recall:	 0.25
+================== STATISTICS ==================
+    Rule evaluations:	42437
+          Total time:	2170.5374s

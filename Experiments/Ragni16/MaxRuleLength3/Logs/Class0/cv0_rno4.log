@@ -1,0 +1,453 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.49406446329
+[INFO] Computing scores: 0.0686s
+[INFO] Number of examples (M): 114
+[INFO] Positive weight (P): 8.0000
+[INFO] Negative weight (N): 106.0000
+[DEBUG] Best rule so far: rno4(A,B) :- true [0.0701754385965]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno4(A,B) :- true 0.0701754385965
+[DEBUG] ==================================
+[LVL9] rno4(A,B) :- all4(B,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] BETTER RULE rno4(A,B) :- all4(B,C) (0.13801169590643275, 2.0) > (0.07017543859649122, 8.0)
+[LVL9] rno4(A,B) :- all4(C,A) 0.1217750258 (2.0, 14.0, 92.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C) 0.239422084623 (4.0, 12.0, 94.0, 4.0) 0.814035087719 [ACCEPT]
+[LVL9] BETTER RULE rno4(A,B) :- some4(A,C) (0.23942208462332304, 4.0) > (0.13801169590643275, 2.0)
+[LVL9] rno4(A,B) :- some4(C,B) 0.1217750258 (2.0, 14.0, 92.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C) 0.1217750258 (2.0, 14.0, 92.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C) 0.0 (1.0, 15.0, 91.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B) 0.172514619883 (2.0, 9.0, 97.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B) 0.0764411027569 (1.0, 12.0, 94.0, 7.0) 0.535087719298 [ACCEPT]
+[DEBUG] Best rule so far: rno4(A,B) :- some4(A,C) [0.239422084623]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno4(A,B) :- some4(A,C) 0.239422084623
+[DEBUG] rno4(A,B) :- no4(C,B) 0.172514619883
+[DEBUG] rno4(A,B) :- all4(B,C) 0.138011695906
+[DEBUG] rno4(A,B) :- all4(C,A) 0.1217750258
+[DEBUG] rno4(A,B) :- some4(C,B) 0.1217750258
+[DEBUG] rno4(A,B) :- no4(A,C) 0.1217750258
+[DEBUG] rno4(A,B) :- somenot4(C,B) 0.0764411027569
+[DEBUG] rno4(A,B) :- no4(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rno4(A,B) :- some4(A,C), all4(B,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] BETTER RULE rno4(A,B) :- some4(A,C), all4(B,C) (0.3567251461988304, 1.0) > (0.23942208462332304, 4.0)
+[LVL9] rno4(A,B) :- some4(A,C), all4(B,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), all4(D,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), some4(C,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), some4(C,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), some4(D,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), no4(C,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), no4(C,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), no4(D,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), somenot4(C,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), somenot4(C,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), somenot4(D,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+all4(C,B) 0.27134502924 (4.0, 10.0, 96.0, 4.0) 0.814035087719 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+all4(B,C) 0.204678362573 (3.0, 11.0, 95.0, 5.0) 0.767543859649 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+some4(C,B) 0.204678362573 (3.0, 11.0, 95.0, 5.0) 0.767543859649 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+some4(B,C) 0.27134502924 (4.0, 10.0, 96.0, 4.0) 0.814035087719 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+no4(C,B) 0.204678362573 (3.0, 11.0, 95.0, 5.0) 0.767543859649 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+no4(B,C) 0.27134502924 (4.0, 10.0, 96.0, 4.0) 0.814035087719 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+somenot4(C,B) 0.204678362573 (3.0, 11.0, 95.0, 5.0) 0.767543859649 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+somenot4(B,C) 0.27134502924 (4.0, 10.0, 96.0, 4.0) 0.814035087719 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), all4(C,A) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), all4(C,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), all4(D,A) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), some4(A,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), some4(D,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+all4(A,C) 0.188197767145 (2.0, 8.0, 98.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+all4(C,A) 0.10701754386 (1.0, 8.0, 98.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+some4(A,C) 0.10701754386 (1.0, 8.0, 98.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+some4(C,A) 0.20701754386 (2.0, 7.0, 99.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+no4(A,C) 0.20701754386 (2.0, 7.0, 99.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+somenot4(A,C) 0.188197767145 (2.0, 8.0, 98.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+somenot4(C,A) 0.188197767145 (2.0, 8.0, 98.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), all4(C,A) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), all4(C,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), all4(D,A) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), some4(A,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), some4(D,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+all4(A,C) 0.159244264507 (2.0, 10.0, 96.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+all4(C,A) 0.0823211875843 (1.0, 11.0, 95.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+some4(A,C) 0.0823211875843 (1.0, 11.0, 95.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+some4(C,A) 0.159244264507 (2.0, 10.0, 96.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+no4(A,C) 0.159244264507 (2.0, 10.0, 96.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+no4(C,A) 0.147869674185 (2.0, 11.0, 95.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+somenot4(A,C) 0.159244264507 (2.0, 10.0, 96.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+somenot4(C,A) 0.147869674185 (2.0, 11.0, 95.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), all4(B,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), all4(D,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), no4(C,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), no4(D,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+all4(C,B) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+all4(B,C) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+some4(C,B) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+some4(B,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+no4(C,B) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+no4(B,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+somenot4(C,B) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+somenot4(B,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), some4(A,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), some4(D,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), no4(A,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), no4(A,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), no4(D,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+all4(A,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+all4(C,A) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+some4(A,C) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+some4(C,A) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+no4(A,C) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+no4(C,A) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+somenot4(A,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+somenot4(C,A) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), some4(C,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), some4(D,B) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), no4(B,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), no4(B,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+all4(C,B) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+all4(B,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+some4(C,B) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+some4(B,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+no4(C,B) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+no4(B,C) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+somenot4(C,B) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+somenot4(B,C) 0.138011695906 (2.0, 12.0, 94.0, 6.0) 0.690058479532 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), some4(A,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), some4(D,C) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+all4(A,C) 0.0823211875843 (1.0, 11.0, 95.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+all4(C,A) 0.0891812865497 (1.0, 10.0, 96.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+some4(C,A) 0.0891812865497 (1.0, 10.0, 96.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+no4(A,C) 0.0891812865497 (1.0, 10.0, 96.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+no4(C,A) 0.0823211875843 (1.0, 11.0, 95.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+somenot4(A,C) 0.0823211875843 (1.0, 11.0, 95.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+somenot4(C,A) 0.0891812865497 (1.0, 10.0, 96.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), no4(A,D) 0.356725146199 (1.0, 1.0, 105.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+all4(A,C) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+all4(C,A) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+some4(A,C) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+some4(C,A) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+no4(C,A) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+somenot4(A,C) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+somenot4(C,A) 0.0713450292398 (1.0, 13.0, 93.0, 7.0) 0.535087719298 [ACCEPT]
+[DEBUG] Best rule so far: rno4(A,B) :- some4(A,C), all4(B,C) [0.356725146199]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno4(A,B) :- some4(A,C), all4(B,C) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), all4(B,D) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), all4(D,C) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), some4(C,B) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), some4(C,D) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), some4(D,B) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), no4(C,B) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), no4(C,D) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), no4(D,B) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), somenot4(C,B) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), somenot4(C,D) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), somenot4(D,B) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(C,B), all4(C,A) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(C,B), all4(C,D) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(C,B), all4(D,A) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(C,B), some4(A,D) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(C,B), some4(D,C) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(B,C), all4(C,A) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(B,C), all4(C,D) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(B,C), all4(D,A) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(B,C), some4(A,D) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(B,C), some4(D,C) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(C,A), all4(B,D) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(C,A), all4(D,C) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(C,A), no4(C,D) 0.356725146199
+[DEBUG] rno4(A,B) :- all4(C,A), no4(D,B) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(C,B), some4(A,D) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(C,B), some4(D,C) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(C,B), no4(A,C) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(C,B), no4(A,D) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(C,B), no4(D,C) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(A,C), some4(C,D) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(A,C), some4(D,B) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(A,C), no4(B,C) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(A,C), no4(B,D) 0.356725146199
+[DEBUG] rno4(A,B) :- somenot4(C,B), some4(A,D) 0.356725146199
+[DEBUG] rno4(A,B) :- somenot4(C,B), some4(D,C) 0.356725146199
+[DEBUG] rno4(A,B) :- no4(B,C), no4(A,D) 0.356725146199
+[DEBUG] rno4(A,B) :- some4(A,C), \+all4(C,B) 0.27134502924
+[DEBUG] rno4(A,B) :- some4(A,C), \+some4(B,C) 0.27134502924
+[DEBUG] rno4(A,B) :- some4(A,C), \+no4(B,C) 0.27134502924
+[DEBUG] rno4(A,B) :- some4(A,C), \+somenot4(B,C) 0.27134502924
+[DEBUG] rno4(A,B) :- no4(C,B), \+some4(C,A) 0.20701754386
+[DEBUG] rno4(A,B) :- no4(C,B), \+no4(A,C) 0.20701754386
+[DEBUG] rno4(A,B) :- some4(A,C), \+all4(B,C) 0.204678362573
+[DEBUG] rno4(A,B) :- some4(A,C), \+some4(C,B) 0.204678362573
+[DEBUG] rno4(A,B) :- some4(A,C), \+no4(C,B) 0.204678362573
+[DEBUG] rno4(A,B) :- some4(A,C), \+somenot4(C,B) 0.204678362573
+[DEBUG] rno4(A,B) :- no4(C,B), \+all4(A,C) 0.188197767145
+[DEBUG] rno4(A,B) :- no4(C,B), \+somenot4(A,C) 0.188197767145
+[DEBUG] rno4(A,B) :- no4(C,B), \+somenot4(C,A) 0.188197767145
+[DEBUG] rno4(A,B) :- all4(B,C), \+all4(A,C) 0.159244264507
+[DEBUG] rno4(A,B) :- all4(B,C), \+some4(C,A) 0.159244264507
+[DEBUG] rno4(A,B) :- all4(B,C), \+no4(A,C) 0.159244264507
+[DEBUG] rno4(A,B) :- all4(B,C), \+somenot4(A,C) 0.159244264507
+[DEBUG] rno4(A,B) :- all4(B,C), \+no4(C,A) 0.147869674185
+[DEBUG] rno4(A,B) :- all4(B,C), \+somenot4(C,A) 0.147869674185
+[DEBUG] rno4(A,B) :- all4(C,A), \+all4(C,B) 0.138011695906
+[DEBUG] rno4(A,B) :- all4(C,A), \+some4(C,B) 0.138011695906
+[DEBUG] rno4(A,B) :- all4(C,A), \+some4(B,C) 0.138011695906
+[DEBUG] rno4(A,B) :- all4(C,A), \+no4(B,C) 0.138011695906
+[DEBUG] rno4(A,B) :- all4(C,A), \+somenot4(C,B) 0.138011695906
+[DEBUG] rno4(A,B) :- all4(C,A), \+somenot4(B,C) 0.138011695906
+[DEBUG] rno4(A,B) :- some4(C,B), \+all4(A,C) 0.138011695906
+[DEBUG] rno4(A,B) :- some4(C,B), \+all4(C,A) 0.138011695906
+[DEBUG] rno4(A,B) :- some4(C,B), \+some4(C,A) 0.138011695906
+[DEBUG] rno4(A,B) :- some4(C,B), \+no4(C,A) 0.138011695906
+[DEBUG] rno4(A,B) :- some4(C,B), \+somenot4(A,C) 0.138011695906
+[DEBUG] rno4(A,B) :- some4(C,B), \+somenot4(C,A) 0.138011695906
+[DEBUG] rno4(A,B) :- no4(A,C), \+all4(C,B) 0.138011695906
+[DEBUG] rno4(A,B) :- no4(A,C), \+all4(B,C) 0.138011695906
+[DEBUG] rno4(A,B) :- no4(A,C), \+some4(B,C) 0.138011695906
+[DEBUG] rno4(A,B) :- no4(A,C), \+no4(C,B) 0.138011695906
+[DEBUG] rno4(A,B) :- no4(A,C), \+somenot4(C,B) 0.138011695906
+[DEBUG] rno4(A,B) :- no4(A,C), \+somenot4(B,C) 0.138011695906
+[DEBUG] rno4(A,B) :- no4(C,B), \+all4(C,A) 0.10701754386
+[DEBUG] rno4(A,B) :- no4(C,B), \+some4(A,C) 0.10701754386
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+all4(C,A) 0.0891812865497
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+some4(C,A) 0.0891812865497
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+no4(A,C) 0.0891812865497
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+somenot4(C,A) 0.0891812865497
+[DEBUG] rno4(A,B) :- all4(B,C), \+all4(C,A) 0.0823211875843
+[DEBUG] rno4(A,B) :- all4(B,C), \+some4(A,C) 0.0823211875843
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+all4(A,C) 0.0823211875843
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+no4(C,A) 0.0823211875843
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+somenot4(A,C) 0.0823211875843
+[DEBUG] rno4(A,B) :- all4(C,A), \+all4(B,C) 0.0713450292398
+[DEBUG] rno4(A,B) :- all4(C,A), \+no4(C,B) 0.0713450292398
+[DEBUG] rno4(A,B) :- some4(C,B), \+some4(A,C) 0.0713450292398
+[DEBUG] rno4(A,B) :- some4(C,B), \+no4(A,C) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(A,C), \+some4(C,B) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(A,C), \+no4(B,C) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(B,C), \+all4(A,C) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(B,C), \+all4(C,A) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(B,C), \+some4(A,C) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(B,C), \+some4(C,A) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(B,C), \+no4(C,A) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(B,C), \+somenot4(A,C) 0.0713450292398
+[DEBUG] rno4(A,B) :- no4(B,C), \+somenot4(C,A) 0.0713450292398
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno4(A,B) :- some4(A,C), all4(B,C) 0.929824561404
+[DEBUG] Best rule so far: rno4(A,B) :- true [0.0625]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno4(A,B) :- true 0.0625
+[DEBUG] ==================================
+[LVL9] rno4(A,B) :- all4(B,C) 0.0817307692308 (2.0, 12.0, 94.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] BETTER RULE rno4(A,B) :- all4(B,C) (0.08173076923076923, 2.0) > (0.0625, 8.0)
+[LVL9] rno4(A,B) :- all4(C,A) 0.121323529412 (3.0, 15.0, 91.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] BETTER RULE rno4(A,B) :- all4(C,A) (0.1213235294117647, 3.0) > (0.08173076923076923, 2.0)
+[LVL9] rno4(A,B) :- some4(A,C) 0.204166666667 (4.0, 12.0, 94.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] BETTER RULE rno4(A,B) :- some4(A,C) (0.20416666666666666, 4.0) > (0.1213235294117647, 3.0)
+[LVL9] rno4(A,B) :- some4(C,B) 0.121323529412 (3.0, 15.0, 91.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C) 0.121323529412 (3.0, 15.0, 91.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C) 0.0625 (2.0, 16.0, 90.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B) 0.171875 (3.0, 10.0, 96.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B) 0.0758928571429 (2.0, 13.0, 93.0, 6.0) 0.53125 [ACCEPT]
+[DEBUG] Best rule so far: rno4(A,B) :- some4(A,C) [0.204166666667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno4(A,B) :- some4(A,C) 0.204166666667
+[DEBUG] rno4(A,B) :- no4(C,B) 0.171875
+[DEBUG] rno4(A,B) :- all4(C,A) 0.121323529412
+[DEBUG] rno4(A,B) :- some4(C,B) 0.121323529412
+[DEBUG] rno4(A,B) :- no4(A,C) 0.121323529412
+[DEBUG] rno4(A,B) :- all4(B,C) 0.0817307692308
+[DEBUG] rno4(A,B) :- somenot4(C,B) 0.0758928571429
+[DEBUG] rno4(A,B) :- no4(B,C) 0.0625
+[DEBUG] ==================================
+[LVL9] rno4(A,B) :- some4(A,C), some4(C,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] BETTER RULE rno4(A,B) :- some4(A,C), some4(C,B) (0.3541666666666667, 2.0) > (0.20416666666666666, 4.0)
+[LVL9] rno4(A,B) :- some4(A,C), some4(C,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), some4(D,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), no4(C,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), no4(C,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), no4(D,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), somenot4(C,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), somenot4(C,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), somenot4(D,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+all4(C,B) 0.235576923077 (4.0, 10.0, 96.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+some4(C,B) 0.158653846154 (3.0, 11.0, 95.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+some4(B,C) 0.235576923077 (4.0, 10.0, 96.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+no4(C,B) 0.158653846154 (3.0, 11.0, 95.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+no4(B,C) 0.235576923077 (4.0, 10.0, 96.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+somenot4(C,B) 0.158653846154 (3.0, 11.0, 95.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(A,C), \+somenot4(B,C) 0.235576923077 (4.0, 10.0, 96.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), all4(C,A) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), all4(C,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), all4(D,A) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), some4(A,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), some4(D,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+all4(A,C) 0.1875 (3.0, 9.0, 97.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+all4(C,A) 0.10625 (2.0, 9.0, 97.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+some4(A,C) 0.10625 (2.0, 9.0, 97.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+some4(C,A) 0.20625 (3.0, 8.0, 98.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+no4(A,C) 0.20625 (3.0, 8.0, 98.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+somenot4(A,C) 0.1875 (3.0, 9.0, 97.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(C,B), \+somenot4(C,A) 0.1875 (3.0, 9.0, 97.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), all4(B,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), all4(B,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), all4(D,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), no4(C,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), no4(D,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+all4(C,B) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+all4(B,C) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+some4(C,B) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+some4(B,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+no4(C,B) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+no4(B,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+somenot4(C,B) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(C,A), \+somenot4(B,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), some4(A,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), some4(D,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), no4(A,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), no4(A,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), no4(D,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+all4(A,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+all4(C,A) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+some4(A,C) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+some4(C,A) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+no4(A,C) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+no4(C,A) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+somenot4(A,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- some4(C,B), \+somenot4(C,A) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), some4(C,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), some4(D,B) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), no4(B,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), no4(B,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+all4(C,B) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+all4(B,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+some4(C,B) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+some4(B,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+no4(C,B) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+no4(B,C) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+somenot4(C,B) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(A,C), \+somenot4(B,C) 0.1375 (3.0, 13.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), all4(C,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), all4(D,A) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+all4(A,C) 0.0965909090909 (2.0, 10.0, 96.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+some4(C,A) 0.0965909090909 (2.0, 10.0, 96.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+no4(A,C) 0.0965909090909 (2.0, 10.0, 96.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+no4(C,A) 0.0885416666667 (2.0, 11.0, 95.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+somenot4(A,C) 0.0965909090909 (2.0, 10.0, 96.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- all4(B,C), \+somenot4(C,A) 0.0885416666667 (2.0, 11.0, 95.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), some4(A,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), some4(D,C) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+all4(A,C) 0.0817307692308 (2.0, 12.0, 94.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+all4(C,A) 0.0885416666667 (2.0, 11.0, 95.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+some4(C,A) 0.0885416666667 (2.0, 11.0, 95.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+no4(A,C) 0.0885416666667 (2.0, 11.0, 95.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+no4(C,A) 0.0817307692308 (2.0, 12.0, 94.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+somenot4(A,C) 0.0817307692308 (2.0, 12.0, 94.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- somenot4(C,B), \+somenot4(C,A) 0.0885416666667 (2.0, 11.0, 95.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), no4(A,D) 0.354166666667 (2.0, 2.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+all4(A,C) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+all4(C,A) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+some4(A,C) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+some4(C,A) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+no4(C,A) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+somenot4(A,C) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno4(A,B) :- no4(B,C), \+somenot4(C,A) 0.0708333333333 (2.0, 14.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[DEBUG] Best rule so far: rno4(A,B) :- some4(A,C), some4(C,B) [0.354166666667]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno4(A,B) :- some4(A,C), some4(C,B) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), some4(C,D) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), some4(D,B) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), no4(C,B) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), no4(C,D) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), no4(D,B) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), somenot4(C,B) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), somenot4(C,D) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), somenot4(D,B) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(C,B), all4(C,A) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(C,B), all4(C,D) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(C,B), all4(D,A) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(C,B), some4(A,D) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(C,B), some4(D,C) 0.354166666667
+[DEBUG] rno4(A,B) :- all4(C,A), all4(B,C) 0.354166666667
+[DEBUG] rno4(A,B) :- all4(C,A), all4(B,D) 0.354166666667
+[DEBUG] rno4(A,B) :- all4(C,A), all4(D,C) 0.354166666667
+[DEBUG] rno4(A,B) :- all4(C,A), no4(C,D) 0.354166666667
+[DEBUG] rno4(A,B) :- all4(C,A), no4(D,B) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(C,B), some4(A,D) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(C,B), some4(D,C) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(C,B), no4(A,C) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(C,B), no4(A,D) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(C,B), no4(D,C) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(A,C), some4(C,D) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(A,C), some4(D,B) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(A,C), no4(B,C) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(A,C), no4(B,D) 0.354166666667
+[DEBUG] rno4(A,B) :- all4(B,C), all4(C,D) 0.354166666667
+[DEBUG] rno4(A,B) :- all4(B,C), all4(D,A) 0.354166666667
+[DEBUG] rno4(A,B) :- somenot4(C,B), some4(A,D) 0.354166666667
+[DEBUG] rno4(A,B) :- somenot4(C,B), some4(D,C) 0.354166666667
+[DEBUG] rno4(A,B) :- no4(B,C), no4(A,D) 0.354166666667
+[DEBUG] rno4(A,B) :- some4(A,C), \+all4(C,B) 0.235576923077
+[DEBUG] rno4(A,B) :- some4(A,C), \+some4(B,C) 0.235576923077
+[DEBUG] rno4(A,B) :- some4(A,C), \+no4(B,C) 0.235576923077
+[DEBUG] rno4(A,B) :- some4(A,C), \+somenot4(B,C) 0.235576923077
+[DEBUG] rno4(A,B) :- no4(C,B), \+some4(C,A) 0.20625
+[DEBUG] rno4(A,B) :- no4(C,B), \+no4(A,C) 0.20625
+[DEBUG] rno4(A,B) :- no4(C,B), \+all4(A,C) 0.1875
+[DEBUG] rno4(A,B) :- no4(C,B), \+somenot4(A,C) 0.1875
+[DEBUG] rno4(A,B) :- no4(C,B), \+somenot4(C,A) 0.1875
+[DEBUG] rno4(A,B) :- some4(A,C), \+some4(C,B) 0.158653846154
+[DEBUG] rno4(A,B) :- some4(A,C), \+no4(C,B) 0.158653846154
+[DEBUG] rno4(A,B) :- some4(A,C), \+somenot4(C,B) 0.158653846154
+[DEBUG] rno4(A,B) :- all4(C,A), \+all4(C,B) 0.1375
+[DEBUG] rno4(A,B) :- all4(C,A), \+some4(C,B) 0.1375
+[DEBUG] rno4(A,B) :- all4(C,A), \+some4(B,C) 0.1375
+[DEBUG] rno4(A,B) :- all4(C,A), \+no4(B,C) 0.1375
+[DEBUG] rno4(A,B) :- all4(C,A), \+somenot4(C,B) 0.1375
+[DEBUG] rno4(A,B) :- all4(C,A), \+somenot4(B,C) 0.1375
+[DEBUG] rno4(A,B) :- some4(C,B), \+all4(A,C) 0.1375
+[DEBUG] rno4(A,B) :- some4(C,B), \+all4(C,A) 0.1375
+[DEBUG] rno4(A,B) :- some4(C,B), \+some4(C,A) 0.1375
+[DEBUG] rno4(A,B) :- some4(C,B), \+no4(C,A) 0.1375
+[DEBUG] rno4(A,B) :- some4(C,B), \+somenot4(A,C) 0.1375
+[DEBUG] rno4(A,B) :- some4(C,B), \+somenot4(C,A) 0.1375
+[DEBUG] rno4(A,B) :- no4(A,C), \+all4(C,B) 0.1375
+[DEBUG] rno4(A,B) :- no4(A,C), \+all4(B,C) 0.1375
+[DEBUG] rno4(A,B) :- no4(A,C), \+some4(B,C) 0.1375
+[DEBUG] rno4(A,B) :- no4(A,C), \+no4(C,B) 0.1375
+[DEBUG] rno4(A,B) :- no4(A,C), \+somenot4(C,B) 0.1375
+[DEBUG] rno4(A,B) :- no4(A,C), \+somenot4(B,C) 0.1375
+[DEBUG] rno4(A,B) :- no4(C,B), \+all4(C,A) 0.10625
+[DEBUG] rno4(A,B) :- no4(C,B), \+some4(A,C) 0.10625
+[DEBUG] rno4(A,B) :- all4(B,C), \+all4(A,C) 0.0965909090909
+[DEBUG] rno4(A,B) :- all4(B,C), \+some4(C,A) 0.0965909090909
+[DEBUG] rno4(A,B) :- all4(B,C), \+no4(A,C) 0.0965909090909
+[DEBUG] rno4(A,B) :- all4(B,C), \+somenot4(A,C) 0.0965909090909
+[DEBUG] rno4(A,B) :- all4(B,C), \+no4(C,A) 0.0885416666667
+[DEBUG] rno4(A,B) :- all4(B,C), \+somenot4(C,A) 0.0885416666667
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+all4(C,A) 0.0885416666667
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+some4(C,A) 0.0885416666667
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+no4(A,C) 0.0885416666667
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+somenot4(C,A) 0.0885416666667
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+all4(A,C) 0.0817307692308
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+no4(C,A) 0.0817307692308
+[DEBUG] rno4(A,B) :- somenot4(C,B), \+somenot4(A,C) 0.0817307692308
+[DEBUG] rno4(A,B) :- all4(C,A), \+all4(B,C) 0.0708333333333
+[DEBUG] rno4(A,B) :- all4(C,A), \+no4(C,B) 0.0708333333333
+[DEBUG] rno4(A,B) :- some4(C,B), \+some4(A,C) 0.0708333333333
+[DEBUG] rno4(A,B) :- some4(C,B), \+no4(A,C) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(A,C), \+some4(C,B) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(A,C), \+no4(B,C) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(B,C), \+all4(A,C) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(B,C), \+all4(C,A) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(B,C), \+some4(A,C) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(B,C), \+some4(C,A) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(B,C), \+no4(C,A) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(B,C), \+somenot4(A,C) 0.0708333333333
+[DEBUG] rno4(A,B) :- no4(B,C), \+somenot4(C,A) 0.0708333333333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno4(A,B) :- some4(A,C), some4(C,B) 0.929824561404

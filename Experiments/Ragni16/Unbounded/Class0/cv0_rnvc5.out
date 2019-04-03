@@ -1,0 +1,28 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_5.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc5.log
+              target:	rnvc5/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc5(A,B) :- somenot5(B,C), \+some5(A,C)
+rnvc5(A,B) :- somenot5(C,A), \+all5(B,C)
+rnvc5(A,B) :- somenot5(C,B), \+all5(C,A), \+some5(A,C)
+rnvc5(A,B) :- some5(C,A), \+no5(B,C)
+rnvc5(A,B) :- somenot5(A,C), \+some5(B,C)
+rnvc5(A,B) :- no5(A,C), \+all5(B,C), \+some5(C,B), \+some5(B,C)
+rnvc5(A,B) :- some5(A,C), \+all5(C,B), \+no5(C,B), \+no5(B,C), \+somenot5(C,B), \+somenot5(B,C)
+rnvc5(A,B) :- all5(A,C), \+all5(C,B), \+no5(C,B), \+no5(B,C)
+rnvc5(A,B) :- no5(C,A), \+all5(C,B), \+all5(B,C), \+some5(C,B), \+some5(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	12823
+          Total time:	216.6243s

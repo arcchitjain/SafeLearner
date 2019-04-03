@@ -1,0 +1,358 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.201760795527
+[INFO] Computing scores: 0.0973s
+[INFO] Number of examples (M): 102
+[INFO] Positive weight (P): 7.0000
+[INFO] Negative weight (N): 95.0000
+[DEBUG] Best rule so far: rsome26(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome26(A,B) :- all26(A,C) 0.0890522875817 (1.0, 10.0, 85.0, 6.0) 0.53431372549 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(A,C) (0.08905228758169935, 1.0) > (0.0, 7.0)
+[LVL9] rsome26(A,B) :- all26(C,A) 0.255718954248 (3.0, 8.0, 87.0, 4.0) 0.767156862745 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(C,A) (0.25571895424836605, 3.0) > (0.08905228758169935, 1.0)
+[LVL9] rsome26(A,B) :- all26(C,B) 0.172385620915 (2.0, 9.0, 86.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C) 0.147759103641 (2.0, 11.0, 84.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B) 0.159125188537 (2.0, 10.0, 85.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A) 0.0890522875817 (1.0, 10.0, 85.0, 6.0) 0.53431372549 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B) 0.0890522875817 (1.0, 10.0, 85.0, 6.0) 0.53431372549 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C) 0.0763305322129 (1.0, 12.0, 83.0, 6.0) 0.53431372549 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A) 0.0 (1.0, 15.0, 80.0, 6.0) 0.53431372549 [ACCEPT]
+[DEBUG] Best rule so far: rsome26(A,B) :- all26(C,A) [0.255718954248]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- all26(C,A) 0.255718954248
+[DEBUG] rsome26(A,B) :- all26(C,B) 0.172385620915
+[DEBUG] rsome26(A,B) :- some26(C,B) 0.159125188537
+[DEBUG] rsome26(A,B) :- some26(B,C) 0.147759103641
+[DEBUG] rsome26(A,B) :- all26(A,C) 0.0890522875817
+[DEBUG] rsome26(A,B) :- no26(C,A) 0.0890522875817
+[DEBUG] rsome26(A,B) :- no26(C,B) 0.0890522875817
+[DEBUG] rsome26(A,B) :- somenot26(A,C) 0.0763305322129
+[DEBUG] rsome26(A,B) :- somenot26(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsome26(A,B) :- all26(C,A), all26(C,B) 0.356209150327 (1.0, 1.0, 94.0, 6.0) 0.53431372549 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(C,A), all26(C,B) (0.3562091503267974, 1.0) > (0.25571895424836605, 3.0)
+[LVL9] rsome26(A,B) :- all26(C,A), all26(D,B) 0.356209150327 (1.0, 1.0, 94.0, 6.0) 0.53431372549 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(C,B) 0.356209150327 (1.0, 1.0, 94.0, 6.0) 0.53431372549 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(B,C) 0.53431372549 (1.0, 0.0, 95.0, 6.0) 0.53431372549 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome26(A,B) :- all26(C,A), some26(B,C) (0.5343137254901961, 1.0) > (0.3562091503267974, 1.0)
+[LVL9] rsome26(A,B) :- all26(C,A), \+all26(C,B) 0.206862745098 (2.0, 7.0, 88.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+some26(C,B) 0.206862745098 (2.0, 7.0, 88.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+no26(C,B) 0.278966131907 (3.0, 7.0, 88.0, 4.0) 0.767156862745 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+no26(B,C) 0.306862745098 (3.0, 6.0, 89.0, 4.0) 0.767156862745 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+somenot26(C,B) 0.306862745098 (3.0, 6.0, 89.0, 4.0) 0.767156862745 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+somenot26(B,C) 0.278966131907 (3.0, 7.0, 88.0, 4.0) 0.767156862745 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+some26(A,C) 0.188057040998 (2.0, 8.0, 87.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+some26(C,A) 0.206862745098 (2.0, 7.0, 88.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+no26(A,C) 0.206862745098 (2.0, 7.0, 88.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+no26(C,A) 0.188057040998 (2.0, 8.0, 87.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+somenot26(A,C) 0.188057040998 (2.0, 8.0, 87.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+some26(A,C) 0.188057040998 (2.0, 8.0, 87.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+no26(A,C) 0.188057040998 (2.0, 8.0, 87.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+no26(C,A) 0.172385620915 (2.0, 9.0, 86.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+somenot26(A,C) 0.188057040998 (2.0, 8.0, 87.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+somenot26(C,A) 0.188057040998 (2.0, 8.0, 87.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+all26(A,C) 0.172385620915 (2.0, 9.0, 86.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+some26(C,A) 0.172385620915 (2.0, 9.0, 86.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+no26(A,C) 0.172385620915 (2.0, 9.0, 86.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+somenot26(A,C) 0.172385620915 (2.0, 9.0, 86.0, 5.0) 0.68954248366 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+somenot26(C,A) 0.172385620915 (2.0, 9.0, 86.0, 5.0) 0.68954248366 [ACCEPT]
+[DEBUG] Best rule so far: rsome26(A,B) :- all26(C,A), some26(B,C) [0.53431372549]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- all26(C,A), all26(C,B) 0.356209150327
+[DEBUG] rsome26(A,B) :- all26(C,A), all26(D,B) 0.356209150327
+[DEBUG] rsome26(A,B) :- all26(C,A), some26(C,B) 0.356209150327
+[DEBUG] rsome26(A,B) :- all26(C,A), \+no26(B,C) 0.306862745098
+[DEBUG] rsome26(A,B) :- all26(C,A), \+somenot26(C,B) 0.306862745098
+[DEBUG] rsome26(A,B) :- all26(C,A), \+no26(C,B) 0.278966131907
+[DEBUG] rsome26(A,B) :- all26(C,A), \+somenot26(B,C) 0.278966131907
+[DEBUG] rsome26(A,B) :- all26(C,A), \+all26(C,B) 0.206862745098
+[DEBUG] rsome26(A,B) :- all26(C,A), \+some26(C,B) 0.206862745098
+[DEBUG] rsome26(A,B) :- all26(C,B), \+some26(C,A) 0.206862745098
+[DEBUG] rsome26(A,B) :- all26(C,B), \+no26(A,C) 0.206862745098
+[DEBUG] rsome26(A,B) :- all26(C,B), \+some26(A,C) 0.188057040998
+[DEBUG] rsome26(A,B) :- all26(C,B), \+no26(C,A) 0.188057040998
+[DEBUG] rsome26(A,B) :- all26(C,B), \+somenot26(A,C) 0.188057040998
+[DEBUG] rsome26(A,B) :- some26(C,B), \+some26(A,C) 0.188057040998
+[DEBUG] rsome26(A,B) :- some26(C,B), \+no26(A,C) 0.188057040998
+[DEBUG] rsome26(A,B) :- some26(C,B), \+somenot26(A,C) 0.188057040998
+[DEBUG] rsome26(A,B) :- some26(C,B), \+somenot26(C,A) 0.188057040998
+[DEBUG] rsome26(A,B) :- some26(C,B), \+no26(C,A) 0.172385620915
+[DEBUG] rsome26(A,B) :- some26(B,C), \+all26(A,C) 0.172385620915
+[DEBUG] rsome26(A,B) :- some26(B,C), \+some26(C,A) 0.172385620915
+[DEBUG] rsome26(A,B) :- some26(B,C), \+no26(A,C) 0.172385620915
+[DEBUG] rsome26(A,B) :- some26(B,C), \+somenot26(A,C) 0.172385620915
+[DEBUG] rsome26(A,B) :- some26(B,C), \+somenot26(C,A) 0.172385620915
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome26(A,B) :- all26(C,A), some26(B,C) 0.941176470588
+[DEBUG] Best rule so far: rsome26(A,B) :- true [0.0594059405941]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- true 0.0594059405941
+[DEBUG] ==================================
+[LVL9] rsome26(A,B) :- all26(A,C) 0.0882838283828 (2.0, 10.0, 85.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(A,C) (0.08828382838283828, 2.0) > (0.0594059405940594, 7.0)
+[LVL9] rsome26(A,B) :- all26(C,A) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(C,A) (0.18721872187218722, 3.0) > (0.08828382838283828, 2.0)
+[LVL9] rsome26(A,B) :- all26(C,B) 0.171617161716 (3.0, 9.0, 86.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C) 0.0814927646611 (2.0, 11.0, 84.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B) 0.158415841584 (3.0, 10.0, 85.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A) 0.0882838283828 (2.0, 10.0, 85.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B) 0.0882838283828 (2.0, 10.0, 85.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C) 0.0756718528996 (2.0, 12.0, 83.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A) 0.0623179965055 (2.0, 15.0, 80.0, 5.0) 0.529702970297 [ACCEPT]
+[DEBUG] Best rule so far: rsome26(A,B) :- all26(C,A) [0.187218721872]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- all26(C,A) 0.187218721872
+[DEBUG] rsome26(A,B) :- all26(C,B) 0.171617161716
+[DEBUG] rsome26(A,B) :- some26(C,B) 0.158415841584
+[DEBUG] rsome26(A,B) :- all26(A,C) 0.0882838283828
+[DEBUG] rsome26(A,B) :- no26(C,A) 0.0882838283828
+[DEBUG] rsome26(A,B) :- no26(C,B) 0.0882838283828
+[DEBUG] rsome26(A,B) :- some26(B,C) 0.0814927646611
+[DEBUG] rsome26(A,B) :- somenot26(A,C) 0.0756718528996
+[DEBUG] rsome26(A,B) :- somenot26(C,A) 0.0623179965055
+[DEBUG] ==================================
+[LVL9] rsome26(A,B) :- all26(C,A), all26(C,B) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(C,A), all26(C,B) (0.35313531353135313, 2.0) > (0.18721872187218722, 3.0)
+[LVL9] rsome26(A,B) :- all26(C,A), all26(D,B) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(C,B) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(C,D) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(D,B) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+all26(C,B) 0.117711771177 (2.0, 7.0, 88.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+some26(C,B) 0.117711771177 (2.0, 7.0, 88.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+no26(C,B) 0.205940594059 (3.0, 7.0, 88.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+no26(B,C) 0.228822882288 (3.0, 6.0, 89.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+somenot26(C,B) 0.228822882288 (3.0, 6.0, 89.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+somenot26(B,C) 0.205940594059 (3.0, 7.0, 88.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), all26(D,A) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), somenot26(C,A) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), somenot26(C,D) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), somenot26(D,A) 0.353135313531 (2.0, 1.0, 94.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+all26(C,A) 0.105940594059 (2.0, 8.0, 87.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+some26(A,C) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+some26(C,A) 0.205940594059 (3.0, 7.0, 88.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+no26(A,C) 0.205940594059 (3.0, 7.0, 88.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+no26(C,A) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+somenot26(A,C) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+somenot26(C,A) 0.105940594059 (2.0, 8.0, 87.0, 5.0) 0.529702970297 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), all26(A,C) 0.529702970297 (2.0, 0.0, 95.0, 5.0) 0.529702970297 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rsome26(A,B) :- some26(C,B), all26(A,C) (0.5297029702970297, 2.0) > (0.35313531353135313, 2.0)
+[LVL9] rsome26(A,B) :- some26(C,B), \+some26(A,C) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+no26(A,C) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+no26(C,A) 0.171617161716 (3.0, 9.0, 86.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+somenot26(A,C) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+somenot26(C,A) 0.187218721872 (3.0, 8.0, 87.0, 4.0) 0.686468646865 [ACCEPT]
+[DEBUG] Best rule so far: rsome26(A,B) :- some26(C,B), all26(A,C) [0.529702970297]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- all26(C,A), all26(C,B) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,A), all26(D,B) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,A), some26(C,B) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,A), some26(C,D) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,A), some26(D,B) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,B), all26(D,A) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,B), somenot26(C,A) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,B), somenot26(C,D) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,B), somenot26(D,A) 0.353135313531
+[DEBUG] rsome26(A,B) :- all26(C,A), \+no26(B,C) 0.228822882288
+[DEBUG] rsome26(A,B) :- all26(C,A), \+somenot26(C,B) 0.228822882288
+[DEBUG] rsome26(A,B) :- all26(C,A), \+no26(C,B) 0.205940594059
+[DEBUG] rsome26(A,B) :- all26(C,A), \+somenot26(B,C) 0.205940594059
+[DEBUG] rsome26(A,B) :- all26(C,B), \+some26(C,A) 0.205940594059
+[DEBUG] rsome26(A,B) :- all26(C,B), \+no26(A,C) 0.205940594059
+[DEBUG] rsome26(A,B) :- all26(C,B), \+some26(A,C) 0.187218721872
+[DEBUG] rsome26(A,B) :- all26(C,B), \+no26(C,A) 0.187218721872
+[DEBUG] rsome26(A,B) :- all26(C,B), \+somenot26(A,C) 0.187218721872
+[DEBUG] rsome26(A,B) :- some26(C,B), \+some26(A,C) 0.187218721872
+[DEBUG] rsome26(A,B) :- some26(C,B), \+no26(A,C) 0.187218721872
+[DEBUG] rsome26(A,B) :- some26(C,B), \+somenot26(A,C) 0.187218721872
+[DEBUG] rsome26(A,B) :- some26(C,B), \+somenot26(C,A) 0.187218721872
+[DEBUG] rsome26(A,B) :- some26(C,B), \+no26(C,A) 0.171617161716
+[DEBUG] rsome26(A,B) :- all26(C,A), \+all26(C,B) 0.117711771177
+[DEBUG] rsome26(A,B) :- all26(C,A), \+some26(C,B) 0.117711771177
+[DEBUG] rsome26(A,B) :- all26(C,B), \+all26(C,A) 0.105940594059
+[DEBUG] rsome26(A,B) :- all26(C,B), \+somenot26(C,A) 0.105940594059
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome26(A,B) :- some26(C,B), all26(A,C) 0.950980392157
+[DEBUG] Best rule so far: rsome26(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome26(A,B) :- all26(C,A) 0.186363636364 (4.0, 8.0, 87.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(C,A) (0.18636363636363634, 4.0) > (0.0, 7.0)
+[LVL9] rsome26(A,B) :- all26(C,B) 0.170833333333 (4.0, 9.0, 86.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C) 0.0807692307692 (3.0, 11.0, 84.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B) 0.0875 (3.0, 10.0, 85.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A) 0.0875 (3.0, 10.0, 85.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B) 0.0875 (3.0, 10.0, 85.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C) 0.075 (3.0, 12.0, 83.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A) 0.0617647058824 (3.0, 15.0, 80.0, 4.0) 0.525 [ACCEPT]
+[DEBUG] Best rule so far: rsome26(A,B) :- all26(C,A) [0.186363636364]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- all26(C,A) 0.186363636364
+[DEBUG] rsome26(A,B) :- all26(C,B) 0.170833333333
+[DEBUG] rsome26(A,B) :- some26(C,B) 0.0875
+[DEBUG] rsome26(A,B) :- no26(C,A) 0.0875
+[DEBUG] rsome26(A,B) :- no26(C,B) 0.0875
+[DEBUG] rsome26(A,B) :- some26(B,C) 0.0807692307692
+[DEBUG] rsome26(A,B) :- somenot26(A,C) 0.075
+[DEBUG] rsome26(A,B) :- somenot26(C,A) 0.0617647058824
+[DEBUG] ==================================
+[LVL9] rsome26(A,B) :- all26(C,A), all26(C,B) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] BETTER RULE rsome26(A,B) :- all26(C,A), all26(C,B) (0.35000000000000003, 3.0) > (0.18636363636363634, 4.0)
+[LVL9] rsome26(A,B) :- all26(C,A), all26(D,B) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(C,B) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(C,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), some26(D,B) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+all26(C,B) 0.116666666667 (3.0, 7.0, 88.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+some26(C,B) 0.116666666667 (3.0, 7.0, 88.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+no26(C,B) 0.205 (4.0, 7.0, 88.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+no26(B,C) 0.227777777778 (4.0, 6.0, 89.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+somenot26(C,B) 0.227777777778 (4.0, 6.0, 89.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,A), \+somenot26(B,C) 0.205 (4.0, 7.0, 88.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), all26(D,A) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), somenot26(C,A) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), somenot26(C,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), somenot26(D,A) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+all26(C,A) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+some26(A,C) 0.186363636364 (4.0, 8.0, 87.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+some26(C,A) 0.205 (4.0, 7.0, 88.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+no26(A,C) 0.205 (4.0, 7.0, 88.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+no26(C,A) 0.186363636364 (4.0, 8.0, 87.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+somenot26(A,C) 0.186363636364 (4.0, 8.0, 87.0, 3.0) 0.683333333333 [ACCEPT]
+[LVL9] rsome26(A,B) :- all26(C,B), \+somenot26(C,A) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), all26(C,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), all26(D,A) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+some26(A,C) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+no26(A,C) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+no26(C,A) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+somenot26(A,C) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(C,B), \+somenot26(C,A) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), some26(B,C) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), some26(B,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), some26(D,C) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), \+all26(C,B) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), \+all26(B,C) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), \+some26(C,B) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), \+no26(B,C) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), \+somenot26(C,B) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,A), \+somenot26(B,C) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), somenot26(A,C) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), somenot26(A,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), somenot26(D,C) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), \+all26(A,C) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), \+all26(C,A) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), \+some26(A,C) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), \+some26(C,A) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), \+no26(A,C) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- no26(C,B), \+somenot26(C,A) 0.105 (3.0, 8.0, 87.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), no26(C,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), no26(D,A) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+all26(A,C) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+some26(C,A) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+no26(A,C) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+somenot26(A,C) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- some26(B,C), \+somenot26(C,A) 0.0954545454545 (3.0, 9.0, 86.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), no26(C,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), no26(D,B) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), \+all26(C,B) 0.0807692307692 (3.0, 11.0, 84.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), \+all26(B,C) 0.0807692307692 (3.0, 11.0, 84.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), \+some26(C,B) 0.0875 (3.0, 10.0, 85.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), \+some26(B,C) 0.0875 (3.0, 10.0, 85.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), \+no26(B,C) 0.0807692307692 (3.0, 11.0, 84.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), \+somenot26(C,B) 0.0875 (3.0, 10.0, 85.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(A,C), \+somenot26(B,C) 0.0875 (3.0, 10.0, 85.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), all26(C,D) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), all26(D,B) 0.35 (3.0, 1.0, 94.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), \+all26(B,C) 0.07 (3.0, 13.0, 82.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), \+some26(C,B) 0.07 (3.0, 13.0, 82.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), \+some26(B,C) 0.07 (3.0, 13.0, 82.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), \+no26(C,B) 0.07 (3.0, 13.0, 82.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), \+no26(B,C) 0.07 (3.0, 13.0, 82.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), \+somenot26(C,B) 0.07 (3.0, 13.0, 82.0, 4.0) 0.525 [ACCEPT]
+[LVL9] rsome26(A,B) :- somenot26(C,A), \+somenot26(B,C) 0.07 (3.0, 13.0, 82.0, 4.0) 0.525 [ACCEPT]
+[DEBUG] Best rule so far: rsome26(A,B) :- all26(C,A), all26(C,B) [0.35]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome26(A,B) :- all26(C,A), all26(C,B) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,A), all26(D,B) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,A), some26(C,B) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,A), some26(C,D) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,A), some26(D,B) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,B), all26(D,A) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,B), somenot26(C,A) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,B), somenot26(C,D) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,B), somenot26(D,A) 0.35
+[DEBUG] rsome26(A,B) :- some26(C,B), all26(C,D) 0.35
+[DEBUG] rsome26(A,B) :- some26(C,B), all26(D,A) 0.35
+[DEBUG] rsome26(A,B) :- no26(C,A), some26(B,C) 0.35
+[DEBUG] rsome26(A,B) :- no26(C,A), some26(B,D) 0.35
+[DEBUG] rsome26(A,B) :- no26(C,A), some26(D,C) 0.35
+[DEBUG] rsome26(A,B) :- no26(C,B), somenot26(A,C) 0.35
+[DEBUG] rsome26(A,B) :- no26(C,B), somenot26(A,D) 0.35
+[DEBUG] rsome26(A,B) :- no26(C,B), somenot26(D,C) 0.35
+[DEBUG] rsome26(A,B) :- some26(B,C), no26(C,D) 0.35
+[DEBUG] rsome26(A,B) :- some26(B,C), no26(D,A) 0.35
+[DEBUG] rsome26(A,B) :- somenot26(A,C), no26(C,D) 0.35
+[DEBUG] rsome26(A,B) :- somenot26(A,C), no26(D,B) 0.35
+[DEBUG] rsome26(A,B) :- somenot26(C,A), all26(C,D) 0.35
+[DEBUG] rsome26(A,B) :- somenot26(C,A), all26(D,B) 0.35
+[DEBUG] rsome26(A,B) :- all26(C,A), \+no26(B,C) 0.227777777778
+[DEBUG] rsome26(A,B) :- all26(C,A), \+somenot26(C,B) 0.227777777778
+[DEBUG] rsome26(A,B) :- all26(C,A), \+no26(C,B) 0.205
+[DEBUG] rsome26(A,B) :- all26(C,A), \+somenot26(B,C) 0.205
+[DEBUG] rsome26(A,B) :- all26(C,B), \+some26(C,A) 0.205
+[DEBUG] rsome26(A,B) :- all26(C,B), \+no26(A,C) 0.205
+[DEBUG] rsome26(A,B) :- all26(C,B), \+some26(A,C) 0.186363636364
+[DEBUG] rsome26(A,B) :- all26(C,B), \+no26(C,A) 0.186363636364
+[DEBUG] rsome26(A,B) :- all26(C,B), \+somenot26(A,C) 0.186363636364
+[DEBUG] rsome26(A,B) :- all26(C,A), \+all26(C,B) 0.116666666667
+[DEBUG] rsome26(A,B) :- all26(C,A), \+some26(C,B) 0.116666666667
+[DEBUG] rsome26(A,B) :- all26(C,B), \+all26(C,A) 0.105
+[DEBUG] rsome26(A,B) :- all26(C,B), \+somenot26(C,A) 0.105
+[DEBUG] rsome26(A,B) :- some26(C,B), \+some26(A,C) 0.105
+[DEBUG] rsome26(A,B) :- some26(C,B), \+no26(A,C) 0.105
+[DEBUG] rsome26(A,B) :- some26(C,B), \+somenot26(A,C) 0.105
+[DEBUG] rsome26(A,B) :- some26(C,B), \+somenot26(C,A) 0.105
+[DEBUG] rsome26(A,B) :- no26(C,A), \+no26(B,C) 0.105
+[DEBUG] rsome26(A,B) :- no26(C,A), \+somenot26(C,B) 0.105
+[DEBUG] rsome26(A,B) :- no26(C,A), \+somenot26(B,C) 0.105
+[DEBUG] rsome26(A,B) :- no26(C,B), \+some26(A,C) 0.105
+[DEBUG] rsome26(A,B) :- no26(C,B), \+no26(A,C) 0.105
+[DEBUG] rsome26(A,B) :- no26(C,B), \+somenot26(C,A) 0.105
+[DEBUG] rsome26(A,B) :- some26(C,B), \+no26(C,A) 0.0954545454545
+[DEBUG] rsome26(A,B) :- no26(C,A), \+all26(C,B) 0.0954545454545
+[DEBUG] rsome26(A,B) :- no26(C,A), \+all26(B,C) 0.0954545454545
+[DEBUG] rsome26(A,B) :- no26(C,A), \+some26(C,B) 0.0954545454545
+[DEBUG] rsome26(A,B) :- no26(C,B), \+all26(A,C) 0.0954545454545
+[DEBUG] rsome26(A,B) :- no26(C,B), \+all26(C,A) 0.0954545454545
+[DEBUG] rsome26(A,B) :- no26(C,B), \+some26(C,A) 0.0954545454545
+[DEBUG] rsome26(A,B) :- some26(B,C), \+all26(A,C) 0.0954545454545
+[DEBUG] rsome26(A,B) :- some26(B,C), \+some26(C,A) 0.0954545454545
+[DEBUG] rsome26(A,B) :- some26(B,C), \+no26(A,C) 0.0954545454545
+[DEBUG] rsome26(A,B) :- some26(B,C), \+somenot26(A,C) 0.0954545454545
+[DEBUG] rsome26(A,B) :- some26(B,C), \+somenot26(C,A) 0.0954545454545
+[DEBUG] rsome26(A,B) :- somenot26(A,C), \+some26(C,B) 0.0875
+[DEBUG] rsome26(A,B) :- somenot26(A,C), \+some26(B,C) 0.0875
+[DEBUG] rsome26(A,B) :- somenot26(A,C), \+somenot26(C,B) 0.0875
+[DEBUG] rsome26(A,B) :- somenot26(A,C), \+somenot26(B,C) 0.0875
+[DEBUG] rsome26(A,B) :- somenot26(A,C), \+all26(C,B) 0.0807692307692
+[DEBUG] rsome26(A,B) :- somenot26(A,C), \+all26(B,C) 0.0807692307692
+[DEBUG] rsome26(A,B) :- somenot26(A,C), \+no26(B,C) 0.0807692307692
+[DEBUG] rsome26(A,B) :- somenot26(C,A), \+all26(B,C) 0.07
+[DEBUG] rsome26(A,B) :- somenot26(C,A), \+some26(C,B) 0.07
+[DEBUG] rsome26(A,B) :- somenot26(C,A), \+some26(B,C) 0.07
+[DEBUG] rsome26(A,B) :- somenot26(C,A), \+no26(C,B) 0.07
+[DEBUG] rsome26(A,B) :- somenot26(C,A), \+no26(B,C) 0.07
+[DEBUG] rsome26(A,B) :- somenot26(C,A), \+somenot26(C,B) 0.07
+[DEBUG] rsome26(A,B) :- somenot26(C,A), \+somenot26(B,C) 0.07
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome26(A,B) :- all26(C,A), all26(C,B) 0.950980392157

@@ -1,0 +1,148 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.658206241343
+[INFO] Computing scores: 0.1176s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 2.0000
+[INFO] Negative weight (N): 118.0000
+[DEBUG] Best rule so far: rno51(A,B) :- true [0.0166666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno51(A,B) :- true 0.0166666666667
+[DEBUG] ==================================
+[LVL9] rno51(A,B) :- all51(A,C) 0.126041666667 (2.0, 13.0, 105.0, 0.0) 0.672222222222 [ACCEPT]
+[LVL9] BETTER RULE rno51(A,B) :- all51(A,C) (0.12604166666666666, 2.0) > (0.016666666666666666, 2.0)
+[LVL9] rno51(A,B) :- no51(B,C) 0.0598039215686 (1.0, 15.0, 103.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B) 0.0635416666667 (1.0, 14.0, 104.0, 1.0) 0.508333333333 [ACCEPT]
+[DEBUG] Best rule so far: rno51(A,B) :- all51(A,C) [0.126041666667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno51(A,B) :- all51(A,C) 0.126041666667
+[DEBUG] rno51(A,B) :- no51(C,B) 0.0635416666667
+[DEBUG] rno51(A,B) :- no51(B,C) 0.0598039215686
+[DEBUG] ==================================
+[LVL9] rno51(A,B) :- all51(A,C), no51(C,B) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] BETTER RULE rno51(A,B) :- all51(A,C), no51(C,B) (0.33888888888888885, 1.0) > (0.12604166666666666, 2.0)
+[LVL9] rno51(A,B) :- all51(A,C), no51(B,C) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), no51(C,D) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), no51(B,D) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), no51(D,C) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), no51(D,B) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+all51(C,B) 0.134444444444 (2.0, 12.0, 106.0, 0.0) 0.672222222222 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+all51(B,C) 0.144047619048 (2.0, 11.0, 107.0, 0.0) 0.672222222222 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+some51(C,B) 0.144047619048 (2.0, 11.0, 107.0, 0.0) 0.672222222222 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+some51(B,C) 0.144047619048 (2.0, 11.0, 107.0, 0.0) 0.672222222222 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+no51(C,B) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+no51(B,C) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+somenot51(C,B) 0.144047619048 (2.0, 11.0, 107.0, 0.0) 0.672222222222 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+somenot51(B,C) 0.144047619048 (2.0, 11.0, 107.0, 0.0) 0.672222222222 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), all51(A,D) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), all51(D,C) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), \+all51(C,A) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), \+some51(A,C) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), \+some51(C,A) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), \+no51(A,C) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), \+no51(C,A) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), \+somenot51(A,C) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(C,B), \+somenot51(C,A) 0.072619047619 (1.0, 12.0, 106.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), all51(A,D) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), all51(D,C) 0.338888888889 (1.0, 1.0, 117.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+all51(C,A) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+some51(A,C) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+some51(C,A) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+no51(A,C) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+no51(C,A) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+somenot51(A,C) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+somenot51(C,A) 0.0677777777778 (1.0, 13.0, 105.0, 1.0) 0.508333333333 [ACCEPT]
+[DEBUG] Best rule so far: rno51(A,B) :- all51(A,C), no51(C,B) [0.338888888889]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno51(A,B) :- all51(A,C), no51(C,B) 0.338888888889
+[DEBUG] rno51(A,B) :- all51(A,C), no51(B,C) 0.338888888889
+[DEBUG] rno51(A,B) :- all51(A,C), no51(C,D) 0.338888888889
+[DEBUG] rno51(A,B) :- all51(A,C), no51(B,D) 0.338888888889
+[DEBUG] rno51(A,B) :- all51(A,C), no51(D,C) 0.338888888889
+[DEBUG] rno51(A,B) :- all51(A,C), no51(D,B) 0.338888888889
+[DEBUG] rno51(A,B) :- no51(C,B), all51(A,D) 0.338888888889
+[DEBUG] rno51(A,B) :- no51(C,B), all51(D,C) 0.338888888889
+[DEBUG] rno51(A,B) :- no51(B,C), all51(A,D) 0.338888888889
+[DEBUG] rno51(A,B) :- no51(B,C), all51(D,C) 0.338888888889
+[DEBUG] rno51(A,B) :- all51(A,C), \+all51(B,C) 0.144047619048
+[DEBUG] rno51(A,B) :- all51(A,C), \+some51(C,B) 0.144047619048
+[DEBUG] rno51(A,B) :- all51(A,C), \+some51(B,C) 0.144047619048
+[DEBUG] rno51(A,B) :- all51(A,C), \+somenot51(C,B) 0.144047619048
+[DEBUG] rno51(A,B) :- all51(A,C), \+somenot51(B,C) 0.144047619048
+[DEBUG] rno51(A,B) :- all51(A,C), \+all51(C,B) 0.134444444444
+[DEBUG] rno51(A,B) :- all51(A,C), \+no51(C,B) 0.072619047619
+[DEBUG] rno51(A,B) :- all51(A,C), \+no51(B,C) 0.072619047619
+[DEBUG] rno51(A,B) :- no51(C,B), \+some51(A,C) 0.072619047619
+[DEBUG] rno51(A,B) :- no51(C,B), \+some51(C,A) 0.072619047619
+[DEBUG] rno51(A,B) :- no51(C,B), \+no51(A,C) 0.072619047619
+[DEBUG] rno51(A,B) :- no51(C,B), \+no51(C,A) 0.072619047619
+[DEBUG] rno51(A,B) :- no51(C,B), \+somenot51(A,C) 0.072619047619
+[DEBUG] rno51(A,B) :- no51(C,B), \+somenot51(C,A) 0.072619047619
+[DEBUG] rno51(A,B) :- no51(C,B), \+all51(C,A) 0.0677777777778
+[DEBUG] rno51(A,B) :- no51(B,C), \+all51(C,A) 0.0677777777778
+[DEBUG] rno51(A,B) :- no51(B,C), \+some51(A,C) 0.0677777777778
+[DEBUG] rno51(A,B) :- no51(B,C), \+some51(C,A) 0.0677777777778
+[DEBUG] rno51(A,B) :- no51(B,C), \+no51(A,C) 0.0677777777778
+[DEBUG] rno51(A,B) :- no51(B,C), \+no51(C,A) 0.0677777777778
+[DEBUG] rno51(A,B) :- no51(B,C), \+somenot51(A,C) 0.0677777777778
+[DEBUG] rno51(A,B) :- no51(B,C), \+somenot51(C,A) 0.0677777777778
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno51(A,B) :- all51(A,C), no51(C,B) 0.983333333333
+[DEBUG] Best rule so far: rno51(A,B) :- true [0.00847457627119]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno51(A,B) :- true 0.00847457627119
+[DEBUG] ==================================
+[LVL9] rno51(A,B) :- all51(A,C) 0.0720338983051 (2.0, 13.0, 105.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] BETTER RULE rno51(A,B) :- all51(A,C) (0.07203389830508475, 2.0) > (0.00847457627118644, 2.0)
+[LVL9] rno51(A,B) :- no51(B,C) 0.0593220338983 (2.0, 16.0, 102.0, 0.0) 0.504237288136 [ACCEPT]
+[DEBUG] Best rule so far: rno51(A,B) :- all51(A,C) [0.0720338983051]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno51(A,B) :- all51(A,C) 0.0720338983051
+[DEBUG] rno51(A,B) :- no51(B,C) 0.0593220338983
+[DEBUG] ==================================
+[LVL9] rno51(A,B) :- all51(A,C), no51(B,C) 0.33615819209 (2.0, 2.0, 116.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] BETTER RULE rno51(A,B) :- all51(A,C), no51(B,C) (0.3361581920903955, 2.0) > (0.07203389830508475, 2.0)
+[LVL9] rno51(A,B) :- all51(A,C), no51(B,D) 0.33615819209 (2.0, 2.0, 116.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), no51(D,C) 0.33615819209 (2.0, 2.0, 116.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+all51(C,B) 0.0775749674055 (2.0, 12.0, 106.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+all51(B,C) 0.0840395480226 (2.0, 11.0, 107.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+some51(C,B) 0.0840395480226 (2.0, 11.0, 107.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+some51(B,C) 0.0840395480226 (2.0, 11.0, 107.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+somenot51(C,B) 0.0840395480226 (2.0, 11.0, 107.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- all51(A,C), \+somenot51(B,C) 0.0840395480226 (2.0, 11.0, 107.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), all51(A,D) 0.33615819209 (2.0, 2.0, 116.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), all51(D,C) 0.33615819209 (2.0, 2.0, 116.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+all51(C,A) 0.0672316384181 (2.0, 14.0, 104.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+some51(A,C) 0.0672316384181 (2.0, 14.0, 104.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+some51(C,A) 0.0672316384181 (2.0, 14.0, 104.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+no51(A,C) 0.0672316384181 (2.0, 14.0, 104.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+no51(C,A) 0.0672316384181 (2.0, 14.0, 104.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+somenot51(A,C) 0.0672316384181 (2.0, 14.0, 104.0, 0.0) 0.504237288136 [ACCEPT]
+[LVL9] rno51(A,B) :- no51(B,C), \+somenot51(C,A) 0.0672316384181 (2.0, 14.0, 104.0, 0.0) 0.504237288136 [ACCEPT]
+[DEBUG] Best rule so far: rno51(A,B) :- all51(A,C), no51(B,C) [0.33615819209]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno51(A,B) :- all51(A,C), no51(B,C) 0.33615819209
+[DEBUG] rno51(A,B) :- all51(A,C), no51(B,D) 0.33615819209
+[DEBUG] rno51(A,B) :- all51(A,C), no51(D,C) 0.33615819209
+[DEBUG] rno51(A,B) :- no51(B,C), all51(A,D) 0.33615819209
+[DEBUG] rno51(A,B) :- no51(B,C), all51(D,C) 0.33615819209
+[DEBUG] rno51(A,B) :- all51(A,C), \+all51(B,C) 0.0840395480226
+[DEBUG] rno51(A,B) :- all51(A,C), \+some51(C,B) 0.0840395480226
+[DEBUG] rno51(A,B) :- all51(A,C), \+some51(B,C) 0.0840395480226
+[DEBUG] rno51(A,B) :- all51(A,C), \+somenot51(C,B) 0.0840395480226
+[DEBUG] rno51(A,B) :- all51(A,C), \+somenot51(B,C) 0.0840395480226
+[DEBUG] rno51(A,B) :- all51(A,C), \+all51(C,B) 0.0775749674055
+[DEBUG] rno51(A,B) :- no51(B,C), \+all51(C,A) 0.0672316384181
+[DEBUG] rno51(A,B) :- no51(B,C), \+some51(A,C) 0.0672316384181
+[DEBUG] rno51(A,B) :- no51(B,C), \+some51(C,A) 0.0672316384181
+[DEBUG] rno51(A,B) :- no51(B,C), \+no51(A,C) 0.0672316384181
+[DEBUG] rno51(A,B) :- no51(B,C), \+no51(C,A) 0.0672316384181
+[DEBUG] rno51(A,B) :- no51(B,C), \+somenot51(A,C) 0.0672316384181
+[DEBUG] rno51(A,B) :- no51(B,C), \+somenot51(C,A) 0.0672316384181
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno51(A,B) :- all51(A,C), no51(B,C) 0.983333333333

@@ -1,0 +1,22 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_102.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsome102.log
+              target:	rsome102/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome102(A,B) :- somenot102(C,A), some102(C,B)
+rsome102(A,B) :- all102(C,B), some102(A,C)
+rsome102(A,B) :- somenot102(B,C), all102(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.890909090909
+           Precision:	 1.0
+              Recall:	 0.2
+================== STATISTICS ==================
+    Rule evaluations:	92204
+          Total time:	1956.8937s

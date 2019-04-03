@@ -1,0 +1,488 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.650946189105
+[INFO] Computing scores: 0.1097s
+[INFO] Number of examples (M): 118
+[INFO] Positive weight (P): 12.0000
+[INFO] Negative weight (N): 106.0000
+[DEBUG] Best rule so far: rsome78(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome78(A,B) :- all78(A,C) 0.0 (1.0, 15.0, 91.0, 11.0) 0.550847457627 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C) 0.123629112662 (2.0, 14.0, 92.0, 10.0) 0.700564971751 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(B,C) (0.12362911266201397, 2.0) > (0.0, 12.0)
+[LVL9] rsome78(A,B) :- all78(C,A) 0.150121065375 (2.0, 11.0, 95.0, 10.0) 0.700564971751 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,A) (0.15012106537530268, 2.0) > (0.12362911266201397, 2.0)
+[LVL9] rsome78(A,B) :- all78(C,B) 0.292978208232 (4.0, 9.0, 97.0, 8.0) 0.820338983051 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,B) (0.2929782082324455, 4.0) > (0.15012106537530268, 2.0)
+[LVL9] rsome78(A,B) :- some78(A,C) 0.193855932203 (3.0, 12.0, 94.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C) 0.0 (1.0, 14.0, 92.0, 11.0) 0.550847457627 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A) 0.182452642074 (3.0, 13.0, 93.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,B) 0.0 (1.0, 15.0, 91.0, 11.0) 0.550847457627 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C) 0.0 (1.0, 13.0, 93.0, 11.0) 0.550847457627 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C) 0.131355932203 (2.0, 13.0, 93.0, 10.0) 0.700564971751 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C) 0.131355932203 (2.0, 13.0, 93.0, 10.0) 0.700564971751 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(C,A) 0.0 (1.0, 14.0, 92.0, 11.0) 0.550847457627 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(C,B) 0.0 (1.0, 14.0, 92.0, 11.0) 0.550847457627 [ACCEPT]
+[DEBUG] Best rule so far: rsome78(A,B) :- all78(C,B) [0.292978208232]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- all78(C,B) 0.292978208232
+[DEBUG] rsome78(A,B) :- some78(A,C) 0.193855932203
+[DEBUG] rsome78(A,B) :- some78(C,A) 0.182452642074
+[DEBUG] rsome78(A,B) :- all78(C,A) 0.150121065375
+[DEBUG] rsome78(A,B) :- somenot78(A,C) 0.131355932203
+[DEBUG] rsome78(A,B) :- somenot78(B,C) 0.131355932203
+[DEBUG] rsome78(A,B) :- all78(B,C) 0.123629112662
+[DEBUG] rsome78(A,B) :- all78(A,C) 0.0
+[DEBUG] rsome78(A,B) :- some78(B,C) 0.0
+[DEBUG] rsome78(A,B) :- some78(C,B) 0.0
+[DEBUG] rsome78(A,B) :- no78(B,C) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(C,A) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome78(A,B) :- all78(C,B), some78(A,C) 0.367231638418 (1.0, 1.0, 105.0, 11.0) 0.550847457627 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,B), some78(A,C) (0.3672316384180791, 1.0) > (0.2929782082324455, 4.0)
+[LVL9] rsome78(A,B) :- all78(C,B), some78(C,A) 0.700564971751 (2.0, 0.0, 106.0, 10.0) 0.700564971751 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,B), some78(C,A) (0.7005649717514125, 2.0) > (0.3672316384180791, 1.0)
+[LVL9] rsome78(A,B) :- all78(C,B), \+all78(A,C) 0.341807909605 (4.0, 7.0, 99.0, 8.0) 0.820338983051 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+all78(C,A) 0.341807909605 (4.0, 7.0, 99.0, 8.0) 0.820338983051 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+some78(A,C) 0.258474576271 (3.0, 8.0, 98.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+no78(A,C) 0.315514993481 (4.0, 8.0, 98.0, 8.0) 0.820338983051 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+no78(C,A) 0.315514993481 (4.0, 8.0, 98.0, 8.0) 0.820338983051 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+somenot78(A,C) 0.341807909605 (4.0, 7.0, 99.0, 8.0) 0.820338983051 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+some78(C,B) 0.221549636804 (3.0, 10.0, 96.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+some78(B,C) 0.221549636804 (3.0, 10.0, 96.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+no78(C,B) 0.221549636804 (3.0, 10.0, 96.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+no78(B,C) 0.206779661017 (3.0, 11.0, 95.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+somenot78(C,B) 0.221549636804 (3.0, 10.0, 96.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+some78(C,B) 0.206779661017 (3.0, 11.0, 95.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+some78(B,C) 0.206779661017 (3.0, 11.0, 95.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+no78(C,B) 0.206779661017 (3.0, 11.0, 95.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+no78(B,C) 0.206779661017 (3.0, 11.0, 95.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+somenot78(C,B) 0.206779661017 (3.0, 11.0, 95.0, 9.0) 0.775423728814 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+somenot78(B,C) 0.206779661017 (3.0, 11.0, 95.0, 9.0) 0.775423728814 [ACCEPT]
+[DEBUG] Best rule so far: rsome78(A,B) :- all78(C,B), some78(C,A) [0.700564971751]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- all78(C,B), some78(A,C) 0.367231638418
+[DEBUG] rsome78(A,B) :- all78(C,B), \+all78(A,C) 0.341807909605
+[DEBUG] rsome78(A,B) :- all78(C,B), \+all78(C,A) 0.341807909605
+[DEBUG] rsome78(A,B) :- all78(C,B), \+somenot78(A,C) 0.341807909605
+[DEBUG] rsome78(A,B) :- all78(C,B), \+no78(A,C) 0.315514993481
+[DEBUG] rsome78(A,B) :- all78(C,B), \+no78(C,A) 0.315514993481
+[DEBUG] rsome78(A,B) :- all78(C,B), \+some78(A,C) 0.258474576271
+[DEBUG] rsome78(A,B) :- some78(A,C), \+some78(C,B) 0.221549636804
+[DEBUG] rsome78(A,B) :- some78(A,C), \+some78(B,C) 0.221549636804
+[DEBUG] rsome78(A,B) :- some78(A,C), \+no78(C,B) 0.221549636804
+[DEBUG] rsome78(A,B) :- some78(A,C), \+somenot78(C,B) 0.221549636804
+[DEBUG] rsome78(A,B) :- some78(A,C), \+no78(B,C) 0.206779661017
+[DEBUG] rsome78(A,B) :- some78(C,A), \+some78(C,B) 0.206779661017
+[DEBUG] rsome78(A,B) :- some78(C,A), \+some78(B,C) 0.206779661017
+[DEBUG] rsome78(A,B) :- some78(C,A), \+no78(C,B) 0.206779661017
+[DEBUG] rsome78(A,B) :- some78(C,A), \+no78(B,C) 0.206779661017
+[DEBUG] rsome78(A,B) :- some78(C,A), \+somenot78(C,B) 0.206779661017
+[DEBUG] rsome78(A,B) :- some78(C,A), \+somenot78(B,C) 0.206779661017
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome78(A,B) :- all78(C,B), some78(C,A) 0.915254237288
+[DEBUG] Best rule so far: rsome78(A,B) :- true [0.0862068965517]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- true 0.0862068965517
+[DEBUG] ==================================
+[LVL9] rsome78(A,B) :- all78(A,C) 0.0 (3.0, 15.0, 91.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C) 0.122718052738 (4.0, 14.0, 92.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(B,C) (0.12271805273833672, 4.0) > (0.08620689655172414, 12.0)
+[LVL9] rsome78(A,B) :- all78(C,A) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,A) (0.14901477832512317, 4.0) > (0.12271805273833672, 4.0)
+[LVL9] rsome78(A,B) :- all78(C,B) 0.173850574713 (4.0, 9.0, 97.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,B) (0.17385057471264367, 4.0) > (0.14901477832512317, 4.0)
+[LVL9] rsome78(A,B) :- some78(A,C) 0.192887931034 (5.0, 12.0, 94.0, 7.0) 0.771551724138 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- some78(A,C) (0.19288793103448276, 5.0) > (0.17385057471264367, 4.0)
+[LVL9] rsome78(A,B) :- some78(B,C) 0.0 (3.0, 14.0, 92.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A) 0.0 (3.0, 13.0, 93.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,B) 0.0 (3.0, 15.0, 91.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C) 0.0 (3.0, 13.0, 93.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C) 0.130387931034 (4.0, 13.0, 93.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C) 0.130387931034 (4.0, 13.0, 93.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(C,A) 0.0 (3.0, 14.0, 92.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(C,B) 0.0 (3.0, 14.0, 92.0, 9.0) 0.543103448276 [ACCEPT]
+[DEBUG] Best rule so far: rsome78(A,B) :- some78(A,C) [0.192887931034]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- some78(A,C) 0.192887931034
+[DEBUG] rsome78(A,B) :- all78(C,B) 0.173850574713
+[DEBUG] rsome78(A,B) :- all78(C,A) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(A,C) 0.130387931034
+[DEBUG] rsome78(A,B) :- somenot78(B,C) 0.130387931034
+[DEBUG] rsome78(A,B) :- all78(B,C) 0.122718052738
+[DEBUG] rsome78(A,B) :- all78(A,C) 0.0
+[DEBUG] rsome78(A,B) :- some78(B,C) 0.0
+[DEBUG] rsome78(A,B) :- some78(C,A) 0.0
+[DEBUG] rsome78(A,B) :- some78(C,B) 0.0
+[DEBUG] rsome78(A,B) :- no78(B,C) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(C,A) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome78(A,B) :- some78(A,C), all78(C,B) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- some78(A,C), all78(C,B) (0.3620689655172414, 3.0) > (0.19288793103448276, 5.0)
+[LVL9] rsome78(A,B) :- some78(A,C), all78(B,C) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(C,D) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(B,D) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(D,C) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(D,B) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), somenot78(B,C) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), somenot78(B,D) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), somenot78(D,C) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+all78(C,B) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+all78(B,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+some78(C,B) 0.220443349754 (5.0, 10.0, 96.0, 7.0) 0.771551724138 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+some78(B,C) 0.220443349754 (5.0, 10.0, 96.0, 7.0) 0.771551724138 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+no78(C,B) 0.220443349754 (5.0, 10.0, 96.0, 7.0) 0.771551724138 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+no78(B,C) 0.205747126437 (5.0, 11.0, 95.0, 7.0) 0.771551724138 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+somenot78(C,B) 0.220443349754 (5.0, 10.0, 96.0, 7.0) 0.771551724138 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+somenot78(B,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), some78(A,D) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), some78(D,C) 0.362068965517 (3.0, 1.0, 105.0, 9.0) 0.543103448276 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), somenot78(C,A) 0.543103448276 (3.0, 0.0, 106.0, 9.0) 0.543103448276 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,B), somenot78(C,A) (0.5431034482758621, 3.0) > (0.3620689655172414, 3.0)
+[LVL9] rsome78(A,B) :- all78(C,B), \+all78(A,C) 0.208620689655 (4.0, 7.0, 99.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+all78(C,A) 0.208620689655 (4.0, 7.0, 99.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+no78(A,C) 0.189655172414 (4.0, 8.0, 98.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+no78(C,A) 0.189655172414 (4.0, 8.0, 98.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+somenot78(A,C) 0.208620689655 (4.0, 7.0, 99.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+all78(C,B) 0.173850574713 (4.0, 9.0, 97.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+all78(B,C) 0.173850574713 (4.0, 9.0, 97.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+some78(C,B) 0.173850574713 (4.0, 9.0, 97.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+no78(C,B) 0.160477453581 (4.0, 10.0, 96.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+no78(B,C) 0.160477453581 (4.0, 10.0, 96.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+somenot78(C,B) 0.160477453581 (4.0, 10.0, 96.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+all78(C,B) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+all78(B,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+some78(B,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+no78(C,B) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+somenot78(C,B) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+somenot78(B,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+all78(A,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+some78(C,A) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+no78(A,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+no78(C,A) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+somenot78(A,C) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+somenot78(C,A) 0.149014778325 (4.0, 11.0, 95.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+all78(A,C) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+all78(C,A) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+no78(A,C) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+no78(C,A) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+somenot78(A,C) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+somenot78(C,A) 0.13908045977 (4.0, 12.0, 94.0, 8.0) 0.695402298851 [ACCEPT]
+[DEBUG] Best rule so far: rsome78(A,B) :- all78(C,B), somenot78(C,A) [0.543103448276]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(C,B) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(B,C) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(C,D) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(B,D) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(D,C) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(D,B) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), somenot78(B,C) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), somenot78(B,D) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), somenot78(D,C) 0.362068965517
+[DEBUG] rsome78(A,B) :- all78(C,B), some78(A,D) 0.362068965517
+[DEBUG] rsome78(A,B) :- all78(C,B), some78(D,C) 0.362068965517
+[DEBUG] rsome78(A,B) :- some78(A,C), \+some78(C,B) 0.220443349754
+[DEBUG] rsome78(A,B) :- some78(A,C), \+some78(B,C) 0.220443349754
+[DEBUG] rsome78(A,B) :- some78(A,C), \+no78(C,B) 0.220443349754
+[DEBUG] rsome78(A,B) :- some78(A,C), \+somenot78(C,B) 0.220443349754
+[DEBUG] rsome78(A,B) :- all78(C,B), \+all78(A,C) 0.208620689655
+[DEBUG] rsome78(A,B) :- all78(C,B), \+all78(C,A) 0.208620689655
+[DEBUG] rsome78(A,B) :- all78(C,B), \+somenot78(A,C) 0.208620689655
+[DEBUG] rsome78(A,B) :- some78(A,C), \+no78(B,C) 0.205747126437
+[DEBUG] rsome78(A,B) :- all78(C,B), \+no78(A,C) 0.189655172414
+[DEBUG] rsome78(A,B) :- all78(C,B), \+no78(C,A) 0.189655172414
+[DEBUG] rsome78(A,B) :- all78(C,A), \+all78(C,B) 0.173850574713
+[DEBUG] rsome78(A,B) :- all78(C,A), \+all78(B,C) 0.173850574713
+[DEBUG] rsome78(A,B) :- all78(C,A), \+some78(C,B) 0.173850574713
+[DEBUG] rsome78(A,B) :- all78(C,A), \+no78(C,B) 0.160477453581
+[DEBUG] rsome78(A,B) :- all78(C,A), \+no78(B,C) 0.160477453581
+[DEBUG] rsome78(A,B) :- all78(C,A), \+somenot78(C,B) 0.160477453581
+[DEBUG] rsome78(A,B) :- some78(A,C), \+all78(C,B) 0.149014778325
+[DEBUG] rsome78(A,B) :- some78(A,C), \+all78(B,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- some78(A,C), \+somenot78(B,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+all78(C,B) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+all78(B,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+some78(B,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+somenot78(C,B) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+somenot78(B,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+all78(A,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+some78(C,A) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+no78(A,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+somenot78(A,C) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+somenot78(C,A) 0.149014778325
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+no78(C,B) 0.13908045977
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+no78(C,A) 0.13908045977
+[DEBUG] rsome78(A,B) :- all78(B,C), \+all78(A,C) 0.13908045977
+[DEBUG] rsome78(A,B) :- all78(B,C), \+all78(C,A) 0.13908045977
+[DEBUG] rsome78(A,B) :- all78(B,C), \+no78(A,C) 0.13908045977
+[DEBUG] rsome78(A,B) :- all78(B,C), \+no78(C,A) 0.13908045977
+[DEBUG] rsome78(A,B) :- all78(B,C), \+somenot78(A,C) 0.13908045977
+[DEBUG] rsome78(A,B) :- all78(B,C), \+somenot78(C,A) 0.13908045977
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome78(A,B) :- all78(C,B), somenot78(C,A) 0.923728813559
+[DEBUG] Best rule so far: rsome78(A,B) :- true [0.0782608695652]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- true 0.0782608695652
+[DEBUG] ==================================
+[LVL9] rsome78(A,B) :- all78(A,C) 0.0 (4.0, 15.0, 91.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C) 0.122250639386 (5.0, 14.0, 92.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(B,C) (0.12225063938618926, 5.0) > (0.0782608695652174, 12.0)
+[LVL9] rsome78(A,B) :- all78(C,A) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- all78(C,A) (0.1484472049689441, 5.0) > (0.12225063938618926, 5.0)
+[LVL9] rsome78(A,B) :- all78(C,B) 0.098023715415 (4.0, 9.0, 97.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C) 0.192391304348 (6.0, 12.0, 94.0, 6.0) 0.769565217391 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- some78(A,C) (0.1923913043478261, 6.0) > (0.1484472049689441, 5.0)
+[LVL9] rsome78(A,B) :- some78(B,C) 0.0 (4.0, 14.0, 92.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,B) 0.0 (4.0, 15.0, 91.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C) 0.129891304348 (5.0, 13.0, 93.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C) 0.129891304348 (5.0, 13.0, 93.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(C,B) 0.0 (4.0, 14.0, 92.0, 8.0) 0.539130434783 [ACCEPT]
+[DEBUG] Best rule so far: rsome78(A,B) :- some78(A,C) [0.192391304348]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- some78(A,C) 0.192391304348
+[DEBUG] rsome78(A,B) :- all78(C,A) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(A,C) 0.129891304348
+[DEBUG] rsome78(A,B) :- somenot78(B,C) 0.129891304348
+[DEBUG] rsome78(A,B) :- all78(B,C) 0.122250639386
+[DEBUG] rsome78(A,B) :- all78(C,B) 0.098023715415
+[DEBUG] rsome78(A,B) :- all78(A,C) 0.0
+[DEBUG] rsome78(A,B) :- some78(B,C) 0.0
+[DEBUG] rsome78(A,B) :- some78(C,A) 0.0
+[DEBUG] rsome78(A,B) :- some78(C,B) 0.0
+[DEBUG] rsome78(A,B) :- no78(B,C) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome78(A,B) :- some78(A,C), all78(C,B) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] BETTER RULE rsome78(A,B) :- some78(A,C), all78(C,B) (0.35942028985507246, 4.0) > (0.1923913043478261, 6.0)
+[LVL9] rsome78(A,B) :- some78(A,C), all78(B,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(C,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(B,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), all78(D,B) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), somenot78(B,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), somenot78(B,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), somenot78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+all78(C,B) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+all78(B,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+some78(C,B) 0.219875776398 (6.0, 10.0, 96.0, 6.0) 0.769565217391 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+some78(B,C) 0.219875776398 (6.0, 10.0, 96.0, 6.0) 0.769565217391 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+no78(C,B) 0.219875776398 (6.0, 10.0, 96.0, 6.0) 0.769565217391 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+no78(B,C) 0.205217391304 (6.0, 11.0, 95.0, 6.0) 0.769565217391 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+somenot78(C,B) 0.219875776398 (6.0, 10.0, 96.0, 6.0) 0.769565217391 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(A,C), \+somenot78(B,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), some78(B,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), some78(B,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), some78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), somenot78(B,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), somenot78(B,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), somenot78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+all78(C,B) 0.173188405797 (5.0, 9.0, 97.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+all78(B,C) 0.173188405797 (5.0, 9.0, 97.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+some78(C,B) 0.173188405797 (5.0, 9.0, 97.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+some78(B,C) 0.0898550724638 (4.0, 10.0, 96.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+no78(C,B) 0.159866220736 (5.0, 10.0, 96.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+no78(B,C) 0.159866220736 (5.0, 10.0, 96.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+somenot78(C,B) 0.159866220736 (5.0, 10.0, 96.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,A), \+somenot78(B,C) 0.0898550724638 (4.0, 10.0, 96.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), some78(C,B) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), some78(C,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), some78(D,B) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), no78(B,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), no78(B,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), no78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+all78(C,B) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+all78(B,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+some78(C,B) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+some78(B,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+no78(C,B) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+no78(B,C) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+somenot78(C,B) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(A,C), \+somenot78(B,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), all78(C,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), all78(D,A) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), some78(A,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), some78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+all78(A,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+all78(C,A) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+some78(A,C) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+some78(C,A) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+no78(A,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+no78(C,A) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+somenot78(A,C) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(B,C), \+somenot78(C,A) 0.148447204969 (5.0, 11.0, 95.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), some78(C,A) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), some78(A,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), some78(C,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), some78(D,A) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), some78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+all78(A,C) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+all78(C,A) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+some78(A,C) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+some78(C,A) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+no78(A,C) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+no78(C,A) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+somenot78(A,C) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(B,C), \+somenot78(C,A) 0.138550724638 (5.0, 12.0, 94.0, 7.0) 0.692753623188 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), some78(A,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), some78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+all78(A,C) 0.119806763285 (4.0, 7.0, 99.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+all78(C,A) 0.119806763285 (4.0, 7.0, 99.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+no78(A,C) 0.107826086957 (4.0, 8.0, 98.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+no78(C,A) 0.107826086957 (4.0, 8.0, 98.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(C,B), \+somenot78(A,C) 0.119806763285 (4.0, 7.0, 99.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), somenot78(C,B) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), somenot78(C,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), somenot78(D,B) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), \+all78(C,B) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), \+all78(B,C) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), \+some78(C,B) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), \+some78(B,C) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), \+no78(C,B) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), \+no78(B,C) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- all78(A,C), \+somenot78(B,C) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), all78(C,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), all78(D,A) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), \+all78(A,C) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), \+some78(A,C) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), \+some78(C,A) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), \+no78(A,C) 0.0 (4.0, 13.0, 93.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), \+no78(C,A) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), \+somenot78(A,C) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(B,C), \+somenot78(C,A) 0.0 (4.0, 12.0, 94.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), all78(B,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), all78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+some78(C,B) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+some78(B,C) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+no78(C,B) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+no78(B,C) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+somenot78(C,B) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,A), \+somenot78(B,C) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,B), somenot78(A,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- some78(C,B), somenot78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C), somenot78(A,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C), somenot78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C), \+all78(A,C) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C), \+some78(C,A) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C), \+no78(A,C) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C), \+no78(C,A) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- no78(B,C), \+somenot78(C,A) 0.0829431438127 (4.0, 11.0, 95.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(C,B), all78(A,D) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[LVL9] rsome78(A,B) :- somenot78(C,B), all78(D,C) 0.359420289855 (4.0, 1.0, 105.0, 8.0) 0.539130434783 [ACCEPT]
+[DEBUG] Best rule so far: rsome78(A,B) :- some78(A,C), all78(C,B) [0.359420289855]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(C,B) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(B,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(C,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(B,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), all78(D,B) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), somenot78(B,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), somenot78(B,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), somenot78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,A), some78(B,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,A), some78(B,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,A), some78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,A), somenot78(B,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,A), somenot78(B,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,A), somenot78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(A,C), some78(C,B) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(A,C), some78(C,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(A,C), some78(D,B) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(A,C), no78(B,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(A,C), no78(B,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(A,C), no78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(B,C), all78(C,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(B,C), all78(D,A) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(B,C), some78(A,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(B,C), some78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(B,C), some78(C,A) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(B,C), some78(A,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(B,C), some78(C,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(B,C), some78(D,A) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(B,C), some78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,B), some78(A,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(C,B), some78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(A,C), somenot78(C,B) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(A,C), somenot78(C,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- all78(A,C), somenot78(D,B) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(B,C), all78(C,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(B,C), all78(D,A) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(C,A), all78(B,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(C,A), all78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(C,B), somenot78(A,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(C,B), somenot78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- no78(B,C), somenot78(A,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- no78(B,C), somenot78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(C,B), all78(A,D) 0.359420289855
+[DEBUG] rsome78(A,B) :- somenot78(C,B), all78(D,C) 0.359420289855
+[DEBUG] rsome78(A,B) :- some78(A,C), \+some78(C,B) 0.219875776398
+[DEBUG] rsome78(A,B) :- some78(A,C), \+some78(B,C) 0.219875776398
+[DEBUG] rsome78(A,B) :- some78(A,C), \+no78(C,B) 0.219875776398
+[DEBUG] rsome78(A,B) :- some78(A,C), \+somenot78(C,B) 0.219875776398
+[DEBUG] rsome78(A,B) :- some78(A,C), \+no78(B,C) 0.205217391304
+[DEBUG] rsome78(A,B) :- all78(C,A), \+all78(C,B) 0.173188405797
+[DEBUG] rsome78(A,B) :- all78(C,A), \+all78(B,C) 0.173188405797
+[DEBUG] rsome78(A,B) :- all78(C,A), \+some78(C,B) 0.173188405797
+[DEBUG] rsome78(A,B) :- all78(C,A), \+no78(C,B) 0.159866220736
+[DEBUG] rsome78(A,B) :- all78(C,A), \+no78(B,C) 0.159866220736
+[DEBUG] rsome78(A,B) :- all78(C,A), \+somenot78(C,B) 0.159866220736
+[DEBUG] rsome78(A,B) :- some78(A,C), \+all78(C,B) 0.148447204969
+[DEBUG] rsome78(A,B) :- some78(A,C), \+all78(B,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- some78(A,C), \+somenot78(B,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+all78(C,B) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+all78(B,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+some78(B,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+somenot78(C,B) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+somenot78(B,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+all78(A,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+some78(C,A) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+no78(A,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+somenot78(A,C) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+somenot78(C,A) 0.148447204969
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+no78(C,B) 0.138550724638
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+no78(C,A) 0.138550724638
+[DEBUG] rsome78(A,B) :- all78(B,C), \+all78(A,C) 0.138550724638
+[DEBUG] rsome78(A,B) :- all78(B,C), \+all78(C,A) 0.138550724638
+[DEBUG] rsome78(A,B) :- all78(B,C), \+no78(A,C) 0.138550724638
+[DEBUG] rsome78(A,B) :- all78(B,C), \+no78(C,A) 0.138550724638
+[DEBUG] rsome78(A,B) :- all78(B,C), \+somenot78(A,C) 0.138550724638
+[DEBUG] rsome78(A,B) :- all78(B,C), \+somenot78(C,A) 0.138550724638
+[DEBUG] rsome78(A,B) :- all78(C,B), \+all78(A,C) 0.119806763285
+[DEBUG] rsome78(A,B) :- all78(C,B), \+all78(C,A) 0.119806763285
+[DEBUG] rsome78(A,B) :- all78(C,B), \+somenot78(A,C) 0.119806763285
+[DEBUG] rsome78(A,B) :- all78(C,B), \+no78(A,C) 0.107826086957
+[DEBUG] rsome78(A,B) :- all78(C,B), \+no78(C,A) 0.107826086957
+[DEBUG] rsome78(A,B) :- all78(C,A), \+some78(B,C) 0.0898550724638
+[DEBUG] rsome78(A,B) :- all78(C,A), \+somenot78(B,C) 0.0898550724638
+[DEBUG] rsome78(A,B) :- some78(C,A), \+some78(C,B) 0.0829431438127
+[DEBUG] rsome78(A,B) :- some78(C,A), \+some78(B,C) 0.0829431438127
+[DEBUG] rsome78(A,B) :- some78(C,A), \+no78(C,B) 0.0829431438127
+[DEBUG] rsome78(A,B) :- some78(C,A), \+no78(B,C) 0.0829431438127
+[DEBUG] rsome78(A,B) :- some78(C,A), \+somenot78(C,B) 0.0829431438127
+[DEBUG] rsome78(A,B) :- some78(C,A), \+somenot78(B,C) 0.0829431438127
+[DEBUG] rsome78(A,B) :- no78(B,C), \+all78(A,C) 0.0829431438127
+[DEBUG] rsome78(A,B) :- no78(B,C), \+some78(C,A) 0.0829431438127
+[DEBUG] rsome78(A,B) :- no78(B,C), \+no78(A,C) 0.0829431438127
+[DEBUG] rsome78(A,B) :- no78(B,C), \+no78(C,A) 0.0829431438127
+[DEBUG] rsome78(A,B) :- no78(B,C), \+somenot78(C,A) 0.0829431438127
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+some78(C,B) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(A,C), \+no78(B,C) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+all78(C,A) 0.0
+[DEBUG] rsome78(A,B) :- somenot78(B,C), \+some78(A,C) 0.0
+[DEBUG] rsome78(A,B) :- all78(B,C), \+some78(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome78(A,B) :- some78(A,C), all78(C,B) 0.923728813559

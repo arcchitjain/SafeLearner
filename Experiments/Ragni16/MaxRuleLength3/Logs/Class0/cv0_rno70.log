@@ -1,0 +1,165 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.0990034348666
+[INFO] Computing scores: 0.1193s
+[INFO] Number of examples (M): 122
+[INFO] Positive weight (P): 2.0000
+[INFO] Negative weight (N): 120.0000
+[DEBUG] Best rule so far: rno70(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno70(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rno70(A,B) :- all70(B,C) 0.0597878495661 (1.0, 15.0, 105.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] BETTER RULE rno70(A,B) :- all70(B,C) (0.05978784956605593, 1.0) > (0.0, 2.0)
+[LVL9] rno70(A,B) :- all70(C,A) 0.0597878495661 (1.0, 15.0, 105.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B) 0.0635245901639 (1.0, 14.0, 106.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] BETTER RULE rno70(A,B) :- some70(C,B) (0.06352459016393443, 1.0) > (0.05978784956605593, 1.0)
+[LVL9] rno70(A,B) :- no70(A,C) 0.0597878495661 (1.0, 15.0, 105.0, 1.0) 0.508196721311 [ACCEPT]
+[DEBUG] Best rule so far: rno70(A,B) :- some70(C,B) [0.0635245901639]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno70(A,B) :- some70(C,B) 0.0635245901639
+[DEBUG] rno70(A,B) :- all70(B,C) 0.0597878495661
+[DEBUG] rno70(A,B) :- all70(C,A) 0.0597878495661
+[DEBUG] rno70(A,B) :- no70(A,C) 0.0597878495661
+[DEBUG] ==================================
+[LVL9] rno70(A,B) :- some70(C,B), no70(A,C) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] BETTER RULE rno70(A,B) :- some70(C,B), no70(A,C) (0.33879781420765026, 1.0) > (0.06352459016393443, 1.0)
+[LVL9] rno70(A,B) :- some70(C,B), no70(A,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), no70(D,C) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), \+all70(A,C) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), \+all70(C,A) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), \+some70(A,C) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), \+some70(C,A) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), \+no70(C,A) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), \+somenot70(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- some70(C,B), \+somenot70(C,A) 0.0725995316159 (1.0, 12.0, 108.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), all70(C,A) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), all70(C,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), all70(D,A) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+all70(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+some70(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+some70(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+no70(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+no70(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+somenot70(A,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+somenot70(C,A) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), all70(B,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), all70(D,C) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+all70(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+some70(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+some70(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+no70(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+no70(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+somenot70(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+somenot70(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), some70(C,D) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), some70(D,B) 0.338797814208 (1.0, 1.0, 119.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), \+all70(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), \+all70(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), \+some70(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), \+no70(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), \+no70(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), \+somenot70(C,B) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[LVL9] rno70(A,B) :- no70(A,C), \+somenot70(B,C) 0.0677595628415 (1.0, 13.0, 107.0, 1.0) 0.508196721311 [ACCEPT]
+[DEBUG] Best rule so far: rno70(A,B) :- some70(C,B), no70(A,C) [0.338797814208]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno70(A,B) :- some70(C,B), no70(A,C) 0.338797814208
+[DEBUG] rno70(A,B) :- some70(C,B), no70(A,D) 0.338797814208
+[DEBUG] rno70(A,B) :- some70(C,B), no70(D,C) 0.338797814208
+[DEBUG] rno70(A,B) :- all70(B,C), all70(C,A) 0.338797814208
+[DEBUG] rno70(A,B) :- all70(B,C), all70(C,D) 0.338797814208
+[DEBUG] rno70(A,B) :- all70(B,C), all70(D,A) 0.338797814208
+[DEBUG] rno70(A,B) :- all70(C,A), all70(B,D) 0.338797814208
+[DEBUG] rno70(A,B) :- all70(C,A), all70(D,C) 0.338797814208
+[DEBUG] rno70(A,B) :- no70(A,C), some70(C,D) 0.338797814208
+[DEBUG] rno70(A,B) :- no70(A,C), some70(D,B) 0.338797814208
+[DEBUG] rno70(A,B) :- some70(C,B), \+all70(A,C) 0.0725995316159
+[DEBUG] rno70(A,B) :- some70(C,B), \+all70(C,A) 0.0725995316159
+[DEBUG] rno70(A,B) :- some70(C,B), \+some70(A,C) 0.0725995316159
+[DEBUG] rno70(A,B) :- some70(C,B), \+some70(C,A) 0.0725995316159
+[DEBUG] rno70(A,B) :- some70(C,B), \+no70(C,A) 0.0725995316159
+[DEBUG] rno70(A,B) :- some70(C,B), \+somenot70(C,A) 0.0725995316159
+[DEBUG] rno70(A,B) :- some70(C,B), \+somenot70(A,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(B,C), \+all70(A,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(B,C), \+some70(A,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(B,C), \+some70(C,A) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(B,C), \+no70(A,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(B,C), \+no70(C,A) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(B,C), \+somenot70(A,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(B,C), \+somenot70(C,A) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(C,A), \+all70(C,B) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(C,A), \+some70(C,B) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(C,A), \+some70(B,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(C,A), \+no70(C,B) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(C,A), \+no70(B,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(C,A), \+somenot70(C,B) 0.0677595628415
+[DEBUG] rno70(A,B) :- all70(C,A), \+somenot70(B,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- no70(A,C), \+all70(C,B) 0.0677595628415
+[DEBUG] rno70(A,B) :- no70(A,C), \+all70(B,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- no70(A,C), \+some70(B,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- no70(A,C), \+no70(C,B) 0.0677595628415
+[DEBUG] rno70(A,B) :- no70(A,C), \+no70(B,C) 0.0677595628415
+[DEBUG] rno70(A,B) :- no70(A,C), \+somenot70(C,B) 0.0677595628415
+[DEBUG] rno70(A,B) :- no70(A,C), \+somenot70(B,C) 0.0677595628415
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno70(A,B) :- some70(C,B), no70(A,C) 0.983606557377
+[DEBUG] Best rule so far: rno70(A,B) :- true [0.00833333333333]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno70(A,B) :- true 0.00833333333333
+[DEBUG] ==================================
+[LVL9] rno70(A,B) :- all70(B,C) 0.0593137254902 (2.0, 16.0, 104.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] BETTER RULE rno70(A,B) :- all70(B,C) (0.059313725490196076, 2.0) > (0.008333333333333333, 2.0)
+[LVL9] rno70(A,B) :- all70(C,A) 0.0593137254902 (2.0, 16.0, 104.0, 0.0) 0.504166666667 [ACCEPT]
+[DEBUG] Best rule so far: rno70(A,B) :- all70(B,C) [0.0593137254902]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno70(A,B) :- all70(B,C) 0.0593137254902
+[DEBUG] rno70(A,B) :- all70(C,A) 0.0593137254902
+[DEBUG] ==================================
+[LVL9] rno70(A,B) :- all70(B,C), all70(C,A) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] BETTER RULE rno70(A,B) :- all70(B,C), all70(C,A) (0.3361111111111111, 2.0) > (0.059313725490196076, 2.0)
+[LVL9] rno70(A,B) :- all70(B,C), all70(C,D) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), all70(D,A) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+all70(A,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+some70(A,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+some70(C,A) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+no70(A,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+no70(C,A) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+somenot70(A,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(B,C), \+somenot70(C,A) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), all70(B,D) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), all70(D,C) 0.336111111111 (2.0, 2.0, 118.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+all70(C,B) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+some70(C,B) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+some70(B,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+no70(C,B) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+no70(B,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+somenot70(C,B) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[LVL9] rno70(A,B) :- all70(C,A), \+somenot70(B,C) 0.0672222222222 (2.0, 14.0, 106.0, 0.0) 0.504166666667 [ACCEPT]
+[DEBUG] Best rule so far: rno70(A,B) :- all70(B,C), all70(C,A) [0.336111111111]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno70(A,B) :- all70(B,C), all70(C,A) 0.336111111111
+[DEBUG] rno70(A,B) :- all70(B,C), all70(C,D) 0.336111111111
+[DEBUG] rno70(A,B) :- all70(B,C), all70(D,A) 0.336111111111
+[DEBUG] rno70(A,B) :- all70(C,A), all70(B,D) 0.336111111111
+[DEBUG] rno70(A,B) :- all70(C,A), all70(D,C) 0.336111111111
+[DEBUG] rno70(A,B) :- all70(B,C), \+all70(A,C) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(B,C), \+some70(A,C) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(B,C), \+some70(C,A) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(B,C), \+no70(A,C) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(B,C), \+no70(C,A) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(B,C), \+somenot70(A,C) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(B,C), \+somenot70(C,A) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(C,A), \+all70(C,B) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(C,A), \+some70(C,B) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(C,A), \+some70(B,C) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(C,A), \+no70(C,B) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(C,A), \+no70(B,C) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(C,A), \+somenot70(C,B) 0.0672222222222
+[DEBUG] rno70(A,B) :- all70(C,A), \+somenot70(B,C) 0.0672222222222
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno70(A,B) :- all70(B,C), all70(C,A) 0.983606557377

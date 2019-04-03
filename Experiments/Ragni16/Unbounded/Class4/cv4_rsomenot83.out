@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_83.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsomenot83.log
+              target:	rsomenot83/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot83(A,B) :- some83(C,A), \+some83(C,B), \+some83(B,C), \+somenot83(B,C), \+no83(C,B), \+somenot83(C,B)
+rsomenot83(A,B) :- all83(B,C), some83(A,C)
+rsomenot83(A,B) :- some83(B,C), no83(C,A)
+rsomenot83(A,B) :- somenot83(C,B), some83(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.890909090909
+           Precision:	 1.0
+              Recall:	 0.333333333333
+================== STATISTICS ==================
+    Rule evaluations:	79103
+          Total time:	1033.0805s

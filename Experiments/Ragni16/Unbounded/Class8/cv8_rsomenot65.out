@@ -1,0 +1,22 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_65.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rsomenot65.log
+              target:	rsomenot65/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot65(A,B) :- somenot65(A,C), all65(C,B)
+rsomenot65(A,B) :- some65(B,C), all65(C,A)
+rsomenot65(A,B) :- somenot65(C,A), no65(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.941666666667
+           Precision:	 1.0
+              Recall:	 0.3
+================== STATISTICS ==================
+    Rule evaluations:	53937
+          Total time:	1811.5679s

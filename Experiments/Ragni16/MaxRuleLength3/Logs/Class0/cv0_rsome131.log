@@ -1,0 +1,514 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.244957803912
+[INFO] Computing scores: 0.0915s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 13.0000
+[INFO] Negative weight (N): 107.0000
+[DEBUG] Best rule so far: rsome131(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome131(A,B) :- all131(B,C) 0.0 (1.0, 14.0, 93.0, 12.0) 0.554166666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A) 0.131770833333 (2.0, 13.0, 94.0, 11.0) 0.702777777778 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- all131(C,A) (0.13177083333333334, 2.0) > (0.0, 13.0)
+[LVL9] rsome131(A,B) :- some131(A,C) 0.0 (1.0, 13.0, 94.0, 12.0) 0.554166666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C) 0.140555555556 (2.0, 12.0, 95.0, 11.0) 0.702777777778 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- some131(B,C) (0.14055555555555557, 2.0) > (0.13177083333333334, 2.0)
+[LVL9] rsome131(A,B) :- some131(C,A) 0.194270833333 (3.0, 12.0, 95.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- some131(C,A) (0.19427083333333334, 3.0) > (0.14055555555555557, 2.0)
+[LVL9] rsome131(A,B) :- some131(C,B) 0.194270833333 (3.0, 12.0, 95.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(A,C) 0.0 (1.0, 15.0, 92.0, 12.0) 0.554166666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(C,B) 0.0 (1.0, 14.0, 93.0, 12.0) 0.554166666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C) 0.131770833333 (2.0, 13.0, 94.0, 11.0) 0.702777777778 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C) 0.256770833333 (4.0, 11.0, 96.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- somenot131(B,C) (0.25677083333333334, 4.0) > (0.19427083333333334, 3.0)
+[LVL9] rsome131(A,B) :- somenot131(C,A) 0.256770833333 (4.0, 11.0, 96.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B) 0.131770833333 (2.0, 13.0, 94.0, 11.0) 0.702777777778 [ACCEPT]
+[DEBUG] Best rule so far: rsome131(A,B) :- somenot131(B,C) [0.256770833333]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- somenot131(B,C) 0.256770833333
+[DEBUG] rsome131(A,B) :- somenot131(C,A) 0.256770833333
+[DEBUG] rsome131(A,B) :- some131(C,A) 0.194270833333
+[DEBUG] rsome131(A,B) :- some131(C,B) 0.194270833333
+[DEBUG] rsome131(A,B) :- some131(B,C) 0.140555555556
+[DEBUG] rsome131(A,B) :- all131(C,A) 0.131770833333
+[DEBUG] rsome131(A,B) :- somenot131(A,C) 0.131770833333
+[DEBUG] rsome131(A,B) :- somenot131(C,B) 0.131770833333
+[DEBUG] rsome131(A,B) :- all131(B,C) 0.0
+[DEBUG] rsome131(A,B) :- some131(A,C) 0.0
+[DEBUG] rsome131(A,B) :- no131(A,C) 0.0
+[DEBUG] rsome131(A,B) :- no131(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome131(A,B) :- somenot131(B,C), some131(C,A) 0.702777777778 (2.0, 0.0, 107.0, 11.0) 0.702777777778 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome131(A,B) :- somenot131(B,C), some131(C,A) (0.7027777777777778, 2.0) > (0.25677083333333334, 4.0)
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+all131(A,C) 0.273888888889 (4.0, 10.0, 97.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+all131(C,A) 0.293452380952 (4.0, 9.0, 98.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+some131(A,C) 0.293452380952 (4.0, 9.0, 98.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+no131(A,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+no131(C,A) 0.293452380952 (4.0, 9.0, 98.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+somenot131(A,C) 0.293452380952 (4.0, 9.0, 98.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+all131(C,B) 0.293452380952 (4.0, 9.0, 98.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+all131(B,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+some131(C,B) 0.293452380952 (4.0, 9.0, 98.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+some131(B,C) 0.273888888889 (4.0, 10.0, 97.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+no131(C,B) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+no131(B,C) 0.293452380952 (4.0, 9.0, 98.0, 9.0) 0.821666666667 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+somenot131(C,B) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+somenot131(B,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+all131(C,B) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+all131(B,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+some131(B,C) 0.207222222222 (3.0, 11.0, 96.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+no131(C,B) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+no131(B,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+somenot131(C,B) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+all131(A,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+no131(A,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+no131(C,A) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+somenot131(A,C) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+somenot131(C,A) 0.222023809524 (3.0, 10.0, 97.0, 10.0) 0.777083333333 [ACCEPT]
+[DEBUG] Best rule so far: rsome131(A,B) :- somenot131(B,C), some131(C,A) [0.702777777778]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+all131(C,A) 0.293452380952
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+some131(A,C) 0.293452380952
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+no131(C,A) 0.293452380952
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+somenot131(A,C) 0.293452380952
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+all131(C,B) 0.293452380952
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+some131(C,B) 0.293452380952
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+no131(B,C) 0.293452380952
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+all131(A,C) 0.273888888889
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+some131(B,C) 0.273888888889
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+no131(A,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.222023809524
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+all131(B,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+no131(C,B) 0.222023809524
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+somenot131(C,B) 0.222023809524
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+somenot131(B,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,A), \+all131(C,B) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,A), \+all131(B,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,A), \+no131(C,B) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,A), \+no131(B,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,A), \+somenot131(C,B) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,B), \+all131(A,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,B), \+no131(A,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,B), \+no131(C,A) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,B), \+somenot131(A,C) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,B), \+somenot131(C,A) 0.222023809524
+[DEBUG] rsome131(A,B) :- some131(C,A), \+some131(B,C) 0.207222222222
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome131(A,B) :- somenot131(B,C), some131(C,A) 0.908333333333
+[DEBUG] Best rule so far: rsome131(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome131(A,B) :- all131(B,C) 0.0 (3.0, 14.0, 93.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A) 0.130826271186 (4.0, 13.0, 94.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- all131(C,A) (0.1308262711864407, 4.0) > (0.0, 13.0)
+[LVL9] rsome131(A,B) :- some131(A,C) 0.0 (3.0, 13.0, 94.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C) 0.139548022599 (4.0, 12.0, 95.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- some131(B,C) (0.13954802259887006, 4.0) > (0.1308262711864407, 4.0)
+[LVL9] rsome131(A,B) :- some131(C,A) 0.0 (3.0, 12.0, 95.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B) 0.193326271186 (5.0, 12.0, 95.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- some131(C,B) (0.1933262711864407, 5.0) > (0.13954802259887006, 4.0)
+[LVL9] rsome131(A,B) :- no131(A,C) 0.0 (3.0, 15.0, 92.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(C,B) 0.0 (3.0, 14.0, 93.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C) 0.130826271186 (4.0, 13.0, 94.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A) 0.255826271186 (6.0, 11.0, 96.0, 7.0) 0.818644067797 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- somenot131(C,A) (0.2558262711864407, 6.0) > (0.1933262711864407, 5.0)
+[LVL9] rsome131(A,B) :- somenot131(C,B) 0.130826271186 (4.0, 13.0, 94.0, 9.0) 0.697740112994 [ACCEPT]
+[DEBUG] Best rule so far: rsome131(A,B) :- somenot131(C,A) [0.255826271186]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- somenot131(C,A) 0.255826271186
+[DEBUG] rsome131(A,B) :- some131(C,B) 0.193326271186
+[DEBUG] rsome131(A,B) :- somenot131(B,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- some131(B,C) 0.139548022599
+[DEBUG] rsome131(A,B) :- all131(C,A) 0.130826271186
+[DEBUG] rsome131(A,B) :- somenot131(A,C) 0.130826271186
+[DEBUG] rsome131(A,B) :- somenot131(C,B) 0.130826271186
+[DEBUG] rsome131(A,B) :- all131(B,C) 0.0
+[DEBUG] rsome131(A,B) :- some131(A,C) 0.0
+[DEBUG] rsome131(A,B) :- some131(C,A) 0.0
+[DEBUG] rsome131(A,B) :- no131(A,C) 0.0
+[DEBUG] rsome131(A,B) :- no131(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome131(A,B) :- somenot131(C,A), all131(B,C) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- somenot131(C,A), all131(B,C) (0.3644067796610169, 3.0) > (0.2558262711864407, 6.0)
+[LVL9] rsome131(A,B) :- somenot131(C,A), all131(B,D) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), all131(D,C) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), no131(C,B) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), no131(C,D) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), no131(D,B) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(C,B) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(B,C) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(B,D) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(D,C) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(D,B) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+all131(C,B) 0.292372881356 (6.0, 9.0, 98.0, 7.0) 0.818644067797 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+all131(B,C) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+some131(C,B) 0.292372881356 (6.0, 9.0, 98.0, 7.0) 0.818644067797 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+some131(B,C) 0.272881355932 (6.0, 10.0, 97.0, 7.0) 0.818644067797 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+no131(C,B) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+no131(B,C) 0.292372881356 (6.0, 9.0, 98.0, 7.0) 0.818644067797 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+somenot131(C,B) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+somenot131(B,C) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), all131(C,A) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), all131(C,D) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), all131(D,A) 0.364406779661 (3.0, 1.0, 106.0, 10.0) 0.546610169492 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), some131(A,C) 0.546610169492 (3.0, 0.0, 107.0, 10.0) 0.546610169492 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsome131(A,B) :- some131(C,B), some131(A,C) (0.5466101694915254, 3.0) > (0.3644067796610169, 3.0)
+[LVL9] rsome131(A,B) :- some131(C,B), \+all131(A,C) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+all131(C,A) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+some131(C,A) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+no131(A,C) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+no131(C,A) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+somenot131(A,C) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+somenot131(C,A) 0.220944309927 (5.0, 10.0, 97.0, 8.0) 0.773305084746 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+all131(A,C) 0.161016949153 (4.0, 10.0, 97.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+all131(C,A) 0.174435028249 (4.0, 9.0, 98.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+some131(A,C) 0.174435028249 (4.0, 9.0, 98.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+no131(C,A) 0.174435028249 (4.0, 9.0, 98.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+somenot131(A,C) 0.174435028249 (4.0, 9.0, 98.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+all131(A,C) 0.161016949153 (4.0, 10.0, 97.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+some131(A,C) 0.161016949153 (4.0, 10.0, 97.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+some131(C,A) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+no131(A,C) 0.161016949153 (4.0, 10.0, 97.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+no131(C,A) 0.161016949153 (4.0, 10.0, 97.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+somenot131(C,A) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+all131(C,B) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+all131(B,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+no131(C,B) 0.139548022599 (4.0, 12.0, 95.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+no131(B,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+somenot131(C,B) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+somenot131(B,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+all131(C,B) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+all131(B,C) 0.139548022599 (4.0, 12.0, 95.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+some131(C,B) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+no131(C,B) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+no131(B,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+somenot131(B,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+all131(A,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+all131(C,A) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+some131(A,C) 0.139548022599 (4.0, 12.0, 95.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+some131(C,A) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+no131(A,C) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+no131(C,A) 0.149515738499 (4.0, 11.0, 96.0, 9.0) 0.697740112994 [ACCEPT]
+[DEBUG] Best rule so far: rsome131(A,B) :- some131(C,B), some131(A,C) [0.546610169492]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- somenot131(C,A), all131(B,C) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), all131(B,D) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), all131(D,C) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), no131(C,B) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), no131(C,D) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), no131(D,B) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(C,B) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(B,C) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(B,D) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(D,C) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(D,B) 0.364406779661
+[DEBUG] rsome131(A,B) :- some131(C,B), all131(C,A) 0.364406779661
+[DEBUG] rsome131(A,B) :- some131(C,B), all131(C,D) 0.364406779661
+[DEBUG] rsome131(A,B) :- some131(C,B), all131(D,A) 0.364406779661
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+all131(C,B) 0.292372881356
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+some131(C,B) 0.292372881356
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+no131(B,C) 0.292372881356
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+some131(B,C) 0.272881355932
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+all131(B,C) 0.220944309927
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+no131(C,B) 0.220944309927
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+somenot131(C,B) 0.220944309927
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+somenot131(B,C) 0.220944309927
+[DEBUG] rsome131(A,B) :- some131(C,B), \+all131(A,C) 0.220944309927
+[DEBUG] rsome131(A,B) :- some131(C,B), \+no131(A,C) 0.220944309927
+[DEBUG] rsome131(A,B) :- some131(C,B), \+no131(C,A) 0.220944309927
+[DEBUG] rsome131(A,B) :- some131(C,B), \+somenot131(A,C) 0.220944309927
+[DEBUG] rsome131(A,B) :- some131(C,B), \+somenot131(C,A) 0.220944309927
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+all131(C,A) 0.174435028249
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+some131(A,C) 0.174435028249
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+no131(C,A) 0.174435028249
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+somenot131(A,C) 0.174435028249
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+all131(A,C) 0.161016949153
+[DEBUG] rsome131(A,B) :- some131(B,C), \+all131(A,C) 0.161016949153
+[DEBUG] rsome131(A,B) :- some131(B,C), \+some131(A,C) 0.161016949153
+[DEBUG] rsome131(A,B) :- some131(B,C), \+no131(A,C) 0.161016949153
+[DEBUG] rsome131(A,B) :- some131(B,C), \+no131(C,A) 0.161016949153
+[DEBUG] rsome131(A,B) :- some131(C,B), \+all131(C,A) 0.149515738499
+[DEBUG] rsome131(A,B) :- some131(C,B), \+some131(C,A) 0.149515738499
+[DEBUG] rsome131(A,B) :- some131(B,C), \+some131(C,A) 0.149515738499
+[DEBUG] rsome131(A,B) :- some131(B,C), \+somenot131(C,A) 0.149515738499
+[DEBUG] rsome131(A,B) :- all131(C,A), \+all131(C,B) 0.149515738499
+[DEBUG] rsome131(A,B) :- all131(C,A), \+all131(B,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- all131(C,A), \+no131(B,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- all131(C,A), \+somenot131(C,B) 0.149515738499
+[DEBUG] rsome131(A,B) :- all131(C,A), \+somenot131(B,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+all131(C,B) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+some131(C,B) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+no131(C,B) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+no131(B,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+somenot131(B,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+all131(A,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+all131(C,A) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+some131(C,A) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+no131(A,C) 0.149515738499
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+no131(C,A) 0.149515738499
+[DEBUG] rsome131(A,B) :- all131(C,A), \+no131(C,B) 0.139548022599
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+all131(B,C) 0.139548022599
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+some131(A,C) 0.139548022599
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome131(A,B) :- some131(C,B), some131(A,C) 0.916666666667
+[DEBUG] Best rule so far: rsome131(A,B) :- true [0.0854700854701]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- true 0.0854700854701
+[DEBUG] ==================================
+[LVL9] rsome131(A,B) :- all131(B,C) 0.0 (4.0, 14.0, 93.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A) 0.130341880342 (5.0, 13.0, 94.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- all131(C,A) (0.13034188034188035, 5.0) > (0.08547008547008547, 13.0)
+[LVL9] rsome131(A,B) :- some131(B,C) 0.139031339031 (5.0, 12.0, 95.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- some131(B,C) (0.13903133903133905, 5.0) > (0.13034188034188035, 5.0)
+[LVL9] rsome131(A,B) :- some131(C,A) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B) 0.139031339031 (5.0, 12.0, 95.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(A,C) 0.0 (4.0, 15.0, 92.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(C,B) 0.0 (4.0, 14.0, 93.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C) 0.130341880342 (5.0, 13.0, 94.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- somenot131(B,C) (0.14896214896214896, 5.0) > (0.13903133903133905, 5.0)
+[LVL9] rsome131(A,B) :- somenot131(C,A) 0.255341880342 (7.0, 11.0, 96.0, 6.0) 0.817094017094 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- somenot131(C,A) (0.2553418803418803, 7.0) > (0.14896214896214896, 5.0)
+[LVL9] rsome131(A,B) :- somenot131(C,B) 0.130341880342 (5.0, 13.0, 94.0, 8.0) 0.695156695157 [ACCEPT]
+[DEBUG] Best rule so far: rsome131(A,B) :- somenot131(C,A) [0.255341880342]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- somenot131(C,A) 0.255341880342
+[DEBUG] rsome131(A,B) :- somenot131(B,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- some131(B,C) 0.139031339031
+[DEBUG] rsome131(A,B) :- some131(C,B) 0.139031339031
+[DEBUG] rsome131(A,B) :- all131(C,A) 0.130341880342
+[DEBUG] rsome131(A,B) :- somenot131(A,C) 0.130341880342
+[DEBUG] rsome131(A,B) :- somenot131(C,B) 0.130341880342
+[DEBUG] rsome131(A,B) :- all131(B,C) 0.0
+[DEBUG] rsome131(A,B) :- some131(C,A) 0.0
+[DEBUG] rsome131(A,B) :- no131(A,C) 0.0
+[DEBUG] rsome131(A,B) :- no131(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome131(A,B) :- somenot131(C,A), all131(B,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] BETTER RULE rsome131(A,B) :- somenot131(C,A), all131(B,C) (0.3618233618233618, 4.0) > (0.2553418803418803, 7.0)
+[LVL9] rsome131(A,B) :- somenot131(C,A), all131(B,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), all131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), no131(C,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), no131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), no131(D,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(C,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(B,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(B,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), somenot131(D,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+all131(C,B) 0.291819291819 (7.0, 9.0, 98.0, 6.0) 0.817094017094 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+all131(B,C) 0.220390720391 (6.0, 10.0, 97.0, 7.0) 0.771367521368 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+some131(C,B) 0.291819291819 (7.0, 9.0, 98.0, 6.0) 0.817094017094 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+some131(B,C) 0.272364672365 (7.0, 10.0, 97.0, 6.0) 0.817094017094 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+no131(C,B) 0.220390720391 (6.0, 10.0, 97.0, 7.0) 0.771367521368 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+no131(B,C) 0.291819291819 (7.0, 9.0, 98.0, 6.0) 0.817094017094 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+somenot131(C,B) 0.220390720391 (6.0, 10.0, 97.0, 7.0) 0.771367521368 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,A), \+somenot131(B,C) 0.220390720391 (6.0, 10.0, 97.0, 7.0) 0.771367521368 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), no131(A,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), no131(A,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), no131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), somenot131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), somenot131(D,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+all131(A,C) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+all131(C,A) 0.173789173789 (5.0, 9.0, 98.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+some131(A,C) 0.173789173789 (5.0, 9.0, 98.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+no131(A,C) 0.0904558404558 (4.0, 10.0, 97.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+no131(C,A) 0.173789173789 (5.0, 9.0, 98.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+somenot131(A,C) 0.173789173789 (5.0, 9.0, 98.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.0904558404558 (4.0, 10.0, 97.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), all131(C,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), all131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), all131(D,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), somenot131(A,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), somenot131(A,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), somenot131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+all131(A,C) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+all131(C,A) 0.0 (4.0, 11.0, 96.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+some131(A,C) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+some131(C,A) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+no131(A,C) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+no131(C,A) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+somenot131(A,C) 0.0 (4.0, 11.0, 96.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(B,C), \+somenot131(C,A) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), all131(C,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), all131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), all131(D,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), some131(C,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), some131(D,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+all131(A,C) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+all131(C,A) 0.0 (4.0, 11.0, 96.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+some131(C,A) 0.0 (4.0, 11.0, 96.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+no131(A,C) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+no131(C,A) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+somenot131(A,C) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,B), \+somenot131(C,A) 0.160420775805 (5.0, 10.0, 97.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), some131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), some131(B,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), some131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), some131(D,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+all131(C,B) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+all131(B,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+some131(C,B) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+some131(B,C) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+no131(C,B) 0.139031339031 (5.0, 12.0, 95.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+no131(B,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+somenot131(C,B) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(C,A), \+somenot131(B,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), some131(B,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), some131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), somenot131(C,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), somenot131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), somenot131(D,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+all131(C,B) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+all131(B,C) 0.139031339031 (5.0, 12.0, 95.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+some131(C,B) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+some131(B,C) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+no131(C,B) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+no131(B,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+somenot131(C,B) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(A,C), \+somenot131(B,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), somenot131(A,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), somenot131(D,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), somenot131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+all131(A,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+all131(C,A) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+some131(A,C) 0.139031339031 (5.0, 12.0, 95.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+some131(C,A) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+no131(A,C) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+no131(C,A) 0.148962148962 (5.0, 11.0, 96.0, 8.0) 0.695156695157 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+somenot131(A,C) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- somenot131(C,B), \+somenot131(C,A) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(B,C), somenot131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(B,C), somenot131(D,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(B,C), \+all131(A,C) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(B,C), \+all131(C,A) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(B,C), \+some131(A,C) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(B,C), \+some131(C,A) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- all131(B,C), \+no131(A,C) 0.0 (4.0, 12.0, 95.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), some131(D,B) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+all131(C,B) 0.0904558404558 (4.0, 10.0, 97.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+all131(B,C) 0.0904558404558 (4.0, 10.0, 97.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+no131(C,B) 0.0904558404558 (4.0, 10.0, 97.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+no131(B,C) 0.0904558404558 (4.0, 10.0, 97.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- some131(C,A), \+somenot131(C,B) 0.0904558404558 (4.0, 10.0, 97.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(A,C), somenot131(B,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(A,C), somenot131(D,C) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(C,B), somenot131(C,D) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[LVL9] rsome131(A,B) :- no131(C,B), somenot131(D,A) 0.361823361823 (4.0, 1.0, 106.0, 9.0) 0.542735042735 [ACCEPT]
+[DEBUG] Best rule so far: rsome131(A,B) :- somenot131(C,A), all131(B,C) [0.361823361823]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome131(A,B) :- somenot131(C,A), all131(B,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), all131(B,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), all131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), no131(C,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), no131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), no131(D,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(C,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(B,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(B,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), somenot131(D,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(B,C), no131(A,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(B,C), no131(A,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(B,C), no131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(B,C), somenot131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(B,C), somenot131(D,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(B,C), all131(C,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(B,C), all131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(B,C), all131(D,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(B,C), somenot131(A,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(B,C), somenot131(A,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(B,C), somenot131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(C,B), all131(C,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(C,B), all131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(C,B), all131(D,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(C,B), some131(C,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(C,B), some131(D,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- all131(C,A), some131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- all131(C,A), some131(B,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- all131(C,A), some131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- all131(C,A), some131(D,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(A,C), some131(B,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(A,C), some131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(A,C), somenot131(C,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(A,C), somenot131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(A,C), somenot131(D,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,B), somenot131(A,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,B), somenot131(D,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,B), somenot131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- all131(B,C), somenot131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- all131(B,C), somenot131(D,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- some131(C,A), some131(D,B) 0.361823361823
+[DEBUG] rsome131(A,B) :- no131(A,C), somenot131(B,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- no131(A,C), somenot131(D,C) 0.361823361823
+[DEBUG] rsome131(A,B) :- no131(C,B), somenot131(C,D) 0.361823361823
+[DEBUG] rsome131(A,B) :- no131(C,B), somenot131(D,A) 0.361823361823
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+all131(C,B) 0.291819291819
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+some131(C,B) 0.291819291819
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+no131(B,C) 0.291819291819
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+some131(B,C) 0.272364672365
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+all131(B,C) 0.220390720391
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+no131(C,B) 0.220390720391
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+somenot131(C,B) 0.220390720391
+[DEBUG] rsome131(A,B) :- somenot131(C,A), \+somenot131(B,C) 0.220390720391
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+all131(C,A) 0.173789173789
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+some131(A,C) 0.173789173789
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+no131(C,A) 0.173789173789
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+somenot131(A,C) 0.173789173789
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+all131(A,C) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(B,C), \+all131(A,C) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(B,C), \+some131(A,C) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(B,C), \+no131(A,C) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(B,C), \+no131(C,A) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(C,B), \+all131(A,C) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(C,B), \+no131(A,C) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(C,B), \+no131(C,A) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(C,B), \+somenot131(A,C) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(C,B), \+somenot131(C,A) 0.160420775805
+[DEBUG] rsome131(A,B) :- some131(B,C), \+some131(C,A) 0.148962148962
+[DEBUG] rsome131(A,B) :- some131(B,C), \+somenot131(C,A) 0.148962148962
+[DEBUG] rsome131(A,B) :- all131(C,A), \+all131(C,B) 0.148962148962
+[DEBUG] rsome131(A,B) :- all131(C,A), \+all131(B,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- all131(C,A), \+no131(B,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- all131(C,A), \+somenot131(C,B) 0.148962148962
+[DEBUG] rsome131(A,B) :- all131(C,A), \+somenot131(B,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+all131(C,B) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+some131(C,B) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+no131(C,B) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+no131(B,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+somenot131(B,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+all131(A,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+all131(C,A) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+some131(C,A) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+no131(A,C) 0.148962148962
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+no131(C,A) 0.148962148962
+[DEBUG] rsome131(A,B) :- all131(C,A), \+no131(C,B) 0.139031339031
+[DEBUG] rsome131(A,B) :- somenot131(A,C), \+all131(B,C) 0.139031339031
+[DEBUG] rsome131(A,B) :- somenot131(C,B), \+some131(A,C) 0.139031339031
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+no131(A,C) 0.0904558404558
+[DEBUG] rsome131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.0904558404558
+[DEBUG] rsome131(A,B) :- some131(C,A), \+all131(C,B) 0.0904558404558
+[DEBUG] rsome131(A,B) :- some131(C,A), \+all131(B,C) 0.0904558404558
+[DEBUG] rsome131(A,B) :- some131(C,A), \+no131(C,B) 0.0904558404558
+[DEBUG] rsome131(A,B) :- some131(C,A), \+no131(B,C) 0.0904558404558
+[DEBUG] rsome131(A,B) :- some131(C,A), \+somenot131(C,B) 0.0904558404558
+[DEBUG] rsome131(A,B) :- some131(B,C), \+all131(C,A) 0.0
+[DEBUG] rsome131(A,B) :- some131(B,C), \+somenot131(A,C) 0.0
+[DEBUG] rsome131(A,B) :- some131(C,B), \+all131(C,A) 0.0
+[DEBUG] rsome131(A,B) :- some131(C,B), \+some131(C,A) 0.0
+[DEBUG] rsome131(A,B) :- all131(C,A), \+some131(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome131(A,B) :- somenot131(C,A), all131(B,C) 0.916666666667

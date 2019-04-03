@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_75.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsomenot75.log
+              target:	rsomenot75/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot75(A,B) :- somenot75(C,B), all75(A,C)
+rsomenot75(A,B) :- some75(C,A), all75(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.875
+           Precision:	 1.0
+              Recall:	 0.125
+================== STATISTICS ==================
+    Rule evaluations:	48525
+          Total time:	1900.8938s

@@ -1,0 +1,721 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.157125945897
+[INFO] Computing scores: 0.0723s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 20.0000
+[INFO] Negative weight (N): 100.0000
+[DEBUG] Best rule so far: rsomenot9(A,B) :- true [0.166666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- true 0.166666666667
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- all9(A,C) 0.197916666667 (3.0, 12.0, 88.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- all9(A,C) (0.19791666666666666, 3.0) > (0.16666666666666669, 20.0)
+[LVL9] rsomenot9(A,B) :- all9(B,C) 0.0 (2.0, 13.0, 87.0, 18.0) 0.722222222222 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A) 0.197916666667 (3.0, 12.0, 88.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B) 0.197916666667 (3.0, 12.0, 88.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C) 0.186274509804 (3.0, 13.0, 87.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C) 0.303921568627 (5.0, 11.0, 89.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C) (0.303921568627451, 5.0) > (0.19791666666666666, 3.0)
+[LVL9] rsomenot9(A,B) :- some9(C,A) 0.0 (1.0, 12.0, 88.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B) 0.0 (2.0, 11.0, 89.0, 18.0) 0.722222222222 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(A,C) 0.0 (1.0, 14.0, 86.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C) 0.0 (2.0, 13.0, 87.0, 18.0) 0.722222222222 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A) 0.0 (2.0, 14.0, 86.0, 18.0) 0.722222222222 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B) 0.186274509804 (3.0, 13.0, 87.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C) 0.0 (2.0, 12.0, 88.0, 18.0) 0.722222222222 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(B,C) 0.0 (2.0, 12.0, 88.0, 18.0) 0.722222222222 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A) 0.303921568627 (5.0, 11.0, 89.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,B) 0.0 (1.0, 15.0, 85.0, 19.0) 0.583333333333 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- some9(B,C) [0.303921568627]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C) 0.303921568627
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A) 0.303921568627
+[DEBUG] rsomenot9(A,B) :- all9(A,C) 0.197916666667
+[DEBUG] rsomenot9(A,B) :- all9(C,A) 0.197916666667
+[DEBUG] rsomenot9(A,B) :- all9(C,B) 0.197916666667
+[DEBUG] rsomenot9(A,B) :- some9(A,C) 0.186274509804
+[DEBUG] rsomenot9(A,B) :- no9(C,B) 0.186274509804
+[DEBUG] rsomenot9(A,B) :- all9(B,C) 0.0
+[DEBUG] rsomenot9(A,B) :- some9(C,B) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(B,C) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(B,C) 0.0
+[DEBUG] rsomenot9(A,B) :- some9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(A,C) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.388888888889 (1.0, 1.0, 99.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C), some9(A,C) (0.3888888888888889, 1.0) > (0.303921568627451, 5.0)
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.388888888889 (1.0, 1.0, 99.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.388888888889 (1.0, 1.0, 99.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.388888888889 (1.0, 1.0, 99.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.388888888889 (1.0, 1.0, 99.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.388888888889 (1.0, 1.0, 99.0, 19.0) 0.583333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(C,A) 0.722222222222 (2.0, 0.0, 100.0, 18.0) 0.722222222222 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C), somenot9(C,A) (0.7222222222222222, 2.0) > (0.3888888888888889, 1.0)
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.277777777778 (4.0, 10.0, 90.0, 16.0) 0.833333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.277777777778 (4.0, 10.0, 90.0, 16.0) 0.833333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.277777777778 (4.0, 10.0, 90.0, 16.0) 0.833333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+all9(C,B) 0.277777777778 (4.0, 10.0, 90.0, 16.0) 0.833333333333 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+some9(C,B) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+no9(C,B) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+no9(B,C) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(C,B) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(B,C) 0.344444444444 (5.0, 9.0, 91.0, 15.0) 0.861111111111 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+all9(C,B) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+all9(B,C) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+some9(C,B) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+some9(B,C) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+no9(C,B) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+somenot9(C,B) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.22619047619 (3.0, 10.0, 90.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.211111111111 (3.0, 11.0, 89.0, 17.0) 0.791666666667 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- some9(B,C), somenot9(C,A) [0.722222222222]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.388888888889
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.388888888889
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.388888888889
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.388888888889
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.388888888889
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.388888888889
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+some9(C,B) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+no9(C,B) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+no9(B,C) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(C,B) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(B,C) 0.344444444444
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.277777777778
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.277777777778
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.277777777778
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+all9(C,B) 0.277777777778
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+all9(C,B) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+all9(B,C) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+some9(B,C) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+no9(C,B) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+somenot9(C,B) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.22619047619
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+some9(C,B) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.211111111111
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.211111111111
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot9(A,B) :- some9(B,C), somenot9(C,A) 0.85
+[DEBUG] Best rule so far: rsomenot9(A,B) :- true [0.152542372881]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- true 0.152542372881
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- all9(A,C) 0.197033898305 (5.0, 12.0, 88.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- all9(A,C) (0.19703389830508475, 5.0) > (0.15254237288135594, 20.0)
+[LVL9] rsomenot9(A,B) :- all9(B,C) 0.0 (4.0, 13.0, 87.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A) 0.197033898305 (5.0, 12.0, 88.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B) 0.197033898305 (5.0, 12.0, 88.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C) 0.185443668993 (5.0, 13.0, 87.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C) (0.21016949152542372, 5.0) > (0.19703389830508475, 5.0)
+[LVL9] rsomenot9(A,B) :- some9(C,A) 0.0 (3.0, 12.0, 88.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B) 0.153753026634 (4.0, 11.0, 89.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(A,C) 0.0 (3.0, 14.0, 86.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C) 0.0 (4.0, 13.0, 87.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A) 0.0 (4.0, 14.0, 86.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B) 0.185443668993 (5.0, 13.0, 87.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C) 0.0 (4.0, 12.0, 88.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(B,C) 0.0 (4.0, 12.0, 88.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,B) 0.0 (3.0, 15.0, 85.0, 17.0) 0.576271186441 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- some9(B,C) [0.210169491525]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- all9(A,C) 0.197033898305
+[DEBUG] rsomenot9(A,B) :- all9(C,A) 0.197033898305
+[DEBUG] rsomenot9(A,B) :- all9(C,B) 0.197033898305
+[DEBUG] rsomenot9(A,B) :- some9(A,C) 0.185443668993
+[DEBUG] rsomenot9(A,B) :- no9(C,B) 0.185443668993
+[DEBUG] rsomenot9(A,B) :- some9(C,B) 0.153753026634
+[DEBUG] rsomenot9(A,B) :- all9(B,C) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(B,C) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(B,C) 0.0
+[DEBUG] rsomenot9(A,B) :- some9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(A,C) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C), some9(A,C) (0.384180790960452, 3.0) > (0.21016949152542372, 5.0)
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(A,D) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(D,C) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.165580182529 (4.0, 10.0, 90.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.165580182529 (4.0, 10.0, 90.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.165580182529 (4.0, 10.0, 90.0, 16.0) 0.717514124294 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), all9(C,B) 0.38418079096 (3.0, 1.0, 99.0, 17.0) 0.576271186441 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), all9(B,C) 0.717514124294 (4.0, 0.0, 100.0, 16.0) 0.717514124294 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsomenot9(A,B) :- somenot9(C,A), all9(B,C) (0.7175141242937854, 4.0) > (0.384180790960452, 3.0)
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+some9(C,B) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+no9(C,B) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+no9(B,C) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(C,B) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(B,C) 0.242503259452 (5.0, 9.0, 91.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+all9(C,B) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+all9(B,C) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+some9(C,B) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+some9(B,C) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+no9(C,B) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+somenot9(C,B) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.225181598063 (5.0, 10.0, 90.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.210169491525 (5.0, 11.0, 89.0, 15.0) 0.78813559322 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- somenot9(C,A), all9(B,C) [0.717514124294]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(A,D) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(D,C) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), all9(C,B) 0.38418079096
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+some9(C,B) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+no9(C,B) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+no9(B,C) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(C,B) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), \+somenot9(B,C) 0.242503259452
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+all9(C,B) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+all9(B,C) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+some9(B,C) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+no9(C,B) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+somenot9(C,B) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.225181598063
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+some9(C,B) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.210169491525
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.165580182529
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.165580182529
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.165580182529
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot9(A,B) :- somenot9(C,A), all9(B,C) 0.866666666667
+[DEBUG] Best rule so far: rsomenot9(A,B) :- true [0.137931034483]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- true 0.137931034483
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- all9(A,C) 0.196120689655 (7.0, 12.0, 88.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- all9(A,C) (0.1961206896551724, 7.0) > (0.13793103448275862, 20.0)
+[LVL9] rsomenot9(A,B) :- all9(C,A) 0.196120689655 (7.0, 12.0, 88.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B) 0.196120689655 (7.0, 12.0, 88.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C) 0.184584178499 (7.0, 13.0, 87.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C) (0.20919540229885056, 7.0) > (0.1961206896551724, 7.0)
+[LVL9] rsomenot9(A,B) :- some9(C,A) 0.0 (5.0, 12.0, 88.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B) 0.152709359606 (6.0, 11.0, 89.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(A,C) 0.0 (5.0, 14.0, 86.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C) 0.0 (6.0, 13.0, 87.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A) 0.0 (6.0, 14.0, 86.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B) 0.184584178499 (7.0, 13.0, 87.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C) 0.142528735632 (6.0, 12.0, 88.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(B,C) 0.142528735632 (6.0, 12.0, 88.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A) 0.0 (5.0, 11.0, 89.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,B) 0.0 (5.0, 15.0, 85.0, 15.0) 0.568965517241 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- some9(B,C) [0.209195402299]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- all9(A,C) 0.196120689655
+[DEBUG] rsomenot9(A,B) :- all9(C,A) 0.196120689655
+[DEBUG] rsomenot9(A,B) :- all9(C,B) 0.196120689655
+[DEBUG] rsomenot9(A,B) :- some9(A,C) 0.184584178499
+[DEBUG] rsomenot9(A,B) :- no9(C,B) 0.184584178499
+[DEBUG] rsomenot9(A,B) :- some9(C,B) 0.152709359606
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C) 0.142528735632
+[DEBUG] rsomenot9(A,B) :- somenot9(B,C) 0.142528735632
+[DEBUG] rsomenot9(A,B) :- no9(B,C) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- some9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(A,C) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C), some9(A,C) (0.37931034482758624, 5.0) > (0.20919540229885056, 7.0)
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(A,D) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(D,C) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.241379310345 (7.0, 9.0, 91.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.241379310345 (7.0, 9.0, 91.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.164456233422 (6.0, 10.0, 90.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.241379310345 (7.0, 9.0, 91.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.164456233422 (6.0, 10.0, 90.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.241379310345 (7.0, 9.0, 91.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.164456233422 (6.0, 10.0, 90.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), all9(C,B) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), all9(C,D) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), all9(D,B) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), some9(C,B) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), some9(C,D) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), some9(D,B) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), no9(C,B) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), no9(C,D) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), no9(D,B) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+all9(C,B) 0.152709359606 (6.0, 11.0, 89.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+some9(C,B) 0.152709359606 (6.0, 11.0, 89.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+no9(C,B) 0.152709359606 (6.0, 11.0, 89.0, 14.0) 0.712643678161 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), no9(B,C) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), no9(B,D) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), no9(D,C) 0.379310344828 (5.0, 1.0, 99.0, 15.0) 0.568965517241 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), somenot9(B,C) 0.712643678161 (6.0, 0.0, 100.0, 14.0) 0.712643678161 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rsomenot9(A,B) :- all9(C,A), somenot9(B,C) (0.7126436781609194, 6.0) > (0.37931034482758624, 5.0)
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+all9(C,B) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+all9(B,C) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+some9(C,B) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+some9(B,C) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+no9(C,B) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), \+somenot9(C,B) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.224137931034 (7.0, 10.0, 90.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.209195402299 (7.0, 11.0, 89.0, 13.0) 0.784482758621 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- all9(C,A), somenot9(B,C) [0.712643678161]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(A,D) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(D,C) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), all9(C,B) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), all9(C,D) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), all9(D,B) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), some9(C,B) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), some9(C,D) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), some9(D,B) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), no9(C,B) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), no9(C,D) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(A,C), no9(D,B) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(C,A), no9(B,C) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(C,A), no9(B,D) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- all9(C,A), no9(D,C) 0.379310344828
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.241379310345
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.241379310345
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.241379310345
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.241379310345
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+all9(C,B) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+all9(B,C) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+some9(B,C) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+no9(C,B) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+somenot9(C,B) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.224137931034
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- all9(C,A), \+some9(C,B) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.209195402299
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.164456233422
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.164456233422
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.164456233422
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+all9(C,B) 0.152709359606
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+some9(C,B) 0.152709359606
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+no9(C,B) 0.152709359606
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot9(A,B) :- all9(C,A), somenot9(B,C) 0.883333333333
+[DEBUG] Best rule so far: rsomenot9(A,B) :- true [0.122807017544]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- true 0.122807017544
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- all9(A,C) 0.195175438596 (9.0, 12.0, 88.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- all9(A,C) (0.19517543859649122, 9.0) > (0.12280701754385964, 20.0)
+[LVL9] rsomenot9(A,B) :- all9(C,A) 0.0 (7.0, 12.0, 88.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B) 0.195175438596 (9.0, 12.0, 88.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C) 0.183694530444 (9.0, 13.0, 87.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C) (0.20818713450292398, 9.0) > (0.19517543859649122, 9.0)
+[LVL9] rsomenot9(A,B) :- some9(C,A) 0.0 (7.0, 12.0, 88.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(A,C) 0.0 (7.0, 14.0, 86.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C) 0.132675438596 (8.0, 13.0, 87.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A) 0.124871001032 (8.0, 14.0, 86.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B) 0.183694530444 (9.0, 13.0, 87.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C) 0.141520467836 (8.0, 12.0, 88.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A) 0.0 (7.0, 11.0, 89.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,B) 0.0 (7.0, 15.0, 85.0, 13.0) 0.561403508772 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- some9(B,C) [0.208187134503]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- all9(A,C) 0.195175438596
+[DEBUG] rsomenot9(A,B) :- all9(C,B) 0.195175438596
+[DEBUG] rsomenot9(A,B) :- some9(A,C) 0.183694530444
+[DEBUG] rsomenot9(A,B) :- no9(C,B) 0.183694530444
+[DEBUG] rsomenot9(A,B) :- some9(C,B) 0.151629072682
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C) 0.141520467836
+[DEBUG] rsomenot9(A,B) :- no9(B,C) 0.132675438596
+[DEBUG] rsomenot9(A,B) :- no9(C,A) 0.124871001032
+[DEBUG] rsomenot9(A,B) :- all9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- some9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- no9(A,C) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A) 0.0
+[DEBUG] rsomenot9(A,B) :- somenot9(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] BETTER RULE rsomenot9(A,B) :- some9(B,C), some9(A,C) (0.3742690058479532, 7.0) > (0.20818713450292398, 9.0)
+[LVL9] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), somenot9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.240215924426 (9.0, 9.0, 91.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.240215924426 (9.0, 9.0, 91.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.240215924426 (9.0, 9.0, 91.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.240215924426 (9.0, 9.0, 91.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), all9(C,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), all9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), all9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), some9(C,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), some9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), some9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), no9(C,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), no9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), no9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+all9(C,B) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+some9(C,B) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+no9(C,B) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), all9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), all9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), some9(A,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), some9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), some9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), somenot9(C,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), somenot9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), somenot9(D,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+all9(A,C) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+some9(A,C) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.22305764411 (9.0, 10.0, 90.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,B), \+somenot9(C,A) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), all9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), all9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), some9(B,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), no9(C,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), no9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), no9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+all9(C,B) 0.141520467836 (8.0, 12.0, 88.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+some9(B,C) 0.141520467836 (8.0, 12.0, 88.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+no9(C,B) 0.141520467836 (8.0, 12.0, 88.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), all9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), all9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), some9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), some9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), no9(C,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), no9(D,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+all9(A,C) 0.141520467836 (8.0, 12.0, 88.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+some9(A,C) 0.141520467836 (8.0, 12.0, 88.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+no9(C,A) 0.141520467836 (8.0, 12.0, 88.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.208187134503 (9.0, 11.0, 89.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), all9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), all9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), some9(C,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), some9(D,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+all9(A,C) 0.0 (7.0, 10.0, 90.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+all9(C,A) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+some9(A,C) 0.176900584795 (8.0, 9.0, 91.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+some9(C,A) 0.0 (7.0, 10.0, 90.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+no9(A,C) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+no9(C,A) 0.176900584795 (8.0, 9.0, 91.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+somenot9(A,C) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,B), \+somenot9(C,A) 0.176900584795 (8.0, 9.0, 91.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), some9(B,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), some9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), no9(B,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), no9(B,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), no9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+all9(C,B) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+all9(B,C) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+some9(C,B) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+some9(B,C) 0.0 (7.0, 11.0, 89.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+no9(C,B) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+no9(B,C) 0.0 (7.0, 11.0, 89.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+somenot9(C,B) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(A,C), \+somenot9(B,C) 0.163292847503 (8.0, 10.0, 90.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), all9(C,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), all9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), all9(D,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), somenot9(A,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), somenot9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), \+all9(A,C) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), \+some9(A,C) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), \+no9(A,C) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(B,C), \+no9(C,A) 0.151629072682 (8.0, 11.0, 89.0, 12.0) 0.707602339181 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A), no9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A), somenot9(C,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A), somenot9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(C,A), somenot9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), no9(B,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- all9(C,A), no9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- some9(C,A), some9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(A,C), some9(B,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- no9(A,C), some9(D,C) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), all9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,A), all9(D,B) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,B), no9(C,D) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[LVL9] rsomenot9(A,B) :- somenot9(C,B), no9(D,A) 0.374269005848 (7.0, 1.0, 99.0, 13.0) 0.561403508772 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot9(A,B) :- some9(B,C), some9(A,C) [0.374269005848]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), some9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), no9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(A,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), somenot9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), all9(C,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), all9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), all9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), some9(C,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), some9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), some9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), no9(C,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), no9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(A,C), no9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), all9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), all9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), some9(A,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), some9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), some9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), somenot9(C,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), somenot9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,B), somenot9(D,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(A,C), all9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(A,C), all9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(A,C), some9(B,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(A,C), no9(C,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(A,C), no9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(A,C), no9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,B), all9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,B), all9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,B), some9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,B), some9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,B), no9(C,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,B), no9(D,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(C,B), all9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(C,B), all9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(C,B), some9(C,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(C,B), some9(D,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), some9(B,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), some9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), no9(B,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), no9(B,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), no9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(B,C), all9(C,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(B,C), all9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(B,C), all9(D,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(B,C), somenot9(A,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(B,C), somenot9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,A), no9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,A), somenot9(C,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,A), somenot9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(C,A), somenot9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,A), no9(B,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- all9(C,A), no9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(C,A), some9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(A,C), some9(B,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- no9(A,C), some9(D,C) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), all9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(C,A), all9(D,B) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(C,B), no9(C,D) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- somenot9(C,B), no9(D,A) 0.374269005848
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(A,C) 0.240215924426
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+all9(C,A) 0.240215924426
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(C,A) 0.240215924426
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(C,A) 0.240215924426
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+all9(B,C) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+some9(B,C) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+no9(B,C) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(C,B) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+all9(C,A) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(A,C) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+no9(C,A) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+somenot9(A,C) 0.22305764411
+[DEBUG] rsomenot9(A,B) :- all9(A,C), \+somenot9(B,C) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- all9(C,B), \+some9(C,A) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+all9(B,C) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+some9(C,B) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+no9(B,C) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(C,B) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- some9(A,C), \+somenot9(B,C) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+all9(C,A) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+some9(C,A) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+no9(A,C) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(A,C) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- no9(C,B), \+somenot9(C,A) 0.208187134503
+[DEBUG] rsomenot9(A,B) :- some9(C,B), \+some9(A,C) 0.176900584795
+[DEBUG] rsomenot9(A,B) :- some9(C,B), \+no9(C,A) 0.176900584795
+[DEBUG] rsomenot9(A,B) :- some9(C,B), \+somenot9(C,A) 0.176900584795
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+some9(A,C) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+no9(A,C) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- some9(B,C), \+somenot9(A,C) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- some9(C,B), \+all9(C,A) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- some9(C,B), \+no9(A,C) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- some9(C,B), \+somenot9(A,C) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), \+all9(C,B) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), \+no9(C,B) 0.163292847503
+[DEBUG] rsomenot9(A,B) :- somenot9(A,C), \+somenot9(C,B) 0.163292847503
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot9(A,B) :- some9(B,C), some9(A,C) 0.883333333333

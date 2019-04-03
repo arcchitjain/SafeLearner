@@ -1,0 +1,445 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.85584654624
+[INFO] Computing scores: 0.0517s
+[INFO] Number of examples (M): 59
+[INFO] Positive weight (P): 8.0000
+[INFO] Negative weight (N): 51.0000
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.135593220339]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.135593220339
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(A,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(A,C) (0.2669491525423729, 2.0) > (0.13559322033898305, 8.0)
+[LVL9] rnvc11(A,B) :- some11(B,C) 0.348399246704 (3.0, 5.0, 46.0, 5.0) 0.783898305085 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(B,C) (0.3483992467043315, 3.0) > (0.2669491525423729, 2.0)
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.0 (1.0, 7.0, 44.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A) 0.305084745763 (2.0, 4.0, 47.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.0 (1.0, 7.0, 44.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C) 0.237288135593 (2.0, 6.0, 45.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C) 0.237288135593 (2.0, 6.0, 45.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,A) 0.0 (1.0, 7.0, 44.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B) 0.237288135593 (2.0, 6.0, 45.0, 6.0) 0.71186440678 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- some11(B,C) [0.348399246704]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- some11(B,C) 0.348399246704
+[DEBUG] rnvc11(A,B) :- no11(C,A) 0.305084745763
+[DEBUG] rnvc11(A,B) :- some11(A,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(A,C) 0.237288135593
+[DEBUG] rnvc11(A,B) :- somenot11(B,C) 0.237288135593
+[DEBUG] rnvc11(A,B) :- somenot11(C,B) 0.237288135593
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.0
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.0
+[DEBUG] rnvc11(A,B) :- somenot11(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(B,C), some11(A,C) 0.567796610169 (1.0, 0.0, 51.0, 7.0) 0.567796610169 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(B,C), some11(A,C) (0.5677966101694916, 1.0) > (0.3483992467043315, 3.0)
+[LVL9] rnvc11(A,B) :- some11(B,C), \+all11(A,C) 0.391949152542 (3.0, 4.0, 47.0, 5.0) 0.783898305085 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+all11(C,A) 0.391949152542 (3.0, 4.0, 47.0, 5.0) 0.783898305085 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+some11(C,A) 0.391949152542 (3.0, 4.0, 47.0, 5.0) 0.783898305085 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+no11(A,C) 0.391949152542 (3.0, 4.0, 47.0, 5.0) 0.783898305085 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+somenot11(C,A) 0.391949152542 (3.0, 4.0, 47.0, 5.0) 0.783898305085 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A), \+all11(C,B) 0.35593220339 (2.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A), \+all11(B,C) 0.35593220339 (2.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A), \+no11(C,B) 0.35593220339 (2.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A), \+somenot11(C,B) 0.35593220339 (2.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(A,C), \+all11(C,B) 0.305084745763 (2.0, 4.0, 47.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(A,C), \+all11(B,C) 0.305084745763 (2.0, 4.0, 47.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(A,C), \+some11(C,B) 0.305084745763 (2.0, 4.0, 47.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(A,C), \+no11(C,B) 0.305084745763 (2.0, 4.0, 47.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(A,C), \+somenot11(C,B) 0.305084745763 (2.0, 4.0, 47.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+all11(C,B) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+all11(B,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+some11(C,B) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+no11(C,B) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+no11(B,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.266949152542 (2.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- some11(B,C), some11(A,C) [0.567796610169]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+all11(A,C) 0.391949152542
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+all11(C,A) 0.391949152542
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+some11(C,A) 0.391949152542
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+no11(A,C) 0.391949152542
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+somenot11(C,A) 0.391949152542
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+all11(C,B) 0.35593220339
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+all11(B,C) 0.35593220339
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+no11(C,B) 0.35593220339
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+somenot11(C,B) 0.35593220339
+[DEBUG] rnvc11(A,B) :- some11(A,C), \+all11(C,B) 0.305084745763
+[DEBUG] rnvc11(A,B) :- some11(A,C), \+all11(B,C) 0.305084745763
+[DEBUG] rnvc11(A,B) :- some11(A,C), \+some11(C,B) 0.305084745763
+[DEBUG] rnvc11(A,B) :- some11(A,C), \+no11(C,B) 0.305084745763
+[DEBUG] rnvc11(A,B) :- some11(A,C), \+somenot11(C,B) 0.305084745763
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+all11(C,B) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+all11(B,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+some11(C,B) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+no11(C,B) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+no11(B,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.266949152542
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.266949152542
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc11(A,B) :- some11(B,C), some11(A,C) 0.881355932203
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.120689655172]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.120689655172
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(A,C) 0.160098522167 (2.0, 5.0, 46.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(A,C) (0.16009852216748768, 2.0) > (0.1206896551724138, 8.0)
+[LVL9] rnvc11(A,B) :- some11(B,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(B,C) (0.2650862068965517, 3.0) > (0.16009852216748768, 2.0)
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.124521072797 (2.0, 7.0, 44.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A) 0.302955665025 (3.0, 4.0, 47.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- no11(C,A) (0.3029556650246305, 3.0) > (0.2650862068965517, 3.0)
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.124521072797 (2.0, 7.0, 44.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C) 0.235632183908 (3.0, 6.0, 45.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C) 0.235632183908 (3.0, 6.0, 45.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,A) 0.124521072797 (2.0, 7.0, 44.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B) 0.235632183908 (3.0, 6.0, 45.0, 5.0) 0.706896551724 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- no11(C,A) [0.302955665025]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- no11(C,A) 0.302955665025
+[DEBUG] rnvc11(A,B) :- some11(B,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(A,C) 0.235632183908
+[DEBUG] rnvc11(A,B) :- somenot11(B,C) 0.235632183908
+[DEBUG] rnvc11(A,B) :- somenot11(C,B) 0.235632183908
+[DEBUG] rnvc11(A,B) :- some11(A,C) 0.160098522167
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.124521072797
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.124521072797
+[DEBUG] rnvc11(A,B) :- somenot11(C,A) 0.124521072797
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- no11(C,A), some11(B,C) 0.560344827586 (2.0, 0.0, 51.0, 6.0) 0.560344827586 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc11(A,B) :- no11(C,A), some11(B,C) (0.5603448275862069, 2.0) > (0.3029556650246305, 3.0)
+[LVL9] rnvc11(A,B) :- no11(C,A), \+all11(C,B) 0.353448275862 (3.0, 3.0, 48.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A), \+all11(B,C) 0.353448275862 (3.0, 3.0, 48.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A), \+no11(C,B) 0.353448275862 (3.0, 3.0, 48.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A), \+somenot11(C,B) 0.353448275862 (3.0, 3.0, 48.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+all11(A,C) 0.302955665025 (3.0, 4.0, 47.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+all11(C,A) 0.302955665025 (3.0, 4.0, 47.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+some11(C,A) 0.302955665025 (3.0, 4.0, 47.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+no11(A,C) 0.302955665025 (3.0, 4.0, 47.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(B,C), \+somenot11(C,A) 0.302955665025 (3.0, 4.0, 47.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+all11(C,B) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+all11(B,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+some11(C,B) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+no11(C,B) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+no11(B,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.265086206897 (3.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- no11(C,A), some11(B,C) [0.560344827586]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+all11(C,B) 0.353448275862
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+all11(B,C) 0.353448275862
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+no11(C,B) 0.353448275862
+[DEBUG] rnvc11(A,B) :- no11(C,A), \+somenot11(C,B) 0.353448275862
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+all11(A,C) 0.302955665025
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+all11(C,A) 0.302955665025
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+some11(C,A) 0.302955665025
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+no11(A,C) 0.302955665025
+[DEBUG] rnvc11(A,B) :- some11(B,C), \+somenot11(C,A) 0.302955665025
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+all11(C,B) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+all11(B,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+some11(C,B) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+no11(C,B) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+no11(B,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.265086206897
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.265086206897
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc11(A,B) :- no11(C,A), some11(B,C) 0.898305084746
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.105263157895]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.105263157895
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(A,C) 0.157894736842 (3.0, 5.0, 46.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(A,C) (0.15789473684210525, 3.0) > (0.10526315789473685, 8.0)
+[LVL9] rnvc11(A,B) :- some11(B,C) 0.157894736842 (3.0, 5.0, 46.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.122807017544 (3.0, 7.0, 44.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A) 0.184210526316 (3.0, 4.0, 47.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- no11(C,A) (0.18421052631578946, 3.0) > (0.15789473684210525, 3.0)
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.122807017544 (3.0, 7.0, 44.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C) 0.233918128655 (4.0, 6.0, 45.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(A,C) (0.23391812865497075, 4.0) > (0.18421052631578946, 3.0)
+[LVL9] rnvc11(A,B) :- somenot11(B,C) 0.233918128655 (4.0, 6.0, 45.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,A) 0.122807017544 (3.0, 7.0, 44.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B) 0.233918128655 (4.0, 6.0, 45.0, 4.0) 0.701754385965 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- somenot11(A,C) [0.233918128655]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- somenot11(A,C) 0.233918128655
+[DEBUG] rnvc11(A,B) :- somenot11(B,C) 0.233918128655
+[DEBUG] rnvc11(A,B) :- somenot11(C,B) 0.233918128655
+[DEBUG] rnvc11(A,B) :- no11(C,A) 0.184210526316
+[DEBUG] rnvc11(A,B) :- some11(A,C) 0.157894736842
+[DEBUG] rnvc11(A,B) :- some11(B,C) 0.157894736842
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.122807017544
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.122807017544
+[DEBUG] rnvc11(A,B) :- somenot11(C,A) 0.122807017544
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- somenot11(A,C), some11(B,C) 0.552631578947 (3.0, 0.0, 51.0, 5.0) 0.552631578947 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(A,C), some11(B,C) (0.5526315789473684, 3.0) > (0.23391812865497075, 4.0)
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+all11(C,B) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+all11(B,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+some11(C,B) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+no11(C,B) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+no11(B,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.263157894737 (4.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- somenot11(A,C), some11(B,C) [0.552631578947]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+all11(C,B) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+all11(B,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+some11(C,B) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+no11(C,B) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+no11(B,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.263157894737
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.263157894737
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc11(A,B) :- somenot11(A,C), some11(B,C) 0.915254237288
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.0892857142857]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.0892857142857
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(A,C) 0.155612244898 (4.0, 5.0, 46.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(A,C) (0.15561224489795916, 4.0) > (0.08928571428571429, 8.0)
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.121031746032 (4.0, 7.0, 44.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc11(A,B) :- no11(C,A) 0.181547619048 (4.0, 4.0, 47.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- no11(C,A) (0.18154761904761904, 4.0) > (0.15561224489795916, 4.0)
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.121031746032 (4.0, 7.0, 44.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C) 0.136160714286 (4.0, 6.0, 45.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C) 0.232142857143 (5.0, 6.0, 45.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(B,C) (0.23214285714285715, 5.0) > (0.18154761904761904, 4.0)
+[LVL9] rnvc11(A,B) :- somenot11(C,A) 0.121031746032 (4.0, 7.0, 44.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B) 0.232142857143 (5.0, 6.0, 45.0, 3.0) 0.696428571429 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- somenot11(B,C) [0.232142857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- somenot11(B,C) 0.232142857143
+[DEBUG] rnvc11(A,B) :- somenot11(C,B) 0.232142857143
+[DEBUG] rnvc11(A,B) :- no11(C,A) 0.181547619048
+[DEBUG] rnvc11(A,B) :- some11(A,C) 0.155612244898
+[DEBUG] rnvc11(A,B) :- somenot11(A,C) 0.136160714286
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.121031746032
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.121031746032
+[DEBUG] rnvc11(A,B) :- somenot11(C,A) 0.121031746032
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- somenot11(B,C), some11(A,C) 0.544642857143 (4.0, 0.0, 51.0, 4.0) 0.544642857143 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(B,C), some11(A,C) (0.5446428571428571, 4.0) > (0.23214285714285715, 5.0)
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.261160714286 (5.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- somenot11(B,C), some11(A,C) [0.544642857143]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(A,C) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+all11(C,A) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+some11(C,A) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+no11(A,C) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.261160714286
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.261160714286
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc11(A,B) :- somenot11(B,C), some11(A,C) 0.932203389831
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.0727272727273]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.0727272727273
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.119191919192 (5.0, 7.0, 44.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(C,A) (0.1191919191919192, 5.0) > (0.07272727272727272, 8.0)
+[LVL9] rnvc11(A,B) :- no11(C,A) 0.178787878788 (5.0, 4.0, 47.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- no11(C,A) (0.1787878787878788, 5.0) > (0.1191919191919192, 5.0)
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.119191919192 (5.0, 7.0, 44.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(A,C) 0.134090909091 (5.0, 6.0, 45.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C) 0.134090909091 (5.0, 6.0, 45.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,A) 0.119191919192 (5.0, 7.0, 44.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B) 0.230303030303 (6.0, 6.0, 45.0, 2.0) 0.690909090909 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(C,B) (0.23030303030303031, 6.0) > (0.1787878787878788, 5.0)
+[DEBUG] Best rule so far: rnvc11(A,B) :- somenot11(C,B) [0.230303030303]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- somenot11(C,B) 0.230303030303
+[DEBUG] rnvc11(A,B) :- no11(C,A) 0.178787878788
+[DEBUG] rnvc11(A,B) :- somenot11(A,C) 0.134090909091
+[DEBUG] rnvc11(A,B) :- somenot11(B,C) 0.134090909091
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.119191919192
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.119191919192
+[DEBUG] rnvc11(A,B) :- somenot11(C,A) 0.119191919192
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- somenot11(C,B), somenot11(A,C) 0.536363636364 (5.0, 0.0, 51.0, 3.0) 0.536363636364 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(C,B), somenot11(A,C) (0.5363636363636364, 5.0) > (0.23030303030303031, 6.0)
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.259090909091 (6.0, 5.0, 46.0, 2.0) 0.690909090909 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.259090909091 (6.0, 5.0, 46.0, 2.0) 0.690909090909 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.259090909091 (6.0, 5.0, 46.0, 2.0) 0.690909090909 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.259090909091 (6.0, 5.0, 46.0, 2.0) 0.690909090909 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.259090909091 (6.0, 5.0, 46.0, 2.0) 0.690909090909 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.259090909091 (6.0, 5.0, 46.0, 2.0) 0.690909090909 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- somenot11(C,B), somenot11(A,C) [0.536363636364]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(A,C) 0.259090909091
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+all11(C,A) 0.259090909091
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(A,C) 0.259090909091
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+some11(C,A) 0.259090909091
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(A,C) 0.259090909091
+[DEBUG] rnvc11(A,B) :- somenot11(C,B), \+no11(C,A) 0.259090909091
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc11(A,B) :- somenot11(C,B), somenot11(A,C) 0.949152542373
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.0555555555556]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.0555555555556
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.117283950617 (6.0, 7.0, 44.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(C,A) (0.11728395061728396, 6.0) > (0.05555555555555555, 8.0)
+[LVL9] rnvc11(A,B) :- no11(C,A) 0.175925925926 (6.0, 4.0, 47.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- no11(C,A) (0.17592592592592593, 6.0) > (0.11728395061728396, 6.0)
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.117283950617 (6.0, 7.0, 44.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(B,C) 0.131944444444 (6.0, 6.0, 45.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,A) 0.117283950617 (6.0, 7.0, 44.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B) 0.131944444444 (6.0, 6.0, 45.0, 2.0) 0.527777777778 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- no11(C,A) [0.175925925926]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- no11(C,A) 0.175925925926
+[DEBUG] rnvc11(A,B) :- somenot11(B,C) 0.131944444444
+[DEBUG] rnvc11(A,B) :- somenot11(C,B) 0.131944444444
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.117283950617
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.117283950617
+[DEBUG] rnvc11(A,B) :- somenot11(C,A) 0.117283950617
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- no11(C,A), somenot11(B,C) 0.527777777778 (6.0, 0.0, 51.0, 2.0) 0.527777777778 [REJECT* fp] 5.0
+[LVL9] BETTER RULE rnvc11(A,B) :- no11(C,A), somenot11(B,C) (0.5277777777777778, 6.0) > (0.17592592592592593, 6.0)
+[INFO] RULE LEARNED: rnvc11(A,B) :- no11(C,A), somenot11(B,C) 0.966101694915
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.0377358490566]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.0377358490566
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.115303983229 (7.0, 7.0, 44.0, 1.0) 0.518867924528 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(C,A) (0.11530398322851153, 7.0) > (0.03773584905660377, 8.0)
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.115303983229 (7.0, 7.0, 44.0, 1.0) 0.518867924528 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,A) 0.115303983229 (7.0, 7.0, 44.0, 1.0) 0.518867924528 [ACCEPT]
+[LVL9] rnvc11(A,B) :- somenot11(C,B) 0.129716981132 (7.0, 6.0, 45.0, 1.0) 0.518867924528 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(C,B) (0.12971698113207547, 7.0) > (0.11530398322851153, 7.0)
+[DEBUG] Best rule so far: rnvc11(A,B) :- somenot11(C,B) [0.129716981132]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- somenot11(C,B) 0.129716981132
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.115303983229
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.115303983229
+[DEBUG] rnvc11(A,B) :- somenot11(C,A) 0.115303983229
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- somenot11(C,B), somenot11(C,A) 0.518867924528 (7.0, 0.0, 51.0, 1.0) 0.518867924528 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rnvc11(A,B) :- somenot11(C,B), somenot11(C,A) (0.5188679245283019, 7.0) > (0.12971698113207547, 7.0)
+[INFO] RULE LEARNED: rnvc11(A,B) :- somenot11(C,B), somenot11(C,A) 0.983050847458
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(C,A) 0.113247863248 (8.0, 7.0, 44.0, 0.0) 0.509615384615 [ACCEPT]
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(C,A) (0.11324786324786323, 8.0) > (0.0, 8.0)
+[LVL9] rnvc11(A,B) :- no11(C,B) 0.113247863248 (8.0, 7.0, 44.0, 0.0) 0.509615384615 [ACCEPT]
+[DEBUG] Best rule so far: rnvc11(A,B) :- some11(C,A) [0.113247863248]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- some11(C,A) 0.113247863248
+[DEBUG] rnvc11(A,B) :- no11(C,B) 0.113247863248
+[DEBUG] ==================================
+[LVL9] rnvc11(A,B) :- some11(C,A), no11(C,B) 0.509615384615 (8.0, 0.0, 51.0, 0.0) 0.509615384615 [REJECT* fp] 7.0
+[LVL9] BETTER RULE rnvc11(A,B) :- some11(C,A), no11(C,B) (0.5096153846153846, 8.0) > (0.11324786324786323, 8.0)
+[INFO] RULE LEARNED: rnvc11(A,B) :- some11(C,A), no11(C,B) 1.0
+[DEBUG] Best rule so far: rnvc11(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc11(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc11(A,B) :- true 1.0

@@ -1,0 +1,780 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.329052063606
+[INFO] Computing scores: 0.0193s
+[INFO] Number of examples (M): 53
+[INFO] Positive weight (P): 15.0000
+[INFO] Negative weight (N): 38.0000
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.283018867925]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.283018867925
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.0 (1.0, 6.0, 32.0, 14.0) 0.641509433962 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.28537735849056606, 2.0) > (0.2830188679245283, 15.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.410377358491 (3.0, 4.0, 34.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A) (0.41037735849056606, 3.0) > (0.28537735849056606, 2.0)
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.0 (2.0, 6.0, 32.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,A) 0.0 (1.0, 6.0, 32.0, 14.0) 0.641509433962 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,B) 0.0 (1.0, 7.0, 31.0, 14.0) 0.641509433962 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C) 0.380503144654 (2.0, 3.0, 35.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.469002695418 (3.0, 3.0, 35.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C) (0.46900269541778977, 3.0) > (0.41037735849056606, 3.0)
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.535377358491 (4.0, 3.0, 35.0, 11.0) 0.856603773585 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,A) (0.535377358490566, 4.0) > (0.46900269541778977, 3.0)
+[LVL9] rnvc112(A,B) :- no112(C,B) 0.611859838275 (4.0, 2.0, 36.0, 11.0) 0.856603773585 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,B) (0.6118598382749326, 4.0) > (0.535377358490566, 4.0)
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.0 (1.0, 5.0, 33.0, 14.0) 0.641509433962 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.456603773585 (2.0, 2.0, 36.0, 13.0) 0.761006289308 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(C,B) [0.611859838275]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(C,B) 0.611859838275
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.535377358491
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.469002695418
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.456603773585
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.410377358491
+[DEBUG] rnvc112(A,B) :- no112(A,C) 0.380503144654
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.326145552561
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.285377358491
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.285377358491
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,A) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- no112(C,B), all112(C,A) 0.641509433962 (1.0, 0.0, 38.0, 14.0) 0.641509433962 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,B), all112(C,A) (0.6415094339622641, 1.0) > (0.6118598382749326, 4.0)
+[LVL9] rnvc112(A,B) :- no112(C,B), \+all112(A,C) 0.713836477987 (4.0, 1.0, 37.0, 11.0) 0.856603773585 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,B), \+all112(A,C) (0.7138364779874213, 4.0) > (0.6415094339622641, 1.0)
+[LVL9] rnvc112(A,B) :- no112(C,B), \+some112(A,C) 0.713836477987 (4.0, 1.0, 37.0, 11.0) 0.856603773585 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.611859838275 (4.0, 2.0, 36.0, 11.0) 0.856603773585 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.611859838275 (4.0, 2.0, 36.0, 11.0) 0.856603773585 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.611859838275 (4.0, 2.0, 36.0, 11.0) 0.856603773585 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.547169811321 (3.0, 2.0, 36.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.547169811321 (3.0, 2.0, 36.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.547169811321 (3.0, 2.0, 36.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.570754716981 (2.0, 1.0, 37.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.570754716981 (2.0, 1.0, 37.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.469002695418 (3.0, 3.0, 35.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.469002695418 (3.0, 3.0, 35.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.469002695418 (3.0, 3.0, 35.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.469002695418 (3.0, 3.0, 35.0, 12.0) 0.820754716981 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C), \+all112(C,B) 0.456603773585 (2.0, 2.0, 36.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C), \+some112(C,B) 0.456603773585 (2.0, 2.0, 36.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C), \+some112(B,C) 0.456603773585 (2.0, 2.0, 36.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.380503144654 (2.0, 3.0, 35.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.380503144654 (2.0, 3.0, 35.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.380503144654 (2.0, 3.0, 35.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.380503144654 (2.0, 3.0, 35.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A), \+all112(C,B) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A), \+all112(B,C) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A), \+some112(C,B) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A), \+some112(B,C) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A), \+no112(B,C) 0.326145552561 (2.0, 4.0, 34.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+all112(A,C) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+some112(A,C) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+some112(C,A) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+no112(A,C) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+somenot112(A,C) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+somenot112(C,A) 0.285377358491 (2.0, 5.0, 33.0, 13.0) 0.761006289308 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(C,B), \+all112(A,C) [0.713836477987]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(C,B), \+all112(A,C) 0.713836477987
+[DEBUG] rnvc112(A,B) :- no112(C,B), \+some112(A,C) 0.713836477987
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.611859838275
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.611859838275
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.611859838275
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.570754716981
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.570754716981
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.547169811321
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.547169811321
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.547169811321
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.469002695418
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.469002695418
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.469002695418
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.469002695418
+[DEBUG] rnvc112(A,B) :- no112(A,C), \+all112(C,B) 0.456603773585
+[DEBUG] rnvc112(A,B) :- no112(A,C), \+some112(C,B) 0.456603773585
+[DEBUG] rnvc112(A,B) :- no112(A,C), \+some112(B,C) 0.456603773585
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.380503144654
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.380503144654
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.380503144654
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.380503144654
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.326145552561
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.326145552561
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.326145552561
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.326145552561
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.326145552561
+[DEBUG] rnvc112(A,B) :- somenot112(C,A), \+all112(C,B) 0.326145552561
+[DEBUG] rnvc112(A,B) :- somenot112(C,A), \+all112(B,C) 0.326145552561
+[DEBUG] rnvc112(A,B) :- somenot112(C,A), \+some112(C,B) 0.326145552561
+[DEBUG] rnvc112(A,B) :- somenot112(C,A), \+some112(B,C) 0.326145552561
+[DEBUG] rnvc112(A,B) :- somenot112(C,A), \+no112(B,C) 0.326145552561
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+all112(A,C) 0.285377358491
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+some112(A,C) 0.285377358491
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+some112(C,A) 0.285377358491
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+no112(A,C) 0.285377358491
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+somenot112(A,C) 0.285377358491
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+somenot112(C,A) 0.285377358491
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- no112(C,B), \+all112(A,C) 0.77358490566
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.229166666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.229166666667
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.0 (5.0, 7.0, 31.0, 10.0) 0.614583333333 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.278645833333 (6.0, 6.0, 32.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.2786458333333333, 6.0) > (0.22916666666666666, 15.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.318452380952 (6.0, 5.0, 33.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A) (0.31845238095238093, 6.0) > (0.2786458333333333, 6.0)
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.247685185185 (6.0, 7.0, 31.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,A) 0.0 (5.0, 7.0, 31.0, 10.0) 0.614583333333 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,B) 0.0 (5.0, 8.0, 30.0, 10.0) 0.614583333333 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C) 0.245833333333 (5.0, 4.0, 34.0, 10.0) 0.614583333333 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.46130952381 (7.0, 4.0, 34.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C) (0.4613095238095238, 7.0) > (0.31845238095238093, 6.0)
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.46130952381 (7.0, 4.0, 34.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.318452380952 (6.0, 5.0, 33.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.0 (5.0, 6.0, 32.0, 10.0) 0.614583333333 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.0 (5.0, 6.0, 32.0, 10.0) 0.614583333333 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.445833333333 (6.0, 3.0, 35.0, 9.0) 0.743055555556 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(B,C) [0.46130952381]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.46130952381
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.46130952381
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.445833333333
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.318452380952
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.318452380952
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.278645833333
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.247685185185
+[DEBUG] rnvc112(A,B) :- no112(A,C) 0.245833333333
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,A) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- no112(B,C), some112(C,A) 0.614583333333 (5.0, 1.0, 37.0, 10.0) 0.614583333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C), some112(C,A) (0.6145833333333334, 5.0) > (0.4613095238095238, 7.0)
+[LVL9] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.538194444444 (7.0, 3.0, 35.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.538194444444 (7.0, 3.0, 35.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.538194444444 (7.0, 3.0, 35.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.538194444444 (7.0, 3.0, 35.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.538194444444 (7.0, 3.0, 35.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.538194444444 (7.0, 3.0, 35.0, 8.0) 0.807291666667 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.557291666667 (6.0, 2.0, 36.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.557291666667 (6.0, 2.0, 36.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.371527777778 (6.0, 4.0, 34.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.318452380952 (6.0, 5.0, 33.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.318452380952 (6.0, 5.0, 33.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.318452380952 (6.0, 5.0, 33.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.318452380952 (6.0, 5.0, 33.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.318452380952 (6.0, 5.0, 33.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+all112(A,C) 0.278645833333 (6.0, 6.0, 32.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+some112(A,C) 0.278645833333 (6.0, 6.0, 32.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+some112(C,A) 0.278645833333 (6.0, 6.0, 32.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+no112(A,C) 0.278645833333 (6.0, 6.0, 32.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+somenot112(A,C) 0.278645833333 (6.0, 6.0, 32.0, 9.0) 0.743055555556 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+somenot112(C,A) 0.278645833333 (6.0, 6.0, 32.0, 9.0) 0.743055555556 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(B,C), some112(C,A) [0.614583333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(B,C), some112(C,A) 0.614583333333
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.557291666667
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.557291666667
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.538194444444
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.538194444444
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.538194444444
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.538194444444
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.538194444444
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.538194444444
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.371527777778
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.371527777778
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.371527777778
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.371527777778
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.371527777778
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.371527777778
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.371527777778
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.371527777778
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.318452380952
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.318452380952
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.318452380952
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.318452380952
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.318452380952
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+all112(A,C) 0.278645833333
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+some112(A,C) 0.278645833333
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+some112(C,A) 0.278645833333
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+no112(A,C) 0.278645833333
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+somenot112(A,C) 0.278645833333
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+somenot112(C,A) 0.278645833333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- no112(B,C), some112(C,A) 0.792452830189
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.212765957447]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.212765957447
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.0 (6.0, 7.0, 31.0, 9.0) 0.606382978723 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.276595744681 (7.0, 6.0, 32.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.2765957446808511, 7.0) > (0.2127659574468085, 15.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.316109422492 (7.0, 5.0, 33.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A) (0.3161094224924012, 7.0) > (0.2765957446808511, 7.0)
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.245862884161 (7.0, 7.0, 31.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,B) 0.0 (6.0, 8.0, 30.0, 9.0) 0.606382978723 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C) 0.242553191489 (6.0, 4.0, 34.0, 9.0) 0.606382978723 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C) (0.3687943262411348, 7.0) > (0.3161094224924012, 7.0)
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.45896656535 (8.0, 4.0, 34.0, 7.0) 0.803191489362 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,A) (0.4589665653495441, 8.0) > (0.3687943262411348, 7.0)
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.316109422492 (7.0, 5.0, 33.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.0 (6.0, 6.0, 32.0, 9.0) 0.606382978723 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.0 (6.0, 6.0, 32.0, 9.0) 0.606382978723 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.442553191489 (7.0, 3.0, 35.0, 8.0) 0.737588652482 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(C,A) [0.45896656535]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.45896656535
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.442553191489
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.368794326241
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.316109422492
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.316109422492
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.276595744681
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.245862884161
+[DEBUG] rnvc112(A,B) :- no112(A,C) 0.242553191489
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- no112(C,A), all112(C,B) 0.606382978723 (6.0, 1.0, 37.0, 9.0) 0.606382978723 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,A), all112(C,B) (0.6063829787234043, 6.0) > (0.4589665653495441, 8.0)
+[LVL9] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.535460992908 (8.0, 3.0, 35.0, 7.0) 0.803191489362 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.535460992908 (8.0, 3.0, 35.0, 7.0) 0.803191489362 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.535460992908 (8.0, 3.0, 35.0, 7.0) 0.803191489362 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.553191489362 (7.0, 2.0, 36.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.553191489362 (7.0, 2.0, 36.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.442553191489 (7.0, 3.0, 35.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.442553191489 (7.0, 3.0, 35.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.442553191489 (7.0, 3.0, 35.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.368794326241 (7.0, 4.0, 34.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.316109422492 (7.0, 5.0, 33.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.316109422492 (7.0, 5.0, 33.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.316109422492 (7.0, 5.0, 33.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.316109422492 (7.0, 5.0, 33.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.316109422492 (7.0, 5.0, 33.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+all112(A,C) 0.276595744681 (7.0, 6.0, 32.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+some112(A,C) 0.276595744681 (7.0, 6.0, 32.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+some112(C,A) 0.276595744681 (7.0, 6.0, 32.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+no112(A,C) 0.276595744681 (7.0, 6.0, 32.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+somenot112(A,C) 0.276595744681 (7.0, 6.0, 32.0, 8.0) 0.737588652482 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B), \+somenot112(C,A) 0.276595744681 (7.0, 6.0, 32.0, 8.0) 0.737588652482 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(C,A), all112(C,B) [0.606382978723]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(C,A), all112(C,B) 0.606382978723
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.553191489362
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.553191489362
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.535460992908
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.535460992908
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.535460992908
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.442553191489
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.442553191489
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.442553191489
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.368794326241
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.368794326241
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.368794326241
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.368794326241
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.368794326241
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.368794326241
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.368794326241
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.368794326241
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.316109422492
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.316109422492
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.316109422492
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.316109422492
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.316109422492
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+all112(A,C) 0.276595744681
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+some112(A,C) 0.276595744681
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+some112(C,A) 0.276595744681
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+no112(A,C) 0.276595744681
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+somenot112(A,C) 0.276595744681
+[DEBUG] rnvc112(A,B) :- all112(C,B), \+somenot112(C,A) 0.276595744681
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- no112(C,A), all112(C,B) 0.811320754717
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.0 (7.0, 7.0, 31.0, 8.0) 0.597826086957 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.274456521739 (8.0, 6.0, 32.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.27445652173913043, 8.0) > (0.0, 15.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.313664596273 (8.0, 5.0, 33.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A) (0.3136645962732919, 8.0) > (0.27445652173913043, 8.0)
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.0 (7.0, 7.0, 31.0, 8.0) 0.597826086957 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,B) 0.0 (7.0, 8.0, 30.0, 8.0) 0.597826086957 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C) 0.239130434783 (7.0, 4.0, 34.0, 8.0) 0.597826086957 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C) (0.36594202898550726, 8.0) > (0.3136645962732919, 8.0)
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.313664596273 (8.0, 5.0, 33.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.0 (7.0, 6.0, 32.0, 8.0) 0.597826086957 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.0 (7.0, 6.0, 32.0, 8.0) 0.597826086957 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.439130434783 (8.0, 3.0, 35.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(C,B) (0.4391304347826087, 8.0) > (0.36594202898550726, 8.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(C,B) [0.439130434783]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.439130434783
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.365942028986
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.365942028986
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.313664596273
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.313664596273
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.274456521739
+[DEBUG] rnvc112(A,B) :- no112(A,C) 0.239130434783
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.0
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- somenot112(C,B), all112(C,A) 0.597826086957 (7.0, 1.0, 37.0, 8.0) 0.597826086957 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(C,B), all112(C,A) (0.5978260869565217, 7.0) > (0.4391304347826087, 8.0)
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.548913043478 (8.0, 2.0, 36.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.548913043478 (8.0, 2.0, 36.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.439130434783 (8.0, 3.0, 35.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.439130434783 (8.0, 3.0, 35.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.439130434783 (8.0, 3.0, 35.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.439130434783 (8.0, 3.0, 35.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.439130434783 (8.0, 3.0, 35.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.439130434783 (8.0, 3.0, 35.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.365942028986 (8.0, 4.0, 34.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.313664596273 (8.0, 5.0, 33.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.313664596273 (8.0, 5.0, 33.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.313664596273 (8.0, 5.0, 33.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.313664596273 (8.0, 5.0, 33.0, 7.0) 0.731884057971 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.313664596273 (8.0, 5.0, 33.0, 7.0) 0.731884057971 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(C,B), all112(C,A) [0.597826086957]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), all112(C,A) 0.597826086957
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+some112(C,A) 0.548913043478
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), \+somenot112(A,C) 0.548913043478
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.439130434783
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.439130434783
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.439130434783
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.439130434783
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.439130434783
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.439130434783
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+all112(B,C) 0.365942028986
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(C,B) 0.365942028986
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+some112(B,C) 0.365942028986
+[DEBUG] rnvc112(A,B) :- all112(C,A), \+somenot112(B,C) 0.365942028986
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.365942028986
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.365942028986
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.365942028986
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.365942028986
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.313664596273
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.313664596273
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.313664596273
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.313664596273
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.313664596273
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- somenot112(C,B), all112(C,A) 0.830188679245
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.0 (8.0, 7.0, 31.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.272222222222 (9.0, 6.0, 32.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.2722222222222222, 9.0) > (0.0, 15.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.196296296296 (8.0, 5.0, 33.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.0 (8.0, 7.0, 31.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,B) 0.0 (8.0, 8.0, 30.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(A,C) 0.235555555556 (8.0, 4.0, 34.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.362962962963 (9.0, 4.0, 34.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C) (0.36296296296296293, 9.0) > (0.2722222222222222, 9.0)
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.362962962963 (9.0, 4.0, 34.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.311111111111 (9.0, 5.0, 33.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.0 (8.0, 6.0, 32.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.0 (8.0, 6.0, 32.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.294444444444 (8.0, 3.0, 35.0, 7.0) 0.588888888889 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(B,C) [0.362962962963]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.362962962963
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.362962962963
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.311111111111
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.294444444444
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.272222222222
+[DEBUG] rnvc112(A,B) :- no112(A,C) 0.235555555556
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.196296296296
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.0
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.0
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- no112(B,C), no112(A,C) 0.588888888889 (8.0, 1.0, 37.0, 7.0) 0.588888888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C), no112(A,C) (0.5888888888888889, 8.0) > (0.36296296296296293, 9.0)
+[LVL9] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.435555555556 (9.0, 3.0, 35.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.435555555556 (9.0, 3.0, 35.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.435555555556 (9.0, 3.0, 35.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.435555555556 (9.0, 3.0, 35.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.435555555556 (9.0, 3.0, 35.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.435555555556 (9.0, 3.0, 35.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.362962962963 (9.0, 4.0, 34.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.362962962963 (9.0, 4.0, 34.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.362962962963 (9.0, 4.0, 34.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.362962962963 (9.0, 4.0, 34.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.311111111111 (9.0, 5.0, 33.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.311111111111 (9.0, 5.0, 33.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.311111111111 (9.0, 5.0, 33.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.311111111111 (9.0, 5.0, 33.0, 6.0) 0.725925925926 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.311111111111 (9.0, 5.0, 33.0, 6.0) 0.725925925926 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(B,C), no112(A,C) [0.588888888889]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(B,C), no112(A,C) 0.588888888889
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+all112(A,C) 0.435555555556
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+some112(A,C) 0.435555555556
+[DEBUG] rnvc112(A,B) :- no112(B,C), \+somenot112(C,A) 0.435555555556
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.435555555556
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.435555555556
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.435555555556
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.362962962963
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.362962962963
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.362962962963
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.362962962963
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.311111111111
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.311111111111
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.311111111111
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.311111111111
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.311111111111
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- no112(B,C), no112(A,C) 0.849056603774
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.159090909091]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.159090909091
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.0 (9.0, 7.0, 31.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.269886363636 (10.0, 6.0, 32.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.26988636363636365, 10.0) > (0.1590909090909091, 15.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.193181818182 (9.0, 5.0, 33.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.0 (9.0, 7.0, 31.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] rnvc112(A,B) :- some112(C,B) 0.0 (9.0, 8.0, 30.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.231818181818 (9.0, 4.0, 34.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.359848484848 (10.0, 4.0, 34.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,A) (0.35984848484848486, 10.0) > (0.26988636363636365, 10.0)
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.308441558442 (10.0, 5.0, 33.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.165584415584 (9.0, 6.0, 32.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.165584415584 (9.0, 6.0, 32.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.289772727273 (9.0, 3.0, 35.0, 6.0) 0.579545454545 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(C,A) [0.359848484848]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.359848484848
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.308441558442
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.289772727273
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.269886363636
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.231818181818
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.193181818182
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.165584415584
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.165584415584
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.0
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.0
+[DEBUG] rnvc112(A,B) :- some112(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- no112(C,A), some112(C,B) 0.579545454545 (9.0, 1.0, 37.0, 6.0) 0.579545454545 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(C,A), some112(C,B) (0.5795454545454546, 9.0) > (0.35984848484848486, 10.0)
+[LVL9] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.431818181818 (10.0, 3.0, 35.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.431818181818 (10.0, 3.0, 35.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.431818181818 (10.0, 3.0, 35.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.359848484848 (10.0, 4.0, 34.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.359848484848 (10.0, 4.0, 34.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.359848484848 (10.0, 4.0, 34.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.359848484848 (10.0, 4.0, 34.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.308441558442 (10.0, 5.0, 33.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.308441558442 (10.0, 5.0, 33.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.308441558442 (10.0, 5.0, 33.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.308441558442 (10.0, 5.0, 33.0, 5.0) 0.719696969697 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.308441558442 (10.0, 5.0, 33.0, 5.0) 0.719696969697 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(C,A), some112(C,B) [0.579545454545]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(C,A), some112(C,B) 0.579545454545
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+all112(B,C) 0.431818181818
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+some112(B,C) 0.431818181818
+[DEBUG] rnvc112(A,B) :- no112(C,A), \+somenot112(B,C) 0.431818181818
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.359848484848
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.359848484848
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.359848484848
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.359848484848
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.308441558442
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.308441558442
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.308441558442
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.308441558442
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.308441558442
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- no112(C,A), some112(C,B) 0.867924528302
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.139534883721]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.139534883721
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.142441860465 (10.0, 7.0, 31.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(A,C) (0.14244186046511628, 10.0) > (0.13953488372093023, 15.0)
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.267441860465 (11.0, 6.0, 32.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.26744186046511625, 11.0) > (0.14244186046511628, 10.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.18992248062 (10.0, 5.0, 33.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.142441860465 (10.0, 7.0, 31.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.227906976744 (10.0, 4.0, 34.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.227906976744 (10.0, 4.0, 34.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.305647840532 (11.0, 5.0, 33.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(A,C) (0.3056478405315614, 11.0) > (0.26744186046511625, 11.0)
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.162790697674 (10.0, 6.0, 32.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.162790697674 (10.0, 6.0, 32.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.28488372093 (10.0, 3.0, 35.0, 5.0) 0.56976744186 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(A,C) [0.305647840532]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.305647840532
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.28488372093
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.267441860465
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.227906976744
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.227906976744
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.18992248062
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.162790697674
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.162790697674
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.142441860465
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.142441860465
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- somenot112(A,C), all112(B,C) 0.56976744186 (10.0, 1.0, 37.0, 5.0) 0.56976744186 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(A,C), all112(B,C) (0.5697674418604651, 10.0) > (0.3056478405315614, 11.0)
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.356589147287 (11.0, 4.0, 34.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.356589147287 (11.0, 4.0, 34.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.356589147287 (11.0, 4.0, 34.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.356589147287 (11.0, 4.0, 34.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.305647840532 (11.0, 5.0, 33.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.305647840532 (11.0, 5.0, 33.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.305647840532 (11.0, 5.0, 33.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.305647840532 (11.0, 5.0, 33.0, 4.0) 0.713178294574 [ACCEPT]
+[LVL9] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.305647840532 (11.0, 5.0, 33.0, 4.0) 0.713178294574 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(A,C), all112(B,C) [0.56976744186]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), all112(B,C) 0.56976744186
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+all112(C,B) 0.356589147287
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(C,B) 0.356589147287
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+some112(B,C) 0.356589147287
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), \+somenot112(C,B) 0.356589147287
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+all112(C,A) 0.305647840532
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(A,C) 0.305647840532
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+some112(C,A) 0.305647840532
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+no112(C,A) 0.305647840532
+[DEBUG] rnvc112(A,B) :- all112(B,C), \+somenot112(C,A) 0.305647840532
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- somenot112(A,C), all112(B,C) 0.88679245283
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.119047619048]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.119047619048
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.139880952381 (11.0, 7.0, 31.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(A,C) (0.13988095238095238, 11.0) > (0.11904761904761904, 15.0)
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.159863945578 (11.0, 6.0, 32.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.1598639455782313, 11.0) > (0.13988095238095238, 11.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.186507936508 (11.0, 5.0, 33.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A) (0.1865079365079365, 11.0) > (0.1598639455782313, 11.0)
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.139880952381 (11.0, 7.0, 31.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.22380952381 (11.0, 4.0, 34.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C) (0.22380952380952382, 11.0) > (0.1865079365079365, 11.0)
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.22380952381 (11.0, 4.0, 34.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.186507936508 (11.0, 5.0, 33.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.159863945578 (11.0, 6.0, 32.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,A) 0.159863945578 (11.0, 6.0, 32.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(C,B) 0.279761904762 (11.0, 3.0, 35.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(C,B) (0.27976190476190477, 11.0) > (0.22380952380952382, 11.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(C,B) [0.279761904762]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(C,B) 0.279761904762
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.22380952381
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.22380952381
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.186507936508
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.186507936508
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.159863945578
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.159863945578
+[DEBUG] rnvc112(A,B) :- somenot112(C,A) 0.159863945578
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.139880952381
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.139880952381
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- somenot112(C,B), somenot112(C,A) 0.559523809524 (11.0, 1.0, 37.0, 4.0) 0.559523809524 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(C,B), somenot112(C,A) (0.5595238095238095, 11.0) > (0.27976190476190477, 11.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(C,B), somenot112(C,A) [0.559523809524]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(C,B), somenot112(C,A) 0.559523809524
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- somenot112(C,B), somenot112(C,A) 0.905660377358
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.0975609756098]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.0975609756098
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.137195121951 (12.0, 7.0, 31.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(A,C) (0.13719512195121952, 12.0) > (0.0975609756097561, 15.0)
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.156794425087 (12.0, 6.0, 32.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.15679442508710803, 12.0) > (0.13719512195121952, 12.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.182926829268 (12.0, 5.0, 33.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A) (0.1829268292682927, 12.0) > (0.15679442508710803, 12.0)
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.137195121951 (12.0, 7.0, 31.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] rnvc112(A,B) :- no112(B,C) 0.219512195122 (12.0, 4.0, 34.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C) (0.21951219512195125, 12.0) > (0.1829268292682927, 12.0)
+[LVL9] rnvc112(A,B) :- no112(C,A) 0.219512195122 (12.0, 4.0, 34.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.182926829268 (12.0, 5.0, 33.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.156794425087 (12.0, 6.0, 32.0, 3.0) 0.548780487805 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(B,C) [0.219512195122]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(B,C) 0.219512195122
+[DEBUG] rnvc112(A,B) :- no112(C,A) 0.219512195122
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.182926829268
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.182926829268
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.156794425087
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.156794425087
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.137195121951
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.137195121951
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- no112(B,C), no112(C,A) 0.548780487805 (12.0, 1.0, 37.0, 3.0) 0.548780487805 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- no112(B,C), no112(C,A) (0.5487804878048781, 12.0) > (0.21951219512195125, 12.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- no112(B,C), no112(C,A) [0.548780487805]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- no112(B,C), no112(C,A) 0.548780487805
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- no112(B,C), no112(C,A) 0.924528301887
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.075]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.075
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.134375 (13.0, 7.0, 31.0, 2.0) 0.5375 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(A,C) (0.134375, 13.0) > (0.07500000000000001, 15.0)
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.153571428571 (13.0, 6.0, 32.0, 2.0) 0.5375 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.15357142857142855, 13.0) > (0.134375, 13.0)
+[LVL9] rnvc112(A,B) :- all112(C,A) 0.179166666667 (13.0, 5.0, 33.0, 2.0) 0.5375 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A) (0.17916666666666667, 13.0) > (0.15357142857142855, 13.0)
+[LVL9] rnvc112(A,B) :- all112(C,B) 0.134375 (13.0, 7.0, 31.0, 2.0) 0.5375 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.179166666667 (13.0, 5.0, 33.0, 2.0) 0.5375 [ACCEPT]
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.153571428571 (13.0, 6.0, 32.0, 2.0) 0.5375 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- all112(C,A) [0.179166666667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- all112(C,A) 0.179166666667
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.179166666667
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.153571428571
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.153571428571
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.134375
+[DEBUG] rnvc112(A,B) :- all112(C,B) 0.134375
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(C,A), all112(C,B) 0.5375 (13.0, 1.0, 37.0, 2.0) 0.5375 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(C,A), all112(C,B) (0.5375, 13.0) > (0.17916666666666667, 13.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- all112(C,A), all112(C,B) [0.5375]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- all112(C,A), all112(C,B) 0.5375
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- all112(C,A), all112(C,B) 0.943396226415
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.0512820512821]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.0512820512821
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.13141025641 (14.0, 7.0, 31.0, 1.0) 0.525641025641 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(A,C) (0.13141025641025642, 14.0) > (0.05128205128205128, 15.0)
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.150183150183 (14.0, 6.0, 32.0, 1.0) 0.525641025641 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.15018315018315018, 14.0) > (0.13141025641025642, 14.0)
+[LVL9] rnvc112(A,B) :- somenot112(A,C) 0.175213675214 (14.0, 5.0, 33.0, 1.0) 0.525641025641 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(A,C) (0.17521367521367523, 14.0) > (0.15018315018315018, 14.0)
+[LVL9] rnvc112(A,B) :- somenot112(B,C) 0.150183150183 (14.0, 6.0, 32.0, 1.0) 0.525641025641 [ACCEPT]
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(A,C) [0.175213675214]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(A,C) 0.175213675214
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.150183150183
+[DEBUG] rnvc112(A,B) :- somenot112(B,C) 0.150183150183
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.13141025641
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- somenot112(A,C), somenot112(B,C) 0.525641025641 (14.0, 1.0, 37.0, 1.0) 0.525641025641 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- somenot112(A,C), somenot112(B,C) (0.5256410256410257, 14.0) > (0.17521367521367523, 14.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- somenot112(A,C), somenot112(B,C) [0.525641025641]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- somenot112(A,C), somenot112(B,C) 0.525641025641
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- somenot112(A,C), somenot112(B,C) 0.962264150943
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.0263157894737]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.0263157894737
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(A,C) 0.128289473684 (15.0, 7.0, 31.0, 0.0) 0.513157894737 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(A,C) (0.12828947368421054, 15.0) > (0.026315789473684213, 15.0)
+[LVL9] rnvc112(A,B) :- all112(B,C) 0.146616541353 (15.0, 6.0, 32.0, 0.0) 0.513157894737 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C) (0.14661654135338348, 15.0) > (0.12828947368421054, 15.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- all112(B,C) [0.146616541353]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- all112(B,C) 0.146616541353
+[DEBUG] rnvc112(A,B) :- all112(A,C) 0.128289473684
+[DEBUG] ==================================
+[LVL9] rnvc112(A,B) :- all112(B,C), all112(A,C) 0.513157894737 (15.0, 1.0, 37.0, 0.0) 0.513157894737 [ACCEPT]
+[LVL9] BETTER RULE rnvc112(A,B) :- all112(B,C), all112(A,C) (0.5131578947368421, 15.0) > (0.14661654135338348, 15.0)
+[DEBUG] Best rule so far: rnvc112(A,B) :- all112(B,C), all112(A,C) [0.513157894737]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- all112(B,C), all112(A,C) 0.513157894737
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- all112(B,C), all112(A,C) 0.981132075472
+[DEBUG] Best rule so far: rnvc112(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc112(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc112(A,B) :- true 0.981132075472

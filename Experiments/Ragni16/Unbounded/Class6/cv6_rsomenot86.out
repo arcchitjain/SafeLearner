@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_86.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsomenot86.log
+              target:	rsomenot86/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot86(A,B) :- some86(B,C), \+some86(A,C), \+no86(A,C), \+all86(C,A), \+somenot86(C,A), \+all86(A,C), \+some86(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.850877192982
+           Precision:	 1.0
+              Recall:	 0.15
+================== STATISTICS ==================
+    Rule evaluations:	30086
+          Total time:	3699.0254s

@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_33.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rsomenot33.log
+              target:	rsomenot33/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot33(A,B) :- all33(C,A), somenot33(B,C)
+rsomenot33(A,B) :- some33(A,C), no33(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.922413793103
+           Precision:	 1.0
+              Recall:	 0.181818181818
+================== STATISTICS ==================
+    Rule evaluations:	45895
+          Total time:	1925.9823s

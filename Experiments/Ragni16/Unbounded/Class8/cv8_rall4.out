@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_4.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rall4.log
+              target:	rall4/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall4(A,B) :- all4(C,B), no4(A,C)
+rall4(A,B) :- no4(C,A), some4(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.9375
+           Precision:	 1.0
+              Recall:	 0.3
+================== STATISTICS ==================
+    Rule evaluations:	32873
+          Total time:	1019.3197s

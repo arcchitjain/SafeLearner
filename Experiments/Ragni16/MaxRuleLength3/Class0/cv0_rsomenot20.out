@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_20.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rsomenot20.log
+              target:	rsomenot20/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot20(A,B) :- somenot20(B,C), somenot20(C,A)
+rsomenot20(A,B) :- some20(A,C), no20(B,C)
+rsomenot20(A,B) :- all20(C,B), somenot20(A,C)
+rsomenot20(A,B) :- some20(B,C), all20(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.939655172414
+           Precision:	 1.0
+              Recall:	 0.461538461538
+================== STATISTICS ==================
+    Rule evaluations:	4124
+          Total time:	131.4636s

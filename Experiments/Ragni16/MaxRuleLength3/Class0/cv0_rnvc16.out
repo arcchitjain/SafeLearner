@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_16.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc16.log
+              target:	rnvc16/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc16(A,B) :- no16(A,C), \+all16(B,C)
+rnvc16(A,B) :- no16(C,A), \+all16(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.688524590164
+           Precision:	 1.0
+              Recall:	 0.40625
+================== STATISTICS ==================
+    Rule evaluations:	3566
+          Total time:	44.4985s

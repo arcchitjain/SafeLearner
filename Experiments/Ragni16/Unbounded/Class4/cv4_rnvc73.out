@@ -1,0 +1,27 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_73.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rnvc73.log
+              target:	rnvc73/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc73(A,B) :- somenot73(A,C), \+no73(C,B), \+somenot73(C,B)
+rnvc73(A,B) :- no73(A,C), \+all73(C,B), \+all73(B,C), \+somenot73(C,B)
+rnvc73(A,B) :- some73(C,A), \+all73(C,B), \+all73(B,C)
+rnvc73(A,B) :- no73(C,A), \+all73(B,C), \+some73(B,C), \+no73(B,C)
+rnvc73(A,B) :- somenot73(C,A), \+all73(C,B), \+all73(B,C), \+some73(C,B), \+some73(B,C)
+rnvc73(A,B) :- all73(C,A), \+all73(B,C), \+some73(C,B), \+some73(B,C), \+somenot73(B,C)
+rnvc73(A,B) :- some73(A,C), \+all73(C,B), \+some73(C,B), \+no73(C,B), \+somenot73(C,B)
+rnvc73(A,B) :- all73(A,C), \+all73(C,B), \+some73(C,B), \+no73(C,B), \+no73(B,C), \+somenot73(C,B), \+somenot73(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	20206
+          Total time:	525.2059s

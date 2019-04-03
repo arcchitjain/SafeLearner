@@ -1,0 +1,478 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.679068409742
+[INFO] Computing scores: 0.0335s
+[INFO] Number of examples (M): 60
+[INFO] Positive weight (P): 9.0000
+[INFO] Negative weight (N): 51.0000
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.15]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.15
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C) 0.0 (1.0, 6.0, 45.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- all64(B,C) 0.0 (1.0, 7.0, 44.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(A,C) 0.0 (1.0, 7.0, 44.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,A) 0.0 (1.0, 6.0, 45.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,B) 0.307142857143 (2.0, 4.0, 47.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- some64(C,B) (0.3071428571428571, 2.0) > (0.15, 9.0)
+[LVL9] rnvc64(A,B) :- no64(A,C) 0.0 (1.0, 7.0, 44.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C) 0.238888888889 (2.0, 6.0, 45.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A) 0.307142857143 (2.0, 4.0, 47.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,B) 0.0 (1.0, 7.0, 44.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.0 (1.0, 7.0, 44.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.0 (1.0, 6.0, 45.0, 8.0) 0.575 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.238888888889 (2.0, 6.0, 45.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.238888888889 (2.0, 6.0, 45.0, 7.0) 0.716666666667 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- some64(C,B) [0.307142857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- some64(C,B) 0.307142857143
+[DEBUG] rnvc64(A,B) :- no64(C,A) 0.307142857143
+[DEBUG] rnvc64(A,B) :- no64(B,C) 0.238888888889
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.238888888889
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.238888888889
+[DEBUG] rnvc64(A,B) :- all64(A,C) 0.0
+[DEBUG] rnvc64(A,B) :- all64(B,C) 0.0
+[DEBUG] rnvc64(A,B) :- some64(A,C) 0.0
+[DEBUG] rnvc64(A,B) :- some64(C,A) 0.0
+[DEBUG] rnvc64(A,B) :- no64(A,C) 0.0
+[DEBUG] rnvc64(A,B) :- no64(C,B) 0.0
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.0
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- some64(C,B), some64(A,C) 0.575 (1.0, 0.0, 51.0, 8.0) 0.575 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc64(A,B) :- some64(C,B), some64(A,C) (0.575, 1.0) > (0.3071428571428571, 2.0)
+[LVL9] rnvc64(A,B) :- some64(C,B), \+all64(A,C) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,B), \+all64(C,A) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,B), \+no64(A,C) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,B), \+somenot64(A,C) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A), \+all64(C,B) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A), \+all64(B,C) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A), \+some64(B,C) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A), \+somenot64(C,B) 0.358333333333 (2.0, 3.0, 48.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+all64(A,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+all64(C,A) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+some64(A,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+some64(C,A) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+somenot64(A,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+somenot64(C,A) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.26875 (2.0, 5.0, 46.0, 7.0) 0.716666666667 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- some64(C,B), some64(A,C) [0.575]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- some64(C,B), \+all64(A,C) 0.358333333333
+[DEBUG] rnvc64(A,B) :- some64(C,B), \+all64(C,A) 0.358333333333
+[DEBUG] rnvc64(A,B) :- some64(C,B), \+no64(A,C) 0.358333333333
+[DEBUG] rnvc64(A,B) :- some64(C,B), \+somenot64(A,C) 0.358333333333
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+all64(C,B) 0.358333333333
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+all64(B,C) 0.358333333333
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+some64(B,C) 0.358333333333
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+somenot64(C,B) 0.358333333333
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+all64(A,C) 0.26875
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+all64(C,A) 0.26875
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+some64(A,C) 0.26875
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+some64(C,A) 0.26875
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+somenot64(A,C) 0.26875
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+somenot64(C,A) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.26875
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.26875
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc64(A,B) :- some64(C,B), some64(A,C) 0.866666666667
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.135593220339]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.135593220339
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C) 0.141949152542 (2.0, 6.0, 45.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- all64(A,C) (0.1419491525423729, 2.0) > (0.13559322033898305, 9.0)
+[LVL9] rnvc64(A,B) :- all64(B,C) 0.0 (2.0, 7.0, 44.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,A) 0.141949152542 (2.0, 6.0, 45.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,B) 0.189265536723 (2.0, 4.0, 47.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- some64(C,B) (0.18926553672316385, 2.0) > (0.1419491525423729, 2.0)
+[LVL9] rnvc64(A,B) :- no64(A,C) 0.0 (2.0, 7.0, 44.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C) 0.237288135593 (3.0, 6.0, 45.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(B,C) (0.23728813559322035, 3.0) > (0.18926553672316385, 2.0)
+[LVL9] rnvc64(A,B) :- no64(C,A) 0.305084745763 (3.0, 4.0, 47.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(C,A) (0.3050847457627119, 3.0) > (0.23728813559322035, 3.0)
+[LVL9] rnvc64(A,B) :- no64(C,B) 0.0 (2.0, 7.0, 44.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.0 (2.0, 7.0, 44.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.141949152542 (2.0, 6.0, 45.0, 7.0) 0.567796610169 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.237288135593 (3.0, 6.0, 45.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.237288135593 (3.0, 6.0, 45.0, 6.0) 0.71186440678 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- no64(C,A) [0.305084745763]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- no64(C,A) 0.305084745763
+[DEBUG] rnvc64(A,B) :- no64(B,C) 0.237288135593
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.237288135593
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.237288135593
+[DEBUG] rnvc64(A,B) :- some64(C,B) 0.189265536723
+[DEBUG] rnvc64(A,B) :- all64(A,C) 0.141949152542
+[DEBUG] rnvc64(A,B) :- some64(C,A) 0.141949152542
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.141949152542
+[DEBUG] rnvc64(A,B) :- all64(B,C) 0.0
+[DEBUG] rnvc64(A,B) :- no64(A,C) 0.0
+[DEBUG] rnvc64(A,B) :- no64(C,B) 0.0
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- no64(C,A), no64(C,B) 0.567796610169 (2.0, 0.0, 51.0, 7.0) 0.567796610169 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(C,A), no64(C,B) (0.5677966101694916, 2.0) > (0.3050847457627119, 3.0)
+[LVL9] rnvc64(A,B) :- no64(C,A), \+all64(C,B) 0.35593220339 (3.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A), \+all64(B,C) 0.35593220339 (3.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A), \+some64(B,C) 0.35593220339 (3.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A), \+somenot64(C,B) 0.35593220339 (3.0, 3.0, 48.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+all64(A,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+all64(C,A) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+some64(A,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+some64(C,A) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+somenot64(A,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+somenot64(C,A) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.266949152542 (3.0, 5.0, 46.0, 6.0) 0.71186440678 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- no64(C,A), no64(C,B) [0.567796610169]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+all64(C,B) 0.35593220339
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+all64(B,C) 0.35593220339
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+some64(B,C) 0.35593220339
+[DEBUG] rnvc64(A,B) :- no64(C,A), \+somenot64(C,B) 0.35593220339
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+all64(A,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+all64(C,A) 0.266949152542
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+some64(A,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+some64(C,A) 0.266949152542
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+somenot64(A,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+somenot64(C,A) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.266949152542
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.266949152542
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc64(A,B) :- no64(C,A), no64(C,B) 0.883333333333
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.120689655172]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.120689655172
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C) 0.140086206897 (3.0, 6.0, 45.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- all64(A,C) (0.1400862068965517, 3.0) > (0.1206896551724138, 9.0)
+[LVL9] rnvc64(A,B) :- all64(B,C) 0.124521072797 (3.0, 7.0, 44.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,A) 0.140086206897 (3.0, 6.0, 45.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,B) 0.186781609195 (3.0, 4.0, 47.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- some64(C,B) (0.1867816091954023, 3.0) > (0.1400862068965517, 3.0)
+[LVL9] rnvc64(A,B) :- no64(A,C) 0.124521072797 (3.0, 7.0, 44.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C) 0.235632183908 (4.0, 6.0, 45.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(B,C) (0.23563218390804597, 4.0) > (0.1867816091954023, 3.0)
+[LVL9] rnvc64(A,B) :- no64(C,A) 0.186781609195 (3.0, 4.0, 47.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.124521072797 (3.0, 7.0, 44.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.140086206897 (3.0, 6.0, 45.0, 6.0) 0.560344827586 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.235632183908 (4.0, 6.0, 45.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.235632183908 (4.0, 6.0, 45.0, 5.0) 0.706896551724 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- no64(B,C) [0.235632183908]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- no64(B,C) 0.235632183908
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.235632183908
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.235632183908
+[DEBUG] rnvc64(A,B) :- some64(C,B) 0.186781609195
+[DEBUG] rnvc64(A,B) :- no64(C,A) 0.186781609195
+[DEBUG] rnvc64(A,B) :- all64(A,C) 0.140086206897
+[DEBUG] rnvc64(A,B) :- some64(C,A) 0.140086206897
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.140086206897
+[DEBUG] rnvc64(A,B) :- all64(B,C) 0.124521072797
+[DEBUG] rnvc64(A,B) :- no64(A,C) 0.124521072797
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.124521072797
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- no64(B,C), no64(A,C) 0.560344827586 (3.0, 0.0, 51.0, 6.0) 0.560344827586 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(B,C), no64(A,C) (0.5603448275862069, 3.0) > (0.23563218390804597, 4.0)
+[LVL9] rnvc64(A,B) :- no64(B,C), \+all64(A,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+all64(C,A) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+some64(A,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+some64(C,A) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+somenot64(A,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C), \+somenot64(C,A) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.265086206897 (4.0, 5.0, 46.0, 5.0) 0.706896551724 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- no64(B,C), no64(A,C) [0.560344827586]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+all64(A,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+all64(C,A) 0.265086206897
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+some64(A,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+some64(C,A) 0.265086206897
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+somenot64(A,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- no64(B,C), \+somenot64(C,A) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.265086206897
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.265086206897
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc64(A,B) :- no64(B,C), no64(A,C) 0.9
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.105263157895]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.105263157895
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C) 0.138157894737 (4.0, 6.0, 45.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- all64(A,C) (0.1381578947368421, 4.0) > (0.10526315789473685, 9.0)
+[LVL9] rnvc64(A,B) :- all64(B,C) 0.122807017544 (4.0, 7.0, 44.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,A) 0.138157894737 (4.0, 6.0, 45.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,B) 0.184210526316 (4.0, 4.0, 47.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- some64(C,B) (0.18421052631578946, 4.0) > (0.1381578947368421, 4.0)
+[LVL9] rnvc64(A,B) :- no64(B,C) 0.138157894737 (4.0, 6.0, 45.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A) 0.184210526316 (4.0, 4.0, 47.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.122807017544 (4.0, 7.0, 44.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.138157894737 (4.0, 6.0, 45.0, 5.0) 0.552631578947 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.233918128655 (5.0, 6.0, 45.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(C,A) (0.23391812865497075, 5.0) > (0.18421052631578946, 4.0)
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.233918128655 (5.0, 6.0, 45.0, 4.0) 0.701754385965 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- somenot64(C,A) [0.233918128655]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.233918128655
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.233918128655
+[DEBUG] rnvc64(A,B) :- some64(C,B) 0.184210526316
+[DEBUG] rnvc64(A,B) :- no64(C,A) 0.184210526316
+[DEBUG] rnvc64(A,B) :- all64(A,C) 0.138157894737
+[DEBUG] rnvc64(A,B) :- some64(C,A) 0.138157894737
+[DEBUG] rnvc64(A,B) :- no64(B,C) 0.138157894737
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.138157894737
+[DEBUG] rnvc64(A,B) :- all64(B,C) 0.122807017544
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.122807017544
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- somenot64(C,A), some64(C,B) 0.552631578947 (4.0, 0.0, 51.0, 5.0) 0.552631578947 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(C,A), some64(C,B) (0.5526315789473684, 4.0) > (0.23391812865497075, 5.0)
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.263157894737 (5.0, 5.0, 46.0, 4.0) 0.701754385965 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- somenot64(C,A), some64(C,B) [0.552631578947]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(C,B) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+all64(B,C) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+some64(B,C) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(C,B) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+no64(B,C) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,A), \+somenot64(B,C) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.263157894737
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.263157894737
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc64(A,B) :- somenot64(C,A), some64(C,B) 0.916666666667
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.0892857142857]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.0892857142857
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C) 0.136160714286 (5.0, 6.0, 45.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- all64(A,C) (0.13616071428571427, 5.0) > (0.08928571428571429, 9.0)
+[LVL9] rnvc64(A,B) :- all64(B,C) 0.121031746032 (5.0, 7.0, 44.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc64(A,B) :- some64(C,A) 0.136160714286 (5.0, 6.0, 45.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C) 0.136160714286 (5.0, 6.0, 45.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A) 0.181547619048 (5.0, 4.0, 47.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(C,A) (0.18154761904761904, 5.0) > (0.13616071428571427, 5.0)
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.121031746032 (5.0, 7.0, 44.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.136160714286 (5.0, 6.0, 45.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.136160714286 (5.0, 6.0, 45.0, 4.0) 0.544642857143 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.232142857143 (6.0, 6.0, 45.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(C,B) (0.23214285714285715, 6.0) > (0.18154761904761904, 5.0)
+[DEBUG] Best rule so far: rnvc64(A,B) :- somenot64(C,B) [0.232142857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.232142857143
+[DEBUG] rnvc64(A,B) :- no64(C,A) 0.181547619048
+[DEBUG] rnvc64(A,B) :- all64(A,C) 0.136160714286
+[DEBUG] rnvc64(A,B) :- some64(C,A) 0.136160714286
+[DEBUG] rnvc64(A,B) :- no64(B,C) 0.136160714286
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.136160714286
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.136160714286
+[DEBUG] rnvc64(A,B) :- all64(B,C) 0.121031746032
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.121031746032
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- somenot64(C,B), some64(C,A) 0.544642857143 (5.0, 0.0, 51.0, 4.0) 0.544642857143 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(C,B), some64(C,A) (0.5446428571428571, 5.0) > (0.23214285714285715, 6.0)
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.261160714286 (6.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.261160714286 (6.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.261160714286 (6.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.261160714286 (6.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.261160714286 (6.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.261160714286 (6.0, 5.0, 46.0, 3.0) 0.696428571429 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- somenot64(C,B), some64(C,A) [0.544642857143]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(A,C) 0.261160714286
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+all64(C,A) 0.261160714286
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+some64(A,C) 0.261160714286
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(A,C) 0.261160714286
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+no64(C,A) 0.261160714286
+[DEBUG] rnvc64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.261160714286
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc64(A,B) :- somenot64(C,B), some64(C,A) 0.933333333333
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.0727272727273]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.0727272727273
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C) 0.134090909091 (6.0, 6.0, 45.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- all64(A,C) (0.1340909090909091, 6.0) > (0.07272727272727272, 9.0)
+[LVL9] rnvc64(A,B) :- all64(B,C) 0.119191919192 (6.0, 7.0, 44.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(B,C) 0.134090909091 (6.0, 6.0, 45.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc64(A,B) :- no64(C,A) 0.178787878788 (6.0, 4.0, 47.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(C,A) (0.1787878787878788, 6.0) > (0.1340909090909091, 6.0)
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.119191919192 (6.0, 7.0, 44.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.134090909091 (6.0, 6.0, 45.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.134090909091 (6.0, 6.0, 45.0, 3.0) 0.536363636364 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.134090909091 (6.0, 6.0, 45.0, 3.0) 0.536363636364 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- no64(C,A) [0.178787878788]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- no64(C,A) 0.178787878788
+[DEBUG] rnvc64(A,B) :- all64(A,C) 0.134090909091
+[DEBUG] rnvc64(A,B) :- no64(B,C) 0.134090909091
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.134090909091
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.134090909091
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.134090909091
+[DEBUG] rnvc64(A,B) :- all64(B,C) 0.119191919192
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.119191919192
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- no64(C,A), no64(B,C) 0.536363636364 (6.0, 0.0, 51.0, 3.0) 0.536363636364 [REJECT* fp] 5.0
+[LVL9] BETTER RULE rnvc64(A,B) :- no64(C,A), no64(B,C) (0.5363636363636364, 6.0) > (0.1787878787878788, 6.0)
+[INFO] RULE LEARNED: rnvc64(A,B) :- no64(C,A), no64(B,C) 0.95
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.0555555555556]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.0555555555556
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C) 0.131944444444 (7.0, 6.0, 45.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- all64(A,C) (0.13194444444444445, 7.0) > (0.05555555555555555, 9.0)
+[LVL9] rnvc64(A,B) :- all64(B,C) 0.117283950617 (7.0, 7.0, 44.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.117283950617 (7.0, 7.0, 44.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.131944444444 (7.0, 6.0, 45.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.131944444444 (7.0, 6.0, 45.0, 2.0) 0.527777777778 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.131944444444 (7.0, 6.0, 45.0, 2.0) 0.527777777778 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- all64(A,C) [0.131944444444]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- all64(A,C) 0.131944444444
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.131944444444
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.131944444444
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.131944444444
+[DEBUG] rnvc64(A,B) :- all64(B,C) 0.117283950617
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.117283950617
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- all64(A,C), all64(B,C) 0.527777777778 (7.0, 0.0, 51.0, 2.0) 0.527777777778 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rnvc64(A,B) :- all64(A,C), all64(B,C) (0.5277777777777778, 7.0) > (0.13194444444444445, 7.0)
+[INFO] RULE LEARNED: rnvc64(A,B) :- all64(A,C), all64(B,C) 0.966666666667
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.0377358490566]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.0377358490566
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- somenot64(A,C) 0.115303983229 (8.0, 7.0, 44.0, 1.0) 0.518867924528 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(A,C) (0.11530398322851153, 8.0) > (0.03773584905660377, 9.0)
+[LVL9] rnvc64(A,B) :- somenot64(B,C) 0.129716981132 (8.0, 6.0, 45.0, 1.0) 0.518867924528 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(B,C) (0.12971698113207547, 8.0) > (0.11530398322851153, 8.0)
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.129716981132 (8.0, 6.0, 45.0, 1.0) 0.518867924528 [ACCEPT]
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.129716981132 (8.0, 6.0, 45.0, 1.0) 0.518867924528 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- somenot64(B,C) [0.129716981132]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- somenot64(B,C) 0.129716981132
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.129716981132
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.129716981132
+[DEBUG] rnvc64(A,B) :- somenot64(A,C) 0.115303983229
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- somenot64(B,C), somenot64(A,C) 0.518867924528 (8.0, 0.0, 51.0, 1.0) 0.518867924528 [REJECT* fp] 7.0
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(B,C), somenot64(A,C) (0.5188679245283019, 8.0) > (0.12971698113207547, 8.0)
+[INFO] RULE LEARNED: rnvc64(A,B) :- somenot64(B,C), somenot64(A,C) 0.983333333333
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- somenot64(C,A) 0.127403846154 (9.0, 6.0, 45.0, 0.0) 0.509615384615 [ACCEPT]
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(C,A) (0.12740384615384615, 9.0) > (0.0, 9.0)
+[LVL9] rnvc64(A,B) :- somenot64(C,B) 0.127403846154 (9.0, 6.0, 45.0, 0.0) 0.509615384615 [ACCEPT]
+[DEBUG] Best rule so far: rnvc64(A,B) :- somenot64(C,A) [0.127403846154]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- somenot64(C,A) 0.127403846154
+[DEBUG] rnvc64(A,B) :- somenot64(C,B) 0.127403846154
+[DEBUG] ==================================
+[LVL9] rnvc64(A,B) :- somenot64(C,A), somenot64(C,B) 0.509615384615 (9.0, 0.0, 51.0, 0.0) 0.509615384615 [REJECT* fp] 8.0
+[LVL9] BETTER RULE rnvc64(A,B) :- somenot64(C,A), somenot64(C,B) (0.5096153846153846, 9.0) > (0.12740384615384615, 9.0)
+[INFO] RULE LEARNED: rnvc64(A,B) :- somenot64(C,A), somenot64(C,B) 1.0
+[DEBUG] Best rule so far: rnvc64(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc64(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc64(A,B) :- true 1.0

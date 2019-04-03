@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_101.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsomenot101.log
+              target:	rsomenot101/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot101(A,B) :- all101(C,A), \+all101(B,C), \+some101(C,B), \+no101(C,B), \+no101(B,C), \+some101(B,C)
+rsomenot101(A,B) :- all101(A,C), somenot101(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.973684210526
+           Precision:	 1.0
+              Recall:	 0.5
+================== STATISTICS ==================
+    Rule evaluations:	22378
+          Total time:	894.6688s

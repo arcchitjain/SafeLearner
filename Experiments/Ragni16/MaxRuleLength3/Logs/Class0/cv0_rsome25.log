@@ -1,0 +1,757 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.338101073956
+[INFO] Computing scores: 0.1062s
+[INFO] Number of examples (M): 116
+[INFO] Positive weight (P): 15.0000
+[INFO] Negative weight (N): 101.0000
+[DEBUG] Best rule so far: rsome25(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- all25(B,C) 0.320581896552 (5.0, 10.0, 91.0, 10.0) 0.854885057471 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- all25(B,C) (0.32058189655172414, 5.0) > (0.0, 15.0)
+[LVL9] rsome25(A,B) :- all25(C,B) 0.133081896552 (2.0, 13.0, 88.0, 13.0) 0.709770114943 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C) 0.195581896552 (3.0, 12.0, 89.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C) 0.195581896552 (3.0, 12.0, 89.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A) 0.152093596059 (2.0, 11.0, 90.0, 13.0) 0.709770114943 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B) 0.152093596059 (2.0, 11.0, 90.0, 13.0) 0.709770114943 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A) 0.0 (1.0, 15.0, 86.0, 14.0) 0.564655172414 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,B) 0.0 (1.0, 15.0, 86.0, 14.0) 0.564655172414 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C) 0.208620689655 (3.0, 11.0, 90.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C) 0.141954022989 (2.0, 12.0, 89.0, 13.0) 0.709770114943 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A) 0.408620689655 (6.0, 8.0, 93.0, 9.0) 0.875615763547 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(C,A) (0.4086206896551724, 6.0) > (0.32058189655172414, 5.0)
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(C,A) [0.408620689655]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(C,A) 0.408620689655
+[DEBUG] rsome25(A,B) :- all25(B,C) 0.320581896552
+[DEBUG] rsome25(A,B) :- somenot25(A,C) 0.208620689655
+[DEBUG] rsome25(A,B) :- some25(A,C) 0.195581896552
+[DEBUG] rsome25(A,B) :- some25(B,C) 0.195581896552
+[DEBUG] rsome25(A,B) :- some25(C,A) 0.152093596059
+[DEBUG] rsome25(A,B) :- some25(C,B) 0.152093596059
+[DEBUG] rsome25(A,B) :- somenot25(B,C) 0.141954022989
+[DEBUG] rsome25(A,B) :- all25(C,B) 0.133081896552
+[DEBUG] rsome25(A,B) :- no25(C,A) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(C,B) 0.376436781609 (1.0, 1.0, 100.0, 14.0) 0.564655172414 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(B,C) 0.709770114943 (2.0, 0.0, 101.0, 13.0) 0.709770114943 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(C,A), all25(B,C) (0.7097701149425287, 2.0) > (0.4086206896551724, 6.0)
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+all25(C,B) 0.394562334218 (5.0, 7.0, 94.0, 10.0) 0.854885057471 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.437807881773 (6.0, 7.0, 94.0, 9.0) 0.875615763547 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.471485411141 (6.0, 6.0, 95.0, 9.0) 0.875615763547 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.471485411141 (6.0, 6.0, 95.0, 9.0) 0.875615763547 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.471485411141 (6.0, 6.0, 95.0, 9.0) 0.875615763547 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.366379310345 (5.0, 8.0, 93.0, 10.0) 0.854885057471 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.366379310345 (5.0, 8.0, 93.0, 10.0) 0.854885057471 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+some25(A,C) 0.294950738916 (4.0, 9.0, 92.0, 11.0) 0.825862068966 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.366379310345 (5.0, 8.0, 93.0, 10.0) 0.854885057471 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.366379310345 (5.0, 8.0, 93.0, 10.0) 0.854885057471 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+somenot25(A,C) 0.294950738916 (4.0, 9.0, 92.0, 11.0) 0.825862068966 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.240716180371 (3.0, 9.0, 92.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.240716180371 (3.0, 9.0, 92.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.240716180371 (3.0, 9.0, 92.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.208620689655 (3.0, 11.0, 90.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+all25(A,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+all25(C,A) 0.208620689655 (3.0, 11.0, 90.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+some25(A,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+no25(A,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+no25(C,A) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+somenot25(A,C) 0.223522167488 (3.0, 10.0, 91.0, 12.0) 0.782327586207 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(C,A), all25(B,C) [0.709770114943]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.471485411141
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.471485411141
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.471485411141
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.437807881773
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+all25(C,B) 0.394562334218
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(C,B) 0.376436781609
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.366379310345
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.366379310345
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.366379310345
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.366379310345
+[DEBUG] rsome25(A,B) :- all25(B,C), \+some25(A,C) 0.294950738916
+[DEBUG] rsome25(A,B) :- all25(B,C), \+somenot25(A,C) 0.294950738916
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.240716180371
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.240716180371
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.240716180371
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(B,C), \+all25(A,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(B,C), \+some25(A,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(B,C), \+no25(A,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(B,C), \+no25(C,A) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(B,C), \+somenot25(A,C) 0.223522167488
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.208620689655
+[DEBUG] rsome25(A,B) :- some25(B,C), \+all25(C,A) 0.208620689655
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome25(A,B) :- somenot25(C,A), all25(B,C) 0.887931034483
+[DEBUG] Best rule so far: rsome25(A,B) :- true [0.114035087719]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- true 0.114035087719
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- all25(B,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- all25(B,C) (0.2224310776942356, 5.0) > (0.11403508771929824, 15.0)
+[LVL9] rsome25(A,B) :- all25(C,B) 0.132127192982 (4.0, 13.0, 88.0, 11.0) 0.704678362573 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C) 0.194627192982 (5.0, 12.0, 89.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C) 0.194627192982 (5.0, 12.0, 89.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A) 0.151002506266 (4.0, 11.0, 90.0, 11.0) 0.704678362573 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B) 0.151002506266 (4.0, 11.0, 90.0, 11.0) 0.704678362573 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A) 0.0 (3.0, 15.0, 86.0, 12.0) 0.55701754386 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,B) 0.0 (3.0, 15.0, 86.0, 12.0) 0.55701754386 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C) 0.207602339181 (5.0, 11.0, 90.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C) 0.140935672515 (4.0, 12.0, 89.0, 11.0) 0.704678362573 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A) 0.316464237517 (6.0, 8.0, 93.0, 9.0) 0.822807017544 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(C,A) (0.3164642375168691, 6.0) > (0.2224310776942356, 5.0)
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(C,A) [0.316464237517]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(C,A) 0.316464237517
+[DEBUG] rsome25(A,B) :- all25(B,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- somenot25(A,C) 0.207602339181
+[DEBUG] rsome25(A,B) :- some25(A,C) 0.194627192982
+[DEBUG] rsome25(A,B) :- some25(B,C) 0.194627192982
+[DEBUG] rsome25(A,B) :- some25(C,A) 0.151002506266
+[DEBUG] rsome25(A,B) :- some25(C,B) 0.151002506266
+[DEBUG] rsome25(A,B) :- somenot25(B,C) 0.140935672515
+[DEBUG] rsome25(A,B) :- all25(C,B) 0.132127192982
+[DEBUG] rsome25(A,B) :- no25(C,A) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(C,B) 0.37134502924 (3.0, 1.0, 100.0, 12.0) 0.55701754386 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(C,A), all25(C,B) (0.37134502923976603, 3.0) > (0.3164642375168691, 6.0)
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(C,D) 0.37134502924 (3.0, 1.0, 100.0, 12.0) 0.55701754386 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(D,B) 0.37134502924 (3.0, 1.0, 100.0, 12.0) 0.55701754386 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), some25(B,C) 0.704678362573 (4.0, 0.0, 101.0, 11.0) 0.704678362573 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(C,A), some25(B,C) (0.7046783625730995, 4.0) > (0.37134502923976603, 3.0)
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+all25(C,B) 0.283094098884 (5.0, 7.0, 94.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.34283625731 (6.0, 7.0, 94.0, 9.0) 0.822807017544 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.374003189793 (6.0, 6.0, 95.0, 9.0) 0.822807017544 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.374003189793 (6.0, 6.0, 95.0, 9.0) 0.822807017544 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.374003189793 (6.0, 6.0, 95.0, 9.0) 0.822807017544 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.259502923977 (5.0, 8.0, 93.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.259502923977 (5.0, 8.0, 93.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.259502923977 (5.0, 8.0, 93.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.259502923977 (5.0, 8.0, 93.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.239541160594 (5.0, 9.0, 92.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.239541160594 (5.0, 9.0, 92.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.239541160594 (5.0, 9.0, 92.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.207602339181 (5.0, 11.0, 90.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+all25(A,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+all25(C,A) 0.207602339181 (5.0, 11.0, 90.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+some25(A,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+no25(A,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+no25(C,A) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+somenot25(A,C) 0.222431077694 (5.0, 10.0, 91.0, 10.0) 0.77850877193 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(C,A), some25(B,C) [0.704678362573]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.374003189793
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.374003189793
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.374003189793
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(C,B) 0.37134502924
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(C,D) 0.37134502924
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(D,B) 0.37134502924
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.34283625731
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+all25(C,B) 0.283094098884
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.259502923977
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.259502923977
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.259502923977
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.259502923977
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.239541160594
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.239541160594
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.239541160594
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(B,C), \+all25(A,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(B,C), \+some25(A,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(B,C), \+no25(A,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(B,C), \+no25(C,A) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(B,C), \+somenot25(A,C) 0.222431077694
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.207602339181
+[DEBUG] rsome25(A,B) :- some25(B,C), \+all25(C,A) 0.207602339181
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome25(A,B) :- somenot25(C,A), some25(B,C) 0.905172413793
+[DEBUG] Best rule so far: rsome25(A,B) :- true [0.0982142857143]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- true 0.0982142857143
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- all25(B,C) 0.221301020408 (7.0, 10.0, 91.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- all25(B,C) (0.22130102040816327, 7.0) > (0.09821428571428573, 15.0)
+[LVL9] rsome25(A,B) :- all25(C,B) 0.131138392857 (6.0, 13.0, 88.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C) 0.193638392857 (7.0, 12.0, 89.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C) 0.0 (5.0, 12.0, 89.0, 10.0) 0.549107142857 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A) 0.0 (5.0, 15.0, 86.0, 10.0) 0.549107142857 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,B) 0.0 (5.0, 15.0, 86.0, 10.0) 0.549107142857 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C) 0.206547619048 (7.0, 11.0, 90.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C) 0.139880952381 (6.0, 12.0, 89.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A) 0.190746753247 (6.0, 8.0, 93.0, 9.0) 0.699404761905 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- all25(B,C) [0.221301020408]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- all25(B,C) 0.221301020408
+[DEBUG] rsome25(A,B) :- somenot25(A,C) 0.206547619048
+[DEBUG] rsome25(A,B) :- some25(A,C) 0.193638392857
+[DEBUG] rsome25(A,B) :- somenot25(C,A) 0.190746753247
+[DEBUG] rsome25(A,B) :- some25(C,A) 0.14987244898
+[DEBUG] rsome25(A,B) :- some25(C,B) 0.14987244898
+[DEBUG] rsome25(A,B) :- somenot25(B,C) 0.139880952381
+[DEBUG] rsome25(A,B) :- all25(C,B) 0.131138392857
+[DEBUG] rsome25(A,B) :- some25(B,C) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,A) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- all25(B,C), some25(A,C) 0.366071428571 (5.0, 1.0, 100.0, 10.0) 0.549107142857 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- all25(B,C), some25(A,C) (0.3660714285714286, 5.0) > (0.22130102040816327, 7.0)
+[LVL9] rsome25(A,B) :- all25(B,C), some25(C,A) 0.549107142857 (5.0, 0.0, 101.0, 10.0) 0.549107142857 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rsome25(A,B) :- all25(B,C), some25(C,A) (0.5491071428571429, 5.0) > (0.3660714285714286, 5.0)
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.25818452381 (7.0, 8.0, 93.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.25818452381 (7.0, 8.0, 93.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+some25(A,C) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.25818452381 (7.0, 8.0, 93.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.25818452381 (7.0, 8.0, 93.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+somenot25(A,C) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+all25(C,B) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+all25(B,C) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(C,B) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.238324175824 (7.0, 9.0, 92.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.238324175824 (7.0, 9.0, 92.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.221301020408 (7.0, 10.0, 91.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.221301020408 (7.0, 10.0, 91.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.238324175824 (7.0, 9.0, 92.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.206547619048 (7.0, 11.0, 90.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(B,C) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(C,B) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.221301020408 (7.0, 10.0, 91.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(C,B) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.221301020408 (7.0, 10.0, 91.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.221301020408 (7.0, 10.0, 91.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.221301020408 (7.0, 10.0, 91.0, 8.0) 0.774553571429 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.209821428571 (6.0, 7.0, 94.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.233134920635 (6.0, 6.0, 95.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.233134920635 (6.0, 6.0, 95.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.233134920635 (6.0, 6.0, 95.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+all25(C,B) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+some25(C,B) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+no25(C,B) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+no25(B,C) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+somenot25(C,B) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+somenot25(B,C) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+all25(A,C) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+all25(C,A) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+some25(C,A) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+no25(A,C) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+no25(C,A) 0.174851190476 (6.0, 9.0, 92.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+somenot25(C,A) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+all25(A,C) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+all25(C,A) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+some25(A,C) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+some25(C,A) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+no25(A,C) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+somenot25(A,C) 0.161401098901 (6.0, 10.0, 91.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+all25(A,C) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+all25(C,A) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+some25(A,C) 0.139880952381 (6.0, 12.0, 89.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+some25(C,A) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+no25(A,C) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+no25(C,A) 0.14987244898 (6.0, 11.0, 90.0, 9.0) 0.699404761905 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- all25(B,C), some25(C,A) [0.549107142857]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- all25(B,C), some25(A,C) 0.366071428571
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.25818452381
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.25818452381
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.25818452381
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.25818452381
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.238324175824
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.238324175824
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.238324175824
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.233134920635
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.233134920635
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.233134920635
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.221301020408
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.221301020408
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.221301020408
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.221301020408
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.221301020408
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.221301020408
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.209821428571
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.206547619048
+[DEBUG] rsome25(A,B) :- all25(B,C), \+some25(A,C) 0.174851190476
+[DEBUG] rsome25(A,B) :- all25(B,C), \+somenot25(A,C) 0.174851190476
+[DEBUG] rsome25(A,B) :- some25(C,A), \+all25(C,B) 0.174851190476
+[DEBUG] rsome25(A,B) :- some25(C,A), \+some25(C,B) 0.174851190476
+[DEBUG] rsome25(A,B) :- some25(C,A), \+no25(C,B) 0.174851190476
+[DEBUG] rsome25(A,B) :- some25(C,A), \+somenot25(B,C) 0.174851190476
+[DEBUG] rsome25(A,B) :- some25(C,B), \+all25(C,A) 0.174851190476
+[DEBUG] rsome25(A,B) :- some25(C,B), \+some25(C,A) 0.174851190476
+[DEBUG] rsome25(A,B) :- some25(C,B), \+no25(C,A) 0.174851190476
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+all25(C,B) 0.161401098901
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+all25(B,C) 0.161401098901
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(C,B) 0.161401098901
+[DEBUG] rsome25(A,B) :- some25(C,A), \+no25(B,C) 0.161401098901
+[DEBUG] rsome25(A,B) :- some25(C,A), \+somenot25(C,B) 0.161401098901
+[DEBUG] rsome25(A,B) :- some25(C,B), \+all25(A,C) 0.161401098901
+[DEBUG] rsome25(A,B) :- some25(C,B), \+no25(A,C) 0.161401098901
+[DEBUG] rsome25(A,B) :- some25(C,B), \+somenot25(C,A) 0.161401098901
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+all25(A,C) 0.161401098901
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+all25(C,A) 0.161401098901
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+some25(A,C) 0.161401098901
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+some25(C,A) 0.161401098901
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+somenot25(A,C) 0.161401098901
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(B,C) 0.14987244898
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(C,B) 0.14987244898
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(C,B) 0.14987244898
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+no25(A,C) 0.14987244898
+[DEBUG] rsome25(A,B) :- all25(C,B), \+all25(A,C) 0.14987244898
+[DEBUG] rsome25(A,B) :- all25(C,B), \+all25(C,A) 0.14987244898
+[DEBUG] rsome25(A,B) :- all25(C,B), \+some25(C,A) 0.14987244898
+[DEBUG] rsome25(A,B) :- all25(C,B), \+no25(A,C) 0.14987244898
+[DEBUG] rsome25(A,B) :- all25(C,B), \+no25(C,A) 0.14987244898
+[DEBUG] rsome25(A,B) :- all25(C,B), \+some25(A,C) 0.139880952381
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome25(A,B) :- all25(B,C), some25(C,A) 0.913793103448
+[DEBUG] Best rule so far: rsome25(A,B) :- true [0.0900900900901]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- true 0.0900900900901
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- all25(B,C) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- all25(B,C) (0.16077616077616078, 7.0) > (0.09009009009009009, 15.0)
+[LVL9] rsome25(A,B) :- all25(C,B) 0.130630630631 (7.0, 13.0, 88.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C) 0.193130630631 (8.0, 12.0, 89.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- some25(A,C) (0.19313063063063063, 8.0) > (0.16077616077616078, 7.0)
+[LVL9] rsome25(A,B) :- some25(B,C) 0.0 (6.0, 12.0, 89.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A) 0.0 (6.0, 11.0, 90.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A) 0.0 (6.0, 15.0, 86.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,B) 0.0 (6.0, 15.0, 86.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C) 0.206006006006 (8.0, 11.0, 90.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(A,C) (0.206006006006006, 8.0) > (0.19313063063063063, 8.0)
+[LVL9] rsome25(A,B) :- somenot25(B,C) 0.139339339339 (7.0, 12.0, 89.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A) 0.190008190008 (7.0, 8.0, 93.0, 8.0) 0.696696696697 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(A,C) [0.206006006006]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(A,C) 0.206006006006
+[DEBUG] rsome25(A,B) :- some25(A,C) 0.193130630631
+[DEBUG] rsome25(A,B) :- somenot25(C,A) 0.190008190008
+[DEBUG] rsome25(A,B) :- all25(B,C) 0.160776160776
+[DEBUG] rsome25(A,B) :- some25(C,B) 0.149292149292
+[DEBUG] rsome25(A,B) :- somenot25(B,C) 0.139339339339
+[DEBUG] rsome25(A,B) :- all25(C,B) 0.130630630631
+[DEBUG] rsome25(A,B) :- some25(B,C) 0.0
+[DEBUG] rsome25(A,B) :- some25(C,A) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,A) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(C,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(A,C), all25(C,B) (0.36336336336336333, 6.0) > (0.206006006006006, 8.0)
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(B,C) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(C,D) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(B,D) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(D,C) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(D,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), some25(C,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), some25(C,D) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), some25(D,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+all25(C,B) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+all25(B,C) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(C,B) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.237699237699 (8.0, 9.0, 92.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.237699237699 (8.0, 9.0, 92.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.220720720721 (8.0, 10.0, 91.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.220720720721 (8.0, 10.0, 91.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.237699237699 (8.0, 9.0, 92.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), all25(B,C) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), all25(B,D) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), all25(D,C) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), some25(C,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), some25(C,D) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), some25(D,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), no25(C,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), no25(C,D) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), no25(D,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.206006006006 (8.0, 11.0, 90.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(B,C) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(C,B) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.220720720721 (8.0, 10.0, 91.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(C,B) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.220720720721 (8.0, 10.0, 91.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.220720720721 (8.0, 10.0, 91.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.220720720721 (8.0, 10.0, 91.0, 7.0) 0.772522522523 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(C,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(C,D) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(D,B) 0.363363363363 (6.0, 1.0, 100.0, 9.0) 0.545045045045 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), somenot25(B,C) 0.545045045045 (6.0, 0.0, 101.0, 9.0) 0.545045045045 [REJECT* fp] 5.0
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(C,A), somenot25(B,C) (0.545045045045045, 6.0) > (0.36336336336336333, 6.0)
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.209009009009 (7.0, 7.0, 94.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.232232232232 (7.0, 6.0, 95.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.232232232232 (7.0, 6.0, 95.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.232232232232 (7.0, 6.0, 95.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.190008190008 (7.0, 8.0, 93.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.190008190008 (7.0, 8.0, 93.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.190008190008 (7.0, 8.0, 93.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.190008190008 (7.0, 8.0, 93.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+all25(A,C) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+all25(C,A) 0.174174174174 (7.0, 9.0, 92.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+some25(C,A) 0.174174174174 (7.0, 9.0, 92.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+no25(A,C) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+no25(C,A) 0.174174174174 (7.0, 9.0, 92.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+somenot25(C,A) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+all25(A,C) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+all25(C,A) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+some25(A,C) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+some25(C,A) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+no25(A,C) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+somenot25(A,C) 0.160776160776 (7.0, 10.0, 91.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+all25(A,C) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+all25(C,A) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+some25(A,C) 0.139339339339 (7.0, 12.0, 89.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+some25(C,A) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+no25(A,C) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+no25(C,A) 0.149292149292 (7.0, 11.0, 90.0, 8.0) 0.696696696697 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(C,A), somenot25(B,C) [0.545045045045]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(C,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(B,C) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(C,D) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(B,D) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(D,C) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(D,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), some25(C,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), some25(C,D) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), some25(D,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), all25(B,C) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), all25(B,D) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), all25(D,C) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), some25(C,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), some25(C,D) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), some25(D,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), no25(C,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), no25(C,D) 0.363363363363
+[DEBUG] rsome25(A,B) :- some25(A,C), no25(D,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(C,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(C,D) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(D,B) 0.363363363363
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.237699237699
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.237699237699
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.237699237699
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.232232232232
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.232232232232
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.232232232232
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.220720720721
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.220720720721
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.220720720721
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.220720720721
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.220720720721
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.220720720721
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.209009009009
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.206006006006
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.190008190008
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.190008190008
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.190008190008
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.190008190008
+[DEBUG] rsome25(A,B) :- some25(C,B), \+all25(C,A) 0.174174174174
+[DEBUG] rsome25(A,B) :- some25(C,B), \+some25(C,A) 0.174174174174
+[DEBUG] rsome25(A,B) :- some25(C,B), \+no25(C,A) 0.174174174174
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+all25(C,B) 0.160776160776
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+all25(B,C) 0.160776160776
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(C,B) 0.160776160776
+[DEBUG] rsome25(A,B) :- some25(C,B), \+all25(A,C) 0.160776160776
+[DEBUG] rsome25(A,B) :- some25(C,B), \+no25(A,C) 0.160776160776
+[DEBUG] rsome25(A,B) :- some25(C,B), \+somenot25(C,A) 0.160776160776
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+all25(A,C) 0.160776160776
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+all25(C,A) 0.160776160776
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+some25(A,C) 0.160776160776
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+some25(C,A) 0.160776160776
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+somenot25(A,C) 0.160776160776
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(B,C) 0.149292149292
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(C,B) 0.149292149292
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(C,B) 0.149292149292
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+no25(A,C) 0.149292149292
+[DEBUG] rsome25(A,B) :- all25(C,B), \+all25(A,C) 0.149292149292
+[DEBUG] rsome25(A,B) :- all25(C,B), \+all25(C,A) 0.149292149292
+[DEBUG] rsome25(A,B) :- all25(C,B), \+some25(C,A) 0.149292149292
+[DEBUG] rsome25(A,B) :- all25(C,B), \+no25(A,C) 0.149292149292
+[DEBUG] rsome25(A,B) :- all25(C,B), \+no25(C,A) 0.149292149292
+[DEBUG] rsome25(A,B) :- all25(C,B), \+some25(A,C) 0.139339339339
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome25(A,B) :- somenot25(C,A), somenot25(B,C) 0.922413793103
+[DEBUG] Best rule so far: rsome25(A,B) :- true [0.0818181818182]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- true 0.0818181818182
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- all25(B,C) 0.16013986014 (8.0, 10.0, 91.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- all25(B,C) (0.16013986013986015, 8.0) > (0.08181818181818182, 15.0)
+[LVL9] rsome25(A,B) :- all25(C,B) 0.130113636364 (8.0, 13.0, 88.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C) 0.192613636364 (9.0, 12.0, 89.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- some25(A,C) (0.19261363636363638, 9.0) > (0.16013986013986015, 8.0)
+[LVL9] rsome25(A,B) :- some25(B,C) 0.0 (7.0, 12.0, 89.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A) 0.0832167832168 (7.0, 11.0, 90.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A) 0.0 (7.0, 15.0, 86.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,B) 0.0 (7.0, 15.0, 86.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C) 0.205454545455 (9.0, 11.0, 90.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(A,C) (0.20545454545454547, 9.0) > (0.19261363636363638, 9.0)
+[LVL9] rsome25(A,B) :- somenot25(B,C) 0.0 (7.0, 12.0, 89.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A) 0.108181818182 (7.0, 8.0, 93.0, 8.0) 0.540909090909 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(A,C) [0.205454545455]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(A,C) 0.205454545455
+[DEBUG] rsome25(A,B) :- some25(A,C) 0.192613636364
+[DEBUG] rsome25(A,B) :- all25(B,C) 0.16013986014
+[DEBUG] rsome25(A,B) :- some25(C,B) 0.148701298701
+[DEBUG] rsome25(A,B) :- all25(C,B) 0.130113636364
+[DEBUG] rsome25(A,B) :- somenot25(C,A) 0.108181818182
+[DEBUG] rsome25(A,B) :- some25(C,A) 0.0832167832168
+[DEBUG] rsome25(A,B) :- some25(B,C) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,A) 0.0
+[DEBUG] rsome25(A,B) :- no25(C,B) 0.0
+[DEBUG] rsome25(A,B) :- somenot25(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(C,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] BETTER RULE rsome25(A,B) :- somenot25(A,C), all25(C,B) (0.3606060606060606, 7.0) > (0.20545454545454547, 9.0)
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(B,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(B,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), all25(D,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), some25(C,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), some25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), some25(D,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+all25(C,B) 0.16013986014 (8.0, 10.0, 91.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+all25(B,C) 0.16013986014 (8.0, 10.0, 91.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(C,B) 0.16013986014 (8.0, 10.0, 91.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.237062937063 (9.0, 9.0, 92.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.237062937063 (9.0, 9.0, 92.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.22012987013 (9.0, 10.0, 91.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.22012987013 (9.0, 10.0, 91.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.237062937063 (9.0, 9.0, 92.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), all25(B,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), all25(B,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), all25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), some25(C,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), some25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), some25(D,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), no25(C,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), no25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), no25(D,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.205454545455 (9.0, 11.0, 90.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+all25(B,C) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(C,B) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.22012987013 (9.0, 10.0, 91.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(C,B) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.22012987013 (9.0, 10.0, 91.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.22012987013 (9.0, 10.0, 91.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.22012987013 (9.0, 10.0, 91.0, 6.0) 0.770454545455 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), some25(A,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), some25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), somenot25(A,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), somenot25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.189256198347 (8.0, 8.0, 93.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.189256198347 (8.0, 8.0, 93.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+some25(A,C) 0.098347107438 (7.0, 9.0, 92.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.189256198347 (8.0, 8.0, 93.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.189256198347 (8.0, 8.0, 93.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(B,C), \+somenot25(A,C) 0.098347107438 (7.0, 9.0, 92.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), some25(A,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), some25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), somenot25(A,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), somenot25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+all25(A,C) 0.16013986014 (8.0, 10.0, 91.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+all25(C,A) 0.173484848485 (8.0, 9.0, 92.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+some25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+some25(C,A) 0.173484848485 (8.0, 9.0, 92.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+no25(A,C) 0.16013986014 (8.0, 10.0, 91.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+no25(C,A) 0.173484848485 (8.0, 9.0, 92.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+somenot25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,B), \+somenot25(C,A) 0.16013986014 (8.0, 10.0, 91.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), somenot25(C,A) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), somenot25(A,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), somenot25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), somenot25(D,A) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), somenot25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+all25(A,C) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+all25(C,A) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+some25(A,C) 0.138787878788 (8.0, 12.0, 89.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+some25(C,A) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+no25(A,C) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+no25(C,A) 0.148701298701 (8.0, 11.0, 90.0, 7.0) 0.693939393939 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+somenot25(A,C) 0.0 (7.0, 12.0, 89.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- all25(C,B), \+somenot25(C,A) 0.0 (7.0, 12.0, 89.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), all25(D,B) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.120202020202 (7.0, 7.0, 94.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.135227272727 (7.0, 6.0, 95.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.135227272727 (7.0, 6.0, 95.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.135227272727 (7.0, 6.0, 95.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), some25(B,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), some25(B,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), some25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+all25(C,B) 0.098347107438 (7.0, 9.0, 92.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+some25(C,B) 0.098347107438 (7.0, 9.0, 92.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+no25(C,B) 0.098347107438 (7.0, 9.0, 92.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+no25(B,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+somenot25(C,B) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(C,A), \+somenot25(B,C) 0.098347107438 (7.0, 9.0, 92.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), some25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), some25(D,A) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+all25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+all25(C,A) 0.0832167832168 (7.0, 11.0, 90.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+some25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+no25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+no25(C,A) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- some25(B,C), \+somenot25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), somenot25(B,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), somenot25(B,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), somenot25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), \+all25(C,B) 0.0 (7.0, 13.0, 88.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), \+all25(B,C) 0.0 (7.0, 13.0, 88.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), \+some25(C,B) 0.0 (7.0, 13.0, 88.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), \+some25(B,C) 0.0 (7.0, 13.0, 88.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,A), \+no25(C,B) 0.0 (7.0, 13.0, 88.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,B), some25(A,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- no25(C,B), some25(D,C) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), no25(C,D) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), no25(D,A) 0.360606060606 (7.0, 1.0, 100.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+all25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+all25(C,A) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+some25(A,C) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[LVL9] rsome25(A,B) :- somenot25(B,C), \+some25(C,A) 0.0901515151515 (7.0, 10.0, 91.0, 8.0) 0.540909090909 [ACCEPT]
+[DEBUG] Best rule so far: rsome25(A,B) :- somenot25(A,C), all25(C,B) [0.360606060606]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(C,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(B,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(B,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), all25(D,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), some25(C,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), some25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), some25(D,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), all25(B,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), all25(B,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), all25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), some25(C,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), some25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), some25(D,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), no25(C,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), no25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(A,C), no25(D,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(B,C), some25(A,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(B,C), some25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(B,C), somenot25(A,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(B,C), somenot25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(C,B), some25(A,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(C,B), some25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(C,B), somenot25(A,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(C,B), somenot25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(C,B), somenot25(C,A) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(C,B), somenot25(A,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(C,B), somenot25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(C,B), somenot25(D,A) 0.360606060606
+[DEBUG] rsome25(A,B) :- all25(C,B), somenot25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(C,A), all25(D,B) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(C,A), some25(B,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(C,A), some25(B,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(C,A), some25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(B,C), some25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- some25(B,C), some25(D,A) 0.360606060606
+[DEBUG] rsome25(A,B) :- no25(C,A), somenot25(B,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- no25(C,A), somenot25(B,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- no25(C,A), somenot25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- no25(C,B), some25(A,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- no25(C,B), some25(D,C) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(B,C), no25(C,D) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(B,C), no25(D,A) 0.360606060606
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(B,C) 0.237062937063
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(C,B) 0.237062937063
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(B,C) 0.237062937063
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+no25(B,C) 0.22012987013
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+somenot25(C,B) 0.22012987013
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(B,C) 0.22012987013
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(B,C) 0.22012987013
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(C,B) 0.22012987013
+[DEBUG] rsome25(A,B) :- some25(A,C), \+somenot25(B,C) 0.22012987013
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(C,B) 0.205454545455
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(A,C) 0.189256198347
+[DEBUG] rsome25(A,B) :- all25(B,C), \+all25(C,A) 0.189256198347
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(A,C) 0.189256198347
+[DEBUG] rsome25(A,B) :- all25(B,C), \+no25(C,A) 0.189256198347
+[DEBUG] rsome25(A,B) :- some25(C,B), \+all25(C,A) 0.173484848485
+[DEBUG] rsome25(A,B) :- some25(C,B), \+some25(C,A) 0.173484848485
+[DEBUG] rsome25(A,B) :- some25(C,B), \+no25(C,A) 0.173484848485
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+all25(C,B) 0.16013986014
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+all25(B,C) 0.16013986014
+[DEBUG] rsome25(A,B) :- somenot25(A,C), \+some25(C,B) 0.16013986014
+[DEBUG] rsome25(A,B) :- some25(C,B), \+all25(A,C) 0.16013986014
+[DEBUG] rsome25(A,B) :- some25(C,B), \+no25(A,C) 0.16013986014
+[DEBUG] rsome25(A,B) :- some25(C,B), \+somenot25(C,A) 0.16013986014
+[DEBUG] rsome25(A,B) :- some25(A,C), \+all25(B,C) 0.148701298701
+[DEBUG] rsome25(A,B) :- some25(A,C), \+some25(C,B) 0.148701298701
+[DEBUG] rsome25(A,B) :- some25(A,C), \+no25(C,B) 0.148701298701
+[DEBUG] rsome25(A,B) :- all25(C,B), \+all25(A,C) 0.148701298701
+[DEBUG] rsome25(A,B) :- all25(C,B), \+all25(C,A) 0.148701298701
+[DEBUG] rsome25(A,B) :- all25(C,B), \+some25(C,A) 0.148701298701
+[DEBUG] rsome25(A,B) :- all25(C,B), \+no25(A,C) 0.148701298701
+[DEBUG] rsome25(A,B) :- all25(C,B), \+no25(C,A) 0.148701298701
+[DEBUG] rsome25(A,B) :- all25(C,B), \+some25(A,C) 0.138787878788
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(C,B) 0.135227272727
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+no25(B,C) 0.135227272727
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+somenot25(C,B) 0.135227272727
+[DEBUG] rsome25(A,B) :- somenot25(C,A), \+some25(C,B) 0.120202020202
+[DEBUG] rsome25(A,B) :- all25(B,C), \+some25(A,C) 0.098347107438
+[DEBUG] rsome25(A,B) :- all25(B,C), \+somenot25(A,C) 0.098347107438
+[DEBUG] rsome25(A,B) :- some25(C,A), \+all25(C,B) 0.098347107438
+[DEBUG] rsome25(A,B) :- some25(C,A), \+some25(C,B) 0.098347107438
+[DEBUG] rsome25(A,B) :- some25(C,A), \+no25(C,B) 0.098347107438
+[DEBUG] rsome25(A,B) :- some25(C,A), \+somenot25(B,C) 0.098347107438
+[DEBUG] rsome25(A,B) :- some25(C,B), \+some25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(C,B), \+somenot25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(C,A), \+no25(B,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(C,A), \+somenot25(C,B) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(B,C), \+all25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(B,C), \+some25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(B,C), \+no25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(B,C), \+no25(C,A) 0.0901515151515
+[DEBUG] rsome25(A,B) :- some25(B,C), \+somenot25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+all25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+all25(C,A) 0.0901515151515
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+some25(A,C) 0.0901515151515
+[DEBUG] rsome25(A,B) :- somenot25(B,C), \+some25(C,A) 0.0901515151515
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome25(A,B) :- somenot25(A,C), all25(C,B) 0.922413793103

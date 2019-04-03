@@ -1,0 +1,284 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.587178639875
+[INFO] Computing scores: 0.0434s
+[INFO] Number of examples (M): 58
+[INFO] Positive weight (P): 33.0000
+[INFO] Negative weight (N): 25.0000
+[DEBUG] Best rule so far: rnvc69(A,B) :- true [0.568965517241]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- true 0.568965517241
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- all69(A,C) 0.0 (2.0, 5.0, 20.0, 31.0) 0.85632183908 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,A) 0.0 (2.0, 5.0, 20.0, 31.0) 0.85632183908 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,B) 0.0 (2.0, 6.0, 19.0, 31.0) 0.85632183908 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C) 0.571120689655 (4.0, 3.0, 22.0, 29.0) 0.913793103448 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(A,C) (0.5711206896551724, 4.0) > (0.5689655172413793, 33.0)
+[LVL9] rnvc69(A,B) :- some69(B,C) 0.0 (2.0, 3.0, 22.0, 31.0) 0.85632183908 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A) 0.0 (4.0, 4.0, 21.0, 29.0) 0.913793103448 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B) 0.61877394636 (5.0, 3.0, 22.0, 28.0) 0.92816091954 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(C,B) (0.6187739463601533, 5.0) > (0.5711206896551724, 4.0)
+[LVL9] rnvc69(A,B) :- no69(A,C) 0.571120689655 (4.0, 3.0, 22.0, 29.0) 0.913793103448 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(B,C) 0.821120689655 (6.0, 1.0, 24.0, 27.0) 0.93842364532 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(B,C) (0.8211206896551724, 6.0) > (0.6187739463601533, 5.0)
+[LVL9] rnvc69(A,B) :- no69(C,A) 0.821120689655 (6.0, 1.0, 24.0, 27.0) 0.93842364532 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(C,B) 0.729885057471 (6.0, 2.0, 23.0, 27.0) 0.93842364532 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(A,C) 0.821120689655 (6.0, 1.0, 24.0, 27.0) 0.93842364532 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(B,C) 0.696120689655 (5.0, 2.0, 23.0, 28.0) 0.92816091954 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A) 0.61877394636 (5.0, 3.0, 22.0, 28.0) 0.92816091954 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,B) 0.840996168582 (7.0, 1.0, 24.0, 26.0) 0.946120689655 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- somenot69(C,B) (0.8409961685823755, 7.0) > (0.8211206896551724, 6.0)
+[DEBUG] Best rule so far: rnvc69(A,B) :- somenot69(C,B) [0.840996168582]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- somenot69(C,B) 0.840996168582
+[DEBUG] rnvc69(A,B) :- no69(B,C) 0.821120689655
+[DEBUG] rnvc69(A,B) :- no69(C,A) 0.821120689655
+[DEBUG] rnvc69(A,B) :- somenot69(A,C) 0.821120689655
+[DEBUG] rnvc69(A,B) :- no69(C,B) 0.729885057471
+[DEBUG] rnvc69(A,B) :- somenot69(B,C) 0.696120689655
+[DEBUG] rnvc69(A,B) :- some69(C,B) 0.61877394636
+[DEBUG] rnvc69(A,B) :- somenot69(C,A) 0.61877394636
+[DEBUG] rnvc69(A,B) :- some69(A,C) 0.571120689655
+[DEBUG] rnvc69(A,B) :- no69(A,C) 0.571120689655
+[DEBUG] rnvc69(A,B) :- some69(C,A) 0.0
+[DEBUG] rnvc69(A,B) :- all69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,A) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,B) 0.0
+[DEBUG] rnvc69(A,B) :- some69(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- somenot69(C,B), \+all69(C,A) 0.946120689655 (7.0, 0.0, 25.0, 26.0) 0.946120689655 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc69(A,B) :- somenot69(C,B), \+all69(C,A) (0.9461206896551724, 7.0) > (0.8409961685823755, 7.0)
+[INFO] RULE LEARNED: rnvc69(A,B) :- somenot69(C,B), \+all69(C,A) 0.551724137931
+[DEBUG] Best rule so far: rnvc69(A,B) :- true [0.509803921569]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- true 0.509803921569
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- all69(A,C) 0.0 (8.0, 5.0, 20.0, 25.0) 0.754901960784 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,A) 0.0 (9.0, 5.0, 20.0, 24.0) 0.83660130719 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,B) 0.0 (9.0, 6.0, 19.0, 24.0) 0.83660130719 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C) 0.0 (10.0, 3.0, 22.0, 23.0) 0.877450980392 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(B,C) 0.0 (9.0, 3.0, 22.0, 24.0) 0.83660130719 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A) 0.0 (10.0, 4.0, 21.0, 23.0) 0.877450980392 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B) 0.61220043573 (12.0, 3.0, 22.0, 21.0) 0.918300653595 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(C,B) (0.6122004357298475, 12.0) > (0.5098039215686274, 33.0)
+[LVL9] rnvc69(A,B) :- no69(A,C) 0.0 (10.0, 3.0, 22.0, 23.0) 0.877450980392 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(B,C) 0.813725490196 (13.0, 1.0, 24.0, 20.0) 0.929971988796 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(B,C) (0.8137254901960784, 13.0) > (0.6122004357298475, 12.0)
+[LVL9] rnvc69(A,B) :- no69(C,A) 0.787114845938 (12.0, 1.0, 24.0, 21.0) 0.918300653595 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(C,B) 0.723311546841 (13.0, 2.0, 23.0, 20.0) 0.929971988796 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(A,C) 0.787114845938 (12.0, 1.0, 24.0, 21.0) 0.918300653595 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(B,C) 0.688725490196 (12.0, 2.0, 23.0, 21.0) 0.918300653595 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A) 0.563725490196 (11.0, 3.0, 22.0, 22.0) 0.901960784314 [ACCEPT]
+[DEBUG] Best rule so far: rnvc69(A,B) :- no69(B,C) [0.813725490196]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- no69(B,C) 0.813725490196
+[DEBUG] rnvc69(A,B) :- no69(C,A) 0.787114845938
+[DEBUG] rnvc69(A,B) :- somenot69(A,C) 0.787114845938
+[DEBUG] rnvc69(A,B) :- no69(C,B) 0.723311546841
+[DEBUG] rnvc69(A,B) :- somenot69(B,C) 0.688725490196
+[DEBUG] rnvc69(A,B) :- some69(C,B) 0.61220043573
+[DEBUG] rnvc69(A,B) :- somenot69(C,A) 0.563725490196
+[DEBUG] rnvc69(A,B) :- some69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- some69(C,A) 0.0
+[DEBUG] rnvc69(A,B) :- no69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,A) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,B) 0.0
+[DEBUG] rnvc69(A,B) :- some69(B,C) 0.0
+[DEBUG] rnvc69(A,B) :- all69(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- no69(B,C), \+some69(C,A) 0.929971988796 (13.0, 0.0, 25.0, 20.0) 0.929971988796 [REJECT* fp] 7.0
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(B,C), \+some69(C,A) (0.9299719887955182, 13.0) > (0.8137254901960784, 13.0)
+[INFO] RULE LEARNED: rnvc69(A,B) :- no69(B,C), \+some69(C,A) 0.655172413793
+[DEBUG] Best rule so far: rnvc69(A,B) :- true [0.444444444444]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- true 0.444444444444
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- all69(A,C) 0.0 (14.0, 5.0, 20.0, 19.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,A) 0.0 (14.0, 5.0, 20.0, 19.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,B) 0.0 (15.0, 6.0, 19.0, 18.0) 0.814814814815 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C) 0.0 (15.0, 3.0, 22.0, 18.0) 0.814814814815 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(B,C) 0.0 (15.0, 3.0, 22.0, 18.0) 0.814814814815 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A) 0.0 (16.0, 4.0, 21.0, 17.0) 0.861111111111 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B) 0.604938271605 (18.0, 3.0, 22.0, 15.0) 0.907407407407 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(C,B) (0.6049382716049383, 18.0) > (0.4444444444444444, 33.0)
+[LVL9] rnvc69(A,B) :- no69(A,C) 0.0 (15.0, 3.0, 22.0, 18.0) 0.814814814815 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(C,A) 0.740740740741 (17.0, 1.0, 24.0, 16.0) 0.888888888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(C,A) (0.7407407407407408, 17.0) > (0.6049382716049383, 18.0)
+[LVL9] rnvc69(A,B) :- no69(C,B) 0.716049382716 (19.0, 2.0, 23.0, 14.0) 0.920634920635 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(A,C) 0.740740740741 (17.0, 1.0, 24.0, 16.0) 0.888888888889 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(B,C) 0.680555555556 (18.0, 2.0, 23.0, 15.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A) 0.492063492063 (16.0, 3.0, 22.0, 17.0) 0.861111111111 [ACCEPT]
+[DEBUG] Best rule so far: rnvc69(A,B) :- no69(C,A) [0.740740740741]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- no69(C,A) 0.740740740741
+[DEBUG] rnvc69(A,B) :- somenot69(A,C) 0.740740740741
+[DEBUG] rnvc69(A,B) :- no69(C,B) 0.716049382716
+[DEBUG] rnvc69(A,B) :- somenot69(B,C) 0.680555555556
+[DEBUG] rnvc69(A,B) :- some69(C,B) 0.604938271605
+[DEBUG] rnvc69(A,B) :- somenot69(C,A) 0.492063492063
+[DEBUG] rnvc69(A,B) :- some69(C,A) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,B) 0.0
+[DEBUG] rnvc69(A,B) :- some69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- some69(B,C) 0.0
+[DEBUG] rnvc69(A,B) :- no69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- all69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- no69(C,A), \+all69(C,B) 0.888888888889 (17.0, 0.0, 25.0, 16.0) 0.888888888889 [REJECT* fp] 13.0
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(C,A), \+all69(C,B) (0.888888888888889, 17.0) > (0.7407407407407408, 17.0)
+[LVL9] rnvc69(A,B) :- no69(C,B), \+all69(A,C) 0.805555555556 (19.0, 1.0, 24.0, 14.0) 0.920634920635 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(C,B), \+all69(C,A) 0.805555555556 (19.0, 1.0, 24.0, 14.0) 0.920634920635 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(B,C), \+all69(C,A) 0.777777777778 (18.0, 1.0, 24.0, 15.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(B,C), \+somenot69(C,A) 0.777777777778 (18.0, 1.0, 24.0, 15.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B), \+all69(A,C) 0.680555555556 (18.0, 2.0, 23.0, 15.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B), \+all69(C,A) 0.680555555556 (18.0, 2.0, 23.0, 15.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B), \+some69(A,C) 0.680555555556 (18.0, 2.0, 23.0, 15.0) 0.907407407407 [ACCEPT]
+[DEBUG] Best rule so far: rnvc69(A,B) :- no69(C,A), \+all69(C,B) [0.888888888889]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- no69(C,B), \+all69(A,C) 0.805555555556
+[DEBUG] rnvc69(A,B) :- no69(C,B), \+all69(C,A) 0.805555555556
+[DEBUG] rnvc69(A,B) :- somenot69(B,C), \+all69(C,A) 0.777777777778
+[DEBUG] rnvc69(A,B) :- somenot69(B,C), \+somenot69(C,A) 0.777777777778
+[DEBUG] rnvc69(A,B) :- some69(C,B), \+all69(A,C) 0.680555555556
+[DEBUG] rnvc69(A,B) :- some69(C,B), \+all69(C,A) 0.680555555556
+[DEBUG] rnvc69(A,B) :- some69(C,B), \+some69(A,C) 0.680555555556
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc69(A,B) :- no69(C,A), \+all69(C,B) 0.724137931034
+[DEBUG] Best rule so far: rnvc69(A,B) :- true [0.390243902439]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- true 0.390243902439
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- all69(A,C) 0.0 (18.0, 5.0, 20.0, 15.0) 0.69512195122 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,A) 0.0 (18.0, 5.0, 20.0, 15.0) 0.69512195122 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,B) 0.0 (19.0, 6.0, 19.0, 14.0) 0.79674796748 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C) 0.39837398374 (19.0, 3.0, 22.0, 14.0) 0.79674796748 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(A,C) (0.3983739837398374, 19.0) > (0.3902439024390244, 33.0)
+[LVL9] rnvc69(A,B) :- some69(B,C) 0.0 (18.0, 3.0, 22.0, 15.0) 0.69512195122 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A) 0.423780487805 (20.0, 4.0, 21.0, 13.0) 0.84756097561 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(C,A) (0.42378048780487804, 20.0) > (0.3983739837398374, 19.0)
+[LVL9] rnvc69(A,B) :- some69(C,B) 0.548780487805 (21.0, 3.0, 22.0, 12.0) 0.878048780488 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(C,B) (0.5487804878048781, 21.0) > (0.42378048780487804, 20.0)
+[LVL9] rnvc69(A,B) :- no69(A,C) 0.39837398374 (19.0, 3.0, 22.0, 14.0) 0.79674796748 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(C,B) 0.673780487805 (22.0, 2.0, 23.0, 11.0) 0.89837398374 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(C,B) (0.6737804878048781, 22.0) > (0.5487804878048781, 21.0)
+[LVL9] rnvc69(A,B) :- somenot69(A,C) 0.731707317073 (21.0, 1.0, 24.0, 12.0) 0.878048780488 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- somenot69(A,C) (0.7317073170731708, 21.0) > (0.6737804878048781, 22.0)
+[LVL9] rnvc69(A,B) :- somenot69(B,C) 0.627177700348 (21.0, 2.0, 23.0, 12.0) 0.878048780488 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A) 0.484320557491 (20.0, 3.0, 22.0, 13.0) 0.84756097561 [ACCEPT]
+[DEBUG] Best rule so far: rnvc69(A,B) :- somenot69(A,C) [0.731707317073]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- somenot69(A,C) 0.731707317073
+[DEBUG] rnvc69(A,B) :- no69(C,B) 0.673780487805
+[DEBUG] rnvc69(A,B) :- somenot69(B,C) 0.627177700348
+[DEBUG] rnvc69(A,B) :- some69(C,B) 0.548780487805
+[DEBUG] rnvc69(A,B) :- somenot69(C,A) 0.484320557491
+[DEBUG] rnvc69(A,B) :- some69(C,A) 0.423780487805
+[DEBUG] rnvc69(A,B) :- some69(A,C) 0.39837398374
+[DEBUG] rnvc69(A,B) :- no69(A,C) 0.39837398374
+[DEBUG] rnvc69(A,B) :- all69(C,B) 0.0
+[DEBUG] rnvc69(A,B) :- all69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,A) 0.0
+[DEBUG] rnvc69(A,B) :- some69(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- somenot69(A,C), \+all69(B,C) 0.878048780488 (21.0, 0.0, 25.0, 12.0) 0.878048780488 [REJECT* fp] 17.0
+[LVL9] BETTER RULE rnvc69(A,B) :- somenot69(A,C), \+all69(B,C) (0.878048780487805, 21.0) > (0.7317073170731708, 21.0)
+[LVL9] rnvc69(A,B) :- no69(C,B), \+all69(A,C) 0.770034843206 (22.0, 1.0, 24.0, 11.0) 0.89837398374 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(C,B), \+all69(C,A) 0.770034843206 (22.0, 1.0, 24.0, 11.0) 0.89837398374 [ACCEPT]
+[DEBUG] Best rule so far: rnvc69(A,B) :- somenot69(A,C), \+all69(B,C) [0.878048780488]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- no69(C,B), \+all69(A,C) 0.770034843206
+[DEBUG] rnvc69(A,B) :- no69(C,B), \+all69(C,A) 0.770034843206
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc69(A,B) :- somenot69(A,C), \+all69(B,C) 0.793103448276
+[DEBUG] Best rule so far: rnvc69(A,B) :- true [0.324324324324]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- true 0.324324324324
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- all69(A,C) 0.0 (22.0, 5.0, 20.0, 11.0) 0.662162162162 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,A) 0.0 (22.0, 5.0, 20.0, 11.0) 0.662162162162 [ACCEPT]
+[LVL9] rnvc69(A,B) :- all69(C,B) 0.0 (22.0, 6.0, 19.0, 11.0) 0.662162162162 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C) 0.387387387387 (23.0, 3.0, 22.0, 10.0) 0.774774774775 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(A,C) (0.3873873873873874, 23.0) > (0.32432432432432434, 33.0)
+[LVL9] rnvc69(A,B) :- some69(B,C) 0.0 (22.0, 3.0, 22.0, 11.0) 0.662162162162 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A) 0.415540540541 (24.0, 4.0, 21.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(C,A) (0.41554054054054057, 24.0) > (0.3873873873873874, 23.0)
+[LVL9] rnvc69(A,B) :- some69(C,B) 0.474903474903 (24.0, 3.0, 22.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- some69(C,B) (0.47490347490347495, 24.0) > (0.41554054054054057, 24.0)
+[LVL9] rnvc69(A,B) :- no69(A,C) 0.387387387387 (23.0, 3.0, 22.0, 10.0) 0.774774774775 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(C,B) 0.617760617761 (25.0, 2.0, 23.0, 8.0) 0.864864864865 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(C,B) (0.6177606177606177, 25.0) > (0.47490347490347495, 24.0)
+[LVL9] rnvc69(A,B) :- somenot69(B,C) 0.554054054054 (24.0, 2.0, 23.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A) 0.474903474903 (24.0, 3.0, 22.0, 9.0) 0.831081081081 [ACCEPT]
+[DEBUG] Best rule so far: rnvc69(A,B) :- no69(C,B) [0.617760617761]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- no69(C,B) 0.617760617761
+[DEBUG] rnvc69(A,B) :- somenot69(B,C) 0.554054054054
+[DEBUG] rnvc69(A,B) :- some69(C,B) 0.474903474903
+[DEBUG] rnvc69(A,B) :- somenot69(C,A) 0.474903474903
+[DEBUG] rnvc69(A,B) :- some69(C,A) 0.415540540541
+[DEBUG] rnvc69(A,B) :- some69(A,C) 0.387387387387
+[DEBUG] rnvc69(A,B) :- no69(A,C) 0.387387387387
+[DEBUG] rnvc69(A,B) :- all69(A,C) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,A) 0.0
+[DEBUG] rnvc69(A,B) :- all69(C,B) 0.0
+[DEBUG] rnvc69(A,B) :- some69(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc69(A,B) :- no69(C,B), some69(A,C) 0.662162162162 (22.0, 0.0, 25.0, 11.0) 0.662162162162 [REJECT* fp] 21.0
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(C,B), some69(A,C) (0.6621621621621622, 22.0) > (0.6177606177606177, 25.0)
+[LVL9] rnvc69(A,B) :- no69(C,B), \+all69(A,C) 0.720720720721 (25.0, 1.0, 24.0, 8.0) 0.864864864865 [ACCEPT]
+[LVL9] BETTER RULE rnvc69(A,B) :- no69(C,B), \+all69(A,C) (0.7207207207207208, 25.0) > (0.6621621621621622, 22.0)
+[LVL9] rnvc69(A,B) :- no69(C,B), \+all69(C,A) 0.720720720721 (25.0, 1.0, 24.0, 8.0) 0.864864864865 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(B,C), \+all69(C,A) 0.664864864865 (24.0, 1.0, 24.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(B,C), \+somenot69(C,A) 0.664864864865 (24.0, 1.0, 24.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B), \+all69(A,C) 0.554054054054 (24.0, 2.0, 23.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B), \+all69(C,A) 0.554054054054 (24.0, 2.0, 23.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,B), \+some69(A,C) 0.554054054054 (24.0, 2.0, 23.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A), \+all69(C,B) 0.554054054054 (24.0, 2.0, 23.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A), \+all69(B,C) 0.554054054054 (24.0, 2.0, 23.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- somenot69(C,A), \+somenot69(B,C) 0.554054054054 (24.0, 2.0, 23.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A), \+all69(C,B) 0.474903474903 (24.0, 3.0, 22.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A), \+all69(B,C) 0.474903474903 (24.0, 3.0, 22.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A), \+some69(B,C) 0.474903474903 (24.0, 3.0, 22.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(C,A), \+no69(B,C) 0.474903474903 (24.0, 3.0, 22.0, 9.0) 0.831081081081 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C), \+all69(C,B) 0.464864864865 (23.0, 2.0, 23.0, 10.0) 0.774774774775 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C), \+all69(B,C) 0.464864864865 (23.0, 2.0, 23.0, 10.0) 0.774774774775 [ACCEPT]
+[LVL9] rnvc69(A,B) :- some69(A,C), \+some69(C,B) 0.464864864865 (23.0, 2.0, 23.0, 10.0) 0.774774774775 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(A,C), \+all69(C,B) 0.464864864865 (23.0, 2.0, 23.0, 10.0) 0.774774774775 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(A,C), \+all69(B,C) 0.464864864865 (23.0, 2.0, 23.0, 10.0) 0.774774774775 [ACCEPT]
+[LVL9] rnvc69(A,B) :- no69(A,C), \+some69(B,C) 0.464864864865 (23.0, 2.0, 23.0, 10.0) 0.774774774775 [ACCEPT]
+[DEBUG] Best rule so far: rnvc69(A,B) :- no69(C,B), \+all69(A,C) [0.720720720721]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc69(A,B) :- no69(C,B), \+all69(A,C) 0.720720720721
+[DEBUG] rnvc69(A,B) :- no69(C,B), \+all69(C,A) 0.720720720721
+[DEBUG] rnvc69(A,B) :- somenot69(B,C), \+all69(C,A) 0.664864864865
+[DEBUG] rnvc69(A,B) :- somenot69(B,C), \+somenot69(C,A) 0.664864864865
+[DEBUG] rnvc69(A,B) :- some69(C,B), \+all69(A,C) 0.554054054054
+[DEBUG] rnvc69(A,B) :- some69(C,B), \+all69(C,A) 0.554054054054
+[DEBUG] rnvc69(A,B) :- some69(C,B), \+some69(A,C) 0.554054054054
+[DEBUG] rnvc69(A,B) :- somenot69(C,A), \+all69(C,B) 0.554054054054
+[DEBUG] rnvc69(A,B) :- somenot69(C,A), \+all69(B,C) 0.554054054054
+[DEBUG] rnvc69(A,B) :- somenot69(C,A), \+somenot69(B,C) 0.554054054054
+[DEBUG] rnvc69(A,B) :- some69(C,A), \+all69(C,B) 0.474903474903
+[DEBUG] rnvc69(A,B) :- some69(C,A), \+all69(B,C) 0.474903474903
+[DEBUG] rnvc69(A,B) :- some69(C,A), \+some69(B,C) 0.474903474903
+[DEBUG] rnvc69(A,B) :- some69(C,A), \+no69(B,C) 0.474903474903
+[DEBUG] rnvc69(A,B) :- some69(A,C), \+all69(C,B) 0.464864864865
+[DEBUG] rnvc69(A,B) :- some69(A,C), \+all69(B,C) 0.464864864865
+[DEBUG] rnvc69(A,B) :- some69(A,C), \+some69(C,B) 0.464864864865
+[DEBUG] rnvc69(A,B) :- no69(A,C), \+all69(C,B) 0.464864864865
+[DEBUG] rnvc69(A,B) :- no69(A,C), \+all69(B,C) 0.464864864865
+[DEBUG] rnvc69(A,B) :- no69(A,C), \+some69(B,C) 0.464864864865
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc69(A,B) :- no69(C,B), \+all69(A,C) 0.844827586207

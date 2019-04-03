@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_11.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rall11.log
+              target:	rall11/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall11(A,B) :- no11(A,C), \+all11(B,C), \+no11(C,B), \+no11(B,C), \+somenot11(C,B), \+somenot11(B,C)
+rall11(A,B) :- all11(B,C), some11(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.910714285714
+           Precision:	 1.0
+              Recall:	 0.333333333333
+================== STATISTICS ==================
+    Rule evaluations:	36891
+          Total time:	2472.7816s

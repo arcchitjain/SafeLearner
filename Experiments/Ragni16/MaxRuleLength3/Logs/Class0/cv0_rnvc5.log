@@ -1,0 +1,286 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.244912427502
+[INFO] Computing scores: 0.0293s
+[INFO] Number of examples (M): 59
+[INFO] Positive weight (P): 34.0000
+[INFO] Negative weight (N): 25.0000
+[DEBUG] Best rule so far: rnvc5(A,B) :- true [0.576271186441]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- true 0.576271186441
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- all5(A,C) 0.0 (4.0, 3.0, 22.0, 30.0) 0.915254237288 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(B,C) 0.0 (3.0, 4.0, 21.0, 31.0) 0.89406779661 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(C,A) 0.0 (1.0, 7.0, 18.0, 33.0) 0.78813559322 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(C,B) 0.0 (3.0, 4.0, 21.0, 31.0) 0.89406779661 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C) 0.0 (3.0, 5.0, 20.0, 31.0) 0.89406779661 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C) 0.0 (4.0, 4.0, 21.0, 30.0) 0.915254237288 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(C,A) 0.796610169492 (5.0, 1.0, 24.0, 29.0) 0.929378531073 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- some5(C,A) (0.7966101694915254, 5.0) > (0.576271186440678, 34.0)
+[LVL9] rnvc5(A,B) :- some5(C,B) 0.0 (3.0, 3.0, 22.0, 31.0) 0.89406779661 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C) 0.619585687382 (5.0, 3.0, 22.0, 29.0) 0.929378531073 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(B,C) 0.0 (4.0, 4.0, 21.0, 30.0) 0.915254237288 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A) 0.0 (4.0, 4.0, 21.0, 30.0) 0.915254237288 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B) 0.0 (4.0, 3.0, 22.0, 30.0) 0.915254237288 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(A,C) 0.796610169492 (5.0, 1.0, 24.0, 29.0) 0.929378531073 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(B,C) 0.841807909605 (7.0, 1.0, 24.0, 27.0) 0.947033898305 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(B,C) (0.8418079096045198, 7.0) > (0.7966101694915254, 5.0)
+[LVL9] rnvc5(A,B) :- somenot5(C,A) 0.841807909605 (7.0, 1.0, 24.0, 27.0) 0.947033898305 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(C,B) 0.730696798493 (6.0, 2.0, 23.0, 28.0) 0.939467312349 [ACCEPT]
+[DEBUG] Best rule so far: rnvc5(A,B) :- somenot5(B,C) [0.841807909605]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- somenot5(B,C) 0.841807909605
+[DEBUG] rnvc5(A,B) :- somenot5(C,A) 0.841807909605
+[DEBUG] rnvc5(A,B) :- some5(C,A) 0.796610169492
+[DEBUG] rnvc5(A,B) :- somenot5(A,C) 0.796610169492
+[DEBUG] rnvc5(A,B) :- somenot5(C,B) 0.730696798493
+[DEBUG] rnvc5(A,B) :- no5(A,C) 0.619585687382
+[DEBUG] rnvc5(A,B) :- all5(A,C) 0.0
+[DEBUG] rnvc5(A,B) :- some5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- no5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- no5(C,A) 0.0
+[DEBUG] rnvc5(A,B) :- no5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- all5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- all5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- some5(A,C) 0.0
+[DEBUG] rnvc5(A,B) :- some5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- all5(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- somenot5(B,C), \+some5(A,C) 0.947033898305 (7.0, 0.0, 25.0, 27.0) 0.947033898305 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(B,C), \+some5(A,C) (0.9470338983050848, 7.0) > (0.8418079096045198, 7.0)
+[INFO] RULE LEARNED: rnvc5(A,B) :- somenot5(B,C), \+some5(A,C) 0.542372881356
+[DEBUG] Best rule so far: rnvc5(A,B) :- true [0.519230769231]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- true 0.519230769231
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- all5(A,C) 0.0 (10.0, 3.0, 22.0, 24.0) 0.879807692308 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(B,C) 0.0 (10.0, 4.0, 21.0, 24.0) 0.879807692308 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(C,B) 0.0 (10.0, 4.0, 21.0, 24.0) 0.879807692308 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C) 0.0 (10.0, 5.0, 20.0, 24.0) 0.879807692308 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C) 0.0 (11.0, 4.0, 21.0, 23.0) 0.903846153846 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(C,A) 0.753205128205 (11.0, 1.0, 24.0, 23.0) 0.903846153846 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- some5(C,A) (0.7532051282051282, 11.0) > (0.5192307692307693, 34.0)
+[LVL9] rnvc5(A,B) :- some5(C,B) 0.0 (10.0, 3.0, 22.0, 24.0) 0.879807692308 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C) 0.564903846154 (11.0, 3.0, 22.0, 23.0) 0.903846153846 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(B,C) 0.0 (11.0, 4.0, 21.0, 23.0) 0.903846153846 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A) 0.0 (10.0, 4.0, 21.0, 24.0) 0.879807692308 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B) 0.564903846154 (11.0, 3.0, 22.0, 23.0) 0.903846153846 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(A,C) 0.753205128205 (11.0, 1.0, 24.0, 23.0) 0.903846153846 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(C,A) 0.814903846154 (13.0, 1.0, 24.0, 21.0) 0.931318681319 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(C,A) (0.8149038461538461, 13.0) > (0.7532051282051282, 11.0)
+[LVL9] rnvc5(A,B) :- somenot5(C,B) 0.724358974359 (13.0, 2.0, 23.0, 21.0) 0.931318681319 [ACCEPT]
+[DEBUG] Best rule so far: rnvc5(A,B) :- somenot5(C,A) [0.814903846154]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- somenot5(C,A) 0.814903846154
+[DEBUG] rnvc5(A,B) :- some5(C,A) 0.753205128205
+[DEBUG] rnvc5(A,B) :- somenot5(A,C) 0.753205128205
+[DEBUG] rnvc5(A,B) :- somenot5(C,B) 0.724358974359
+[DEBUG] rnvc5(A,B) :- no5(A,C) 0.564903846154
+[DEBUG] rnvc5(A,B) :- no5(C,B) 0.564903846154
+[DEBUG] rnvc5(A,B) :- some5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- no5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- all5(A,C) 0.0
+[DEBUG] rnvc5(A,B) :- all5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- all5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- some5(A,C) 0.0
+[DEBUG] rnvc5(A,B) :- some5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- no5(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- somenot5(C,A), \+all5(B,C) 0.931318681319 (13.0, 0.0, 25.0, 21.0) 0.931318681319 [REJECT* fp] 7.0
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(C,A), \+all5(B,C) (0.9313186813186813, 13.0) > (0.8149038461538461, 13.0)
+[INFO] RULE LEARNED: rnvc5(A,B) :- somenot5(C,A), \+all5(B,C) 0.64406779661
+[DEBUG] Best rule so far: rnvc5(A,B) :- true [0.45652173913]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- true 0.45652173913
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- all5(A,C) 0.493788819876 (16.0, 3.0, 22.0, 18.0) 0.864130434783 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- all5(A,C) (0.4937888198757764, 16.0) > (0.45652173913043476, 34.0)
+[LVL9] rnvc5(A,B) :- all5(B,C) 0.0 (16.0, 4.0, 21.0, 18.0) 0.864130434783 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(C,B) 0.0 (15.0, 4.0, 21.0, 19.0) 0.81884057971 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C) 0.0 (16.0, 5.0, 20.0, 18.0) 0.864130434783 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C) 0.0 (16.0, 4.0, 21.0, 18.0) 0.864130434783 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(C,A) 0.742753623188 (17.0, 1.0, 24.0, 17.0) 0.891304347826 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- some5(C,A) (0.7427536231884058, 17.0) > (0.4937888198757764, 16.0)
+[LVL9] rnvc5(A,B) :- some5(C,B) 0.0 (15.0, 3.0, 22.0, 19.0) 0.81884057971 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C) 0.557065217391 (17.0, 3.0, 22.0, 17.0) 0.891304347826 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(B,C) 0.0 (16.0, 4.0, 21.0, 18.0) 0.864130434783 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A) 0.0 (16.0, 4.0, 21.0, 18.0) 0.864130434783 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B) 0.493788819876 (16.0, 3.0, 22.0, 18.0) 0.864130434783 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(A,C) 0.742753623188 (17.0, 1.0, 24.0, 17.0) 0.891304347826 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(C,B) 0.682065217391 (18.0, 2.0, 23.0, 16.0) 0.909420289855 [ACCEPT]
+[DEBUG] Best rule so far: rnvc5(A,B) :- some5(C,A) [0.742753623188]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- some5(C,A) 0.742753623188
+[DEBUG] rnvc5(A,B) :- somenot5(A,C) 0.742753623188
+[DEBUG] rnvc5(A,B) :- somenot5(C,B) 0.682065217391
+[DEBUG] rnvc5(A,B) :- no5(A,C) 0.557065217391
+[DEBUG] rnvc5(A,B) :- all5(A,C) 0.493788819876
+[DEBUG] rnvc5(A,B) :- no5(C,B) 0.493788819876
+[DEBUG] rnvc5(A,B) :- all5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- some5(A,C) 0.0
+[DEBUG] rnvc5(A,B) :- some5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- no5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- no5(C,A) 0.0
+[DEBUG] rnvc5(A,B) :- all5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- some5(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- some5(C,A), \+no5(B,C) 0.891304347826 (17.0, 0.0, 25.0, 17.0) 0.891304347826 [REJECT* fp] 13.0
+[LVL9] BETTER RULE rnvc5(A,B) :- some5(C,A), \+no5(B,C) (0.8913043478260869, 17.0) > (0.7427536231884058, 17.0)
+[LVL9] rnvc5(A,B) :- somenot5(C,B), \+all5(C,A) 0.77950310559 (18.0, 1.0, 24.0, 16.0) 0.909420289855 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(C,B), \+some5(A,C) 0.77950310559 (18.0, 1.0, 24.0, 16.0) 0.909420289855 [ACCEPT]
+[DEBUG] Best rule so far: rnvc5(A,B) :- some5(C,A), \+no5(B,C) [0.891304347826]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- somenot5(C,B), \+all5(C,A) 0.77950310559
+[DEBUG] rnvc5(A,B) :- somenot5(C,B), \+some5(A,C) 0.77950310559
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc5(A,B) :- some5(C,A), \+no5(B,C) 0.71186440678
+[DEBUG] Best rule so far: rnvc5(A,B) :- true [0.404761904762]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- true 0.404761904762
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- all5(A,C) 0.486394557823 (20.0, 3.0, 22.0, 14.0) 0.85119047619 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- all5(A,C) (0.48639455782312924, 20.0) > (0.40476190476190477, 34.0)
+[LVL9] rnvc5(A,B) :- all5(B,C) 0.0 (19.0, 4.0, 21.0, 15.0) 0.801587301587 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(C,B) 0.0 (19.0, 4.0, 21.0, 15.0) 0.801587301587 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C) 0.0 (20.0, 5.0, 20.0, 14.0) 0.85119047619 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C) 0.0 (19.0, 4.0, 21.0, 15.0) 0.801587301587 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(C,B) 0.0 (19.0, 3.0, 22.0, 15.0) 0.801587301587 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C) 0.550595238095 (21.0, 3.0, 22.0, 13.0) 0.880952380952 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- no5(A,C) (0.5505952380952381, 21.0) > (0.48639455782312924, 20.0)
+[LVL9] rnvc5(A,B) :- no5(B,C) 0.425595238095 (20.0, 4.0, 21.0, 14.0) 0.85119047619 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A) 0.425595238095 (20.0, 4.0, 21.0, 14.0) 0.85119047619 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B) 0.0 (19.0, 3.0, 22.0, 15.0) 0.801587301587 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(A,C) 0.734126984127 (21.0, 1.0, 24.0, 13.0) 0.880952380952 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(A,C) (0.7341269841269842, 21.0) > (0.5505952380952381, 21.0)
+[LVL9] rnvc5(A,B) :- somenot5(C,B) 0.62925170068 (21.0, 2.0, 23.0, 13.0) 0.880952380952 [ACCEPT]
+[DEBUG] Best rule so far: rnvc5(A,B) :- somenot5(A,C) [0.734126984127]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- somenot5(A,C) 0.734126984127
+[DEBUG] rnvc5(A,B) :- somenot5(C,B) 0.62925170068
+[DEBUG] rnvc5(A,B) :- no5(A,C) 0.550595238095
+[DEBUG] rnvc5(A,B) :- all5(A,C) 0.486394557823
+[DEBUG] rnvc5(A,B) :- no5(B,C) 0.425595238095
+[DEBUG] rnvc5(A,B) :- no5(C,A) 0.425595238095
+[DEBUG] rnvc5(A,B) :- some5(A,C) 0.0
+[DEBUG] rnvc5(A,B) :- all5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- all5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- some5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- some5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- no5(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- somenot5(A,C), \+some5(B,C) 0.880952380952 (21.0, 0.0, 25.0, 13.0) 0.880952380952 [REJECT* fp] 17.0
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(A,C), \+some5(B,C) (0.880952380952381, 21.0) > (0.7341269841269842, 21.0)
+[INFO] RULE LEARNED: rnvc5(A,B) :- somenot5(A,C), \+some5(B,C) 0.779661016949
+[DEBUG] Best rule so far: rnvc5(A,B) :- true [0.342105263158]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- true 0.342105263158
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- all5(A,C) 0.477443609023 (24.0, 3.0, 22.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- all5(A,C) (0.4774436090225564, 24.0) > (0.34210526315789475, 34.0)
+[LVL9] rnvc5(A,B) :- all5(B,C) 0.0 (23.0, 4.0, 21.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(C,B) 0.0 (22.0, 4.0, 21.0, 12.0) 0.671052631579 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C) 0.37134502924 (24.0, 5.0, 20.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C) 0.0 (23.0, 4.0, 21.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(C,B) 0.0 (22.0, 3.0, 22.0, 12.0) 0.671052631579 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C) 0.542763157895 (25.0, 3.0, 22.0, 9.0) 0.868421052632 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- no5(A,C) (0.5427631578947368, 25.0) > (0.4774436090225564, 24.0)
+[LVL9] rnvc5(A,B) :- no5(B,C) 0.0 (23.0, 4.0, 21.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A) 0.417763157895 (24.0, 4.0, 21.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(C,B) 0.55701754386 (24.0, 2.0, 23.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(C,B) (0.5570175438596491, 24.0) > (0.5427631578947368, 25.0)
+[DEBUG] Best rule so far: rnvc5(A,B) :- somenot5(C,B) [0.55701754386]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- somenot5(C,B) 0.55701754386
+[DEBUG] rnvc5(A,B) :- no5(A,C) 0.542763157895
+[DEBUG] rnvc5(A,B) :- all5(A,C) 0.477443609023
+[DEBUG] rnvc5(A,B) :- no5(C,A) 0.417763157895
+[DEBUG] rnvc5(A,B) :- no5(C,B) 0.390350877193
+[DEBUG] rnvc5(A,B) :- some5(A,C) 0.37134502924
+[DEBUG] rnvc5(A,B) :- all5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- some5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- no5(B,C) 0.0
+[DEBUG] rnvc5(A,B) :- all5(C,B) 0.0
+[DEBUG] rnvc5(A,B) :- some5(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc5(A,B) :- somenot5(C,B), all5(A,C) 0.671052631579 (22.0, 0.0, 25.0, 12.0) 0.671052631579 [REJECT* fp] 21.0
+[LVL9] BETTER RULE rnvc5(A,B) :- somenot5(C,B), all5(A,C) (0.6710526315789473, 22.0) > (0.5570175438596491, 24.0)
+[LVL9] rnvc5(A,B) :- somenot5(C,B), \+all5(C,A) 0.668421052632 (24.0, 1.0, 24.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- somenot5(C,B), \+some5(A,C) 0.668421052632 (24.0, 1.0, 24.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C), \+all5(B,C) 0.62030075188 (25.0, 2.0, 23.0, 9.0) 0.868421052632 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C), \+some5(C,B) 0.62030075188 (25.0, 2.0, 23.0, 9.0) 0.868421052632 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(A,C), \+some5(B,C) 0.62030075188 (25.0, 2.0, 23.0, 9.0) 0.868421052632 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(A,C), \+all5(C,B) 0.55701754386 (24.0, 2.0, 23.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(A,C), \+no5(C,B) 0.55701754386 (24.0, 2.0, 23.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(A,C), \+no5(B,C) 0.55701754386 (24.0, 2.0, 23.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A), \+all5(C,B) 0.477443609023 (24.0, 3.0, 22.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A), \+all5(B,C) 0.477443609023 (24.0, 3.0, 22.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A), \+some5(C,B) 0.477443609023 (24.0, 3.0, 22.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,A), \+some5(B,C) 0.477443609023 (24.0, 3.0, 22.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B), \+all5(A,C) 0.468421052632 (23.0, 2.0, 23.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B), \+all5(C,A) 0.468421052632 (23.0, 2.0, 23.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(C,B), \+some5(A,C) 0.468421052632 (23.0, 2.0, 23.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C), \+all5(C,B) 0.417763157895 (24.0, 4.0, 21.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C), \+no5(C,B) 0.417763157895 (24.0, 4.0, 21.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C), \+no5(B,C) 0.417763157895 (24.0, 4.0, 21.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C), \+somenot5(C,B) 0.417763157895 (24.0, 4.0, 21.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(A,C), \+somenot5(B,C) 0.417763157895 (24.0, 4.0, 21.0, 10.0) 0.835526315789 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(B,C), \+all5(C,A) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(B,C), \+no5(A,C) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(B,C), \+no5(C,A) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- all5(B,C), \+somenot5(C,A) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C), \+all5(C,A) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C), \+no5(A,C) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C), \+no5(C,A) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- some5(B,C), \+somenot5(A,C) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(B,C), \+all5(A,C) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(B,C), \+all5(C,A) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(B,C), \+some5(A,C) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[LVL9] rnvc5(A,B) :- no5(B,C), \+some5(C,A) 0.390350877193 (23.0, 3.0, 22.0, 11.0) 0.780701754386 [ACCEPT]
+[DEBUG] Best rule so far: rnvc5(A,B) :- somenot5(C,B), all5(A,C) [0.671052631579]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc5(A,B) :- somenot5(C,B), \+all5(C,A) 0.668421052632
+[DEBUG] rnvc5(A,B) :- somenot5(C,B), \+some5(A,C) 0.668421052632
+[DEBUG] rnvc5(A,B) :- no5(A,C), \+all5(B,C) 0.62030075188
+[DEBUG] rnvc5(A,B) :- no5(A,C), \+some5(C,B) 0.62030075188
+[DEBUG] rnvc5(A,B) :- no5(A,C), \+some5(B,C) 0.62030075188
+[DEBUG] rnvc5(A,B) :- all5(A,C), \+all5(C,B) 0.55701754386
+[DEBUG] rnvc5(A,B) :- all5(A,C), \+no5(C,B) 0.55701754386
+[DEBUG] rnvc5(A,B) :- all5(A,C), \+no5(B,C) 0.55701754386
+[DEBUG] rnvc5(A,B) :- no5(C,A), \+all5(C,B) 0.477443609023
+[DEBUG] rnvc5(A,B) :- no5(C,A), \+all5(B,C) 0.477443609023
+[DEBUG] rnvc5(A,B) :- no5(C,A), \+some5(C,B) 0.477443609023
+[DEBUG] rnvc5(A,B) :- no5(C,A), \+some5(B,C) 0.477443609023
+[DEBUG] rnvc5(A,B) :- no5(C,B), \+all5(A,C) 0.468421052632
+[DEBUG] rnvc5(A,B) :- no5(C,B), \+all5(C,A) 0.468421052632
+[DEBUG] rnvc5(A,B) :- no5(C,B), \+some5(A,C) 0.468421052632
+[DEBUG] rnvc5(A,B) :- some5(A,C), \+all5(C,B) 0.417763157895
+[DEBUG] rnvc5(A,B) :- some5(A,C), \+no5(C,B) 0.417763157895
+[DEBUG] rnvc5(A,B) :- some5(A,C), \+no5(B,C) 0.417763157895
+[DEBUG] rnvc5(A,B) :- some5(A,C), \+somenot5(C,B) 0.417763157895
+[DEBUG] rnvc5(A,B) :- some5(A,C), \+somenot5(B,C) 0.417763157895
+[DEBUG] rnvc5(A,B) :- all5(B,C), \+all5(C,A) 0.390350877193
+[DEBUG] rnvc5(A,B) :- all5(B,C), \+no5(A,C) 0.390350877193
+[DEBUG] rnvc5(A,B) :- all5(B,C), \+no5(C,A) 0.390350877193
+[DEBUG] rnvc5(A,B) :- all5(B,C), \+somenot5(C,A) 0.390350877193
+[DEBUG] rnvc5(A,B) :- some5(B,C), \+all5(C,A) 0.390350877193
+[DEBUG] rnvc5(A,B) :- some5(B,C), \+no5(A,C) 0.390350877193
+[DEBUG] rnvc5(A,B) :- some5(B,C), \+no5(C,A) 0.390350877193
+[DEBUG] rnvc5(A,B) :- some5(B,C), \+somenot5(A,C) 0.390350877193
+[DEBUG] rnvc5(A,B) :- no5(B,C), \+all5(A,C) 0.390350877193
+[DEBUG] rnvc5(A,B) :- no5(B,C), \+all5(C,A) 0.390350877193
+[DEBUG] rnvc5(A,B) :- no5(B,C), \+some5(A,C) 0.390350877193
+[DEBUG] rnvc5(A,B) :- no5(B,C), \+some5(C,A) 0.390350877193
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc5(A,B) :- somenot5(C,B), all5(A,C) 0.796610169492

@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_24.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rall24.log
+              target:	rall24/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall24(A,B) :- all24(A,C), all24(C,B)
+rall24(A,B) :- no24(C,A), all24(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.981818181818
+           Precision:	 1.0
+              Recall:	 0.5
+================== STATISTICS ==================
+    Rule evaluations:	26737
+          Total time:	1169.9945s

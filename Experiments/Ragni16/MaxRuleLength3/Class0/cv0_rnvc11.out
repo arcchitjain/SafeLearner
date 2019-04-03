@@ -1,0 +1,27 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_11.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc11.log
+              target:	rnvc11/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc11(A,B) :- some11(B,C), some11(A,C)
+rnvc11(A,B) :- no11(C,A), some11(B,C)
+rnvc11(A,B) :- somenot11(A,C), some11(B,C)
+rnvc11(A,B) :- somenot11(B,C), some11(A,C)
+rnvc11(A,B) :- somenot11(C,B), somenot11(A,C)
+rnvc11(A,B) :- no11(C,A), somenot11(B,C)
+rnvc11(A,B) :- somenot11(C,B), somenot11(C,A)
+rnvc11(A,B) :- some11(C,A), no11(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	4138
+          Total time:	90.3049s

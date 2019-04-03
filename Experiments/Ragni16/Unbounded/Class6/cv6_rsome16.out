@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_16.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome16.log
+              target:	rsome16/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome16(A,B) :- some16(A,C), somenot16(C,B)
+rsome16(A,B) :- somenot16(C,A), all16(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.905172413793
+           Precision:	 1.0
+              Recall:	 0.153846153846
+================== STATISTICS ==================
+    Rule evaluations:	47768
+          Total time:	1511.9719s

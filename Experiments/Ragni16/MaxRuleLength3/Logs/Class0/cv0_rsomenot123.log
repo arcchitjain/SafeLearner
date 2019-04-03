@@ -1,0 +1,766 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.948576830333
+[INFO] Computing scores: 0.0754s
+[INFO] Number of examples (M): 104
+[INFO] Positive weight (P): 13.0000
+[INFO] Negative weight (N): 91.0000
+[DEBUG] Best rule so far: rsomenot123(A,B) :- true [0.125]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- true 0.125
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- all123(C,A) 0.208333333333 (3.0, 11.0, 80.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- all123(C,A) (0.20833333333333334, 3.0) > (0.125, 13.0)
+[LVL9] rsomenot123(A,B) :- all123(C,B) 0.0 (1.0, 13.0, 78.0, 12.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(A,C) 0.0 (1.0, 13.0, 78.0, 12.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C) 0.141666666667 (2.0, 12.0, 79.0, 11.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A) 0.208333333333 (3.0, 11.0, 80.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B) 0.208333333333 (3.0, 11.0, 80.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C) 0.0 (1.0, 12.0, 79.0, 12.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B) 0.141666666667 (2.0, 12.0, 79.0, 11.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C) 0.294642857143 (4.0, 9.0, 82.0, 9.0) 0.825 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- somenot123(A,C) (0.29464285714285715, 4.0) > (0.20833333333333334, 3.0)
+[LVL9] rsomenot123(A,B) :- somenot123(B,C) 0.151785714286 (2.0, 11.0, 80.0, 11.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A) 0.163461538462 (2.0, 10.0, 81.0, 11.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B) 0.163461538462 (2.0, 10.0, 81.0, 11.0) 0.708333333333 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- somenot123(A,C) [0.294642857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C) 0.294642857143
+[DEBUG] rsomenot123(A,B) :- all123(C,A) 0.208333333333
+[DEBUG] rsomenot123(A,B) :- some123(C,A) 0.208333333333
+[DEBUG] rsomenot123(A,B) :- some123(C,B) 0.208333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A) 0.163461538462
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B) 0.163461538462
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C) 0.151785714286
+[DEBUG] rsomenot123(A,B) :- some123(B,C) 0.141666666667
+[DEBUG] rsomenot123(A,B) :- no123(C,B) 0.141666666667
+[DEBUG] rsomenot123(A,B) :- all123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(A,C) 0.0
+[DEBUG] rsomenot123(A,B) :- no123(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), some123(C,B) 0.708333333333 (2.0, 0.0, 91.0, 11.0) 0.708333333333 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot123(A,B) :- somenot123(A,C), some123(C,B) (0.7083333333333334, 2.0) > (0.29464285714285715, 4.0)
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.317307692308 (4.0, 8.0, 83.0, 9.0) 0.825 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.317307692308 (4.0, 8.0, 83.0, 9.0) 0.825 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.34375 (4.0, 7.0, 84.0, 9.0) 0.825 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(C,B) 0.260416666667 (3.0, 8.0, 83.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.34375 (4.0, 7.0, 84.0, 9.0) 0.825 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.317307692308 (4.0, 8.0, 83.0, 9.0) 0.825 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(B,C) 0.260416666667 (3.0, 8.0, 83.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.223214285714 (3.0, 10.0, 81.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.223214285714 (3.0, 10.0, 81.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+all123(A,C) 0.223214285714 (3.0, 10.0, 81.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+all123(C,A) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+some123(A,C) 0.223214285714 (3.0, 10.0, 81.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+some123(C,A) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+no123(A,C) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+no123(C,A) 0.240384615385 (3.0, 9.0, 82.0, 10.0) 0.78125 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- somenot123(A,C), some123(C,B) [0.708333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.34375
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.34375
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.317307692308
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.317307692308
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.317307692308
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(C,B) 0.260416666667
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(B,C) 0.260416666667
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+all123(C,A) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+some123(C,A) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+no123(A,C) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+no123(C,A) 0.240384615385
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.223214285714
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.223214285714
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+all123(A,C) 0.223214285714
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+some123(A,C) 0.223214285714
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot123(A,B) :- somenot123(A,C), some123(C,B) 0.894230769231
+[DEBUG] Best rule so far: rsomenot123(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- all123(C,A) 0.207189542484 (5.0, 11.0, 80.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- all123(C,A) (0.20718954248366014, 5.0) > (0.0, 13.0)
+[LVL9] rsomenot123(A,B) :- all123(C,B) 0.0 (3.0, 13.0, 78.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(A,C) 0.0 (3.0, 13.0, 78.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C) 0.140522875817 (4.0, 12.0, 79.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A) 0.207189542484 (5.0, 11.0, 80.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B) 0.0 (3.0, 11.0, 80.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C) 0.0 (3.0, 12.0, 79.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B) 0.140522875817 (4.0, 12.0, 79.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C) 0.15056022409 (4.0, 11.0, 80.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- all123(C,A) [0.207189542484]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- all123(C,A) 0.207189542484
+[DEBUG] rsomenot123(A,B) :- some123(C,A) 0.207189542484
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C) 0.15056022409
+[DEBUG] rsomenot123(A,B) :- some123(B,C) 0.140522875817
+[DEBUG] rsomenot123(A,B) :- no123(C,B) 0.140522875817
+[DEBUG] rsomenot123(A,B) :- all123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(A,C) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- no123(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- all123(C,A), some123(B,C) 0.369281045752 (3.0, 1.0, 90.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- all123(C,A), some123(B,C) (0.369281045751634, 3.0) > (0.20718954248366014, 5.0)
+[LVL9] rsomenot123(A,B) :- all123(C,A), some123(B,D) 0.369281045752 (3.0, 1.0, 90.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), some123(D,C) 0.369281045752 (3.0, 1.0, 90.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), somenot123(C,B) 0.369281045752 (3.0, 1.0, 90.0, 10.0) 0.553921568627 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), somenot123(B,C) 0.553921568627 (3.0, 0.0, 91.0, 10.0) 0.553921568627 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsomenot123(A,B) :- all123(C,A), somenot123(B,C) (0.553921568627451, 3.0) > (0.369281045751634, 3.0)
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.221988795518 (5.0, 10.0, 81.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+some123(B,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+somenot123(C,B) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(C,B) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.221988795518 (5.0, 10.0, 81.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(C,B) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.239064856712 (5.0, 9.0, 82.0, 8.0) 0.776960784314 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.210784313725 (4.0, 7.0, 84.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.210784313725 (4.0, 7.0, 84.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.191622103387 (4.0, 8.0, 83.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+all123(A,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+some123(A,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+some123(C,A) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+no123(A,C) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+no123(C,A) 0.175653594771 (4.0, 9.0, 82.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+somenot123(C,A) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+all123(A,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+some123(A,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+no123(A,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+no123(C,A) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+somenot123(A,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+somenot123(C,A) 0.15056022409 (4.0, 11.0, 80.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.15056022409 (4.0, 11.0, 80.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.162141779789 (4.0, 10.0, 81.0, 9.0) 0.702614379085 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.15056022409 (4.0, 11.0, 80.0, 9.0) 0.702614379085 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- all123(C,A), somenot123(B,C) [0.553921568627]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- all123(C,A), some123(B,C) 0.369281045752
+[DEBUG] rsomenot123(A,B) :- all123(C,A), some123(B,D) 0.369281045752
+[DEBUG] rsomenot123(A,B) :- all123(C,A), some123(D,C) 0.369281045752
+[DEBUG] rsomenot123(A,B) :- all123(C,A), somenot123(C,B) 0.369281045752
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.239064856712
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.221988795518
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.221988795518
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.210784313725
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.210784313725
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.191622103387
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+some123(A,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+some123(C,A) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+no123(A,C) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+no123(C,A) 0.175653594771
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+some123(B,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+somenot123(C,B) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(C,B) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(C,B) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+all123(A,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+somenot123(C,A) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+all123(A,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+some123(A,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+no123(A,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+no123(C,A) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+somenot123(A,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.162141779789
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+somenot123(C,A) 0.15056022409
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.15056022409
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.15056022409
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot123(A,B) :- all123(C,A), somenot123(B,C) 0.903846153846
+[DEBUG] Best rule so far: rsomenot123(A,B) :- true [0.0990099009901]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- true 0.0990099009901
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- all123(C,A) 0.149929278642 (5.0, 11.0, 80.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- all123(C,A) (0.14992927864214994, 5.0) > (0.09900990099009901, 13.0)
+[LVL9] rsomenot123(A,B) :- all123(C,B) 0.0 (4.0, 13.0, 78.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(A,C) 0.0 (4.0, 13.0, 78.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C) 0.139933993399 (5.0, 12.0, 79.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A) 0.206600660066 (6.0, 11.0, 80.0, 7.0) 0.774752475248 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- some123(C,A) (0.2066006600660066, 6.0) > (0.14992927864214994, 5.0)
+[LVL9] rsomenot123(A,B) :- some123(C,B) 0.0 (4.0, 11.0, 80.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C) 0.0 (4.0, 12.0, 79.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B) 0.139933993399 (5.0, 12.0, 79.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C) 0.0 (4.0, 11.0, 80.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- some123(C,A) [0.206600660066]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- some123(C,A) 0.206600660066
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- all123(C,A) 0.149929278642
+[DEBUG] rsomenot123(A,B) :- some123(B,C) 0.139933993399
+[DEBUG] rsomenot123(A,B) :- no123(C,B) 0.139933993399
+[DEBUG] rsomenot123(A,B) :- all123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(A,C) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- no123(B,C) 0.0
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- some123(C,A), all123(C,B) 0.366336633663 (4.0, 1.0, 90.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- some123(C,A), all123(C,B) (0.3663366336633664, 4.0) > (0.2066006600660066, 6.0)
+[LVL9] rsomenot123(A,B) :- some123(C,A), all123(C,D) 0.366336633663 (4.0, 1.0, 90.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), all123(D,B) 0.366336633663 (4.0, 1.0, 90.0, 9.0) 0.549504950495 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), some123(B,C) 0.549504950495 (4.0, 0.0, 91.0, 9.0) 0.549504950495 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rsomenot123(A,B) :- some123(C,A), some123(B,C) (0.5495049504950495, 4.0) > (0.3663366336633664, 4.0)
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(C,B) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.221357850071 (6.0, 10.0, 81.0, 7.0) 0.774752475248 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.238385376999 (6.0, 9.0, 82.0, 7.0) 0.774752475248 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(C,B) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.238385376999 (6.0, 9.0, 82.0, 7.0) 0.774752475248 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.238385376999 (6.0, 9.0, 82.0, 7.0) 0.774752475248 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.238385376999 (6.0, 9.0, 82.0, 7.0) 0.774752475248 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.209900990099 (5.0, 7.0, 84.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.209900990099 (5.0, 7.0, 84.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.190819081908 (5.0, 8.0, 83.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.174917491749 (5.0, 9.0, 82.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+all123(A,C) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+some123(A,C) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+no123(A,C) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+no123(C,A) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+somenot123(A,C) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+somenot123(C,A) 0.149929278642 (5.0, 11.0, 80.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.149929278642 (5.0, 11.0, 80.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.161462300076 (5.0, 10.0, 81.0, 8.0) 0.699669966997 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.149929278642 (5.0, 11.0, 80.0, 8.0) 0.699669966997 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- some123(C,A), some123(B,C) [0.549504950495]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- some123(C,A), all123(C,B) 0.366336633663
+[DEBUG] rsomenot123(A,B) :- some123(C,A), all123(C,D) 0.366336633663
+[DEBUG] rsomenot123(A,B) :- some123(C,A), all123(D,B) 0.366336633663
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.238385376999
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.238385376999
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.238385376999
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.238385376999
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.221357850071
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.209900990099
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.209900990099
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.190819081908
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.174917491749
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(C,B) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(C,B) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+all123(A,C) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+some123(A,C) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+no123(A,C) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+no123(C,A) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+somenot123(A,C) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.161462300076
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+somenot123(C,A) 0.149929278642
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.149929278642
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.149929278642
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot123(A,B) :- some123(C,A), some123(B,C) 0.913461538462
+[DEBUG] Best rule so far: rsomenot123(A,B) :- true [0.09]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- true 0.09
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- all123(C,A) 0.149285714286 (6.0, 11.0, 80.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- all123(C,A) (0.14928571428571427, 6.0) > (0.09, 13.0)
+[LVL9] rsomenot123(A,B) :- all123(C,B) 0.0 (5.0, 13.0, 78.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(A,C) 0.0 (5.0, 13.0, 78.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C) 0.0 (5.0, 12.0, 79.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A) 0.149285714286 (6.0, 11.0, 80.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B) 0.0 (5.0, 11.0, 80.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C) 0.0 (5.0, 12.0, 79.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B) 0.139333333333 (6.0, 12.0, 79.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- somenot123(A,C) (0.17416666666666666, 6.0) > (0.14928571428571427, 6.0)
+[LVL9] rsomenot123(A,B) :- somenot123(B,C) 0.0 (5.0, 11.0, 80.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- somenot123(A,C) [0.174166666667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- all123(C,A) 0.149285714286
+[DEBUG] rsomenot123(A,B) :- some123(C,A) 0.149285714286
+[DEBUG] rsomenot123(A,B) :- no123(C,B) 0.139333333333
+[DEBUG] rsomenot123(A,B) :- all123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(A,C) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(B,C) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- no123(B,C) 0.0
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), no123(C,B) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- somenot123(A,C), no123(C,B) (0.36333333333333334, 5.0) > (0.17416666666666666, 6.0)
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), no123(C,D) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), no123(D,B) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,C) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,D) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.209 (6.0, 7.0, 84.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(C,B) 0.109 (5.0, 8.0, 83.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.209 (6.0, 7.0, 84.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(B,C) 0.109 (5.0, 8.0, 83.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), some123(C,B) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), some123(C,D) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), some123(D,B) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), no123(B,C) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), no123(B,D) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), no123(D,C) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+some123(C,B) 0.0990909090909 (5.0, 9.0, 82.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+no123(B,C) 0.0990909090909 (5.0, 9.0, 82.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), all123(C,A) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), all123(C,D) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), all123(D,A) 0.363333333333 (5.0, 1.0, 90.0, 8.0) 0.545 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), some123(A,C) 0.545 (5.0, 0.0, 91.0, 8.0) 0.545 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rsomenot123(A,B) :- somenot123(C,B), some123(A,C) (0.545, 5.0) > (0.36333333333333334, 5.0)
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.19 (6.0, 8.0, 83.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.174166666667 (6.0, 9.0, 82.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.149285714286 (6.0, 11.0, 80.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.160769230769 (6.0, 10.0, 81.0, 7.0) 0.696666666667 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.149285714286 (6.0, 11.0, 80.0, 7.0) 0.696666666667 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- somenot123(C,B), some123(A,C) [0.545]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), no123(C,B) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), no123(C,D) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), no123(D,B) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,C) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,D) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), some123(C,B) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), some123(C,D) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), some123(D,B) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), no123(B,C) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), no123(B,D) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), no123(D,C) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), all123(C,A) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), all123(C,D) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), all123(D,A) 0.363333333333
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.209
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.209
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.19
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.174166666667
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.160769230769
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.149285714286
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.149285714286
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(C,B) 0.109
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(B,C) 0.109
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+some123(C,B) 0.0990909090909
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+no123(B,C) 0.0990909090909
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot123(A,B) :- somenot123(C,B), some123(A,C) 0.923076923077
+[DEBUG] Best rule so far: rsomenot123(A,B) :- true [0.0808080808081]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- true 0.0808080808081
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- all123(C,A) 0.148629148629 (7.0, 11.0, 80.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- all123(C,A) (0.14862914862914864, 7.0) > (0.08080808080808081, 13.0)
+[LVL9] rsomenot123(A,B) :- all123(C,B) 0.0 (6.0, 13.0, 78.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C) 0.0 (6.0, 12.0, 79.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A) 0.148629148629 (7.0, 11.0, 80.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C) 0.0 (6.0, 12.0, 79.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B) 0.138720538721 (7.0, 12.0, 79.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- somenot123(A,C) (0.17340067340067342, 7.0) > (0.14862914862914864, 7.0)
+[LVL9] rsomenot123(A,B) :- somenot123(B,C) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A) 0.160062160062 (7.0, 10.0, 81.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- somenot123(A,C) [0.173400673401]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A) 0.160062160062
+[DEBUG] rsomenot123(A,B) :- all123(C,A) 0.148629148629
+[DEBUG] rsomenot123(A,B) :- some123(C,A) 0.148629148629
+[DEBUG] rsomenot123(A,B) :- no123(C,B) 0.138720538721
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(C,B) 0.0831390831391
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C) 0.0831390831391
+[DEBUG] rsomenot123(A,B) :- all123(C,B) 0.0
+[DEBUG] rsomenot123(A,B) :- some123(B,C) 0.0
+[DEBUG] rsomenot123(A,B) :- no123(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), no123(C,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] BETTER RULE rsomenot123(A,B) :- somenot123(A,C), no123(C,B) (0.3602693602693603, 6.0) > (0.17340067340067342, 7.0)
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), no123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), no123(D,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,C) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.189164370983 (7.0, 8.0, 83.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.189164370983 (7.0, 8.0, 83.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.208080808081 (7.0, 7.0, 84.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(C,B) 0.108080808081 (6.0, 8.0, 83.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.208080808081 (7.0, 7.0, 84.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.189164370983 (7.0, 8.0, 83.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(B,C) 0.108080808081 (6.0, 8.0, 83.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), some123(C,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), some123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), some123(D,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), no123(B,C) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), no123(B,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), no123(D,C) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.189164370983 (7.0, 8.0, 83.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+some123(C,B) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+no123(B,C) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.189164370983 (7.0, 8.0, 83.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), some123(B,C) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), some123(B,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), some123(D,C) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), somenot123(C,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), somenot123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), somenot123(D,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.160062160062 (7.0, 10.0, 81.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+some123(B,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,A), \+somenot123(C,B) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), all123(C,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), all123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), all123(D,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), no123(C,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), no123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), no123(D,B) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(C,B) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.160062160062 (7.0, 10.0, 81.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(C,B) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.173400673401 (7.0, 9.0, 82.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), some123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), some123(D,A) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), somenot123(A,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), somenot123(D,C) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.148629148629 (7.0, 11.0, 80.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.160062160062 (7.0, 10.0, 81.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.160062160062 (7.0, 10.0, 81.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+some123(C,A) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.160062160062 (7.0, 10.0, 81.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.160062160062 (7.0, 10.0, 81.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+somenot123(A,C) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.148629148629 (7.0, 11.0, 80.0, 6.0) 0.693602693603 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), all123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), all123(D,A) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.108080808081 (6.0, 8.0, 83.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.108080808081 (6.0, 8.0, 83.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.108080808081 (6.0, 8.0, 83.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), somenot123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), somenot123(D,A) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+all123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+all123(C,A) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+some123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+some123(C,A) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+no123(A,C) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(C,B), \+no123(C,A) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), somenot123(A,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+all123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+some123(A,C) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+some123(C,A) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+no123(A,C) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+no123(C,A) 0.0982552800735 (6.0, 9.0, 82.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- somenot123(B,C), \+somenot123(C,A) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), some123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), some123(D,A) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), \+all123(A,C) 0.0 (6.0, 12.0, 79.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), \+all123(C,A) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), \+some123(A,C) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), \+no123(A,C) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), \+no123(C,A) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), \+somenot123(A,C) 0.0 (6.0, 12.0, 79.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- all123(C,B), \+somenot123(C,A) 0.0831390831391 (6.0, 11.0, 80.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), all123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), all123(D,A) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+all123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+some123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+no123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+no123(C,A) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- some123(B,C), \+somenot123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C), somenot123(C,D) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C), somenot123(D,A) 0.360269360269 (6.0, 1.0, 90.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C), \+all123(C,A) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C), \+some123(A,C) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C), \+some123(C,A) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[LVL9] rsomenot123(A,B) :- no123(B,C), \+no123(C,A) 0.0900673400673 (6.0, 10.0, 81.0, 7.0) 0.540404040404 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot123(A,B) :- somenot123(A,C), no123(C,B) [0.360269360269]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), no123(C,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), no123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), no123(D,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,C) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), somenot123(B,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), some123(C,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), some123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), some123(D,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), no123(B,C) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), no123(B,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), no123(D,C) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,A), some123(B,C) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,A), some123(B,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,A), some123(D,C) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,A), somenot123(C,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,A), somenot123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,A), somenot123(D,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,A), all123(C,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,A), all123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,A), all123(D,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,A), no123(C,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,A), no123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,A), no123(D,B) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- no123(C,B), some123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- no123(C,B), some123(D,A) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- no123(C,B), somenot123(A,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- no123(C,B), somenot123(D,C) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), all123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), all123(D,A) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,B), somenot123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(C,B), somenot123(D,A) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), somenot123(A,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,B), some123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- all123(C,B), some123(D,A) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(B,C), all123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- some123(B,C), all123(D,A) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- no123(B,C), somenot123(C,D) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- no123(B,C), somenot123(D,A) 0.360269360269
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+some123(B,C) 0.208080808081
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(B,C) 0.208080808081
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(C,B) 0.189164370983
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+all123(B,C) 0.189164370983
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(C,B) 0.189164370983
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(C,B) 0.189164370983
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(C,B) 0.189164370983
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+all123(B,C) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+some123(B,C) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+no123(C,B) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+somenot123(B,C) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(C,B) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+some123(C,B) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(C,B) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+no123(B,C) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+some123(C,B) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(B,C) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(C,B) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+somenot123(B,C) 0.173400673401
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+all123(B,C) 0.160062160062
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(B,C) 0.160062160062
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(C,A) 0.160062160062
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+some123(A,C) 0.160062160062
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(A,C) 0.160062160062
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+no123(C,A) 0.160062160062
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+all123(A,C) 0.148629148629
+[DEBUG] rsomenot123(A,B) :- no123(C,B), \+somenot123(C,A) 0.148629148629
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+no123(C,B) 0.108080808081
+[DEBUG] rsomenot123(A,B) :- somenot123(A,C), \+somenot123(B,C) 0.108080808081
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+some123(C,A) 0.108080808081
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(A,C) 0.108080808081
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(C,A) 0.108080808081
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+some123(C,B) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(C,A), \+no123(B,C) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+all123(A,C) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+no123(C,A) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(C,B), \+somenot123(A,C) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+all123(C,A) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+some123(C,A) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+no123(A,C) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+no123(C,A) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+some123(A,C) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+some123(C,A) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+no123(A,C) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+no123(C,A) 0.0982552800735
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+some123(B,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- all123(C,A), \+somenot123(C,B) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+all123(C,B) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(C,A), \+no123(C,B) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+all123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(C,B), \+some123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+all123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- somenot123(B,C), \+somenot123(C,A) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+all123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+some123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+no123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+no123(C,A) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- some123(B,C), \+somenot123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- no123(B,C), \+all123(C,A) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- no123(B,C), \+some123(A,C) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- no123(B,C), \+some123(C,A) 0.0900673400673
+[DEBUG] rsomenot123(A,B) :- no123(B,C), \+no123(C,A) 0.0900673400673
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot123(A,B) :- somenot123(A,C), no123(C,B) 0.923076923077

@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_99.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome99.log
+              target:	rsome99/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome99(A,B) :- no99(C,A), \+all99(B,C), \+no99(C,B), \+no99(B,C), \+somenot99(B,C), \+some99(C,B), \+some99(B,C)
+rsome99(A,B) :- all99(C,B), somenot99(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.939655172414
+           Precision:	 1.0
+              Recall:	 0.3
+================== STATISTICS ==================
+    Rule evaluations:	36090
+          Total time:	2138.3056s

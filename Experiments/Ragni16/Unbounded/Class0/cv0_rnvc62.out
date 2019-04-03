@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_62.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc62.log
+              target:	rnvc62/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc62(A,B) :- no62(B,C), \+all62(A,C), \+all62(C,A), \+some62(A,C), \+some62(C,A), \+somenot62(C,A)
+rnvc62(A,B) :- all62(A,C), some62(C,B)
+rnvc62(A,B) :- no62(A,C), somenot62(B,C)
+rnvc62(A,B) :- somenot62(C,B), some62(C,A)
+rnvc62(A,B) :- some62(A,C), no62(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	4375
+          Total time:	82.1561s

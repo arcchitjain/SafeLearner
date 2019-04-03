@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_100.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rnvc100.log
+              target:	rnvc100/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc100(A,B) :- somenot100(C,B), \+all100(A,C), \+all100(C,A), \+no100(A,C), \+no100(C,A)
+rnvc100(A,B) :- somenot100(A,C), \+all100(C,B), \+all100(B,C), \+some100(B,C), \+no100(C,B), \+somenot100(B,C)
+rnvc100(A,B) :- somenot100(C,A), all100(C,B)
+rnvc100(A,B) :- some100(A,C), some100(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	5753
+          Total time:	347.9132s

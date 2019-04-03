@@ -1,0 +1,693 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.609445270734
+[INFO] Computing scores: 0.0725s
+[INFO] Number of examples (M): 104
+[INFO] Positive weight (P): 11.0000
+[INFO] Negative weight (N): 93.0000
+[DEBUG] Best rule so far: rsomenot138(A,B) :- true [0.105769230769]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- true 0.105769230769
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- all138(A,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(A,C) (0.23890532544378698, 3.0) > (0.10576923076923077, 11.0)
+[LVL9] rsomenot138(A,B) :- all138(C,A) 0.207051282051 (3.0, 11.0, 82.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C) 0.0 (1.0, 12.0, 81.0, 10.0) 0.552884615385 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C) 0.0 (1.0, 12.0, 81.0, 10.0) 0.552884615385 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A) 0.0 (1.0, 13.0, 80.0, 10.0) 0.552884615385 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B) 0.207051282051 (3.0, 11.0, 82.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A) 0.161982248521 (2.0, 10.0, 83.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B) 0.0 (1.0, 11.0, 82.0, 10.0) 0.552884615385 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C) 0.221840659341 (3.0, 10.0, 83.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A) 0.0 (1.0, 12.0, 81.0, 10.0) 0.552884615385 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B) 0.221840659341 (3.0, 10.0, 83.0, 8.0) 0.776442307692 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- all138(A,C) [0.238905325444]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- all138(A,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C) 0.221840659341
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B) 0.221840659341
+[DEBUG] rsomenot138(A,B) :- all138(C,A) 0.207051282051
+[DEBUG] rsomenot138(A,B) :- some138(C,B) 0.207051282051
+[DEBUG] rsomenot138(A,B) :- no138(C,A) 0.161982248521
+[DEBUG] rsomenot138(A,B) :- some138(A,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(B,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(C,A) 0.0
+[DEBUG] rsomenot138(A,B) :- no138(C,B) 0.0
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- all138(A,C), some138(C,B) 0.552884615385 (1.0, 0.0, 93.0, 10.0) 0.552884615385 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(A,C), some138(C,B) (0.5528846153846154, 1.0) > (0.23890532544378698, 3.0)
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.282342657343 (3.0, 7.0, 86.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.282342657343 (3.0, 7.0, 86.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+some138(B,C) 0.191433566434 (2.0, 8.0, 85.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.282342657343 (3.0, 7.0, 86.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.175480769231 (2.0, 9.0, 84.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.175480769231 (2.0, 9.0, 84.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(C,A) 0.175480769231 (2.0, 9.0, 84.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.258814102564 (3.0, 8.0, 85.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+some138(C,B) 0.161982248521 (2.0, 10.0, 83.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+all138(C,A) 0.161982248521 (2.0, 10.0, 83.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.221840659341 (3.0, 10.0, 83.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+no138(C,A) 0.161982248521 (2.0, 10.0, 83.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.238905325444 (3.0, 9.0, 84.0, 8.0) 0.776442307692 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.191433566434 (2.0, 8.0, 85.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.175480769231 (2.0, 9.0, 84.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.191433566434 (2.0, 8.0, 85.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.175480769231 (2.0, 9.0, 84.0, 9.0) 0.701923076923 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.191433566434 (2.0, 8.0, 85.0, 9.0) 0.701923076923 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- all138(A,C), some138(C,B) [0.552884615385]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.282342657343
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.282342657343
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.282342657343
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.258814102564
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.238905325444
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.221840659341
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+some138(B,C) 0.191433566434
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.191433566434
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.191433566434
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.191433566434
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.175480769231
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.175480769231
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(C,A) 0.175480769231
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.175480769231
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.175480769231
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+some138(C,B) 0.161982248521
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+all138(C,A) 0.161982248521
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+no138(C,A) 0.161982248521
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot138(A,B) :- all138(A,C), some138(C,B) 0.903846153846
+[DEBUG] Best rule so far: rsomenot138(A,B) :- true [0.0970873786408]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- true 0.0970873786408
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- all138(A,C) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(A,C) (0.17475728155339806, 3.0) > (0.09708737864077671, 11.0)
+[LVL9] rsomenot138(A,B) :- all138(C,A) 0.206472491909 (4.0, 11.0, 82.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(C,A) (0.2064724919093851, 4.0) > (0.17475728155339806, 3.0)
+[LVL9] rsomenot138(A,B) :- some138(A,C) 0.0 (2.0, 12.0, 81.0, 9.0) 0.54854368932 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C) 0.0 (2.0, 12.0, 81.0, 9.0) 0.54854368932 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A) 0.0 (2.0, 13.0, 80.0, 9.0) 0.54854368932 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B) 0.149791955617 (3.0, 11.0, 82.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A) 0.161314413742 (3.0, 10.0, 83.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B) 0.0 (2.0, 11.0, 82.0, 9.0) 0.54854368932 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C) 0.221220527046 (4.0, 10.0, 83.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- somenot138(B,C) (0.22122052704576975, 4.0) > (0.2064724919093851, 4.0)
+[LVL9] rsomenot138(A,B) :- somenot138(C,A) 0.0 (2.0, 12.0, 81.0, 9.0) 0.54854368932 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B) 0.221220527046 (4.0, 10.0, 83.0, 7.0) 0.77427184466 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- somenot138(B,C) [0.221220527046]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C) 0.221220527046
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B) 0.221220527046
+[DEBUG] rsomenot138(A,B) :- all138(C,A) 0.206472491909
+[DEBUG] rsomenot138(A,B) :- all138(A,C) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- no138(C,A) 0.161314413742
+[DEBUG] rsomenot138(A,B) :- some138(C,B) 0.149791955617
+[DEBUG] rsomenot138(A,B) :- some138(A,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(B,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(C,A) 0.0
+[DEBUG] rsomenot138(A,B) :- no138(C,B) 0.0
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), all138(C,A) 0.54854368932 (2.0, 0.0, 93.0, 9.0) 0.54854368932 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rsomenot138(A,B) :- somenot138(B,C), all138(C,A) (0.5485436893203883, 2.0) > (0.22122052704576975, 4.0)
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.258090614887 (4.0, 8.0, 85.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.258090614887 (4.0, 8.0, 85.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.258090614887 (4.0, 8.0, 85.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.258090614887 (4.0, 8.0, 85.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(C,A) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.258090614887 (4.0, 8.0, 85.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.258090614887 (4.0, 8.0, 85.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.258090614887 (4.0, 8.0, 85.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+some138(C,B) 0.161314413742 (3.0, 10.0, 83.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.238237490665 (4.0, 9.0, 84.0, 7.0) 0.77427184466 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.209708737864 (3.0, 7.0, 86.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.209708737864 (3.0, 7.0, 86.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.190644307149 (3.0, 8.0, 85.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.209708737864 (3.0, 7.0, 86.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.190644307149 (3.0, 8.0, 85.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.190644307149 (3.0, 8.0, 85.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.190644307149 (3.0, 8.0, 85.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.190644307149 (3.0, 8.0, 85.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.161314413742 (3.0, 10.0, 83.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.174757281553 (3.0, 9.0, 84.0, 8.0) 0.699029126214 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- somenot138(B,C), all138(C,A) [0.54854368932]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.258090614887
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.258090614887
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.258090614887
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.258090614887
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.258090614887
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.258090614887
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.258090614887
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.238237490665
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.209708737864
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.209708737864
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.209708737864
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.190644307149
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.190644307149
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.190644307149
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.190644307149
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.190644307149
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(C,A) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.174757281553
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+some138(C,B) 0.161314413742
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.161314413742
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot138(A,B) :- somenot138(B,C), all138(C,A) 0.913461538462
+[DEBUG] Best rule so far: rsomenot138(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- all138(A,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(A,C) (0.17401960784313728, 4.0) > (0.0, 11.0)
+[LVL9] rsomenot138(A,B) :- all138(C,A) 0.149159663866 (4.0, 11.0, 82.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C) 0.0 (3.0, 12.0, 81.0, 8.0) 0.544117647059 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C) 0.0 (3.0, 12.0, 81.0, 8.0) 0.544117647059 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A) 0.0 (3.0, 13.0, 80.0, 8.0) 0.544117647059 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B) 0.149159663866 (4.0, 11.0, 82.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A) 0.160633484163 (4.0, 10.0, 83.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B) 0.0 (3.0, 11.0, 82.0, 8.0) 0.544117647059 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C) 0.160633484163 (4.0, 10.0, 83.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A) 0.0 (3.0, 12.0, 81.0, 8.0) 0.544117647059 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B) 0.220588235294 (5.0, 10.0, 83.0, 6.0) 0.772058823529 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- somenot138(C,B) (0.22058823529411767, 5.0) > (0.17401960784313728, 4.0)
+[DEBUG] Best rule so far: rsomenot138(A,B) :- somenot138(C,B) [0.220588235294]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B) 0.220588235294
+[DEBUG] rsomenot138(A,B) :- all138(A,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- no138(C,A) 0.160633484163
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C) 0.160633484163
+[DEBUG] rsomenot138(A,B) :- all138(C,A) 0.149159663866
+[DEBUG] rsomenot138(A,B) :- some138(C,B) 0.149159663866
+[DEBUG] rsomenot138(A,B) :- some138(A,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(B,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(C,A) 0.0
+[DEBUG] rsomenot138(A,B) :- no138(C,B) 0.0
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), all138(A,C) 0.544117647059 (3.0, 0.0, 93.0, 8.0) 0.544117647059 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsomenot138(A,B) :- somenot138(C,B), all138(A,C) (0.5441176470588235, 3.0) > (0.22058823529411767, 5.0)
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.257352941176 (5.0, 8.0, 85.0, 6.0) 0.772058823529 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(C,A) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.257352941176 (5.0, 8.0, 85.0, 6.0) 0.772058823529 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.257352941176 (5.0, 8.0, 85.0, 6.0) 0.772058823529 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.237556561086 (5.0, 9.0, 84.0, 6.0) 0.772058823529 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.257352941176 (5.0, 8.0, 85.0, 6.0) 0.772058823529 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.208823529412 (4.0, 7.0, 86.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.208823529412 (4.0, 7.0, 86.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.208823529412 (4.0, 7.0, 86.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.189839572193 (4.0, 8.0, 85.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.160633484163 (4.0, 10.0, 83.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.174019607843 (4.0, 9.0, 84.0, 7.0) 0.696078431373 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- somenot138(C,B), all138(A,C) [0.544117647059]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.257352941176
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.257352941176
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.257352941176
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.257352941176
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.237556561086
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.208823529412
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.208823529412
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.208823529412
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.189839572193
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(C,A) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.174019607843
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.160633484163
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot138(A,B) :- somenot138(C,B), all138(A,C) 0.923076923077
+[DEBUG] Best rule so far: rsomenot138(A,B) :- true [0.0792079207921]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- true 0.0792079207921
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- all138(A,C) 0.0981098109811 (4.0, 9.0, 84.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(A,C) (0.09810981098109811, 4.0) > (0.07920792079207921, 11.0)
+[LVL9] rsomenot138(A,B) :- all138(C,A) 0.148514851485 (5.0, 11.0, 82.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(C,A) (0.1485148514851485, 5.0) > (0.09810981098109811, 4.0)
+[LVL9] rsomenot138(A,B) :- some138(A,C) 0.0 (4.0, 12.0, 81.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C) 0.0 (4.0, 12.0, 81.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A) 0.0 (4.0, 13.0, 80.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B) 0.148514851485 (5.0, 11.0, 82.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A) 0.15993907083 (5.0, 10.0, 83.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- no138(C,A) (0.15993907083015996, 5.0) > (0.1485148514851485, 5.0)
+[LVL9] rsomenot138(A,B) :- no138(C,B) 0.0830159939071 (4.0, 11.0, 82.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C) 0.15993907083 (5.0, 10.0, 83.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A) 0.0 (4.0, 12.0, 81.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B) 0.15993907083 (5.0, 10.0, 83.0, 6.0) 0.693069306931 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- no138(C,A) [0.15993907083]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- no138(C,A) 0.15993907083
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C) 0.15993907083
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B) 0.15993907083
+[DEBUG] rsomenot138(A,B) :- all138(C,A) 0.148514851485
+[DEBUG] rsomenot138(A,B) :- some138(C,B) 0.148514851485
+[DEBUG] rsomenot138(A,B) :- all138(A,C) 0.0981098109811
+[DEBUG] rsomenot138(A,B) :- no138(C,B) 0.0830159939071
+[DEBUG] rsomenot138(A,B) :- some138(A,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(B,C) 0.0
+[DEBUG] rsomenot138(A,B) :- some138(C,A) 0.0
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- no138(C,A), some138(C,B) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- no138(C,A), some138(C,B) (0.35973597359735976, 4.0) > (0.15993907083015996, 5.0)
+[LVL9] rsomenot138(A,B) :- no138(C,A), some138(C,D) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), some138(D,B) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), somenot138(B,C) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), somenot138(B,D) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), somenot138(D,C) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+some138(C,B) 0.0981098109811 (4.0, 9.0, 84.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+somenot138(B,C) 0.0981098109811 (4.0, 9.0, 84.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), some138(A,C) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), some138(A,D) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), some138(D,C) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), no138(C,D) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), no138(D,A) 0.359735973597 (4.0, 1.0, 92.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.0981098109811 (4.0, 9.0, 84.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.0981098109811 (4.0, 9.0, 84.0, 7.0) 0.539603960396 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), all138(C,A) 0.539603960396 (4.0, 0.0, 93.0, 7.0) 0.539603960396 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rsomenot138(A,B) :- somenot138(C,B), all138(C,A) (0.5396039603960396, 4.0) > (0.35973597359735976, 4.0)
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.18901890189 (5.0, 8.0, 85.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.15993907083 (5.0, 10.0, 83.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.173267326733 (5.0, 9.0, 84.0, 6.0) 0.693069306931 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- somenot138(C,B), all138(C,A) [0.539603960396]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- no138(C,A), some138(C,B) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- no138(C,A), some138(C,D) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- no138(C,A), some138(D,B) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- no138(C,A), somenot138(B,C) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- no138(C,A), somenot138(B,D) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- no138(C,A), somenot138(D,C) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), some138(A,C) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), some138(A,D) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), some138(D,C) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), no138(C,D) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), no138(D,A) 0.359735973597
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.18901890189
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.173267326733
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.15993907083
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+some138(C,B) 0.0981098109811
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+somenot138(B,C) 0.0981098109811
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.0981098109811
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.0981098109811
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot138(A,B) :- somenot138(C,B), all138(C,A) 0.932692307692
+[DEBUG] Best rule so far: rsomenot138(A,B) :- true [0.07]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- true 0.07
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- all138(A,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- all138(A,C) (0.09727272727272727, 5.0) > (0.07, 11.0)
+[LVL9] rsomenot138(A,B) :- all138(C,A) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C) 0.0764285714286 (5.0, 12.0, 81.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C) 0.0764285714286 (5.0, 12.0, 81.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A) 0.0713333333333 (5.0, 13.0, 80.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B) 0.147857142857 (6.0, 11.0, 82.0, 5.0) 0.69 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- some138(C,B) (0.14785714285714285, 6.0) > (0.09727272727272727, 5.0)
+[LVL9] rsomenot138(A,B) :- no138(C,A) 0.159230769231 (6.0, 10.0, 83.0, 5.0) 0.69 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- no138(C,A) (0.15923076923076923, 6.0) > (0.14785714285714285, 6.0)
+[LVL9] rsomenot138(A,B) :- no138(C,B) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C) 0.159230769231 (6.0, 10.0, 83.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A) 0.0764285714286 (5.0, 12.0, 81.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- no138(C,A) [0.159230769231]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- no138(C,A) 0.159230769231
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C) 0.159230769231
+[DEBUG] rsomenot138(A,B) :- some138(C,B) 0.147857142857
+[DEBUG] rsomenot138(A,B) :- all138(A,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- all138(C,A) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- no138(C,B) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- some138(A,C) 0.0764285714286
+[DEBUG] rsomenot138(A,B) :- some138(B,C) 0.0764285714286
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A) 0.0764285714286
+[DEBUG] rsomenot138(A,B) :- some138(C,A) 0.0713333333333
+[DEBUG] ==================================
+[LVL9] rsomenot138(A,B) :- no138(C,A), some138(C,B) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] BETTER RULE rsomenot138(A,B) :- no138(C,A), some138(C,B) (0.3566666666666667, 5.0) > (0.15923076923076923, 6.0)
+[LVL9] rsomenot138(A,B) :- no138(C,A), some138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), some138(D,B) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), somenot138(B,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), somenot138(B,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), somenot138(D,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.188181818182 (6.0, 8.0, 85.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+some138(C,B) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.188181818182 (6.0, 8.0, 85.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.188181818182 (6.0, 8.0, 85.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,A), \+somenot138(B,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), some138(A,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), some138(A,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), some138(D,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), no138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), no138(D,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.188181818182 (6.0, 8.0, 85.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.188181818182 (6.0, 8.0, 85.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.188181818182 (6.0, 8.0, 85.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), all138(C,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), all138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), all138(D,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), no138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), no138(D,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+all138(C,A) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.159230769231 (6.0, 10.0, 83.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+no138(C,A) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.1725 (6.0, 9.0, 84.0, 5.0) 0.69 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), some138(B,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), some138(B,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), some138(D,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.118888888889 (5.0, 7.0, 86.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.118888888889 (5.0, 7.0, 86.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.107 (5.0, 8.0, 85.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.118888888889 (5.0, 7.0, 86.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.107 (5.0, 8.0, 85.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), some138(C,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), some138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), some138(D,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.107 (5.0, 8.0, 85.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.107 (5.0, 8.0, 85.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.107 (5.0, 8.0, 85.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.107 (5.0, 8.0, 85.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), some138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), some138(D,B) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), somenot138(C,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), somenot138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), somenot138(D,A) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), \+all138(A,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), \+all138(C,A) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), \+some138(C,A) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), \+no138(A,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), \+no138(C,A) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- no138(C,B), \+somenot138(A,C) 0.0972727272727 (5.0, 9.0, 84.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), somenot138(B,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), somenot138(D,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), \+all138(C,B) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), \+all138(B,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), \+some138(C,B) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), \+some138(B,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), \+no138(B,C) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(A,C), \+somenot138(C,B) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), all138(A,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), all138(D,C) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), \+all138(C,A) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), \+some138(A,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), \+some138(C,A) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), \+no138(A,C) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), \+somenot138(A,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(B,C), \+somenot138(C,A) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), no138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), no138(D,B) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), \+all138(C,B) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), \+all138(B,C) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), \+some138(C,B) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), \+some138(B,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), \+no138(B,C) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), \+somenot138(C,B) 0.0891666666667 (5.0, 10.0, 83.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- somenot138(C,A), \+somenot138(B,C) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A), somenot138(C,D) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A), somenot138(D,B) 0.356666666667 (5.0, 1.0, 92.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A), \+all138(C,B) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A), \+all138(B,C) 0.0764285714286 (5.0, 12.0, 81.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A), \+some138(C,B) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A), \+some138(B,C) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[LVL9] rsomenot138(A,B) :- some138(C,A), \+no138(C,B) 0.0823076923077 (5.0, 11.0, 82.0, 6.0) 0.535 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot138(A,B) :- no138(C,A), some138(C,B) [0.356666666667]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot138(A,B) :- no138(C,A), some138(C,B) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,A), some138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,A), some138(D,B) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,A), somenot138(B,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,A), somenot138(B,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,A), somenot138(D,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), some138(A,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), some138(A,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), some138(D,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), no138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), no138(D,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,B), all138(C,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,B), all138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,B), all138(D,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,B), no138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,B), no138(D,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- all138(A,C), some138(B,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- all138(A,C), some138(B,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- all138(A,C), some138(D,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), some138(C,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), some138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), some138(D,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- all138(C,A), some138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- all138(C,A), some138(D,B) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,B), somenot138(C,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,B), somenot138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,B), somenot138(D,A) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), somenot138(B,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), somenot138(D,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(B,C), all138(A,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(B,C), all138(D,C) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), no138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), no138(D,B) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,A), somenot138(C,D) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,A), somenot138(D,B) 0.356666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(C,B) 0.188181818182
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(C,B) 0.188181818182
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+somenot138(C,B) 0.188181818182
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(C,A) 0.188181818182
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(A,C) 0.188181818182
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(A,C) 0.188181818182
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+all138(B,C) 0.1725
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+no138(B,C) 0.1725
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+all138(A,C) 0.1725
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+somenot138(C,A) 0.1725
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(A,C) 0.1725
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+some138(C,A) 0.1725
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(A,C) 0.1725
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+somenot138(C,A) 0.1725
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+no138(A,C) 0.159230769231
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(C,B) 0.118888888889
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+all138(B,C) 0.118888888889
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(B,C) 0.118888888889
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+no138(C,B) 0.107
+[DEBUG] rsomenot138(A,B) :- all138(A,C), \+somenot138(B,C) 0.107
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+some138(A,C) 0.107
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(A,C) 0.107
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+no138(C,A) 0.107
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(C,A) 0.107
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+some138(C,B) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- no138(C,A), \+somenot138(B,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+some138(A,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- somenot138(B,C), \+no138(C,A) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- somenot138(C,B), \+somenot138(A,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(C,B) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+all138(B,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+some138(B,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(C,B) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- all138(C,A), \+no138(B,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- no138(C,B), \+all138(C,A) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- no138(C,B), \+some138(C,A) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- no138(C,B), \+no138(C,A) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- no138(C,B), \+somenot138(A,C) 0.0972727272727
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+all138(C,A) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(C,B), \+no138(C,A) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,B), \+all138(A,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- no138(C,B), \+no138(A,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), \+all138(C,B) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), \+all138(B,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), \+some138(C,B) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), \+some138(B,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), \+somenot138(C,B) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(B,C), \+all138(C,A) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(B,C), \+some138(A,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(B,C), \+some138(C,A) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(B,C), \+somenot138(A,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(B,C), \+somenot138(C,A) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), \+some138(C,B) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), \+some138(B,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), \+no138(B,C) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), \+somenot138(C,B) 0.0891666666667
+[DEBUG] rsomenot138(A,B) :- some138(A,C), \+no138(B,C) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- some138(B,C), \+no138(A,C) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), \+all138(C,B) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), \+all138(B,C) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- somenot138(C,A), \+somenot138(B,C) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- some138(C,A), \+all138(C,B) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- some138(C,A), \+some138(C,B) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- some138(C,A), \+some138(B,C) 0.0823076923077
+[DEBUG] rsomenot138(A,B) :- some138(C,A), \+no138(C,B) 0.0823076923077
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot138(A,B) :- no138(C,A), some138(C,B) 0.932692307692

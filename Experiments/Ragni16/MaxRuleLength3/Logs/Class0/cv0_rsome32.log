@@ -1,0 +1,430 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.238190806844
+[INFO] Computing scores: 0.0723s
+[INFO] Number of examples (M): 122
+[INFO] Positive weight (P): 14.0000
+[INFO] Negative weight (N): 108.0000
+[DEBUG] Best rule so far: rsome32(A,B) :- true [0.114754098361]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome32(A,B) :- true 0.114754098361
+[DEBUG] ==================================
+[LVL9] rsome32(A,B) :- all32(A,C) 0.132172131148 (2.0, 13.0, 95.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] BETTER RULE rsome32(A,B) :- all32(A,C) (0.13217213114754098, 2.0) > (0.11475409836065574, 14.0)
+[LVL9] rsome32(A,B) :- all32(B,C) 0.0 (1.0, 14.0, 94.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(C,B) 0.0 (1.0, 15.0, 93.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(A,C) 0.0 (1.0, 12.0, 96.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C) 0.293911007026 (4.0, 9.0, 99.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] BETTER RULE rsome32(A,B) :- some32(B,C) (0.2939110070257612, 4.0) > (0.13217213114754098, 2.0)
+[LVL9] rsome32(A,B) :- some32(C,A) 0.242044358727 (4.0, 12.0, 96.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B) 0.124397299904 (2.0, 14.0, 94.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(A,C) 0.0 (1.0, 15.0, 93.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(B,C) 0.0 (1.0, 15.0, 93.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(C,A) 0.0 (1.0, 14.0, 94.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C) 0.257172131148 (4.0, 11.0, 97.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C) 0.194672131148 (3.0, 12.0, 96.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,A) 0.0 (1.0, 15.0, 93.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B) 0.124397299904 (2.0, 14.0, 94.0, 12.0) 0.704918032787 [ACCEPT]
+[DEBUG] Best rule so far: rsome32(A,B) :- some32(B,C) [0.293911007026]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome32(A,B) :- some32(B,C) 0.293911007026
+[DEBUG] rsome32(A,B) :- somenot32(A,C) 0.257172131148
+[DEBUG] rsome32(A,B) :- some32(C,A) 0.242044358727
+[DEBUG] rsome32(A,B) :- somenot32(B,C) 0.194672131148
+[DEBUG] rsome32(A,B) :- all32(A,C) 0.132172131148
+[DEBUG] rsome32(A,B) :- some32(C,B) 0.124397299904
+[DEBUG] rsome32(A,B) :- somenot32(C,B) 0.124397299904
+[DEBUG] rsome32(A,B) :- all32(B,C) 0.0
+[DEBUG] rsome32(A,B) :- all32(C,B) 0.0
+[DEBUG] rsome32(A,B) :- some32(A,C) 0.0
+[DEBUG] rsome32(A,B) :- no32(A,C) 0.0
+[DEBUG] rsome32(A,B) :- no32(B,C) 0.0
+[DEBUG] rsome32(A,B) :- no32(C,A) 0.0
+[DEBUG] rsome32(A,B) :- somenot32(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsome32(A,B) :- some32(B,C), all32(A,C) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] BETTER RULE rsome32(A,B) :- some32(B,C), all32(A,C) (0.3715846994535519, 1.0) > (0.2939110070257612, 4.0)
+[LVL9] rsome32(A,B) :- some32(B,C), all32(A,D) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), all32(D,C) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), some32(C,A) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), some32(C,D) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), some32(D,A) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(A,C) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(C,A) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(A,D) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(C,D) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(D,A) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(D,C) 0.371584699454 (1.0, 1.0, 107.0, 13.0) 0.55737704918 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+all32(A,C) 0.25956284153 (3.0, 8.0, 100.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+all32(C,A) 0.342896174863 (4.0, 7.0, 101.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+some32(C,A) 0.25956284153 (3.0, 8.0, 100.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+no32(A,C) 0.342896174863 (4.0, 7.0, 101.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+no32(C,A) 0.316519546028 (4.0, 8.0, 100.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+somenot32(A,C) 0.25956284153 (3.0, 8.0, 100.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+somenot32(C,A) 0.25956284153 (3.0, 8.0, 100.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), all32(B,C) 0.55737704918 (1.0, 0.0, 108.0, 13.0) 0.55737704918 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome32(A,B) :- somenot32(A,C), all32(B,C) (0.5573770491803278, 1.0) > (0.3715846994535519, 1.0)
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+all32(C,B) 0.293911007026 (4.0, 9.0, 99.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+some32(C,B) 0.293911007026 (4.0, 9.0, 99.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+some32(B,C) 0.222482435597 (3.0, 10.0, 98.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+no32(C,B) 0.293911007026 (4.0, 9.0, 99.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+no32(B,C) 0.293911007026 (4.0, 9.0, 99.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+somenot32(C,B) 0.222482435597 (3.0, 10.0, 98.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+somenot32(B,C) 0.222482435597 (3.0, 10.0, 98.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+all32(C,B) 0.274316939891 (4.0, 10.0, 98.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+all32(B,C) 0.274316939891 (4.0, 10.0, 98.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+some32(C,B) 0.207650273224 (3.0, 11.0, 97.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+some32(B,C) 0.207650273224 (3.0, 11.0, 97.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+no32(C,B) 0.274316939891 (4.0, 10.0, 98.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+no32(B,C) 0.207650273224 (3.0, 11.0, 97.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+somenot32(C,B) 0.207650273224 (3.0, 11.0, 97.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+somenot32(B,C) 0.274316939891 (4.0, 10.0, 98.0, 10.0) 0.822950819672 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+all32(A,C) 0.207650273224 (3.0, 11.0, 97.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+all32(C,A) 0.222482435597 (3.0, 10.0, 98.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+some32(A,C) 0.222482435597 (3.0, 10.0, 98.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+some32(C,A) 0.222482435597 (3.0, 10.0, 98.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+no32(A,C) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+no32(C,A) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+somenot32(A,C) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+somenot32(C,A) 0.222482435597 (3.0, 10.0, 98.0, 11.0) 0.77868852459 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+all32(C,B) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+all32(B,C) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+no32(C,B) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+no32(B,C) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+somenot32(C,B) 0.151053864169 (2.0, 11.0, 97.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+somenot32(B,C) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+all32(C,A) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+some32(A,C) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+no32(A,C) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+no32(C,A) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+somenot32(A,C) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+somenot32(C,A) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+all32(A,C) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+all32(C,A) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+some32(A,C) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+no32(A,C) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+no32(C,A) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+somenot32(C,A) 0.140983606557 (2.0, 12.0, 96.0, 12.0) 0.704918032787 [ACCEPT]
+[DEBUG] Best rule so far: rsome32(A,B) :- somenot32(A,C), all32(B,C) [0.55737704918]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome32(A,B) :- some32(B,C), all32(A,C) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), all32(A,D) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), all32(D,C) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), some32(C,A) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), some32(C,D) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), some32(D,A) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(A,C) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(C,A) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(A,D) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(C,D) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(D,A) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(D,C) 0.371584699454
+[DEBUG] rsome32(A,B) :- some32(B,C), \+all32(C,A) 0.342896174863
+[DEBUG] rsome32(A,B) :- some32(B,C), \+no32(A,C) 0.342896174863
+[DEBUG] rsome32(A,B) :- some32(B,C), \+no32(C,A) 0.316519546028
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+all32(C,B) 0.293911007026
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+some32(C,B) 0.293911007026
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+no32(C,B) 0.293911007026
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+no32(B,C) 0.293911007026
+[DEBUG] rsome32(A,B) :- some32(C,A), \+all32(C,B) 0.274316939891
+[DEBUG] rsome32(A,B) :- some32(C,A), \+all32(B,C) 0.274316939891
+[DEBUG] rsome32(A,B) :- some32(C,A), \+no32(C,B) 0.274316939891
+[DEBUG] rsome32(A,B) :- some32(C,A), \+somenot32(B,C) 0.274316939891
+[DEBUG] rsome32(A,B) :- some32(B,C), \+all32(A,C) 0.25956284153
+[DEBUG] rsome32(A,B) :- some32(B,C), \+some32(C,A) 0.25956284153
+[DEBUG] rsome32(A,B) :- some32(B,C), \+somenot32(A,C) 0.25956284153
+[DEBUG] rsome32(A,B) :- some32(B,C), \+somenot32(C,A) 0.25956284153
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+some32(B,C) 0.222482435597
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+somenot32(C,B) 0.222482435597
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+somenot32(B,C) 0.222482435597
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+all32(C,A) 0.222482435597
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+some32(A,C) 0.222482435597
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+some32(C,A) 0.222482435597
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+somenot32(C,A) 0.222482435597
+[DEBUG] rsome32(A,B) :- some32(C,A), \+some32(C,B) 0.207650273224
+[DEBUG] rsome32(A,B) :- some32(C,A), \+some32(B,C) 0.207650273224
+[DEBUG] rsome32(A,B) :- some32(C,A), \+no32(B,C) 0.207650273224
+[DEBUG] rsome32(A,B) :- some32(C,A), \+somenot32(C,B) 0.207650273224
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+all32(A,C) 0.207650273224
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+no32(A,C) 0.151053864169
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+no32(C,A) 0.151053864169
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+somenot32(A,C) 0.151053864169
+[DEBUG] rsome32(A,B) :- all32(A,C), \+all32(C,B) 0.151053864169
+[DEBUG] rsome32(A,B) :- all32(A,C), \+all32(B,C) 0.151053864169
+[DEBUG] rsome32(A,B) :- all32(A,C), \+no32(C,B) 0.151053864169
+[DEBUG] rsome32(A,B) :- all32(A,C), \+no32(B,C) 0.151053864169
+[DEBUG] rsome32(A,B) :- all32(A,C), \+somenot32(C,B) 0.151053864169
+[DEBUG] rsome32(A,B) :- all32(A,C), \+somenot32(B,C) 0.140983606557
+[DEBUG] rsome32(A,B) :- some32(C,B), \+all32(C,A) 0.140983606557
+[DEBUG] rsome32(A,B) :- some32(C,B), \+some32(A,C) 0.140983606557
+[DEBUG] rsome32(A,B) :- some32(C,B), \+no32(A,C) 0.140983606557
+[DEBUG] rsome32(A,B) :- some32(C,B), \+no32(C,A) 0.140983606557
+[DEBUG] rsome32(A,B) :- some32(C,B), \+somenot32(A,C) 0.140983606557
+[DEBUG] rsome32(A,B) :- some32(C,B), \+somenot32(C,A) 0.140983606557
+[DEBUG] rsome32(A,B) :- somenot32(C,B), \+all32(A,C) 0.140983606557
+[DEBUG] rsome32(A,B) :- somenot32(C,B), \+all32(C,A) 0.140983606557
+[DEBUG] rsome32(A,B) :- somenot32(C,B), \+some32(A,C) 0.140983606557
+[DEBUG] rsome32(A,B) :- somenot32(C,B), \+no32(A,C) 0.140983606557
+[DEBUG] rsome32(A,B) :- somenot32(C,B), \+no32(C,A) 0.140983606557
+[DEBUG] rsome32(A,B) :- somenot32(C,B), \+somenot32(C,A) 0.140983606557
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome32(A,B) :- somenot32(A,C), all32(B,C) 0.893442622951
+[DEBUG] Best rule so far: rsome32(A,B) :- true [0.107438016529]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome32(A,B) :- true 0.107438016529
+[DEBUG] ==================================
+[LVL9] rsome32(A,B) :- all32(A,C) 0.131714876033 (3.0, 13.0, 95.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] BETTER RULE rsome32(A,B) :- all32(A,C) (0.13171487603305784, 3.0) > (0.10743801652892562, 14.0)
+[LVL9] rsome32(A,B) :- all32(C,B) 0.0 (2.0, 15.0, 93.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(A,C) 0.0 (2.0, 12.0, 96.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C) 0.293388429752 (5.0, 9.0, 99.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] BETTER RULE rsome32(A,B) :- some32(B,C) (0.29338842975206614, 5.0) > (0.13171487603305784, 3.0)
+[LVL9] rsome32(A,B) :- some32(C,A) 0.241614000972 (5.0, 12.0, 96.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B) 0.123966942149 (3.0, 14.0, 94.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(A,C) 0.0 (2.0, 15.0, 93.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(B,C) 0.0 (2.0, 15.0, 93.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(C,A) 0.0 (2.0, 14.0, 94.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C) 0.207162534435 (4.0, 11.0, 97.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C) 0.194214876033 (4.0, 12.0, 96.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,A) 0.0 (2.0, 15.0, 93.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B) 0.123966942149 (3.0, 14.0, 94.0, 11.0) 0.702479338843 [ACCEPT]
+[DEBUG] Best rule so far: rsome32(A,B) :- some32(B,C) [0.293388429752]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome32(A,B) :- some32(B,C) 0.293388429752
+[DEBUG] rsome32(A,B) :- some32(C,A) 0.241614000972
+[DEBUG] rsome32(A,B) :- somenot32(A,C) 0.207162534435
+[DEBUG] rsome32(A,B) :- somenot32(B,C) 0.194214876033
+[DEBUG] rsome32(A,B) :- all32(A,C) 0.131714876033
+[DEBUG] rsome32(A,B) :- some32(C,B) 0.123966942149
+[DEBUG] rsome32(A,B) :- somenot32(C,B) 0.123966942149
+[DEBUG] rsome32(A,B) :- all32(C,B) 0.0
+[DEBUG] rsome32(A,B) :- some32(A,C) 0.0
+[DEBUG] rsome32(A,B) :- no32(A,C) 0.0
+[DEBUG] rsome32(A,B) :- no32(B,C) 0.0
+[DEBUG] rsome32(A,B) :- no32(C,A) 0.0
+[DEBUG] rsome32(A,B) :- somenot32(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsome32(A,B) :- some32(B,C), all32(A,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] BETTER RULE rsome32(A,B) :- some32(B,C), all32(A,C) (0.3691460055096419, 2.0) > (0.29338842975206614, 5.0)
+[LVL9] rsome32(A,B) :- some32(B,C), all32(A,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), all32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), some32(C,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), some32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), some32(D,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(A,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(C,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(A,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(D,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), somenot32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+all32(A,C) 0.258953168044 (4.0, 8.0, 100.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+all32(C,A) 0.342286501377 (5.0, 7.0, 101.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+some32(C,A) 0.258953168044 (4.0, 8.0, 100.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+no32(A,C) 0.342286501377 (5.0, 7.0, 101.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+no32(C,A) 0.315956770502 (5.0, 8.0, 100.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+somenot32(A,C) 0.258953168044 (4.0, 8.0, 100.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(B,C), \+somenot32(C,A) 0.258953168044 (4.0, 8.0, 100.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), some32(C,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), some32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), some32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), some32(D,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), no32(B,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), no32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), no32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), somenot32(C,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), somenot32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), somenot32(D,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+all32(C,B) 0.273829201102 (5.0, 10.0, 98.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+all32(B,C) 0.273829201102 (5.0, 10.0, 98.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+some32(C,B) 0.207162534435 (4.0, 11.0, 97.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+some32(B,C) 0.207162534435 (4.0, 11.0, 97.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+no32(C,B) 0.273829201102 (5.0, 10.0, 98.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+no32(B,C) 0.207162534435 (4.0, 11.0, 97.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+somenot32(C,B) 0.207162534435 (4.0, 11.0, 97.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,A), \+somenot32(B,C) 0.273829201102 (5.0, 10.0, 98.0, 9.0) 0.821487603306 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), some32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), some32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), somenot32(C,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), somenot32(B,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), somenot32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), somenot32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), somenot32(D,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+all32(C,B) 0.239033693579 (4.0, 9.0, 99.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+some32(C,B) 0.239033693579 (4.0, 9.0, 99.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+some32(B,C) 0.162110616656 (3.0, 10.0, 98.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+no32(C,B) 0.239033693579 (4.0, 9.0, 99.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+no32(B,C) 0.239033693579 (4.0, 9.0, 99.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+somenot32(C,B) 0.162110616656 (3.0, 10.0, 98.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(A,C), \+somenot32(B,C) 0.162110616656 (3.0, 10.0, 98.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), no32(A,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), no32(C,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), no32(A,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), no32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), no32(D,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), no32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), somenot32(A,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+all32(A,C) 0.207162534435 (4.0, 11.0, 97.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+all32(C,A) 0.221959858323 (4.0, 10.0, 98.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+some32(A,C) 0.221959858323 (4.0, 10.0, 98.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+some32(C,A) 0.221959858323 (4.0, 10.0, 98.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+no32(A,C) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+no32(C,A) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+somenot32(A,C) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(B,C), \+somenot32(C,A) 0.221959858323 (4.0, 10.0, 98.0, 10.0) 0.776859504132 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), some32(C,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), some32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), some32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), some32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), some32(D,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+all32(C,B) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+all32(B,C) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+some32(C,B) 0.0 (2.0, 12.0, 96.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+some32(B,C) 0.0 (2.0, 12.0, 96.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+no32(C,B) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+no32(B,C) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+somenot32(C,B) 0.150531286895 (3.0, 11.0, 97.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(A,C), \+somenot32(B,C) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), all32(A,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), all32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), some32(D,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+all32(A,C) 0.0 (2.0, 13.0, 95.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+all32(C,A) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+some32(A,C) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+some32(C,A) 0.0 (2.0, 13.0, 95.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+no32(A,C) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+no32(C,A) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+somenot32(A,C) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(C,B), \+somenot32(C,A) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), some32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), some32(D,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), somenot32(A,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), somenot32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+all32(A,C) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+all32(C,A) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+some32(A,C) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+some32(C,A) 0.0 (2.0, 13.0, 95.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+no32(A,C) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+no32(C,A) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,B), \+somenot32(C,A) 0.140495867769 (3.0, 12.0, 96.0, 11.0) 0.702479338843 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(C,B), some32(A,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(C,B), some32(A,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- all32(C,B), some32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(A,C), all32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- some32(A,C), all32(D,B) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(A,C), somenot32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(A,C), somenot32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(B,C), some32(C,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(B,C), some32(D,A) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(C,A), somenot32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- no32(C,A), somenot32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,A), some32(B,D) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[LVL9] rsome32(A,B) :- somenot32(C,A), some32(D,C) 0.36914600551 (2.0, 1.0, 107.0, 12.0) 0.553719008264 [ACCEPT]
+[DEBUG] Best rule so far: rsome32(A,B) :- some32(B,C), all32(A,C) [0.36914600551]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome32(A,B) :- some32(B,C), all32(A,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), all32(A,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), all32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), some32(C,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), some32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), some32(D,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(A,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(C,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(A,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(D,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), somenot32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), some32(C,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), some32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), some32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), some32(D,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), no32(B,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), no32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), no32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), somenot32(C,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), somenot32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,A), somenot32(D,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(A,C), some32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(A,C), some32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(A,C), somenot32(C,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(A,C), somenot32(B,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(A,C), somenot32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(A,C), somenot32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(A,C), somenot32(D,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(B,C), no32(A,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(B,C), no32(C,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(B,C), no32(A,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(B,C), no32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(B,C), no32(D,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(B,C), no32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(B,C), somenot32(A,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(A,C), some32(C,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(A,C), some32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(A,C), some32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(A,C), some32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(A,C), some32(D,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,B), all32(A,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,B), all32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(C,B), some32(D,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(C,B), some32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(C,B), some32(D,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(C,B), somenot32(A,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(C,B), somenot32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(C,B), some32(A,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(C,B), some32(A,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- all32(C,B), some32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(A,C), all32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(A,C), all32(D,B) 0.36914600551
+[DEBUG] rsome32(A,B) :- no32(A,C), somenot32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- no32(A,C), somenot32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- no32(B,C), some32(C,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- no32(B,C), some32(D,A) 0.36914600551
+[DEBUG] rsome32(A,B) :- no32(C,A), somenot32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- no32(C,A), somenot32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(C,A), some32(B,D) 0.36914600551
+[DEBUG] rsome32(A,B) :- somenot32(C,A), some32(D,C) 0.36914600551
+[DEBUG] rsome32(A,B) :- some32(B,C), \+all32(C,A) 0.342286501377
+[DEBUG] rsome32(A,B) :- some32(B,C), \+no32(A,C) 0.342286501377
+[DEBUG] rsome32(A,B) :- some32(B,C), \+no32(C,A) 0.315956770502
+[DEBUG] rsome32(A,B) :- some32(C,A), \+all32(C,B) 0.273829201102
+[DEBUG] rsome32(A,B) :- some32(C,A), \+all32(B,C) 0.273829201102
+[DEBUG] rsome32(A,B) :- some32(C,A), \+no32(C,B) 0.273829201102
+[DEBUG] rsome32(A,B) :- some32(C,A), \+somenot32(B,C) 0.273829201102
+[DEBUG] rsome32(A,B) :- some32(B,C), \+all32(A,C) 0.258953168044
+[DEBUG] rsome32(A,B) :- some32(B,C), \+some32(C,A) 0.258953168044
+[DEBUG] rsome32(A,B) :- some32(B,C), \+somenot32(A,C) 0.258953168044
+[DEBUG] rsome32(A,B) :- some32(B,C), \+somenot32(C,A) 0.258953168044
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+all32(C,B) 0.239033693579
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+some32(C,B) 0.239033693579
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+no32(C,B) 0.239033693579
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+no32(B,C) 0.239033693579
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+all32(C,A) 0.221959858323
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+some32(A,C) 0.221959858323
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+some32(C,A) 0.221959858323
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+somenot32(C,A) 0.221959858323
+[DEBUG] rsome32(A,B) :- some32(C,A), \+some32(C,B) 0.207162534435
+[DEBUG] rsome32(A,B) :- some32(C,A), \+some32(B,C) 0.207162534435
+[DEBUG] rsome32(A,B) :- some32(C,A), \+no32(B,C) 0.207162534435
+[DEBUG] rsome32(A,B) :- some32(C,A), \+somenot32(C,B) 0.207162534435
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+all32(A,C) 0.207162534435
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+some32(B,C) 0.162110616656
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+somenot32(C,B) 0.162110616656
+[DEBUG] rsome32(A,B) :- somenot32(A,C), \+somenot32(B,C) 0.162110616656
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+no32(A,C) 0.150531286895
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+no32(C,A) 0.150531286895
+[DEBUG] rsome32(A,B) :- somenot32(B,C), \+somenot32(A,C) 0.150531286895
+[DEBUG] rsome32(A,B) :- all32(A,C), \+all32(C,B) 0.150531286895
+[DEBUG] rsome32(A,B) :- all32(A,C), \+all32(B,C) 0.150531286895
+[DEBUG] rsome32(A,B) :- all32(A,C), \+no32(C,B) 0.150531286895
+[DEBUG] rsome32(A,B) :- all32(A,C), \+no32(B,C) 0.150531286895
+[DEBUG] rsome32(A,B) :- all32(A,C), \+somenot32(C,B) 0.150531286895
+[DEBUG] rsome32(A,B) :- all32(A,C), \+somenot32(B,C) 0.140495867769
+[DEBUG] rsome32(A,B) :- some32(C,B), \+all32(C,A) 0.140495867769
+[DEBUG] rsome32(A,B) :- some32(C,B), \+some32(A,C) 0.140495867769
+[DEBUG] rsome32(A,B) :- some32(C,B), \+no32(A,C) 0.140495867769
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome32(A,B) :- some32(B,C), all32(A,C) 0.893442622951

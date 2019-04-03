@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_38.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc38.log
+              target:	rnvc38/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc38(A,B) :- some38(B,C)
+rnvc38(A,B) :- somenot38(B,C)
+rnvc38(A,B) :- somenot38(C,B)
+rnvc38(A,B) :- some38(C,B), \+all38(A,C)
+rnvc38(A,B) :- no38(C,B), \+all38(A,C), \+all38(C,A)
+rnvc38(A,B) :- all38(C,B), \+all38(A,C), \+all38(C,A), \+some38(A,C), \+no38(C,A), \+somenot38(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.945454545455
+           Precision:	 1.0
+              Recall:	 0.923076923077
+================== STATISTICS ==================
+    Rule evaluations:	6407
+          Total time:	152.4957s

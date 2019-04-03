@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_28.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rsomenot28.log
+              target:	rsomenot28/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot28(A,B) :- no28(C,A), \+some28(C,B), \+all28(B,C), \+no28(C,B), \+somenot28(C,B), \+somenot28(B,C)
+rsomenot28(A,B) :- some28(C,A), somenot28(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.866071428571
+           Precision:	 1.0
+              Recall:	 0.285714285714
+================== STATISTICS ==================
+    Rule evaluations:	44107
+          Total time:	1054.4421s

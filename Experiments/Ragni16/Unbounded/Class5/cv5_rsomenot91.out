@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_91.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rsomenot91.log
+              target:	rsomenot91/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot91(A,B) :- somenot91(B,C), \+all91(A,C), \+all91(C,A), \+no91(A,C), \+somenot91(C,A), \+somenot91(A,C)
+rsomenot91(A,B) :- all91(C,A), somenot91(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.870689655172
+           Precision:	 1.0
+              Recall:	 0.285714285714
+================== STATISTICS ==================
+    Rule evaluations:	36845
+          Total time:	1917.1046s

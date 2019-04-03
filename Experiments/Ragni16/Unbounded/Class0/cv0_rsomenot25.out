@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_25.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rsomenot25.log
+              target:	rsomenot25/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot25(A,B) :- somenot25(C,B), \+all25(A,C), \+some25(A,C), \+somenot25(A,C), \+all25(C,A), \+no25(C,A), \+somenot25(C,A)
+rsomenot25(A,B) :- some25(A,C), all25(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.870689655172
+           Precision:	 1.0
+              Recall:	 0.210526315789
+================== STATISTICS ==================
+    Rule evaluations:	47204
+          Total time:	1527.3765s

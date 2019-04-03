@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_10.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rno10.log
+              target:	rno10/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rno10(A,B) :- no10(A,C), \+all10(B,C), \+no10(B,C), \+somenot10(C,B), \+somenot10(B,C), \+no10(C,B)
+rno10(A,B) :- no10(B,C), somenot10(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.964285714286
+           Precision:	 1.0
+              Recall:	 0.555555555556
+================== STATISTICS ==================
+    Rule evaluations:	22153
+          Total time:	840.3712s

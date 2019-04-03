@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_5.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsomenot5.log
+              target:	rsomenot5/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot5(A,B) :- some5(C,A), all5(C,B)
+rsomenot5(A,B) :- no5(C,B), some5(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.947368421053
+           Precision:	 1.0
+              Recall:	 0.25
+================== STATISTICS ==================
+    Rule evaluations:	34648
+          Total time:	1118.9167s

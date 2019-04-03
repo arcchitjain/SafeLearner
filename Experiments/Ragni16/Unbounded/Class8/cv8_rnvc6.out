@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_6.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rnvc6.log
+              target:	rnvc6/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc6(A,B) :- somenot6(C,A), \+all6(C,B), \+all6(B,C), \+some6(B,C), \+somenot6(B,C)
+rnvc6(A,B) :- somenot6(B,C), \+all6(A,C), \+all6(C,A), \+some6(A,C), \+no6(C,A), \+somenot6(C,A)
+rnvc6(A,B) :- no6(C,A), \+all6(C,B), \+all6(B,C), \+some6(C,B), \+some6(B,C), \+no6(B,C), \+somenot6(B,C)
+rnvc6(A,B) :- no6(A,C), no6(B,C)
+rnvc6(A,B) :- some6(A,C), some6(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	16277
+          Total time:	275.0958s

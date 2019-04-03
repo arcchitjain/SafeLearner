@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_47.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc47.log
+              target:	rnvc47/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc47(A,B) :- no47(B,C), no47(A,C)
+rnvc47(A,B) :- no47(C,A), no47(C,B)
+rnvc47(A,B) :- somenot47(B,C), somenot47(A,C)
+rnvc47(A,B) :- no47(B,C), no47(C,A)
+rnvc47(A,B) :- somenot47(B,C), somenot47(C,A)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	1882
+          Total time:	40.0252s

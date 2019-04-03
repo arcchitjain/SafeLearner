@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_81.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rall81.log
+              target:	rall81/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall81(A,B) :- no81(A,C), \+some81(C,B), \+no81(C,B), \+somenot81(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.872881355932
+           Precision:	 0.5
+              Recall:	 0.333333333333
+================== STATISTICS ==================
+    Rule evaluations:	60422
+          Total time:	374.7141s

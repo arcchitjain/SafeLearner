@@ -1,0 +1,627 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.711083805663
+[INFO] Computing scores: 0.0682s
+[INFO] Number of examples (M): 112
+[INFO] Positive weight (P): 14.0000
+[INFO] Negative weight (N): 98.0000
+[DEBUG] Best rule so far: rsomenot31(A,B) :- true [0.125]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- true 0.125
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- all31(A,C) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- all31(A,C) (0.2403846153846154, 3.0) > (0.125, 14.0)
+[LVL9] rsomenot31(A,B) :- all31(C,A) 0.0 (1.0, 14.0, 84.0, 13.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B) 0.0 (1.0, 14.0, 84.0, 13.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C) 0.208333333333 (3.0, 11.0, 87.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C) 0.208333333333 (3.0, 11.0, 87.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A) 0.141666666667 (2.0, 12.0, 86.0, 12.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B) 0.141666666667 (2.0, 12.0, 86.0, 12.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C) 0.141666666667 (2.0, 12.0, 86.0, 12.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(C,B) 0.0 (1.0, 14.0, 84.0, 13.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C) 0.1953125 (3.0, 12.0, 86.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C) 0.1953125 (3.0, 12.0, 86.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A) 0.151785714286 (2.0, 11.0, 87.0, 12.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B) 0.151785714286 (2.0, 11.0, 87.0, 12.0) 0.708333333333 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- all31(A,C) [0.240384615385]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- all31(A,C) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(A,C) 0.208333333333
+[DEBUG] rsomenot31(A,B) :- some31(B,C) 0.208333333333
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C) 0.1953125
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C) 0.1953125
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A) 0.151785714286
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B) 0.151785714286
+[DEBUG] rsomenot31(A,B) :- some31(C,A) 0.141666666667
+[DEBUG] rsomenot31(A,B) :- some31(C,B) 0.141666666667
+[DEBUG] rsomenot31(A,B) :- no31(B,C) 0.141666666667
+[DEBUG] rsomenot31(A,B) :- all31(C,A) 0.0
+[DEBUG] rsomenot31(A,B) :- all31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- no31(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- all31(A,C), some31(C,B) 0.5625 (1.0, 0.0, 98.0, 13.0) 0.5625 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot31(A,B) :- all31(A,C), some31(C,B) (0.5625, 1.0) > (0.2403846153846154, 3.0)
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.284090909091 (3.0, 7.0, 91.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.284090909091 (3.0, 7.0, 91.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.284090909091 (3.0, 7.0, 91.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+somenot31(C,B) 0.193181818182 (2.0, 8.0, 90.0, 12.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.284090909091 (3.0, 7.0, 91.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), somenot31(B,C) 0.708333333333 (2.0, 0.0, 98.0, 12.0) 0.708333333333 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot31(A,B) :- some31(A,C), somenot31(B,C) (0.7083333333333334, 2.0) > (0.5625, 1.0)
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+all31(C,B) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+all31(B,C) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+some31(C,B) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+some31(B,C) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+no31(B,C) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+somenot31(C,B) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.240384615385 (3.0, 9.0, 89.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.208333333333 (3.0, 11.0, 87.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), \+all31(A,C) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), \+all31(C,A) 0.208333333333 (3.0, 11.0, 87.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), \+some31(C,A) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), \+no31(A,C) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), \+no31(C,A) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), \+somenot31(A,C) 0.223214285714 (3.0, 10.0, 88.0, 11.0) 0.78125 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- some31(A,C), somenot31(B,C) [0.708333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.284090909091
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.284090909091
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.284090909091
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.284090909091
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+all31(C,B) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+some31(C,B) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+some31(B,C) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+no31(B,C) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.240384615385
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+all31(B,C) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+somenot31(C,B) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), \+all31(A,C) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), \+some31(C,A) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), \+no31(A,C) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), \+no31(C,A) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), \+somenot31(A,C) 0.223214285714
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.208333333333
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), \+all31(C,A) 0.208333333333
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+somenot31(C,B) 0.193181818182
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot31(A,B) :- some31(A,C), somenot31(B,C) 0.892857142857
+[DEBUG] Best rule so far: rsomenot31(A,B) :- true [0.109090909091]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- true 0.109090909091
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- all31(A,C) 0.239160839161 (5.0, 9.0, 89.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- all31(A,C) (0.23916083916083913, 5.0) > (0.1090909090909091, 14.0)
+[LVL9] rsomenot31(A,B) :- all31(C,A) 0.0 (3.0, 14.0, 84.0, 11.0) 0.554545454545 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B) 0.0 (3.0, 14.0, 84.0, 11.0) 0.554545454545 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C) 0.0 (3.0, 11.0, 87.0, 11.0) 0.554545454545 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C) 0.207272727273 (5.0, 11.0, 87.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A) 0.140606060606 (4.0, 12.0, 86.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B) 0.140606060606 (4.0, 12.0, 86.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C) 0.140606060606 (4.0, 12.0, 86.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(C,B) 0.0 (3.0, 14.0, 84.0, 11.0) 0.554545454545 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C) 0.194318181818 (5.0, 12.0, 86.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C) 0.0 (3.0, 12.0, 86.0, 11.0) 0.554545454545 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- all31(A,C) [0.239160839161]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- all31(A,C) 0.239160839161
+[DEBUG] rsomenot31(A,B) :- some31(B,C) 0.207272727273
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C) 0.194318181818
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- some31(C,A) 0.140606060606
+[DEBUG] rsomenot31(A,B) :- some31(C,B) 0.140606060606
+[DEBUG] rsomenot31(A,B) :- no31(B,C) 0.140606060606
+[DEBUG] rsomenot31(A,B) :- all31(C,A) 0.0
+[DEBUG] rsomenot31(A,B) :- all31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- some31(A,C) 0.0
+[DEBUG] rsomenot31(A,B) :- no31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- all31(A,C), some31(C,B) 0.554545454545 (3.0, 0.0, 98.0, 11.0) 0.554545454545 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsomenot31(A,B) :- all31(A,C), some31(C,B) (0.5545454545454546, 3.0) > (0.23916083916083913, 5.0)
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.282644628099 (5.0, 7.0, 91.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.282644628099 (5.0, 7.0, 91.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.282644628099 (5.0, 7.0, 91.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+somenot31(C,B) 0.19173553719 (4.0, 8.0, 90.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.282644628099 (5.0, 7.0, 91.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+all31(C,A) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.239160839161 (5.0, 9.0, 89.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+some31(C,A) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.239160839161 (5.0, 9.0, 89.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.239160839161 (5.0, 9.0, 89.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.239160839161 (5.0, 9.0, 89.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.222077922078 (5.0, 10.0, 88.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.207272727273 (5.0, 11.0, 87.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.222077922078 (5.0, 10.0, 88.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+some31(C,B) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.222077922078 (5.0, 10.0, 88.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.222077922078 (5.0, 10.0, 88.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+no31(B,C) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(C,B) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.222077922078 (5.0, 10.0, 88.0, 9.0) 0.777272727273 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+all31(C,B) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+all31(B,C) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+some31(C,B) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+some31(B,C) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+no31(C,B) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+all31(C,A) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+some31(A,C) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+some31(C,A) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+no31(A,C) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+no31(C,A) 0.175757575758 (4.0, 9.0, 89.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+all31(B,C) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+some31(C,B) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+no31(C,B) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+no31(B,C) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+somenot31(C,B) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+somenot31(B,C) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), \+all31(C,A) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), \+some31(A,C) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), \+some31(C,A) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), \+no31(A,C) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), \+no31(C,A) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), \+somenot31(C,A) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+all31(A,C) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+all31(C,A) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+some31(A,C) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+some31(C,A) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+no31(A,C) 0.162237762238 (4.0, 10.0, 88.0, 10.0) 0.70303030303 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+no31(C,A) 0.150649350649 (4.0, 11.0, 87.0, 10.0) 0.70303030303 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- all31(A,C), some31(C,B) [0.554545454545]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.282644628099
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.282644628099
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.282644628099
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.282644628099
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.239160839161
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.239160839161
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.239160839161
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.239160839161
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.222077922078
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.222077922078
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.222077922078
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.222077922078
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.222077922078
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.207272727273
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+somenot31(C,B) 0.19173553719
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+all31(C,B) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+all31(B,C) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+some31(C,B) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+no31(C,B) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+all31(C,A) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+some31(C,A) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+no31(A,C) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+no31(C,A) 0.175757575758
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+all31(C,A) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+some31(C,A) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+some31(B,C) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+some31(A,C) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+some31(C,B) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+no31(C,B) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+somenot31(C,B) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+somenot31(B,C) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,B), \+all31(C,A) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,B), \+some31(A,C) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,B), \+some31(C,A) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,B), \+no31(C,A) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- some31(C,B), \+somenot31(C,A) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+all31(A,C) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+all31(C,A) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+some31(A,C) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+no31(A,C) 0.162237762238
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+some31(C,B) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+no31(B,C) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(C,B) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+all31(B,C) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+no31(B,C) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- some31(C,B), \+no31(A,C) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+some31(C,A) 0.150649350649
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+no31(C,A) 0.150649350649
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot31(A,B) :- all31(A,C), some31(C,B) 0.901785714286
+[DEBUG] Best rule so far: rsomenot31(A,B) :- true [0.100917431193]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- true 0.100917431193
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- all31(A,C) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- all31(A,C) (0.1750764525993884, 5.0) > (0.10091743119266056, 14.0)
+[LVL9] rsomenot31(A,B) :- all31(C,A) 0.0 (4.0, 14.0, 84.0, 10.0) 0.550458715596 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B) 0.0 (4.0, 14.0, 84.0, 10.0) 0.550458715596 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C) 0.0 (4.0, 11.0, 87.0, 10.0) 0.550458715596 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C) 0.206727828746 (6.0, 11.0, 87.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- some31(B,C) (0.20672782874617737, 6.0) > (0.1750764525993884, 5.0)
+[LVL9] rsomenot31(A,B) :- some31(C,A) 0.14006116208 (5.0, 12.0, 86.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B) 0.0 (4.0, 12.0, 86.0, 10.0) 0.550458715596 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C) 0.14006116208 (5.0, 12.0, 86.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(C,B) 0.0 (4.0, 14.0, 84.0, 10.0) 0.550458715596 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C) 0.19380733945 (6.0, 12.0, 86.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C) 0.0 (4.0, 12.0, 86.0, 10.0) 0.550458715596 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- some31(B,C) [0.206727828746]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- some31(B,C) 0.206727828746
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C) 0.19380733945
+[DEBUG] rsomenot31(A,B) :- all31(A,C) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- some31(C,A) 0.14006116208
+[DEBUG] rsomenot31(A,B) :- no31(B,C) 0.14006116208
+[DEBUG] rsomenot31(A,B) :- all31(C,A) 0.0
+[DEBUG] rsomenot31(A,B) :- all31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- some31(A,C) 0.0
+[DEBUG] rsomenot31(A,B) :- some31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- no31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- some31(B,C), all31(A,C) 0.550458715596 (4.0, 0.0, 98.0, 10.0) 0.550458715596 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rsomenot31(A,B) :- some31(B,C), all31(A,C) (0.5504587155963303, 4.0) > (0.20672782874617737, 6.0)
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+all31(C,A) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.238532110092 (6.0, 9.0, 89.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+some31(C,A) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.238532110092 (6.0, 9.0, 89.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.238532110092 (6.0, 9.0, 89.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.238532110092 (6.0, 9.0, 89.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.221494102228 (6.0, 10.0, 88.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.206727828746 (6.0, 11.0, 87.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.221494102228 (6.0, 10.0, 88.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+some31(C,B) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.221494102228 (6.0, 10.0, 88.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.221494102228 (6.0, 10.0, 88.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+no31(B,C) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(C,B) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.221494102228 (6.0, 10.0, 88.0, 8.0) 0.775229357798 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.210091743119 (5.0, 7.0, 91.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.210091743119 (5.0, 7.0, 91.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.210091743119 (5.0, 7.0, 91.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.210091743119 (5.0, 7.0, 91.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+all31(C,B) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+all31(B,C) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+some31(C,B) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+some31(B,C) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+no31(C,B) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+all31(C,A) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+some31(A,C) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+some31(C,A) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+no31(A,C) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+no31(C,A) 0.175076452599 (5.0, 9.0, 89.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+all31(B,C) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+some31(C,B) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+no31(C,B) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+no31(B,C) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+somenot31(C,B) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+somenot31(B,C) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+all31(A,C) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+all31(C,A) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+some31(A,C) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+some31(C,A) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+no31(A,C) 0.161609033169 (5.0, 10.0, 88.0, 9.0) 0.700305810398 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+no31(C,A) 0.150065530799 (5.0, 11.0, 87.0, 9.0) 0.700305810398 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- some31(B,C), all31(A,C) [0.550458715596]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.238532110092
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.238532110092
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.238532110092
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.238532110092
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.221494102228
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.221494102228
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.221494102228
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.221494102228
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.221494102228
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.210091743119
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.210091743119
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.210091743119
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.210091743119
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.206727828746
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+all31(C,B) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+all31(B,C) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+some31(C,B) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+no31(C,B) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+all31(C,A) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+some31(C,A) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+no31(A,C) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+no31(C,A) 0.175076452599
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+all31(C,A) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+some31(C,A) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+some31(B,C) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+some31(A,C) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+some31(C,B) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+no31(C,B) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+somenot31(C,B) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+somenot31(B,C) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+all31(A,C) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+all31(C,A) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+some31(A,C) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+no31(A,C) 0.161609033169
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+some31(C,B) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+no31(B,C) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(C,B) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+all31(B,C) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+no31(B,C) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+some31(C,A) 0.150065530799
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+no31(C,A) 0.150065530799
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot31(A,B) :- some31(B,C), all31(A,C) 0.910714285714
+[DEBUG] Best rule so far: rsomenot31(A,B) :- true [0.0925925925926]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- true 0.0925925925926
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- all31(A,C) 0.0993265993266 (5.0, 9.0, 89.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- all31(A,C) (0.09932659932659932, 5.0) > (0.0925925925925926, 14.0)
+[LVL9] rsomenot31(A,B) :- all31(C,A) 0.0 (5.0, 14.0, 84.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B) 0.0 (5.0, 14.0, 84.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C) 0.0 (5.0, 11.0, 87.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- some31(B,C) (0.14947089947089948, 6.0) > (0.09932659932659932, 5.0)
+[LVL9] rsomenot31(A,B) :- some31(C,A) 0.13950617284 (6.0, 12.0, 86.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C) 0.13950617284 (6.0, 12.0, 86.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(C,B) 0.0 (5.0, 14.0, 84.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C) 0.193287037037 (7.0, 12.0, 86.0, 7.0) 0.773148148148 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- somenot31(A,C) (0.19328703703703703, 7.0) > (0.14947089947089948, 6.0)
+[LVL9] rsomenot31(A,B) :- somenot31(B,C) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- somenot31(A,C) [0.193287037037]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C) 0.193287037037
+[DEBUG] rsomenot31(A,B) :- some31(B,C) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- some31(C,A) 0.13950617284
+[DEBUG] rsomenot31(A,B) :- no31(B,C) 0.13950617284
+[DEBUG] rsomenot31(A,B) :- all31(A,C) 0.0993265993266
+[DEBUG] rsomenot31(A,B) :- all31(C,A) 0.0
+[DEBUG] rsomenot31(A,B) :- all31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- some31(A,C) 0.0
+[DEBUG] rsomenot31(A,B) :- some31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- no31(C,B) 0.0
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), some31(C,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] BETTER RULE rsomenot31(A,B) :- somenot31(A,C), some31(C,B) (0.36419753086419754, 5.0) > (0.19328703703703703, 7.0)
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), some31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), some31(D,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), no31(B,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), no31(B,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), no31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), somenot31(C,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), somenot31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), somenot31(D,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.206172839506 (7.0, 11.0, 87.0, 7.0) 0.773148148148 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.220899470899 (7.0, 10.0, 88.0, 7.0) 0.773148148148 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+some31(C,B) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.220899470899 (7.0, 10.0, 88.0, 7.0) 0.773148148148 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.220899470899 (7.0, 10.0, 88.0, 7.0) 0.773148148148 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+no31(B,C) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(C,B) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.220899470899 (7.0, 10.0, 88.0, 7.0) 0.773148148148 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), all31(C,A) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), all31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), all31(D,A) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), some31(C,A) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), some31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), some31(D,A) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+all31(C,A) 0.0 (5.0, 10.0, 88.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+some31(C,A) 0.0 (5.0, 10.0, 88.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), no31(B,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), no31(B,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), no31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), somenot31(B,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), somenot31(B,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), somenot31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+all31(C,B) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+all31(B,C) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+some31(C,B) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+some31(B,C) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+no31(C,B) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+no31(B,C) 0.0 (5.0, 10.0, 88.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,A), \+somenot31(B,C) 0.0 (5.0, 10.0, 88.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), all31(A,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), all31(A,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), all31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), somenot31(A,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), somenot31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+all31(A,C) 0.0 (5.0, 10.0, 88.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+all31(C,A) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+some31(A,C) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+some31(C,A) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+no31(A,C) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+no31(C,A) 0.174382716049 (6.0, 9.0, 89.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(C,B), \+somenot31(A,C) 0.0 (5.0, 10.0, 88.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), all31(C,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), all31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), all31(D,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), some31(B,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), some31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+all31(C,B) 0.0 (5.0, 11.0, 87.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+all31(B,C) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+some31(C,B) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+some31(B,C) 0.0 (5.0, 11.0, 87.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+no31(C,B) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+no31(B,C) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+somenot31(C,B) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,A), \+somenot31(B,C) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), somenot31(A,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), somenot31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), somenot31(D,A) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), somenot31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+all31(A,C) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+all31(C,A) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+some31(A,C) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+some31(C,A) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+no31(A,C) 0.160968660969 (6.0, 10.0, 88.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+no31(C,A) 0.149470899471 (6.0, 11.0, 87.0, 8.0) 0.697530864198 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+somenot31(A,C) 0.0 (5.0, 11.0, 87.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(B,C), \+somenot31(C,A) 0.0 (5.0, 11.0, 87.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), somenot31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), somenot31(D,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.121399176955 (5.0, 7.0, 91.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.121399176955 (5.0, 7.0, 91.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.121399176955 (5.0, 7.0, 91.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.121399176955 (5.0, 7.0, 91.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), some31(B,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), some31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), \+all31(C,B) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), \+all31(B,C) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), \+some31(C,B) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), \+no31(C,B) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), \+no31(B,C) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), \+somenot31(C,B) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,A), \+somenot31(B,C) 0.0 (5.0, 13.0, 85.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B), some31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B), some31(D,A) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B), \+all31(A,C) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B), \+all31(C,A) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- all31(C,B), \+some31(A,C) 0.0 (5.0, 12.0, 86.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), no31(C,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), no31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), no31(D,B) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+all31(C,B) 0.0993265993266 (5.0, 9.0, 89.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+some31(C,B) 0.0993265993266 (5.0, 9.0, 89.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+some31(B,C) 0.0993265993266 (5.0, 9.0, 89.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(A,C), \+no31(B,C) 0.0993265993266 (5.0, 9.0, 89.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), somenot31(A,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- some31(C,B), somenot31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(C,B), some31(A,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- no31(C,B), some31(D,C) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), somenot31(C,D) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[LVL9] rsomenot31(A,B) :- somenot31(B,C), somenot31(D,A) 0.364197530864 (5.0, 1.0, 97.0, 9.0) 0.546296296296 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot31(A,B) :- somenot31(A,C), some31(C,B) [0.364197530864]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), some31(C,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), some31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), some31(D,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), no31(B,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), no31(B,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), no31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), somenot31(C,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), somenot31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), somenot31(D,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(B,C), all31(C,A) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(B,C), all31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(B,C), all31(D,A) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(B,C), some31(C,A) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(B,C), some31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(B,C), some31(D,A) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), no31(B,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), no31(B,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), no31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), somenot31(B,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), somenot31(B,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), somenot31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), all31(A,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), all31(A,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), all31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), somenot31(A,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), somenot31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(C,A), all31(C,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(C,A), all31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(C,A), all31(D,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(C,A), some31(B,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(C,A), some31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- no31(B,C), somenot31(A,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- no31(B,C), somenot31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- no31(B,C), somenot31(D,A) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- no31(B,C), somenot31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- all31(A,C), somenot31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- all31(A,C), somenot31(D,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- all31(C,A), some31(B,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- all31(C,A), some31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- all31(C,B), some31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- all31(C,B), some31(D,A) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(A,C), no31(C,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(A,C), no31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(A,C), no31(D,B) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(C,B), somenot31(A,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- some31(C,B), somenot31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- no31(C,B), some31(A,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- no31(C,B), some31(D,C) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), somenot31(C,D) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(B,C), somenot31(D,A) 0.364197530864
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(B,C) 0.220899470899
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+some31(B,C) 0.220899470899
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+no31(C,B) 0.220899470899
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(B,C) 0.220899470899
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+all31(C,B) 0.206172839506
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+some31(A,C) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(A,C) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+no31(C,A) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(A,C) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+all31(C,B) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+all31(B,C) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+some31(C,B) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+no31(C,B) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+all31(C,A) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+some31(C,A) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+no31(A,C) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+no31(C,A) 0.174382716049
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+somenot31(C,A) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+some31(B,C) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+some31(A,C) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+some31(C,B) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+no31(C,B) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+somenot31(C,B) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+somenot31(B,C) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+all31(A,C) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+all31(C,A) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+some31(A,C) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+no31(A,C) 0.160968660969
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+some31(C,B) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+no31(B,C) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- somenot31(A,C), \+somenot31(C,B) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+all31(B,C) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+no31(B,C) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+some31(C,A) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- no31(B,C), \+no31(C,A) 0.149470899471
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+all31(C,B) 0.121399176955
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(C,B) 0.121399176955
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+no31(B,C) 0.121399176955
+[DEBUG] rsomenot31(A,B) :- all31(A,C), \+somenot31(B,C) 0.121399176955
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+all31(C,B) 0.0993265993266
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+some31(C,B) 0.0993265993266
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+some31(B,C) 0.0993265993266
+[DEBUG] rsomenot31(A,B) :- some31(A,C), \+no31(B,C) 0.0993265993266
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+all31(C,A) 0.0
+[DEBUG] rsomenot31(A,B) :- some31(B,C), \+some31(C,A) 0.0
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+no31(B,C) 0.0
+[DEBUG] rsomenot31(A,B) :- somenot31(C,A), \+somenot31(B,C) 0.0
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+all31(A,C) 0.0
+[DEBUG] rsomenot31(A,B) :- somenot31(C,B), \+somenot31(A,C) 0.0
+[DEBUG] rsomenot31(A,B) :- some31(C,A), \+all31(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot31(A,B) :- somenot31(A,C), some31(C,B) 0.910714285714

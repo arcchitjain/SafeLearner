@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_71.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rsome71.log
+              target:	rsome71/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome71(A,B) :- all71(C,A), somenot71(B,C)
+rsome71(A,B) :- some71(C,B), no71(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.879032258065
+           Precision:	 1.0
+              Recall:	 0.166666666667
+================== STATISTICS ==================
+    Rule evaluations:	46751
+          Total time:	1750.8174s

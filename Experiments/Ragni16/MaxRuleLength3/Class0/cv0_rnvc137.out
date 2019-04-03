@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_137.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc137.log
+              target:	rnvc137/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc137(A,B) :- some137(C,A), \+all137(C,B)
+rnvc137(A,B) :- no137(C,B), \+somenot137(A,C)
+rnvc137(A,B) :- somenot137(C,A), \+all137(C,B)
+rnvc137(A,B) :- some137(A,C), \+all137(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.785714285714
+           Precision:	 0.85
+              Recall:	 0.653846153846
+================== STATISTICS ==================
+    Rule evaluations:	4808
+          Total time:	45.3856s

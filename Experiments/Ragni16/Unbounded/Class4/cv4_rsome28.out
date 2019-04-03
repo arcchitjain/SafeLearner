@@ -1,0 +1,22 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_28.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsome28.log
+              target:	rsome28/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome28(A,B) :- all28(C,B), \+all28(A,C), \+some28(C,A), \+no28(C,A), \+somenot28(C,A), \+all28(C,A)
+rsome28(A,B) :- some28(C,A), somenot28(B,C)
+rsome28(A,B) :- no28(C,B), no28(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.847457627119
+           Precision:	 0.888888888889
+              Recall:	 0.32
+================== STATISTICS ==================
+    Rule evaluations:	81571
+          Total time:	938.7158s

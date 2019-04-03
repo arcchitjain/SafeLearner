@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_50.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsomenot50.log
+              target:	rsomenot50/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot50(A,B) :- no50(C,B), somenot50(C,A)
+rsomenot50(A,B) :- some50(B,C), no50(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.894736842105
+           Precision:	 1.0
+              Recall:	 0.142857142857
+================== STATISTICS ==================
+    Rule evaluations:	59977
+          Total time:	629.3188s

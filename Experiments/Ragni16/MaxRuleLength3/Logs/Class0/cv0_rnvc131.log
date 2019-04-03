@@ -1,0 +1,146 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.409482069049
+[INFO] Computing scores: 0.0193s
+[INFO] Number of examples (M): 60
+[INFO] Positive weight (P): 4.0000
+[INFO] Negative weight (N): 56.0000
+[DEBUG] Best rule so far: rnvc131(A,B) :- true [0.0666666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- true 0.0666666666667
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- some131(C,B) 0.118518518519 (1.0, 7.0, 49.0, 3.0) 0.533333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- some131(C,B) (0.11851851851851852, 1.0) > (0.06666666666666667, 4.0)
+[LVL9] rnvc131(A,B) :- no131(A,C) 0.22962962963 (2.0, 6.0, 50.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- no131(A,C) (0.22962962962962966, 2.0) > (0.11851851851851852, 1.0)
+[LVL9] rnvc131(A,B) :- no131(B,C) 0.118518518519 (1.0, 7.0, 49.0, 3.0) 0.533333333333 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(A,C) 0.133333333333 (1.0, 6.0, 50.0, 3.0) 0.533333333333 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C) 0.22962962963 (2.0, 6.0, 50.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(C,A) 0.118518518519 (1.0, 7.0, 49.0, 3.0) 0.533333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc131(A,B) :- no131(A,C) [0.22962962963]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- no131(A,C) 0.22962962963
+[DEBUG] rnvc131(A,B) :- somenot131(B,C) 0.22962962963
+[DEBUG] rnvc131(A,B) :- somenot131(A,C) 0.133333333333
+[DEBUG] rnvc131(A,B) :- some131(C,B) 0.118518518519
+[DEBUG] rnvc131(A,B) :- no131(B,C) 0.118518518519
+[DEBUG] rnvc131(A,B) :- somenot131(C,A) 0.118518518519
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- no131(A,C), no131(B,C) 0.533333333333 (1.0, 0.0, 56.0, 3.0) 0.533333333333 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc131(A,B) :- no131(A,C), no131(B,C) (0.5333333333333333, 1.0) > (0.22962962962962966, 2.0)
+[LVL9] rnvc131(A,B) :- no131(A,C), \+all131(C,B) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- no131(A,C), \+all131(B,C) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- no131(A,C), \+some131(C,B) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- no131(A,C), \+some131(B,C) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- no131(A,C), \+no131(C,B) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- no131(A,C), \+somenot131(C,B) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+all131(A,C) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+all131(C,A) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+some131(A,C) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+some131(C,A) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+no131(C,A) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.258333333333 (2.0, 5.0, 51.0, 2.0) 0.688888888889 [ACCEPT]
+[DEBUG] Best rule so far: rnvc131(A,B) :- no131(A,C), no131(B,C) [0.533333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- no131(A,C), \+all131(C,B) 0.258333333333
+[DEBUG] rnvc131(A,B) :- no131(A,C), \+all131(B,C) 0.258333333333
+[DEBUG] rnvc131(A,B) :- no131(A,C), \+some131(C,B) 0.258333333333
+[DEBUG] rnvc131(A,B) :- no131(A,C), \+some131(B,C) 0.258333333333
+[DEBUG] rnvc131(A,B) :- no131(A,C), \+no131(C,B) 0.258333333333
+[DEBUG] rnvc131(A,B) :- no131(A,C), \+somenot131(C,B) 0.258333333333
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+all131(A,C) 0.258333333333
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+all131(C,A) 0.258333333333
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+some131(A,C) 0.258333333333
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+some131(C,A) 0.258333333333
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+no131(C,A) 0.258333333333
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.258333333333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc131(A,B) :- no131(A,C), no131(B,C) 0.95
+[DEBUG] Best rule so far: rnvc131(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- some131(C,B) 0.116760828625 (2.0, 7.0, 49.0, 2.0) 0.525423728814 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- some131(C,B) (0.11676082862523542, 2.0) > (0.0, 4.0)
+[LVL9] rnvc131(A,B) :- no131(A,C) 0.131355932203 (2.0, 6.0, 50.0, 2.0) 0.525423728814 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- no131(A,C) (0.13135593220338984, 2.0) > (0.11676082862523542, 2.0)
+[LVL9] rnvc131(A,B) :- somenot131(A,C) 0.131355932203 (2.0, 6.0, 50.0, 2.0) 0.525423728814 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C) 0.227871939736 (3.0, 6.0, 50.0, 1.0) 0.683615819209 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- somenot131(B,C) (0.2278719397363465, 3.0) > (0.13135593220338984, 2.0)
+[LVL9] rnvc131(A,B) :- somenot131(C,A) 0.116760828625 (2.0, 7.0, 49.0, 2.0) 0.525423728814 [ACCEPT]
+[DEBUG] Best rule so far: rnvc131(A,B) :- somenot131(B,C) [0.227871939736]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- somenot131(B,C) 0.227871939736
+[DEBUG] rnvc131(A,B) :- no131(A,C) 0.131355932203
+[DEBUG] rnvc131(A,B) :- somenot131(A,C) 0.131355932203
+[DEBUG] rnvc131(A,B) :- some131(C,B) 0.116760828625
+[DEBUG] rnvc131(A,B) :- somenot131(C,A) 0.116760828625
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- somenot131(B,C), no131(A,C) 0.525423728814 (2.0, 0.0, 56.0, 2.0) 0.525423728814 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc131(A,B) :- somenot131(B,C), no131(A,C) (0.5254237288135594, 2.0) > (0.2278719397363465, 3.0)
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+all131(A,C) 0.256355932203 (3.0, 5.0, 51.0, 1.0) 0.683615819209 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+all131(C,A) 0.256355932203 (3.0, 5.0, 51.0, 1.0) 0.683615819209 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+some131(A,C) 0.256355932203 (3.0, 5.0, 51.0, 1.0) 0.683615819209 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+some131(C,A) 0.256355932203 (3.0, 5.0, 51.0, 1.0) 0.683615819209 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+no131(C,A) 0.256355932203 (3.0, 5.0, 51.0, 1.0) 0.683615819209 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.256355932203 (3.0, 5.0, 51.0, 1.0) 0.683615819209 [ACCEPT]
+[DEBUG] Best rule so far: rnvc131(A,B) :- somenot131(B,C), no131(A,C) [0.525423728814]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+all131(A,C) 0.256355932203
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+all131(C,A) 0.256355932203
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+some131(A,C) 0.256355932203
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+some131(C,A) 0.256355932203
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+no131(C,A) 0.256355932203
+[DEBUG] rnvc131(A,B) :- somenot131(B,C), \+somenot131(C,A) 0.256355932203
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc131(A,B) :- somenot131(B,C), no131(A,C) 0.966666666667
+[DEBUG] Best rule so far: rnvc131(A,B) :- true [0.0344827586207]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- true 0.0344827586207
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- some131(C,B) 0.114942528736 (3.0, 7.0, 49.0, 1.0) 0.51724137931 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- some131(C,B) (0.1149425287356322, 3.0) > (0.034482758620689655, 4.0)
+[LVL9] rnvc131(A,B) :- somenot131(A,C) 0.129310344828 (3.0, 6.0, 50.0, 1.0) 0.51724137931 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- somenot131(A,C) (0.12931034482758622, 3.0) > (0.1149425287356322, 3.0)
+[LVL9] rnvc131(A,B) :- somenot131(B,C) 0.129310344828 (3.0, 6.0, 50.0, 1.0) 0.51724137931 [ACCEPT]
+[LVL9] rnvc131(A,B) :- somenot131(C,A) 0.114942528736 (3.0, 7.0, 49.0, 1.0) 0.51724137931 [ACCEPT]
+[DEBUG] Best rule so far: rnvc131(A,B) :- somenot131(A,C) [0.129310344828]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- somenot131(A,C) 0.129310344828
+[DEBUG] rnvc131(A,B) :- somenot131(B,C) 0.129310344828
+[DEBUG] rnvc131(A,B) :- some131(C,B) 0.114942528736
+[DEBUG] rnvc131(A,B) :- somenot131(C,A) 0.114942528736
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- somenot131(A,C), somenot131(B,C) 0.51724137931 (3.0, 0.0, 56.0, 1.0) 0.51724137931 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc131(A,B) :- somenot131(A,C), somenot131(B,C) (0.5172413793103449, 3.0) > (0.12931034482758622, 3.0)
+[INFO] RULE LEARNED: rnvc131(A,B) :- somenot131(A,C), somenot131(B,C) 0.983333333333
+[DEBUG] Best rule so far: rnvc131(A,B) :- true [0.0175438596491]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- true 0.0175438596491
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- some131(C,B) 0.11306042885 (4.0, 7.0, 49.0, 0.0) 0.508771929825 [ACCEPT]
+[LVL9] BETTER RULE rnvc131(A,B) :- some131(C,B) (0.11306042884990254, 4.0) > (0.01754385964912281, 4.0)
+[LVL9] rnvc131(A,B) :- somenot131(C,A) 0.11306042885 (4.0, 7.0, 49.0, 0.0) 0.508771929825 [ACCEPT]
+[DEBUG] Best rule so far: rnvc131(A,B) :- some131(C,B) [0.11306042885]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- some131(C,B) 0.11306042885
+[DEBUG] rnvc131(A,B) :- somenot131(C,A) 0.11306042885
+[DEBUG] ==================================
+[LVL9] rnvc131(A,B) :- some131(C,B), somenot131(C,A) 0.508771929825 (4.0, 0.0, 56.0, 0.0) 0.508771929825 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rnvc131(A,B) :- some131(C,B), somenot131(C,A) (0.5087719298245614, 4.0) > (0.11306042884990254, 4.0)
+[INFO] RULE LEARNED: rnvc131(A,B) :- some131(C,B), somenot131(C,A) 1.0
+[DEBUG] Best rule so far: rnvc131(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc131(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc131(A,B) :- true 1.0

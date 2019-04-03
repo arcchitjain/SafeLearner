@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_15.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc15.log
+              target:	rnvc15/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc15(A,B) :- somenot15(C,B), \+all15(C,A), \+some15(A,C), \+somenot15(C,A)
+rnvc15(A,B) :- somenot15(C,A), \+some15(C,B), \+some15(B,C), \+no15(B,C), \+somenot15(C,B), \+somenot15(B,C)
+rnvc15(A,B) :- all15(A,C), \+all15(C,B), \+all15(B,C), \+no15(C,B), \+no15(B,C)
+rnvc15(A,B) :- no15(A,C), \+all15(C,B), \+no15(C,B), \+no15(B,C), \+somenot15(B,C)
+rnvc15(A,B) :- some15(C,B), some15(C,A)
+rnvc15(A,B) :- somenot15(A,C), no15(B,C)
+rnvc15(A,B) :- some15(A,C), somenot15(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	15305
+          Total time:	611.2545s

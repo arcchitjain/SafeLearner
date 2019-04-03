@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_103.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rall103.log
+              target:	rall103/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall103(A,B) :- no103(B,C), \+some103(C,A), \+somenot103(C,A), \+all103(A,C), \+somenot103(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.916666666667
+           Precision:	 0.5
+              Recall:	 0.444444444444
+================== STATISTICS ==================
+    Rule evaluations:	46673
+          Total time:	515.4463s

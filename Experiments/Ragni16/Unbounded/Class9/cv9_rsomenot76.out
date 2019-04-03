@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_76.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsomenot76.log
+              target:	rsomenot76/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot76(A,B) :- all76(C,A), \+no76(C,B), \+no76(B,C), \+all76(B,C), \+all76(C,B), \+some76(C,B), \+somenot76(C,B)
+rsomenot76(A,B) :- some76(B,C), all76(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.853448275862
+           Precision:	 1.0
+              Recall:	 0.15
+================== STATISTICS ==================
+    Rule evaluations:	92070
+          Total time:	4417.0295s

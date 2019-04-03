@@ -1,0 +1,453 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.0542063887145
+[INFO] Computing scores: 0.0291s
+[INFO] Number of examples (M): 60
+[INFO] Positive weight (P): 31.0000
+[INFO] Negative weight (N): 29.0000
+[DEBUG] Best rule so far: rnvc74(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- all74(B,C) 0.0 (1.0, 6.0, 23.0, 30.0) 0.758333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- all74(C,A) 0.0 (1.0, 6.0, 23.0, 30.0) 0.758333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- all74(C,B) 0.0 (1.0, 5.0, 24.0, 30.0) 0.758333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(A,C) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(A,C) (0.6895833333333333, 5.0) > (0.0, 31.0)
+[LVL9] rnvc74(A,B) :- some74(B,C) 0.0 (4.0, 4.0, 25.0, 27.0) 0.903333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A) 0.612962962963 (5.0, 3.0, 26.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B) 0.612962962963 (5.0, 3.0, 26.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(A,C) 0.724074074074 (6.0, 2.0, 27.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- no74(A,C) (0.7240740740740741, 6.0) > (0.6895833333333333, 5.0)
+[LVL9] rnvc74(A,B) :- no74(B,C) 0.724074074074 (6.0, 2.0, 27.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A) 0.0 (3.0, 4.0, 25.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B) 0.0 (3.0, 4.0, 25.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C) 0.612962962963 (5.0, 3.0, 26.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C) 0.724074074074 (6.0, 2.0, 27.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,A) 0.724074074074 (6.0, 2.0, 27.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B) 0.612962962963 (5.0, 3.0, 26.0, 26.0) 0.919444444444 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- no74(A,C) [0.724074074074]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- no74(A,C) 0.724074074074
+[DEBUG] rnvc74(A,B) :- no74(B,C) 0.724074074074
+[DEBUG] rnvc74(A,B) :- somenot74(B,C) 0.724074074074
+[DEBUG] rnvc74(A,B) :- somenot74(C,A) 0.724074074074
+[DEBUG] rnvc74(A,B) :- some74(A,C) 0.689583333333
+[DEBUG] rnvc74(A,B) :- some74(C,A) 0.612962962963
+[DEBUG] rnvc74(A,B) :- some74(C,B) 0.612962962963
+[DEBUG] rnvc74(A,B) :- somenot74(A,C) 0.612962962963
+[DEBUG] rnvc74(A,B) :- somenot74(C,B) 0.612962962963
+[DEBUG] rnvc74(A,B) :- some74(B,C) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,A) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B) 0.0
+[DEBUG] rnvc74(A,B) :- all74(B,C) 0.0
+[DEBUG] rnvc74(A,B) :- all74(C,A) 0.0
+[DEBUG] rnvc74(A,B) :- all74(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- no74(A,C), all74(C,B) 0.758333333333 (1.0, 0.0, 29.0, 30.0) 0.758333333333 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc74(A,B) :- no74(A,C), all74(C,B) (0.7583333333333333, 1.0) > (0.7240740740740741, 6.0)
+[LVL9] rnvc74(A,B) :- no74(A,C), \+all74(B,C) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- no74(A,C), \+all74(B,C) (0.8145833333333333, 6.0) > (0.7583333333333333, 1.0)
+[LVL9] rnvc74(A,B) :- no74(A,C), \+some74(B,C) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C), \+some74(A,C) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,A), \+all74(C,B) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,A), \+all74(B,C) 0.814583333333 (6.0, 1.0, 28.0, 25.0) 0.930952380952 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(A,C), \+no74(C,B) 0.788095238095 (5.0, 1.0, 28.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(A,C), \+no74(B,C) 0.788095238095 (5.0, 1.0, 28.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.689583333333 (5.0, 2.0, 27.0, 26.0) 0.919444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.564583333333 (4.0, 3.0, 26.0, 27.0) 0.903333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.564583333333 (4.0, 3.0, 26.0, 27.0) 0.903333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+no74(A,C) 0.564583333333 (4.0, 3.0, 26.0, 27.0) 0.903333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.564583333333 (4.0, 3.0, 26.0, 27.0) 0.903333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+all74(A,C) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+some74(A,C) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+some74(C,A) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+somenot74(A,C) 0.0 (3.0, 3.0, 26.0, 28.0) 0.879166666667 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- no74(A,C), \+all74(B,C) [0.814583333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- no74(A,C), \+all74(B,C) 0.814583333333
+[DEBUG] rnvc74(A,B) :- no74(A,C), \+some74(B,C) 0.814583333333
+[DEBUG] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.814583333333
+[DEBUG] rnvc74(A,B) :- no74(B,C), \+some74(A,C) 0.814583333333
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.814583333333
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.814583333333
+[DEBUG] rnvc74(A,B) :- somenot74(C,A), \+all74(C,B) 0.814583333333
+[DEBUG] rnvc74(A,B) :- somenot74(C,A), \+all74(B,C) 0.814583333333
+[DEBUG] rnvc74(A,B) :- some74(A,C), \+no74(C,B) 0.788095238095
+[DEBUG] rnvc74(A,B) :- some74(A,C), \+no74(B,C) 0.788095238095
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.689583333333
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.689583333333
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.689583333333
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.689583333333
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.689583333333
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.689583333333
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.689583333333
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.689583333333
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.689583333333
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.689583333333
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.689583333333
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.689583333333
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.564583333333
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.564583333333
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+no74(A,C) 0.564583333333
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.564583333333
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+all74(A,C) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+some74(A,C) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+some74(C,A) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+somenot74(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc74(A,B) :- no74(A,C), \+all74(B,C) 0.566666666667
+[DEBUG] Best rule so far: rnvc74(A,B) :- true [0.471698113208]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- true 0.471698113208
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- all74(B,C) 0.0 (7.0, 7.0, 22.0, 24.0) 0.735849056604 [ACCEPT]
+[LVL9] rnvc74(A,B) :- all74(C,A) 0.0 (7.0, 7.0, 22.0, 24.0) 0.735849056604 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(A,C) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(A,C) (0.6839622641509434, 11.0) > (0.4716981132075472, 31.0)
+[LVL9] rnvc74(A,B) :- some74(B,C) 0.558962264151 (10.0, 4.0, 25.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A) 0.607966457023 (11.0, 4.0, 25.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B) 0.558962264151 (10.0, 4.0, 25.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A) 0.0 (9.0, 5.0, 24.0, 22.0) 0.867924528302 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B) 0.0 (8.0, 5.0, 24.0, 23.0) 0.823899371069 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C) 0.607966457023 (11.0, 4.0, 25.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,A) 0.719077568134 (12.0, 3.0, 26.0, 19.0) 0.924528301887 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- somenot74(C,A) (0.7190775681341719, 12.0) > (0.6839622641509434, 11.0)
+[LVL9] rnvc74(A,B) :- somenot74(C,B) 0.558962264151 (10.0, 4.0, 25.0, 21.0) 0.894339622642 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- somenot74(C,A) [0.719077568134]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- somenot74(C,A) 0.719077568134
+[DEBUG] rnvc74(A,B) :- some74(A,C) 0.683962264151
+[DEBUG] rnvc74(A,B) :- no74(B,C) 0.683962264151
+[DEBUG] rnvc74(A,B) :- somenot74(B,C) 0.683962264151
+[DEBUG] rnvc74(A,B) :- some74(C,A) 0.607966457023
+[DEBUG] rnvc74(A,B) :- somenot74(A,C) 0.607966457023
+[DEBUG] rnvc74(A,B) :- some74(B,C) 0.558962264151
+[DEBUG] rnvc74(A,B) :- some74(C,B) 0.558962264151
+[DEBUG] rnvc74(A,B) :- somenot74(C,B) 0.558962264151
+[DEBUG] rnvc74(A,B) :- no74(C,A) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B) 0.0
+[DEBUG] rnvc74(A,B) :- all74(B,C) 0.0
+[DEBUG] rnvc74(A,B) :- all74(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- somenot74(C,A), some74(C,B) 0.735849056604 (7.0, 1.0, 28.0, 24.0) 0.735849056604 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- somenot74(C,A), some74(C,B) (0.7358490566037736, 7.0) > (0.7190775681341719, 12.0)
+[LVL9] rnvc74(A,B) :- somenot74(C,A), \+all74(C,B) 0.808962264151 (12.0, 2.0, 27.0, 19.0) 0.924528301887 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- somenot74(C,A), \+all74(C,B) (0.8089622641509434, 12.0) > (0.7358490566037736, 7.0)
+[LVL9] rnvc74(A,B) :- somenot74(C,A), \+all74(B,C) 0.808962264151 (12.0, 2.0, 27.0, 19.0) 0.924528301887 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(A,C), \+no74(C,B) 0.78167115903 (11.0, 2.0, 27.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(A,C), \+no74(B,C) 0.78167115903 (11.0, 2.0, 27.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.78167115903 (11.0, 2.0, 27.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C), \+some74(A,C) 0.78167115903 (11.0, 2.0, 27.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.78167115903 (11.0, 2.0, 27.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.78167115903 (11.0, 2.0, 27.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.683962264151 (11.0, 3.0, 26.0, 20.0) 0.911949685535 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.638814016173 (10.0, 3.0, 26.0, 21.0) 0.894339622642 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.495956873315 (9.0, 4.0, 25.0, 22.0) 0.867924528302 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.495956873315 (9.0, 4.0, 25.0, 22.0) 0.867924528302 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.495956873315 (9.0, 4.0, 25.0, 22.0) 0.867924528302 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.495956873315 (9.0, 4.0, 25.0, 22.0) 0.867924528302 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+all74(A,C) 0.0 (8.0, 4.0, 25.0, 23.0) 0.823899371069 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+some74(A,C) 0.0 (8.0, 4.0, 25.0, 23.0) 0.823899371069 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+some74(C,A) 0.0 (8.0, 4.0, 25.0, 23.0) 0.823899371069 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B), \+somenot74(A,C) 0.0 (8.0, 4.0, 25.0, 23.0) 0.823899371069 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- somenot74(C,A), \+all74(C,B) [0.808962264151]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- somenot74(C,A), \+all74(C,B) 0.808962264151
+[DEBUG] rnvc74(A,B) :- somenot74(C,A), \+all74(B,C) 0.808962264151
+[DEBUG] rnvc74(A,B) :- some74(A,C), \+no74(C,B) 0.78167115903
+[DEBUG] rnvc74(A,B) :- some74(A,C), \+no74(B,C) 0.78167115903
+[DEBUG] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.78167115903
+[DEBUG] rnvc74(A,B) :- no74(B,C), \+some74(A,C) 0.78167115903
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.78167115903
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.78167115903
+[DEBUG] rnvc74(A,B) :- somenot74(C,A), some74(C,B) 0.735849056604
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.683962264151
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.683962264151
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.683962264151
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.683962264151
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.683962264151
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.683962264151
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.638814016173
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.638814016173
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.638814016173
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.638814016173
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.638814016173
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.638814016173
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.638814016173
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.638814016173
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.638814016173
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.495956873315
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.495956873315
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.495956873315
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.495956873315
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+all74(A,C) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+some74(A,C) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+some74(C,A) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B), \+somenot74(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc74(A,B) :- somenot74(C,A), \+all74(C,B) 0.65
+[DEBUG] Best rule so far: rnvc74(A,B) :- true [0.413043478261]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- true 0.413043478261
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- all74(B,C) 0.0 (13.0, 7.0, 22.0, 18.0) 0.70652173913 [ACCEPT]
+[LVL9] rnvc74(A,B) :- all74(C,A) 0.0 (13.0, 8.0, 21.0, 18.0) 0.70652173913 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(A,C) 0.676630434783 (17.0, 4.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(A,C) (0.6766304347826086, 17.0) > (0.41304347826086957, 31.0)
+[LVL9] rnvc74(A,B) :- some74(B,C) 0.487577639752 (15.0, 5.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A) 0.601449275362 (17.0, 5.0, 24.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B) 0.487577639752 (15.0, 5.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C) 0.630434782609 (16.0, 4.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A) 0.426630434783 (15.0, 6.0, 23.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B) 0.0 (13.0, 6.0, 23.0, 18.0) 0.70652173913 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C) 0.601449275362 (17.0, 5.0, 24.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C) 0.630434782609 (16.0, 4.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B) 0.487577639752 (15.0, 5.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- some74(A,C) [0.676630434783]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- some74(A,C) 0.676630434783
+[DEBUG] rnvc74(A,B) :- no74(B,C) 0.630434782609
+[DEBUG] rnvc74(A,B) :- somenot74(B,C) 0.630434782609
+[DEBUG] rnvc74(A,B) :- some74(C,A) 0.601449275362
+[DEBUG] rnvc74(A,B) :- somenot74(A,C) 0.601449275362
+[DEBUG] rnvc74(A,B) :- some74(B,C) 0.487577639752
+[DEBUG] rnvc74(A,B) :- some74(C,B) 0.487577639752
+[DEBUG] rnvc74(A,B) :- somenot74(C,B) 0.487577639752
+[DEBUG] rnvc74(A,B) :- no74(C,A) 0.426630434783
+[DEBUG] rnvc74(A,B) :- all74(B,C) 0.0
+[DEBUG] rnvc74(A,B) :- all74(C,A) 0.0
+[DEBUG] rnvc74(A,B) :- no74(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- some74(A,C), all74(B,C) 0.70652173913 (13.0, 2.0, 27.0, 18.0) 0.70652173913 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(A,C), all74(B,C) (0.7065217391304348, 13.0) > (0.6766304347826086, 17.0)
+[LVL9] rnvc74(A,B) :- some74(A,C), \+no74(C,B) 0.773291925466 (17.0, 3.0, 26.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(A,C), \+no74(C,B) (0.7732919254658385, 17.0) > (0.7065217391304348, 13.0)
+[LVL9] rnvc74(A,B) :- some74(A,C), \+no74(B,C) 0.773291925466 (17.0, 3.0, 26.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.735507246377 (16.0, 3.0, 26.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C), \+some74(A,C) 0.735507246377 (16.0, 3.0, 26.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.735507246377 (16.0, 3.0, 26.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.735507246377 (16.0, 3.0, 26.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.676630434783 (17.0, 4.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.676630434783 (17.0, 4.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.676630434783 (17.0, 4.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.676630434783 (17.0, 4.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.676630434783 (17.0, 4.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.676630434783 (17.0, 4.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.56884057971 (15.0, 4.0, 25.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.487577639752 (15.0, 5.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.487577639752 (15.0, 5.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.487577639752 (15.0, 5.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.487577639752 (15.0, 5.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- some74(A,C), \+no74(C,B) [0.773291925466]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- some74(A,C), \+no74(C,B) 0.773291925466
+[DEBUG] rnvc74(A,B) :- some74(A,C), \+no74(B,C) 0.773291925466
+[DEBUG] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.735507246377
+[DEBUG] rnvc74(A,B) :- no74(B,C), \+some74(A,C) 0.735507246377
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.735507246377
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.735507246377
+[DEBUG] rnvc74(A,B) :- some74(A,C), all74(B,C) 0.70652173913
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.676630434783
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.676630434783
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.676630434783
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.676630434783
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.676630434783
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.676630434783
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.56884057971
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.56884057971
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.56884057971
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.56884057971
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.56884057971
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.56884057971
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.56884057971
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.56884057971
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.56884057971
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.487577639752
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.487577639752
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.487577639752
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.487577639752
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc74(A,B) :- some74(A,C), \+no74(C,B) 0.716666666667
+[DEBUG] Best rule so far: rnvc74(A,B) :- true [0.35]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- true 0.35
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- all74(C,A) 0.0 (18.0, 9.0, 20.0, 13.0) 0.675 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C) 0.391666666667 (19.0, 6.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(B,C) (0.39166666666666666, 19.0) > (0.35, 31.0)
+[LVL9] rnvc74(A,B) :- some74(C,A) 0.594444444444 (22.0, 6.0, 23.0, 9.0) 0.891666666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(C,A) (0.5944444444444444, 22.0) > (0.39166666666666666, 19.0)
+[LVL9] rnvc74(A,B) :- some74(C,B) 0.391666666667 (19.0, 6.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(B,C) 0.725 (21.0, 4.0, 25.0, 10.0) 0.87 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- no74(B,C) (0.725, 21.0) > (0.5944444444444444, 22.0)
+[LVL9] rnvc74(A,B) :- no74(C,A) 0.41875 (20.0, 7.0, 22.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C) 0.594444444444 (22.0, 6.0, 23.0, 9.0) 0.891666666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C) 0.558333333333 (20.0, 5.0, 24.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B) 0.391666666667 (19.0, 6.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- no74(B,C) [0.725]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- no74(B,C) 0.725
+[DEBUG] rnvc74(A,B) :- some74(C,A) 0.594444444444
+[DEBUG] rnvc74(A,B) :- somenot74(A,C) 0.594444444444
+[DEBUG] rnvc74(A,B) :- somenot74(B,C) 0.558333333333
+[DEBUG] rnvc74(A,B) :- no74(C,A) 0.41875
+[DEBUG] rnvc74(A,B) :- some74(B,C) 0.391666666667
+[DEBUG] rnvc74(A,B) :- some74(C,B) 0.391666666667
+[DEBUG] rnvc74(A,B) :- somenot74(C,B) 0.391666666667
+[DEBUG] rnvc74(A,B) :- all74(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.87 (21.0, 3.0, 26.0, 10.0) 0.87 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- no74(B,C), \+all74(A,C) (0.8699999999999999, 21.0) > (0.725, 21.0)
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.66875 (22.0, 5.0, 24.0, 9.0) 0.891666666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.66875 (22.0, 5.0, 24.0, 9.0) 0.891666666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.66875 (22.0, 5.0, 24.0, 9.0) 0.891666666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.66875 (22.0, 5.0, 24.0, 9.0) 0.891666666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.66875 (22.0, 5.0, 24.0, 9.0) 0.891666666667 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.66875 (22.0, 5.0, 24.0, 9.0) 0.891666666667 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- no74(B,C), \+all74(A,C) [0.87]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.87
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.66875
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.66875
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.66875
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.66875
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.66875
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.66875
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc74(A,B) :- no74(B,C), \+all74(A,C) 0.783333333333
+[DEBUG] Best rule so far: rnvc74(A,B) :- true [0.277777777778]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- true 0.277777777778
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- some74(B,C) 0.37962962963 (23.0, 6.0, 23.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(B,C) (0.3796296296296296, 23.0) > (0.2777777777777778, 31.0)
+[LVL9] rnvc74(A,B) :- some74(C,A) 0.534722222222 (25.0, 6.0, 23.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- some74(C,A) (0.5347222222222222, 25.0) > (0.3796296296296296, 23.0)
+[LVL9] rnvc74(A,B) :- some74(C,B) 0.37962962963 (23.0, 6.0, 23.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A) 0.325396825397 (23.0, 7.0, 22.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,B) 0.0 (22.0, 7.0, 22.0, 9.0) 0.638888888889 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C) 0.534722222222 (25.0, 6.0, 23.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(B,C) 0.546296296296 (24.0, 5.0, 24.0, 7.0) 0.819444444444 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- somenot74(B,C) (0.5462962962962963, 24.0) > (0.5347222222222222, 25.0)
+[LVL9] rnvc74(A,B) :- somenot74(C,B) 0.37962962963 (23.0, 6.0, 23.0, 8.0) 0.759259259259 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- somenot74(B,C) [0.546296296296]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- somenot74(B,C) 0.546296296296
+[DEBUG] rnvc74(A,B) :- some74(C,A) 0.534722222222
+[DEBUG] rnvc74(A,B) :- somenot74(A,C) 0.534722222222
+[DEBUG] rnvc74(A,B) :- some74(B,C) 0.37962962963
+[DEBUG] rnvc74(A,B) :- some74(C,B) 0.37962962963
+[DEBUG] rnvc74(A,B) :- somenot74(C,B) 0.37962962963
+[DEBUG] rnvc74(A,B) :- no74(C,A) 0.325396825397
+[DEBUG] rnvc74(A,B) :- no74(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc74(A,B) :- somenot74(B,C), some74(C,A) 0.638888888889 (22.0, 3.0, 26.0, 9.0) 0.638888888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- somenot74(B,C), some74(C,A) (0.6388888888888888, 22.0) > (0.5462962962962963, 24.0)
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.655555555556 (24.0, 4.0, 25.0, 7.0) 0.819444444444 [ACCEPT]
+[LVL9] BETTER RULE rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) (0.6555555555555556, 24.0) > (0.6388888888888888, 22.0)
+[LVL9] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.655555555556 (24.0, 4.0, 25.0, 7.0) 0.819444444444 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.611111111111 (25.0, 5.0, 24.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.611111111111 (25.0, 5.0, 24.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.611111111111 (25.0, 5.0, 24.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.611111111111 (25.0, 5.0, 24.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.611111111111 (25.0, 5.0, 24.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.611111111111 (25.0, 5.0, 24.0, 6.0) 0.855555555556 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.455555555556 (23.0, 5.0, 24.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.37962962963 (23.0, 6.0, 23.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.37962962963 (23.0, 6.0, 23.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.37962962963 (23.0, 6.0, 23.0, 8.0) 0.759259259259 [ACCEPT]
+[LVL9] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.37962962963 (23.0, 6.0, 23.0, 8.0) 0.759259259259 [ACCEPT]
+[DEBUG] Best rule so far: rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) [0.655555555556]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.655555555556
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), \+all74(C,A) 0.655555555556
+[DEBUG] rnvc74(A,B) :- somenot74(B,C), some74(C,A) 0.638888888889
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(C,B) 0.611111111111
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+all74(B,C) 0.611111111111
+[DEBUG] rnvc74(A,B) :- some74(C,A), \+no74(C,B) 0.611111111111
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(C,B) 0.611111111111
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+all74(B,C) 0.611111111111
+[DEBUG] rnvc74(A,B) :- somenot74(A,C), \+no74(C,B) 0.611111111111
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(A,C) 0.455555555556
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+all74(C,A) 0.455555555556
+[DEBUG] rnvc74(A,B) :- some74(B,C), \+no74(C,A) 0.455555555556
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(A,C) 0.455555555556
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+all74(C,A) 0.455555555556
+[DEBUG] rnvc74(A,B) :- some74(C,B), \+no74(C,A) 0.455555555556
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(A,C) 0.455555555556
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+all74(C,A) 0.455555555556
+[DEBUG] rnvc74(A,B) :- somenot74(C,B), \+no74(C,A) 0.455555555556
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+all74(B,C) 0.37962962963
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(C,B) 0.37962962963
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+some74(B,C) 0.37962962963
+[DEBUG] rnvc74(A,B) :- no74(C,A), \+somenot74(C,B) 0.37962962963
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc74(A,B) :- somenot74(B,C), \+all74(A,C) 0.816666666667

@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_70.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome70.log
+              target:	rsome70/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome70(A,B) :- somenot70(C,A), \+no70(C,B), \+no70(B,C), \+somenot70(C,B), \+all70(C,B), \+some70(B,C), \+somenot70(B,C)
+rsome70(A,B) :- some70(B,C), some70(C,A)
+rsome70(A,B) :- no70(B,C), \+some70(C,A), \+somenot70(C,A), \+no70(C,A), \+all70(A,C), \+no70(A,C), \+somenot70(A,C)
+rsome70(A,B) :- all70(C,A), somenot70(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.890909090909
+           Precision:	 1.0
+              Recall:	 0.4
+================== STATISTICS ==================
+    Rule evaluations:	71756
+          Total time:	4541.1960s

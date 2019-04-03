@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class3/cv3_train_52.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class3/cv3_rnvc52.log
+              target:	rnvc52/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc52(A,B) :- no52(B,C), \+all52(A,C), \+all52(C,A), \+some52(C,A), \+no52(C,A), \+somenot52(A,C), \+somenot52(C,A)
+rnvc52(A,B) :- no52(C,A), \+all52(C,B), \+some52(C,B), \+some52(B,C), \+no52(B,C), \+somenot52(C,B), \+somenot52(B,C)
+rnvc52(A,B) :- all52(C,A), no52(C,B)
+rnvc52(A,B) :- somenot52(B,C), somenot52(C,A)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	11280
+          Total time:	563.1638s

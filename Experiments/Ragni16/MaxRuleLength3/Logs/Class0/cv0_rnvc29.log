@@ -1,0 +1,270 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.780029621646
+[INFO] Computing scores: 0.0314s
+[INFO] Number of examples (M): 54
+[INFO] Positive weight (P): 7.0000
+[INFO] Negative weight (N): 47.0000
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.12962962963]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.12962962963
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- all29(A,C) 0.141203703704 (1.0, 6.0, 41.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(A,C) (0.1412037037037037, 1.0) > (0.12962962962962962, 7.0)
+[LVL9] rnvc29(A,B) :- all29(B,C) 0.391203703704 (3.0, 4.0, 43.0, 4.0) 0.782407407407 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(B,C) (0.3912037037037037, 3.0) > (0.1412037037037037, 1.0)
+[LVL9] rnvc29(A,B) :- all29(C,A) 0.161375661376 (1.0, 5.0, 42.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] rnvc29(A,B) :- some29(A,C) 0.141203703704 (1.0, 6.0, 41.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] rnvc29(A,B) :- some29(B,C) 0.141203703704 (1.0, 6.0, 41.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C) 0.236625514403 (2.0, 6.0, 41.0, 5.0) 0.70987654321 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(B,C) 0.141203703704 (1.0, 6.0, 41.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,A) 0.141203703704 (1.0, 6.0, 41.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,B) 0.0 (1.0, 7.0, 40.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(B,C) 0.141203703704 (1.0, 6.0, 41.0, 6.0) 0.564814814815 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(C,A) 0.161375661376 (1.0, 5.0, 42.0, 6.0) 0.564814814815 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- all29(B,C) [0.391203703704]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- all29(B,C) 0.391203703704
+[DEBUG] rnvc29(A,B) :- no29(A,C) 0.236625514403
+[DEBUG] rnvc29(A,B) :- all29(C,A) 0.161375661376
+[DEBUG] rnvc29(A,B) :- somenot29(C,A) 0.161375661376
+[DEBUG] rnvc29(A,B) :- all29(A,C) 0.141203703704
+[DEBUG] rnvc29(A,B) :- some29(A,C) 0.141203703704
+[DEBUG] rnvc29(A,B) :- some29(B,C) 0.141203703704
+[DEBUG] rnvc29(A,B) :- no29(B,C) 0.141203703704
+[DEBUG] rnvc29(A,B) :- no29(C,A) 0.141203703704
+[DEBUG] rnvc29(A,B) :- somenot29(B,C) 0.141203703704
+[DEBUG] rnvc29(A,B) :- no29(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- all29(B,C), all29(A,C) 0.564814814815 (1.0, 0.0, 47.0, 6.0) 0.564814814815 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(B,C), all29(A,C) (0.5648148148148148, 1.0) > (0.3912037037037037, 3.0)
+[LVL9] rnvc29(A,B) :- all29(B,C), \+some29(C,A) 0.44708994709 (3.0, 3.0, 44.0, 4.0) 0.782407407407 [ACCEPT]
+[LVL9] rnvc29(A,B) :- all29(B,C), \+no29(C,A) 0.44708994709 (3.0, 3.0, 44.0, 4.0) 0.782407407407 [ACCEPT]
+[LVL9] rnvc29(A,B) :- all29(B,C), \+somenot29(A,C) 0.44708994709 (3.0, 3.0, 44.0, 4.0) 0.782407407407 [ACCEPT]
+[LVL9] rnvc29(A,B) :- all29(B,C), \+somenot29(C,A) 0.44708994709 (3.0, 3.0, 44.0, 4.0) 0.782407407407 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+all29(C,B) 0.266203703704 (2.0, 5.0, 42.0, 5.0) 0.70987654321 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+some29(C,B) 0.266203703704 (2.0, 5.0, 42.0, 5.0) 0.70987654321 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+some29(B,C) 0.266203703704 (2.0, 5.0, 42.0, 5.0) 0.70987654321 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+no29(C,B) 0.266203703704 (2.0, 5.0, 42.0, 5.0) 0.70987654321 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+somenot29(C,B) 0.266203703704 (2.0, 5.0, 42.0, 5.0) 0.70987654321 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+somenot29(B,C) 0.266203703704 (2.0, 5.0, 42.0, 5.0) 0.70987654321 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- all29(B,C), all29(A,C) [0.564814814815]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+some29(C,A) 0.44708994709
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+no29(C,A) 0.44708994709
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+somenot29(A,C) 0.44708994709
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+somenot29(C,A) 0.44708994709
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+all29(C,B) 0.266203703704
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+some29(C,B) 0.266203703704
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+some29(B,C) 0.266203703704
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+no29(C,B) 0.266203703704
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+somenot29(C,B) 0.266203703704
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+somenot29(B,C) 0.266203703704
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc29(A,B) :- all29(B,C), all29(A,C) 0.888888888889
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.11320754717]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.11320754717
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- all29(B,C) 0.301886792453 (3.0, 4.0, 43.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(B,C) (0.3018867924528302, 3.0) > (0.11320754716981132, 7.0)
+[LVL9] rnvc29(A,B) :- all29(C,A) 0.159029649596 (2.0, 5.0, 42.0, 5.0) 0.556603773585 [ACCEPT]
+[LVL9] rnvc29(A,B) :- some29(A,C) 0.139150943396 (2.0, 6.0, 41.0, 5.0) 0.556603773585 [ACCEPT]
+[LVL9] rnvc29(A,B) :- some29(B,C) 0.139150943396 (2.0, 6.0, 41.0, 5.0) 0.556603773585 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C) 0.234800838574 (3.0, 6.0, 41.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(B,C) 0.139150943396 (2.0, 6.0, 41.0, 5.0) 0.556603773585 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,A) 0.139150943396 (2.0, 6.0, 41.0, 5.0) 0.556603773585 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,B) 0.123689727463 (2.0, 7.0, 40.0, 5.0) 0.556603773585 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(B,C) 0.139150943396 (2.0, 6.0, 41.0, 5.0) 0.556603773585 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(C,A) 0.159029649596 (2.0, 5.0, 42.0, 5.0) 0.556603773585 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- all29(B,C) [0.301886792453]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- all29(B,C) 0.301886792453
+[DEBUG] rnvc29(A,B) :- no29(A,C) 0.234800838574
+[DEBUG] rnvc29(A,B) :- all29(C,A) 0.159029649596
+[DEBUG] rnvc29(A,B) :- somenot29(C,A) 0.159029649596
+[DEBUG] rnvc29(A,B) :- some29(A,C) 0.139150943396
+[DEBUG] rnvc29(A,B) :- some29(B,C) 0.139150943396
+[DEBUG] rnvc29(A,B) :- no29(B,C) 0.139150943396
+[DEBUG] rnvc29(A,B) :- no29(C,A) 0.139150943396
+[DEBUG] rnvc29(A,B) :- somenot29(B,C) 0.139150943396
+[DEBUG] rnvc29(A,B) :- no29(C,B) 0.123689727463
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- all29(B,C), some29(A,C) 0.556603773585 (2.0, 0.0, 47.0, 5.0) 0.556603773585 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(B,C), some29(A,C) (0.5566037735849056, 2.0) > (0.3018867924528302, 3.0)
+[LVL9] rnvc29(A,B) :- all29(B,C), \+some29(C,A) 0.352201257862 (3.0, 3.0, 44.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- all29(B,C), \+no29(C,A) 0.352201257862 (3.0, 3.0, 44.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- all29(B,C), \+somenot29(A,C) 0.352201257862 (3.0, 3.0, 44.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- all29(B,C), \+somenot29(C,A) 0.352201257862 (3.0, 3.0, 44.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+all29(C,B) 0.264150943396 (3.0, 5.0, 42.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+some29(C,B) 0.264150943396 (3.0, 5.0, 42.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+some29(B,C) 0.264150943396 (3.0, 5.0, 42.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+no29(C,B) 0.264150943396 (3.0, 5.0, 42.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+somenot29(C,B) 0.264150943396 (3.0, 5.0, 42.0, 4.0) 0.704402515723 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+somenot29(B,C) 0.264150943396 (3.0, 5.0, 42.0, 4.0) 0.704402515723 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- all29(B,C), some29(A,C) [0.556603773585]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+some29(C,A) 0.352201257862
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+no29(C,A) 0.352201257862
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+somenot29(A,C) 0.352201257862
+[DEBUG] rnvc29(A,B) :- all29(B,C), \+somenot29(C,A) 0.352201257862
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+all29(C,B) 0.264150943396
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+some29(C,B) 0.264150943396
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+some29(B,C) 0.264150943396
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+no29(C,B) 0.264150943396
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+somenot29(C,B) 0.264150943396
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+somenot29(B,C) 0.264150943396
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc29(A,B) :- all29(B,C), some29(A,C) 0.907407407407
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- all29(B,C) 0.182692307692 (3.0, 4.0, 43.0, 4.0) 0.548076923077 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(B,C) (0.1826923076923077, 3.0) > (0.0, 7.0)
+[LVL9] rnvc29(A,B) :- all29(C,A) 0.156593406593 (3.0, 5.0, 42.0, 4.0) 0.548076923077 [ACCEPT]
+[LVL9] rnvc29(A,B) :- some29(B,C) 0.137019230769 (3.0, 6.0, 41.0, 4.0) 0.548076923077 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C) 0.232905982906 (4.0, 6.0, 41.0, 3.0) 0.698717948718 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- no29(A,C) (0.2329059829059829, 4.0) > (0.1826923076923077, 3.0)
+[LVL9] rnvc29(A,B) :- no29(B,C) 0.137019230769 (3.0, 6.0, 41.0, 4.0) 0.548076923077 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,A) 0.137019230769 (3.0, 6.0, 41.0, 4.0) 0.548076923077 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,B) 0.121794871795 (3.0, 7.0, 40.0, 4.0) 0.548076923077 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(B,C) 0.137019230769 (3.0, 6.0, 41.0, 4.0) 0.548076923077 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(C,A) 0.156593406593 (3.0, 5.0, 42.0, 4.0) 0.548076923077 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- no29(A,C) [0.232905982906]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- no29(A,C) 0.232905982906
+[DEBUG] rnvc29(A,B) :- all29(B,C) 0.182692307692
+[DEBUG] rnvc29(A,B) :- all29(C,A) 0.156593406593
+[DEBUG] rnvc29(A,B) :- somenot29(C,A) 0.156593406593
+[DEBUG] rnvc29(A,B) :- some29(B,C) 0.137019230769
+[DEBUG] rnvc29(A,B) :- no29(B,C) 0.137019230769
+[DEBUG] rnvc29(A,B) :- no29(C,A) 0.137019230769
+[DEBUG] rnvc29(A,B) :- somenot29(B,C) 0.137019230769
+[DEBUG] rnvc29(A,B) :- no29(C,B) 0.121794871795
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- no29(A,C), all29(B,C) 0.548076923077 (3.0, 0.0, 47.0, 4.0) 0.548076923077 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc29(A,B) :- no29(A,C), all29(B,C) (0.5480769230769231, 3.0) > (0.2329059829059829, 4.0)
+[LVL9] rnvc29(A,B) :- no29(A,C), \+all29(C,B) 0.262019230769 (4.0, 5.0, 42.0, 3.0) 0.698717948718 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+some29(C,B) 0.262019230769 (4.0, 5.0, 42.0, 3.0) 0.698717948718 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+some29(B,C) 0.262019230769 (4.0, 5.0, 42.0, 3.0) 0.698717948718 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+no29(C,B) 0.262019230769 (4.0, 5.0, 42.0, 3.0) 0.698717948718 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+somenot29(C,B) 0.262019230769 (4.0, 5.0, 42.0, 3.0) 0.698717948718 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C), \+somenot29(B,C) 0.262019230769 (4.0, 5.0, 42.0, 3.0) 0.698717948718 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- no29(A,C), all29(B,C) [0.548076923077]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+all29(C,B) 0.262019230769
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+some29(C,B) 0.262019230769
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+some29(B,C) 0.262019230769
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+no29(C,B) 0.262019230769
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+somenot29(C,B) 0.262019230769
+[DEBUG] rnvc29(A,B) :- no29(A,C), \+somenot29(B,C) 0.262019230769
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc29(A,B) :- no29(A,C), all29(B,C) 0.925925925926
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.078431372549]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.078431372549
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- all29(C,A) 0.15406162465 (4.0, 5.0, 42.0, 3.0) 0.539215686275 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(C,A) (0.15406162464985992, 4.0) > (0.0784313725490196, 7.0)
+[LVL9] rnvc29(A,B) :- some29(B,C) 0.134803921569 (4.0, 6.0, 41.0, 3.0) 0.539215686275 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(A,C) 0.134803921569 (4.0, 6.0, 41.0, 3.0) 0.539215686275 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(B,C) 0.134803921569 (4.0, 6.0, 41.0, 3.0) 0.539215686275 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,A) 0.134803921569 (4.0, 6.0, 41.0, 3.0) 0.539215686275 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,B) 0.119825708061 (4.0, 7.0, 40.0, 3.0) 0.539215686275 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(B,C) 0.134803921569 (4.0, 6.0, 41.0, 3.0) 0.539215686275 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(C,A) 0.15406162465 (4.0, 5.0, 42.0, 3.0) 0.539215686275 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- all29(C,A) [0.15406162465]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- all29(C,A) 0.15406162465
+[DEBUG] rnvc29(A,B) :- somenot29(C,A) 0.15406162465
+[DEBUG] rnvc29(A,B) :- some29(B,C) 0.134803921569
+[DEBUG] rnvc29(A,B) :- no29(A,C) 0.134803921569
+[DEBUG] rnvc29(A,B) :- no29(B,C) 0.134803921569
+[DEBUG] rnvc29(A,B) :- no29(C,A) 0.134803921569
+[DEBUG] rnvc29(A,B) :- somenot29(B,C) 0.134803921569
+[DEBUG] rnvc29(A,B) :- no29(C,B) 0.119825708061
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- all29(C,A), some29(B,C) 0.539215686275 (4.0, 0.0, 47.0, 3.0) 0.539215686275 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rnvc29(A,B) :- all29(C,A), some29(B,C) (0.5392156862745098, 4.0) > (0.15406162464985992, 4.0)
+[INFO] RULE LEARNED: rnvc29(A,B) :- all29(C,A), some29(B,C) 0.944444444444
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.06]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.06
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- no29(A,C) 0.1325 (5.0, 6.0, 41.0, 2.0) 0.53 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- no29(A,C) (0.1325, 5.0) > (0.06, 7.0)
+[LVL9] rnvc29(A,B) :- no29(B,C) 0.1325 (5.0, 6.0, 41.0, 2.0) 0.53 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,A) 0.1325 (5.0, 6.0, 41.0, 2.0) 0.53 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,B) 0.117777777778 (5.0, 7.0, 40.0, 2.0) 0.53 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(B,C) 0.1325 (5.0, 6.0, 41.0, 2.0) 0.53 [ACCEPT]
+[LVL9] rnvc29(A,B) :- somenot29(C,A) 0.151428571429 (5.0, 5.0, 42.0, 2.0) 0.53 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- somenot29(C,A) (0.15142857142857144, 5.0) > (0.1325, 5.0)
+[DEBUG] Best rule so far: rnvc29(A,B) :- somenot29(C,A) [0.151428571429]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- somenot29(C,A) 0.151428571429
+[DEBUG] rnvc29(A,B) :- no29(A,C) 0.1325
+[DEBUG] rnvc29(A,B) :- no29(B,C) 0.1325
+[DEBUG] rnvc29(A,B) :- no29(C,A) 0.1325
+[DEBUG] rnvc29(A,B) :- somenot29(B,C) 0.1325
+[DEBUG] rnvc29(A,B) :- no29(C,B) 0.117777777778
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- somenot29(C,A), somenot29(B,C) 0.53 (5.0, 0.0, 47.0, 2.0) 0.53 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rnvc29(A,B) :- somenot29(C,A), somenot29(B,C) (0.53, 5.0) > (0.15142857142857144, 5.0)
+[INFO] RULE LEARNED: rnvc29(A,B) :- somenot29(C,A), somenot29(B,C) 0.962962962963
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.0408163265306]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.0408163265306
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- no29(A,C) 0.130102040816 (6.0, 6.0, 41.0, 1.0) 0.520408163265 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- no29(A,C) (0.13010204081632654, 6.0) > (0.04081632653061225, 7.0)
+[LVL9] rnvc29(A,B) :- no29(B,C) 0.130102040816 (6.0, 6.0, 41.0, 1.0) 0.520408163265 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,A) 0.130102040816 (6.0, 6.0, 41.0, 1.0) 0.520408163265 [ACCEPT]
+[LVL9] rnvc29(A,B) :- no29(C,B) 0.115646258503 (6.0, 7.0, 40.0, 1.0) 0.520408163265 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- no29(A,C) [0.130102040816]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- no29(A,C) 0.130102040816
+[DEBUG] rnvc29(A,B) :- no29(B,C) 0.130102040816
+[DEBUG] rnvc29(A,B) :- no29(C,A) 0.130102040816
+[DEBUG] rnvc29(A,B) :- no29(C,B) 0.115646258503
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- no29(A,C), no29(B,C) 0.520408163265 (6.0, 0.0, 47.0, 1.0) 0.520408163265 [REJECT* fp] 5.0
+[LVL9] BETTER RULE rnvc29(A,B) :- no29(A,C), no29(B,C) (0.5204081632653061, 6.0) > (0.13010204081632654, 6.0)
+[INFO] RULE LEARNED: rnvc29(A,B) :- no29(A,C), no29(B,C) 0.981481481481
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.0208333333333]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.0208333333333
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- no29(C,A) 0.127604166667 (7.0, 6.0, 41.0, 0.0) 0.510416666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc29(A,B) :- no29(C,A) (0.12760416666666666, 7.0) > (0.020833333333333332, 7.0)
+[LVL9] rnvc29(A,B) :- no29(C,B) 0.113425925926 (7.0, 7.0, 40.0, 0.0) 0.510416666667 [ACCEPT]
+[DEBUG] Best rule so far: rnvc29(A,B) :- no29(C,A) [0.127604166667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- no29(C,A) 0.127604166667
+[DEBUG] rnvc29(A,B) :- no29(C,B) 0.113425925926
+[DEBUG] ==================================
+[LVL9] rnvc29(A,B) :- no29(C,A), no29(C,B) 0.510416666667 (7.0, 0.0, 47.0, 0.0) 0.510416666667 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rnvc29(A,B) :- no29(C,A), no29(C,B) (0.5104166666666666, 7.0) > (0.12760416666666666, 7.0)
+[INFO] RULE LEARNED: rnvc29(A,B) :- no29(C,A), no29(C,B) 1.0
+[DEBUG] Best rule so far: rnvc29(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc29(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc29(A,B) :- true 1.0

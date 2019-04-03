@@ -1,0 +1,495 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.902609134887
+[INFO] Computing scores: 0.1113s
+[INFO] Number of examples (M): 118
+[INFO] Positive weight (P): 9.0000
+[INFO] Negative weight (N): 109.0000
+[DEBUG] Best rule so far: rno11(A,B) :- true [0.0762711864407]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno11(A,B) :- true 0.0762711864407
+[DEBUG] ==================================
+[LVL9] rno11(A,B) :- all11(A,C) 0.122133599202 (2.0, 14.0, 95.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- all11(A,C) (0.1221335992023928, 2.0) > (0.07627118644067797, 9.0)
+[LVL9] rno11(A,B) :- all11(B,C) 0.0 (1.0, 15.0, 94.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B) 0.129766949153 (2.0, 13.0, 96.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- all11(C,B) (0.12976694915254236, 2.0) > (0.1221335992023928, 2.0)
+[LVL9] rno11(A,B) :- no11(A,C) 0.159713168188 (2.0, 10.0, 99.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- no11(A,C) (0.15971316818774445, 2.0) > (0.12976694915254236, 2.0)
+[LVL9] rno11(A,B) :- no11(B,C) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C) 0.180957128614 (3.0, 13.0, 96.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- somenot11(A,C) (0.18095712861415753, 3.0) > (0.15971316818774445, 2.0)
+[LVL9] rno11(A,B) :- somenot11(B,C) 0.180957128614 (3.0, 13.0, 96.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(C,B) 0.0 (1.0, 15.0, 94.0, 8.0) 0.53813559322 [ACCEPT]
+[DEBUG] Best rule so far: rno11(A,B) :- somenot11(A,C) [0.180957128614]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno11(A,B) :- somenot11(A,C) 0.180957128614
+[DEBUG] rno11(A,B) :- somenot11(B,C) 0.180957128614
+[DEBUG] rno11(A,B) :- no11(A,C) 0.159713168188
+[DEBUG] rno11(A,B) :- no11(C,A) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(C,B) 0.129766949153
+[DEBUG] rno11(A,B) :- all11(A,C) 0.122133599202
+[DEBUG] rno11(A,B) :- no11(B,C) 0.0827900912647
+[DEBUG] rno11(A,B) :- all11(B,C) 0.0
+[DEBUG] rno11(A,B) :- no11(C,B) 0.0
+[DEBUG] rno11(A,B) :- somenot11(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rno11(A,B) :- somenot11(A,C), all11(C,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- somenot11(A,C), all11(C,B) (0.3587570621468927, 1.0) > (0.18095712861415753, 3.0)
+[LVL9] rno11(A,B) :- somenot11(A,C), all11(C,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), all11(D,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), no11(B,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), no11(B,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), no11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), somenot11(B,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), somenot11(B,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+all11(C,B) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+all11(B,C) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+some11(C,B) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+some11(B,C) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+no11(C,B) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+no11(B,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+somenot11(C,B) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), all11(A,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), all11(A,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), all11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), no11(C,A) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), no11(C,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), no11(D,A) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), somenot11(A,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+all11(A,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+all11(C,A) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+some11(A,C) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+some11(C,A) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+no11(A,C) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+no11(C,A) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), all11(B,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), all11(B,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), all11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), somenot11(C,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), somenot11(C,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), somenot11(D,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+all11(C,B) 0.18875192604 (2.0, 8.0, 101.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+all11(B,C) 0.097842835131 (1.0, 9.0, 100.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+some11(C,B) 0.18875192604 (2.0, 8.0, 101.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+some11(B,C) 0.17302259887 (2.0, 9.0, 100.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+no11(C,B) 0.17302259887 (2.0, 9.0, 100.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+somenot11(C,B) 0.097842835131 (1.0, 9.0, 100.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+somenot11(B,C) 0.18875192604 (2.0, 8.0, 101.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), all11(C,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), all11(C,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), all11(D,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), somenot11(B,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), somenot11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+all11(C,B) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+all11(B,C) 0.159713168188 (2.0, 10.0, 99.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+some11(C,B) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+some11(B,C) 0.159713168188 (2.0, 10.0, 99.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+no11(C,B) 0.159713168188 (2.0, 10.0, 99.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+no11(B,C) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+somenot11(C,B) 0.159713168188 (2.0, 10.0, 99.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+somenot11(B,C) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), no11(C,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), no11(D,A) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), somenot11(A,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), somenot11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+all11(A,C) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+all11(C,A) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+some11(A,C) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+some11(C,A) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+no11(A,C) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+no11(C,A) 0.0768765133172 (1.0, 12.0, 97.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+somenot11(A,C) 0.0768765133172 (1.0, 12.0, 97.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+somenot11(C,A) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), no11(C,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), no11(C,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), no11(D,B) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), somenot11(B,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), somenot11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+all11(C,B) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+all11(B,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+some11(C,B) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+some11(B,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+no11(C,B) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+no11(B,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+somenot11(C,B) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+somenot11(B,C) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), somenot11(A,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), somenot11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+all11(A,C) 0.097842835131 (1.0, 9.0, 100.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+all11(C,A) 0.097842835131 (1.0, 9.0, 100.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+some11(A,C) 0.0896892655367 (1.0, 10.0, 99.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+some11(C,A) 0.097842835131 (1.0, 9.0, 100.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+no11(C,A) 0.0896892655367 (1.0, 10.0, 99.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+somenot11(C,A) 0.097842835131 (1.0, 9.0, 100.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), no11(A,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), no11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+all11(A,C) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+all11(C,A) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+some11(A,C) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+some11(C,A) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+no11(C,A) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+somenot11(A,C) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+somenot11(C,A) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), all11(A,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), all11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+all11(C,A) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+some11(A,C) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+some11(C,A) 0.0768765133172 (1.0, 12.0, 97.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+no11(A,C) 0.0768765133172 (1.0, 12.0, 97.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+no11(C,A) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+somenot11(A,C) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+somenot11(C,A) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(C,B), no11(A,D) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(C,B), no11(D,C) 0.358757062147 (1.0, 1.0, 108.0, 8.0) 0.53813559322 [ACCEPT]
+[DEBUG] Best rule so far: rno11(A,B) :- somenot11(A,C), all11(C,B) [0.358757062147]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno11(A,B) :- somenot11(A,C), all11(C,B) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), all11(C,D) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), all11(D,B) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), no11(B,C) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), no11(B,D) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), no11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), somenot11(B,C) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), somenot11(B,D) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(B,C), all11(A,C) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(B,C), all11(A,D) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(B,C), all11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(B,C), no11(C,A) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(B,C), no11(C,D) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(B,C), no11(D,A) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(B,C), somenot11(A,D) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(A,C), all11(B,C) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(A,C), all11(B,D) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(A,C), all11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(A,C), somenot11(C,B) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(A,C), somenot11(C,D) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(A,C), somenot11(D,B) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(C,A), all11(C,B) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(C,A), all11(C,D) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(C,A), all11(D,B) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(C,A), somenot11(B,D) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(C,A), somenot11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(C,B), no11(C,D) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(C,B), no11(D,A) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(C,B), somenot11(A,D) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(C,B), somenot11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(A,C), no11(C,B) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(A,C), no11(C,D) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(A,C), no11(D,B) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(A,C), somenot11(B,D) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(A,C), somenot11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(B,C), somenot11(A,D) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(B,C), somenot11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(B,C), no11(A,D) 0.358757062147
+[DEBUG] rno11(A,B) :- all11(B,C), no11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(C,B), all11(A,D) 0.358757062147
+[DEBUG] rno11(A,B) :- no11(C,B), all11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(C,B), no11(A,D) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(C,B), no11(D,C) 0.358757062147
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+all11(B,C) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+some11(C,B) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+some11(B,C) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+no11(C,B) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+somenot11(C,B) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+all11(C,A) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+some11(A,C) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+some11(C,A) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+no11(A,C) 0.205084745763
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.205084745763
+[DEBUG] rno11(A,B) :- no11(A,C), \+all11(C,B) 0.18875192604
+[DEBUG] rno11(A,B) :- no11(A,C), \+some11(C,B) 0.18875192604
+[DEBUG] rno11(A,B) :- no11(A,C), \+somenot11(B,C) 0.18875192604
+[DEBUG] rno11(A,B) :- no11(A,C), \+some11(B,C) 0.17302259887
+[DEBUG] rno11(A,B) :- no11(A,C), \+no11(C,B) 0.17302259887
+[DEBUG] rno11(A,B) :- no11(C,A), \+all11(B,C) 0.159713168188
+[DEBUG] rno11(A,B) :- no11(C,A), \+some11(B,C) 0.159713168188
+[DEBUG] rno11(A,B) :- no11(C,A), \+no11(C,B) 0.159713168188
+[DEBUG] rno11(A,B) :- no11(C,A), \+somenot11(C,B) 0.159713168188
+[DEBUG] rno11(A,B) :- no11(C,A), \+some11(C,B) 0.148305084746
+[DEBUG] rno11(A,B) :- no11(C,A), \+no11(B,C) 0.148305084746
+[DEBUG] rno11(A,B) :- all11(C,B), \+all11(A,C) 0.148305084746
+[DEBUG] rno11(A,B) :- all11(C,B), \+all11(C,A) 0.148305084746
+[DEBUG] rno11(A,B) :- all11(C,B), \+some11(A,C) 0.148305084746
+[DEBUG] rno11(A,B) :- all11(C,B), \+no11(A,C) 0.148305084746
+[DEBUG] rno11(A,B) :- all11(C,B), \+somenot11(C,A) 0.148305084746
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+all11(C,B) 0.138418079096
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+no11(B,C) 0.138418079096
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.138418079096
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+all11(A,C) 0.138418079096
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+no11(C,A) 0.138418079096
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(C,B), \+some11(C,A) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(A,C), \+all11(C,B) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(A,C), \+all11(B,C) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(A,C), \+some11(C,B) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(A,C), \+some11(B,C) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(A,C), \+no11(B,C) 0.138418079096
+[DEBUG] rno11(A,B) :- all11(A,C), \+somenot11(C,B) 0.138418079096
+[DEBUG] rno11(A,B) :- no11(A,C), \+all11(B,C) 0.097842835131
+[DEBUG] rno11(A,B) :- no11(A,C), \+somenot11(C,B) 0.097842835131
+[DEBUG] rno11(A,B) :- no11(B,C), \+all11(A,C) 0.097842835131
+[DEBUG] rno11(A,B) :- no11(B,C), \+all11(C,A) 0.097842835131
+[DEBUG] rno11(A,B) :- no11(B,C), \+some11(C,A) 0.097842835131
+[DEBUG] rno11(A,B) :- no11(B,C), \+somenot11(C,A) 0.097842835131
+[DEBUG] rno11(A,B) :- no11(B,C), \+some11(A,C) 0.0896892655367
+[DEBUG] rno11(A,B) :- no11(B,C), \+no11(C,A) 0.0896892655367
+[DEBUG] rno11(A,B) :- no11(C,A), \+all11(C,B) 0.0827900912647
+[DEBUG] rno11(A,B) :- no11(C,A), \+somenot11(B,C) 0.0827900912647
+[DEBUG] rno11(A,B) :- no11(C,B), \+all11(C,A) 0.0827900912647
+[DEBUG] rno11(A,B) :- no11(C,B), \+some11(A,C) 0.0827900912647
+[DEBUG] rno11(A,B) :- no11(C,B), \+no11(C,A) 0.0827900912647
+[DEBUG] rno11(A,B) :- no11(C,B), \+somenot11(A,C) 0.0827900912647
+[DEBUG] rno11(A,B) :- no11(C,B), \+somenot11(C,A) 0.0827900912647
+[DEBUG] rno11(A,B) :- all11(C,B), \+no11(C,A) 0.0768765133172
+[DEBUG] rno11(A,B) :- all11(C,B), \+somenot11(A,C) 0.0768765133172
+[DEBUG] rno11(A,B) :- no11(C,B), \+some11(C,A) 0.0768765133172
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno11(A,B) :- somenot11(A,C), all11(C,B) 0.923728813559
+[DEBUG] Best rule so far: rno11(A,B) :- true [0.0689655172414]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno11(A,B) :- true 0.0689655172414
+[DEBUG] ==================================
+[LVL9] rno11(A,B) :- all11(A,C) 0.121703853955 (3.0, 15.0, 94.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- all11(A,C) (0.12170385395537527, 3.0) > (0.06896551724137931, 9.0)
+[LVL9] rno11(A,B) :- all11(B,C) 0.0 (2.0, 16.0, 93.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B) 0.076354679803 (2.0, 13.0, 96.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- no11(A,C) (0.15915119363395228, 3.0) > (0.12170385395537527, 3.0)
+[LVL9] rno11(A,B) :- no11(B,C) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C) 0.180527383367 (4.0, 14.0, 95.0, 5.0) 0.76724137931 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- somenot11(B,C) (0.18052738336713997, 4.0) > (0.15915119363395228, 3.0)
+[LVL9] rno11(A,B) :- somenot11(C,B) 0.0 (2.0, 16.0, 93.0, 7.0) 0.534482758621 [ACCEPT]
+[DEBUG] Best rule so far: rno11(A,B) :- somenot11(B,C) [0.180527383367]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno11(A,B) :- somenot11(B,C) 0.180527383367
+[DEBUG] rno11(A,B) :- no11(A,C) 0.159151193634
+[DEBUG] rno11(A,B) :- no11(C,A) 0.137931034483
+[DEBUG] rno11(A,B) :- somenot11(A,C) 0.137931034483
+[DEBUG] rno11(A,B) :- all11(A,C) 0.121703853955
+[DEBUG] rno11(A,B) :- no11(B,C) 0.0822281167109
+[DEBUG] rno11(A,B) :- all11(C,B) 0.076354679803
+[DEBUG] rno11(A,B) :- no11(C,B) 0.0712643678161
+[DEBUG] rno11(A,B) :- all11(B,C) 0.0
+[DEBUG] rno11(A,B) :- somenot11(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rno11(A,B) :- somenot11(B,C), all11(A,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] BETTER RULE rno11(A,B) :- somenot11(B,C), all11(A,C) (0.3563218390804597, 2.0) > (0.18052738336713997, 4.0)
+[LVL9] rno11(A,B) :- somenot11(B,C), all11(A,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), all11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), no11(C,A) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), no11(C,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), no11(D,A) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), somenot11(A,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), somenot11(A,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+all11(A,C) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+all11(C,A) 0.204597701149 (4.0, 12.0, 97.0, 5.0) 0.76724137931 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+some11(A,C) 0.204597701149 (4.0, 12.0, 97.0, 5.0) 0.76724137931 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+some11(C,A) 0.204597701149 (4.0, 12.0, 97.0, 5.0) 0.76724137931 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+no11(A,C) 0.204597701149 (4.0, 12.0, 97.0, 5.0) 0.76724137931 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+no11(C,A) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.204597701149 (4.0, 12.0, 97.0, 5.0) 0.76724137931 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), all11(B,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), all11(B,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), all11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), somenot11(C,B) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), somenot11(C,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), somenot11(D,B) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+all11(C,B) 0.188087774295 (3.0, 9.0, 100.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+all11(B,C) 0.0971786833856 (2.0, 10.0, 99.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+some11(C,B) 0.188087774295 (3.0, 9.0, 100.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+some11(B,C) 0.172413793103 (3.0, 10.0, 99.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+no11(C,B) 0.172413793103 (3.0, 10.0, 99.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+somenot11(C,B) 0.0971786833856 (2.0, 10.0, 99.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(A,C), \+somenot11(B,C) 0.188087774295 (3.0, 9.0, 100.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), all11(C,B) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), all11(C,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), all11(D,B) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), somenot11(B,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), somenot11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+all11(C,B) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+all11(B,C) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+some11(C,B) 0.147783251232 (3.0, 12.0, 97.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+some11(B,C) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+no11(C,B) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+no11(B,C) 0.147783251232 (3.0, 12.0, 97.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+somenot11(C,B) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,A), \+somenot11(B,C) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), no11(B,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), no11(B,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), no11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), somenot11(B,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+all11(B,C) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+some11(C,B) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+some11(B,C) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+no11(C,B) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+no11(B,C) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+somenot11(C,B) 0.159151193634 (3.0, 11.0, 98.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), no11(C,B) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), no11(C,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), no11(D,B) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), somenot11(B,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), somenot11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+all11(C,B) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+all11(B,C) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+some11(C,B) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+some11(B,C) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+no11(C,B) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+no11(B,C) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+somenot11(C,B) 0.137931034483 (3.0, 13.0, 96.0, 6.0) 0.689655172414 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(A,C), \+somenot11(B,C) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), somenot11(A,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), somenot11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+all11(A,C) 0.0971786833856 (2.0, 10.0, 99.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+all11(C,A) 0.0971786833856 (2.0, 10.0, 99.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+some11(A,C) 0.0890804597701 (2.0, 11.0, 98.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+some11(C,A) 0.0971786833856 (2.0, 10.0, 99.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+no11(C,A) 0.0890804597701 (2.0, 11.0, 98.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(B,C), \+somenot11(C,A) 0.0971786833856 (2.0, 10.0, 99.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), no11(C,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), no11(D,A) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+all11(A,C) 0.0890804597701 (2.0, 11.0, 98.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+all11(C,A) 0.0890804597701 (2.0, 11.0, 98.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+some11(A,C) 0.0890804597701 (2.0, 11.0, 98.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+some11(C,A) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+no11(A,C) 0.0890804597701 (2.0, 11.0, 98.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(C,B), \+somenot11(C,A) 0.0890804597701 (2.0, 11.0, 98.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), all11(A,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), all11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+all11(C,A) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+some11(A,C) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+some11(C,A) 0.076354679803 (2.0, 13.0, 96.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+no11(A,C) 0.076354679803 (2.0, 13.0, 96.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+no11(C,A) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+somenot11(A,C) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- no11(C,B), \+somenot11(C,A) 0.0822281167109 (2.0, 12.0, 97.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), no11(A,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), no11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+all11(A,C) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+all11(C,A) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+some11(A,C) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+some11(C,A) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+no11(C,A) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+somenot11(A,C) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- all11(B,C), \+somenot11(C,A) 0.0712643678161 (2.0, 14.0, 95.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(C,B), no11(A,D) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[LVL9] rno11(A,B) :- somenot11(C,B), no11(D,C) 0.35632183908 (2.0, 2.0, 107.0, 7.0) 0.534482758621 [ACCEPT]
+[DEBUG] Best rule so far: rno11(A,B) :- somenot11(B,C), all11(A,C) [0.35632183908]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno11(A,B) :- somenot11(B,C), all11(A,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), all11(A,D) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), all11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), no11(C,A) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), no11(C,D) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), no11(D,A) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), somenot11(A,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), somenot11(A,D) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(A,C), all11(B,C) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(A,C), all11(B,D) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(A,C), all11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(A,C), somenot11(C,B) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(A,C), somenot11(C,D) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(A,C), somenot11(D,B) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(C,A), all11(C,B) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(C,A), all11(C,D) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(C,A), all11(D,B) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(C,A), somenot11(B,D) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(C,A), somenot11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(A,C), no11(B,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(A,C), no11(B,D) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(A,C), no11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(A,C), somenot11(B,D) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(A,C), no11(C,B) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(A,C), no11(C,D) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(A,C), no11(D,B) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(A,C), somenot11(B,D) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(A,C), somenot11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(B,C), somenot11(A,D) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(B,C), somenot11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(C,B), no11(C,D) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(C,B), no11(D,A) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(C,B), all11(A,D) 0.35632183908
+[DEBUG] rno11(A,B) :- no11(C,B), all11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(B,C), no11(A,D) 0.35632183908
+[DEBUG] rno11(A,B) :- all11(B,C), no11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(C,B), no11(A,D) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(C,B), no11(D,C) 0.35632183908
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+all11(C,A) 0.204597701149
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+some11(A,C) 0.204597701149
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+some11(C,A) 0.204597701149
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+no11(A,C) 0.204597701149
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+somenot11(C,A) 0.204597701149
+[DEBUG] rno11(A,B) :- no11(A,C), \+all11(C,B) 0.188087774295
+[DEBUG] rno11(A,B) :- no11(A,C), \+some11(C,B) 0.188087774295
+[DEBUG] rno11(A,B) :- no11(A,C), \+somenot11(B,C) 0.188087774295
+[DEBUG] rno11(A,B) :- no11(A,C), \+some11(B,C) 0.172413793103
+[DEBUG] rno11(A,B) :- no11(A,C), \+no11(C,B) 0.172413793103
+[DEBUG] rno11(A,B) :- no11(C,A), \+all11(B,C) 0.159151193634
+[DEBUG] rno11(A,B) :- no11(C,A), \+some11(B,C) 0.159151193634
+[DEBUG] rno11(A,B) :- no11(C,A), \+no11(C,B) 0.159151193634
+[DEBUG] rno11(A,B) :- no11(C,A), \+somenot11(C,B) 0.159151193634
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+all11(B,C) 0.159151193634
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+some11(C,B) 0.159151193634
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+some11(B,C) 0.159151193634
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+no11(C,B) 0.159151193634
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+somenot11(C,B) 0.159151193634
+[DEBUG] rno11(A,B) :- no11(C,A), \+some11(C,B) 0.147783251232
+[DEBUG] rno11(A,B) :- no11(C,A), \+no11(B,C) 0.147783251232
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+all11(A,C) 0.137931034483
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+no11(C,A) 0.137931034483
+[DEBUG] rno11(A,B) :- somenot11(B,C), \+somenot11(A,C) 0.137931034483
+[DEBUG] rno11(A,B) :- all11(A,C), \+all11(C,B) 0.137931034483
+[DEBUG] rno11(A,B) :- all11(A,C), \+all11(B,C) 0.137931034483
+[DEBUG] rno11(A,B) :- all11(A,C), \+some11(C,B) 0.137931034483
+[DEBUG] rno11(A,B) :- all11(A,C), \+some11(B,C) 0.137931034483
+[DEBUG] rno11(A,B) :- all11(A,C), \+no11(B,C) 0.137931034483
+[DEBUG] rno11(A,B) :- all11(A,C), \+somenot11(C,B) 0.137931034483
+[DEBUG] rno11(A,B) :- no11(A,C), \+all11(B,C) 0.0971786833856
+[DEBUG] rno11(A,B) :- no11(A,C), \+somenot11(C,B) 0.0971786833856
+[DEBUG] rno11(A,B) :- no11(B,C), \+all11(A,C) 0.0971786833856
+[DEBUG] rno11(A,B) :- no11(B,C), \+all11(C,A) 0.0971786833856
+[DEBUG] rno11(A,B) :- no11(B,C), \+some11(C,A) 0.0971786833856
+[DEBUG] rno11(A,B) :- no11(B,C), \+somenot11(C,A) 0.0971786833856
+[DEBUG] rno11(A,B) :- no11(B,C), \+some11(A,C) 0.0890804597701
+[DEBUG] rno11(A,B) :- no11(B,C), \+no11(C,A) 0.0890804597701
+[DEBUG] rno11(A,B) :- all11(C,B), \+all11(A,C) 0.0890804597701
+[DEBUG] rno11(A,B) :- all11(C,B), \+all11(C,A) 0.0890804597701
+[DEBUG] rno11(A,B) :- all11(C,B), \+some11(A,C) 0.0890804597701
+[DEBUG] rno11(A,B) :- all11(C,B), \+no11(A,C) 0.0890804597701
+[DEBUG] rno11(A,B) :- all11(C,B), \+somenot11(C,A) 0.0890804597701
+[DEBUG] rno11(A,B) :- no11(C,A), \+all11(C,B) 0.0822281167109
+[DEBUG] rno11(A,B) :- no11(C,A), \+somenot11(B,C) 0.0822281167109
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+no11(B,C) 0.0822281167109
+[DEBUG] rno11(A,B) :- somenot11(A,C), \+somenot11(B,C) 0.0822281167109
+[DEBUG] rno11(A,B) :- all11(C,B), \+some11(C,A) 0.0822281167109
+[DEBUG] rno11(A,B) :- no11(C,B), \+all11(C,A) 0.0822281167109
+[DEBUG] rno11(A,B) :- no11(C,B), \+some11(A,C) 0.0822281167109
+[DEBUG] rno11(A,B) :- no11(C,B), \+no11(C,A) 0.0822281167109
+[DEBUG] rno11(A,B) :- no11(C,B), \+somenot11(A,C) 0.0822281167109
+[DEBUG] rno11(A,B) :- no11(C,B), \+somenot11(C,A) 0.0822281167109
+[DEBUG] rno11(A,B) :- no11(C,B), \+some11(C,A) 0.076354679803
+[DEBUG] rno11(A,B) :- no11(C,B), \+no11(A,C) 0.076354679803
+[DEBUG] rno11(A,B) :- all11(A,C), \+no11(C,B) 0.0712643678161
+[DEBUG] rno11(A,B) :- all11(A,C), \+somenot11(B,C) 0.0712643678161
+[DEBUG] rno11(A,B) :- all11(B,C), \+all11(A,C) 0.0712643678161
+[DEBUG] rno11(A,B) :- all11(B,C), \+all11(C,A) 0.0712643678161
+[DEBUG] rno11(A,B) :- all11(B,C), \+some11(A,C) 0.0712643678161
+[DEBUG] rno11(A,B) :- all11(B,C), \+some11(C,A) 0.0712643678161
+[DEBUG] rno11(A,B) :- all11(B,C), \+no11(C,A) 0.0712643678161
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno11(A,B) :- somenot11(B,C), all11(A,C) 0.923728813559

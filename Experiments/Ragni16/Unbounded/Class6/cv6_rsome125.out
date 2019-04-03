@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_125.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome125.log
+              target:	rsome125/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome125(A,B) :- somenot125(C,A), \+somenot125(C,B), \+somenot125(B,C), \+some125(C,B), \+some125(B,C), \+no125(C,B), \+no125(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.841666666667
+           Precision:	 1.0
+              Recall:	 0.136363636364
+================== STATISTICS ==================
+    Rule evaluations:	66406
+          Total time:	1105.8093s

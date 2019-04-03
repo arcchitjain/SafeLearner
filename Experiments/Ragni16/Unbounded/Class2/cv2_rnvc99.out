@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_99.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc99.log
+              target:	rnvc99/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc99(A,B) :- some99(B,C), \+all99(A,C), \+all99(C,A)
+rnvc99(A,B) :- no99(B,C), \+all99(A,C), \+some99(C,A), \+somenot99(A,C)
+rnvc99(A,B) :- somenot99(C,B), \+all99(A,C), \+all99(C,A), \+no99(C,A)
+rnvc99(A,B) :- some99(C,B), \+all99(A,C), \+all99(C,A), \+no99(C,A)
+rnvc99(A,B) :- somenot99(B,C), \+all99(A,C), \+all99(C,A), \+no99(A,C), \+no99(C,A)
+rnvc99(A,B) :- no99(C,B), \+all99(A,C), \+all99(C,A), \+some99(A,C), \+some99(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.983333333333
+           Precision:	 1.0
+              Recall:	 0.964285714286
+================== STATISTICS ==================
+    Rule evaluations:	8922
+          Total time:	141.0621s

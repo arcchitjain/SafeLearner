@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_88.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc88.log
+              target:	rnvc88/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc88(A,B) :- somenot88(C,B), \+all88(A,C), \+some88(A,C)
+rnvc88(A,B) :- somenot88(B,C), \+all88(C,A), \+some88(C,A), \+somenot88(C,A)
+rnvc88(A,B) :- no88(C,B), \+all88(A,C), \+all88(C,A), \+no88(A,C), \+somenot88(C,A)
+rnvc88(A,B) :- some88(C,B), \+all88(A,C), \+no88(A,C), \+somenot88(A,C)
+rnvc88(A,B) :- no88(A,C), \+all88(C,B), \+all88(B,C), \+some88(C,B), \+no88(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	7918
+          Total time:	1344.1653s

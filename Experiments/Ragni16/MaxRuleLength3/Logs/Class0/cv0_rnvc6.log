@@ -1,0 +1,373 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.858782564768
+[INFO] Computing scores: 0.0319s
+[INFO] Number of examples (M): 58
+[INFO] Positive weight (P): 10.0000
+[INFO] Negative weight (N): 48.0000
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.172413793103]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.172413793103
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- some6(A,C) 0.0 (1.0, 6.0, 42.0, 9.0) 0.586206896552 [ACCEPT]
+[LVL9] rnvc6(A,B) :- some6(B,C) 0.0 (1.0, 6.0, 42.0, 9.0) 0.586206896552 [ACCEPT]
+[LVL9] rnvc6(A,B) :- some6(C,B) 0.0 (1.0, 5.0, 43.0, 9.0) 0.586206896552 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C) 0.241379310345 (2.0, 6.0, 42.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(A,C) (0.2413793103448276, 2.0) > (0.1724137931034483, 10.0)
+[LVL9] rnvc6(A,B) :- no6(B,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(B,C) (0.27155172413793105, 2.0) > (0.2413793103448276, 2.0)
+[LVL9] rnvc6(A,B) :- no6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,B) 0.241379310345 (2.0, 6.0, 42.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(A,C) 0.0 (1.0, 6.0, 42.0, 9.0) 0.586206896552 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C) 0.241379310345 (2.0, 6.0, 42.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,A) 0.521551724138 (4.0, 3.0, 45.0, 6.0) 0.834482758621 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(C,A) (0.521551724137931, 4.0) > (0.27155172413793105, 2.0)
+[LVL9] rnvc6(A,B) :- somenot6(C,B) 0.241379310345 (2.0, 6.0, 42.0, 8.0) 0.724137931034 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- somenot6(C,A) [0.521551724138]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- somenot6(C,A) 0.521551724138
+[DEBUG] rnvc6(A,B) :- no6(B,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(A,C) 0.241379310345
+[DEBUG] rnvc6(A,B) :- no6(C,B) 0.241379310345
+[DEBUG] rnvc6(A,B) :- somenot6(B,C) 0.241379310345
+[DEBUG] rnvc6(A,B) :- somenot6(C,B) 0.241379310345
+[DEBUG] rnvc6(A,B) :- some6(A,C) 0.0
+[DEBUG] rnvc6(A,B) :- some6(B,C) 0.0
+[DEBUG] rnvc6(A,B) :- some6(C,B) 0.0
+[DEBUG] rnvc6(A,B) :- somenot6(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- somenot6(C,A), some6(C,B) 0.586206896552 (1.0, 0.0, 48.0, 9.0) 0.586206896552 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(C,A), some6(C,B) (0.5862068965517242, 1.0) > (0.521551724137931, 4.0)
+[LVL9] rnvc6(A,B) :- somenot6(C,A), \+all6(B,C) 0.5960591133 (4.0, 2.0, 46.0, 6.0) 0.834482758621 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(C,A), \+all6(B,C) (0.5960591133004927, 4.0) > (0.5862068965517242, 1.0)
+[LVL9] rnvc6(A,B) :- somenot6(C,A), \+some6(B,C) 0.5960591133 (4.0, 2.0, 46.0, 6.0) 0.834482758621 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,A), \+somenot6(B,C) 0.5960591133 (4.0, 2.0, 46.0, 6.0) 0.834482758621 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(B,C), \+all6(A,C) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(B,C), \+all6(C,A) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(B,C), \+some6(A,C) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(B,C), \+some6(C,A) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(B,C), \+somenot6(A,C) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+all6(C,B) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+all6(B,C) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+some6(C,B) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+some6(B,C) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+somenot6(B,C) 0.310344827586 (2.0, 4.0, 44.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+all6(C,B) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+all6(B,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+some6(C,B) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+some6(B,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+no6(C,B) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+somenot6(C,B) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,B), \+all6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,B), \+all6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,B), \+some6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,B), \+some6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,B), \+no6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,B), \+somenot6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+all6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+all6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+some6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+some6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+no6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+somenot6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B), \+all6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B), \+all6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B), \+some6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B), \+some6(C,A) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B), \+no6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B), \+somenot6(A,C) 0.271551724138 (2.0, 5.0, 43.0, 8.0) 0.724137931034 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- somenot6(C,A), \+all6(B,C) [0.5960591133]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- somenot6(C,A), \+all6(B,C) 0.5960591133
+[DEBUG] rnvc6(A,B) :- somenot6(C,A), \+some6(B,C) 0.5960591133
+[DEBUG] rnvc6(A,B) :- somenot6(C,A), \+somenot6(B,C) 0.5960591133
+[DEBUG] rnvc6(A,B) :- no6(B,C), \+all6(A,C) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(B,C), \+all6(C,A) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(B,C), \+some6(A,C) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(B,C), \+some6(C,A) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(B,C), \+somenot6(A,C) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+all6(C,B) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+all6(B,C) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+some6(C,B) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+some6(B,C) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+somenot6(B,C) 0.310344827586
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+all6(C,B) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+all6(B,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+some6(C,B) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+some6(B,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+no6(C,B) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+somenot6(C,B) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(C,B), \+all6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(C,B), \+all6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(C,B), \+some6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(C,B), \+some6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(C,B), \+no6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- no6(C,B), \+somenot6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+all6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+all6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+some6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+some6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+no6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+somenot6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(C,B), \+all6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(C,B), \+all6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(C,B), \+some6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(C,B), \+some6(C,A) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(C,B), \+no6(A,C) 0.271551724138
+[DEBUG] rnvc6(A,B) :- somenot6(C,B), \+somenot6(A,C) 0.271551724138
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- somenot6(C,A), \+all6(B,C) 0.862068965517
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- some6(A,C) 0.139423076923 (5.0, 8.0, 40.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- some6(A,C) (0.13942307692307693, 5.0) > (0.0, 10.0)
+[LVL9] rnvc6(A,B) :- some6(B,C) 0.159340659341 (5.0, 7.0, 41.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- some6(B,C) (0.15934065934065936, 5.0) > (0.13942307692307693, 5.0)
+[LVL9] rnvc6(A,B) :- no6(A,C) 0.235042735043 (6.0, 8.0, 40.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(A,C) (0.23504273504273504, 6.0) > (0.15934065934065936, 5.0)
+[LVL9] rnvc6(A,B) :- no6(B,C) 0.159340659341 (5.0, 7.0, 41.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(C,A) (0.2644230769230769, 6.0) > (0.23504273504273504, 6.0)
+[LVL9] rnvc6(A,B) :- no6(C,B) 0.139423076923 (5.0, 8.0, 40.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(A,C) 0.139423076923 (5.0, 8.0, 40.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B) 0.139423076923 (5.0, 8.0, 40.0, 5.0) 0.557692307692 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- no6(C,A) [0.264423076923]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- no6(C,A) 0.264423076923
+[DEBUG] rnvc6(A,B) :- somenot6(B,C) 0.264423076923
+[DEBUG] rnvc6(A,B) :- no6(A,C) 0.235042735043
+[DEBUG] rnvc6(A,B) :- some6(B,C) 0.159340659341
+[DEBUG] rnvc6(A,B) :- no6(B,C) 0.159340659341
+[DEBUG] rnvc6(A,B) :- some6(A,C) 0.139423076923
+[DEBUG] rnvc6(A,B) :- no6(C,B) 0.139423076923
+[DEBUG] rnvc6(A,B) :- somenot6(A,C) 0.139423076923
+[DEBUG] rnvc6(A,B) :- somenot6(C,B) 0.139423076923
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- no6(C,A), no6(C,B) 0.557692307692 (5.0, 2.0, 46.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(C,A), no6(C,B) (0.5576923076923077, 5.0) > (0.2644230769230769, 6.0)
+[LVL9] rnvc6(A,B) :- no6(C,A), \+all6(C,B) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+all6(B,C) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+some6(C,B) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+some6(B,C) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A), \+somenot6(B,C) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+all6(A,C) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+all6(C,A) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+some6(A,C) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+some6(C,A) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+no6(C,A) 0.302197802198 (6.0, 6.0, 42.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+all6(C,B) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+all6(B,C) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+some6(C,B) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+some6(B,C) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+no6(C,B) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+somenot6(C,B) 0.264423076923 (6.0, 7.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- no6(C,A), no6(C,B) [0.557692307692]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- no6(C,A), no6(C,B) 0.557692307692
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+all6(C,B) 0.302197802198
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+all6(B,C) 0.302197802198
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+some6(C,B) 0.302197802198
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+some6(B,C) 0.302197802198
+[DEBUG] rnvc6(A,B) :- no6(C,A), \+somenot6(B,C) 0.302197802198
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+all6(A,C) 0.302197802198
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+all6(C,A) 0.302197802198
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+some6(A,C) 0.302197802198
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+some6(C,A) 0.302197802198
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+no6(C,A) 0.302197802198
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+all6(C,B) 0.264423076923
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+all6(B,C) 0.264423076923
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+some6(C,B) 0.264423076923
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+some6(B,C) 0.264423076923
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+no6(C,B) 0.264423076923
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+somenot6(C,B) 0.264423076923
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- no6(C,A), no6(C,B) 0.879310344828
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.0980392156863]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.0980392156863
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- some6(A,C) 0.137254901961 (6.0, 8.0, 40.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- some6(A,C) (0.13725490196078433, 6.0) > (0.09803921568627451, 10.0)
+[LVL9] rnvc6(A,B) :- some6(B,C) 0.156862745098 (6.0, 7.0, 41.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- some6(B,C) (0.15686274509803924, 6.0) > (0.13725490196078433, 6.0)
+[LVL9] rnvc6(A,B) :- no6(A,C) 0.23311546841 (7.0, 8.0, 40.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(A,C) (0.23311546840958608, 7.0) > (0.15686274509803924, 6.0)
+[LVL9] rnvc6(A,B) :- no6(B,C) 0.156862745098 (6.0, 7.0, 41.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A) 0.156862745098 (6.0, 7.0, 41.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(A,C) 0.137254901961 (6.0, 8.0, 40.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C) 0.262254901961 (7.0, 7.0, 41.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(B,C) (0.2622549019607843, 7.0) > (0.23311546840958608, 7.0)
+[LVL9] rnvc6(A,B) :- somenot6(C,B) 0.137254901961 (6.0, 8.0, 40.0, 4.0) 0.549019607843 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- somenot6(B,C) [0.262254901961]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- somenot6(B,C) 0.262254901961
+[DEBUG] rnvc6(A,B) :- no6(A,C) 0.23311546841
+[DEBUG] rnvc6(A,B) :- some6(B,C) 0.156862745098
+[DEBUG] rnvc6(A,B) :- no6(B,C) 0.156862745098
+[DEBUG] rnvc6(A,B) :- no6(C,A) 0.156862745098
+[DEBUG] rnvc6(A,B) :- some6(A,C) 0.137254901961
+[DEBUG] rnvc6(A,B) :- somenot6(A,C) 0.137254901961
+[DEBUG] rnvc6(A,B) :- somenot6(C,B) 0.137254901961
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- somenot6(B,C), no6(A,C) 0.549019607843 (6.0, 2.0, 46.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(B,C), no6(A,C) (0.5490196078431373, 6.0) > (0.2622549019607843, 7.0)
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+all6(A,C) 0.299719887955 (7.0, 6.0, 42.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+all6(C,A) 0.299719887955 (7.0, 6.0, 42.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+some6(A,C) 0.299719887955 (7.0, 6.0, 42.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+some6(C,A) 0.299719887955 (7.0, 6.0, 42.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C), \+no6(C,A) 0.299719887955 (7.0, 6.0, 42.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+all6(C,B) 0.262254901961 (7.0, 7.0, 41.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+all6(B,C) 0.262254901961 (7.0, 7.0, 41.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+some6(C,B) 0.262254901961 (7.0, 7.0, 41.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+some6(B,C) 0.262254901961 (7.0, 7.0, 41.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+no6(C,B) 0.262254901961 (7.0, 7.0, 41.0, 3.0) 0.699346405229 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(A,C), \+somenot6(C,B) 0.262254901961 (7.0, 7.0, 41.0, 3.0) 0.699346405229 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- somenot6(B,C), no6(A,C) [0.549019607843]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), no6(A,C) 0.549019607843
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+all6(A,C) 0.299719887955
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+all6(C,A) 0.299719887955
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+some6(A,C) 0.299719887955
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+some6(C,A) 0.299719887955
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), \+no6(C,A) 0.299719887955
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+all6(C,B) 0.262254901961
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+all6(B,C) 0.262254901961
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+some6(C,B) 0.262254901961
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+some6(B,C) 0.262254901961
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+no6(C,B) 0.262254901961
+[DEBUG] rnvc6(A,B) :- no6(A,C), \+somenot6(C,B) 0.262254901961
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- somenot6(B,C), no6(A,C) 0.896551724138
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.08]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.08
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- some6(A,C) 0.135 (7.0, 8.0, 40.0, 3.0) 0.54 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- some6(A,C) (0.135, 7.0) > (0.08, 10.0)
+[LVL9] rnvc6(A,B) :- some6(B,C) 0.154285714286 (7.0, 7.0, 41.0, 3.0) 0.54 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- some6(B,C) (0.1542857142857143, 7.0) > (0.135, 7.0)
+[LVL9] rnvc6(A,B) :- no6(A,C) 0.135 (7.0, 8.0, 40.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(B,C) 0.154285714286 (7.0, 7.0, 41.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc6(A,B) :- no6(C,A) 0.154285714286 (7.0, 7.0, 41.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(A,C) 0.135 (7.0, 8.0, 40.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C) 0.154285714286 (7.0, 7.0, 41.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B) 0.135 (7.0, 8.0, 40.0, 3.0) 0.54 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- some6(B,C) [0.154285714286]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- some6(B,C) 0.154285714286
+[DEBUG] rnvc6(A,B) :- no6(B,C) 0.154285714286
+[DEBUG] rnvc6(A,B) :- no6(C,A) 0.154285714286
+[DEBUG] rnvc6(A,B) :- somenot6(B,C) 0.154285714286
+[DEBUG] rnvc6(A,B) :- some6(A,C) 0.135
+[DEBUG] rnvc6(A,B) :- no6(A,C) 0.135
+[DEBUG] rnvc6(A,B) :- somenot6(A,C) 0.135
+[DEBUG] rnvc6(A,B) :- somenot6(C,B) 0.135
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- some6(B,C), some6(A,C) 0.54 (7.0, 2.0, 46.0, 3.0) 0.54 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- some6(B,C), some6(A,C) (0.54, 7.0) > (0.1542857142857143, 7.0)
+[DEBUG] Best rule so far: rnvc6(A,B) :- some6(B,C), some6(A,C) [0.54]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- some6(B,C), some6(A,C) 0.54
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- some6(B,C), some6(A,C) 0.913793103448
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.0612244897959]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.0612244897959
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- no6(A,C) 0.132653061224 (8.0, 8.0, 40.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(A,C) (0.1326530612244898, 8.0) > (0.061224489795918366, 10.0)
+[LVL9] rnvc6(A,B) :- no6(B,C) 0.151603498542 (8.0, 7.0, 41.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(B,C) (0.15160349854227406, 8.0) > (0.1326530612244898, 8.0)
+[LVL9] rnvc6(A,B) :- no6(C,A) 0.151603498542 (8.0, 7.0, 41.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(A,C) 0.132653061224 (8.0, 8.0, 40.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C) 0.151603498542 (8.0, 7.0, 41.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B) 0.132653061224 (8.0, 8.0, 40.0, 2.0) 0.530612244898 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- no6(B,C) [0.151603498542]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- no6(B,C) 0.151603498542
+[DEBUG] rnvc6(A,B) :- no6(C,A) 0.151603498542
+[DEBUG] rnvc6(A,B) :- somenot6(B,C) 0.151603498542
+[DEBUG] rnvc6(A,B) :- no6(A,C) 0.132653061224
+[DEBUG] rnvc6(A,B) :- somenot6(A,C) 0.132653061224
+[DEBUG] rnvc6(A,B) :- somenot6(C,B) 0.132653061224
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- no6(B,C), no6(A,C) 0.530612244898 (8.0, 2.0, 46.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(B,C), no6(A,C) (0.5306122448979592, 8.0) > (0.15160349854227406, 8.0)
+[DEBUG] Best rule so far: rnvc6(A,B) :- no6(B,C), no6(A,C) [0.530612244898]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- no6(B,C), no6(A,C) 0.530612244898
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- no6(B,C), no6(A,C) 0.931034482759
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.0416666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.0416666666667
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- no6(C,A) 0.14880952381 (9.0, 7.0, 41.0, 1.0) 0.520833333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(C,A) (0.1488095238095238, 9.0) > (0.041666666666666664, 10.0)
+[LVL9] rnvc6(A,B) :- somenot6(A,C) 0.130208333333 (9.0, 8.0, 40.0, 1.0) 0.520833333333 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(B,C) 0.14880952381 (9.0, 7.0, 41.0, 1.0) 0.520833333333 [ACCEPT]
+[LVL9] rnvc6(A,B) :- somenot6(C,B) 0.130208333333 (9.0, 8.0, 40.0, 1.0) 0.520833333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc6(A,B) :- no6(C,A) [0.14880952381]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- no6(C,A) 0.14880952381
+[DEBUG] rnvc6(A,B) :- somenot6(B,C) 0.14880952381
+[DEBUG] rnvc6(A,B) :- somenot6(A,C) 0.130208333333
+[DEBUG] rnvc6(A,B) :- somenot6(C,B) 0.130208333333
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- no6(C,A), somenot6(C,B) 0.520833333333 (9.0, 2.0, 46.0, 1.0) 0.520833333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- no6(C,A), somenot6(C,B) (0.5208333333333334, 9.0) > (0.1488095238095238, 9.0)
+[DEBUG] Best rule so far: rnvc6(A,B) :- no6(C,A), somenot6(C,B) [0.520833333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- no6(C,A), somenot6(C,B) 0.520833333333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- no6(C,A), somenot6(C,B) 0.948275862069
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.0212765957447]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.0212765957447
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- somenot6(A,C) 0.127659574468 (10.0, 8.0, 40.0, 0.0) 0.510638297872 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(A,C) (0.1276595744680851, 10.0) > (0.02127659574468085, 10.0)
+[LVL9] rnvc6(A,B) :- somenot6(B,C) 0.145896656535 (10.0, 7.0, 41.0, 0.0) 0.510638297872 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(B,C) (0.1458966565349544, 10.0) > (0.1276595744680851, 10.0)
+[DEBUG] Best rule so far: rnvc6(A,B) :- somenot6(B,C) [0.145896656535]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- somenot6(B,C) 0.145896656535
+[DEBUG] rnvc6(A,B) :- somenot6(A,C) 0.127659574468
+[DEBUG] ==================================
+[LVL9] rnvc6(A,B) :- somenot6(B,C), somenot6(A,C) 0.510638297872 (10.0, 2.0, 46.0, 0.0) 0.510638297872 [ACCEPT]
+[LVL9] BETTER RULE rnvc6(A,B) :- somenot6(B,C), somenot6(A,C) (0.5106382978723404, 10.0) > (0.1458966565349544, 10.0)
+[DEBUG] Best rule so far: rnvc6(A,B) :- somenot6(B,C), somenot6(A,C) [0.510638297872]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- somenot6(B,C), somenot6(A,C) 0.510638297872
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- somenot6(B,C), somenot6(A,C) 0.965517241379
+[DEBUG] Best rule so far: rnvc6(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc6(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc6(A,B) :- true 0.965517241379

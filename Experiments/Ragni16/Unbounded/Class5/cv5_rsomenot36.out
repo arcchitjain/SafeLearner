@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_36.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rsomenot36.log
+              target:	rsomenot36/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot36(A,B) :- all36(C,A), \+all36(C,B), \+no36(C,B), \+no36(B,C), \+somenot36(B,C), \+all36(B,C), \+some36(C,B)
+rsomenot36(A,B) :- some36(C,A), somenot36(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.894736842105
+           Precision:	 1.0
+              Recall:	 0.25
+================== STATISTICS ==================
+    Rule evaluations:	41260
+          Total time:	4292.3827s

@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_124.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc124.log
+              target:	rnvc124/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc124(A,B) :- somenot124(B,C)
+rnvc124(A,B) :- somenot124(A,C)
+rnvc124(A,B) :- somenot124(C,B), \+all124(A,C), \+all124(C,A)
+rnvc124(A,B) :- some124(B,C), \+all124(C,A), \+no124(A,C)
+rnvc124(A,B) :- some124(C,B), \+all124(A,C), \+all124(C,A), \+no124(C,A)
+rnvc124(A,B) :- all124(B,C), \+all124(C,A), \+some124(A,C), \+no124(A,C), \+no124(C,A)
+rnvc124(A,B) :- no124(C,A), \+all124(C,B), \+all124(B,C), \+some124(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.983050847458
+           Precision:	 1.0
+              Recall:	 0.969696969697
+================== STATISTICS ==================
+    Rule evaluations:	10420
+          Total time:	296.8978s

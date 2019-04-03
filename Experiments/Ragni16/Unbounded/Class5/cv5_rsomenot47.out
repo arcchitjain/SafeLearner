@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_47.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rsomenot47.log
+              target:	rsomenot47/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot47(A,B) :- somenot47(A,C), all47(C,B)
+rsomenot47(A,B) :- somenot47(A,C), all47(B,C)
+rsomenot47(A,B) :- some47(B,C), all47(A,C)
+rsomenot47(A,B) :- all47(C,B), some47(A,C)
+rsomenot47(A,B) :- no47(C,B), all47(C,A)
+rsomenot47(A,B) :- some47(B,C), no47(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.766129032258
+           Precision:	 1.0
+              Recall:	 0.25641025641
+================== STATISTICS ==================
+    Rule evaluations:	105603
+          Total time:	1705.3594s

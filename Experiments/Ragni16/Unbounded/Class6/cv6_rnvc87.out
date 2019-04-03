@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_87.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc87.log
+              target:	rnvc87/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc87(A,B) :- somenot87(C,B), \+all87(A,C)
+rnvc87(A,B) :- somenot87(B,C), \+all87(A,C), \+all87(C,A)
+rnvc87(A,B) :- no87(B,C), \+all87(A,C), \+no87(C,A)
+rnvc87(A,B) :- no87(C,B), \+all87(A,C), \+all87(C,A), \+some87(A,C)
+rnvc87(A,B) :- some87(B,C), \+all87(C,A), \+no87(A,C), \+no87(C,A), \+somenot87(C,A)
+rnvc87(A,B) :- all87(B,C), \+all87(C,A), \+no87(A,C), \+no87(C,A), \+somenot87(A,C)
+rnvc87(A,B) :- some87(C,B), \+all87(C,A), \+somenot87(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.981132075472
+           Precision:	 1.0
+              Recall:	 0.965517241379
+================== STATISTICS ==================
+    Rule evaluations:	8241
+          Total time:	1114.4514s

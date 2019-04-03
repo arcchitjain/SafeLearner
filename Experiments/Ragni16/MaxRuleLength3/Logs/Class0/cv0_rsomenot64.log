@@ -1,0 +1,371 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.190152356067
+[INFO] Computing scores: 0.0708s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 15.0000
+[INFO] Negative weight (N): 105.0000
+[DEBUG] Best rule so far: rsomenot64(A,B) :- true [0.125]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot64(A,B) :- true 0.125
+[DEBUG] ==================================
+[LVL9] rsomenot64(A,B) :- all64(A,C) 0.1328125 (2.0, 13.0, 92.0, 13.0) 0.708333333333 [ACCEPT]
+[LVL9] BETTER RULE rsomenot64(A,B) :- all64(A,C) (0.1328125, 2.0) > (0.125, 15.0)
+[LVL9] rsomenot64(A,B) :- all64(B,C) 0.1328125 (2.0, 13.0, 92.0, 13.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A) 0.1328125 (2.0, 13.0, 92.0, 13.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,B) 0.0 (1.0, 14.0, 91.0, 14.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(A,C) 0.125 (2.0, 14.0, 91.0, 13.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(B,C) 0.125 (2.0, 14.0, 91.0, 13.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A) 0.294642857143 (4.0, 9.0, 96.0, 11.0) 0.825 [ACCEPT]
+[LVL9] BETTER RULE rsomenot64(A,B) :- some64(C,A) (0.29464285714285715, 4.0) > (0.1328125, 2.0)
+[LVL9] rsomenot64(A,B) :- no64(B,C) 0.242647058824 (4.0, 12.0, 93.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(C,B) 0.0 (1.0, 13.0, 92.0, 14.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C) 0.1953125 (3.0, 12.0, 93.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C) 0.1328125 (2.0, 13.0, 92.0, 13.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,A) 0.125 (2.0, 14.0, 91.0, 13.0) 0.708333333333 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B) 0.183823529412 (3.0, 13.0, 92.0, 12.0) 0.78125 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot64(A,B) :- some64(C,A) [0.294642857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot64(A,B) :- some64(C,A) 0.294642857143
+[DEBUG] rsomenot64(A,B) :- no64(B,C) 0.242647058824
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C) 0.1953125
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B) 0.183823529412
+[DEBUG] rsomenot64(A,B) :- all64(A,C) 0.1328125
+[DEBUG] rsomenot64(A,B) :- all64(B,C) 0.1328125
+[DEBUG] rsomenot64(A,B) :- all64(C,A) 0.1328125
+[DEBUG] rsomenot64(A,B) :- somenot64(B,C) 0.1328125
+[DEBUG] rsomenot64(A,B) :- some64(A,C) 0.125
+[DEBUG] rsomenot64(A,B) :- some64(B,C) 0.125
+[DEBUG] rsomenot64(A,B) :- somenot64(C,A) 0.125
+[DEBUG] rsomenot64(A,B) :- all64(C,B) 0.0
+[DEBUG] rsomenot64(A,B) :- no64(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot64(A,B) :- some64(C,A), all64(B,C) 0.375 (1.0, 1.0, 104.0, 14.0) 0.5625 [ACCEPT]
+[LVL9] BETTER RULE rsomenot64(A,B) :- some64(C,A), all64(B,C) (0.375, 1.0) > (0.29464285714285715, 4.0)
+[LVL9] rsomenot64(A,B) :- some64(C,A), all64(B,D) 0.375 (1.0, 1.0, 104.0, 14.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), all64(D,C) 0.375 (1.0, 1.0, 104.0, 14.0) 0.5625 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), no64(B,C) 0.708333333333 (2.0, 0.0, 105.0, 13.0) 0.708333333333 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot64(A,B) :- some64(C,A), no64(B,C) (0.7083333333333334, 2.0) > (0.375, 1.0)
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+all64(C,B) 0.34375 (4.0, 7.0, 98.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+all64(B,C) 0.260416666667 (3.0, 8.0, 97.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+some64(B,C) 0.34375 (4.0, 7.0, 98.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+no64(C,B) 0.317307692308 (4.0, 8.0, 97.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+somenot64(C,B) 0.34375 (4.0, 7.0, 98.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+somenot64(B,C) 0.260416666667 (3.0, 8.0, 97.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+all64(A,C) 0.275 (4.0, 10.0, 95.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+all64(C,A) 0.275 (4.0, 10.0, 95.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+some64(A,C) 0.275 (4.0, 10.0, 95.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+no64(A,C) 0.275 (4.0, 10.0, 95.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+no64(C,A) 0.275 (4.0, 10.0, 95.0, 11.0) 0.825 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+somenot64(A,C) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+somenot64(C,A) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+some64(C,B) 0.223214285714 (3.0, 10.0, 95.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+some64(B,C) 0.223214285714 (3.0, 10.0, 95.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+no64(C,B) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(C,B) 0.223214285714 (3.0, 10.0, 95.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(B,C) 0.223214285714 (3.0, 10.0, 95.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+some64(C,A) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+no64(A,C) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+no64(C,A) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(C,A) 0.208333333333 (3.0, 11.0, 94.0, 12.0) 0.78125 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot64(A,B) :- some64(C,A), no64(B,C) [0.708333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot64(A,B) :- some64(C,A), all64(B,C) 0.375
+[DEBUG] rsomenot64(A,B) :- some64(C,A), all64(B,D) 0.375
+[DEBUG] rsomenot64(A,B) :- some64(C,A), all64(D,C) 0.375
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+all64(C,B) 0.34375
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+some64(B,C) 0.34375
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+somenot64(C,B) 0.34375
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+no64(C,B) 0.317307692308
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+all64(A,C) 0.275
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+all64(C,A) 0.275
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+some64(A,C) 0.275
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+no64(A,C) 0.275
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+no64(C,A) 0.275
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+all64(B,C) 0.260416666667
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+somenot64(B,C) 0.260416666667
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+some64(C,B) 0.223214285714
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+some64(B,C) 0.223214285714
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(C,B) 0.223214285714
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(B,C) 0.223214285714
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+somenot64(A,C) 0.208333333333
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+somenot64(C,A) 0.208333333333
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+no64(C,B) 0.208333333333
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+some64(C,A) 0.208333333333
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+no64(A,C) 0.208333333333
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+no64(C,A) 0.208333333333
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.208333333333
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(C,A) 0.208333333333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot64(A,B) :- some64(C,A), no64(B,C) 0.891666666667
+[DEBUG] Best rule so far: rsomenot64(A,B) :- true [0.110169491525]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot64(A,B) :- true 0.110169491525
+[DEBUG] ==================================
+[LVL9] rsomenot64(A,B) :- all64(A,C) 0.13188559322 (4.0, 13.0, 92.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] BETTER RULE rsomenot64(A,B) :- all64(A,C) (0.131885593220339, 4.0) > (0.11016949152542373, 15.0)
+[LVL9] rsomenot64(A,B) :- all64(B,C) 0.13188559322 (4.0, 13.0, 92.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A) 0.13188559322 (4.0, 13.0, 92.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,B) 0.0 (3.0, 14.0, 91.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(A,C) 0.124127617149 (4.0, 14.0, 91.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(B,C) 0.124127617149 (4.0, 14.0, 91.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A) 0.175847457627 (4.0, 9.0, 96.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] BETTER RULE rsomenot64(A,B) :- some64(C,A) (0.17584745762711865, 4.0) > (0.131885593220339, 4.0)
+[LVL9] rsomenot64(A,B) :- no64(B,C) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(C,B) 0.0 (3.0, 13.0, 92.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C) 0.19438559322 (5.0, 12.0, 93.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] BETTER RULE rsomenot64(A,B) :- somenot64(A,C) (0.194385593220339, 5.0) > (0.17584745762711865, 4.0)
+[LVL9] rsomenot64(A,B) :- somenot64(B,C) 0.13188559322 (4.0, 13.0, 92.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,A) 0.124127617149 (4.0, 14.0, 91.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B) 0.18295114656 (5.0, 13.0, 92.0, 10.0) 0.777542372881 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot64(A,B) :- somenot64(A,C) [0.19438559322]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C) 0.19438559322
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B) 0.18295114656
+[DEBUG] rsomenot64(A,B) :- some64(C,A) 0.175847457627
+[DEBUG] rsomenot64(A,B) :- no64(B,C) 0.140677966102
+[DEBUG] rsomenot64(A,B) :- all64(A,C) 0.13188559322
+[DEBUG] rsomenot64(A,B) :- all64(B,C) 0.13188559322
+[DEBUG] rsomenot64(A,B) :- all64(C,A) 0.13188559322
+[DEBUG] rsomenot64(A,B) :- somenot64(B,C) 0.13188559322
+[DEBUG] rsomenot64(A,B) :- some64(A,C) 0.124127617149
+[DEBUG] rsomenot64(A,B) :- some64(B,C) 0.124127617149
+[DEBUG] rsomenot64(A,B) :- somenot64(C,A) 0.124127617149
+[DEBUG] rsomenot64(A,B) :- all64(C,B) 0.0
+[DEBUG] rsomenot64(A,B) :- no64(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), all64(C,B) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] BETTER RULE rsomenot64(A,B) :- somenot64(A,C), all64(C,B) (0.3700564971751412, 3.0) > (0.194385593220339, 5.0)
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), all64(B,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), all64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), all64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), all64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), all64(D,B) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), no64(B,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), no64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), no64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+all64(C,B) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+all64(B,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+some64(C,B) 0.22215496368 (5.0, 10.0, 95.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+some64(B,C) 0.22215496368 (5.0, 10.0, 95.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+no64(C,B) 0.207344632768 (5.0, 11.0, 94.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+no64(B,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(C,B) 0.22215496368 (5.0, 10.0, 95.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(B,C) 0.22215496368 (5.0, 10.0, 95.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), all64(A,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), all64(C,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), all64(A,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), all64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), all64(D,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), all64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), some64(A,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), some64(A,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), some64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+all64(A,C) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+all64(C,A) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+some64(A,C) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+some64(C,A) 0.207344632768 (5.0, 11.0, 94.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+no64(A,C) 0.207344632768 (5.0, 11.0, 94.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+no64(C,A) 0.207344632768 (5.0, 11.0, 94.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.207344632768 (5.0, 11.0, 94.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(C,A) 0.207344632768 (5.0, 11.0, 94.0, 10.0) 0.777542372881 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), all64(B,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), all64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), all64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), somenot64(B,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), somenot64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), somenot64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+all64(C,B) 0.211016949153 (4.0, 7.0, 98.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+all64(B,C) 0.111016949153 (3.0, 8.0, 97.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+some64(B,C) 0.211016949153 (4.0, 7.0, 98.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+no64(C,B) 0.191833590139 (4.0, 8.0, 97.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+somenot64(C,B) 0.211016949153 (4.0, 7.0, 98.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(C,A), \+somenot64(B,C) 0.111016949153 (3.0, 8.0, 97.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), somenot64(C,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), somenot64(A,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), somenot64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), somenot64(D,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), somenot64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+all64(A,C) 0.162320730117 (4.0, 10.0, 95.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+all64(C,A) 0.162320730117 (4.0, 10.0, 95.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+some64(A,C) 0.162320730117 (4.0, 10.0, 95.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+no64(A,C) 0.162320730117 (4.0, 10.0, 95.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+no64(C,A) 0.162320730117 (4.0, 10.0, 95.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+somenot64(A,C) 0.0 (3.0, 11.0, 94.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(B,C), \+somenot64(C,A) 0.0 (3.0, 11.0, 94.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), some64(B,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), some64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), some64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), somenot64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), somenot64(D,B) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+all64(C,B) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+all64(B,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+some64(C,B) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+some64(B,C) 0.0 (3.0, 12.0, 93.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+no64(C,B) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+no64(B,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+somenot64(C,B) 0.0 (3.0, 12.0, 93.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(A,C), \+somenot64(B,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), some64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), some64(D,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), somenot64(A,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), somenot64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+all64(A,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+all64(C,A) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+some64(A,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+some64(C,A) 0.0 (3.0, 12.0, 93.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+no64(A,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+no64(C,A) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+somenot64(A,C) 0.0 (3.0, 12.0, 93.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(B,C), \+somenot64(C,A) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), some64(B,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), some64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), some64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), somenot64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), somenot64(D,B) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+all64(C,B) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+all64(B,C) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+some64(C,B) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+some64(B,C) 0.0 (3.0, 12.0, 93.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+no64(C,B) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+no64(B,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+somenot64(C,B) 0.0 (3.0, 12.0, 93.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,A), \+somenot64(B,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), some64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), some64(D,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), somenot64(C,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), somenot64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), somenot64(D,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), \+all64(A,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), \+all64(C,A) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), \+some64(A,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), \+no64(A,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), \+no64(C,A) 0.140677966102 (4.0, 12.0, 93.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(B,C), \+somenot64(A,C) 0.150726392252 (4.0, 11.0, 94.0, 11.0) 0.703389830508 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(A,C), no64(C,B) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(A,C), no64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(A,C), no64(D,B) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(A,C), somenot64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(A,C), somenot64(D,B) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(B,C), all64(A,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(B,C), all64(C,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(B,C), all64(D,A) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- some64(B,C), all64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,A), no64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,A), no64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,A), somenot64(B,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- somenot64(C,A), somenot64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,B), somenot64(A,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- all64(C,B), somenot64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(C,B), some64(A,D) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[LVL9] rsomenot64(A,B) :- no64(C,B), some64(D,C) 0.370056497175 (3.0, 1.0, 104.0, 12.0) 0.555084745763 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot64(A,B) :- somenot64(A,C), all64(C,B) [0.370056497175]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), all64(C,B) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), all64(B,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), all64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), all64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), all64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), all64(D,B) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), no64(B,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), no64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), no64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), all64(A,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), all64(C,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), all64(A,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), all64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), all64(D,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), all64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), some64(A,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), some64(A,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), some64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(C,A), all64(B,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(C,A), all64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(C,A), all64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(C,A), somenot64(B,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(C,A), somenot64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(C,A), somenot64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- no64(B,C), somenot64(C,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- no64(B,C), somenot64(A,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- no64(B,C), somenot64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- no64(B,C), somenot64(D,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- no64(B,C), somenot64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(A,C), some64(B,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(A,C), some64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(A,C), some64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(A,C), somenot64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(A,C), somenot64(D,B) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(B,C), some64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(B,C), some64(D,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(B,C), somenot64(A,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(B,C), somenot64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(C,A), some64(B,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(C,A), some64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(C,A), some64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(C,A), somenot64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(C,A), somenot64(D,B) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(B,C), some64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(B,C), some64(D,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(B,C), somenot64(C,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(B,C), somenot64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(B,C), somenot64(D,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(A,C), no64(C,B) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(A,C), no64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(A,C), no64(D,B) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(A,C), somenot64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(A,C), somenot64(D,B) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(B,C), all64(A,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(B,C), all64(C,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(B,C), all64(D,A) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- some64(B,C), all64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,A), no64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,A), no64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,A), somenot64(B,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(C,A), somenot64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(C,B), somenot64(A,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- all64(C,B), somenot64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- no64(C,B), some64(A,D) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- no64(C,B), some64(D,C) 0.370056497175
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+some64(C,B) 0.22215496368
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+some64(B,C) 0.22215496368
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(C,B) 0.22215496368
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+somenot64(B,C) 0.22215496368
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+all64(C,B) 0.211016949153
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+some64(B,C) 0.211016949153
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+somenot64(C,B) 0.211016949153
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+no64(C,B) 0.207344632768
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+some64(C,A) 0.207344632768
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+no64(A,C) 0.207344632768
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+no64(C,A) 0.207344632768
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(A,C) 0.207344632768
+[DEBUG] rsomenot64(A,B) :- somenot64(C,B), \+somenot64(C,A) 0.207344632768
+[DEBUG] rsomenot64(A,B) :- some64(C,A), \+no64(C,B) 0.191833590139
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+all64(A,C) 0.162320730117
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+all64(C,A) 0.162320730117
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+some64(A,C) 0.162320730117
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+no64(A,C) 0.162320730117
+[DEBUG] rsomenot64(A,B) :- no64(B,C), \+no64(C,A) 0.162320730117
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+all64(C,B) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+all64(B,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- somenot64(A,C), \+no64(B,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(A,C), \+all64(B,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(A,C), \+some64(C,B) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(A,C), \+no64(C,B) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(A,C), \+no64(B,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(A,C), \+somenot64(B,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(B,C), \+all64(A,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(B,C), \+some64(A,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(B,C), \+no64(A,C) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(B,C), \+no64(C,A) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(B,C), \+somenot64(C,A) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(C,A), \+all64(C,B) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(C,A), \+some64(C,B) 0.150726392252
+[DEBUG] rsomenot64(A,B) :- all64(C,A), \+no64(C,B) 0.150726392252
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot64(A,B) :- somenot64(A,C), all64(C,B) 0.891666666667

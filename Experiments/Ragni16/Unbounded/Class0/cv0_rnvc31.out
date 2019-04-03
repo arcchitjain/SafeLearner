@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_31.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc31.log
+              target:	rnvc31/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc31(A,B) :- some31(C,B), \+all31(A,C), \+all31(C,A), \+somenot31(A,C), \+somenot31(C,A)
+rnvc31(A,B) :- somenot31(A,C), \+all31(B,C), \+some31(C,B), \+some31(B,C), \+no31(B,C), \+somenot31(C,B)
+rnvc31(A,B) :- no31(C,A), \+all31(C,B), \+all31(B,C), \+some31(B,C), \+somenot31(C,B)
+rnvc31(A,B) :- no31(A,C), \+all31(C,B), \+all31(B,C), \+some31(B,C), \+no31(C,B), \+somenot31(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	13395
+          Total time:	252.2892s

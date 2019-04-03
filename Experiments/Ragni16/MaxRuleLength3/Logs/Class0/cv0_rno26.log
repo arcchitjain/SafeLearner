@@ -1,0 +1,158 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.744967573295
+[INFO] Computing scores: 0.0957s
+[INFO] Number of examples (M): 102
+[INFO] Positive weight (P): 2.0000
+[INFO] Negative weight (N): 100.0000
+[DEBUG] Best rule so far: rno26(A,B) :- true [0.0196078431373]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno26(A,B) :- true 0.0196078431373
+[DEBUG] ==================================
+[LVL9] rno26(A,B) :- all26(A,C) 0.0849673202614 (1.0, 10.0, 90.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] BETTER RULE rno26(A,B) :- all26(A,C) (0.0849673202614379, 1.0) > (0.0196078431372549, 2.0)
+[LVL9] rno26(A,B) :- all26(B,C) 0.0849673202614 (1.0, 10.0, 90.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C) 0.0637254901961 (1.0, 14.0, 86.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C) 0.0637254901961 (1.0, 14.0, 86.0, 1.0) 0.509803921569 [ACCEPT]
+[DEBUG] Best rule so far: rno26(A,B) :- all26(A,C) [0.0849673202614]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno26(A,B) :- all26(A,C) 0.0849673202614
+[DEBUG] rno26(A,B) :- all26(B,C) 0.0849673202614
+[DEBUG] rno26(A,B) :- no26(A,C) 0.0637254901961
+[DEBUG] rno26(A,B) :- no26(B,C) 0.0637254901961
+[DEBUG] ==================================
+[LVL9] rno26(A,B) :- all26(A,C), no26(B,C) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] BETTER RULE rno26(A,B) :- all26(A,C), no26(B,C) (0.3398692810457516, 1.0) > (0.0849673202614379, 1.0)
+[LVL9] rno26(A,B) :- all26(A,C), no26(B,D) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(A,C), no26(D,C) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(A,C), \+all26(B,C) 0.101960784314 (1.0, 8.0, 92.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(A,C), \+some26(C,B) 0.0926916221034 (1.0, 9.0, 91.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(A,C), \+some26(B,C) 0.101960784314 (1.0, 8.0, 92.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(A,C), \+no26(C,B) 0.0926916221034 (1.0, 9.0, 91.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(A,C), \+somenot26(C,B) 0.101960784314 (1.0, 8.0, 92.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(A,C), \+somenot26(B,C) 0.0926916221034 (1.0, 9.0, 91.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), no26(A,C) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), no26(A,D) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), no26(D,C) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+all26(A,C) 0.101960784314 (1.0, 8.0, 92.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+some26(A,C) 0.101960784314 (1.0, 8.0, 92.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+some26(C,A) 0.0926916221034 (1.0, 9.0, 91.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+no26(C,A) 0.0926916221034 (1.0, 9.0, 91.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+somenot26(A,C) 0.0926916221034 (1.0, 9.0, 91.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+somenot26(C,A) 0.101960784314 (1.0, 8.0, 92.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), all26(B,D) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), all26(D,C) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+all26(C,B) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+some26(C,B) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+some26(B,C) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+no26(C,B) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+no26(B,C) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+somenot26(C,B) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+somenot26(B,C) 0.0679738562092 (1.0, 13.0, 87.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), all26(A,D) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), all26(D,C) 0.339869281046 (1.0, 1.0, 99.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), \+all26(C,A) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), \+some26(A,C) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), \+some26(C,A) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), \+no26(A,C) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), \+no26(C,A) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), \+somenot26(A,C) 0.0679738562092 (1.0, 13.0, 87.0, 1.0) 0.509803921569 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(B,C), \+somenot26(C,A) 0.0728291316527 (1.0, 12.0, 88.0, 1.0) 0.509803921569 [ACCEPT]
+[DEBUG] Best rule so far: rno26(A,B) :- all26(A,C), no26(B,C) [0.339869281046]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno26(A,B) :- all26(A,C), no26(B,C) 0.339869281046
+[DEBUG] rno26(A,B) :- all26(A,C), no26(B,D) 0.339869281046
+[DEBUG] rno26(A,B) :- all26(A,C), no26(D,C) 0.339869281046
+[DEBUG] rno26(A,B) :- all26(B,C), no26(A,C) 0.339869281046
+[DEBUG] rno26(A,B) :- all26(B,C), no26(A,D) 0.339869281046
+[DEBUG] rno26(A,B) :- all26(B,C), no26(D,C) 0.339869281046
+[DEBUG] rno26(A,B) :- no26(A,C), all26(B,D) 0.339869281046
+[DEBUG] rno26(A,B) :- no26(A,C), all26(D,C) 0.339869281046
+[DEBUG] rno26(A,B) :- no26(B,C), all26(A,D) 0.339869281046
+[DEBUG] rno26(A,B) :- no26(B,C), all26(D,C) 0.339869281046
+[DEBUG] rno26(A,B) :- all26(A,C), \+all26(B,C) 0.101960784314
+[DEBUG] rno26(A,B) :- all26(A,C), \+some26(B,C) 0.101960784314
+[DEBUG] rno26(A,B) :- all26(A,C), \+somenot26(C,B) 0.101960784314
+[DEBUG] rno26(A,B) :- all26(B,C), \+all26(A,C) 0.101960784314
+[DEBUG] rno26(A,B) :- all26(B,C), \+some26(A,C) 0.101960784314
+[DEBUG] rno26(A,B) :- all26(B,C), \+somenot26(C,A) 0.101960784314
+[DEBUG] rno26(A,B) :- all26(A,C), \+some26(C,B) 0.0926916221034
+[DEBUG] rno26(A,B) :- all26(A,C), \+no26(C,B) 0.0926916221034
+[DEBUG] rno26(A,B) :- all26(A,C), \+somenot26(B,C) 0.0926916221034
+[DEBUG] rno26(A,B) :- all26(B,C), \+some26(C,A) 0.0926916221034
+[DEBUG] rno26(A,B) :- all26(B,C), \+no26(C,A) 0.0926916221034
+[DEBUG] rno26(A,B) :- all26(B,C), \+somenot26(A,C) 0.0926916221034
+[DEBUG] rno26(A,B) :- no26(A,C), \+all26(C,B) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(A,C), \+some26(C,B) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(A,C), \+some26(B,C) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(A,C), \+no26(C,B) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(A,C), \+no26(B,C) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(A,C), \+somenot26(C,B) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(B,C), \+all26(C,A) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(B,C), \+some26(A,C) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(B,C), \+some26(C,A) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(B,C), \+no26(A,C) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(B,C), \+no26(C,A) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(B,C), \+somenot26(C,A) 0.0728291316527
+[DEBUG] rno26(A,B) :- no26(A,C), \+somenot26(B,C) 0.0679738562092
+[DEBUG] rno26(A,B) :- no26(B,C), \+somenot26(A,C) 0.0679738562092
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno26(A,B) :- all26(A,C), no26(B,C) 0.980392156863
+[DEBUG] Best rule so far: rno26(A,B) :- true [0.01]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno26(A,B) :- true 0.01
+[DEBUG] ==================================
+[LVL9] rno26(A,B) :- all26(B,C) 0.0841666666667 (2.0, 11.0, 89.0, 0.0) 0.505 [ACCEPT]
+[LVL9] BETTER RULE rno26(A,B) :- all26(B,C) (0.08416666666666667, 2.0) > (0.01, 2.0)
+[LVL9] rno26(A,B) :- no26(A,C) 0.063125 (2.0, 15.0, 85.0, 0.0) 0.505 [ACCEPT]
+[DEBUG] Best rule so far: rno26(A,B) :- all26(B,C) [0.0841666666667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno26(A,B) :- all26(B,C) 0.0841666666667
+[DEBUG] rno26(A,B) :- no26(A,C) 0.063125
+[DEBUG] ==================================
+[LVL9] rno26(A,B) :- all26(B,C), no26(A,C) 0.336666666667 (2.0, 2.0, 98.0, 0.0) 0.505 [ACCEPT]
+[LVL9] BETTER RULE rno26(A,B) :- all26(B,C), no26(A,C) (0.33666666666666667, 2.0) > (0.08416666666666667, 2.0)
+[LVL9] rno26(A,B) :- all26(B,C), no26(A,D) 0.336666666667 (2.0, 2.0, 98.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), no26(D,C) 0.336666666667 (2.0, 2.0, 98.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+all26(A,C) 0.101 (2.0, 9.0, 91.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+some26(A,C) 0.101 (2.0, 9.0, 91.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+some26(C,A) 0.0918181818182 (2.0, 10.0, 90.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+no26(C,A) 0.0918181818182 (2.0, 10.0, 90.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+somenot26(A,C) 0.0918181818182 (2.0, 10.0, 90.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- all26(B,C), \+somenot26(C,A) 0.101 (2.0, 9.0, 91.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), all26(B,D) 0.336666666667 (2.0, 2.0, 98.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), all26(D,C) 0.336666666667 (2.0, 2.0, 98.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+all26(C,B) 0.0721428571429 (2.0, 13.0, 87.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+some26(C,B) 0.0721428571429 (2.0, 13.0, 87.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+some26(B,C) 0.0721428571429 (2.0, 13.0, 87.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+no26(C,B) 0.0721428571429 (2.0, 13.0, 87.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+no26(B,C) 0.0721428571429 (2.0, 13.0, 87.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+somenot26(C,B) 0.0721428571429 (2.0, 13.0, 87.0, 0.0) 0.505 [ACCEPT]
+[LVL9] rno26(A,B) :- no26(A,C), \+somenot26(B,C) 0.0673333333333 (2.0, 14.0, 86.0, 0.0) 0.505 [ACCEPT]
+[DEBUG] Best rule so far: rno26(A,B) :- all26(B,C), no26(A,C) [0.336666666667]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno26(A,B) :- all26(B,C), no26(A,C) 0.336666666667
+[DEBUG] rno26(A,B) :- all26(B,C), no26(A,D) 0.336666666667
+[DEBUG] rno26(A,B) :- all26(B,C), no26(D,C) 0.336666666667
+[DEBUG] rno26(A,B) :- no26(A,C), all26(B,D) 0.336666666667
+[DEBUG] rno26(A,B) :- no26(A,C), all26(D,C) 0.336666666667
+[DEBUG] rno26(A,B) :- all26(B,C), \+all26(A,C) 0.101
+[DEBUG] rno26(A,B) :- all26(B,C), \+some26(A,C) 0.101
+[DEBUG] rno26(A,B) :- all26(B,C), \+somenot26(C,A) 0.101
+[DEBUG] rno26(A,B) :- all26(B,C), \+some26(C,A) 0.0918181818182
+[DEBUG] rno26(A,B) :- all26(B,C), \+no26(C,A) 0.0918181818182
+[DEBUG] rno26(A,B) :- all26(B,C), \+somenot26(A,C) 0.0918181818182
+[DEBUG] rno26(A,B) :- no26(A,C), \+all26(C,B) 0.0721428571429
+[DEBUG] rno26(A,B) :- no26(A,C), \+some26(C,B) 0.0721428571429
+[DEBUG] rno26(A,B) :- no26(A,C), \+some26(B,C) 0.0721428571429
+[DEBUG] rno26(A,B) :- no26(A,C), \+no26(C,B) 0.0721428571429
+[DEBUG] rno26(A,B) :- no26(A,C), \+no26(B,C) 0.0721428571429
+[DEBUG] rno26(A,B) :- no26(A,C), \+somenot26(C,B) 0.0721428571429
+[DEBUG] rno26(A,B) :- no26(A,C), \+somenot26(B,C) 0.0673333333333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno26(A,B) :- all26(B,C), no26(A,C) 0.980392156863

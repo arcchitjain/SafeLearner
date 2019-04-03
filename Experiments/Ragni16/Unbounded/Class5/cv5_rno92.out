@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_92.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rno92.log
+              target:	rno92/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rno92(A,B) :- no92(B,C), \+some92(A,C), \+some92(C,A), \+somenot92(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.926229508197
+           Precision:	 0.5
+              Recall:	 0.444444444444
+================== STATISTICS ==================
+    Rule evaluations:	45916
+          Total time:	1496.6104s

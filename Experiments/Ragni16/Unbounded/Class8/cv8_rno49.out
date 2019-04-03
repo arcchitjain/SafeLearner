@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_49.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rno49.log
+              target:	rno49/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rno49(A,B) :- no49(C,A), \+somenot49(B,C), \+some49(B,C), \+somenot49(C,B), \+some49(C,B), \+no49(B,C)
+rno49(A,B) :- no49(B,C), \+some49(A,C), \+no49(A,C), \+somenot49(C,A), \+all49(A,C), \+no49(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.909090909091
+           Precision:	 0.833333333333
+              Recall:	 0.357142857143
+================== STATISTICS ==================
+    Rule evaluations:	46395
+          Total time:	482.1356s

@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_135.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsomenot135.log
+              target:	rsomenot135/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot135(A,B) :- somenot135(A,C), \+all135(B,C), \+no135(C,B), \+no135(B,C), \+somenot135(B,C), \+some135(C,B), \+somenot135(C,B)
+rsomenot135(A,B) :- some135(A,C), some135(C,B)
+rsomenot135(A,B) :- somenot135(C,B), some135(C,A)
+rsomenot135(A,B) :- somenot135(B,C), somenot135(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.9
+           Precision:	 1.0
+              Recall:	 0.3125
+================== STATISTICS ==================
+    Rule evaluations:	99306
+          Total time:	5712.2813s

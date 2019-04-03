@@ -1,0 +1,517 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.148407735057
+[INFO] Computing scores: 0.1129s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 11.0000
+[INFO] Negative weight (N): 109.0000
+[DEBUG] Best rule so far: rall3(A,B) :- true [0.0916666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall3(A,B) :- true 0.0916666666667
+[DEBUG] ==================================
+[LVL9] rall3(A,B) :- all3(A,C) 0.0 (1.0, 13.0, 96.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C) 0.0 (1.0, 13.0, 96.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] BETTER RULE rall3(A,B) :- all3(C,B) (0.13944444444444445, 2.0) > (0.09166666666666667, 11.0)
+[LVL9] rall3(A,B) :- some3(A,C) 0.0 (1.0, 15.0, 94.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C) 0.181862745098 (3.0, 13.0, 96.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] BETTER RULE rall3(A,B) :- some3(B,C) (0.18186274509803924, 3.0) > (0.13944444444444445, 2.0)
+[LVL9] rall3(A,B) :- some3(C,A) 0.0 (1.0, 13.0, 96.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,B) 0.0 (1.0, 13.0, 96.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C) 0.130729166667 (2.0, 13.0, 96.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(B,C) 0.0 (1.0, 14.0, 95.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A) 0.123039215686 (2.0, 14.0, 95.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C) 0.181862745098 (3.0, 13.0, 96.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C) 0.181862745098 (3.0, 13.0, 96.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(C,A) 0.0 (1.0, 14.0, 95.0, 10.0) 0.545833333333 [ACCEPT]
+[DEBUG] Best rule so far: rall3(A,B) :- some3(B,C) [0.181862745098]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall3(A,B) :- some3(B,C) 0.181862745098
+[DEBUG] rall3(A,B) :- somenot3(A,C) 0.181862745098
+[DEBUG] rall3(A,B) :- somenot3(B,C) 0.181862745098
+[DEBUG] rall3(A,B) :- all3(C,B) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(A,C) 0.130729166667
+[DEBUG] rall3(A,B) :- no3(C,A) 0.123039215686
+[DEBUG] rall3(A,B) :- all3(A,C) 0.0
+[DEBUG] rall3(A,B) :- all3(B,C) 0.0
+[DEBUG] rall3(A,B) :- some3(A,C) 0.0
+[DEBUG] rall3(A,B) :- some3(C,A) 0.0
+[DEBUG] rall3(A,B) :- some3(C,B) 0.0
+[DEBUG] rall3(A,B) :- no3(B,C) 0.0
+[DEBUG] rall3(A,B) :- somenot3(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rall3(A,B) :- some3(B,C), no3(A,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] BETTER RULE rall3(A,B) :- some3(B,C), no3(A,C) (0.3638888888888889, 1.0) > (0.18186274509803924, 3.0)
+[LVL9] rall3(A,B) :- some3(B,C), no3(A,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), no3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(A,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(C,A) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(A,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(C,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(D,A) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+all3(A,C) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+all3(C,A) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+some3(A,C) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+some3(C,A) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+no3(A,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+no3(C,A) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+somenot3(A,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+somenot3(C,A) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), all3(C,B) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), all3(C,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), all3(D,B) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(C,B) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(C,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(D,B) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+all3(C,B) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+all3(B,C) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+some3(C,B) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+some3(B,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+no3(C,B) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+no3(B,C) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+somenot3(C,B) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+somenot3(B,C) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), all3(A,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), all3(A,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), all3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), some3(A,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), some3(A,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), some3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), no3(C,A) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), no3(C,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), no3(D,A) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+all3(A,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+all3(C,A) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+some3(A,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+some3(C,A) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+no3(A,C) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+no3(C,A) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+somenot3(A,C) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+somenot3(C,A) 0.206111111111 (3.0, 11.0, 98.0, 8.0) 0.772916666667 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), no3(A,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), no3(A,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), no3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), somenot3(A,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), somenot3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+all3(A,C) 0.160897435897 (2.0, 10.0, 99.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+all3(C,A) 0.160897435897 (2.0, 10.0, 99.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+some3(A,C) 0.160897435897 (2.0, 10.0, 99.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+no3(A,C) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+no3(C,A) 0.160897435897 (2.0, 10.0, 99.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+somenot3(A,C) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+somenot3(C,A) 0.160897435897 (2.0, 10.0, 99.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), all3(C,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), all3(D,B) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), some3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), some3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+all3(C,B) 0.0 (1.0, 12.0, 97.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+all3(B,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+some3(C,B) 0.149404761905 (2.0, 11.0, 98.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+some3(B,C) 0.0 (1.0, 12.0, 97.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+no3(C,B) 0.149404761905 (2.0, 11.0, 98.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+no3(B,C) 0.149404761905 (2.0, 11.0, 98.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+somenot3(C,B) 0.149404761905 (2.0, 11.0, 98.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+somenot3(B,C) 0.149404761905 (2.0, 11.0, 98.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), all3(B,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), all3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), all3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), somenot3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), somenot3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+all3(C,B) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+all3(B,C) 0.0 (1.0, 13.0, 96.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+some3(C,B) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+some3(B,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+no3(C,B) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+no3(B,C) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+somenot3(C,B) 0.139444444444 (2.0, 12.0, 97.0, 9.0) 0.697222222222 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+somenot3(B,C) 0.0 (1.0, 13.0, 96.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), somenot3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), somenot3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+all3(C,B) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+all3(B,C) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+some3(C,B) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+some3(B,C) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+no3(C,B) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+no3(B,C) 0.0 (1.0, 12.0, 97.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+somenot3(C,B) 0.0 (1.0, 12.0, 97.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), no3(C,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), no3(D,A) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+all3(A,C) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+all3(C,A) 0.0 (1.0, 11.0, 98.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), somenot3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), somenot3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,A), no3(B,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,A), no3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,A), no3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,B), somenot3(A,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,B), somenot3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(B,C), some3(C,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(B,C), some3(D,A) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(C,A), some3(B,D) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(C,A), some3(D,C) 0.363888888889 (1.0, 1.0, 108.0, 10.0) 0.545833333333 [ACCEPT]
+[DEBUG] Best rule so far: rall3(A,B) :- some3(B,C), no3(A,C) [0.363888888889]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall3(A,B) :- some3(B,C), no3(A,C) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), no3(A,D) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), no3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(A,C) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(C,A) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(A,D) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(C,D) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(D,A) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), all3(C,B) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), all3(C,D) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), all3(D,B) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(C,B) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(C,D) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(D,B) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), all3(A,C) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), all3(A,D) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), all3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), some3(A,C) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), some3(A,D) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), some3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), no3(C,A) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), no3(C,D) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(B,C), no3(D,A) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(C,B), no3(A,C) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(C,B), no3(A,D) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(C,B), no3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(C,B), somenot3(A,D) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(C,B), somenot3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(A,C), all3(C,D) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(A,C), all3(D,B) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(A,C), some3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(A,C), some3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(C,A), all3(B,C) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(C,A), all3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(C,A), all3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(C,A), somenot3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(C,A), somenot3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(A,C), somenot3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(A,C), somenot3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(B,C), no3(C,D) 0.363888888889
+[DEBUG] rall3(A,B) :- all3(B,C), no3(D,A) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(A,C), somenot3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(A,C), somenot3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(C,A), no3(B,C) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(C,A), no3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(C,A), no3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(C,B), somenot3(A,D) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(C,B), somenot3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(B,C), some3(C,D) 0.363888888889
+[DEBUG] rall3(A,B) :- no3(B,C), some3(D,A) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(C,A), some3(B,D) 0.363888888889
+[DEBUG] rall3(A,B) :- somenot3(C,A), some3(D,C) 0.363888888889
+[DEBUG] rall3(A,B) :- some3(B,C), \+all3(A,C) 0.206111111111
+[DEBUG] rall3(A,B) :- some3(B,C), \+all3(C,A) 0.206111111111
+[DEBUG] rall3(A,B) :- some3(B,C), \+some3(A,C) 0.206111111111
+[DEBUG] rall3(A,B) :- some3(B,C), \+some3(C,A) 0.206111111111
+[DEBUG] rall3(A,B) :- some3(B,C), \+no3(C,A) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+all3(B,C) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+no3(C,B) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+no3(B,C) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+somenot3(C,B) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+somenot3(B,C) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+all3(C,A) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+some3(C,A) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+no3(A,C) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+somenot3(A,C) 0.206111111111
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+somenot3(C,A) 0.206111111111
+[DEBUG] rall3(A,B) :- all3(C,B), \+all3(A,C) 0.160897435897
+[DEBUG] rall3(A,B) :- all3(C,B), \+all3(C,A) 0.160897435897
+[DEBUG] rall3(A,B) :- all3(C,B), \+some3(A,C) 0.160897435897
+[DEBUG] rall3(A,B) :- all3(C,B), \+no3(C,A) 0.160897435897
+[DEBUG] rall3(A,B) :- all3(C,B), \+somenot3(C,A) 0.160897435897
+[DEBUG] rall3(A,B) :- no3(A,C), \+some3(C,B) 0.149404761905
+[DEBUG] rall3(A,B) :- no3(A,C), \+no3(C,B) 0.149404761905
+[DEBUG] rall3(A,B) :- no3(A,C), \+no3(B,C) 0.149404761905
+[DEBUG] rall3(A,B) :- no3(A,C), \+somenot3(C,B) 0.149404761905
+[DEBUG] rall3(A,B) :- no3(A,C), \+somenot3(B,C) 0.149404761905
+[DEBUG] rall3(A,B) :- some3(B,C), \+no3(A,C) 0.139444444444
+[DEBUG] rall3(A,B) :- some3(B,C), \+somenot3(A,C) 0.139444444444
+[DEBUG] rall3(A,B) :- some3(B,C), \+somenot3(C,A) 0.139444444444
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+all3(C,B) 0.139444444444
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+some3(C,B) 0.139444444444
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+some3(B,C) 0.139444444444
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+all3(A,C) 0.139444444444
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+some3(A,C) 0.139444444444
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+no3(C,A) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(A,C), \+all3(B,C) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(C,A), \+all3(C,B) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(C,A), \+some3(C,B) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(C,A), \+some3(B,C) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(C,A), \+no3(C,B) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(C,A), \+no3(B,C) 0.139444444444
+[DEBUG] rall3(A,B) :- no3(C,A), \+somenot3(C,B) 0.139444444444
+[DEBUG] rall3(A,B) :- all3(C,B), \+no3(A,C) 0.0
+[DEBUG] rall3(A,B) :- all3(C,B), \+somenot3(A,C) 0.0
+[DEBUG] rall3(A,B) :- no3(A,C), \+all3(C,B) 0.0
+[DEBUG] rall3(A,B) :- no3(A,C), \+some3(B,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall3(A,B) :- some3(B,C), no3(A,C) 0.908333333333
+[DEBUG] Best rule so far: rall3(A,B) :- true [0.0847457627119]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall3(A,B) :- true 0.0847457627119
+[DEBUG] ==================================
+[LVL9] rall3(A,B) :- all3(A,C) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] BETTER RULE rall3(A,B) :- all3(C,B) (0.1389830508474576, 3.0) > (0.08474576271186442, 11.0)
+[LVL9] rall3(A,B) :- some3(A,C) 0.0 (2.0, 16.0, 93.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,A) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,B) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C) 0.0 (2.0, 13.0, 96.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(B,C) 0.0 (2.0, 15.0, 94.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A) 0.122632103689 (3.0, 15.0, 94.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C) 0.181455633101 (4.0, 14.0, 95.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] BETTER RULE rall3(A,B) :- somenot3(A,C) (0.1814556331006979, 4.0) > (0.1389830508474576, 3.0)
+[LVL9] rall3(A,B) :- somenot3(B,C) 0.181455633101 (4.0, 14.0, 95.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(C,A) 0.0 (2.0, 15.0, 94.0, 9.0) 0.542372881356 [ACCEPT]
+[DEBUG] Best rule so far: rall3(A,B) :- somenot3(A,C) [0.181455633101]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall3(A,B) :- somenot3(A,C) 0.181455633101
+[DEBUG] rall3(A,B) :- somenot3(B,C) 0.181455633101
+[DEBUG] rall3(A,B) :- all3(C,B) 0.138983050847
+[DEBUG] rall3(A,B) :- some3(B,C) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(C,A) 0.122632103689
+[DEBUG] rall3(A,B) :- all3(A,C) 0.0
+[DEBUG] rall3(A,B) :- all3(B,C) 0.0
+[DEBUG] rall3(A,B) :- some3(A,C) 0.0
+[DEBUG] rall3(A,B) :- some3(C,A) 0.0
+[DEBUG] rall3(A,B) :- some3(C,B) 0.0
+[DEBUG] rall3(A,B) :- no3(A,C) 0.0
+[DEBUG] rall3(A,B) :- no3(B,C) 0.0
+[DEBUG] rall3(A,B) :- somenot3(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rall3(A,B) :- somenot3(A,C), all3(C,B) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] BETTER RULE rall3(A,B) :- somenot3(A,C), all3(C,B) (0.3615819209039548, 2.0) > (0.1814556331006979, 4.0)
+[LVL9] rall3(A,B) :- somenot3(A,C), all3(C,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), all3(D,B) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(C,B) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(B,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(C,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(B,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), some3(D,B) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+all3(C,B) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+all3(B,C) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+some3(C,B) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+some3(B,C) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+no3(C,B) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+no3(B,C) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+somenot3(C,B) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(A,C), \+somenot3(B,C) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), all3(A,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), all3(A,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), all3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), some3(A,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), some3(A,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), some3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), no3(C,A) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), no3(C,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), no3(D,A) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+all3(A,C) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+all3(C,A) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+some3(A,C) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+some3(C,A) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+no3(A,C) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+no3(C,A) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+somenot3(A,C) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(B,C), \+somenot3(C,A) 0.205649717514 (4.0, 12.0, 97.0, 7.0) 0.771186440678 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), no3(A,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), no3(A,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), no3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), somenot3(A,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), somenot3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+all3(A,C) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+all3(C,A) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+some3(A,C) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+no3(A,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+no3(C,A) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+somenot3(A,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(C,B), \+somenot3(C,A) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(C,A) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(A,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(C,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(D,A) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), somenot3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+all3(A,C) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+all3(C,A) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+some3(A,C) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+some3(C,A) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+no3(C,A) 0.16036505867 (3.0, 11.0, 98.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+somenot3(A,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(B,C), \+somenot3(C,A) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), all3(B,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), all3(B,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), all3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), somenot3(B,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), somenot3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+all3(C,B) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+all3(B,C) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+some3(C,B) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+some3(B,C) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+no3(C,B) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+no3(B,C) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+somenot3(C,B) 0.138983050847 (3.0, 13.0, 96.0, 8.0) 0.694915254237 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(C,A), \+somenot3(B,C) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), somenot3(B,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), somenot3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+all3(C,B) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+all3(B,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+some3(C,B) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+some3(B,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+no3(C,B) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+no3(B,C) 0.0 (2.0, 13.0, 96.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(A,C), \+somenot3(C,B) 0.0 (2.0, 13.0, 96.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), no3(C,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), no3(D,A) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+all3(A,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+all3(C,A) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+some3(A,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+some3(C,A) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+no3(A,C) 0.0 (2.0, 13.0, 96.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+somenot3(A,C) 0.0 (2.0, 12.0, 97.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- all3(B,C), \+somenot3(C,A) 0.0 (2.0, 13.0, 96.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), somenot3(B,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), somenot3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), \+all3(C,B) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), \+all3(B,C) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), \+some3(C,B) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), \+some3(B,C) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), \+no3(C,B) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), \+no3(B,C) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(A,C), \+somenot3(C,B) 0.0 (2.0, 14.0, 95.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,A), no3(B,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,A), no3(B,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,A), no3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,B), somenot3(A,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- some3(C,B), somenot3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), all3(C,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), all3(D,B) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+some3(C,B) 0.090395480226 (2.0, 11.0, 98.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+no3(C,B) 0.090395480226 (2.0, 11.0, 98.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+no3(B,C) 0.090395480226 (2.0, 11.0, 98.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+somenot3(C,B) 0.090395480226 (2.0, 11.0, 98.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(A,C), \+somenot3(B,C) 0.090395480226 (2.0, 11.0, 98.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(B,C), some3(C,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- no3(B,C), some3(D,A) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(C,A), some3(B,D) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[LVL9] rall3(A,B) :- somenot3(C,A), some3(D,C) 0.361581920904 (2.0, 2.0, 107.0, 9.0) 0.542372881356 [ACCEPT]
+[DEBUG] Best rule so far: rall3(A,B) :- somenot3(A,C), all3(C,B) [0.361581920904]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall3(A,B) :- somenot3(A,C), all3(C,B) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), all3(C,D) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), all3(D,B) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(C,B) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(B,C) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(C,D) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(B,D) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), some3(D,B) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), all3(A,C) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), all3(A,D) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), all3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), some3(A,C) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), some3(A,D) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), some3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), no3(C,A) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), no3(C,D) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(B,C), no3(D,A) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(C,B), no3(A,C) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(C,B), no3(A,D) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(C,B), no3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(C,B), somenot3(A,D) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(C,B), somenot3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(C,A) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(A,D) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(C,D) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(D,A) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(B,C), somenot3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(C,A), all3(B,C) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(C,A), all3(B,D) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(C,A), all3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(C,A), somenot3(B,D) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(C,A), somenot3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(A,C), somenot3(B,D) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(A,C), somenot3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(B,C), no3(C,D) 0.361581920904
+[DEBUG] rall3(A,B) :- all3(B,C), no3(D,A) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(A,C), somenot3(B,D) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(A,C), somenot3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(C,A), no3(B,C) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(C,A), no3(B,D) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(C,A), no3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(C,B), somenot3(A,D) 0.361581920904
+[DEBUG] rall3(A,B) :- some3(C,B), somenot3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(A,C), all3(C,D) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(A,C), all3(D,B) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(B,C), some3(C,D) 0.361581920904
+[DEBUG] rall3(A,B) :- no3(B,C), some3(D,A) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(C,A), some3(B,D) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(C,A), some3(D,C) 0.361581920904
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+all3(B,C) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+no3(C,B) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+no3(B,C) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+somenot3(C,B) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+somenot3(B,C) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+all3(C,A) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+some3(C,A) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+no3(A,C) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+somenot3(A,C) 0.205649717514
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+somenot3(C,A) 0.205649717514
+[DEBUG] rall3(A,B) :- all3(C,B), \+all3(A,C) 0.16036505867
+[DEBUG] rall3(A,B) :- all3(C,B), \+all3(C,A) 0.16036505867
+[DEBUG] rall3(A,B) :- all3(C,B), \+some3(A,C) 0.16036505867
+[DEBUG] rall3(A,B) :- all3(C,B), \+no3(C,A) 0.16036505867
+[DEBUG] rall3(A,B) :- all3(C,B), \+somenot3(C,A) 0.16036505867
+[DEBUG] rall3(A,B) :- some3(B,C), \+all3(A,C) 0.16036505867
+[DEBUG] rall3(A,B) :- some3(B,C), \+all3(C,A) 0.16036505867
+[DEBUG] rall3(A,B) :- some3(B,C), \+some3(A,C) 0.16036505867
+[DEBUG] rall3(A,B) :- some3(B,C), \+some3(C,A) 0.16036505867
+[DEBUG] rall3(A,B) :- some3(B,C), \+no3(C,A) 0.16036505867
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+all3(C,B) 0.138983050847
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+some3(C,B) 0.138983050847
+[DEBUG] rall3(A,B) :- somenot3(A,C), \+some3(B,C) 0.138983050847
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+all3(A,C) 0.138983050847
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+some3(A,C) 0.138983050847
+[DEBUG] rall3(A,B) :- somenot3(B,C), \+no3(C,A) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(C,A), \+all3(C,B) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(C,A), \+some3(C,B) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(C,A), \+some3(B,C) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(C,A), \+no3(C,B) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(C,A), \+no3(B,C) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(C,A), \+somenot3(C,B) 0.138983050847
+[DEBUG] rall3(A,B) :- no3(A,C), \+some3(C,B) 0.090395480226
+[DEBUG] rall3(A,B) :- no3(A,C), \+no3(C,B) 0.090395480226
+[DEBUG] rall3(A,B) :- no3(A,C), \+no3(B,C) 0.090395480226
+[DEBUG] rall3(A,B) :- no3(A,C), \+somenot3(C,B) 0.090395480226
+[DEBUG] rall3(A,B) :- no3(A,C), \+somenot3(B,C) 0.090395480226
+[DEBUG] rall3(A,B) :- all3(C,B), \+no3(A,C) 0.0
+[DEBUG] rall3(A,B) :- all3(C,B), \+somenot3(A,C) 0.0
+[DEBUG] rall3(A,B) :- some3(B,C), \+somenot3(A,C) 0.0
+[DEBUG] rall3(A,B) :- some3(B,C), \+somenot3(C,A) 0.0
+[DEBUG] rall3(A,B) :- no3(C,A), \+all3(B,C) 0.0
+[DEBUG] rall3(A,B) :- no3(C,A), \+somenot3(B,C) 0.0
+[DEBUG] rall3(A,B) :- all3(A,C), \+all3(C,B) 0.0
+[DEBUG] rall3(A,B) :- all3(A,C), \+all3(B,C) 0.0
+[DEBUG] rall3(A,B) :- all3(A,C), \+some3(C,B) 0.0
+[DEBUG] rall3(A,B) :- all3(A,C), \+some3(B,C) 0.0
+[DEBUG] rall3(A,B) :- all3(A,C), \+no3(C,B) 0.0
+[DEBUG] rall3(A,B) :- all3(A,C), \+no3(B,C) 0.0
+[DEBUG] rall3(A,B) :- all3(A,C), \+somenot3(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall3(A,B) :- somenot3(A,C), all3(C,B) 0.908333333333
