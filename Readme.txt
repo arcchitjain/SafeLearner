@@ -58,13 +58,13 @@ This is a documentation on how to install and use the codes for 'SafeLearner':
 	  --lr2 LR2             Learning Rate for Rule Weights
 
 3. Example of commands:
-	python probfoil.py Data/Test-Coauthor/test_full.pl --log test.log -v -v -v
-	python probfoil_fast.py Data/Exp3-ScalingUp/NELL_1115_v3.pl --log apil_1115_cw.log -v -v -v -i 10000 -q -t athleteplaysinleague/2 --ssh --minpca 0.01 --minhc 0.01 --cwLearning
-	python probfoil_fast.py Data/Exp3-ScalingUp/yago.pl -t iscitizenof/2 --log yago_ico.log -v -v -v --ssh -q -i 10000 --disableTypeConstraints --lr1 0.001 --lr2 0.0001 -a 3 --minpca 0.00001 --minhc 0.00001 --cwLearning
+	python safelearner_debug.py Data/Test-Coauthor/test_full.pl --log test.log -v -v -v
+	python safelearner.py Data/Exp3-ScalingUp/NELL_1115_v3.pl --log apil_1115_cw.log -v -v -v -i 10000 -q -t athleteplaysinleague/2 --ssh --minpca 0.01 --minhc 0.01 --cwLearning
+	python safelearner.py Data/Exp3-ScalingUp/yago.pl -t iscitizenof/2 --log yago_ico.log -v -v -v --ssh -q -i 10000 --disableTypeConstraints --lr1 0.001 --lr2 0.0001 -a 3 --minpca 0.00001 --minhc 0.00001 --cwLearning
 
 4. Difference between probfoil.py and probfoil_fast.py:
-	'safelearner.py' also outputs the scores associated with the hypothesis. It computes the loss function at various intervals during SGD and picks the best paramters.
-	'safelearner_debug.py' only performs operations on one example at a time. But doesn't do operations associated with all the data like 1) looping over all the xamples, 2) calculating scores of hypothesis on the examples, and 3) calculating the full loss function on the examples.
+	'safelearner_debug.py' also outputs the scores associated with the hypothesis. It computes the loss function at various intervals during SGD and picks the best paramters.
+	'safelearner.py' only performs operations on one example at a time. But doesn't do operations associated with all the data like 1) looping over all the xamples, 2) calculating scores of hypothesis on the examples, and 3) calculating the full loss function on the examples.
 
 5. Credits:
 	The algorithm is based on the work of Arcchit Jain, Tal Fredman, Ondrej Kuzelka, Guy Van den Broeck, and Luc De Raedt. It was implemented by Arcchit Jain.
