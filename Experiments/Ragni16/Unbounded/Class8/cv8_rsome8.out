@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_8.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rsome8.log
+              target:	rsome8/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome8(A,B) :- all8(C,A), \+all8(C,B), \+all8(B,C), \+no8(C,B), \+no8(B,C), \+somenot8(C,B), \+somenot8(B,C)
+rsome8(A,B) :- somenot8(C,A), all8(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.927272727273
+           Precision:	 1.0
+              Recall:	 0.272727272727
+================== STATISTICS ==================
+    Rule evaluations:	42836
+          Total time:	1533.1271s

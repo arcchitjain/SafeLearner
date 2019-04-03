@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_77.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rsomenot77.log
+              target:	rsomenot77/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot77(A,B) :- no77(A,C), no77(C,B)
+rsomenot77(A,B) :- no77(A,C), somenot77(B,C)
+rsomenot77(A,B) :- somenot77(A,C), all77(B,C)
+rsomenot77(A,B) :- no77(B,C), some77(C,A)
+rsomenot77(A,B) :- all77(C,A), some77(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.929824561404
+           Precision:	 1.0
+              Recall:	 0.529411764706
+================== STATISTICS ==================
+    Rule evaluations:	6772
+          Total time:	202.5955s

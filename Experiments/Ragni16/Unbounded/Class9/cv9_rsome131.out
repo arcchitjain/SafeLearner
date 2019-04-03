@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_131.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsome131.log
+              target:	rsome131/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome131(A,B) :- somenot131(B,C), some131(C,A)
+rsome131(A,B) :- some131(C,B), all131(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.905660377358
+           Precision:	 1.0
+              Recall:	 0.230769230769
+================== STATISTICS ==================
+    Rule evaluations:	67629
+          Total time:	2500.3645s

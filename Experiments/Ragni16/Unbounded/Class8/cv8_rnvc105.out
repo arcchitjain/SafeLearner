@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_105.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rnvc105.log
+              target:	rnvc105/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc105(A,B) :- somenot105(B,C), \+all105(C,A), \+no105(A,C), \+no105(C,A), \+somenot105(C,A)
+rnvc105(A,B) :- no105(C,A), \+some105(C,B), \+some105(B,C), \+no105(B,C), \+somenot105(C,B), \+somenot105(B,C)
+rnvc105(A,B) :- no105(A,C), no105(C,B)
+rnvc105(A,B) :- all105(A,C), all105(B,C)
+rnvc105(A,B) :- somenot105(C,A), somenot105(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	8879
+          Total time:	138.0763s

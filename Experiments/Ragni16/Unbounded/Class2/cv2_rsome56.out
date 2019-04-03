@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_56.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsome56.log
+              target:	rsome56/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome56(A,B) :- somenot56(A,C), all56(B,C)
+rsome56(A,B) :- no56(C,B), somenot56(C,A)
+rsome56(A,B) :- all56(A,C), some56(B,C)
+rsome56(A,B) :- all56(C,B), no56(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.842105263158
+           Precision:	 1.0
+              Recall:	 0.181818181818
+================== STATISTICS ==================
+    Rule evaluations:	98505
+          Total time:	1681.3111s

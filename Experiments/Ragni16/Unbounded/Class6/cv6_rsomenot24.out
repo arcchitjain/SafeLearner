@@ -1,0 +1,22 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_24.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsomenot24.log
+              target:	rsomenot24/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot24(A,B) :- some24(A,C), no24(C,B)
+rsomenot24(A,B) :- some24(B,C), all24(C,A)
+rsomenot24(A,B) :- somenot24(C,A), no24(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.881818181818
+           Precision:	 1.0
+              Recall:	 0.1875
+================== STATISTICS ==================
+    Rule evaluations:	92229
+          Total time:	7404.9651s

@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_14.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsome14.log
+              target:	rsome14/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome14(A,B) :- somenot14(C,A), \+no14(C,B), \+no14(B,C), \+all14(C,B), \+all14(B,C), \+some14(C,B), \+somenot14(C,B)
+rsome14(A,B) :- some14(C,A), \+all14(B,C), \+no14(B,C), \+all14(C,B), \+some14(C,B), \+somenot14(C,B), \+somenot14(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.805084745763
+           Precision:	 1.0
+              Recall:	 0.178571428571
+================== STATISTICS ==================
+    Rule evaluations:	43978
+          Total time:	1950.7791s

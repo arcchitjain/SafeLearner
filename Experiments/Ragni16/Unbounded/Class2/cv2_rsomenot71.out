@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_71.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsomenot71.log
+              target:	rsomenot71/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot71(A,B) :- somenot71(A,C), \+all71(C,B), \+somenot71(C,B), \+somenot71(B,C), \+some71(B,C), \+some71(C,B), \+no71(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.944444444444
+           Precision:	 1.0
+              Recall:	 0.333333333333
+================== STATISTICS ==================
+    Rule evaluations:	18439
+          Total time:	278.7504s

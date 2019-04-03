@@ -1,0 +1,29 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class3/cv3_train_118.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class3/cv3_rnvc118.log
+              target:	rnvc118/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc118(A,B) :- no118(B,C), \+all118(A,C), \+somenot118(A,C)
+rnvc118(A,B) :- no118(C,B), \+all118(A,C), \+some118(A,C), \+somenot118(A,C)
+rnvc118(A,B) :- somenot118(B,C), \+all118(A,C), \+all118(C,A), \+some118(C,A), \+no118(C,A)
+rnvc118(A,B) :- some118(A,C), \+all118(C,B), \+some118(C,B), \+no118(C,B), \+somenot118(C,B)
+rnvc118(A,B) :- some118(C,A), \+all118(C,B), \+all118(B,C), \+some118(B,C), \+somenot118(B,C)
+rnvc118(A,B) :- all118(C,B), \+all118(A,C), \+some118(A,C), \+some118(C,A), \+no118(A,C), \+somenot118(A,C), \+somenot118(C,A)
+rnvc118(A,B) :- somenot118(C,A), some118(C,B)
+rnvc118(A,B) :- no118(A,C), somenot118(C,B)
+rnvc118(A,B) :- all118(B,C), all118(A,C)
+rnvc118(A,B) :- some118(B,C), somenot118(A,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	30927
+          Total time:	771.5504s

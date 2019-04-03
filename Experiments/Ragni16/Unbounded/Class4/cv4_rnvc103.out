@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_103.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rnvc103.log
+              target:	rnvc103/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc103(A,B) :- no103(C,B), \+all103(A,C), \+all103(C,A), \+some103(C,A), \+no103(A,C)
+rnvc103(A,B) :- all103(C,A), \+some103(C,B), \+no103(C,B), \+somenot103(C,B), \+somenot103(B,C)
+rnvc103(A,B) :- some103(A,C), some103(B,C)
+rnvc103(A,B) :- somenot103(C,A), somenot103(C,B)
+rnvc103(A,B) :- some103(C,A), somenot103(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	4410
+          Total time:	130.1941s

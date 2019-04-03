@@ -1,0 +1,103 @@
+ProbLog Query 	:0::all1(a,b).
+0::some1(a,b).
+0::no1(a,b).
+0::somenot1(a,b).
+0::nvc1(a,b).
+no1(b12, a12).
+somenot1(b12, c12).
+somenot1(b20, a20).
+no1(b20, c20).
+no1(b21, a21).
+no1(c21, b21).
+all1(b32, a32).
+all1(b32, c32).
+all1(b48, a48).
+somenot1(b48, c48).
+some1(a54, b54).
+some1(c54, b54).
+somenot1(a61, b61).
+some1(b61, c61).
+0.06::rall1(a12,c12);0.38::rnvc1(a12,c12);0.036::rall1(c12,a12);0.052::rno1(a12,c12);0.068::rsomenot1(a12,c12);0.132::rsomenot1(c12,a12);0.028::rno1(c12,a12);0.12::rsome1(a12,c12);0.124::rsome1(c12,a12).
+0.036::rall1(a20,c20);0.38::rnvc1(a20,c20);0.06::rall1(c20,a20);0.028::rno1(a20,c20);0.132::rsomenot1(a20,c20);0.068::rsomenot1(c20,a20);0.052::rno1(c20,a20);0.124::rsome1(a20,c20);0.12::rsome1(c20,a20).
+0.1328125::rall1(a21,c21);0.43359375::rnvc1(a21,c21);0.0703125::rall1(c21,a21);0.06640625::rno1(a21,c21);0.03515625::rsomenot1(a21,c21);0.0390625::rsomenot1(c21,a21);0.1171875::rno1(c21,a21);0.05859375::rsome1(a21,c21);0.046875::rsome1(c21,a21).
+0.00769230769231::rall1(c32,a32);0.207692307692::rnvc1(a32,c32);0.384615384615::rall1(a32,c32);0.00769230769231::rsomenot1(c32,a32);0.107692307692::rsomenot1(a32,c32);0.1::rno1(a32,c32);0.0230769230769::rsome1(c32,a32);0.161538461538::rsome1(a32,c32).
+0.0156862745098::rall1(a48,c48);0.0980392156863::rnvc1(a48,c48);0.0274509803922::rall1(c48,a48);0.0117647058824::rno1(a48,c48);0.305882352941::rsomenot1(a48,c48);0.0980392156863::rsomenot1(c48,a48);0.00392156862745::rno1(c48,a48);0.0901960784314::rsome1(a48,c48);0.349019607843::rsome1(c48,a48).
+0.0327868852459::rall1(c54,a54);0.483606557377::rnvc1(a54,c54);0.00819672131148::rall1(a54,c54);0.00819672131148::rno1(c54,a54);0.0327868852459::rsomenot1(c54,a54);0.147540983607::rsomenot1(a54,c54);0.0491803278689::rsome1(c54,a54);0.237704918033::rsome1(a54,c54).
+0.0285714285714::rall1(a61,c61);0.338775510204::rnvc1(a61,c61);0.00408163265306::rall1(c61,a61);0.00408163265306::rno1(a61,c61);0.155102040816::rsomenot1(a61,c61);0.118367346939::rsomenot1(c61,a61);0.0122448979592::rno1(c61,a61);0.171428571429::rsome1(a61,c61);0.167346938776::rsome1(c61,a61).
+
+
+
+query(rall1(c12, a12)).
+query(rall1(a12, c12)).
+query(rall1(c20, a20)).
+query(rall1(a20, c20)).
+query(rall1(c21, a21)).
+query(rall1(a21, c21)).
+query(rall1(c32, a32)).
+query(rall1(a32, c32)).
+query(rall1(c48, a48)).
+query(rall1(a48, c48)).
+query(rall1(c54, a54)).
+query(rall1(a54, c54)).
+query(rall1(c61, a61)).
+query(rall1(a61, c61)).
+query(rsome1(c12, a12)).
+query(rsome1(a12, c12)).
+query(rsome1(c20, a20)).
+query(rsome1(a20, c20)).
+query(rsome1(c21, a21)).
+query(rsome1(a21, c21)).
+query(rsome1(c32, a32)).
+query(rsome1(a32, c32)).
+query(rsome1(c48, a48)).
+query(rsome1(a48, c48)).
+query(rsome1(c54, a54)).
+query(rsome1(a54, c54)).
+query(rsome1(c61, a61)).
+query(rsome1(a61, c61)).
+query(rno1(c12, a12)).
+query(rno1(a12, c12)).
+query(rno1(c20, a20)).
+query(rno1(a20, c20)).
+query(rno1(c21, a21)).
+query(rno1(a21, c21)).
+query(rno1(c32, a32)).
+query(rno1(a32, c32)).
+query(rno1(c48, a48)).
+query(rno1(a48, c48)).
+query(rno1(c54, a54)).
+query(rno1(a54, c54)).
+query(rno1(c61, a61)).
+query(rno1(a61, c61)).
+query(rsomenot1(c12, a12)).
+query(rsomenot1(a12, c12)).
+query(rsomenot1(c20, a20)).
+query(rsomenot1(a20, c20)).
+query(rsomenot1(c21, a21)).
+query(rsomenot1(a21, c21)).
+query(rsomenot1(c32, a32)).
+query(rsomenot1(a32, c32)).
+query(rsomenot1(c48, a48)).
+query(rsomenot1(a48, c48)).
+query(rsomenot1(c54, a54)).
+query(rsomenot1(a54, c54)).
+query(rsomenot1(c61, a61)).
+query(rsomenot1(a61, c61)).
+query(rnvc1(a12, c12)).
+query(rnvc1(a20, c20)).
+query(rnvc1(a21, c21)).
+query(rnvc1(a32, c32)).
+query(rnvc1(a48, c48)).
+query(rnvc1(a54, c54)).
+query(rnvc1(a61, c61)).
+id 	: 12
+Rule Predictions 	: set([])
+MFA 	: set(['rnvc1(a12,c12)'])
+Test Prediction 	: rnvc1(a12,c12)
+Correct Response 	: rnvc1(a12,c12)
+id 	: 20
+Rule Predictions 	: set([])
+MFA 	: set(['rnvc1(a20,c20)'])
+Test Prediction 	: rnvc1(a20,c20)
+Correct Response 	: rnvc1(a20,c20)
+000: Net Accuracy for precedence (2, 0, 0, 0, 0, 1)	: 1.0

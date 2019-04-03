@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_95.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rnvc95.log
+              target:	rnvc95/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc95(A,B) :- somenot95(B,C), \+no95(A,C)
+rnvc95(A,B) :- no95(B,C), \+some95(A,C), \+somenot95(A,C)
+rnvc95(A,B) :- some95(B,C), \+all95(C,A), \+some95(C,A), \+somenot95(C,A)
+rnvc95(A,B) :- some95(C,B), \+all95(A,C), \+all95(C,A), \+no95(C,A)
+rnvc95(A,B) :- no95(C,A), \+all95(B,C), \+some95(C,B)
+rnvc95(A,B) :- somenot95(A,C), \+all95(B,C), \+no95(B,C), \+somenot95(C,B)
+rnvc95(A,B) :- somenot95(C,A), \+all95(C,B), \+all95(B,C), \+some95(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.967213114754
+           Precision:	 1.0
+              Recall:	 0.935483870968
+================== STATISTICS ==================
+    Rule evaluations:	13274
+          Total time:	281.8941s

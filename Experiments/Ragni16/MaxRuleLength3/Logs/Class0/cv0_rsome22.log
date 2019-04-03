@@ -1,0 +1,405 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.320321640616
+[INFO] Computing scores: 0.0739s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 14.0000
+[INFO] Negative weight (N): 106.0000
+[DEBUG] Best rule so far: rsome22(A,B) :- true [0.116666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome22(A,B) :- true 0.116666666667
+[DEBUG] ==================================
+[LVL9] rsome22(A,B) :- all22(A,C) 0.0 (1.0, 15.0, 91.0, 13.0) 0.558333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(B,C) 0.0 (1.0, 15.0, 91.0, 13.0) 0.558333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(C,B) 0.0 (1.0, 14.0, 92.0, 13.0) 0.558333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C) 0.294047619048 (4.0, 9.0, 97.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] BETTER RULE rsome22(A,B) :- some22(A,C) (0.294047619047619, 4.0) > (0.11666666666666667, 14.0)
+[LVL9] rsome22(A,B) :- some22(B,C) 0.0 (1.0, 12.0, 94.0, 13.0) 0.558333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A) 0.194791666667 (3.0, 12.0, 94.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B) 0.194791666667 (3.0, 12.0, 94.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- no22(C,B) 0.0 (1.0, 13.0, 93.0, 13.0) 0.558333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C) 0.242156862745 (4.0, 12.0, 94.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C) 0.242156862745 (4.0, 12.0, 94.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A) 0.124509803922 (2.0, 14.0, 92.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B) 0.183333333333 (3.0, 13.0, 93.0, 11.0) 0.779166666667 [ACCEPT]
+[DEBUG] Best rule so far: rsome22(A,B) :- some22(A,C) [0.294047619048]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome22(A,B) :- some22(A,C) 0.294047619048
+[DEBUG] rsome22(A,B) :- somenot22(A,C) 0.242156862745
+[DEBUG] rsome22(A,B) :- somenot22(B,C) 0.242156862745
+[DEBUG] rsome22(A,B) :- some22(C,A) 0.194791666667
+[DEBUG] rsome22(A,B) :- some22(C,B) 0.194791666667
+[DEBUG] rsome22(A,B) :- somenot22(C,B) 0.183333333333
+[DEBUG] rsome22(A,B) :- somenot22(C,A) 0.124509803922
+[DEBUG] rsome22(A,B) :- all22(A,C) 0.0
+[DEBUG] rsome22(A,B) :- all22(B,C) 0.0
+[DEBUG] rsome22(A,B) :- all22(C,B) 0.0
+[DEBUG] rsome22(A,B) :- some22(B,C) 0.0
+[DEBUG] rsome22(A,B) :- no22(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome22(A,B) :- some22(A,C), some22(C,B) 0.558333333333 (1.0, 0.0, 106.0, 13.0) 0.558333333333 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome22(A,B) :- some22(A,C), some22(C,B) (0.5583333333333333, 1.0) > (0.294047619047619, 4.0)
+[LVL9] rsome22(A,B) :- some22(A,C), \+all22(C,B) 0.316666666667 (4.0, 8.0, 98.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+all22(B,C) 0.343055555556 (4.0, 7.0, 99.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+some22(B,C) 0.259722222222 (3.0, 8.0, 98.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+no22(C,B) 0.343055555556 (4.0, 7.0, 99.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+no22(B,C) 0.316666666667 (4.0, 8.0, 98.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+somenot22(C,B) 0.259722222222 (3.0, 8.0, 98.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+somenot22(B,C) 0.259722222222 (3.0, 8.0, 98.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+all22(C,B) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+all22(B,C) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+some22(C,B) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+some22(B,C) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+no22(C,B) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+no22(B,C) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+somenot22(C,B) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+somenot22(B,C) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+all22(A,C) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+all22(C,A) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+some22(A,C) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+some22(C,A) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+no22(A,C) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+no22(C,A) 0.274444444444 (4.0, 10.0, 96.0, 10.0) 0.823333333333 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+somenot22(A,C) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+somenot22(C,A) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+all22(C,B) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+all22(B,C) 0.15119047619 (2.0, 11.0, 95.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+some22(C,B) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+some22(B,C) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+no22(C,B) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+no22(B,C) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+somenot22(C,B) 0.15119047619 (2.0, 11.0, 95.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+somenot22(B,C) 0.15119047619 (2.0, 11.0, 95.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+all22(A,C) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+all22(C,A) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+some22(C,A) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+no22(A,C) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+no22(C,A) 0.222619047619 (3.0, 10.0, 96.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+somenot22(A,C) 0.15119047619 (2.0, 11.0, 95.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+somenot22(C,A) 0.15119047619 (2.0, 11.0, 95.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+all22(A,C) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+all22(C,A) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+some22(A,C) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+some22(C,A) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+no22(A,C) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+no22(C,A) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+somenot22(A,C) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+somenot22(C,A) 0.207777777778 (3.0, 11.0, 95.0, 11.0) 0.779166666667 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+all22(C,B) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+all22(B,C) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+some22(B,C) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+no22(C,B) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+no22(B,C) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+somenot22(C,B) 0.141111111111 (2.0, 12.0, 94.0, 12.0) 0.705555555556 [ACCEPT]
+[DEBUG] Best rule so far: rsome22(A,B) :- some22(A,C), some22(C,B) [0.558333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome22(A,B) :- some22(A,C), \+all22(B,C) 0.343055555556
+[DEBUG] rsome22(A,B) :- some22(A,C), \+no22(C,B) 0.343055555556
+[DEBUG] rsome22(A,B) :- some22(A,C), \+all22(C,B) 0.316666666667
+[DEBUG] rsome22(A,B) :- some22(A,C), \+no22(B,C) 0.316666666667
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+all22(C,B) 0.274444444444
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+all22(B,C) 0.274444444444
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+some22(B,C) 0.274444444444
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+no22(B,C) 0.274444444444
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+all22(A,C) 0.274444444444
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+all22(C,A) 0.274444444444
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+no22(A,C) 0.274444444444
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+no22(C,A) 0.274444444444
+[DEBUG] rsome22(A,B) :- some22(A,C), \+some22(B,C) 0.259722222222
+[DEBUG] rsome22(A,B) :- some22(A,C), \+somenot22(C,B) 0.259722222222
+[DEBUG] rsome22(A,B) :- some22(A,C), \+somenot22(B,C) 0.259722222222
+[DEBUG] rsome22(A,B) :- some22(C,A), \+all22(C,B) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,A), \+some22(C,B) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,A), \+no22(C,B) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,A), \+no22(B,C) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,B), \+all22(A,C) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,B), \+all22(C,A) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,B), \+some22(C,A) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,B), \+no22(A,C) 0.222619047619
+[DEBUG] rsome22(A,B) :- some22(C,B), \+no22(C,A) 0.222619047619
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+some22(C,B) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+no22(C,B) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+somenot22(C,B) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+somenot22(B,C) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+some22(A,C) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+some22(C,A) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+somenot22(A,C) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+somenot22(C,A) 0.207777777778
+[DEBUG] rsome22(A,B) :- some22(C,A), \+some22(B,C) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+all22(A,C) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+all22(C,A) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+no22(A,C) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+no22(C,A) 0.207777777778
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+somenot22(C,A) 0.207777777778
+[DEBUG] rsome22(A,B) :- some22(C,A), \+all22(B,C) 0.15119047619
+[DEBUG] rsome22(A,B) :- some22(C,A), \+somenot22(C,B) 0.15119047619
+[DEBUG] rsome22(A,B) :- some22(C,A), \+somenot22(B,C) 0.15119047619
+[DEBUG] rsome22(A,B) :- some22(C,B), \+somenot22(A,C) 0.15119047619
+[DEBUG] rsome22(A,B) :- some22(C,B), \+somenot22(C,A) 0.15119047619
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+some22(A,C) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+some22(C,A) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+somenot22(A,C) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,A), \+all22(C,B) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,A), \+all22(B,C) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,A), \+some22(B,C) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,A), \+no22(C,B) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,A), \+no22(B,C) 0.141111111111
+[DEBUG] rsome22(A,B) :- somenot22(C,A), \+somenot22(C,B) 0.141111111111
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome22(A,B) :- some22(A,C), some22(C,B) 0.891666666667
+[DEBUG] Best rule so far: rsome22(A,B) :- true [0.109243697479]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome22(A,B) :- true 0.109243697479
+[DEBUG] ==================================
+[LVL9] rsome22(A,B) :- all22(A,C) 0.0 (2.0, 15.0, 91.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(B,C) 0.0 (2.0, 15.0, 91.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(C,B) 0.0 (2.0, 14.0, 92.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C) 0.239172592114 (4.0, 9.0, 97.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] BETTER RULE rsome22(A,B) :- some22(A,C) (0.2391725921137686, 4.0) > (0.1092436974789916, 14.0)
+[LVL9] rsome22(A,B) :- some22(B,C) 0.0 (2.0, 12.0, 94.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A) 0.194327731092 (4.0, 12.0, 94.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- no22(C,B) 0.0 (2.0, 13.0, 93.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C) 0.241720217499 (5.0, 12.0, 94.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] BETTER RULE rsome22(A,B) :- somenot22(A,C) (0.24172021749876418, 5.0) > (0.2391725921137686, 4.0)
+[LVL9] rsome22(A,B) :- somenot22(B,C) 0.241720217499 (5.0, 12.0, 94.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A) 0.124073158675 (3.0, 14.0, 92.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B) 0.182896688087 (4.0, 13.0, 93.0, 10.0) 0.77731092437 [ACCEPT]
+[DEBUG] Best rule so far: rsome22(A,B) :- somenot22(A,C) [0.241720217499]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome22(A,B) :- somenot22(A,C) 0.241720217499
+[DEBUG] rsome22(A,B) :- somenot22(B,C) 0.241720217499
+[DEBUG] rsome22(A,B) :- some22(A,C) 0.239172592114
+[DEBUG] rsome22(A,B) :- some22(C,A) 0.194327731092
+[DEBUG] rsome22(A,B) :- somenot22(C,B) 0.182896688087
+[DEBUG] rsome22(A,B) :- some22(C,B) 0.140616246499
+[DEBUG] rsome22(A,B) :- somenot22(C,A) 0.124073158675
+[DEBUG] rsome22(A,B) :- all22(A,C) 0.0
+[DEBUG] rsome22(A,B) :- all22(B,C) 0.0
+[DEBUG] rsome22(A,B) :- all22(C,B) 0.0
+[DEBUG] rsome22(A,B) :- some22(B,C) 0.0
+[DEBUG] rsome22(A,B) :- no22(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome22(A,B) :- somenot22(A,C), some22(C,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] BETTER RULE rsome22(A,B) :- somenot22(A,C), some22(C,B) (0.3697478991596639, 2.0) > (0.24172021749876418, 5.0)
+[LVL9] rsome22(A,B) :- somenot22(A,C), some22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), some22(D,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), no22(C,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), no22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), no22(D,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), somenot22(C,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), somenot22(B,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), somenot22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), somenot22(B,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), somenot22(D,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+all22(C,B) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+all22(B,C) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+some22(C,B) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+some22(B,C) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+no22(C,B) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+no22(B,C) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+somenot22(C,B) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(A,C), \+somenot22(B,C) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), some22(A,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), some22(C,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), some22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), some22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), some22(D,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), some22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), somenot22(C,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), somenot22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), somenot22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), somenot22(D,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+all22(A,C) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+all22(C,A) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+some22(A,C) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+some22(C,A) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+no22(A,C) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+no22(C,A) 0.273949579832 (5.0, 10.0, 96.0, 9.0) 0.821848739496 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+somenot22(A,C) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(B,C), \+somenot22(C,A) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), some22(B,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), some22(B,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), somenot22(C,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), somenot22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), somenot22(B,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), somenot22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), somenot22(D,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+all22(C,B) 0.259103641457 (4.0, 8.0, 98.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+all22(B,C) 0.282658517953 (4.0, 7.0, 99.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+some22(B,C) 0.191749427044 (3.0, 8.0, 98.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+no22(C,B) 0.282658517953 (4.0, 7.0, 99.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+no22(B,C) 0.259103641457 (4.0, 8.0, 98.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+somenot22(C,B) 0.191749427044 (3.0, 8.0, 98.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(A,C), \+somenot22(B,C) 0.191749427044 (3.0, 8.0, 98.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), all22(B,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), all22(B,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), all22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), somenot22(C,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), somenot22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), somenot22(B,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), somenot22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), somenot22(D,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+all22(C,B) 0.222088835534 (4.0, 10.0, 96.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+all22(B,C) 0.150660264106 (3.0, 11.0, 95.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+some22(C,B) 0.222088835534 (4.0, 10.0, 96.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+some22(B,C) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+no22(C,B) 0.222088835534 (4.0, 10.0, 96.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+no22(B,C) 0.222088835534 (4.0, 10.0, 96.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+somenot22(C,B) 0.150660264106 (3.0, 11.0, 95.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,A), \+somenot22(B,C) 0.150660264106 (3.0, 11.0, 95.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), some22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), some22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), some22(D,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), some22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), somenot22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), somenot22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+all22(A,C) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+all22(C,A) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+some22(A,C) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+some22(C,A) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+no22(A,C) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+no22(C,A) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+somenot22(A,C) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,B), \+somenot22(C,A) 0.207282913165 (4.0, 11.0, 95.0, 10.0) 0.77731092437 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), somenot22(C,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), somenot22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), somenot22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), somenot22(D,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), somenot22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+all22(A,C) 0.162249515191 (3.0, 10.0, 96.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+all22(C,A) 0.162249515191 (3.0, 10.0, 96.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+some22(C,A) 0.162249515191 (3.0, 10.0, 96.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+no22(A,C) 0.162249515191 (3.0, 10.0, 96.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+no22(C,A) 0.162249515191 (3.0, 10.0, 96.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+somenot22(A,C) 0.0 (2.0, 11.0, 95.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(C,B), \+somenot22(C,A) 0.0 (2.0, 11.0, 95.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), some22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), some22(D,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), somenot22(B,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), somenot22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+all22(C,B) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+all22(B,C) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+some22(C,B) 0.0 (2.0, 13.0, 93.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+some22(B,C) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+no22(C,B) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- somenot22(C,A), \+no22(B,C) 0.140616246499 (3.0, 12.0, 94.0, 11.0) 0.703081232493 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(A,C), all22(C,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(A,C), all22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(A,C), all22(D,B) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(B,C), some22(C,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(B,C), some22(D,A) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(C,B), all22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- all22(C,B), all22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- some22(B,C), some22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- no22(C,B), somenot22(A,D) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[LVL9] rsome22(A,B) :- no22(C,B), somenot22(D,C) 0.36974789916 (2.0, 1.0, 105.0, 12.0) 0.554621848739 [ACCEPT]
+[DEBUG] Best rule so far: rsome22(A,B) :- somenot22(A,C), some22(C,B) [0.36974789916]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome22(A,B) :- somenot22(A,C), some22(C,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), some22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), some22(D,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), no22(C,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), no22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), no22(D,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), somenot22(C,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), somenot22(B,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), somenot22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), somenot22(B,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(A,C), somenot22(D,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), some22(A,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), some22(C,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), some22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), some22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), some22(D,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), some22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), somenot22(C,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), somenot22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), somenot22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(B,C), somenot22(D,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), some22(B,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), some22(B,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), somenot22(C,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), somenot22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), somenot22(B,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), somenot22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), somenot22(D,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), all22(B,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), all22(B,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), all22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), somenot22(C,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), somenot22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), somenot22(B,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), somenot22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,A), somenot22(D,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,B), some22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,B), some22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,B), some22(D,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,B), some22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,B), somenot22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,B), somenot22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,B), somenot22(C,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,B), somenot22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,B), somenot22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,B), somenot22(D,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(C,B), somenot22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,A), some22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,A), some22(D,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,A), somenot22(B,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- somenot22(C,A), somenot22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- all22(A,C), all22(C,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- all22(A,C), all22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- all22(A,C), all22(D,B) 0.36974789916
+[DEBUG] rsome22(A,B) :- all22(B,C), some22(C,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- all22(B,C), some22(D,A) 0.36974789916
+[DEBUG] rsome22(A,B) :- all22(C,B), all22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- all22(C,B), all22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(B,C), some22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- no22(C,B), somenot22(A,D) 0.36974789916
+[DEBUG] rsome22(A,B) :- no22(C,B), somenot22(D,C) 0.36974789916
+[DEBUG] rsome22(A,B) :- some22(A,C), \+all22(B,C) 0.282658517953
+[DEBUG] rsome22(A,B) :- some22(A,C), \+no22(C,B) 0.282658517953
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+all22(C,B) 0.273949579832
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+all22(B,C) 0.273949579832
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+some22(B,C) 0.273949579832
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+no22(B,C) 0.273949579832
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+all22(A,C) 0.273949579832
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+all22(C,A) 0.273949579832
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+no22(A,C) 0.273949579832
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+no22(C,A) 0.273949579832
+[DEBUG] rsome22(A,B) :- some22(A,C), \+all22(C,B) 0.259103641457
+[DEBUG] rsome22(A,B) :- some22(A,C), \+no22(B,C) 0.259103641457
+[DEBUG] rsome22(A,B) :- some22(C,A), \+all22(C,B) 0.222088835534
+[DEBUG] rsome22(A,B) :- some22(C,A), \+some22(C,B) 0.222088835534
+[DEBUG] rsome22(A,B) :- some22(C,A), \+no22(C,B) 0.222088835534
+[DEBUG] rsome22(A,B) :- some22(C,A), \+no22(B,C) 0.222088835534
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+some22(C,B) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+no22(C,B) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+somenot22(C,B) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(A,C), \+somenot22(B,C) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+some22(A,C) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+some22(C,A) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+somenot22(A,C) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(B,C), \+somenot22(C,A) 0.207282913165
+[DEBUG] rsome22(A,B) :- some22(C,A), \+some22(B,C) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+all22(A,C) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+all22(C,A) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+no22(A,C) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+no22(C,A) 0.207282913165
+[DEBUG] rsome22(A,B) :- somenot22(C,B), \+somenot22(C,A) 0.207282913165
+[DEBUG] rsome22(A,B) :- some22(A,C), \+some22(B,C) 0.191749427044
+[DEBUG] rsome22(A,B) :- some22(A,C), \+somenot22(C,B) 0.191749427044
+[DEBUG] rsome22(A,B) :- some22(A,C), \+somenot22(B,C) 0.191749427044
+[DEBUG] rsome22(A,B) :- some22(C,B), \+all22(A,C) 0.162249515191
+[DEBUG] rsome22(A,B) :- some22(C,B), \+all22(C,A) 0.162249515191
+[DEBUG] rsome22(A,B) :- some22(C,B), \+some22(C,A) 0.162249515191
+[DEBUG] rsome22(A,B) :- some22(C,B), \+no22(A,C) 0.162249515191
+[DEBUG] rsome22(A,B) :- some22(C,B), \+no22(C,A) 0.162249515191
+[DEBUG] rsome22(A,B) :- some22(C,A), \+all22(B,C) 0.150660264106
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome22(A,B) :- somenot22(A,C), some22(C,B) 0.891666666667

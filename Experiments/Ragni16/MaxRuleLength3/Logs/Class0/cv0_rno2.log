@@ -1,0 +1,301 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.740420434483
+[INFO] Computing scores: 0.1047s
+[INFO] Number of examples (M): 112
+[INFO] Positive weight (P): 7.0000
+[INFO] Negative weight (N): 105.0000
+[DEBUG] Best rule so far: rno2(A,B) :- true [0.0625]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno2(A,B) :- true 0.0625
+[DEBUG] ==================================
+[LVL9] rno2(A,B) :- all2(B,C) 0.12890625 (2.0, 13.0, 92.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- all2(B,C) (0.12890625, 2.0) > (0.0625, 7.0)
+[LVL9] rno2(A,B) :- all2(C,B) 0.0758928571429 (1.0, 12.0, 93.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C) 0.0817307692308 (1.0, 11.0, 94.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C) 0.0817307692308 (1.0, 11.0, 94.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C) 0.12890625 (2.0, 13.0, 92.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A) 0.270833333333 (4.0, 10.0, 95.0, 3.0) 0.8125 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- no2(C,A) (0.2708333333333333, 4.0) > (0.12890625, 2.0)
+[LVL9] rno2(A,B) :- no2(C,B) 0.0708333333333 (1.0, 13.0, 92.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C) 0.0758928571429 (1.0, 12.0, 93.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B) 0.06640625 (1.0, 14.0, 91.0, 6.0) 0.53125 [ACCEPT]
+[DEBUG] Best rule so far: rno2(A,B) :- no2(C,A) [0.270833333333]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno2(A,B) :- no2(C,A) 0.270833333333
+[DEBUG] rno2(A,B) :- all2(B,C) 0.12890625
+[DEBUG] rno2(A,B) :- no2(A,C) 0.12890625
+[DEBUG] rno2(A,B) :- some2(A,C) 0.0817307692308
+[DEBUG] rno2(A,B) :- some2(B,C) 0.0817307692308
+[DEBUG] rno2(A,B) :- all2(C,B) 0.0758928571429
+[DEBUG] rno2(A,B) :- somenot2(B,C) 0.0758928571429
+[DEBUG] rno2(A,B) :- no2(C,B) 0.0708333333333
+[DEBUG] rno2(A,B) :- somenot2(C,B) 0.06640625
+[DEBUG] ==================================
+[LVL9] rno2(A,B) :- no2(C,A), all2(C,B) 0.354166666667 (1.0, 1.0, 104.0, 6.0) 0.53125 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- no2(C,A), all2(C,B) (0.3541666666666667, 1.0) > (0.2708333333333333, 4.0)
+[LVL9] rno2(A,B) :- no2(C,A), all2(B,C) 0.53125 (1.0, 0.0, 105.0, 6.0) 0.53125 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rno2(A,B) :- no2(C,A), all2(B,C) (0.53125, 1.0) > (0.3541666666666667, 1.0)
+[LVL9] rno2(A,B) :- no2(C,A), \+all2(C,B) 0.235576923077 (3.0, 9.0, 96.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+some2(C,B) 0.3125 (4.0, 8.0, 97.0, 3.0) 0.8125 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+some2(B,C) 0.235576923077 (3.0, 9.0, 96.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+no2(C,B) 0.3125 (4.0, 8.0, 97.0, 3.0) 0.8125 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+no2(B,C) 0.290178571429 (4.0, 9.0, 96.0, 3.0) 0.8125 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+somenot2(C,B) 0.3125 (4.0, 8.0, 97.0, 3.0) 0.8125 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+somenot2(B,C) 0.235576923077 (3.0, 9.0, 96.0, 4.0) 0.765625 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+all2(A,C) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+all2(C,A) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+some2(A,C) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+some2(C,A) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+somenot2(A,C) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+somenot2(C,A) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+all2(C,B) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+some2(C,B) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+some2(B,C) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+no2(C,B) 0.1375 (2.0, 12.0, 93.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+no2(B,C) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+somenot2(B,C) 0.147321428571 (2.0, 11.0, 94.0, 5.0) 0.6875 [ACCEPT]
+[DEBUG] Best rule so far: rno2(A,B) :- no2(C,A), all2(B,C) [0.53125]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno2(A,B) :- no2(C,A), all2(C,B) 0.354166666667
+[DEBUG] rno2(A,B) :- no2(C,A), \+some2(C,B) 0.3125
+[DEBUG] rno2(A,B) :- no2(C,A), \+no2(C,B) 0.3125
+[DEBUG] rno2(A,B) :- no2(C,A), \+somenot2(C,B) 0.3125
+[DEBUG] rno2(A,B) :- no2(C,A), \+no2(B,C) 0.290178571429
+[DEBUG] rno2(A,B) :- no2(C,A), \+all2(C,B) 0.235576923077
+[DEBUG] rno2(A,B) :- no2(C,A), \+some2(B,C) 0.235576923077
+[DEBUG] rno2(A,B) :- no2(C,A), \+somenot2(B,C) 0.235576923077
+[DEBUG] rno2(A,B) :- all2(B,C), \+all2(A,C) 0.147321428571
+[DEBUG] rno2(A,B) :- all2(B,C), \+all2(C,A) 0.147321428571
+[DEBUG] rno2(A,B) :- all2(B,C), \+some2(A,C) 0.147321428571
+[DEBUG] rno2(A,B) :- all2(B,C), \+some2(C,A) 0.147321428571
+[DEBUG] rno2(A,B) :- all2(B,C), \+somenot2(A,C) 0.147321428571
+[DEBUG] rno2(A,B) :- all2(B,C), \+somenot2(C,A) 0.147321428571
+[DEBUG] rno2(A,B) :- no2(A,C), \+all2(C,B) 0.147321428571
+[DEBUG] rno2(A,B) :- no2(A,C), \+some2(C,B) 0.147321428571
+[DEBUG] rno2(A,B) :- no2(A,C), \+some2(B,C) 0.147321428571
+[DEBUG] rno2(A,B) :- no2(A,C), \+no2(B,C) 0.147321428571
+[DEBUG] rno2(A,B) :- no2(A,C), \+somenot2(B,C) 0.147321428571
+[DEBUG] rno2(A,B) :- no2(A,C), \+no2(C,B) 0.1375
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno2(A,B) :- no2(C,A), all2(B,C) 0.946428571429
+[DEBUG] Best rule so far: rno2(A,B) :- true [0.0540540540541]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rno2(A,B) :- true 0.0540540540541
+[DEBUG] ==================================
+[LVL9] rno2(A,B) :- all2(B,C) 0.0702702702703 (2.0, 13.0, 92.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- all2(B,C) (0.07027027027027026, 2.0) > (0.05405405405405406, 7.0)
+[LVL9] rno2(A,B) :- all2(C,B) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- all2(C,B) (0.07528957528957528, 2.0) > (0.07027027027027026, 2.0)
+[LVL9] rno2(A,B) :- some2(A,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- some2(A,C) (0.08108108108108107, 2.0) > (0.07528957528957528, 2.0)
+[LVL9] rno2(A,B) :- some2(B,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C) 0.128378378378 (3.0, 13.0, 92.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- no2(A,C) (0.12837837837837837, 3.0) > (0.08108108108108107, 2.0)
+[LVL9] rno2(A,B) :- no2(C,A) 0.218146718147 (4.0, 10.0, 95.0, 3.0) 0.763513513514 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- no2(C,A) (0.21814671814671813, 4.0) > (0.12837837837837837, 3.0)
+[LVL9] rno2(A,B) :- no2(C,B) 0.0702702702703 (2.0, 13.0, 92.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B) 0.0658783783784 (2.0, 14.0, 91.0, 5.0) 0.527027027027 [ACCEPT]
+[DEBUG] Best rule so far: rno2(A,B) :- no2(C,A) [0.218146718147]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rno2(A,B) :- no2(C,A) 0.218146718147
+[DEBUG] rno2(A,B) :- no2(A,C) 0.128378378378
+[DEBUG] rno2(A,B) :- some2(A,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- some2(B,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(C,B) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(B,C) 0.0752895752896
+[DEBUG] rno2(A,B) :- all2(B,C) 0.0702702702703
+[DEBUG] rno2(A,B) :- no2(C,B) 0.0702702702703
+[DEBUG] rno2(A,B) :- somenot2(C,B) 0.0658783783784
+[DEBUG] ==================================
+[LVL9] rno2(A,B) :- no2(C,A), all2(C,B) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] BETTER RULE rno2(A,B) :- no2(C,A), all2(C,B) (0.3513513513513513, 2.0) > (0.21814671814671813, 4.0)
+[LVL9] rno2(A,B) :- no2(C,A), all2(C,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), all2(D,B) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), some2(B,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), some2(B,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), some2(D,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), somenot2(B,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), somenot2(B,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), somenot2(D,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+all2(C,B) 0.171171171171 (3.0, 9.0, 96.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+some2(C,B) 0.254504504505 (4.0, 8.0, 97.0, 3.0) 0.763513513514 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+some2(B,C) 0.171171171171 (3.0, 9.0, 96.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+no2(C,B) 0.254504504505 (4.0, 8.0, 97.0, 3.0) 0.763513513514 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+no2(B,C) 0.234927234927 (4.0, 9.0, 96.0, 3.0) 0.763513513514 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+somenot2(C,B) 0.254504504505 (4.0, 8.0, 97.0, 3.0) 0.763513513514 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,A), \+somenot2(B,C) 0.171171171171 (3.0, 9.0, 96.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), all2(B,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), all2(B,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), all2(D,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), somenot2(C,B) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), somenot2(C,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), somenot2(D,B) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+all2(C,B) 0.146718146718 (3.0, 11.0, 94.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+all2(B,C) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+some2(C,B) 0.146718146718 (3.0, 11.0, 94.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+some2(B,C) 0.146718146718 (3.0, 11.0, 94.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+no2(C,B) 0.136936936937 (3.0, 12.0, 93.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+no2(B,C) 0.146718146718 (3.0, 11.0, 94.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+somenot2(C,B) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(A,C), \+somenot2(B,C) 0.146718146718 (3.0, 11.0, 94.0, 4.0) 0.684684684685 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), no2(C,B) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), no2(C,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), no2(D,B) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), \+all2(C,B) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), \+all2(B,C) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), \+some2(C,B) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), \+some2(B,C) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), \+no2(B,C) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(A,C), \+somenot2(C,B) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), no2(C,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), no2(D,A) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), \+all2(A,C) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), \+all2(C,A) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), \+some2(A,C) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), \+some2(C,A) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), \+no2(A,C) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- some2(B,C), \+somenot2(C,A) 0.0958230958231 (2.0, 9.0, 96.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), no2(C,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), no2(D,A) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), \+all2(A,C) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), \+all2(C,A) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), \+some2(A,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), \+some2(C,A) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), \+no2(A,C) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), \+somenot2(A,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(C,B), \+somenot2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), no2(C,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), no2(D,A) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), \+all2(A,C) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), \+all2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), \+some2(C,A) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), \+no2(A,C) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), \+somenot2(A,C) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(B,C), \+somenot2(C,A) 0.0878378378378 (2.0, 10.0, 95.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), no2(A,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), no2(D,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+all2(A,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+all2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+some2(A,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+some2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+somenot2(A,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- all2(B,C), \+somenot2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), some2(A,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), some2(D,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), \+all2(A,C) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), \+all2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), \+some2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), \+no2(A,C) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), \+no2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), \+somenot2(A,C) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- no2(C,B), \+somenot2(C,A) 0.0810810810811 (2.0, 11.0, 94.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), no2(A,D) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), no2(D,C) 0.351351351351 (2.0, 1.0, 104.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), \+all2(A,C) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), \+all2(C,A) 0.0702702702703 (2.0, 13.0, 92.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), \+some2(A,C) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), \+some2(C,A) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), \+no2(C,A) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), \+somenot2(A,C) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[LVL9] rno2(A,B) :- somenot2(C,B), \+somenot2(C,A) 0.0752895752896 (2.0, 12.0, 93.0, 5.0) 0.527027027027 [ACCEPT]
+[DEBUG] Best rule so far: rno2(A,B) :- no2(C,A), all2(C,B) [0.351351351351]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rno2(A,B) :- no2(C,A), all2(C,B) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), all2(C,D) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), all2(D,B) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), some2(B,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), some2(B,D) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), some2(D,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), somenot2(B,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), somenot2(B,D) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), somenot2(D,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(A,C), all2(B,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(A,C), all2(B,D) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(A,C), all2(D,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(A,C), somenot2(C,B) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(A,C), somenot2(C,D) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(A,C), somenot2(D,B) 0.351351351351
+[DEBUG] rno2(A,B) :- some2(A,C), no2(C,B) 0.351351351351
+[DEBUG] rno2(A,B) :- some2(A,C), no2(C,D) 0.351351351351
+[DEBUG] rno2(A,B) :- some2(A,C), no2(D,B) 0.351351351351
+[DEBUG] rno2(A,B) :- some2(B,C), no2(C,D) 0.351351351351
+[DEBUG] rno2(A,B) :- some2(B,C), no2(D,A) 0.351351351351
+[DEBUG] rno2(A,B) :- all2(C,B), no2(C,D) 0.351351351351
+[DEBUG] rno2(A,B) :- all2(C,B), no2(D,A) 0.351351351351
+[DEBUG] rno2(A,B) :- somenot2(B,C), no2(C,D) 0.351351351351
+[DEBUG] rno2(A,B) :- somenot2(B,C), no2(D,A) 0.351351351351
+[DEBUG] rno2(A,B) :- all2(B,C), no2(A,D) 0.351351351351
+[DEBUG] rno2(A,B) :- all2(B,C), no2(D,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,B), some2(A,D) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,B), some2(D,C) 0.351351351351
+[DEBUG] rno2(A,B) :- somenot2(C,B), no2(A,D) 0.351351351351
+[DEBUG] rno2(A,B) :- somenot2(C,B), no2(D,C) 0.351351351351
+[DEBUG] rno2(A,B) :- no2(C,A), \+some2(C,B) 0.254504504505
+[DEBUG] rno2(A,B) :- no2(C,A), \+no2(C,B) 0.254504504505
+[DEBUG] rno2(A,B) :- no2(C,A), \+somenot2(C,B) 0.254504504505
+[DEBUG] rno2(A,B) :- no2(C,A), \+no2(B,C) 0.234927234927
+[DEBUG] rno2(A,B) :- no2(C,A), \+all2(C,B) 0.171171171171
+[DEBUG] rno2(A,B) :- no2(C,A), \+some2(B,C) 0.171171171171
+[DEBUG] rno2(A,B) :- no2(C,A), \+somenot2(B,C) 0.171171171171
+[DEBUG] rno2(A,B) :- no2(A,C), \+all2(C,B) 0.146718146718
+[DEBUG] rno2(A,B) :- no2(A,C), \+some2(C,B) 0.146718146718
+[DEBUG] rno2(A,B) :- no2(A,C), \+some2(B,C) 0.146718146718
+[DEBUG] rno2(A,B) :- no2(A,C), \+no2(B,C) 0.146718146718
+[DEBUG] rno2(A,B) :- no2(A,C), \+somenot2(B,C) 0.146718146718
+[DEBUG] rno2(A,B) :- no2(A,C), \+no2(C,B) 0.136936936937
+[DEBUG] rno2(A,B) :- some2(A,C), \+all2(B,C) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(A,C), \+some2(B,C) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(A,C), \+no2(B,C) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(A,C), \+somenot2(C,B) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(B,C), \+all2(A,C) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(B,C), \+some2(A,C) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(B,C), \+no2(A,C) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(B,C), \+somenot2(C,A) 0.0958230958231
+[DEBUG] rno2(A,B) :- some2(A,C), \+all2(C,B) 0.0878378378378
+[DEBUG] rno2(A,B) :- some2(A,C), \+some2(C,B) 0.0878378378378
+[DEBUG] rno2(A,B) :- some2(B,C), \+all2(C,A) 0.0878378378378
+[DEBUG] rno2(A,B) :- some2(B,C), \+some2(C,A) 0.0878378378378
+[DEBUG] rno2(A,B) :- all2(C,B), \+all2(A,C) 0.0878378378378
+[DEBUG] rno2(A,B) :- all2(C,B), \+all2(C,A) 0.0878378378378
+[DEBUG] rno2(A,B) :- all2(C,B), \+some2(C,A) 0.0878378378378
+[DEBUG] rno2(A,B) :- all2(C,B), \+no2(A,C) 0.0878378378378
+[DEBUG] rno2(A,B) :- somenot2(B,C), \+all2(A,C) 0.0878378378378
+[DEBUG] rno2(A,B) :- somenot2(B,C), \+some2(C,A) 0.0878378378378
+[DEBUG] rno2(A,B) :- somenot2(B,C), \+no2(A,C) 0.0878378378378
+[DEBUG] rno2(A,B) :- somenot2(B,C), \+somenot2(A,C) 0.0878378378378
+[DEBUG] rno2(A,B) :- somenot2(B,C), \+somenot2(C,A) 0.0878378378378
+[DEBUG] rno2(A,B) :- all2(C,B), \+some2(A,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(C,B), \+somenot2(A,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(C,B), \+somenot2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- somenot2(B,C), \+all2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(B,C), \+all2(A,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(B,C), \+all2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(B,C), \+some2(A,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(B,C), \+some2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(B,C), \+somenot2(A,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- all2(B,C), \+somenot2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- no2(C,B), \+all2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- no2(C,B), \+some2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- no2(C,B), \+no2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- no2(C,B), \+somenot2(A,C) 0.0810810810811
+[DEBUG] rno2(A,B) :- no2(C,B), \+somenot2(C,A) 0.0810810810811
+[DEBUG] rno2(A,B) :- no2(A,C), \+all2(B,C) 0.0752895752896
+[DEBUG] rno2(A,B) :- no2(A,C), \+somenot2(C,B) 0.0752895752896
+[DEBUG] rno2(A,B) :- no2(C,B), \+all2(A,C) 0.0752895752896
+[DEBUG] rno2(A,B) :- no2(C,B), \+no2(A,C) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(C,B), \+all2(A,C) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(C,B), \+some2(A,C) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(C,B), \+some2(C,A) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(C,B), \+no2(C,A) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(C,B), \+somenot2(A,C) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(C,B), \+somenot2(C,A) 0.0752895752896
+[DEBUG] rno2(A,B) :- somenot2(C,B), \+all2(C,A) 0.0702702702703
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rno2(A,B) :- no2(C,A), all2(C,B) 0.946428571429

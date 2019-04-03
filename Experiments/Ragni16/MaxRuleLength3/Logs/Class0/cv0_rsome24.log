@@ -1,0 +1,485 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.43093903751
+[INFO] Computing scores: 0.0684s
+[INFO] Number of examples (M): 118
+[INFO] Positive weight (P): 17.0000
+[INFO] Negative weight (N): 101.0000
+[DEBUG] Best rule so far: rsome24(A,B) :- true [0.14406779661]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome24(A,B) :- true 0.14406779661
+[DEBUG] ==================================
+[LVL9] rsome24(A,B) :- all24(A,C) 0.0 (1.0, 13.0, 88.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C) 0.0 (2.0, 12.0, 89.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,A) 0.0 (1.0, 14.0, 87.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B) 0.0 (2.0, 13.0, 88.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C) 0.196504237288 (3.0, 12.0, 89.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] BETTER RULE rsome24(A,B) :- some24(A,C) (0.1965042372881356, 3.0) > (0.1440677966101695, 17.0)
+[LVL9] rsome24(A,B) :- some24(B,C) 0.321504237288 (5.0, 10.0, 91.0, 12.0) 0.857344632768 [ACCEPT]
+[LVL9] BETTER RULE rsome24(A,B) :- some24(B,C) (0.3215042372881356, 5.0) > (0.1965042372881356, 3.0)
+[LVL9] rsome24(A,B) :- some24(C,A) 0.0 (1.0, 14.0, 87.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(C,B) 0.0 (1.0, 14.0, 87.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C) 0.0 (2.0, 12.0, 89.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C) 0.0 (2.0, 12.0, 89.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A) 0.243768693918 (4.0, 12.0, 89.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,B) 0.0 (1.0, 15.0, 86.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(A,C) 0.0 (1.0, 14.0, 87.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C) 0.196504237288 (3.0, 12.0, 89.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A) 0.276271186441 (4.0, 10.0, 91.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,B) 0.0 (1.0, 13.0, 88.0, 16.0) 0.572033898305 [ACCEPT]
+[DEBUG] Best rule so far: rsome24(A,B) :- some24(B,C) [0.321504237288]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome24(A,B) :- some24(B,C) 0.321504237288
+[DEBUG] rsome24(A,B) :- somenot24(C,A) 0.276271186441
+[DEBUG] rsome24(A,B) :- no24(C,A) 0.243768693918
+[DEBUG] rsome24(A,B) :- some24(A,C) 0.196504237288
+[DEBUG] rsome24(A,B) :- somenot24(B,C) 0.196504237288
+[DEBUG] rsome24(A,B) :- all24(B,C) 0.0
+[DEBUG] rsome24(A,B) :- all24(C,B) 0.0
+[DEBUG] rsome24(A,B) :- no24(A,C) 0.0
+[DEBUG] rsome24(A,B) :- no24(B,C) 0.0
+[DEBUG] rsome24(A,B) :- all24(A,C) 0.0
+[DEBUG] rsome24(A,B) :- all24(C,A) 0.0
+[DEBUG] rsome24(A,B) :- some24(C,A) 0.0
+[DEBUG] rsome24(A,B) :- some24(C,B) 0.0
+[DEBUG] rsome24(A,B) :- no24(C,B) 0.0
+[DEBUG] rsome24(A,B) :- somenot24(A,C) 0.0
+[DEBUG] rsome24(A,B) :- somenot24(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome24(A,B) :- some24(B,C), all24(C,A) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] BETTER RULE rsome24(A,B) :- some24(B,C), all24(C,A) (0.38135593220338987, 1.0) > (0.3215042372881356, 5.0)
+[LVL9] rsome24(A,B) :- some24(B,C), all24(C,D) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), all24(D,A) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(A,C) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(C,A) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(A,D) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(C,D) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(D,A) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(A,C) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(C,A) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(A,D) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(C,D) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(D,A) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(D,C) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+all24(A,C) 0.367433414044 (5.0, 8.0, 93.0, 12.0) 0.857344632768 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+all24(C,A) 0.296004842615 (4.0, 9.0, 92.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+some24(A,C) 0.296004842615 (4.0, 9.0, 92.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+some24(C,A) 0.296004842615 (4.0, 9.0, 92.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+no24(A,C) 0.296004842615 (4.0, 9.0, 92.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+no24(C,A) 0.296004842615 (4.0, 9.0, 92.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+somenot24(A,C) 0.367433414044 (5.0, 8.0, 93.0, 12.0) 0.857344632768 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+somenot24(C,A) 0.342937853107 (5.0, 9.0, 92.0, 12.0) 0.857344632768 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), all24(C,B) 0.381355932203 (1.0, 1.0, 100.0, 16.0) 0.572033898305 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), all24(B,C) 0.572033898305 (1.0, 0.0, 101.0, 16.0) 0.572033898305 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome24(A,B) :- somenot24(C,A), all24(B,C) (0.5720338983050848, 1.0) > (0.38135593220338987, 1.0)
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+all24(C,B) 0.24185136897 (3.0, 9.0, 92.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+some24(C,B) 0.318774445893 (4.0, 8.0, 93.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+some24(B,C) 0.296004842615 (4.0, 9.0, 92.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+no24(C,B) 0.24185136897 (3.0, 9.0, 92.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+no24(B,C) 0.318774445893 (4.0, 8.0, 93.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+somenot24(C,B) 0.318774445893 (4.0, 8.0, 93.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+somenot24(B,C) 0.24185136897 (3.0, 9.0, 92.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+all24(C,B) 0.209604519774 (3.0, 11.0, 90.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+all24(B,C) 0.276271186441 (4.0, 10.0, 91.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+some24(C,B) 0.276271186441 (4.0, 10.0, 91.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+some24(B,C) 0.209604519774 (3.0, 11.0, 90.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+no24(C,B) 0.276271186441 (4.0, 10.0, 91.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+no24(B,C) 0.209604519774 (3.0, 11.0, 90.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+somenot24(C,B) 0.276271186441 (4.0, 10.0, 91.0, 13.0) 0.828813559322 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+somenot24(B,C) 0.209604519774 (3.0, 11.0, 90.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+all24(C,B) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+all24(B,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+some24(C,B) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+some24(B,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+no24(C,B) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+no24(B,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+somenot24(C,B) 0.209604519774 (3.0, 11.0, 90.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+somenot24(B,C) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+all24(A,C) 0.209604519774 (3.0, 11.0, 90.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+all24(C,A) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+some24(A,C) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+some24(C,A) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+no24(A,C) 0.224576271186 (3.0, 10.0, 91.0, 14.0) 0.786016949153 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+no24(C,A) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+somenot24(A,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+somenot24(C,A) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), \+all24(A,C) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), \+all24(C,A) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), \+some24(C,A) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), \+no24(A,C) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), \+no24(C,A) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), \+somenot24(A,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), \+all24(A,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), \+all24(C,A) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), \+some24(A,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), \+some24(C,A) 0.0 (2.0, 12.0, 89.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), \+no24(A,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), \+somenot24(A,C) 0.153147699758 (2.0, 11.0, 90.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+all24(C,B) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+all24(B,C) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+some24(C,B) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+no24(C,B) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+somenot24(B,C) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+all24(A,C) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+all24(C,A) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+some24(C,A) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+somenot24(A,C) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+somenot24(C,A) 0.164928292047 (2.0, 10.0, 91.0, 15.0) 0.714689265537 [ACCEPT]
+[DEBUG] Best rule so far: rsome24(A,B) :- somenot24(C,A), all24(B,C) [0.572033898305]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome24(A,B) :- some24(B,C), all24(C,A) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), all24(C,D) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), all24(D,A) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(A,C) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(C,A) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(A,D) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(C,D) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(D,A) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(A,C) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(C,A) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(A,D) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(C,D) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(D,A) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(D,C) 0.381355932203
+[DEBUG] rsome24(A,B) :- somenot24(C,A), all24(C,B) 0.381355932203
+[DEBUG] rsome24(A,B) :- some24(B,C), \+all24(A,C) 0.367433414044
+[DEBUG] rsome24(A,B) :- some24(B,C), \+somenot24(A,C) 0.367433414044
+[DEBUG] rsome24(A,B) :- some24(B,C), \+somenot24(C,A) 0.342937853107
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+some24(C,B) 0.318774445893
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+no24(B,C) 0.318774445893
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+somenot24(C,B) 0.318774445893
+[DEBUG] rsome24(A,B) :- some24(B,C), \+all24(C,A) 0.296004842615
+[DEBUG] rsome24(A,B) :- some24(B,C), \+some24(A,C) 0.296004842615
+[DEBUG] rsome24(A,B) :- some24(B,C), \+some24(C,A) 0.296004842615
+[DEBUG] rsome24(A,B) :- some24(B,C), \+no24(A,C) 0.296004842615
+[DEBUG] rsome24(A,B) :- some24(B,C), \+no24(C,A) 0.296004842615
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+some24(B,C) 0.296004842615
+[DEBUG] rsome24(A,B) :- no24(C,A), \+all24(B,C) 0.276271186441
+[DEBUG] rsome24(A,B) :- no24(C,A), \+some24(C,B) 0.276271186441
+[DEBUG] rsome24(A,B) :- no24(C,A), \+no24(C,B) 0.276271186441
+[DEBUG] rsome24(A,B) :- no24(C,A), \+somenot24(C,B) 0.276271186441
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+all24(C,B) 0.24185136897
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+no24(C,B) 0.24185136897
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+somenot24(B,C) 0.24185136897
+[DEBUG] rsome24(A,B) :- some24(A,C), \+all24(C,B) 0.224576271186
+[DEBUG] rsome24(A,B) :- some24(A,C), \+some24(C,B) 0.224576271186
+[DEBUG] rsome24(A,B) :- some24(A,C), \+no24(C,B) 0.224576271186
+[DEBUG] rsome24(A,B) :- some24(A,C), \+somenot24(B,C) 0.224576271186
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+all24(C,A) 0.224576271186
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+some24(A,C) 0.224576271186
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+some24(C,A) 0.224576271186
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+no24(A,C) 0.224576271186
+[DEBUG] rsome24(A,B) :- no24(C,A), \+all24(C,B) 0.209604519774
+[DEBUG] rsome24(A,B) :- no24(C,A), \+some24(B,C) 0.209604519774
+[DEBUG] rsome24(A,B) :- no24(C,A), \+no24(B,C) 0.209604519774
+[DEBUG] rsome24(A,B) :- no24(C,A), \+somenot24(B,C) 0.209604519774
+[DEBUG] rsome24(A,B) :- some24(A,C), \+somenot24(C,B) 0.209604519774
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+all24(A,C) 0.209604519774
+[DEBUG] rsome24(A,B) :- all24(B,C), \+all24(A,C) 0.164928292047
+[DEBUG] rsome24(A,B) :- all24(B,C), \+all24(C,A) 0.164928292047
+[DEBUG] rsome24(A,B) :- all24(B,C), \+some24(C,A) 0.164928292047
+[DEBUG] rsome24(A,B) :- all24(B,C), \+no24(A,C) 0.164928292047
+[DEBUG] rsome24(A,B) :- all24(B,C), \+no24(C,A) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(A,C), \+all24(C,B) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(A,C), \+all24(B,C) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(A,C), \+some24(C,B) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(A,C), \+no24(C,B) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(A,C), \+somenot24(B,C) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(B,C), \+all24(A,C) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(B,C), \+all24(C,A) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(B,C), \+some24(C,A) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(B,C), \+somenot24(A,C) 0.164928292047
+[DEBUG] rsome24(A,B) :- no24(B,C), \+somenot24(C,A) 0.164928292047
+[DEBUG] rsome24(A,B) :- some24(A,C), \+all24(B,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- some24(A,C), \+some24(B,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- some24(A,C), \+no24(B,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+no24(C,A) 0.153147699758
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+somenot24(A,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+somenot24(C,A) 0.153147699758
+[DEBUG] rsome24(A,B) :- all24(B,C), \+somenot24(A,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- all24(C,B), \+all24(A,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- all24(C,B), \+all24(C,A) 0.153147699758
+[DEBUG] rsome24(A,B) :- all24(C,B), \+some24(A,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- all24(C,B), \+no24(A,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- all24(C,B), \+somenot24(A,C) 0.153147699758
+[DEBUG] rsome24(A,B) :- all24(C,B), \+some24(C,A) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome24(A,B) :- somenot24(C,A), all24(B,C) 0.864406779661
+[DEBUG] Best rule so far: rsome24(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome24(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsome24(A,B) :- all24(A,C) 0.0 (2.0, 13.0, 88.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C) 0.0 (2.0, 12.0, 89.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,A) 0.0 (2.0, 14.0, 87.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B) 0.0 (3.0, 13.0, 88.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C) 0.196047008547 (4.0, 12.0, 89.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] BETTER RULE rsome24(A,B) :- some24(A,C) (0.19604700854700854, 4.0) > (0.0, 17.0)
+[LVL9] rsome24(A,B) :- some24(B,C) 0.321047008547 (6.0, 10.0, 91.0, 11.0) 0.856125356125 [ACCEPT]
+[LVL9] BETTER RULE rsome24(A,B) :- some24(B,C) (0.32104700854700857, 6.0) > (0.19604700854700854, 4.0)
+[LVL9] rsome24(A,B) :- some24(C,A) 0.0 (2.0, 14.0, 87.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(C,B) 0.0 (2.0, 14.0, 87.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C) 0.14245014245 (3.0, 12.0, 89.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C) 0.14245014245 (3.0, 12.0, 89.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A) 0.243338360985 (5.0, 12.0, 89.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,B) 0.0 (2.0, 15.0, 86.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(A,C) 0.0 (2.0, 14.0, 87.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C) 0.196047008547 (4.0, 12.0, 89.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,B) 0.0 (2.0, 13.0, 88.0, 15.0) 0.568376068376 [ACCEPT]
+[DEBUG] Best rule so far: rsome24(A,B) :- some24(B,C) [0.321047008547]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome24(A,B) :- some24(B,C) 0.321047008547
+[DEBUG] rsome24(A,B) :- no24(C,A) 0.243338360985
+[DEBUG] rsome24(A,B) :- somenot24(C,A) 0.224053724054
+[DEBUG] rsome24(A,B) :- some24(A,C) 0.196047008547
+[DEBUG] rsome24(A,B) :- somenot24(B,C) 0.196047008547
+[DEBUG] rsome24(A,B) :- no24(A,C) 0.14245014245
+[DEBUG] rsome24(A,B) :- no24(B,C) 0.14245014245
+[DEBUG] rsome24(A,B) :- all24(C,B) 0.0
+[DEBUG] rsome24(A,B) :- all24(A,C) 0.0
+[DEBUG] rsome24(A,B) :- all24(B,C) 0.0
+[DEBUG] rsome24(A,B) :- all24(C,A) 0.0
+[DEBUG] rsome24(A,B) :- some24(C,A) 0.0
+[DEBUG] rsome24(A,B) :- some24(C,B) 0.0
+[DEBUG] rsome24(A,B) :- no24(C,B) 0.0
+[DEBUG] rsome24(A,B) :- somenot24(A,C) 0.0
+[DEBUG] rsome24(A,B) :- somenot24(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome24(A,B) :- some24(B,C), all24(C,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] BETTER RULE rsome24(A,B) :- some24(B,C), all24(C,A) (0.3789173789173789, 2.0) > (0.32104700854700857, 6.0)
+[LVL9] rsome24(A,B) :- some24(B,C), all24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), all24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(A,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(C,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(A,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), some24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(A,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(C,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(A,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), no24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+all24(A,C) 0.366910866911 (6.0, 8.0, 93.0, 11.0) 0.856125356125 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+all24(C,A) 0.295482295482 (5.0, 9.0, 92.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+some24(A,C) 0.295482295482 (5.0, 9.0, 92.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+some24(C,A) 0.295482295482 (5.0, 9.0, 92.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+no24(A,C) 0.295482295482 (5.0, 9.0, 92.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+no24(C,A) 0.295482295482 (5.0, 9.0, 92.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+somenot24(A,C) 0.366910866911 (6.0, 8.0, 93.0, 11.0) 0.856125356125 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(B,C), \+somenot24(C,A) 0.34245014245 (6.0, 9.0, 92.0, 11.0) 0.856125356125 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), all24(C,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), all24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), all24(D,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), some24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), some24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), no24(B,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), no24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), no24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), somenot24(B,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), somenot24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), somenot24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+all24(C,B) 0.209116809117 (4.0, 11.0, 90.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+all24(B,C) 0.275783475783 (5.0, 10.0, 91.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+some24(C,B) 0.275783475783 (5.0, 10.0, 91.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+some24(B,C) 0.209116809117 (4.0, 11.0, 90.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+no24(C,B) 0.275783475783 (5.0, 10.0, 91.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+no24(B,C) 0.209116809117 (4.0, 11.0, 90.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+somenot24(C,B) 0.275783475783 (5.0, 10.0, 91.0, 12.0) 0.82735042735 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,A), \+somenot24(B,C) 0.209116809117 (4.0, 11.0, 90.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), all24(C,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), all24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), all24(D,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), no24(C,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), no24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), no24(D,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), somenot24(B,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), somenot24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), somenot24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+all24(C,B) 0.178062678063 (3.0, 9.0, 92.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+some24(C,B) 0.261396011396 (4.0, 8.0, 93.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+some24(B,C) 0.241288625904 (4.0, 9.0, 92.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+no24(C,B) 0.178062678063 (3.0, 9.0, 92.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+no24(B,C) 0.261396011396 (4.0, 8.0, 93.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+somenot24(C,B) 0.261396011396 (4.0, 8.0, 93.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,A), \+somenot24(B,C) 0.178062678063 (3.0, 9.0, 92.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), all24(B,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), all24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), all24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), some24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), no24(B,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), no24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), no24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+all24(C,B) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+all24(B,C) 0.152625152625 (3.0, 11.0, 90.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+some24(C,B) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+some24(B,C) 0.152625152625 (3.0, 11.0, 90.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+no24(C,B) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+no24(B,C) 0.152625152625 (3.0, 11.0, 90.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+somenot24(C,B) 0.209116809117 (4.0, 11.0, 90.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(A,C), \+somenot24(B,C) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), no24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), no24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), somenot24(A,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), somenot24(A,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), somenot24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), somenot24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+all24(A,C) 0.209116809117 (4.0, 11.0, 90.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+all24(C,A) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+some24(A,C) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+some24(C,A) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+no24(A,C) 0.224053724054 (4.0, 10.0, 91.0, 13.0) 0.784188034188 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+no24(C,A) 0.152625152625 (3.0, 11.0, 90.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+somenot24(A,C) 0.152625152625 (3.0, 11.0, 90.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(B,C), \+somenot24(C,A) 0.152625152625 (3.0, 11.0, 90.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), some24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), some24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), somenot24(C,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), somenot24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), somenot24(D,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+all24(C,B) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+all24(B,C) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+some24(C,B) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+some24(B,C) 0.0 (2.0, 11.0, 90.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+no24(C,B) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+somenot24(C,B) 0.0 (2.0, 11.0, 90.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(A,C), \+somenot24(B,C) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), some24(A,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), some24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), no24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), no24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+all24(A,C) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+all24(C,A) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+some24(C,A) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+somenot24(A,C) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(B,C), \+somenot24(C,A) 0.164365548981 (3.0, 10.0, 91.0, 14.0) 0.712250712251 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), no24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), no24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), somenot24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,B), somenot24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(A,C), some24(C,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(A,C), some24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(A,C), some24(D,B) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), some24(A,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(B,C), some24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,A), some24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- all24(C,A), some24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(C,A), some24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(C,A), some24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(C,B), all24(A,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- some24(C,B), all24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,B), somenot24(C,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- no24(C,B), somenot24(D,A) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(A,C), somenot24(B,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,B), no24(A,D) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[LVL9] rsome24(A,B) :- somenot24(C,B), no24(D,C) 0.378917378917 (2.0, 1.0, 100.0, 15.0) 0.568376068376 [ACCEPT]
+[DEBUG] Best rule so far: rsome24(A,B) :- some24(B,C), all24(C,A) [0.378917378917]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome24(A,B) :- some24(B,C), all24(C,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), all24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), all24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(A,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(C,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(A,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), some24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(A,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(C,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(A,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), no24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), all24(C,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), all24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), all24(D,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), some24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), some24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), no24(B,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), no24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), no24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), somenot24(B,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), somenot24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,A), somenot24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), all24(C,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), all24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), all24(D,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), no24(C,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), no24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), no24(D,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), somenot24(B,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), somenot24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,A), somenot24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(A,C), all24(B,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(A,C), all24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(A,C), all24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(A,C), some24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(A,C), no24(B,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(A,C), no24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(A,C), no24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(B,C), no24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(B,C), no24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(B,C), somenot24(A,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(B,C), somenot24(A,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(B,C), somenot24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(B,C), somenot24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(A,C), some24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(A,C), some24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(A,C), somenot24(C,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(A,C), somenot24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(A,C), somenot24(D,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(B,C), some24(A,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(B,C), some24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(B,C), no24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(B,C), no24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(C,B), no24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(C,B), no24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(C,B), somenot24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(C,B), somenot24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(A,C), some24(C,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(A,C), some24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(A,C), some24(D,B) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(B,C), some24(A,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(B,C), some24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(C,A), some24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- all24(C,A), some24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(C,A), some24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(C,A), some24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(C,B), all24(A,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(C,B), all24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,B), somenot24(C,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- no24(C,B), somenot24(D,A) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(A,C), somenot24(B,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,B), no24(A,D) 0.378917378917
+[DEBUG] rsome24(A,B) :- somenot24(C,B), no24(D,C) 0.378917378917
+[DEBUG] rsome24(A,B) :- some24(B,C), \+all24(A,C) 0.366910866911
+[DEBUG] rsome24(A,B) :- some24(B,C), \+somenot24(A,C) 0.366910866911
+[DEBUG] rsome24(A,B) :- some24(B,C), \+somenot24(C,A) 0.34245014245
+[DEBUG] rsome24(A,B) :- some24(B,C), \+all24(C,A) 0.295482295482
+[DEBUG] rsome24(A,B) :- some24(B,C), \+some24(A,C) 0.295482295482
+[DEBUG] rsome24(A,B) :- some24(B,C), \+some24(C,A) 0.295482295482
+[DEBUG] rsome24(A,B) :- some24(B,C), \+no24(A,C) 0.295482295482
+[DEBUG] rsome24(A,B) :- some24(B,C), \+no24(C,A) 0.295482295482
+[DEBUG] rsome24(A,B) :- no24(C,A), \+all24(B,C) 0.275783475783
+[DEBUG] rsome24(A,B) :- no24(C,A), \+some24(C,B) 0.275783475783
+[DEBUG] rsome24(A,B) :- no24(C,A), \+no24(C,B) 0.275783475783
+[DEBUG] rsome24(A,B) :- no24(C,A), \+somenot24(C,B) 0.275783475783
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+some24(C,B) 0.261396011396
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+no24(B,C) 0.261396011396
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+somenot24(C,B) 0.261396011396
+[DEBUG] rsome24(A,B) :- somenot24(C,A), \+some24(B,C) 0.241288625904
+[DEBUG] rsome24(A,B) :- some24(A,C), \+all24(C,B) 0.224053724054
+[DEBUG] rsome24(A,B) :- some24(A,C), \+some24(C,B) 0.224053724054
+[DEBUG] rsome24(A,B) :- some24(A,C), \+no24(C,B) 0.224053724054
+[DEBUG] rsome24(A,B) :- some24(A,C), \+somenot24(B,C) 0.224053724054
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+all24(C,A) 0.224053724054
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+some24(A,C) 0.224053724054
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+some24(C,A) 0.224053724054
+[DEBUG] rsome24(A,B) :- somenot24(B,C), \+no24(A,C) 0.224053724054
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome24(A,B) :- some24(B,C), all24(C,A) 0.864406779661

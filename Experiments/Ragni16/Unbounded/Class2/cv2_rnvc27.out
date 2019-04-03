@@ -1,0 +1,27 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_27.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc27.log
+              target:	rnvc27/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc27(A,B) :- somenot27(C,A), \+all27(B,C), \+some27(C,B)
+rnvc27(A,B) :- somenot27(A,C), \+all27(C,B), \+no27(C,B), \+no27(B,C)
+rnvc27(A,B) :- some27(C,A), \+all27(C,B), \+all27(B,C), \+no27(C,B), \+no27(B,C)
+rnvc27(A,B) :- no27(C,A), \+all27(C,B), \+all27(B,C), \+no27(B,C), \+somenot27(C,B)
+rnvc27(A,B) :- no27(A,C), \+all27(C,B), \+all27(B,C), \+some27(C,B), \+some27(B,C), \+somenot27(B,C)
+rnvc27(A,B) :- somenot27(C,B), some27(A,C)
+rnvc27(A,B) :- no27(C,B), all27(C,A)
+rnvc27(A,B) :- all27(B,C), all27(A,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	17688
+          Total time:	806.8170s

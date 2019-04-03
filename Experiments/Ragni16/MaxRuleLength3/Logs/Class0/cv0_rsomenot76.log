@@ -1,0 +1,545 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.709148626098
+[INFO] Computing scores: 0.0749s
+[INFO] Number of examples (M): 124
+[INFO] Positive weight (P): 19.0000
+[INFO] Negative weight (N): 105.0000
+[DEBUG] Best rule so far: rsomenot76(A,B) :- true [0.153225806452]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot76(A,B) :- true 0.153225806452
+[DEBUG] ==================================
+[LVL9] rsomenot76(A,B) :- all76(A,C) 0.0 (1.0, 15.0, 90.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(B,C) 0.0 (1.0, 15.0, 90.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A) 0.303130929791 (5.0, 11.0, 94.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] BETTER RULE rsomenot76(A,B) :- all76(C,A) (0.3031309297912714, 5.0) > (0.1532258064516129, 19.0)
+[LVL9] rsomenot76(A,B) :- all76(C,B) 0.0 (1.0, 15.0, 90.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(A,C) 0.0 (1.0, 14.0, 91.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C) 0.259576612903 (4.0, 11.0, 94.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A) 0.197076612903 (3.0, 12.0, 93.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B) 0.197076612903 (3.0, 12.0, 93.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(A,C) 0.0 (1.0, 15.0, 90.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C) 0.0 (2.0, 14.0, 91.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,A) 0.0 (1.0, 15.0, 90.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B) 0.0 (2.0, 14.0, 91.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C) 0.361954459203 (6.0, 10.0, 95.0, 13.0) 0.879032258065 [ACCEPT]
+[LVL9] BETTER RULE rsomenot76(A,B) :- somenot76(A,C) (0.36195445920303604, 6.0) > (0.3031309297912714, 5.0)
+[LVL9] rsomenot76(A,B) :- somenot76(B,C) 0.185483870968 (3.0, 13.0, 92.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,A) 0.0 (1.0, 13.0, 92.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B) 0.210215053763 (3.0, 11.0, 94.0, 16.0) 0.788306451613 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot76(A,B) :- somenot76(A,C) [0.361954459203]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C) 0.361954459203
+[DEBUG] rsomenot76(A,B) :- all76(C,A) 0.303130929791
+[DEBUG] rsomenot76(A,B) :- some76(B,C) 0.259576612903
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B) 0.210215053763
+[DEBUG] rsomenot76(A,B) :- some76(C,A) 0.197076612903
+[DEBUG] rsomenot76(A,B) :- some76(C,B) 0.197076612903
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C) 0.185483870968
+[DEBUG] rsomenot76(A,B) :- no76(B,C) 0.0
+[DEBUG] rsomenot76(A,B) :- no76(C,B) 0.0
+[DEBUG] rsomenot76(A,B) :- all76(A,C) 0.0
+[DEBUG] rsomenot76(A,B) :- all76(B,C) 0.0
+[DEBUG] rsomenot76(A,B) :- all76(C,B) 0.0
+[DEBUG] rsomenot76(A,B) :- some76(A,C) 0.0
+[DEBUG] rsomenot76(A,B) :- no76(A,C) 0.0
+[DEBUG] rsomenot76(A,B) :- no76(C,A) 0.0
+[DEBUG] rsomenot76(A,B) :- somenot76(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), all76(B,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] BETTER RULE rsomenot76(A,B) :- somenot76(A,C), all76(B,C) (0.3844086021505377, 1.0) > (0.36195445920303604, 6.0)
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), all76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), all76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), some76(C,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), some76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), some76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), no76(C,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), no76(B,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), no76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), no76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), no76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), no76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), somenot76(C,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), somenot76(B,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), somenot76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), somenot76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), somenot76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+all76(C,B) 0.410215053763 (6.0, 8.0, 97.0, 13.0) 0.879032258065 [ACCEPT]
+[LVL9] BETTER RULE rsomenot76(A,B) :- somenot76(A,C), \+all76(C,B) (0.41021505376344086, 6.0) > (0.3844086021505377, 1.0)
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+all76(B,C) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+some76(C,B) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+some76(B,C) 0.410215053763 (6.0, 8.0, 97.0, 13.0) 0.879032258065 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+no76(C,B) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+no76(B,C) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+somenot76(C,B) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(A,C), \+somenot76(B,C) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), all76(C,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), all76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(C,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(B,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(C,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(B,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+all76(C,B) 0.27688172043 (4.0, 10.0, 95.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+all76(B,C) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+some76(C,B) 0.27688172043 (4.0, 10.0, 95.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+some76(B,C) 0.27688172043 (4.0, 10.0, 95.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+no76(C,B) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+no76(B,C) 0.343548387097 (5.0, 9.0, 96.0, 14.0) 0.858870967742 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+somenot76(C,B) 0.27688172043 (4.0, 10.0, 95.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+somenot76(B,C) 0.27688172043 (4.0, 10.0, 95.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(A,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), some76(C,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), some76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), some76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), no76(A,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), no76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), no76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+all76(A,C) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+all76(C,A) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+some76(A,C) 0.296658986175 (4.0, 9.0, 96.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+some76(C,A) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+no76(A,C) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+no76(C,A) 0.296658986175 (4.0, 9.0, 96.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+somenot76(A,C) 0.296658986175 (4.0, 9.0, 96.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+somenot76(C,A) 0.27688172043 (4.0, 10.0, 95.0, 15.0) 0.83064516129 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), all76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), all76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), somenot76(C,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), somenot76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), somenot76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), somenot76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+all76(A,C) 0.242555831266 (3.0, 9.0, 96.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+all76(C,A) 0.165632754342 (2.0, 10.0, 95.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+some76(A,C) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+some76(C,A) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+no76(A,C) 0.242555831266 (3.0, 9.0, 96.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+no76(C,A) 0.242555831266 (3.0, 9.0, 96.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+somenot76(A,C) 0.165632754342 (2.0, 10.0, 95.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+somenot76(C,A) 0.165632754342 (2.0, 10.0, 95.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), some76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), some76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(C,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(B,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+all76(C,B) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+all76(B,C) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+some76(C,B) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+some76(B,C) 0.153801843318 (2.0, 11.0, 94.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+no76(C,B) 0.153801843318 (2.0, 11.0, 94.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+no76(B,C) 0.153801843318 (2.0, 11.0, 94.0, 17.0) 0.717741935484 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+somenot76(C,B) 0.210215053763 (3.0, 11.0, 94.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+somenot76(B,C) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), all76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), all76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), some76(A,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), some76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), some76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), somenot76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), somenot76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+all76(A,C) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+some76(C,A) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+no76(A,C) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+no76(C,A) 0.225230414747 (3.0, 10.0, 95.0, 16.0) 0.788306451613 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), all76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), all76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), no76(C,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), no76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), no76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), somenot76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C), some76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C), some76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C), somenot76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C), somenot76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B), some76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B), some76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B), somenot76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B), somenot76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), some76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), some76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(B,C), somenot76(A,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(B,C), somenot76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,B), all76(D,A) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(A,C), some76(C,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(A,C), some76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(A,C), some76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(A,C), some76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,A), somenot76(B,D) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,A), somenot76(D,C) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,A), somenot76(D,B) 0.384408602151 (1.0, 1.0, 104.0, 18.0) 0.576612903226 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot76(A,B) :- somenot76(A,C), \+all76(C,B) [0.410215053763]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+all76(C,B) 0.410215053763
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+some76(B,C) 0.410215053763
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), all76(B,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), all76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), all76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), some76(C,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), some76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), some76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), no76(C,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), no76(B,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), no76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), no76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), no76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), no76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), somenot76(C,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), somenot76(B,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), somenot76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), somenot76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), somenot76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), all76(C,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), all76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(C,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(B,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(C,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(B,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(A,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), some76(C,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), some76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), some76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), no76(A,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), no76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(B,C), no76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), all76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), all76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), somenot76(C,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), somenot76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), somenot76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), somenot76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), some76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), some76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(C,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(B,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,B), all76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,B), all76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,B), some76(A,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,B), some76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,B), some76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,B), somenot76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(C,B), somenot76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), all76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), all76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), no76(C,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), no76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), no76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), somenot76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(B,C), some76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(B,C), some76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(B,C), somenot76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(B,C), somenot76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(C,B), some76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(C,B), some76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(C,B), somenot76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(C,B), somenot76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(A,C), some76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(A,C), some76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(B,C), somenot76(A,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(B,C), somenot76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- all76(C,B), all76(D,A) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(A,C), some76(C,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- some76(A,C), some76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(A,C), some76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(A,C), some76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(C,A), somenot76(B,D) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- no76(C,A), somenot76(D,C) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(C,A), somenot76(D,B) 0.384408602151
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+all76(B,C) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+some76(C,B) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+no76(C,B) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+no76(B,C) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+somenot76(C,B) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- somenot76(A,C), \+somenot76(B,C) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+all76(B,C) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+no76(C,B) 0.343548387097
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+no76(B,C) 0.343548387097
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot76(A,B) :- somenot76(A,C), \+all76(C,B) 0.83064516129
+[DEBUG] Best rule so far: rsomenot76(A,B) :- true [0.118181818182]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot76(A,B) :- true 0.118181818182
+[DEBUG] ==================================
+[LVL9] rsomenot76(A,B) :- all76(A,C) 0.0 (7.0, 23.0, 82.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A) 0.301069518717 (11.0, 19.0, 86.0, 8.0) 0.85303030303 [ACCEPT]
+[LVL9] BETTER RULE rsomenot76(A,B) :- all76(C,A) (0.30106951871657756, 11.0) > (0.1181818181818182, 19.0)
+[LVL9] rsomenot76(A,B) :- all76(C,B) 0.0 (7.0, 23.0, 82.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(A,C) 0.0 (7.0, 22.0, 83.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C) 0.294155844156 (10.0, 17.0, 88.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A) 0.194886363636 (9.0, 20.0, 85.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B) 0.151298701299 (8.0, 19.0, 86.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(A,C) 0.0 (7.0, 23.0, 82.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,A) 0.0 (7.0, 23.0, 82.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C) 0.141212121212 (8.0, 20.0, 85.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,A) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B) 0.162937062937 (8.0, 18.0, 87.0, 11.0) 0.706060606061 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot76(A,B) :- all76(C,A) [0.301069518717]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot76(A,B) :- all76(C,A) 0.301069518717
+[DEBUG] rsomenot76(A,B) :- some76(B,C) 0.294155844156
+[DEBUG] rsomenot76(A,B) :- some76(C,A) 0.194886363636
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B) 0.162937062937
+[DEBUG] rsomenot76(A,B) :- some76(C,B) 0.151298701299
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C) 0.141212121212
+[DEBUG] rsomenot76(A,B) :- all76(A,C) 0.0
+[DEBUG] rsomenot76(A,B) :- all76(C,B) 0.0
+[DEBUG] rsomenot76(A,B) :- some76(A,C) 0.0
+[DEBUG] rsomenot76(A,B) :- no76(A,C) 0.0
+[DEBUG] rsomenot76(A,B) :- no76(B,C) 0.0
+[DEBUG] rsomenot76(A,B) :- no76(C,A) 0.0
+[DEBUG] rsomenot76(A,B) :- no76(C,B) 0.0
+[DEBUG] rsomenot76(A,B) :- somenot76(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot76(A,B) :- all76(C,A), all76(C,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] BETTER RULE rsomenot76(A,B) :- all76(C,A), all76(C,B) (0.37272727272727274, 7.0) > (0.30106951871657756, 11.0)
+[LVL9] rsomenot76(A,B) :- all76(C,A), all76(D,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(C,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(B,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(B,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), some76(D,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(C,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(B,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(B,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), somenot76(D,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+all76(C,B) 0.274545454545 (10.0, 18.0, 87.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+all76(B,C) 0.341212121212 (11.0, 17.0, 88.0, 8.0) 0.85303030303 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+some76(C,B) 0.274545454545 (10.0, 18.0, 87.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+some76(B,C) 0.274545454545 (10.0, 18.0, 87.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+no76(C,B) 0.341212121212 (11.0, 17.0, 88.0, 8.0) 0.85303030303 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+no76(B,C) 0.341212121212 (11.0, 17.0, 88.0, 8.0) 0.85303030303 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+somenot76(C,B) 0.274545454545 (10.0, 18.0, 87.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,A), \+somenot76(B,C) 0.274545454545 (10.0, 18.0, 87.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(A,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(A,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), all76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), some76(C,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), some76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), some76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), no76(A,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), no76(A,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), no76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+all76(A,C) 0.259848484848 (9.0, 16.0, 89.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+all76(C,A) 0.259848484848 (9.0, 16.0, 89.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+some76(A,C) 0.343181818182 (10.0, 15.0, 90.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+some76(C,A) 0.259848484848 (9.0, 16.0, 89.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+no76(A,C) 0.259848484848 (9.0, 16.0, 89.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+no76(C,A) 0.343181818182 (10.0, 15.0, 90.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(B,C), \+somenot76(C,A) 0.316783216783 (10.0, 16.0, 89.0, 9.0) 0.823636363636 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), some76(B,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), some76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(C,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(B,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(B,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), no76(D,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+all76(C,B) 0.222727272727 (9.0, 18.0, 87.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+all76(B,C) 0.222727272727 (9.0, 18.0, 87.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+some76(C,B) 0.222727272727 (9.0, 18.0, 87.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+some76(B,C) 0.151298701299 (8.0, 19.0, 86.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+no76(C,B) 0.151298701299 (8.0, 19.0, 86.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+no76(B,C) 0.151298701299 (8.0, 19.0, 86.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+somenot76(C,B) 0.207878787879 (9.0, 19.0, 86.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,A), \+somenot76(B,C) 0.222727272727 (9.0, 18.0, 87.0, 10.0) 0.779545454545 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), all76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), all76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), somenot76(C,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), somenot76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+all76(A,C) 0.192561983471 (8.0, 16.0, 89.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+all76(C,A) 0.0 (7.0, 17.0, 88.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+some76(A,C) 0.176515151515 (8.0, 17.0, 88.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+some76(C,A) 0.176515151515 (8.0, 17.0, 88.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+no76(A,C) 0.192561983471 (8.0, 16.0, 89.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+no76(C,A) 0.192561983471 (8.0, 16.0, 89.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,B), \+somenot76(C,A) 0.0 (7.0, 17.0, 88.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), all76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), all76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), some76(A,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), some76(A,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), some76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+all76(A,C) 0.176515151515 (8.0, 17.0, 88.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+all76(C,A) 0.0 (7.0, 18.0, 87.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+some76(A,C) 0.0 (7.0, 18.0, 87.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+some76(C,A) 0.176515151515 (8.0, 17.0, 88.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+no76(A,C) 0.176515151515 (8.0, 17.0, 88.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+no76(C,A) 0.176515151515 (8.0, 17.0, 88.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(C,B), \+somenot76(C,A) 0.162937062937 (8.0, 18.0, 87.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), all76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), all76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), no76(C,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), no76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), no76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), \+all76(A,C) 0.162937062937 (8.0, 18.0, 87.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), \+all76(C,A) 0.0 (7.0, 19.0, 86.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), \+some76(A,C) 0.162937062937 (8.0, 18.0, 87.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), \+some76(C,A) 0.162937062937 (8.0, 18.0, 87.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), \+no76(A,C) 0.162937062937 (8.0, 18.0, 87.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), \+no76(C,A) 0.0 (7.0, 19.0, 86.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(B,C), \+somenot76(C,A) 0.162937062937 (8.0, 18.0, 87.0, 11.0) 0.706060606061 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), some76(B,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), some76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), \+all76(C,B) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), \+all76(B,C) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), \+some76(C,B) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), \+no76(C,B) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), \+no76(B,C) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), \+somenot76(C,B) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(A,C), \+somenot76(B,C) 0.0 (7.0, 21.0, 84.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- all76(C,B), all76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(A,C), some76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- some76(A,C), some76(D,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(A,C), some76(B,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(A,C), some76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C), some76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(B,C), some76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,A), somenot76(B,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,A), somenot76(D,C) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B), some76(C,D) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- no76(C,B), some76(D,A) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[LVL9] rsomenot76(A,B) :- somenot76(C,A), somenot76(D,B) 0.372727272727 (7.0, 9.0, 96.0, 12.0) 0.559090909091 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot76(A,B) :- all76(C,A), all76(C,B) [0.372727272727]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot76(A,B) :- all76(C,A), all76(C,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), all76(D,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(C,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(B,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(B,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), some76(D,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(C,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(B,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(B,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,A), somenot76(D,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(A,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(A,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), all76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), some76(C,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), some76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), some76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), no76(A,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), no76(A,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), no76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), some76(B,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), some76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(C,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(B,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(B,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), no76(D,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), all76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), all76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), somenot76(C,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), somenot76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,B), all76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,B), all76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,B), some76(A,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,B), some76(A,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,B), some76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), all76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), all76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), no76(C,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), no76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), no76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(A,C), some76(B,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(A,C), some76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- all76(C,B), all76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(A,C), some76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(A,C), some76(D,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(A,C), some76(B,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(A,C), some76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(B,C), some76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(B,C), some76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(C,A), somenot76(B,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(C,A), somenot76(D,C) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(C,B), some76(C,D) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- no76(C,B), some76(D,A) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- somenot76(C,A), somenot76(D,B) 0.372727272727
+[DEBUG] rsomenot76(A,B) :- some76(B,C), \+some76(A,C) 0.343181818182
+[DEBUG] rsomenot76(A,B) :- some76(B,C), \+no76(C,A) 0.343181818182
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+all76(B,C) 0.341212121212
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+no76(C,B) 0.341212121212
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+no76(B,C) 0.341212121212
+[DEBUG] rsomenot76(A,B) :- some76(B,C), \+somenot76(C,A) 0.316783216783
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+all76(C,B) 0.274545454545
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+some76(C,B) 0.274545454545
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+some76(B,C) 0.274545454545
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+somenot76(C,B) 0.274545454545
+[DEBUG] rsomenot76(A,B) :- all76(C,A), \+somenot76(B,C) 0.274545454545
+[DEBUG] rsomenot76(A,B) :- some76(B,C), \+all76(A,C) 0.259848484848
+[DEBUG] rsomenot76(A,B) :- some76(B,C), \+all76(C,A) 0.259848484848
+[DEBUG] rsomenot76(A,B) :- some76(B,C), \+some76(C,A) 0.259848484848
+[DEBUG] rsomenot76(A,B) :- some76(B,C), \+no76(A,C) 0.259848484848
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+all76(C,B) 0.222727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+all76(B,C) 0.222727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+some76(C,B) 0.222727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+somenot76(B,C) 0.222727272727
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+somenot76(C,B) 0.207878787879
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), \+all76(A,C) 0.192561983471
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), \+no76(A,C) 0.192561983471
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), \+no76(C,A) 0.192561983471
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), \+some76(A,C) 0.176515151515
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), \+some76(C,A) 0.176515151515
+[DEBUG] rsomenot76(A,B) :- some76(C,B), \+all76(A,C) 0.176515151515
+[DEBUG] rsomenot76(A,B) :- some76(C,B), \+some76(C,A) 0.176515151515
+[DEBUG] rsomenot76(A,B) :- some76(C,B), \+no76(A,C) 0.176515151515
+[DEBUG] rsomenot76(A,B) :- some76(C,B), \+no76(C,A) 0.176515151515
+[DEBUG] rsomenot76(A,B) :- some76(C,B), \+somenot76(C,A) 0.162937062937
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), \+all76(A,C) 0.162937062937
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), \+some76(A,C) 0.162937062937
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), \+some76(C,A) 0.162937062937
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), \+no76(A,C) 0.162937062937
+[DEBUG] rsomenot76(A,B) :- somenot76(B,C), \+somenot76(C,A) 0.162937062937
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+some76(B,C) 0.151298701299
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+no76(C,B) 0.151298701299
+[DEBUG] rsomenot76(A,B) :- some76(C,A), \+no76(B,C) 0.151298701299
+[DEBUG] rsomenot76(A,B) :- somenot76(C,B), \+all76(C,A) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot76(A,B) :- all76(C,A), all76(C,B) 0.83064516129

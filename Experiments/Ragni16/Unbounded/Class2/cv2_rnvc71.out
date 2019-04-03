@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_71.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc71.log
+              target:	rnvc71/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc71(A,B) :- somenot71(A,C), \+all71(C,B), \+all71(B,C), \+no71(C,B)
+rnvc71(A,B) :- somenot71(C,A), \+all71(C,B), \+all71(B,C), \+somenot71(C,B)
+rnvc71(A,B) :- somenot71(C,B), \+all71(A,C), \+all71(C,A), \+somenot71(C,A)
+rnvc71(A,B) :- some71(A,C), some71(B,C)
+rnvc71(A,B) :- some71(C,B), some71(C,A)
+rnvc71(A,B) :- no71(C,B), no71(A,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	9240
+          Total time:	128.7302s

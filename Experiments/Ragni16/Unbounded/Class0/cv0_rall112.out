@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_112.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rall112.log
+              target:	rall112/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall112(A,B) :- all112(B,C), no112(A,C)
+rall112(A,B) :- all112(C,A), no112(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.962264150943
+           Precision:	 1.0
+              Recall:	 0.333333333333
+================== STATISTICS ==================
+    Rule evaluations:	26505
+          Total time:	737.8207s

@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_78.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rnvc78.log
+              target:	rnvc78/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc78(A,B) :- some78(B,C), \+all78(C,A), \+some78(C,A), \+somenot78(C,A)
+rnvc78(A,B) :- no78(B,C), \+all78(C,A), \+some78(A,C), \+somenot78(A,C)
+rnvc78(A,B) :- no78(C,B), \+all78(A,C), \+some78(C,A), \+somenot78(C,A)
+rnvc78(A,B) :- all78(B,C), \+some78(A,C), \+some78(C,A), \+no78(A,C), \+somenot78(A,C), \+somenot78(C,A)
+rnvc78(A,B) :- some78(C,B), \+all78(A,C), \+all78(C,A), \+some78(A,C), \+no78(A,C), \+somenot78(A,C)
+rnvc78(A,B) :- somenot78(C,B), \+all78(A,C), \+all78(C,A), \+some78(A,C), \+some78(C,A), \+no78(C,A)
+rnvc78(A,B) :- all78(C,B), \+all78(A,C), \+some78(A,C), \+some78(C,A), \+no78(C,A), \+somenot78(A,C), \+somenot78(C,A)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	32411
+          Total time:	514.0125s

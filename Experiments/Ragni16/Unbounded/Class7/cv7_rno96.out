@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_96.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rno96.log
+              target:	rno96/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rno96(A,B) :- no96(A,C), \+all96(B,C), \+some96(B,C), \+no96(C,B), \+no96(B,C), \+somenot96(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.945454545455
+           Precision:	 0.75
+              Recall:	 0.375
+================== STATISTICS ==================
+    Rule evaluations:	20737
+          Total time:	199.3197s

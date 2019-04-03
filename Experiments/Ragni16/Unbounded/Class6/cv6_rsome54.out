@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_54.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome54.log
+              target:	rsome54/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome54(A,B) :- somenot54(C,A), \+no54(C,B), \+no54(B,C), \+all54(B,C), \+some54(C,B), \+somenot54(B,C)
+rsome54(A,B) :- some54(C,B), somenot54(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.883928571429
+           Precision:	 1.0
+              Recall:	 0.235294117647
+================== STATISTICS ==================
+    Rule evaluations:	47643
+          Total time:	1061.4912s

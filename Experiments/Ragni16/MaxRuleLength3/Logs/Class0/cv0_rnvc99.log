@@ -1,0 +1,364 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.156823148438
+[INFO] Computing scores: 0.0176s
+[INFO] Number of examples (M): 54
+[INFO] Positive weight (P): 24.0000
+[INFO] Negative weight (N): 30.0000
+[DEBUG] Best rule so far: rnvc99(A,B) :- true [0.444444444444]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- true 0.444444444444
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- all99(B,C) 0.0 (1.0, 5.0, 25.0, 23.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc99(A,B) :- all99(C,A) 0.0 (1.0, 6.0, 24.0, 23.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(A,C) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(A,C) (0.6805555555555556, 5.0) > (0.4444444444444444, 24.0)
+[LVL9] rnvc99(A,B) :- some99(B,C) 0.888888888889 (4.0, 0.0, 30.0, 20.0) 0.888888888889 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(B,C) (0.888888888888889, 4.0) > (0.6805555555555556, 5.0)
+[LVL9] rnvc99(A,B) :- some99(C,B) 0.604938271605 (5.0, 3.0, 27.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(A,C) 0.716049382716 (6.0, 2.0, 28.0, 18.0) 0.920634920635 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B) 0.604938271605 (5.0, 3.0, 27.0, 19.0) 0.907407407407 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- some99(B,C) [0.888888888889]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- no99(A,C) 0.716049382716
+[DEBUG] rnvc99(A,B) :- some99(A,C) 0.680555555556
+[DEBUG] rnvc99(A,B) :- no99(B,C) 0.680555555556
+[DEBUG] rnvc99(A,B) :- some99(C,B) 0.604938271605
+[DEBUG] rnvc99(A,B) :- somenot99(C,B) 0.604938271605
+[DEBUG] rnvc99(A,B) :- all99(B,C) 0.0
+[DEBUG] rnvc99(A,B) :- all99(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- no99(A,C), \+all99(C,B) 0.805555555556 (6.0, 1.0, 29.0, 18.0) 0.920634920635 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(A,C), \+somenot99(B,C) 0.805555555556 (6.0, 1.0, 29.0, 18.0) 0.920634920635 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(A,C), \+all99(C,B) 0.777777777778 (5.0, 1.0, 29.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(A,C), \+no99(C,B) 0.777777777778 (5.0, 1.0, 29.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.777777777778 (5.0, 1.0, 29.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.777777777778 (5.0, 1.0, 29.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.680555555556 (5.0, 2.0, 28.0, 19.0) 0.907407407407 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- some99(B,C) [0.888888888889]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- no99(A,C), \+all99(C,B) 0.805555555556
+[DEBUG] rnvc99(A,B) :- no99(A,C), \+somenot99(B,C) 0.805555555556
+[DEBUG] rnvc99(A,B) :- some99(A,C), \+all99(C,B) 0.777777777778
+[DEBUG] rnvc99(A,B) :- some99(A,C), \+no99(C,B) 0.777777777778
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.777777777778
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.777777777778
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.680555555556
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.680555555556
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.680555555556
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.680555555556
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.680555555556
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.680555555556
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc99(A,B) :- some99(B,C) 0.62962962963
+[DEBUG] Best rule so far: rnvc99(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- all99(B,C) 0.0 (5.0, 5.0, 25.0, 19.0) 0.7 [ACCEPT]
+[LVL9] rnvc99(A,B) :- all99(C,A) 0.0 (5.0, 6.0, 24.0, 19.0) 0.7 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(A,C) 0.628571428571 (8.0, 2.0, 28.0, 16.0) 0.88 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(A,C) (0.6285714285714287, 8.0) > (0.0, 24.0)
+[LVL9] rnvc99(A,B) :- some99(C,A) 0.0 (6.0, 4.0, 26.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B) 0.6 (9.0, 3.0, 27.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(A,C) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- no99(A,C) (0.675, 9.0) > (0.6285714285714287, 8.0)
+[LVL9] rnvc99(A,B) :- no99(B,C) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A) 0.0 (6.0, 5.0, 25.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B) 0.0 (7.0, 5.0, 25.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C) 0.485714285714 (7.0, 3.0, 27.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(B,C) 0.0 (5.0, 4.0, 26.0, 19.0) 0.7 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A) 0.485714285714 (7.0, 3.0, 27.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B) 0.6 (9.0, 3.0, 27.0, 15.0) 0.9 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- no99(A,C) [0.675]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- no99(A,C) 0.675
+[DEBUG] rnvc99(A,B) :- no99(B,C) 0.675
+[DEBUG] rnvc99(A,B) :- some99(A,C) 0.628571428571
+[DEBUG] rnvc99(A,B) :- some99(C,B) 0.6
+[DEBUG] rnvc99(A,B) :- somenot99(C,B) 0.6
+[DEBUG] rnvc99(A,B) :- somenot99(A,C) 0.485714285714
+[DEBUG] rnvc99(A,B) :- somenot99(C,A) 0.485714285714
+[DEBUG] rnvc99(A,B) :- no99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- some99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- all99(B,C) 0.0
+[DEBUG] rnvc99(A,B) :- all99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- somenot99(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- no99(A,C), all99(B,C) 0.7 (5.0, 0.0, 30.0, 19.0) 0.7 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rnvc99(A,B) :- no99(A,C), all99(B,C) (0.7, 5.0) > (0.675, 9.0)
+[LVL9] rnvc99(A,B) :- no99(A,C), \+all99(C,B) 0.771428571429 (9.0, 1.0, 29.0, 15.0) 0.9 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- no99(A,C), \+all99(C,B) (0.7714285714285715, 9.0) > (0.7, 5.0)
+[LVL9] rnvc99(A,B) :- no99(A,C), \+somenot99(B,C) 0.771428571429 (9.0, 1.0, 29.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.771428571429 (9.0, 1.0, 29.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.771428571429 (9.0, 1.0, 29.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(A,C), \+all99(C,B) 0.733333333333 (8.0, 1.0, 29.0, 16.0) 0.88 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(A,C), \+no99(C,B) 0.733333333333 (8.0, 1.0, 29.0, 16.0) 0.88 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.675 (9.0, 2.0, 28.0, 15.0) 0.9 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+all99(C,B) 0.566666666667 (7.0, 2.0, 28.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+all99(B,C) 0.566666666667 (7.0, 2.0, 28.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+no99(B,C) 0.566666666667 (7.0, 2.0, 28.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+all99(C,B) 0.566666666667 (7.0, 2.0, 28.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+all99(B,C) 0.566666666667 (7.0, 2.0, 28.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+no99(C,B) 0.566666666667 (7.0, 2.0, 28.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+all99(A,C) 0.425 (7.0, 4.0, 26.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+all99(C,A) 0.425 (7.0, 4.0, 26.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+some99(A,C) 0.425 (7.0, 4.0, 26.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+some99(C,A) 0.425 (7.0, 4.0, 26.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+somenot99(C,A) 0.425 (7.0, 4.0, 26.0, 17.0) 0.85 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+all99(C,B) 0.0 (6.0, 3.0, 27.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+all99(B,C) 0.0 (6.0, 3.0, 27.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+no99(C,B) 0.0 (6.0, 3.0, 27.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+no99(B,C) 0.0 (6.0, 3.0, 27.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+all99(C,B) 0.0 (6.0, 4.0, 26.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+all99(B,C) 0.0 (6.0, 4.0, 26.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+some99(C,B) 0.0 (6.0, 4.0, 26.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+somenot99(C,B) 0.0 (6.0, 4.0, 26.0, 18.0) 0.8 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+somenot99(B,C) 0.0 (6.0, 4.0, 26.0, 18.0) 0.8 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- no99(A,C), \+all99(C,B) [0.771428571429]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- no99(A,C), \+all99(C,B) 0.771428571429
+[DEBUG] rnvc99(A,B) :- no99(A,C), \+somenot99(B,C) 0.771428571429
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.771428571429
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.771428571429
+[DEBUG] rnvc99(A,B) :- some99(A,C), \+all99(C,B) 0.733333333333
+[DEBUG] rnvc99(A,B) :- some99(A,C), \+no99(C,B) 0.733333333333
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.675
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.675
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.675
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.675
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.675
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.675
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+all99(C,B) 0.566666666667
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+all99(B,C) 0.566666666667
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+no99(B,C) 0.566666666667
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+all99(C,B) 0.566666666667
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+all99(B,C) 0.566666666667
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+no99(C,B) 0.566666666667
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+all99(A,C) 0.425
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+all99(C,A) 0.425
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+some99(A,C) 0.425
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+some99(C,A) 0.425
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+somenot99(C,A) 0.425
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+all99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+all99(B,C) 0.0
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+no99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+no99(B,C) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+all99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+all99(B,C) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+some99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+somenot99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+somenot99(B,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc99(A,B) :- no99(A,C), \+all99(C,B) 0.703703703704
+[DEBUG] Best rule so far: rnvc99(A,B) :- true [0.340909090909]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- true 0.340909090909
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- all99(C,A) 0.0 (10.0, 7.0, 23.0, 14.0) 0.670454545455 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(A,C) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(A,C) (0.6201298701298701, 13.0) > (0.34090909090909094, 24.0)
+[LVL9] rnvc99(A,B) :- some99(C,A) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B) 0.542613636364 (13.0, 4.0, 26.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A) 0.0 (11.0, 6.0, 24.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B) 0.0 (11.0, 6.0, 24.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C) 0.477272727273 (12.0, 4.0, 26.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(B,C) 0.0 (10.0, 4.0, 26.0, 14.0) 0.670454545455 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A) 0.477272727273 (12.0, 4.0, 26.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B) 0.542613636364 (13.0, 4.0, 26.0, 11.0) 0.868181818182 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- some99(A,C) [0.62012987013]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- some99(A,C) 0.62012987013
+[DEBUG] rnvc99(A,B) :- no99(B,C) 0.62012987013
+[DEBUG] rnvc99(A,B) :- some99(C,B) 0.542613636364
+[DEBUG] rnvc99(A,B) :- somenot99(C,B) 0.542613636364
+[DEBUG] rnvc99(A,B) :- somenot99(A,C) 0.477272727273
+[DEBUG] rnvc99(A,B) :- somenot99(C,A) 0.477272727273
+[DEBUG] rnvc99(A,B) :- some99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- all99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- somenot99(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- some99(A,C), some99(C,B) 0.670454545455 (10.0, 1.0, 29.0, 14.0) 0.670454545455 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(A,C), some99(C,B) (0.6704545454545454, 10.0) > (0.6201298701298701, 13.0)
+[LVL9] rnvc99(A,B) :- some99(A,C), \+all99(C,B) 0.723484848485 (13.0, 2.0, 28.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(A,C), \+all99(C,B) (0.7234848484848485, 13.0) > (0.6704545454545454, 10.0)
+[LVL9] rnvc99(A,B) :- some99(A,C), \+no99(C,B) 0.723484848485 (13.0, 2.0, 28.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.723484848485 (13.0, 2.0, 28.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.723484848485 (13.0, 2.0, 28.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.62012987013 (13.0, 3.0, 27.0, 11.0) 0.868181818182 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+all99(C,B) 0.556818181818 (12.0, 3.0, 27.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+all99(B,C) 0.556818181818 (12.0, 3.0, 27.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+no99(B,C) 0.556818181818 (12.0, 3.0, 27.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+all99(C,B) 0.556818181818 (12.0, 3.0, 27.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+all99(B,C) 0.556818181818 (12.0, 3.0, 27.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+no99(C,B) 0.556818181818 (12.0, 3.0, 27.0, 12.0) 0.835227272727 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+all99(C,B) 0.390151515152 (11.0, 4.0, 26.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+all99(B,C) 0.390151515152 (11.0, 4.0, 26.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+no99(C,B) 0.390151515152 (11.0, 4.0, 26.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+no99(B,C) 0.390151515152 (11.0, 4.0, 26.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+all99(C,B) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+all99(B,C) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+some99(C,B) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+somenot99(C,B) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+somenot99(B,C) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+all99(A,C) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+all99(C,A) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+some99(A,C) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+some99(C,A) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+somenot99(C,A) 0.0 (11.0, 5.0, 25.0, 13.0) 0.780303030303 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- some99(A,C), \+all99(C,B) [0.723484848485]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- some99(A,C), \+all99(C,B) 0.723484848485
+[DEBUG] rnvc99(A,B) :- some99(A,C), \+no99(C,B) 0.723484848485
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.723484848485
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.723484848485
+[DEBUG] rnvc99(A,B) :- some99(A,C), some99(C,B) 0.670454545455
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.62012987013
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.62012987013
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.62012987013
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.62012987013
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.62012987013
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.62012987013
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+all99(C,B) 0.556818181818
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+all99(B,C) 0.556818181818
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+no99(B,C) 0.556818181818
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+all99(C,B) 0.556818181818
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+all99(B,C) 0.556818181818
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+no99(C,B) 0.556818181818
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+all99(C,B) 0.390151515152
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+all99(B,C) 0.390151515152
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+no99(C,B) 0.390151515152
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+no99(B,C) 0.390151515152
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+all99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+all99(B,C) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+some99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+somenot99(C,B) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+somenot99(B,C) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+all99(A,C) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+all99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+some99(A,C) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+some99(C,A) 0.0
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+somenot99(C,A) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc99(A,B) :- some99(A,C), \+all99(C,B) 0.759259259259
+[DEBUG] Best rule so far: rnvc99(A,B) :- true [0.282051282051]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- true 0.282051282051
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- all99(C,A) 0.0 (14.0, 8.0, 22.0, 10.0) 0.641025641026 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A) 0.326007326007 (15.0, 6.0, 24.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(C,A) (0.326007326007326, 15.0) > (0.28205128205128205, 24.0)
+[LVL9] rnvc99(A,B) :- some99(C,B) 0.468864468864 (16.0, 5.0, 25.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- some99(C,B) (0.46886446886446886, 16.0) > (0.326007326007326, 15.0)
+[LVL9] rnvc99(A,B) :- no99(B,C) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- no99(B,C) (0.547008547008547, 16.0) > (0.46886446886446886, 16.0)
+[LVL9] rnvc99(A,B) :- no99(C,A) 0.285256410256 (15.0, 7.0, 23.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B) 0.326007326007 (15.0, 6.0, 24.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C) 0.468864468864 (16.0, 5.0, 25.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A) 0.468864468864 (16.0, 5.0, 25.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B) 0.468864468864 (16.0, 5.0, 25.0, 8.0) 0.820512820513 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- no99(B,C) [0.547008547009]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- no99(B,C) 0.547008547009
+[DEBUG] rnvc99(A,B) :- some99(C,B) 0.468864468864
+[DEBUG] rnvc99(A,B) :- somenot99(A,C) 0.468864468864
+[DEBUG] rnvc99(A,B) :- somenot99(C,A) 0.468864468864
+[DEBUG] rnvc99(A,B) :- somenot99(C,B) 0.468864468864
+[DEBUG] rnvc99(A,B) :- some99(C,A) 0.326007326007
+[DEBUG] rnvc99(A,B) :- no99(C,B) 0.326007326007
+[DEBUG] rnvc99(A,B) :- no99(C,A) 0.285256410256
+[DEBUG] rnvc99(A,B) :- all99(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc99(A,B) :- no99(B,C), all99(C,A) 0.641025641026 (14.0, 2.0, 28.0, 10.0) 0.641025641026 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- no99(B,C), all99(C,A) (0.641025641025641, 14.0) > (0.547008547008547, 16.0)
+[LVL9] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.65641025641 (16.0, 3.0, 27.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] BETTER RULE rnvc99(A,B) :- no99(B,C), \+some99(C,A) (0.6564102564102564, 16.0) > (0.641025641025641, 14.0)
+[LVL9] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.65641025641 (16.0, 3.0, 27.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+all99(C,B) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+all99(B,C) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(A,C), \+no99(B,C) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+all99(C,B) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+all99(B,C) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,A), \+no99(C,B) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.547008547009 (16.0, 4.0, 26.0, 8.0) 0.820512820513 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+all99(C,B) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+all99(B,C) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+no99(C,B) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- some99(C,A), \+no99(B,C) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+all99(A,C) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+all99(C,A) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+some99(C,A) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,B), \+somenot99(C,A) 0.380341880342 (15.0, 5.0, 25.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+all99(C,B) 0.326007326007 (15.0, 6.0, 24.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+all99(B,C) 0.326007326007 (15.0, 6.0, 24.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+some99(C,B) 0.326007326007 (15.0, 6.0, 24.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+somenot99(C,B) 0.326007326007 (15.0, 6.0, 24.0, 9.0) 0.760683760684 [ACCEPT]
+[LVL9] rnvc99(A,B) :- no99(C,A), \+somenot99(B,C) 0.326007326007 (15.0, 6.0, 24.0, 9.0) 0.760683760684 [ACCEPT]
+[DEBUG] Best rule so far: rnvc99(A,B) :- no99(B,C), \+some99(C,A) [0.65641025641]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.65641025641
+[DEBUG] rnvc99(A,B) :- no99(B,C), \+somenot99(A,C) 0.65641025641
+[DEBUG] rnvc99(A,B) :- no99(B,C), all99(C,A) 0.641025641026
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(A,C) 0.547008547009
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+all99(C,A) 0.547008547009
+[DEBUG] rnvc99(A,B) :- some99(C,B), \+no99(C,A) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+all99(C,B) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+all99(B,C) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(A,C), \+no99(B,C) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+all99(C,B) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+all99(B,C) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(C,A), \+no99(C,B) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(A,C) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+all99(C,A) 0.547008547009
+[DEBUG] rnvc99(A,B) :- somenot99(C,B), \+no99(C,A) 0.547008547009
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+all99(C,B) 0.380341880342
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+all99(B,C) 0.380341880342
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+no99(C,B) 0.380341880342
+[DEBUG] rnvc99(A,B) :- some99(C,A), \+no99(B,C) 0.380341880342
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+all99(A,C) 0.380341880342
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+all99(C,A) 0.380341880342
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+some99(C,A) 0.380341880342
+[DEBUG] rnvc99(A,B) :- no99(C,B), \+somenot99(C,A) 0.380341880342
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+all99(C,B) 0.326007326007
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+all99(B,C) 0.326007326007
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+some99(C,B) 0.326007326007
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+somenot99(C,B) 0.326007326007
+[DEBUG] rnvc99(A,B) :- no99(C,A), \+somenot99(B,C) 0.326007326007
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc99(A,B) :- no99(B,C), \+some99(C,A) 0.796296296296

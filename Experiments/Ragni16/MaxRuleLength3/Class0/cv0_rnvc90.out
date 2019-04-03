@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_90.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc90.log
+              target:	rnvc90/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc90(A,B) :- no90(A,C), no90(B,C)
+rnvc90(A,B) :- somenot90(B,C), all90(C,A)
+rnvc90(A,B) :- no90(A,C), somenot90(C,B)
+rnvc90(A,B) :- somenot90(B,C), somenot90(A,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	1358
+          Total time:	20.1267s

@@ -1,0 +1,322 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.0487384350999
+[INFO] Computing scores: 0.0192s
+[INFO] Number of examples (M): 58
+[INFO] Positive weight (P): 31.0000
+[INFO] Negative weight (N): 27.0000
+[DEBUG] Best rule so far: rnvc87(A,B) :- true [0.534482758621]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- true 0.534482758621
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- all87(A,C) 0.0 (1.0, 5.0, 22.0, 30.0) 0.76724137931 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C) 0.0 (4.0, 4.0, 23.0, 27.0) 0.906896551724 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A) 0.0 (2.0, 4.0, 23.0, 29.0) 0.844827586207 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,B) 0.0 (1.0, 7.0, 20.0, 30.0) 0.76724137931 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C) 0.614942528736 (5.0, 3.0, 24.0, 26.0) 0.922413793103 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- some87(A,C) (0.6149425287356322, 5.0) > (0.5344827586206896, 31.0)
+[LVL9] rnvc87(A,B) :- some87(B,C) 0.58908045977 (3.0, 2.0, 25.0, 28.0) 0.883620689655 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(C,A) 0.837164750958 (7.0, 1.0, 26.0, 24.0) 0.941810344828 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- some87(C,A) (0.8371647509578544, 7.0) > (0.6149425287356322, 5.0)
+[LVL9] rnvc87(A,B) :- some87(C,B) 0.0 (2.0, 4.0, 23.0, 29.0) 0.844827586207 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C) 0.0 (4.0, 4.0, 23.0, 27.0) 0.906896551724 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C) 0.614942528736 (5.0, 3.0, 24.0, 26.0) 0.922413793103 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,A) 0.0 (3.0, 4.0, 23.0, 28.0) 0.883620689655 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B) 0.0 (4.0, 4.0, 23.0, 27.0) 0.906896551724 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C) 0.0 (4.0, 4.0, 23.0, 27.0) 0.906896551724 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(B,C) 0.816810344828 (6.0, 1.0, 26.0, 25.0) 0.933497536946 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,A) 0.691810344828 (5.0, 2.0, 25.0, 26.0) 0.922413793103 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,B) 0.726053639847 (6.0, 2.0, 25.0, 25.0) 0.933497536946 [ACCEPT]
+[DEBUG] Best rule so far: rnvc87(A,B) :- some87(C,A) [0.837164750958]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- some87(C,A) 0.837164750958
+[DEBUG] rnvc87(A,B) :- somenot87(B,C) 0.816810344828
+[DEBUG] rnvc87(A,B) :- somenot87(C,B) 0.726053639847
+[DEBUG] rnvc87(A,B) :- somenot87(C,A) 0.691810344828
+[DEBUG] rnvc87(A,B) :- some87(A,C) 0.614942528736
+[DEBUG] rnvc87(A,B) :- no87(B,C) 0.614942528736
+[DEBUG] rnvc87(A,B) :- some87(B,C) 0.58908045977
+[DEBUG] rnvc87(A,B) :- all87(B,C) 0.0
+[DEBUG] rnvc87(A,B) :- no87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- somenot87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,A) 0.0
+[DEBUG] rnvc87(A,B) :- some87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- all87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- some87(C,A), \+all87(C,B) 0.941810344828 (7.0, 0.0, 27.0, 24.0) 0.941810344828 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc87(A,B) :- some87(C,A), \+all87(C,B) (0.9418103448275862, 7.0) > (0.8371647509578544, 7.0)
+[INFO] RULE LEARNED: rnvc87(A,B) :- some87(C,A), \+all87(C,B) 0.586206896552
+[DEBUG] Best rule so far: rnvc87(A,B) :- true [0.470588235294]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- true 0.470588235294
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- all87(A,C) 0.0 (8.0, 5.0, 22.0, 23.0) 0.735294117647 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C) 0.0 (10.0, 4.0, 23.0, 21.0) 0.867647058824 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A) 0.0 (9.0, 4.0, 23.0, 22.0) 0.823529411765 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,B) 0.0 (8.0, 7.0, 20.0, 23.0) 0.735294117647 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C) 0.607843137255 (12.0, 3.0, 24.0, 19.0) 0.911764705882 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- some87(A,C) (0.607843137254902, 12.0) > (0.47058823529411764, 31.0)
+[LVL9] rnvc87(A,B) :- some87(B,C) 0.494117647059 (9.0, 2.0, 25.0, 22.0) 0.823529411765 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(C,B) 0.0 (8.0, 4.0, 23.0, 23.0) 0.735294117647 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C) 0.496732026144 (11.0, 4.0, 23.0, 20.0) 0.894117647059 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C) 0.558823529412 (11.0, 3.0, 24.0, 20.0) 0.894117647059 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,A) 0.0 (10.0, 4.0, 23.0, 21.0) 0.867647058824 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B) 0.0 (10.0, 4.0, 23.0, 21.0) 0.867647058824 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C) 0.496732026144 (11.0, 4.0, 23.0, 20.0) 0.894117647059 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(B,C) 0.781512605042 (12.0, 1.0, 26.0, 19.0) 0.911764705882 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(B,C) (0.7815126050420168, 12.0) > (0.607843137254902, 12.0)
+[LVL9] rnvc87(A,B) :- somenot87(C,A) 0.683823529412 (12.0, 2.0, 25.0, 19.0) 0.911764705882 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,B) 0.683823529412 (12.0, 2.0, 25.0, 19.0) 0.911764705882 [ACCEPT]
+[DEBUG] Best rule so far: rnvc87(A,B) :- somenot87(B,C) [0.781512605042]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- somenot87(B,C) 0.781512605042
+[DEBUG] rnvc87(A,B) :- somenot87(C,A) 0.683823529412
+[DEBUG] rnvc87(A,B) :- somenot87(C,B) 0.683823529412
+[DEBUG] rnvc87(A,B) :- some87(A,C) 0.607843137255
+[DEBUG] rnvc87(A,B) :- no87(B,C) 0.558823529412
+[DEBUG] rnvc87(A,B) :- no87(A,C) 0.496732026144
+[DEBUG] rnvc87(A,B) :- somenot87(A,C) 0.496732026144
+[DEBUG] rnvc87(A,B) :- some87(B,C) 0.494117647059
+[DEBUG] rnvc87(A,B) :- all87(B,C) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,A) 0.0
+[DEBUG] rnvc87(A,B) :- all87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- some87(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- somenot87(B,C), \+all87(A,C) 0.911764705882 (12.0, 0.0, 27.0, 19.0) 0.911764705882 [REJECT* fp] 7.0
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(B,C), \+all87(A,C) (0.9117647058823529, 12.0) > (0.7815126050420168, 12.0)
+[INFO] RULE LEARNED: rnvc87(A,B) :- somenot87(B,C), \+all87(A,C) 0.672413793103
+[DEBUG] Best rule so far: rnvc87(A,B) :- true [0.413043478261]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- true 0.413043478261
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- all87(A,C) 0.0 (13.0, 5.0, 22.0, 18.0) 0.70652173913 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C) 0.426630434783 (15.0, 4.0, 23.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- all87(B,C) (0.4266304347826087, 15.0) > (0.41304347826086957, 31.0)
+[LVL9] rnvc87(A,B) :- all87(C,A) 0.0 (14.0, 4.0, 23.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,B) 0.0 (13.0, 7.0, 20.0, 18.0) 0.70652173913 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C) 0.551630434783 (16.0, 3.0, 24.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- some87(A,C) (0.5516304347826086, 16.0) > (0.4266304347826087, 15.0)
+[LVL9] rnvc87(A,B) :- some87(B,C) 0.482608695652 (14.0, 2.0, 25.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(C,B) 0.0 (13.0, 4.0, 23.0, 18.0) 0.70652173913 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C) 0.426630434783 (15.0, 4.0, 23.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C) 0.551630434783 (16.0, 3.0, 24.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,A) 0.0 (14.0, 4.0, 23.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B) 0.426630434783 (15.0, 4.0, 23.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C) 0.426630434783 (15.0, 4.0, 23.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,A) 0.630434782609 (16.0, 2.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(C,A) (0.6304347826086956, 16.0) > (0.5516304347826086, 16.0)
+[LVL9] rnvc87(A,B) :- somenot87(C,B) 0.676630434783 (17.0, 2.0, 25.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(C,B) (0.6766304347826086, 17.0) > (0.6304347826086956, 16.0)
+[DEBUG] Best rule so far: rnvc87(A,B) :- somenot87(C,B) [0.676630434783]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- somenot87(C,B) 0.676630434783
+[DEBUG] rnvc87(A,B) :- somenot87(C,A) 0.630434782609
+[DEBUG] rnvc87(A,B) :- some87(A,C) 0.551630434783
+[DEBUG] rnvc87(A,B) :- no87(B,C) 0.551630434783
+[DEBUG] rnvc87(A,B) :- some87(B,C) 0.482608695652
+[DEBUG] rnvc87(A,B) :- all87(B,C) 0.426630434783
+[DEBUG] rnvc87(A,B) :- no87(A,C) 0.426630434783
+[DEBUG] rnvc87(A,B) :- no87(C,B) 0.426630434783
+[DEBUG] rnvc87(A,B) :- somenot87(A,C) 0.426630434783
+[DEBUG] rnvc87(A,B) :- all87(C,A) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A) 0.0
+[DEBUG] rnvc87(A,B) :- all87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- some87(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- somenot87(C,B), some87(A,C) 0.70652173913 (13.0, 0.0, 27.0, 18.0) 0.70652173913 [REJECT* fp] 12.0
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(C,B), some87(A,C) (0.7065217391304348, 13.0) > (0.6766304347826086, 17.0)
+[LVL9] rnvc87(A,B) :- somenot87(C,B), \+all87(A,C) 0.773291925466 (17.0, 1.0, 26.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(C,B), \+all87(A,C) (0.7732919254658385, 17.0) > (0.7065217391304348, 13.0)
+[LVL9] rnvc87(A,B) :- somenot87(C,B), \+all87(C,A) 0.773291925466 (17.0, 1.0, 26.0, 14.0) 0.902173913043 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,A), \+all87(C,B) 0.735507246377 (16.0, 1.0, 26.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,A), \+some87(B,C) 0.735507246377 (16.0, 1.0, 26.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C), \+all87(C,B) 0.630434782609 (16.0, 2.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C), \+no87(C,B) 0.630434782609 (16.0, 2.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C), \+no87(B,C) 0.630434782609 (16.0, 2.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C), \+all87(A,C) 0.630434782609 (16.0, 2.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C), \+some87(A,C) 0.630434782609 (16.0, 2.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C), \+no87(C,A) 0.630434782609 (16.0, 2.0, 25.0, 15.0) 0.882608695652 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(B,C), \+no87(A,C) 0.603260869565 (14.0, 1.0, 26.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(B,C), \+somenot87(C,A) 0.603260869565 (14.0, 1.0, 26.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+all87(C,A) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+no87(A,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+no87(C,A) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+somenot87(A,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+all87(C,B) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+all87(B,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+some87(C,B) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+some87(B,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+all87(A,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+all87(C,A) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+some87(A,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+somenot87(A,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+all87(C,B) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+all87(B,C) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+some87(C,B) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+no87(C,B) 0.487577639752 (15.0, 3.0, 24.0, 16.0) 0.853260869565 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A), \+all87(B,C) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A), \+some87(C,B) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A), \+no87(C,B) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A), \+somenot87(C,B) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,A), \+all87(C,B) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,A), \+all87(B,C) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,A), \+some87(C,B) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,A), \+no87(B,C) 0.0 (14.0, 3.0, 24.0, 17.0) 0.804347826087 [ACCEPT]
+[DEBUG] Best rule so far: rnvc87(A,B) :- somenot87(C,B), \+all87(A,C) [0.773291925466]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- somenot87(C,B), \+all87(A,C) 0.773291925466
+[DEBUG] rnvc87(A,B) :- somenot87(C,B), \+all87(C,A) 0.773291925466
+[DEBUG] rnvc87(A,B) :- somenot87(C,A), \+all87(C,B) 0.735507246377
+[DEBUG] rnvc87(A,B) :- somenot87(C,A), \+some87(B,C) 0.735507246377
+[DEBUG] rnvc87(A,B) :- some87(A,C), \+all87(C,B) 0.630434782609
+[DEBUG] rnvc87(A,B) :- some87(A,C), \+no87(C,B) 0.630434782609
+[DEBUG] rnvc87(A,B) :- some87(A,C), \+no87(B,C) 0.630434782609
+[DEBUG] rnvc87(A,B) :- no87(B,C), \+all87(A,C) 0.630434782609
+[DEBUG] rnvc87(A,B) :- no87(B,C), \+some87(A,C) 0.630434782609
+[DEBUG] rnvc87(A,B) :- no87(B,C), \+no87(C,A) 0.630434782609
+[DEBUG] rnvc87(A,B) :- some87(B,C), \+no87(A,C) 0.603260869565
+[DEBUG] rnvc87(A,B) :- some87(B,C), \+somenot87(C,A) 0.603260869565
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+all87(C,A) 0.487577639752
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+no87(A,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+no87(C,A) 0.487577639752
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+somenot87(A,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+all87(C,B) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+all87(B,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+some87(C,B) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+some87(B,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+all87(A,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+all87(C,A) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+some87(A,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+somenot87(A,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+all87(C,B) 0.487577639752
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+all87(B,C) 0.487577639752
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+some87(C,B) 0.487577639752
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+no87(C,B) 0.487577639752
+[DEBUG] rnvc87(A,B) :- all87(C,A), \+all87(B,C) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,A), \+some87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,A), \+no87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,A), \+somenot87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A), \+all87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A), \+all87(B,C) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A), \+some87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A), \+no87(B,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc87(A,B) :- somenot87(C,B), \+all87(A,C) 0.741379310345
+[DEBUG] Best rule so far: rnvc87(A,B) :- true [0.35]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- true 0.35
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- all87(A,C) 0.0 (18.0, 6.0, 21.0, 13.0) 0.675 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C) 0.41875 (20.0, 5.0, 22.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- all87(B,C) (0.41875, 20.0) > (0.35, 31.0)
+[LVL9] rnvc87(A,B) :- all87(C,A) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,B) 0.0 (18.0, 8.0, 19.0, 13.0) 0.675 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- some87(A,C) (0.4785714285714286, 20.0) > (0.41875, 20.0)
+[LVL9] rnvc87(A,B) :- some87(B,C) 0.47 (19.0, 3.0, 24.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(C,B) 0.0 (18.0, 5.0, 22.0, 13.0) 0.675 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C) 0.0 (19.0, 5.0, 22.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C) 0.54375 (21.0, 4.0, 23.0, 10.0) 0.87 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- no87(B,C) (0.54375, 21.0) > (0.4785714285714286, 20.0)
+[LVL9] rnvc87(A,B) :- no87(C,A) 0.0 (18.0, 5.0, 22.0, 13.0) 0.675 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B) 0.41875 (20.0, 5.0, 22.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C) 0.0 (19.0, 5.0, 22.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,A) 0.558333333333 (20.0, 3.0, 24.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(C,A) (0.5583333333333333, 20.0) > (0.54375, 21.0)
+[DEBUG] Best rule so far: rnvc87(A,B) :- somenot87(C,A) [0.558333333333]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- somenot87(C,A) 0.558333333333
+[DEBUG] rnvc87(A,B) :- no87(B,C) 0.54375
+[DEBUG] rnvc87(A,B) :- some87(A,C) 0.478571428571
+[DEBUG] rnvc87(A,B) :- some87(B,C) 0.47
+[DEBUG] rnvc87(A,B) :- all87(B,C) 0.41875
+[DEBUG] rnvc87(A,B) :- no87(C,B) 0.41875
+[DEBUG] rnvc87(A,B) :- all87(C,A) 0.391666666667
+[DEBUG] rnvc87(A,B) :- no87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- somenot87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- all87(A,C) 0.0
+[DEBUG] rnvc87(A,B) :- all87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- some87(C,B) 0.0
+[DEBUG] rnvc87(A,B) :- no87(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc87(A,B) :- somenot87(C,A), all87(B,C) 0.675 (18.0, 1.0, 26.0, 13.0) 0.675 [ACCEPT]
+[LVL9] BETTER RULE rnvc87(A,B) :- somenot87(C,A), all87(B,C) (0.675, 18.0) > (0.5583333333333333, 20.0)
+[LVL9] rnvc87(A,B) :- somenot87(C,A), \+all87(C,B) 0.67 (20.0, 2.0, 25.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(C,A), \+some87(B,C) 0.67 (20.0, 2.0, 25.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C), \+all87(A,C) 0.621428571429 (21.0, 3.0, 24.0, 10.0) 0.87 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C), \+some87(A,C) 0.621428571429 (21.0, 3.0, 24.0, 10.0) 0.87 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(B,C), \+no87(C,A) 0.621428571429 (21.0, 3.0, 24.0, 10.0) 0.87 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C), \+all87(C,B) 0.558333333333 (20.0, 3.0, 24.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C), \+no87(C,B) 0.558333333333 (20.0, 3.0, 24.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(A,C), \+no87(B,C) 0.558333333333 (20.0, 3.0, 24.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(B,C), \+no87(A,C) 0.5875 (19.0, 2.0, 25.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- some87(B,C), \+somenot87(C,A) 0.5875 (19.0, 2.0, 25.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+all87(C,A) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+no87(A,C) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+no87(C,A) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(B,C), \+somenot87(A,C) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+all87(A,C) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+all87(C,A) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+some87(A,C) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(C,B), \+somenot87(A,C) 0.478571428571 (20.0, 4.0, 23.0, 11.0) 0.8375 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A), \+all87(B,C) 0.47 (19.0, 3.0, 24.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A), \+some87(C,B) 0.47 (19.0, 3.0, 24.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- all87(C,A), \+no87(C,B) 0.47 (19.0, 3.0, 24.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+all87(C,B) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+all87(B,C) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+some87(C,B) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- no87(A,C), \+some87(B,C) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+all87(C,B) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+all87(B,C) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+some87(C,B) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[LVL9] rnvc87(A,B) :- somenot87(A,C), \+no87(C,B) 0.391666666667 (19.0, 4.0, 23.0, 12.0) 0.783333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc87(A,B) :- somenot87(C,A), all87(B,C) [0.675]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc87(A,B) :- somenot87(C,A), all87(B,C) 0.675
+[DEBUG] rnvc87(A,B) :- somenot87(C,A), \+all87(C,B) 0.67
+[DEBUG] rnvc87(A,B) :- somenot87(C,A), \+some87(B,C) 0.67
+[DEBUG] rnvc87(A,B) :- no87(B,C), \+all87(A,C) 0.621428571429
+[DEBUG] rnvc87(A,B) :- no87(B,C), \+some87(A,C) 0.621428571429
+[DEBUG] rnvc87(A,B) :- no87(B,C), \+no87(C,A) 0.621428571429
+[DEBUG] rnvc87(A,B) :- some87(B,C), \+no87(A,C) 0.5875
+[DEBUG] rnvc87(A,B) :- some87(B,C), \+somenot87(C,A) 0.5875
+[DEBUG] rnvc87(A,B) :- some87(A,C), \+all87(C,B) 0.558333333333
+[DEBUG] rnvc87(A,B) :- some87(A,C), \+no87(C,B) 0.558333333333
+[DEBUG] rnvc87(A,B) :- some87(A,C), \+no87(B,C) 0.558333333333
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+all87(C,A) 0.478571428571
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+no87(A,C) 0.478571428571
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+no87(C,A) 0.478571428571
+[DEBUG] rnvc87(A,B) :- all87(B,C), \+somenot87(A,C) 0.478571428571
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+all87(A,C) 0.478571428571
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+all87(C,A) 0.478571428571
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+some87(A,C) 0.478571428571
+[DEBUG] rnvc87(A,B) :- no87(C,B), \+somenot87(A,C) 0.478571428571
+[DEBUG] rnvc87(A,B) :- all87(C,A), \+all87(B,C) 0.47
+[DEBUG] rnvc87(A,B) :- all87(C,A), \+some87(C,B) 0.47
+[DEBUG] rnvc87(A,B) :- all87(C,A), \+no87(C,B) 0.47
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+all87(C,B) 0.391666666667
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+all87(B,C) 0.391666666667
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+some87(C,B) 0.391666666667
+[DEBUG] rnvc87(A,B) :- no87(A,C), \+some87(B,C) 0.391666666667
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+all87(C,B) 0.391666666667
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+all87(B,C) 0.391666666667
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+some87(C,B) 0.391666666667
+[DEBUG] rnvc87(A,B) :- somenot87(A,C), \+no87(C,B) 0.391666666667
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc87(A,B) :- somenot87(C,A), all87(B,C) 0.758620689655

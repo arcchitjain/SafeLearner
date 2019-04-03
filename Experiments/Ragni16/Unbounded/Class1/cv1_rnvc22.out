@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_22.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rnvc22.log
+              target:	rnvc22/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc22(A,B) :- all22(B,C), \+all22(A,C), \+all22(C,A), \+some22(C,A), \+no22(A,C)
+rnvc22(A,B) :- no22(C,B), \+some22(A,C), \+some22(C,A), \+no22(A,C), \+no22(C,A), \+somenot22(A,C)
+rnvc22(A,B) :- no22(C,A), \+some22(B,C), \+no22(C,B), \+no22(B,C), \+somenot22(C,B)
+rnvc22(A,B) :- no22(B,C), \+all22(C,A), \+some22(A,C), \+some22(C,A), \+no22(A,C), \+no22(C,A), \+somenot22(A,C)
+rnvc22(A,B) :- some22(C,B), no22(A,C)
+rnvc22(A,B) :- somenot22(A,C), all22(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	23386
+          Total time:	462.6897s

@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_84.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rall84.log
+              target:	rall84/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall84(A,B) :- some84(C,B), somenot84(A,C)
+rall84(A,B) :- some84(A,C), no84(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.954545454545
+           Precision:	 1.0
+              Recall:	 0.285714285714
+================== STATISTICS ==================
+    Rule evaluations:	24232
+          Total time:	1184.4449s

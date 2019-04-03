@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_7.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsome7.log
+              target:	rsome7/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome7(A,B) :- somenot7(B,C), somenot7(C,A)
+rsome7(A,B) :- some7(C,A), no7(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.862068965517
+           Precision:	 1.0
+              Recall:	 0.157894736842
+================== STATISTICS ==================
+    Rule evaluations:	81121
+          Total time:	3252.0831s

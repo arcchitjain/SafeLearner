@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_65.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc65.log
+              target:	rnvc65/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc65(A,B) :- somenot65(B,C), \+all65(A,C), \+some65(C,A)
+rnvc65(A,B) :- somenot65(C,A), \+all65(C,B), \+all65(B,C), \+no65(C,B)
+rnvc65(A,B) :- no65(A,C), \+all65(B,C), \+some65(B,C), \+somenot65(C,B)
+rnvc65(A,B) :- somenot65(C,B), \+all65(C,A), \+no65(A,C), \+no65(C,A)
+rnvc65(A,B) :- somenot65(A,C), \+all65(C,B), \+all65(B,C), \+no65(C,B), \+no65(B,C)
+rnvc65(A,B) :- no65(C,A), \+all65(C,B), \+all65(B,C), \+some65(C,B), \+some65(B,C), \+somenot65(C,B)
+rnvc65(A,B) :- some65(A,C), some65(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	17684
+          Total time:	471.1987s

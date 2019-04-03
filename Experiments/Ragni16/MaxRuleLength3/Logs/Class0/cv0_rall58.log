@@ -1,0 +1,338 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.630633706315
+[INFO] Computing scores: 0.1082s
+[INFO] Number of examples (M): 114
+[INFO] Positive weight (P): 7.0000
+[INFO] Negative weight (N): 107.0000
+[DEBUG] Best rule so far: rall58(A,B) :- true [0.0614035087719]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall58(A,B) :- true 0.0614035087719
+[DEBUG] ==================================
+[LVL9] rall58(A,B) :- all58(A,C) 0.0758145363409 (1.0, 12.0, 95.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- all58(A,C) (0.07581453634085213, 1.0) > (0.06140350877192982, 7.0)
+[LVL9] rall58(A,B) :- all58(B,C) 0.0758145363409 (1.0, 12.0, 95.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B) 0.128837719298 (2.0, 13.0, 94.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- all58(C,B) (0.1288377192982456, 2.0) > (0.07581453634085213, 1.0)
+[LVL9] rall58(A,B) :- some58(C,A) 0.128837719298 (2.0, 13.0, 94.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B) 0.0663377192982 (1.0, 14.0, 93.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C) 0.158569500675 (2.0, 10.0, 97.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- no58(A,C) (0.15856950067476383, 2.0) > (0.1288377192982456, 2.0)
+[LVL9] rall58(A,B) :- no58(B,C) 0.158569500675 (2.0, 10.0, 97.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A) 0.0707602339181 (1.0, 13.0, 94.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C) 0.062435500516 (1.0, 15.0, 92.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(C,A) 0.0707602339181 (1.0, 13.0, 94.0, 6.0) 0.530701754386 [ACCEPT]
+[DEBUG] Best rule so far: rall58(A,B) :- no58(A,C) [0.158569500675]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall58(A,B) :- no58(A,C) 0.158569500675
+[DEBUG] rall58(A,B) :- no58(B,C) 0.158569500675
+[DEBUG] rall58(A,B) :- all58(C,B) 0.128837719298
+[DEBUG] rall58(A,B) :- some58(C,A) 0.128837719298
+[DEBUG] rall58(A,B) :- all58(A,C) 0.0758145363409
+[DEBUG] rall58(A,B) :- all58(B,C) 0.0758145363409
+[DEBUG] rall58(A,B) :- no58(C,A) 0.0707602339181
+[DEBUG] rall58(A,B) :- somenot58(C,A) 0.0707602339181
+[DEBUG] rall58(A,B) :- some58(C,B) 0.0663377192982
+[DEBUG] rall58(A,B) :- somenot58(B,C) 0.062435500516
+[DEBUG] ==================================
+[LVL9] rall58(A,B) :- no58(A,C), all58(B,C) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- no58(A,C), all58(B,C) (0.3538011695906433, 1.0) > (0.15856950067476383, 2.0)
+[LVL9] rall58(A,B) :- no58(A,C), all58(B,D) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), all58(D,C) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), some58(C,B) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), some58(C,D) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), some58(D,B) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+all58(C,B) 0.171783625731 (2.0, 9.0, 98.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+all58(B,C) 0.0964912280702 (1.0, 9.0, 98.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+some58(C,B) 0.0964912280702 (1.0, 9.0, 98.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+some58(B,C) 0.171783625731 (2.0, 9.0, 98.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+no58(C,B) 0.171783625731 (2.0, 9.0, 98.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+no58(B,C) 0.187400318979 (2.0, 8.0, 99.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+somenot58(C,B) 0.171783625731 (2.0, 9.0, 98.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+somenot58(B,C) 0.187400318979 (2.0, 8.0, 99.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), some58(C,A) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), some58(C,D) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), some58(D,A) 0.353801169591 (1.0, 1.0, 106.0, 6.0) 0.530701754386 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), somenot58(C,A) 0.530701754386 (1.0, 0.0, 107.0, 6.0) 0.530701754386 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rall58(A,B) :- no58(B,C), somenot58(C,A) (0.5307017543859649, 1.0) > (0.3538011695906433, 1.0)
+[LVL9] rall58(A,B) :- no58(B,C), \+all58(A,C) 0.187400318979 (2.0, 8.0, 99.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+all58(C,A) 0.171783625731 (2.0, 9.0, 98.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+some58(A,C) 0.171783625731 (2.0, 9.0, 98.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+no58(A,C) 0.187400318979 (2.0, 8.0, 99.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+no58(C,A) 0.171783625731 (2.0, 9.0, 98.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+somenot58(A,C) 0.187400318979 (2.0, 8.0, 99.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+all58(C,A) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+some58(A,C) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+some58(C,A) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+no58(A,C) 0.137426900585 (2.0, 12.0, 95.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+somenot58(A,C) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+somenot58(C,A) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+all58(C,B) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+all58(B,C) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+some58(C,B) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+some58(B,C) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+no58(C,B) 0.147243107769 (2.0, 11.0, 96.0, 5.0) 0.687134502924 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+somenot58(C,B) 0.137426900585 (2.0, 12.0, 95.0, 5.0) 0.687134502924 [ACCEPT]
+[DEBUG] Best rule so far: rall58(A,B) :- no58(B,C), somenot58(C,A) [0.530701754386]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall58(A,B) :- no58(A,C), all58(B,C) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(A,C), all58(B,D) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(A,C), all58(D,C) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(A,C), some58(C,B) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(A,C), some58(C,D) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(A,C), some58(D,B) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(B,C), some58(C,A) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(B,C), some58(C,D) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(B,C), some58(D,A) 0.353801169591
+[DEBUG] rall58(A,B) :- no58(A,C), \+no58(B,C) 0.187400318979
+[DEBUG] rall58(A,B) :- no58(A,C), \+somenot58(B,C) 0.187400318979
+[DEBUG] rall58(A,B) :- no58(B,C), \+all58(A,C) 0.187400318979
+[DEBUG] rall58(A,B) :- no58(B,C), \+no58(A,C) 0.187400318979
+[DEBUG] rall58(A,B) :- no58(B,C), \+somenot58(A,C) 0.187400318979
+[DEBUG] rall58(A,B) :- no58(A,C), \+all58(C,B) 0.171783625731
+[DEBUG] rall58(A,B) :- no58(A,C), \+some58(B,C) 0.171783625731
+[DEBUG] rall58(A,B) :- no58(A,C), \+no58(C,B) 0.171783625731
+[DEBUG] rall58(A,B) :- no58(A,C), \+somenot58(C,B) 0.171783625731
+[DEBUG] rall58(A,B) :- no58(B,C), \+all58(C,A) 0.171783625731
+[DEBUG] rall58(A,B) :- no58(B,C), \+some58(A,C) 0.171783625731
+[DEBUG] rall58(A,B) :- no58(B,C), \+no58(C,A) 0.171783625731
+[DEBUG] rall58(A,B) :- all58(C,B), \+all58(C,A) 0.147243107769
+[DEBUG] rall58(A,B) :- all58(C,B), \+some58(A,C) 0.147243107769
+[DEBUG] rall58(A,B) :- all58(C,B), \+some58(C,A) 0.147243107769
+[DEBUG] rall58(A,B) :- all58(C,B), \+somenot58(A,C) 0.147243107769
+[DEBUG] rall58(A,B) :- all58(C,B), \+somenot58(C,A) 0.147243107769
+[DEBUG] rall58(A,B) :- some58(C,A), \+all58(C,B) 0.147243107769
+[DEBUG] rall58(A,B) :- some58(C,A), \+all58(B,C) 0.147243107769
+[DEBUG] rall58(A,B) :- some58(C,A), \+some58(C,B) 0.147243107769
+[DEBUG] rall58(A,B) :- some58(C,A), \+some58(B,C) 0.147243107769
+[DEBUG] rall58(A,B) :- some58(C,A), \+no58(C,B) 0.147243107769
+[DEBUG] rall58(A,B) :- all58(C,B), \+no58(A,C) 0.137426900585
+[DEBUG] rall58(A,B) :- some58(C,A), \+somenot58(C,B) 0.137426900585
+[DEBUG] rall58(A,B) :- no58(A,C), \+all58(B,C) 0.0964912280702
+[DEBUG] rall58(A,B) :- no58(A,C), \+some58(C,B) 0.0964912280702
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall58(A,B) :- no58(B,C), somenot58(C,A) 0.947368421053
+[DEBUG] Best rule so far: rall58(A,B) :- true [0.0530973451327]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall58(A,B) :- true 0.0530973451327
+[DEBUG] ==================================
+[LVL9] rall58(A,B) :- all58(A,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- all58(A,C) (0.0752212389380531, 2.0) > (0.05309734513274336, 7.0)
+[LVL9] rall58(A,B) :- all58(B,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B) 0.128318584071 (3.0, 13.0, 94.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- all58(C,B) (0.12831858407079647, 3.0) > (0.0752212389380531, 2.0)
+[LVL9] rall58(A,B) :- some58(C,A) 0.128318584071 (3.0, 13.0, 94.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B) 0.0658185840708 (2.0, 14.0, 93.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C) 0.15793056501 (3.0, 10.0, 97.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- no58(A,C) (0.15793056501021102, 3.0) > (0.12831858407079647, 3.0)
+[LVL9] rall58(A,B) :- no58(B,C) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C) 0.0619469026549 (2.0, 15.0, 92.0, 5.0) 0.526548672566 [ACCEPT]
+[DEBUG] Best rule so far: rall58(A,B) :- no58(A,C) [0.15793056501]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall58(A,B) :- no58(A,C) 0.15793056501
+[DEBUG] rall58(A,B) :- all58(C,B) 0.128318584071
+[DEBUG] rall58(A,B) :- some58(C,A) 0.128318584071
+[DEBUG] rall58(A,B) :- no58(B,C) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(A,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- all58(B,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- no58(C,A) 0.0702064896755
+[DEBUG] rall58(A,B) :- some58(C,B) 0.0658185840708
+[DEBUG] rall58(A,B) :- somenot58(B,C) 0.0619469026549
+[DEBUG] ==================================
+[LVL9] rall58(A,B) :- no58(A,C), all58(B,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] BETTER RULE rall58(A,B) :- no58(A,C), all58(B,C) (0.35103244837758113, 2.0) > (0.15793056501021102, 3.0)
+[LVL9] rall58(A,B) :- no58(A,C), all58(B,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), all58(D,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), some58(C,B) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), some58(C,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), some58(D,B) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+all58(C,B) 0.171091445428 (3.0, 9.0, 98.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+all58(B,C) 0.0957361222848 (2.0, 9.0, 98.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+some58(C,B) 0.0957361222848 (2.0, 9.0, 98.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+some58(B,C) 0.171091445428 (3.0, 9.0, 98.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+no58(C,B) 0.171091445428 (3.0, 9.0, 98.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+no58(B,C) 0.186645213194 (3.0, 8.0, 99.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+somenot58(C,B) 0.171091445428 (3.0, 9.0, 98.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(A,C), \+somenot58(B,C) 0.186645213194 (3.0, 8.0, 99.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), all58(A,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), all58(A,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), all58(D,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), no58(C,A) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), no58(C,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), no58(D,A) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+all58(A,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+all58(C,A) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+some58(A,C) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+some58(C,A) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+no58(A,C) 0.136873156342 (3.0, 12.0, 95.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+no58(C,A) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+somenot58(A,C) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(C,B), \+somenot58(C,A) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), no58(B,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), no58(B,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), no58(D,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), somenot58(B,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), somenot58(B,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), somenot58(D,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+all58(C,B) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+all58(B,C) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+some58(C,B) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+some58(B,C) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+no58(C,B) 0.146649810367 (3.0, 11.0, 96.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+no58(B,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+somenot58(C,B) 0.136873156342 (3.0, 12.0, 95.0, 4.0) 0.684365781711 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,A), \+somenot58(B,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), some58(C,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), some58(D,A) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+all58(A,C) 0.105309734513 (2.0, 8.0, 99.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+all58(C,A) 0.0957361222848 (2.0, 9.0, 98.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+some58(A,C) 0.0957361222848 (2.0, 9.0, 98.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+no58(A,C) 0.105309734513 (2.0, 8.0, 99.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+no58(C,A) 0.0957361222848 (2.0, 9.0, 98.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(B,C), \+somenot58(A,C) 0.105309734513 (2.0, 8.0, 99.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), all58(C,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), all58(D,B) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), \+some58(C,B) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), \+some58(B,C) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), \+no58(C,B) 0.0810074880871 (2.0, 11.0, 96.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), \+no58(B,C) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), \+somenot58(C,B) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(A,C), \+somenot58(B,C) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), no58(A,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), no58(D,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), \+all58(C,A) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), \+some58(A,C) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), \+some58(C,A) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), \+no58(C,A) 0.0810074880871 (2.0, 11.0, 96.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), \+somenot58(A,C) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- all58(B,C), \+somenot58(C,A) 0.0877581120944 (2.0, 10.0, 97.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), all58(C,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), all58(D,B) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), \+all58(B,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), \+some58(C,B) 0.0810074880871 (2.0, 11.0, 96.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), \+some58(B,C) 0.0810074880871 (2.0, 11.0, 96.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), \+no58(C,B) 0.0810074880871 (2.0, 11.0, 96.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), \+no58(B,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), \+somenot58(C,B) 0.0810074880871 (2.0, 11.0, 96.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- no58(C,A), \+somenot58(B,C) 0.0810074880871 (2.0, 11.0, 96.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), no58(A,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), no58(D,C) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), \+all58(A,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), \+all58(C,A) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), \+some58(A,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), \+some58(C,A) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), \+no58(C,A) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), \+somenot58(A,C) 0.0752212389381 (2.0, 12.0, 95.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- some58(C,B), \+somenot58(C,A) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), some58(C,D) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), some58(D,A) 0.351032448378 (2.0, 1.0, 106.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), \+all58(A,C) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), \+all58(C,A) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), \+some58(A,C) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), \+no58(A,C) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), \+no58(C,A) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), \+somenot58(A,C) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[LVL9] rall58(A,B) :- somenot58(B,C), \+somenot58(C,A) 0.0702064896755 (2.0, 13.0, 94.0, 5.0) 0.526548672566 [ACCEPT]
+[DEBUG] Best rule so far: rall58(A,B) :- no58(A,C), all58(B,C) [0.351032448378]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall58(A,B) :- no58(A,C), all58(B,C) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(A,C), all58(B,D) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(A,C), all58(D,C) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(A,C), some58(C,B) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(A,C), some58(C,D) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(A,C), some58(D,B) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(C,B), all58(A,C) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(C,B), all58(A,D) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(C,B), all58(D,C) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(C,B), no58(C,A) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(C,B), no58(C,D) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(C,B), no58(D,A) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,A), no58(B,C) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,A), no58(B,D) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,A), no58(D,C) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,A), somenot58(B,C) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,A), somenot58(B,D) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,A), somenot58(D,C) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(B,C), some58(C,D) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(B,C), some58(D,A) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(A,C), all58(C,D) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(A,C), all58(D,B) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(B,C), no58(A,D) 0.351032448378
+[DEBUG] rall58(A,B) :- all58(B,C), no58(D,C) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(C,A), all58(C,D) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(C,A), all58(D,B) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,B), no58(A,D) 0.351032448378
+[DEBUG] rall58(A,B) :- some58(C,B), no58(D,C) 0.351032448378
+[DEBUG] rall58(A,B) :- somenot58(B,C), some58(C,D) 0.351032448378
+[DEBUG] rall58(A,B) :- somenot58(B,C), some58(D,A) 0.351032448378
+[DEBUG] rall58(A,B) :- no58(A,C), \+no58(B,C) 0.186645213194
+[DEBUG] rall58(A,B) :- no58(A,C), \+somenot58(B,C) 0.186645213194
+[DEBUG] rall58(A,B) :- no58(A,C), \+all58(C,B) 0.171091445428
+[DEBUG] rall58(A,B) :- no58(A,C), \+some58(B,C) 0.171091445428
+[DEBUG] rall58(A,B) :- no58(A,C), \+no58(C,B) 0.171091445428
+[DEBUG] rall58(A,B) :- no58(A,C), \+somenot58(C,B) 0.171091445428
+[DEBUG] rall58(A,B) :- all58(C,B), \+all58(C,A) 0.146649810367
+[DEBUG] rall58(A,B) :- all58(C,B), \+some58(A,C) 0.146649810367
+[DEBUG] rall58(A,B) :- all58(C,B), \+some58(C,A) 0.146649810367
+[DEBUG] rall58(A,B) :- all58(C,B), \+somenot58(A,C) 0.146649810367
+[DEBUG] rall58(A,B) :- all58(C,B), \+somenot58(C,A) 0.146649810367
+[DEBUG] rall58(A,B) :- some58(C,A), \+all58(C,B) 0.146649810367
+[DEBUG] rall58(A,B) :- some58(C,A), \+all58(B,C) 0.146649810367
+[DEBUG] rall58(A,B) :- some58(C,A), \+some58(C,B) 0.146649810367
+[DEBUG] rall58(A,B) :- some58(C,A), \+some58(B,C) 0.146649810367
+[DEBUG] rall58(A,B) :- some58(C,A), \+no58(C,B) 0.146649810367
+[DEBUG] rall58(A,B) :- all58(C,B), \+no58(A,C) 0.136873156342
+[DEBUG] rall58(A,B) :- some58(C,A), \+somenot58(C,B) 0.136873156342
+[DEBUG] rall58(A,B) :- no58(B,C), \+all58(A,C) 0.105309734513
+[DEBUG] rall58(A,B) :- no58(B,C), \+no58(A,C) 0.105309734513
+[DEBUG] rall58(A,B) :- no58(B,C), \+somenot58(A,C) 0.105309734513
+[DEBUG] rall58(A,B) :- no58(A,C), \+all58(B,C) 0.0957361222848
+[DEBUG] rall58(A,B) :- no58(A,C), \+some58(C,B) 0.0957361222848
+[DEBUG] rall58(A,B) :- no58(B,C), \+all58(C,A) 0.0957361222848
+[DEBUG] rall58(A,B) :- no58(B,C), \+some58(A,C) 0.0957361222848
+[DEBUG] rall58(A,B) :- no58(B,C), \+no58(C,A) 0.0957361222848
+[DEBUG] rall58(A,B) :- all58(A,C), \+some58(C,B) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(A,C), \+some58(B,C) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(A,C), \+no58(B,C) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(A,C), \+somenot58(C,B) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(A,C), \+somenot58(B,C) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(B,C), \+all58(C,A) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(B,C), \+some58(A,C) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(B,C), \+some58(C,A) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(B,C), \+somenot58(A,C) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(B,C), \+somenot58(C,A) 0.0877581120944
+[DEBUG] rall58(A,B) :- all58(A,C), \+no58(C,B) 0.0810074880871
+[DEBUG] rall58(A,B) :- all58(B,C), \+no58(C,A) 0.0810074880871
+[DEBUG] rall58(A,B) :- no58(C,A), \+some58(C,B) 0.0810074880871
+[DEBUG] rall58(A,B) :- no58(C,A), \+some58(B,C) 0.0810074880871
+[DEBUG] rall58(A,B) :- no58(C,A), \+no58(C,B) 0.0810074880871
+[DEBUG] rall58(A,B) :- no58(C,A), \+somenot58(C,B) 0.0810074880871
+[DEBUG] rall58(A,B) :- no58(C,A), \+somenot58(B,C) 0.0810074880871
+[DEBUG] rall58(A,B) :- all58(C,B), \+all58(A,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- all58(C,B), \+no58(C,A) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,A), \+no58(B,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,A), \+somenot58(B,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- no58(C,A), \+all58(B,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- no58(C,A), \+no58(B,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,B), \+all58(A,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,B), \+all58(C,A) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,B), \+some58(A,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,B), \+some58(C,A) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,B), \+no58(C,A) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,B), \+somenot58(A,C) 0.0752212389381
+[DEBUG] rall58(A,B) :- some58(C,B), \+somenot58(C,A) 0.0702064896755
+[DEBUG] rall58(A,B) :- somenot58(B,C), \+all58(A,C) 0.0702064896755
+[DEBUG] rall58(A,B) :- somenot58(B,C), \+all58(C,A) 0.0702064896755
+[DEBUG] rall58(A,B) :- somenot58(B,C), \+some58(A,C) 0.0702064896755
+[DEBUG] rall58(A,B) :- somenot58(B,C), \+no58(A,C) 0.0702064896755
+[DEBUG] rall58(A,B) :- somenot58(B,C), \+no58(C,A) 0.0702064896755
+[DEBUG] rall58(A,B) :- somenot58(B,C), \+somenot58(A,C) 0.0702064896755
+[DEBUG] rall58(A,B) :- somenot58(B,C), \+somenot58(C,A) 0.0702064896755
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall58(A,B) :- no58(A,C), all58(B,C) 0.947368421053

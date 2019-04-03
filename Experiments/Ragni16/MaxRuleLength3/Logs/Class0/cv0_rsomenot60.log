@@ -1,0 +1,574 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.340169474184
+[INFO] Computing scores: 0.1034s
+[INFO] Number of examples (M): 112
+[INFO] Positive weight (P): 12.0000
+[INFO] Negative weight (N): 100.0000
+[DEBUG] Best rule so far: rsomenot60(A,B) :- true [0.107142857143]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- true 0.107142857143
+[DEBUG] ==================================
+[LVL9] rsomenot60(A,B) :- all60(A,C) 0.140476190476 (2.0, 12.0, 88.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- all60(A,C) (0.14047619047619048, 2.0) > (0.10714285714285715, 12.0)
+[LVL9] rsomenot60(A,B) :- all60(B,C) 0.140476190476 (2.0, 12.0, 88.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A) 0.194196428571 (3.0, 12.0, 88.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- all60(C,A) (0.19419642857142858, 3.0) > (0.14047619047619048, 2.0)
+[LVL9] rsomenot60(A,B) :- some60(A,C) 0.150510204082 (2.0, 11.0, 89.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C) 0.150510204082 (2.0, 11.0, 89.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A) 0.241596638655 (4.0, 12.0, 88.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- some60(C,A) (0.24159663865546216, 4.0) > (0.19419642857142858, 3.0)
+[LVL9] rsomenot60(A,B) :- some60(C,B) 0.0 (1.0, 15.0, 85.0, 11.0) 0.553571428571 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(B,C) 0.0 (1.0, 14.0, 86.0, 11.0) 0.553571428571 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(C,A) 0.0 (1.0, 13.0, 87.0, 11.0) 0.553571428571 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B) 0.293367346939 (4.0, 9.0, 91.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- somenot60(C,B) (0.2933673469387755, 4.0) > (0.24159663865546216, 4.0)
+[DEBUG] Best rule so far: rsomenot60(A,B) :- somenot60(C,B) [0.293367346939]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B) 0.293367346939
+[DEBUG] rsomenot60(A,B) :- some60(C,A) 0.241596638655
+[DEBUG] rsomenot60(A,B) :- all60(C,A) 0.194196428571
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- some60(A,C) 0.150510204082
+[DEBUG] rsomenot60(A,B) :- some60(B,C) 0.150510204082
+[DEBUG] rsomenot60(A,B) :- all60(A,C) 0.140476190476
+[DEBUG] rsomenot60(A,B) :- all60(B,C) 0.140476190476
+[DEBUG] rsomenot60(A,B) :- some60(C,B) 0.0
+[DEBUG] rsomenot60(A,B) :- no60(B,C) 0.0
+[DEBUG] rsomenot60(A,B) :- no60(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), all60(A,C) 0.553571428571 (1.0, 0.0, 100.0, 11.0) 0.553571428571 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot60(A,B) :- somenot60(C,B), all60(A,C) (0.5535714285714286, 1.0) > (0.2933673469387755, 4.0)
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+all60(C,A) 0.258928571429 (3.0, 8.0, 92.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+some60(A,C) 0.258928571429 (3.0, 8.0, 92.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+some60(C,A) 0.258928571429 (3.0, 8.0, 92.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+no60(A,C) 0.342261904762 (4.0, 7.0, 93.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+no60(C,A) 0.315934065934 (4.0, 8.0, 92.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(A,C) 0.315934065934 (4.0, 8.0, 92.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(C,A) 0.342261904762 (4.0, 7.0, 93.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+all60(C,B) 0.27380952381 (4.0, 10.0, 90.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+all60(B,C) 0.207142857143 (3.0, 11.0, 89.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+some60(C,B) 0.27380952381 (4.0, 10.0, 90.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+some60(B,C) 0.207142857143 (3.0, 11.0, 89.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+no60(C,B) 0.27380952381 (4.0, 10.0, 90.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+no60(B,C) 0.27380952381 (4.0, 10.0, 90.0, 8.0) 0.821428571429 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+somenot60(C,B) 0.207142857143 (3.0, 11.0, 89.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+somenot60(B,C) 0.207142857143 (3.0, 11.0, 89.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+all60(C,B) 0.22193877551 (3.0, 10.0, 90.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+all60(B,C) 0.22193877551 (3.0, 10.0, 90.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+some60(C,B) 0.22193877551 (3.0, 10.0, 90.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+no60(C,B) 0.22193877551 (3.0, 10.0, 90.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+no60(B,C) 0.22193877551 (3.0, 10.0, 90.0, 9.0) 0.776785714286 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+somenot60(C,B) 0.150510204082 (2.0, 11.0, 89.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+somenot60(B,C) 0.150510204082 (2.0, 11.0, 89.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+all60(A,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+some60(A,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+no60(A,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+no60(C,A) 0.191558441558 (2.0, 8.0, 92.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(A,C) 0.191558441558 (2.0, 8.0, 92.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(C,A) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+all60(C,B) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+some60(C,B) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+some60(B,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+no60(C,B) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+no60(B,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+somenot60(B,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+all60(A,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+some60(A,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+no60(A,C) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+no60(C,A) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+somenot60(A,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+somenot60(C,A) 0.175595238095 (2.0, 9.0, 91.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+all60(C,B) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+all60(B,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+some60(B,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+no60(C,B) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+no60(B,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+somenot60(B,C) 0.150510204082 (2.0, 11.0, 89.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+all60(A,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+all60(C,A) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+no60(A,C) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+no60(C,A) 0.162087912088 (2.0, 10.0, 90.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+somenot60(A,C) 0.150510204082 (2.0, 11.0, 89.0, 10.0) 0.702380952381 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+somenot60(C,A) 0.150510204082 (2.0, 11.0, 89.0, 10.0) 0.702380952381 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot60(A,B) :- somenot60(C,B), all60(A,C) [0.553571428571]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+no60(A,C) 0.342261904762
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(C,A) 0.342261904762
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+no60(C,A) 0.315934065934
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(A,C) 0.315934065934
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+all60(C,B) 0.27380952381
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+some60(C,B) 0.27380952381
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+no60(C,B) 0.27380952381
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+no60(B,C) 0.27380952381
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+all60(C,A) 0.258928571429
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+some60(A,C) 0.258928571429
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+some60(C,A) 0.258928571429
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+all60(C,B) 0.22193877551
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+all60(B,C) 0.22193877551
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+some60(C,B) 0.22193877551
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+no60(C,B) 0.22193877551
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+no60(B,C) 0.22193877551
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+all60(B,C) 0.207142857143
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+some60(B,C) 0.207142857143
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+somenot60(C,B) 0.207142857143
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+somenot60(B,C) 0.207142857143
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+no60(C,A) 0.191558441558
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(A,C) 0.191558441558
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+all60(A,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+some60(A,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+no60(A,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(C,A) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+some60(C,B) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+some60(B,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+no60(B,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+all60(A,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+some60(A,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+no60(A,C) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+somenot60(C,A) 0.175595238095
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+all60(C,B) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+no60(C,B) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+somenot60(B,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+no60(C,A) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+somenot60(A,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(A,C), \+all60(C,B) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(A,C), \+all60(B,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(A,C), \+some60(B,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(A,C), \+no60(C,B) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(A,C), \+no60(B,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+all60(A,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+all60(C,A) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+no60(A,C) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+no60(C,A) 0.162087912088
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+somenot60(C,B) 0.150510204082
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+somenot60(B,C) 0.150510204082
+[DEBUG] rsomenot60(A,B) :- all60(A,C), \+somenot60(B,C) 0.150510204082
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+somenot60(A,C) 0.150510204082
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+somenot60(C,A) 0.150510204082
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot60(A,B) :- somenot60(C,B), all60(A,C) 0.901785714286
+[DEBUG] Best rule so far: rsomenot60(A,B) :- true [0.0990990990991]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- true 0.0990990990991
+[DEBUG] ==================================
+[LVL9] rsomenot60(A,B) :- all60(A,C) 0.0 (2.0, 12.0, 88.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C) 0.13993993994 (3.0, 12.0, 88.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- all60(B,C) (0.13993993993993994, 3.0) > (0.0990990990990991, 12.0)
+[LVL9] rsomenot60(A,B) :- all60(C,A) 0.193693693694 (4.0, 12.0, 88.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- all60(C,A) (0.19369369369369369, 4.0) > (0.13993993993993994, 3.0)
+[LVL9] rsomenot60(A,B) :- some60(A,C) 0.149935649936 (3.0, 11.0, 89.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C) 0.149935649936 (3.0, 11.0, 89.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A) 0.241123476418 (5.0, 12.0, 88.0, 7.0) 0.81981981982 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- some60(C,A) (0.24112347641759407, 5.0) > (0.19369369369369369, 4.0)
+[LVL9] rsomenot60(A,B) :- some60(C,B) 0.0 (2.0, 15.0, 85.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(B,C) 0.0 (2.0, 14.0, 86.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(C,A) 0.0 (2.0, 13.0, 87.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B) 0.238392238392 (4.0, 9.0, 91.0, 8.0) 0.774774774775 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot60(A,B) :- some60(C,A) [0.241123476418]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- some60(C,A) 0.241123476418
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B) 0.238392238392
+[DEBUG] rsomenot60(A,B) :- all60(C,A) 0.193693693694
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- some60(A,C) 0.149935649936
+[DEBUG] rsomenot60(A,B) :- some60(B,C) 0.149935649936
+[DEBUG] rsomenot60(A,B) :- all60(B,C) 0.13993993994
+[DEBUG] rsomenot60(A,B) :- all60(A,C) 0.0
+[DEBUG] rsomenot60(A,B) :- some60(C,B) 0.0
+[DEBUG] rsomenot60(A,B) :- no60(B,C) 0.0
+[DEBUG] rsomenot60(A,B) :- no60(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot60(A,B) :- some60(C,A), all60(B,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- some60(C,A), all60(B,C) (0.3663663663663664, 2.0) > (0.24112347641759407, 5.0)
+[LVL9] rsomenot60(A,B) :- some60(C,A), all60(B,D) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), all60(D,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), some60(B,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), some60(B,D) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), some60(D,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(C,B) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(B,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(C,D) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(B,D) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(D,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(D,B) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+all60(C,B) 0.273273273273 (5.0, 10.0, 90.0, 7.0) 0.81981981982 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+all60(B,C) 0.206606606607 (4.0, 11.0, 89.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+some60(C,B) 0.273273273273 (5.0, 10.0, 90.0, 7.0) 0.81981981982 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+some60(B,C) 0.206606606607 (4.0, 11.0, 89.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+no60(C,B) 0.273273273273 (5.0, 10.0, 90.0, 7.0) 0.81981981982 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+no60(B,C) 0.273273273273 (5.0, 10.0, 90.0, 7.0) 0.81981981982 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+somenot60(C,B) 0.206606606607 (4.0, 11.0, 89.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+somenot60(B,C) 0.206606606607 (4.0, 11.0, 89.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), all60(C,A) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), all60(C,D) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), all60(D,A) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(A,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(A,D) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(C,D) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(D,A) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(D,C) 0.366366366366 (2.0, 1.0, 99.0, 10.0) 0.54954954955 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+all60(C,A) 0.190827190827 (3.0, 8.0, 92.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+some60(A,C) 0.190827190827 (3.0, 8.0, 92.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+some60(C,A) 0.190827190827 (3.0, 8.0, 92.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+no60(A,C) 0.281736281736 (4.0, 7.0, 93.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+no60(C,A) 0.258258258258 (4.0, 8.0, 92.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(A,C) 0.258258258258 (4.0, 8.0, 92.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(C,A) 0.281736281736 (4.0, 7.0, 93.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), some60(B,C) 0.54954954955 (2.0, 0.0, 100.0, 10.0) 0.54954954955 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rsomenot60(A,B) :- all60(C,A), some60(B,C) (0.5495495495495496, 2.0) > (0.3663663663663664, 2.0)
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+all60(C,B) 0.221364221364 (4.0, 10.0, 90.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+all60(B,C) 0.221364221364 (4.0, 10.0, 90.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+some60(C,B) 0.221364221364 (4.0, 10.0, 90.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+no60(C,B) 0.221364221364 (4.0, 10.0, 90.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+no60(B,C) 0.221364221364 (4.0, 10.0, 90.0, 8.0) 0.774774774775 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+somenot60(C,B) 0.149935649936 (3.0, 11.0, 89.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+somenot60(B,C) 0.149935649936 (3.0, 11.0, 89.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+all60(A,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+some60(A,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+no60(A,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+no60(C,A) 0.190827190827 (3.0, 8.0, 92.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(A,C) 0.190827190827 (3.0, 8.0, 92.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(C,A) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+all60(C,B) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+some60(C,B) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+some60(B,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+no60(C,B) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+no60(B,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+somenot60(B,C) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+all60(A,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+some60(A,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+no60(A,C) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+no60(C,A) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+somenot60(A,C) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+somenot60(C,A) 0.174924924925 (3.0, 9.0, 91.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+all60(A,C) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+all60(C,A) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+no60(A,C) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+no60(C,A) 0.161469161469 (3.0, 10.0, 90.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+somenot60(A,C) 0.149935649936 (3.0, 11.0, 89.0, 9.0) 0.6996996997 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+somenot60(C,A) 0.149935649936 (3.0, 11.0, 89.0, 9.0) 0.6996996997 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot60(A,B) :- all60(C,A), some60(B,C) [0.54954954955]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- some60(C,A), all60(B,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), all60(B,D) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), all60(D,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), some60(B,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), some60(B,D) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), some60(D,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(C,B) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(B,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(C,D) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(B,D) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(D,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(D,B) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), all60(C,A) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), all60(C,D) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), all60(D,A) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(A,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(A,D) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(C,D) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(D,A) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(D,C) 0.366366366366
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+no60(A,C) 0.281736281736
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(C,A) 0.281736281736
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+all60(C,B) 0.273273273273
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+some60(C,B) 0.273273273273
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+no60(C,B) 0.273273273273
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+no60(B,C) 0.273273273273
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+no60(C,A) 0.258258258258
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(A,C) 0.258258258258
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+all60(C,B) 0.221364221364
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+all60(B,C) 0.221364221364
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+some60(C,B) 0.221364221364
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+no60(C,B) 0.221364221364
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+no60(B,C) 0.221364221364
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+all60(B,C) 0.206606606607
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+some60(B,C) 0.206606606607
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+somenot60(C,B) 0.206606606607
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+somenot60(B,C) 0.206606606607
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+all60(C,A) 0.190827190827
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+some60(A,C) 0.190827190827
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+some60(C,A) 0.190827190827
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+no60(C,A) 0.190827190827
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(A,C) 0.190827190827
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+all60(A,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+some60(A,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+no60(A,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(C,A) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+some60(C,B) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+some60(B,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+no60(B,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+all60(A,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+some60(A,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+no60(A,C) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+somenot60(C,A) 0.174924924925
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+all60(C,B) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+no60(C,B) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+somenot60(B,C) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+no60(C,A) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+somenot60(A,C) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+all60(A,C) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+all60(C,A) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+no60(A,C) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+no60(C,A) 0.161469161469
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+somenot60(C,B) 0.149935649936
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+somenot60(B,C) 0.149935649936
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+somenot60(A,C) 0.149935649936
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+somenot60(C,A) 0.149935649936
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot60(A,B) :- all60(C,A), some60(B,C) 0.910714285714
+[DEBUG] Best rule so far: rsomenot60(A,B) :- true [0.0909090909091]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- true 0.0909090909091
+[DEBUG] ==================================
+[LVL9] rsomenot60(A,B) :- all60(A,C) 0.0 (3.0, 12.0, 88.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C) 0.139393939394 (4.0, 12.0, 88.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- all60(B,C) (0.13939393939393938, 4.0) > (0.09090909090909091, 12.0)
+[LVL9] rsomenot60(A,B) :- all60(C,A) 0.139393939394 (4.0, 12.0, 88.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C) 0.149350649351 (4.0, 11.0, 89.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- some60(A,C) (0.14935064935064934, 4.0) > (0.13939393939393938, 4.0)
+[LVL9] rsomenot60(A,B) :- some60(B,C) 0.0 (3.0, 11.0, 89.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A) 0.24064171123 (6.0, 12.0, 88.0, 6.0) 0.818181818182 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- some60(C,A) (0.24064171122994651, 6.0) > (0.14935064935064934, 4.0)
+[LVL9] rsomenot60(A,B) :- some60(C,B) 0.0 (3.0, 15.0, 85.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(B,C) 0.0 (3.0, 14.0, 86.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(C,A) 0.0 (3.0, 13.0, 87.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B) 0.237762237762 (5.0, 9.0, 91.0, 7.0) 0.772727272727 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot60(A,B) :- some60(C,A) [0.24064171123]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- some60(C,A) 0.24064171123
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B) 0.237762237762
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- some60(A,C) 0.149350649351
+[DEBUG] rsomenot60(A,B) :- all60(B,C) 0.139393939394
+[DEBUG] rsomenot60(A,B) :- all60(C,A) 0.139393939394
+[DEBUG] rsomenot60(A,B) :- all60(A,C) 0.0
+[DEBUG] rsomenot60(A,B) :- some60(B,C) 0.0
+[DEBUG] rsomenot60(A,B) :- some60(C,B) 0.0
+[DEBUG] rsomenot60(A,B) :- no60(B,C) 0.0
+[DEBUG] rsomenot60(A,B) :- no60(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot60(A,B) :- some60(C,A), all60(B,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] BETTER RULE rsomenot60(A,B) :- some60(C,A), all60(B,C) (0.3636363636363636, 3.0) > (0.24064171122994651, 6.0)
+[LVL9] rsomenot60(A,B) :- some60(C,A), all60(B,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), all60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), some60(B,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), some60(B,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), some60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(C,B) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(B,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(B,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), somenot60(D,B) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+all60(C,B) 0.272727272727 (6.0, 10.0, 90.0, 6.0) 0.818181818182 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+all60(B,C) 0.206060606061 (5.0, 11.0, 89.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+some60(C,B) 0.272727272727 (6.0, 10.0, 90.0, 6.0) 0.818181818182 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+some60(B,C) 0.206060606061 (5.0, 11.0, 89.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+no60(C,B) 0.272727272727 (6.0, 10.0, 90.0, 6.0) 0.818181818182 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+no60(B,C) 0.272727272727 (6.0, 10.0, 90.0, 6.0) 0.818181818182 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+somenot60(C,B) 0.206060606061 (5.0, 11.0, 89.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,A), \+somenot60(B,C) 0.206060606061 (5.0, 11.0, 89.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), all60(C,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), all60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), all60(D,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(A,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(A,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(D,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), some60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+all60(C,A) 0.190082644628 (4.0, 8.0, 92.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+some60(A,C) 0.190082644628 (4.0, 8.0, 92.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+some60(C,A) 0.190082644628 (4.0, 8.0, 92.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+no60(A,C) 0.280991735537 (5.0, 7.0, 93.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+no60(C,A) 0.257575757576 (5.0, 8.0, 92.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(A,C) 0.257575757576 (5.0, 8.0, 92.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(C,A) 0.280991735537 (5.0, 7.0, 93.0, 7.0) 0.772727272727 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), all60(C,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), all60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), all60(D,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), some60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), some60(D,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+all60(A,C) 0.174242424242 (4.0, 9.0, 91.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+all60(C,A) 0.099173553719 (3.0, 9.0, 91.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+some60(A,C) 0.174242424242 (4.0, 9.0, 91.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+some60(C,A) 0.099173553719 (3.0, 9.0, 91.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+no60(A,C) 0.174242424242 (4.0, 9.0, 91.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+no60(C,A) 0.190082644628 (4.0, 8.0, 92.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(A,C) 0.190082644628 (4.0, 8.0, 92.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(C,A) 0.174242424242 (4.0, 9.0, 91.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), all60(B,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), all60(B,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), all60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), somenot60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), somenot60(D,B) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+all60(C,B) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+all60(B,C) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+some60(C,B) 0.174242424242 (4.0, 9.0, 91.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+some60(B,C) 0.174242424242 (4.0, 9.0, 91.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+no60(C,B) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+no60(B,C) 0.174242424242 (4.0, 9.0, 91.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+somenot60(C,B) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(A,C), \+somenot60(B,C) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), some60(A,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), some60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), some60(D,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), some60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+all60(A,C) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+all60(C,A) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+some60(A,C) 0.0 (3.0, 11.0, 89.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+some60(C,A) 0.0 (3.0, 11.0, 89.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+no60(A,C) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+no60(C,A) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+somenot60(A,C) 0.149350649351 (4.0, 11.0, 89.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(B,C), \+somenot60(C,A) 0.149350649351 (4.0, 11.0, 89.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), somenot60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), somenot60(B,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), somenot60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), somenot60(D,B) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+all60(C,B) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+all60(B,C) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+some60(C,B) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+no60(C,B) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+no60(B,C) 0.160839160839 (4.0, 10.0, 90.0, 8.0) 0.69696969697 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+somenot60(C,B) 0.0 (3.0, 11.0, 89.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(C,A), \+somenot60(B,C) 0.0 (3.0, 11.0, 89.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), some60(C,B) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), some60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), some60(D,B) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+all60(C,B) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+all60(B,C) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+some60(B,C) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+no60(C,B) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+no60(B,C) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- all60(A,C), \+somenot60(B,C) 0.0 (3.0, 11.0, 89.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), some60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), some60(D,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+all60(A,C) 0.099173553719 (3.0, 9.0, 91.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+some60(A,C) 0.099173553719 (3.0, 9.0, 91.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+no60(A,C) 0.099173553719 (3.0, 9.0, 91.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+no60(C,A) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+somenot60(A,C) 0.0 (3.0, 10.0, 90.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(B,C), \+somenot60(C,A) 0.099173553719 (3.0, 9.0, 91.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,B), all60(A,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- some60(C,B), all60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(B,C), no60(C,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(B,C), no60(C,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(B,C), no60(D,A) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(C,A), no60(B,D) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[LVL9] rsomenot60(A,B) :- no60(C,A), no60(D,C) 0.363636363636 (3.0, 1.0, 99.0, 9.0) 0.545454545455 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot60(A,B) :- some60(C,A), all60(B,C) [0.363636363636]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot60(A,B) :- some60(C,A), all60(B,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), all60(B,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), all60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), some60(B,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), some60(B,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), some60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(C,B) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(B,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(B,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,A), somenot60(D,B) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), all60(C,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), all60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), all60(D,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(A,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(A,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(D,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), some60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), all60(C,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), all60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), all60(D,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), some60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), some60(D,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(A,C), all60(B,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(A,C), all60(B,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(A,C), all60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(A,C), somenot60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(A,C), somenot60(D,B) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(B,C), some60(A,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(B,C), some60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(B,C), some60(D,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(B,C), some60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(C,A), somenot60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(C,A), somenot60(B,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(C,A), somenot60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(C,A), somenot60(D,B) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(A,C), some60(C,B) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(A,C), some60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- all60(A,C), some60(D,B) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(B,C), some60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(B,C), some60(D,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,B), all60(A,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- some60(C,B), all60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- no60(B,C), no60(C,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- no60(B,C), no60(C,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- no60(B,C), no60(D,A) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- no60(C,A), no60(B,D) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- no60(C,A), no60(D,C) 0.363636363636
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+no60(A,C) 0.280991735537
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(C,A) 0.280991735537
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+all60(C,B) 0.272727272727
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+some60(C,B) 0.272727272727
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+no60(C,B) 0.272727272727
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+no60(B,C) 0.272727272727
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+no60(C,A) 0.257575757576
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+somenot60(A,C) 0.257575757576
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+all60(B,C) 0.206060606061
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+some60(B,C) 0.206060606061
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+somenot60(C,B) 0.206060606061
+[DEBUG] rsomenot60(A,B) :- some60(C,A), \+somenot60(B,C) 0.206060606061
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+all60(C,A) 0.190082644628
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+some60(A,C) 0.190082644628
+[DEBUG] rsomenot60(A,B) :- somenot60(C,B), \+some60(C,A) 0.190082644628
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+no60(C,A) 0.190082644628
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(A,C) 0.190082644628
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+all60(A,C) 0.174242424242
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+some60(A,C) 0.174242424242
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+no60(A,C) 0.174242424242
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+somenot60(C,A) 0.174242424242
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+some60(C,B) 0.174242424242
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+some60(B,C) 0.174242424242
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+no60(B,C) 0.174242424242
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+all60(C,B) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+no60(C,B) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+somenot60(B,C) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+all60(A,C) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+all60(C,A) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+no60(A,C) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+no60(C,A) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+all60(C,B) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+all60(B,C) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+some60(C,B) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+no60(C,B) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+no60(B,C) 0.160839160839
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+somenot60(A,C) 0.149350649351
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+somenot60(C,A) 0.149350649351
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+all60(C,A) 0.099173553719
+[DEBUG] rsomenot60(A,B) :- somenot60(B,C), \+some60(C,A) 0.099173553719
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+all60(A,C) 0.099173553719
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+some60(A,C) 0.099173553719
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+no60(A,C) 0.099173553719
+[DEBUG] rsomenot60(A,B) :- some60(B,C), \+somenot60(C,A) 0.099173553719
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+all60(B,C) 0.0
+[DEBUG] rsomenot60(A,B) :- some60(A,C), \+somenot60(C,B) 0.0
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+some60(A,C) 0.0
+[DEBUG] rsomenot60(A,B) :- all60(B,C), \+some60(C,A) 0.0
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+somenot60(C,B) 0.0
+[DEBUG] rsomenot60(A,B) :- all60(C,A), \+somenot60(B,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot60(A,B) :- some60(C,A), all60(B,C) 0.910714285714

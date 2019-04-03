@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_2.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rsomenot2.log
+              target:	rsomenot2/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot2(A,B) :- somenot2(C,A), \+no2(C,B), \+somenot2(C,B), \+all2(B,C), \+some2(B,C), \+no2(B,C), \+all2(C,B)
+rsomenot2(A,B) :- some2(C,B), somenot2(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.947368421053
+           Precision:	 1.0
+              Recall:	 0.454545454545
+================== STATISTICS ==================
+    Rule evaluations:	22838
+          Total time:	384.1885s

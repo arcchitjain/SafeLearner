@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_119.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsome119.log
+              target:	rsome119/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome119(A,B) :- some119(C,B), \+no119(C,A), \+all119(A,C), \+all119(C,A), \+some119(A,C)
+rsome119(A,B) :- somenot119(C,A), \+some119(B,C), \+no119(C,B), \+no119(B,C), \+somenot119(B,C), \+somenot119(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.833333333333
+           Precision:	 1.0
+              Recall:	 0.24
+================== STATISTICS ==================
+    Rule evaluations:	81366
+          Total time:	3024.8567s

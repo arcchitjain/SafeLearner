@@ -1,0 +1,369 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.891396032785
+[INFO] Computing scores: 0.0324s
+[INFO] Number of examples (M): 57
+[INFO] Positive weight (P): 11.0000
+[INFO] Negative weight (N): 46.0000
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.19298245614]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.19298245614
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- all8(B,C) 0.0 (1.0, 5.0, 41.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(A,C) 0.576998050682 (5.0, 3.0, 43.0, 6.0) 0.865497076023 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(A,C) (0.5769980506822612, 5.0) > (0.19298245614035087, 11.0)
+[LVL9] rnvc8(A,B) :- some8(B,C) 0.243664717349 (2.0, 6.0, 40.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A) 0.35477582846 (3.0, 5.0, 41.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B) 0.35477582846 (3.0, 5.0, 41.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(A,C) 0.0 (1.0, 6.0, 40.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(B,C) 0.0 (1.0, 6.0, 40.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C) 0.243664717349 (2.0, 6.0, 40.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(A,C) [0.576998050682]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(A,C) 0.576998050682
+[DEBUG] rnvc8(A,B) :- some8(C,A) 0.35477582846
+[DEBUG] rnvc8(A,B) :- some8(C,B) 0.35477582846
+[DEBUG] rnvc8(A,B) :- somenot8(B,C) 0.274122807018
+[DEBUG] rnvc8(A,B) :- somenot8(C,B) 0.274122807018
+[DEBUG] rnvc8(A,B) :- some8(B,C) 0.243664717349
+[DEBUG] rnvc8(A,B) :- somenot8(A,C) 0.243664717349
+[DEBUG] rnvc8(A,B) :- all8(B,C) 0.0
+[DEBUG] rnvc8(A,B) :- no8(A,C) 0.0
+[DEBUG] rnvc8(A,B) :- no8(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(A,C), all8(B,C) 0.59649122807 (1.0, 0.0, 46.0, 10.0) 0.59649122807 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(A,C), all8(B,C) (0.5964912280701754, 1.0) > (0.5769980506822612, 5.0)
+[LVL9] rnvc8(A,B) :- some8(A,C), \+all8(C,B) 0.649122807018 (5.0, 2.0, 44.0, 6.0) 0.865497076023 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(A,C), \+all8(C,B) (0.6491228070175439, 5.0) > (0.5964912280701754, 1.0)
+[LVL9] rnvc8(A,B) :- some8(A,C), \+no8(C,B) 0.649122807018 (5.0, 2.0, 44.0, 6.0) 0.865497076023 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(A,C), \+no8(B,C) 0.649122807018 (5.0, 2.0, 44.0, 6.0) 0.865497076023 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+all8(C,B) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+all8(B,C) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+no8(C,B) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+no8(B,C) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+somenot8(B,C) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+all8(A,C) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+all8(C,A) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+no8(A,C) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+no8(C,A) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+somenot8(C,A) 0.399122807018 (3.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C), \+all8(A,C) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C), \+all8(C,A) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C), \+some8(C,A) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C), \+no8(C,A) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C), \+somenot8(C,A) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B), \+all8(C,A) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B), \+no8(A,C) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B), \+no8(C,A) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B), \+somenot8(A,C) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B), \+somenot8(C,A) 0.31328320802 (2.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(B,C), \+all8(A,C) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(B,C), \+all8(C,A) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(B,C), \+no8(A,C) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(B,C), \+no8(C,A) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(B,C), \+somenot8(A,C) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(B,C), \+somenot8(C,A) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.274122807018 (2.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(A,C), \+all8(C,B) [0.649122807018]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(A,C), \+all8(C,B) 0.649122807018
+[DEBUG] rnvc8(A,B) :- some8(A,C), \+no8(C,B) 0.649122807018
+[DEBUG] rnvc8(A,B) :- some8(A,C), \+no8(B,C) 0.649122807018
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+all8(C,B) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+all8(B,C) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+no8(C,B) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+no8(B,C) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+somenot8(B,C) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+all8(A,C) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+all8(C,A) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+no8(A,C) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+no8(C,A) 0.399122807018
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+somenot8(C,A) 0.399122807018
+[DEBUG] rnvc8(A,B) :- somenot8(B,C), \+all8(A,C) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(B,C), \+all8(C,A) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(B,C), \+some8(C,A) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(B,C), \+no8(C,A) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(B,C), \+somenot8(C,A) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(C,B), \+all8(C,A) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(C,B), \+no8(A,C) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(C,B), \+no8(C,A) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(C,B), \+somenot8(A,C) 0.31328320802
+[DEBUG] rnvc8(A,B) :- somenot8(C,B), \+somenot8(C,A) 0.31328320802
+[DEBUG] rnvc8(A,B) :- some8(B,C), \+all8(A,C) 0.274122807018
+[DEBUG] rnvc8(A,B) :- some8(B,C), \+all8(C,A) 0.274122807018
+[DEBUG] rnvc8(A,B) :- some8(B,C), \+no8(A,C) 0.274122807018
+[DEBUG] rnvc8(A,B) :- some8(B,C), \+no8(C,A) 0.274122807018
+[DEBUG] rnvc8(A,B) :- some8(B,C), \+somenot8(A,C) 0.274122807018
+[DEBUG] rnvc8(A,B) :- some8(B,C), \+somenot8(C,A) 0.274122807018
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.274122807018
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.274122807018
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.274122807018
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.274122807018
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.274122807018
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.274122807018
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- some8(A,C), \+all8(C,B) 0.859649122807
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.12]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.12
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(B,C) 0.14 (6.0, 8.0, 38.0, 5.0) 0.56 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(B,C) (0.14, 6.0) > (0.12, 11.0)
+[LVL9] rnvc8(A,B) :- some8(C,A) 0.346666666667 (8.0, 7.0, 39.0, 3.0) 0.78 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(C,A) (0.3466666666666667, 8.0) > (0.14, 6.0)
+[LVL9] rnvc8(A,B) :- some8(C,B) 0.265 (7.0, 7.0, 39.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(A,C) 0.14 (6.0, 8.0, 38.0, 5.0) 0.56 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(B,C) 0.16 (6.0, 7.0, 39.0, 5.0) 0.56 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C) 0.235555555556 (7.0, 8.0, 38.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C) 0.16 (6.0, 7.0, 39.0, 5.0) 0.56 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B) 0.16 (6.0, 7.0, 39.0, 5.0) 0.56 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(C,A) [0.346666666667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(C,A) 0.346666666667
+[DEBUG] rnvc8(A,B) :- some8(C,B) 0.265
+[DEBUG] rnvc8(A,B) :- somenot8(A,C) 0.235555555556
+[DEBUG] rnvc8(A,B) :- no8(B,C) 0.16
+[DEBUG] rnvc8(A,B) :- somenot8(B,C) 0.16
+[DEBUG] rnvc8(A,B) :- somenot8(C,B) 0.16
+[DEBUG] rnvc8(A,B) :- some8(B,C) 0.14
+[DEBUG] rnvc8(A,B) :- no8(A,C) 0.14
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(C,A), some8(C,B) 0.56 (6.0, 2.0, 44.0, 5.0) 0.56 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(C,A), some8(C,B) (0.56, 6.0) > (0.3466666666666667, 8.0)
+[LVL9] rnvc8(A,B) :- some8(C,A), \+all8(C,B) 0.39 (8.0, 6.0, 40.0, 3.0) 0.78 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+all8(B,C) 0.39 (8.0, 6.0, 40.0, 3.0) 0.78 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+no8(C,B) 0.39 (8.0, 6.0, 40.0, 3.0) 0.78 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+no8(B,C) 0.39 (8.0, 6.0, 40.0, 3.0) 0.78 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+somenot8(B,C) 0.39 (8.0, 6.0, 40.0, 3.0) 0.78 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+all8(A,C) 0.302857142857 (7.0, 6.0, 40.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+all8(C,A) 0.302857142857 (7.0, 6.0, 40.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+no8(A,C) 0.302857142857 (7.0, 6.0, 40.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+no8(C,A) 0.302857142857 (7.0, 6.0, 40.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,B), \+somenot8(C,A) 0.302857142857 (7.0, 6.0, 40.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.265 (7.0, 7.0, 39.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.265 (7.0, 7.0, 39.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.265 (7.0, 7.0, 39.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.265 (7.0, 7.0, 39.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.265 (7.0, 7.0, 39.0, 4.0) 0.706666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.265 (7.0, 7.0, 39.0, 4.0) 0.706666666667 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(C,A), some8(C,B) [0.56]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(C,A), some8(C,B) 0.56
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+all8(C,B) 0.39
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+all8(B,C) 0.39
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+no8(C,B) 0.39
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+no8(B,C) 0.39
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+somenot8(B,C) 0.39
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+all8(A,C) 0.302857142857
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+all8(C,A) 0.302857142857
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+no8(A,C) 0.302857142857
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+no8(C,A) 0.302857142857
+[DEBUG] rnvc8(A,B) :- some8(C,B), \+somenot8(C,A) 0.302857142857
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.265
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.265
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.265
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.265
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.265
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.265
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- some8(C,A), some8(C,B) 0.877192982456
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.102040816327]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.102040816327
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(B,C) 0.137755102041 (7.0, 8.0, 38.0, 4.0) 0.551020408163 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(B,C) (0.1377551020408163, 7.0) > (0.10204081632653061, 11.0)
+[LVL9] rnvc8(A,B) :- some8(C,A) 0.262755102041 (8.0, 7.0, 39.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(C,A) (0.2627551020408163, 8.0) > (0.1377551020408163, 7.0)
+[LVL9] rnvc8(A,B) :- some8(C,B) 0.157434402332 (7.0, 7.0, 39.0, 4.0) 0.551020408163 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(A,C) 0.137755102041 (7.0, 8.0, 38.0, 4.0) 0.551020408163 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(B,C) 0.157434402332 (7.0, 7.0, 39.0, 4.0) 0.551020408163 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C) 0.233560090703 (8.0, 8.0, 38.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C) 0.157434402332 (7.0, 7.0, 39.0, 4.0) 0.551020408163 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B) 0.157434402332 (7.0, 7.0, 39.0, 4.0) 0.551020408163 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(C,A) [0.262755102041]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(C,A) 0.262755102041
+[DEBUG] rnvc8(A,B) :- somenot8(A,C) 0.233560090703
+[DEBUG] rnvc8(A,B) :- some8(C,B) 0.157434402332
+[DEBUG] rnvc8(A,B) :- no8(B,C) 0.157434402332
+[DEBUG] rnvc8(A,B) :- somenot8(B,C) 0.157434402332
+[DEBUG] rnvc8(A,B) :- somenot8(C,B) 0.157434402332
+[DEBUG] rnvc8(A,B) :- some8(B,C) 0.137755102041
+[DEBUG] rnvc8(A,B) :- no8(A,C) 0.137755102041
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(C,A), some8(B,C) 0.551020408163 (7.0, 2.0, 44.0, 4.0) 0.551020408163 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(C,A), some8(B,C) (0.5510204081632653, 7.0) > (0.2627551020408163, 8.0)
+[LVL9] rnvc8(A,B) :- some8(C,A), \+all8(C,B) 0.30029154519 (8.0, 6.0, 40.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+all8(B,C) 0.30029154519 (8.0, 6.0, 40.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+no8(C,B) 0.30029154519 (8.0, 6.0, 40.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+no8(B,C) 0.30029154519 (8.0, 6.0, 40.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- some8(C,A), \+somenot8(B,C) 0.30029154519 (8.0, 6.0, 40.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.262755102041 (8.0, 7.0, 39.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.262755102041 (8.0, 7.0, 39.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.262755102041 (8.0, 7.0, 39.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.262755102041 (8.0, 7.0, 39.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.262755102041 (8.0, 7.0, 39.0, 3.0) 0.700680272109 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.262755102041 (8.0, 7.0, 39.0, 3.0) 0.700680272109 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(C,A), some8(B,C) [0.551020408163]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(C,A), some8(B,C) 0.551020408163
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+all8(C,B) 0.30029154519
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+all8(B,C) 0.30029154519
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+no8(C,B) 0.30029154519
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+no8(B,C) 0.30029154519
+[DEBUG] rnvc8(A,B) :- some8(C,A), \+somenot8(B,C) 0.30029154519
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.262755102041
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.262755102041
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.262755102041
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.262755102041
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.262755102041
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.262755102041
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- some8(C,A), some8(B,C) 0.894736842105
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.0833333333333]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.0833333333333
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(C,A) 0.154761904762 (8.0, 7.0, 39.0, 3.0) 0.541666666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(C,A) (0.15476190476190474, 8.0) > (0.08333333333333333, 11.0)
+[LVL9] rnvc8(A,B) :- some8(C,B) 0.154761904762 (8.0, 7.0, 39.0, 3.0) 0.541666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(A,C) 0.135416666667 (8.0, 8.0, 38.0, 3.0) 0.541666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(B,C) 0.154761904762 (8.0, 7.0, 39.0, 3.0) 0.541666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C) 0.231481481481 (9.0, 8.0, 38.0, 2.0) 0.694444444444 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- somenot8(A,C) (0.2314814814814815, 9.0) > (0.15476190476190474, 8.0)
+[LVL9] rnvc8(A,B) :- somenot8(B,C) 0.154761904762 (8.0, 7.0, 39.0, 3.0) 0.541666666667 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B) 0.154761904762 (8.0, 7.0, 39.0, 3.0) 0.541666666667 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- somenot8(A,C) [0.231481481481]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- somenot8(A,C) 0.231481481481
+[DEBUG] rnvc8(A,B) :- some8(C,A) 0.154761904762
+[DEBUG] rnvc8(A,B) :- some8(C,B) 0.154761904762
+[DEBUG] rnvc8(A,B) :- no8(B,C) 0.154761904762
+[DEBUG] rnvc8(A,B) :- somenot8(B,C) 0.154761904762
+[DEBUG] rnvc8(A,B) :- somenot8(C,B) 0.154761904762
+[DEBUG] rnvc8(A,B) :- no8(A,C) 0.135416666667
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- somenot8(A,C), some8(C,B) 0.541666666667 (8.0, 2.0, 44.0, 3.0) 0.541666666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- somenot8(A,C), some8(C,B) (0.5416666666666666, 8.0) > (0.2314814814814815, 9.0)
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.260416666667 (9.0, 7.0, 39.0, 2.0) 0.694444444444 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.260416666667 (9.0, 7.0, 39.0, 2.0) 0.694444444444 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.260416666667 (9.0, 7.0, 39.0, 2.0) 0.694444444444 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.260416666667 (9.0, 7.0, 39.0, 2.0) 0.694444444444 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.260416666667 (9.0, 7.0, 39.0, 2.0) 0.694444444444 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.260416666667 (9.0, 7.0, 39.0, 2.0) 0.694444444444 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- somenot8(A,C), some8(C,B) [0.541666666667]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), some8(C,B) 0.541666666667
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(C,B) 0.260416666667
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+all8(B,C) 0.260416666667
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+some8(B,C) 0.260416666667
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(C,B) 0.260416666667
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+no8(B,C) 0.260416666667
+[DEBUG] rnvc8(A,B) :- somenot8(A,C), \+somenot8(C,B) 0.260416666667
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- somenot8(A,C), some8(C,B) 0.912280701754
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.063829787234]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.063829787234
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(C,A) 0.151975683891 (9.0, 7.0, 39.0, 2.0) 0.531914893617 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(C,A) (0.1519756838905775, 9.0) > (0.06382978723404255, 11.0)
+[LVL9] rnvc8(A,B) :- no8(A,C) 0.132978723404 (9.0, 8.0, 38.0, 2.0) 0.531914893617 [ACCEPT]
+[LVL9] rnvc8(A,B) :- no8(B,C) 0.151975683891 (9.0, 7.0, 39.0, 2.0) 0.531914893617 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(A,C) 0.132978723404 (9.0, 8.0, 38.0, 2.0) 0.531914893617 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C) 0.151975683891 (9.0, 7.0, 39.0, 2.0) 0.531914893617 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(C,B) 0.151975683891 (9.0, 7.0, 39.0, 2.0) 0.531914893617 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(C,A) [0.151975683891]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(C,A) 0.151975683891
+[DEBUG] rnvc8(A,B) :- no8(B,C) 0.151975683891
+[DEBUG] rnvc8(A,B) :- somenot8(B,C) 0.151975683891
+[DEBUG] rnvc8(A,B) :- somenot8(C,B) 0.151975683891
+[DEBUG] rnvc8(A,B) :- no8(A,C) 0.132978723404
+[DEBUG] rnvc8(A,B) :- somenot8(A,C) 0.132978723404
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- some8(C,A), somenot8(C,B) 0.531914893617 (9.0, 2.0, 44.0, 2.0) 0.531914893617 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- some8(C,A), somenot8(C,B) (0.5319148936170213, 9.0) > (0.1519756838905775, 9.0)
+[DEBUG] Best rule so far: rnvc8(A,B) :- some8(C,A), somenot8(C,B) [0.531914893617]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- some8(C,A), somenot8(C,B) 0.531914893617
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- some8(C,A), somenot8(C,B) 0.929824561404
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.0434782608696]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.0434782608696
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- no8(A,C) 0.130434782609 (10.0, 8.0, 38.0, 1.0) 0.521739130435 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- no8(A,C) (0.13043478260869565, 10.0) > (0.04347826086956522, 11.0)
+[LVL9] rnvc8(A,B) :- no8(B,C) 0.149068322981 (10.0, 7.0, 39.0, 1.0) 0.521739130435 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- no8(B,C) (0.14906832298136646, 10.0) > (0.13043478260869565, 10.0)
+[LVL9] rnvc8(A,B) :- somenot8(A,C) 0.130434782609 (10.0, 8.0, 38.0, 1.0) 0.521739130435 [ACCEPT]
+[LVL9] rnvc8(A,B) :- somenot8(B,C) 0.149068322981 (10.0, 7.0, 39.0, 1.0) 0.521739130435 [ACCEPT]
+[DEBUG] Best rule so far: rnvc8(A,B) :- no8(B,C) [0.149068322981]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- no8(B,C) 0.149068322981
+[DEBUG] rnvc8(A,B) :- somenot8(B,C) 0.149068322981
+[DEBUG] rnvc8(A,B) :- no8(A,C) 0.130434782609
+[DEBUG] rnvc8(A,B) :- somenot8(A,C) 0.130434782609
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- no8(B,C), no8(A,C) 0.521739130435 (10.0, 2.0, 44.0, 1.0) 0.521739130435 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- no8(B,C), no8(A,C) (0.5217391304347826, 10.0) > (0.14906832298136646, 10.0)
+[DEBUG] Best rule so far: rnvc8(A,B) :- no8(B,C), no8(A,C) [0.521739130435]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- no8(B,C), no8(A,C) 0.521739130435
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- no8(B,C), no8(A,C) 0.947368421053
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- somenot8(A,C) 0.127777777778 (11.0, 8.0, 38.0, 0.0) 0.511111111111 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- somenot8(A,C) (0.12777777777777777, 11.0) > (0.0, 11.0)
+[LVL9] rnvc8(A,B) :- somenot8(B,C) 0.146031746032 (11.0, 7.0, 39.0, 0.0) 0.511111111111 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- somenot8(B,C) (0.146031746031746, 11.0) > (0.12777777777777777, 11.0)
+[DEBUG] Best rule so far: rnvc8(A,B) :- somenot8(B,C) [0.146031746032]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- somenot8(B,C) 0.146031746032
+[DEBUG] rnvc8(A,B) :- somenot8(A,C) 0.127777777778
+[DEBUG] ==================================
+[LVL9] rnvc8(A,B) :- somenot8(B,C), somenot8(A,C) 0.511111111111 (11.0, 2.0, 44.0, 0.0) 0.511111111111 [ACCEPT]
+[LVL9] BETTER RULE rnvc8(A,B) :- somenot8(B,C), somenot8(A,C) (0.5111111111111111, 11.0) > (0.146031746031746, 11.0)
+[DEBUG] Best rule so far: rnvc8(A,B) :- somenot8(B,C), somenot8(A,C) [0.511111111111]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- somenot8(B,C), somenot8(A,C) 0.511111111111
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- somenot8(B,C), somenot8(A,C) 0.964912280702
+[DEBUG] Best rule so far: rnvc8(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc8(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc8(A,B) :- true 0.964912280702

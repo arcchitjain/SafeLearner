@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_64.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rsome64.log
+              target:	rsome64/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome64(A,B) :- some64(B,C), somenot64(A,C)
+rsome64(A,B) :- no64(C,A), somenot64(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.841666666667
+           Precision:	 1.0
+              Recall:	 0.136363636364
+================== STATISTICS ==================
+    Rule evaluations:	84663
+          Total time:	1607.3090s

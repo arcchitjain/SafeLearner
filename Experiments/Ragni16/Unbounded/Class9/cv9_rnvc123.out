@@ -1,0 +1,27 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_123.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rnvc123.log
+              target:	rnvc123/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc123(A,B) :- no123(A,C), \+all123(B,C), \+some123(C,B), \+some123(B,C), \+somenot123(C,B)
+rnvc123(A,B) :- no123(B,C), \+all123(A,C), \+all123(C,A), \+some123(A,C), \+somenot123(A,C)
+rnvc123(A,B) :- no123(C,A), \+all123(C,B), \+all123(B,C), \+some123(B,C), \+somenot123(B,C)
+rnvc123(A,B) :- some123(C,B), \+all123(A,C), \+all123(C,A), \+some123(A,C), \+no123(A,C), \+somenot123(A,C)
+rnvc123(A,B) :- somenot123(B,C), \+all123(A,C), \+all123(C,A), \+some123(C,A), \+no123(C,A), \+somenot123(A,C)
+rnvc123(A,B) :- some123(B,C), \+all123(A,C), \+all123(C,A), \+some123(C,A), \+no123(A,C), \+no123(C,A), \+somenot123(C,A)
+rnvc123(A,B) :- no123(C,B), somenot123(A,C)
+rnvc123(A,B) :- all123(A,C), all123(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	47125
+          Total time:	920.2187s

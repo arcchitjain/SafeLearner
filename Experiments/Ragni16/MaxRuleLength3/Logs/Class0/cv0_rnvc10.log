@@ -1,0 +1,682 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.633397154946
+[INFO] Computing scores: 0.0310s
+[INFO] Number of examples (M): 56
+[INFO] Positive weight (P): 20.0000
+[INFO] Negative weight (N): 36.0000
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.357142857143]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.357142857143
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.373015873016 (3.0, 5.0, 31.0, 17.0) 0.839285714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.373015873015873, 3.0) > (0.35714285714285715, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.419642857143 (3.0, 4.0, 32.0, 17.0) 0.839285714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(B,C) (0.41964285714285715, 3.0) > (0.373015873015873, 3.0)
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.419642857143 (3.0, 4.0, 32.0, 17.0) 0.839285714286 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,B) 0.0 (1.0, 6.0, 30.0, 19.0) 0.678571428571 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(A,C) 0.0 (1.0, 5.0, 31.0, 19.0) 0.678571428571 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.0 (2.0, 4.0, 32.0, 18.0) 0.785714285714 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,A) 0.0 (1.0, 7.0, 29.0, 19.0) 0.678571428571 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,B) 0.0 (2.0, 5.0, 31.0, 18.0) 0.785714285714 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(B,C) 0.0 (1.0, 6.0, 30.0, 19.0) 0.678571428571 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.484126984127 (4.0, 4.0, 32.0, 16.0) 0.871428571429 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A) (0.4841269841269841, 4.0) > (0.41964285714285715, 3.0)
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.0 (1.0, 6.0, 30.0, 19.0) 0.678571428571 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(A,C) 0.794642857143 (6.0, 1.0, 35.0, 14.0) 0.908163265306 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(A,C) (0.7946428571428571, 6.0) > (0.4841269841269841, 4.0)
+[LVL9] rnvc10(A,B) :- somenot10(B,C) 0.669642857143 (5.0, 2.0, 34.0, 15.0) 0.892857142857 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.595238095238 (5.0, 3.0, 33.0, 15.0) 0.892857142857 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(A,C) [0.794642857143]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(A,C) 0.794642857143
+[DEBUG] rnvc10(A,B) :- somenot10(B,C) 0.669642857143
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.595238095238
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.484126984127
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.419642857143
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.419642857143
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.373015873016
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- all10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- some10(A,C) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,A) 0.0
+[DEBUG] rnvc10(A,B) :- no10(B,C) 0.0
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- somenot10(A,C), \+all10(C,B) 0.908163265306 (6.0, 0.0, 36.0, 14.0) 0.908163265306 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(A,C), \+all10(C,B) (0.9081632653061223, 6.0) > (0.7946428571428571, 6.0)
+[INFO] RULE LEARNED: rnvc10(A,B) :- somenot10(A,C), \+all10(C,B) 0.75
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.364444444444 (9.0, 5.0, 31.0, 11.0) 0.82 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.36444444444444446, 9.0) > (0.0, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.325714285714 (8.0, 4.0, 32.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.41 (9.0, 4.0, 32.0, 11.0) 0.82 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(C,A) (0.41000000000000003, 9.0) > (0.36444444444444446, 9.0)
+[LVL9] rnvc10(A,B) :- all10(C,B) 0.0 (7.0, 6.0, 30.0, 13.0) 0.64 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(A,C) 0.0 (7.0, 5.0, 31.0, 13.0) 0.64 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.0 (7.0, 4.0, 32.0, 13.0) 0.64 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,A) 0.0 (7.0, 7.0, 29.0, 13.0) 0.64 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,B) 0.0 (7.0, 5.0, 31.0, 13.0) 0.64 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.475555555556 (10.0, 4.0, 32.0, 10.0) 0.856 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A) (0.47555555555555556, 10.0) > (0.41000000000000003, 9.0)
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.0 (7.0, 6.0, 30.0, 13.0) 0.64 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(B,C) 0.611428571429 (10.0, 2.0, 34.0, 10.0) 0.856 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(B,C) (0.6114285714285714, 10.0) > (0.47555555555555556, 10.0)
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.285 (8.0, 5.0, 31.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.535 (10.0, 3.0, 33.0, 10.0) 0.856 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(B,C) [0.611428571429]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(B,C) 0.611428571429
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.535
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.475555555556
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.41
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.364444444444
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.325714285714
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.285
+[DEBUG] rnvc10(A,B) :- all10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- some10(A,C) 0.0
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,A) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- somenot10(B,C), all10(A,C) 0.64 (7.0, 0.0, 36.0, 13.0) 0.64 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(B,C), all10(A,C) (0.64, 7.0) > (0.6114285714285714, 10.0)
+[LVL9] rnvc10(A,B) :- somenot10(B,C), \+some10(C,A) 0.713333333333 (10.0, 1.0, 35.0, 10.0) 0.856 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(B,C), \+some10(C,A) (0.7133333333333334, 10.0) > (0.64, 7.0)
+[LVL9] rnvc10(A,B) :- somenot10(B,C), \+no10(C,A) 0.713333333333 (10.0, 1.0, 35.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.611428571429 (10.0, 2.0, 34.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.611428571429 (10.0, 2.0, 34.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.611428571429 (10.0, 2.0, 34.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.535 (10.0, 3.0, 33.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.535 (10.0, 3.0, 33.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.535 (10.0, 3.0, 33.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+somenot10(B,C) 0.535 (10.0, 3.0, 33.0, 10.0) 0.856 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+all10(C,B) 0.468571428571 (9.0, 3.0, 33.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+some10(C,B) 0.468571428571 (9.0, 3.0, 33.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+some10(B,C) 0.468571428571 (9.0, 3.0, 33.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+no10(B,C) 0.468571428571 (9.0, 3.0, 33.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.41 (9.0, 4.0, 32.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.41 (9.0, 4.0, 32.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.41 (9.0, 4.0, 32.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.41 (9.0, 4.0, 32.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.41 (9.0, 4.0, 32.0, 11.0) 0.82 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.38 (8.0, 3.0, 33.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.38 (8.0, 3.0, 33.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.38 (8.0, 3.0, 33.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.38 (8.0, 3.0, 33.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A), \+all10(C,B) 0.325714285714 (8.0, 4.0, 32.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A), \+all10(B,C) 0.325714285714 (8.0, 4.0, 32.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A), \+some10(C,B) 0.325714285714 (8.0, 4.0, 32.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A), \+some10(B,C) 0.325714285714 (8.0, 4.0, 32.0, 12.0) 0.76 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A), \+no10(C,B) 0.325714285714 (8.0, 4.0, 32.0, 12.0) 0.76 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(B,C), \+some10(C,A) [0.713333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(B,C), \+some10(C,A) 0.713333333333
+[DEBUG] rnvc10(A,B) :- somenot10(B,C), \+no10(C,A) 0.713333333333
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.611428571429
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.611428571429
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.611428571429
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.535
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.535
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.535
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+somenot10(B,C) 0.535
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+all10(C,B) 0.468571428571
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+some10(C,B) 0.468571428571
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+some10(B,C) 0.468571428571
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+no10(B,C) 0.468571428571
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.41
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.41
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.41
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.41
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.41
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.38
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.38
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.38
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.38
+[DEBUG] rnvc10(A,B) :- somenot10(C,A), \+all10(C,B) 0.325714285714
+[DEBUG] rnvc10(A,B) :- somenot10(C,A), \+all10(B,C) 0.325714285714
+[DEBUG] rnvc10(A,B) :- somenot10(C,A), \+some10(C,B) 0.325714285714
+[DEBUG] rnvc10(A,B) :- somenot10(C,A), \+some10(B,C) 0.325714285714
+[DEBUG] rnvc10(A,B) :- somenot10(C,A), \+no10(C,B) 0.325714285714
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- somenot10(B,C), \+some10(C,A) 0.803571428571
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.222222222222]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.222222222222
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.277777777778 (12.0, 6.0, 30.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.2777777777777778, 12.0) > (0.2222222222222222, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.31746031746 (12.0, 5.0, 31.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(B,C) (0.3174603174603175, 12.0) > (0.2777777777777778, 12.0)
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.31746031746 (12.0, 5.0, 31.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,B) 0.0 (11.0, 7.0, 29.0, 9.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.0 (11.0, 5.0, 31.0, 9.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,A) 0.0 (11.0, 8.0, 28.0, 9.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,B) 0.0 (11.0, 6.0, 30.0, 9.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.527777777778 (14.0, 4.0, 32.0, 6.0) 0.844444444444 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A) (0.5277777777777778, 14.0) > (0.3174603174603175, 12.0)
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.0 (11.0, 7.0, 29.0, 9.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.0 (11.0, 6.0, 30.0, 9.0) 0.611111111111 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.527777777778 (14.0, 4.0, 32.0, 6.0) 0.844444444444 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- no10(C,A) [0.527777777778]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.527777777778
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.527777777778
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.31746031746
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.31746031746
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.277777777778
+[DEBUG] rnvc10(A,B) :- all10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,A) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- no10(C,A), all10(C,B) 0.611111111111 (11.0, 1.0, 35.0, 9.0) 0.611111111111 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A), all10(C,B) (0.6111111111111112, 11.0) > (0.5277777777777778, 14.0)
+[LVL9] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.603174603175 (14.0, 3.0, 33.0, 6.0) 0.844444444444 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.603174603175 (14.0, 3.0, 33.0, 6.0) 0.844444444444 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.603174603175 (14.0, 3.0, 33.0, 6.0) 0.844444444444 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.603174603175 (14.0, 3.0, 33.0, 6.0) 0.844444444444 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.603174603175 (14.0, 3.0, 33.0, 6.0) 0.844444444444 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.603174603175 (14.0, 3.0, 33.0, 6.0) 0.844444444444 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+all10(C,B) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+some10(C,B) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+some10(B,C) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+no10(B,C) 0.37037037037 (12.0, 4.0, 32.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.31746031746 (12.0, 5.0, 31.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.31746031746 (12.0, 5.0, 31.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.31746031746 (12.0, 5.0, 31.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.31746031746 (12.0, 5.0, 31.0, 8.0) 0.740740740741 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.31746031746 (12.0, 5.0, 31.0, 8.0) 0.740740740741 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- no10(C,A), all10(C,B) [0.611111111111]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- no10(C,A), all10(C,B) 0.611111111111
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.603174603175
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.603174603175
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.603174603175
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.603174603175
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.603174603175
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.603174603175
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+all10(C,B) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+some10(C,B) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+some10(B,C) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+no10(B,C) 0.37037037037
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.31746031746
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.31746031746
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.31746031746
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.31746031746
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.31746031746
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- no10(C,A), all10(C,B) 0.821428571429
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.204545454545]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.204545454545
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.275568181818 (13.0, 6.0, 30.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.2755681818181818, 13.0) > (0.20454545454545456, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.314935064935 (13.0, 5.0, 31.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(B,C) (0.31493506493506496, 13.0) > (0.2755681818181818, 13.0)
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.314935064935 (13.0, 5.0, 31.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.0 (12.0, 5.0, 31.0, 8.0) 0.602272727273 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,A) 0.0 (12.0, 8.0, 28.0, 8.0) 0.602272727273 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,B) 0.0 (12.0, 6.0, 30.0, 8.0) 0.602272727273 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.457792207792 (14.0, 4.0, 32.0, 6.0) 0.801136363636 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A) (0.4577922077922078, 14.0) > (0.31493506493506496, 13.0)
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.0 (12.0, 7.0, 29.0, 8.0) 0.602272727273 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.0 (12.0, 6.0, 30.0, 8.0) 0.602272727273 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.525568181818 (15.0, 4.0, 32.0, 5.0) 0.840909090909 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B) (0.5255681818181818, 15.0) > (0.4577922077922078, 14.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B) [0.525568181818]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.525568181818
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.457792207792
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.314935064935
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.314935064935
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.275568181818
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,A) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- somenot10(C,B), all10(C,A) 0.602272727273 (12.0, 1.0, 35.0, 8.0) 0.602272727273 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B), all10(C,A) (0.6022727272727273, 12.0) > (0.5255681818181818, 15.0)
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.600649350649 (15.0, 3.0, 33.0, 5.0) 0.840909090909 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.600649350649 (15.0, 3.0, 33.0, 5.0) 0.840909090909 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.600649350649 (15.0, 3.0, 33.0, 5.0) 0.840909090909 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.534090909091 (14.0, 3.0, 33.0, 6.0) 0.801136363636 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.534090909091 (14.0, 3.0, 33.0, 6.0) 0.801136363636 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.534090909091 (14.0, 3.0, 33.0, 6.0) 0.801136363636 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+all10(C,B) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+some10(C,B) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+some10(B,C) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A), \+no10(B,C) 0.367424242424 (13.0, 4.0, 32.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.314935064935 (13.0, 5.0, 31.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.314935064935 (13.0, 5.0, 31.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.314935064935 (13.0, 5.0, 31.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.314935064935 (13.0, 5.0, 31.0, 7.0) 0.734848484848 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.314935064935 (13.0, 5.0, 31.0, 7.0) 0.734848484848 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B), all10(C,A) [0.602272727273]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), all10(C,A) 0.602272727273
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.600649350649
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.600649350649
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.600649350649
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.534090909091
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.534090909091
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.534090909091
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+all10(C,B) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+some10(C,B) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+some10(B,C) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(C,A), \+no10(B,C) 0.367424242424
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.314935064935
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.314935064935
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.314935064935
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.314935064935
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.314935064935
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- somenot10(C,B), all10(C,A) 0.839285714286
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.186046511628]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.186046511628
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.273255813953 (14.0, 6.0, 30.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.27325581395348836, 14.0) > (0.18604651162790697, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.312292358804 (14.0, 5.0, 31.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(B,C) (0.3122923588039867, 14.0) > (0.27325581395348836, 14.0)
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.197674418605 (13.0, 5.0, 31.0, 7.0) 0.593023255814 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.197674418605 (13.0, 5.0, 31.0, 7.0) 0.593023255814 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,A) 0.0 (13.0, 8.0, 28.0, 7.0) 0.593023255814 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,B) 0.0 (13.0, 6.0, 30.0, 7.0) 0.593023255814 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.455149501661 (15.0, 4.0, 32.0, 5.0) 0.796511627907 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A) (0.45514950166112955, 15.0) > (0.3122923588039867, 14.0)
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.0 (13.0, 7.0, 29.0, 7.0) 0.593023255814 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.0 (13.0, 6.0, 30.0, 7.0) 0.593023255814 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.455149501661 (15.0, 4.0, 32.0, 5.0) 0.796511627907 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- no10(C,A) [0.455149501661]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.455149501661
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.455149501661
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.312292358804
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.273255813953
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.197674418605
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.197674418605
+[DEBUG] rnvc10(A,B) :- some10(C,A) 0.0
+[DEBUG] rnvc10(A,B) :- some10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.0
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- no10(C,A), all10(B,C) 0.593023255814 (13.0, 1.0, 35.0, 7.0) 0.593023255814 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A), all10(B,C) (0.5930232558139534, 13.0) > (0.45514950166112955, 15.0)
+[LVL9] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.531007751938 (15.0, 3.0, 33.0, 5.0) 0.796511627907 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.531007751938 (15.0, 3.0, 33.0, 5.0) 0.796511627907 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.531007751938 (15.0, 3.0, 33.0, 5.0) 0.796511627907 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.531007751938 (15.0, 3.0, 33.0, 5.0) 0.796511627907 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.531007751938 (15.0, 3.0, 33.0, 5.0) 0.796511627907 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.531007751938 (15.0, 3.0, 33.0, 5.0) 0.796511627907 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.364341085271 (14.0, 4.0, 32.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.364341085271 (14.0, 4.0, 32.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.364341085271 (14.0, 4.0, 32.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.364341085271 (14.0, 4.0, 32.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.312292358804 (14.0, 5.0, 31.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.312292358804 (14.0, 5.0, 31.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.312292358804 (14.0, 5.0, 31.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.312292358804 (14.0, 5.0, 31.0, 6.0) 0.728682170543 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.312292358804 (14.0, 5.0, 31.0, 6.0) 0.728682170543 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- no10(C,A), all10(B,C) [0.593023255814]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- no10(C,A), all10(B,C) 0.593023255814
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.531007751938
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.531007751938
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.531007751938
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.531007751938
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.531007751938
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.531007751938
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(A,C) 0.364341085271
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+some10(C,A) 0.364341085271
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+no10(A,C) 0.364341085271
+[DEBUG] rnvc10(A,B) :- all10(B,C), \+somenot10(C,A) 0.364341085271
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.312292358804
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.312292358804
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.312292358804
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.312292358804
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.312292358804
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- no10(C,A), all10(B,C) 0.857142857143
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.166666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.166666666667
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.270833333333 (15.0, 6.0, 30.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.2708333333333333, 15.0) > (0.16666666666666669, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.194444444444 (14.0, 5.0, 31.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.194444444444 (14.0, 5.0, 31.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.194444444444 (14.0, 5.0, 31.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,A) 0.0 (14.0, 8.0, 28.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,B) 0.166666666667 (14.0, 6.0, 30.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.361111111111 (15.0, 4.0, 32.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A) (0.3611111111111111, 15.0) > (0.2708333333333333, 15.0)
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.0 (14.0, 7.0, 29.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.166666666667 (14.0, 6.0, 30.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.452380952381 (16.0, 4.0, 32.0, 4.0) 0.791666666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B) (0.4523809523809524, 16.0) > (0.3611111111111111, 15.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B) [0.452380952381]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.452380952381
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.361111111111
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.270833333333
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.194444444444
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.194444444444
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.194444444444
+[DEBUG] rnvc10(A,B) :- some10(C,B) 0.166666666667
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.166666666667
+[DEBUG] rnvc10(A,B) :- some10(C,A) 0.0
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- somenot10(C,B), some10(C,A) 0.583333333333 (14.0, 1.0, 35.0, 6.0) 0.583333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B), some10(C,A) (0.5833333333333334, 14.0) > (0.4523809523809524, 16.0)
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.527777777778 (16.0, 3.0, 33.0, 4.0) 0.791666666667 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.527777777778 (16.0, 3.0, 33.0, 4.0) 0.791666666667 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.527777777778 (16.0, 3.0, 33.0, 4.0) 0.791666666667 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.433333333333 (15.0, 3.0, 33.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.433333333333 (15.0, 3.0, 33.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.433333333333 (15.0, 3.0, 33.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.309523809524 (15.0, 5.0, 31.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.309523809524 (15.0, 5.0, 31.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.309523809524 (15.0, 5.0, 31.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.309523809524 (15.0, 5.0, 31.0, 5.0) 0.722222222222 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.309523809524 (15.0, 5.0, 31.0, 5.0) 0.722222222222 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B), some10(C,A) [0.583333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), some10(C,A) 0.583333333333
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.527777777778
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.527777777778
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.527777777778
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.433333333333
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.433333333333
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.433333333333
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.309523809524
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.309523809524
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.309523809524
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.309523809524
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.309523809524
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- somenot10(C,B), some10(C,A) 0.875
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.146341463415]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.146341463415
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.268292682927 (16.0, 6.0, 30.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.2682926829268293, 16.0) > (0.14634146341463414, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.191056910569 (15.0, 5.0, 31.0, 5.0) 0.573170731707 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.191056910569 (15.0, 5.0, 31.0, 5.0) 0.573170731707 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.191056910569 (15.0, 5.0, 31.0, 5.0) 0.573170731707 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(C,B) 0.163763066202 (15.0, 6.0, 30.0, 5.0) 0.573170731707 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.357723577236 (16.0, 4.0, 32.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A) (0.35772357723577236, 16.0) > (0.2682926829268293, 16.0)
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.0 (15.0, 7.0, 29.0, 5.0) 0.573170731707 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.163763066202 (15.0, 6.0, 30.0, 5.0) 0.573170731707 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.357723577236 (16.0, 4.0, 32.0, 4.0) 0.715447154472 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- no10(C,A) [0.357723577236]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.357723577236
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.357723577236
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.268292682927
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.191056910569
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.191056910569
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.191056910569
+[DEBUG] rnvc10(A,B) :- some10(C,B) 0.163763066202
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.163763066202
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- no10(C,A), some10(C,B) 0.573170731707 (15.0, 1.0, 35.0, 5.0) 0.573170731707 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- no10(C,A), some10(C,B) (0.573170731707317, 15.0) > (0.35772357723577236, 16.0)
+[LVL9] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.429268292683 (16.0, 3.0, 33.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.429268292683 (16.0, 3.0, 33.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.429268292683 (16.0, 3.0, 33.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.429268292683 (16.0, 3.0, 33.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.429268292683 (16.0, 3.0, 33.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.429268292683 (16.0, 3.0, 33.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.306620209059 (16.0, 5.0, 31.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.306620209059 (16.0, 5.0, 31.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.306620209059 (16.0, 5.0, 31.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.306620209059 (16.0, 5.0, 31.0, 4.0) 0.715447154472 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.306620209059 (16.0, 5.0, 31.0, 4.0) 0.715447154472 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- no10(C,A), some10(C,B) [0.573170731707]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- no10(C,A), some10(C,B) 0.573170731707
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+some10(B,C) 0.429268292683
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(C,B) 0.429268292683
+[DEBUG] rnvc10(A,B) :- no10(C,A), \+no10(B,C) 0.429268292683
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.429268292683
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.429268292683
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.429268292683
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.306620209059
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.306620209059
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.306620209059
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.306620209059
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.306620209059
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- no10(C,A), some10(C,B) 0.892857142857
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.125]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.125
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.265625 (17.0, 6.0, 30.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.265625, 17.0) > (0.125, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.1875 (16.0, 5.0, 31.0, 4.0) 0.5625 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.1875 (16.0, 5.0, 31.0, 4.0) 0.5625 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.1875 (16.0, 5.0, 31.0, 4.0) 0.5625 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,A) 0.225 (16.0, 4.0, 32.0, 4.0) 0.5625 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.140625 (16.0, 7.0, 29.0, 4.0) 0.5625 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.160714285714 (16.0, 6.0, 30.0, 4.0) 0.5625 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.354166666667 (17.0, 4.0, 32.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B) (0.3541666666666667, 17.0) > (0.265625, 17.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B) [0.354166666667]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.354166666667
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.265625
+[DEBUG] rnvc10(A,B) :- no10(C,A) 0.225
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.1875
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.1875
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.1875
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.160714285714
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.140625
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- somenot10(C,B), no10(C,A) 0.5625 (16.0, 1.0, 35.0, 4.0) 0.5625 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B), no10(C,A) (0.5625, 16.0) > (0.3541666666666667, 17.0)
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.425 (17.0, 3.0, 33.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.425 (17.0, 3.0, 33.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.425 (17.0, 3.0, 33.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.303571428571 (17.0, 5.0, 31.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.303571428571 (17.0, 5.0, 31.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.303571428571 (17.0, 5.0, 31.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.303571428571 (17.0, 5.0, 31.0, 3.0) 0.708333333333 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.303571428571 (17.0, 5.0, 31.0, 3.0) 0.708333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B), no10(C,A) [0.5625]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), no10(C,A) 0.5625
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+all10(A,C) 0.425
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+some10(A,C) 0.425
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), \+no10(A,C) 0.425
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.303571428571
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.303571428571
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.303571428571
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.303571428571
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.303571428571
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- somenot10(C,B), no10(C,A) 0.910714285714
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.102564102564]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.102564102564
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.262820512821 (18.0, 6.0, 30.0, 2.0) 0.700854700855 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.26282051282051283, 18.0) > (0.10256410256410256, 20.0)
+[LVL9] rnvc10(A,B) :- all10(B,C) 0.183760683761 (17.0, 5.0, 31.0, 3.0) 0.551282051282 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.183760683761 (17.0, 5.0, 31.0, 3.0) 0.551282051282 [ACCEPT]
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.183760683761 (17.0, 5.0, 31.0, 3.0) 0.551282051282 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.137820512821 (17.0, 7.0, 29.0, 3.0) 0.551282051282 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.157509157509 (17.0, 6.0, 30.0, 3.0) 0.551282051282 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.220512820513 (17.0, 4.0, 32.0, 3.0) 0.551282051282 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- all10(A,C) [0.262820512821]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.262820512821
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.220512820513
+[DEBUG] rnvc10(A,B) :- all10(B,C) 0.183760683761
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.183760683761
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.183760683761
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.157509157509
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.137820512821
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C), all10(B,C) 0.551282051282 (17.0, 1.0, 35.0, 3.0) 0.551282051282 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C), all10(B,C) (0.5512820512820513, 17.0) > (0.26282051282051283, 18.0)
+[LVL9] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.300366300366 (18.0, 5.0, 31.0, 2.0) 0.700854700855 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.300366300366 (18.0, 5.0, 31.0, 2.0) 0.700854700855 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.300366300366 (18.0, 5.0, 31.0, 2.0) 0.700854700855 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.300366300366 (18.0, 5.0, 31.0, 2.0) 0.700854700855 [ACCEPT]
+[LVL9] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.300366300366 (18.0, 5.0, 31.0, 2.0) 0.700854700855 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- all10(A,C), all10(B,C) [0.551282051282]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- all10(A,C), all10(B,C) 0.551282051282
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+all10(C,B) 0.300366300366
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+some10(C,B) 0.300366300366
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(C,B) 0.300366300366
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+no10(B,C) 0.300366300366
+[DEBUG] rnvc10(A,B) :- all10(A,C), \+somenot10(C,B) 0.300366300366
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- all10(A,C), all10(B,C) 0.928571428571
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.0789473684211]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.0789473684211
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.154135338346 (18.0, 6.0, 30.0, 2.0) 0.539473684211 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.15413533834586465, 18.0) > (0.07894736842105263, 20.0)
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.179824561404 (18.0, 5.0, 31.0, 2.0) 0.539473684211 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(C,A) (0.17982456140350878, 18.0) > (0.15413533834586465, 18.0)
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.179824561404 (18.0, 5.0, 31.0, 2.0) 0.539473684211 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.134868421053 (18.0, 7.0, 29.0, 2.0) 0.539473684211 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,A) 0.154135338346 (18.0, 6.0, 30.0, 2.0) 0.539473684211 [ACCEPT]
+[LVL9] rnvc10(A,B) :- somenot10(C,B) 0.215789473684 (18.0, 4.0, 32.0, 2.0) 0.539473684211 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B) (0.21578947368421053, 18.0) > (0.17982456140350878, 18.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B) [0.215789473684]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B) 0.215789473684
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.179824561404
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.179824561404
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.154135338346
+[DEBUG] rnvc10(A,B) :- somenot10(C,A) 0.154135338346
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.134868421053
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- somenot10(C,B), somenot10(C,A) 0.539473684211 (18.0, 1.0, 35.0, 2.0) 0.539473684211 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- somenot10(C,B), somenot10(C,A) (0.5394736842105263, 18.0) > (0.21578947368421053, 18.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- somenot10(C,B), somenot10(C,A) [0.539473684211]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- somenot10(C,B), somenot10(C,A) 0.539473684211
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- somenot10(C,B), somenot10(C,A) 0.946428571429
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.150579150579 (19.0, 6.0, 30.0, 1.0) 0.527027027027 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.15057915057915056, 19.0) > (0.0, 20.0)
+[LVL9] rnvc10(A,B) :- all10(C,A) 0.175675675676 (19.0, 5.0, 31.0, 1.0) 0.527027027027 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(C,A) (0.17567567567567566, 19.0) > (0.15057915057915056, 19.0)
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.175675675676 (19.0, 5.0, 31.0, 1.0) 0.527027027027 [ACCEPT]
+[LVL9] rnvc10(A,B) :- no10(C,B) 0.131756756757 (19.0, 7.0, 29.0, 1.0) 0.527027027027 [ACCEPT]
+[DEBUG] Best rule so far: rnvc10(A,B) :- all10(C,A) [0.175675675676]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- all10(C,A) 0.175675675676
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.175675675676
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.150579150579
+[DEBUG] rnvc10(A,B) :- no10(C,B) 0.131756756757
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(C,A), no10(C,B) 0.527027027027 (19.0, 1.0, 35.0, 1.0) 0.527027027027 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(C,A), no10(C,B) (0.527027027027027, 19.0) > (0.17567567567567566, 19.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- all10(C,A), no10(C,B) [0.527027027027]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- all10(C,A), no10(C,B) 0.527027027027
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- all10(C,A), no10(C,B) 0.964285714286
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.0277777777778]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.0277777777778
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- all10(A,C) 0.146825396825 (20.0, 6.0, 30.0, 0.0) 0.513888888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- all10(A,C) (0.1468253968253968, 20.0) > (0.027777777777777776, 20.0)
+[LVL9] rnvc10(A,B) :- some10(B,C) 0.171296296296 (20.0, 5.0, 31.0, 0.0) 0.513888888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- some10(B,C) (0.17129629629629628, 20.0) > (0.1468253968253968, 20.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- some10(B,C) [0.171296296296]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- some10(B,C) 0.171296296296
+[DEBUG] rnvc10(A,B) :- all10(A,C) 0.146825396825
+[DEBUG] ==================================
+[LVL9] rnvc10(A,B) :- some10(B,C), all10(A,C) 0.513888888889 (20.0, 1.0, 35.0, 0.0) 0.513888888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc10(A,B) :- some10(B,C), all10(A,C) (0.5138888888888888, 20.0) > (0.17129629629629628, 20.0)
+[DEBUG] Best rule so far: rnvc10(A,B) :- some10(B,C), all10(A,C) [0.513888888889]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- some10(B,C), all10(A,C) 0.513888888889
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- some10(B,C), all10(A,C) 0.982142857143
+[DEBUG] Best rule so far: rnvc10(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc10(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc10(A,B) :- true 0.982142857143

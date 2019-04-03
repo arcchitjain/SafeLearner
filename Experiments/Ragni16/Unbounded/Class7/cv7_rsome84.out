@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_84.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rsome84.log
+              target:	rsome84/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome84(A,B) :- no84(A,C), \+some84(B,C), \+no84(C,B), \+no84(B,C), \+all84(B,C), \+some84(C,B)
+rsome84(A,B) :- all84(B,C), some84(C,A)
+rsome84(A,B) :- no84(C,A), no84(B,C)
+rsome84(A,B) :- somenot84(B,C), some84(A,C)
+rsome84(A,B) :- all84(C,A), some84(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.890909090909
+           Precision:	 1.0
+              Recall:	 0.478260869565
+================== STATISTICS ==================
+    Rule evaluations:	119821
+          Total time:	7086.0913s

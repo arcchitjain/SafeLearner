@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_113.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsome113.log
+              target:	rsome113/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome113(A,B) :- somenot113(C,A), \+some113(C,B), \+no113(C,B), \+no113(B,C), \+somenot113(C,B), \+somenot113(B,C), \+all113(C,B)
+rsome113(A,B) :- some113(C,B), all113(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.894736842105
+           Precision:	 1.0
+              Recall:	 0.2
+================== STATISTICS ==================
+    Rule evaluations:	63679
+          Total time:	2152.2787s

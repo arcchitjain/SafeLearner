@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_44.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc44.log
+              target:	rnvc44/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc44(A,B) :- somenot44(A,C), \+no44(B,C)
+rnvc44(A,B) :- somenot44(B,C), \+some44(A,C)
+rnvc44(A,B) :- somenot44(C,B), \+all44(C,A)
+rnvc44(A,B) :- some44(C,B), \+all44(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.844827586207
+           Precision:	 0.954545454545
+              Recall:	 0.724137931034
+================== STATISTICS ==================
+    Rule evaluations:	4824
+          Total time:	71.8875s

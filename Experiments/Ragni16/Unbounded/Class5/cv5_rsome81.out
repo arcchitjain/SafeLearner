@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_81.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rsome81.log
+              target:	rsome81/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome81(A,B) :- some81(C,A), no81(C,B)
+rsome81(A,B) :- some81(B,C), all81(A,C)
+rsome81(A,B) :- all81(C,B), some81(A,C)
+rsome81(A,B) :- no81(B,C), no81(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.833333333333
+           Precision:	 1.0
+              Recall:	 0.181818181818
+================== STATISTICS ==================
+    Rule evaluations:	137607
+          Total time:	6275.8665s

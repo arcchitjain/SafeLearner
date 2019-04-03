@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class3/cv3_train_70.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class3/cv3_rsomenot70.log
+              target:	rsomenot70/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot70(A,B) :- some70(C,B), all70(C,A)
+rsomenot70(A,B) :- some70(B,C), all70(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.879310344828
+           Precision:	 1.0
+              Recall:	 0.125
+================== STATISTICS ==================
+    Rule evaluations:	72052
+          Total time:	2416.1787s

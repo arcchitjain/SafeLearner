@@ -1,0 +1,22 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_98.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rsomenot98.log
+              target:	rsomenot98/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot98(A,B) :- somenot98(C,A), all98(B,C)
+rsomenot98(A,B) :- some98(C,B), no98(C,A)
+rsomenot98(A,B) :- some98(C,A), some98(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.875
+           Precision:	 1.0
+              Recall:	 0.222222222222
+================== STATISTICS ==================
+    Rule evaluations:	58914
+          Total time:	735.0242s

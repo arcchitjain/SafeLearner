@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_93.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rsome93.log
+              target:	rsome93/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome93(A,B) :- some93(A,C), somenot93(B,C)
+rsome93(A,B) :- some93(C,B), somenot93(C,A)
+rsome93(A,B) :- all93(C,B), somenot93(A,C)
+rsome93(A,B) :- some93(B,C), all93(C,A)
+rsome93(A,B) :- some93(C,B), all93(C,A)
+rsome93(A,B) :- some93(A,C), all93(B,C)
+rsome93(A,B) :- no93(C,B), somenot93(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.888888888889
+           Precision:	 1.0
+              Recall:	 0.454545454545
+================== STATISTICS ==================
+    Rule evaluations:	8784
+          Total time:	172.6987s

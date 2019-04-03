@@ -1,0 +1,792 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.771316676922
+[INFO] Computing scores: 0.0182s
+[INFO] Number of examples (M): 58
+[INFO] Positive weight (P): 14.0000
+[INFO] Negative weight (N): 44.0000
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.241379310345]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.241379310345
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(A,C) (0.2801724137931034, 2.0) > (0.2413793103448276, 14.0)
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B) 0.360153256705 (3.0, 5.0, 39.0, 11.0) 0.810344827586 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,B) (0.36015325670498083, 3.0) > (0.2801724137931034, 2.0)
+[LVL9] rnvc98(A,B) :- some98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.0 (1.0, 5.0, 39.0, 13.0) 0.620689655172 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C) 0.249042145594 (2.0, 6.0, 38.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.249042145594 (2.0, 6.0, 38.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,B) 0.605911330049 (4.0, 2.0, 42.0, 10.0) 0.848275862069 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- no98(C,B) (0.605911330049261, 4.0) > (0.36015325670498083, 3.0)
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.249042145594 (2.0, 6.0, 38.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.249042145594 (2.0, 6.0, 38.0, 12.0) 0.747126436782 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- no98(C,B) [0.605911330049]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- no98(C,B) 0.605911330049
+[DEBUG] rnvc98(A,B) :- all98(C,B) 0.360153256705
+[DEBUG] rnvc98(A,B) :- all98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- some98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(A,C) 0.249042145594
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.249042145594
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.249042145594
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.249042145594
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- no98(C,B), all98(C,A) 0.620689655172 (1.0, 0.0, 44.0, 13.0) 0.620689655172 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc98(A,B) :- no98(C,B), all98(C,A) (0.6206896551724138, 1.0) > (0.605911330049261, 4.0)
+[LVL9] rnvc98(A,B) :- no98(C,B), \+some98(C,A) 0.706896551724 (4.0, 1.0, 43.0, 10.0) 0.848275862069 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- no98(C,B), \+some98(C,A) (0.7068965517241379, 4.0) > (0.6206896551724138, 1.0)
+[LVL9] rnvc98(A,B) :- no98(C,B), \+somenot98(C,A) 0.706896551724 (4.0, 1.0, 43.0, 10.0) 0.848275862069 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.405172413793 (3.0, 4.0, 40.0, 11.0) 0.810344827586 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.405172413793 (3.0, 4.0, 40.0, 11.0) 0.810344827586 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.405172413793 (3.0, 4.0, 40.0, 11.0) 0.810344827586 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.405172413793 (3.0, 4.0, 40.0, 11.0) 0.810344827586 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.405172413793 (3.0, 4.0, 40.0, 11.0) 0.810344827586 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+all98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+some98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+some98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+no98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+somenot98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,A), \+all98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,A), \+all98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,A), \+some98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,A), \+somenot98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,A), \+somenot98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(A,C), \+all98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(A,C), \+all98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(A,C), \+some98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(A,C), \+no98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(A,C), \+somenot98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C), \+all98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C), \+all98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C), \+some98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C), \+no98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C), \+somenot98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+all98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+some98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+some98(B,C) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+no98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+somenot98(C,B) 0.320197044335 (2.0, 4.0, 40.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C), \+all98(B,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C), \+some98(C,B) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C), \+some98(B,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C), \+no98(B,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C), \+somenot98(C,B) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C), \+somenot98(B,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+all98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+some98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+some98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+no98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+no98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+somenot98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.280172413793 (2.0, 5.0, 39.0, 12.0) 0.747126436782 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- no98(C,B), \+some98(C,A) [0.706896551724]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- no98(C,B), \+some98(C,A) 0.706896551724
+[DEBUG] rnvc98(A,B) :- no98(C,B), \+somenot98(C,A) 0.706896551724
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.405172413793
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.405172413793
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.405172413793
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.405172413793
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.405172413793
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+all98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+some98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+some98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+no98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+somenot98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(C,A), \+all98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(C,A), \+all98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(C,A), \+some98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(C,A), \+somenot98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- all98(C,A), \+somenot98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- some98(A,C), \+all98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- some98(A,C), \+all98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- some98(A,C), \+some98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- some98(A,C), \+no98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- some98(A,C), \+somenot98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(A,C), \+all98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(A,C), \+all98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(A,C), \+some98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(A,C), \+no98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(A,C), \+somenot98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+all98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+some98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+some98(B,C) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+no98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+somenot98(C,B) 0.320197044335
+[DEBUG] rnvc98(A,B) :- no98(A,C), \+all98(B,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(A,C), \+some98(C,B) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(A,C), \+some98(B,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(A,C), \+no98(B,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(A,C), \+somenot98(C,B) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(A,C), \+somenot98(B,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+all98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+some98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+some98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+no98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+no98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+somenot98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.280172413793
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.280172413793
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- no98(C,B), \+some98(C,A) 0.810344827586
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.188679245283]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.188679245283
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(A,C) (0.27358490566037735, 6.0) > (0.18867924528301888, 14.0)
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.0 (5.0, 6.0, 38.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B) 0.35429769392 (7.0, 6.0, 38.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,B) (0.35429769392033544, 7.0) > (0.27358490566037735, 6.0)
+[LVL9] rnvc98(A,B) :- some98(A,C) 0.0 (5.0, 6.0, 38.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.0 (5.0, 6.0, 38.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C) 0.0 (5.0, 7.0, 37.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.243186582809 (6.0, 7.0, 37.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.0 (5.0, 6.0, 38.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.243186582809 (6.0, 7.0, 37.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.243186582809 (6.0, 7.0, 37.0, 8.0) 0.729559748428 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- all98(C,B) [0.35429769392]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- all98(C,B) 0.35429769392
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.312668463612
+[DEBUG] rnvc98(A,B) :- all98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.243186582809
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.243186582809
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.243186582809
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.0
+[DEBUG] rnvc98(A,B) :- some98(A,C) 0.0
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.0
+[DEBUG] rnvc98(A,B) :- no98(A,C) 0.0
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(C,B), all98(A,C) 0.594339622642 (5.0, 1.0, 43.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,B), all98(A,C) (0.5943396226415094, 5.0) > (0.35429769392033544, 7.0)
+[LVL9] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.39858490566 (7.0, 5.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.39858490566 (7.0, 5.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.39858490566 (7.0, 5.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.39858490566 (7.0, 5.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.39858490566 (7.0, 5.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+all98(C,B) 0.364779874214 (6.0, 4.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+some98(C,B) 0.364779874214 (6.0, 4.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+some98(B,C) 0.364779874214 (6.0, 4.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+somenot98(C,B) 0.364779874214 (6.0, 4.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+all98(B,C) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+some98(C,B) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+some98(B,C) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+no98(B,C) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(A,C), \+somenot98(C,B) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.312668463612 (6.0, 5.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+all98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+some98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+some98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+no98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+no98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+somenot98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.27358490566 (6.0, 6.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- all98(C,B), all98(A,C) [0.594339622642]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- all98(C,B), all98(A,C) 0.594339622642
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.39858490566
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.39858490566
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.39858490566
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.39858490566
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.39858490566
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+all98(C,B) 0.364779874214
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+some98(C,B) 0.364779874214
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+some98(B,C) 0.364779874214
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+somenot98(C,B) 0.364779874214
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+all98(B,C) 0.312668463612
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+some98(C,B) 0.312668463612
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+some98(B,C) 0.312668463612
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+no98(B,C) 0.312668463612
+[DEBUG] rnvc98(A,B) :- all98(A,C), \+somenot98(C,B) 0.312668463612
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.312668463612
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.312668463612
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.312668463612
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.312668463612
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.312668463612
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+all98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+some98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+some98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+no98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+no98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+somenot98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.27358490566
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.27358490566
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- all98(C,B), all98(A,C) 0.827586206897
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.173076923077]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.173076923077
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(A,C) 0.0 (6.0, 6.0, 38.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.0 (6.0, 6.0, 38.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,B) (0.27163461538461536, 7.0) > (0.17307692307692307, 14.0)
+[LVL9] rnvc98(A,B) :- some98(A,C) 0.0 (6.0, 6.0, 38.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.0 (6.0, 6.0, 38.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C) 0.0 (6.0, 7.0, 37.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.241452991453 (7.0, 7.0, 37.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.0 (6.0, 6.0, 38.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.241452991453 (7.0, 7.0, 37.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(C,A) (0.3104395604395604, 7.0) > (0.27163461538461536, 7.0)
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.241452991453 (7.0, 7.0, 37.0, 7.0) 0.724358974359 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(C,A) [0.31043956044]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.31043956044
+[DEBUG] rnvc98(A,B) :- all98(C,B) 0.271634615385
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.241452991453
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.241452991453
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.241452991453
+[DEBUG] rnvc98(A,B) :- all98(A,C) 0.0
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.0
+[DEBUG] rnvc98(A,B) :- some98(A,C) 0.0
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.0
+[DEBUG] rnvc98(A,B) :- no98(A,C) 0.0
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- somenot98(C,A), no98(B,C) 0.586538461538 (6.0, 1.0, 43.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(C,A), no98(B,C) (0.5865384615384616, 6.0) > (0.3104395604395604, 7.0)
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+all98(C,B) 0.362179487179 (7.0, 4.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+some98(C,B) 0.362179487179 (7.0, 4.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+some98(B,C) 0.362179487179 (7.0, 4.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A), \+somenot98(C,B) 0.362179487179 (7.0, 4.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.31043956044 (7.0, 5.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+all98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+some98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+some98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+no98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+no98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C), \+somenot98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.271634615385 (7.0, 6.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(C,A), no98(B,C) [0.586538461538]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), no98(B,C) 0.586538461538
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+all98(C,B) 0.362179487179
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+some98(C,B) 0.362179487179
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+some98(B,C) 0.362179487179
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), \+somenot98(C,B) 0.362179487179
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.31043956044
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.31043956044
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.31043956044
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.31043956044
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.31043956044
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.31043956044
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.31043956044
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.31043956044
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.31043956044
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.31043956044
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+all98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+some98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+some98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+no98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+no98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- no98(B,C), \+somenot98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.271634615385
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.271634615385
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- somenot98(C,A), no98(B,C) 0.844827586207
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.156862745098]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.156862745098
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(A,C) 0.165266106443 (7.0, 6.0, 38.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(A,C) (0.16526610644257703, 7.0) > (0.1568627450980392, 14.0)
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.165266106443 (7.0, 6.0, 38.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,B) (0.2696078431372549, 8.0) > (0.16526610644257703, 7.0)
+[LVL9] rnvc98(A,B) :- some98(A,C) 0.165266106443 (7.0, 6.0, 38.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.165266106443 (7.0, 6.0, 38.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(A,C) 0.0 (7.0, 7.0, 37.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.0 (7.0, 7.0, 37.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.165266106443 (7.0, 6.0, 38.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.239651416122 (8.0, 7.0, 37.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.192810457516 (7.0, 5.0, 39.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.239651416122 (8.0, 7.0, 37.0, 6.0) 0.718954248366 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- all98(C,B) [0.269607843137]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- all98(C,B) 0.269607843137
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.239651416122
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.239651416122
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.192810457516
+[DEBUG] rnvc98(A,B) :- all98(A,C) 0.165266106443
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.165266106443
+[DEBUG] rnvc98(A,B) :- some98(A,C) 0.165266106443
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.165266106443
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.165266106443
+[DEBUG] rnvc98(A,B) :- no98(A,C) 0.0
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(C,B), no98(A,C) 0.578431372549 (7.0, 1.0, 43.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,B), no98(A,C) (0.5784313725490196, 7.0) > (0.2696078431372549, 8.0)
+[LVL9] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.3081232493 (8.0, 5.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.269607843137 (8.0, 6.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- all98(C,B), no98(A,C) [0.578431372549]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- all98(C,B), no98(A,C) 0.578431372549
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+all98(C,A) 0.3081232493
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(A,C) 0.3081232493
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+some98(C,A) 0.3081232493
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(A,C) 0.3081232493
+[DEBUG] rnvc98(A,B) :- all98(C,B), \+somenot98(C,A) 0.3081232493
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.3081232493
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.3081232493
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.3081232493
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.3081232493
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.3081232493
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.269607843137
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.269607843137
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- all98(C,B), no98(A,C) 0.862068965517
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(A,C) 0.162857142857 (8.0, 6.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(A,C) (0.16285714285714287, 8.0) > (0.0, 14.0)
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.162857142857 (8.0, 6.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc98(A,B) :- all98(C,B) 0.162857142857 (8.0, 6.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(A,C) 0.162857142857 (8.0, 6.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.162857142857 (8.0, 6.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.1425 (8.0, 7.0, 37.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- no98(C,A) (0.2675, 9.0) > (0.16285714285714287, 8.0)
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.162857142857 (8.0, 6.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.237777777778 (9.0, 7.0, 37.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.19 (8.0, 5.0, 39.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.237777777778 (9.0, 7.0, 37.0, 5.0) 0.713333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- no98(C,A) [0.2675]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.237777777778
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.237777777778
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.19
+[DEBUG] rnvc98(A,B) :- all98(A,C) 0.162857142857
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.162857142857
+[DEBUG] rnvc98(A,B) :- all98(C,B) 0.162857142857
+[DEBUG] rnvc98(A,B) :- some98(A,C) 0.162857142857
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.162857142857
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.162857142857
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.1425
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- no98(C,A), all98(C,B) 0.57 (8.0, 1.0, 43.0, 6.0) 0.57 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- no98(C,A), all98(C,B) (0.5700000000000001, 8.0) > (0.2675, 9.0)
+[LVL9] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.305714285714 (9.0, 5.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.305714285714 (9.0, 5.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.305714285714 (9.0, 5.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.305714285714 (9.0, 5.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.305714285714 (9.0, 5.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.2675 (9.0, 6.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- no98(C,A), all98(C,B) [0.57]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- no98(C,A), all98(C,B) 0.57
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+all98(B,C) 0.305714285714
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+some98(B,C) 0.305714285714
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+no98(B,C) 0.305714285714
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(C,B) 0.305714285714
+[DEBUG] rnvc98(A,B) :- no98(C,A), \+somenot98(B,C) 0.305714285714
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.2675
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.2675
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- no98(C,A), all98(C,B) 0.879310344828
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.122448979592]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.122448979592
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(A,C) 0.160349854227 (9.0, 6.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(A,C) (0.16034985422740525, 9.0) > (0.12244897959183673, 14.0)
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.160349854227 (9.0, 6.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(A,C) 0.160349854227 (9.0, 6.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.160349854227 (9.0, 6.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.140306122449 (9.0, 7.0, 37.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.160349854227 (9.0, 6.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.160349854227 (9.0, 6.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.235827664399 (10.0, 7.0, 37.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(B,C) (0.23582766439909297, 10.0) > (0.16034985422740525, 9.0)
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.187074829932 (9.0, 5.0, 39.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.235827664399 (10.0, 7.0, 37.0, 4.0) 0.707482993197 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(B,C) [0.235827664399]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.235827664399
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.235827664399
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.187074829932
+[DEBUG] rnvc98(A,B) :- all98(A,C) 0.160349854227
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.160349854227
+[DEBUG] rnvc98(A,B) :- some98(A,C) 0.160349854227
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.160349854227
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.160349854227
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.160349854227
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.140306122449
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- somenot98(B,C), all98(A,C) 0.561224489796 (9.0, 1.0, 43.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(B,C), all98(A,C) (0.5612244897959183, 9.0) > (0.23582766439909297, 10.0)
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.265306122449 (10.0, 6.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(B,C), all98(A,C) [0.561224489796]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), all98(A,C) 0.561224489796
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+all98(C,A) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(A,C) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+some98(C,A) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(A,C) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+no98(C,A) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(B,C), \+somenot98(A,C) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.265306122449
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.265306122449
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- somenot98(B,C), all98(A,C) 0.896551724138
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.104166666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.104166666667
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.157738095238 (10.0, 6.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,A) (0.15773809523809526, 10.0) > (0.10416666666666667, 14.0)
+[LVL9] rnvc98(A,B) :- some98(A,C) 0.157738095238 (10.0, 6.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.157738095238 (10.0, 6.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.138020833333 (10.0, 7.0, 37.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.157738095238 (10.0, 6.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.157738095238 (10.0, 6.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.138020833333 (10.0, 7.0, 37.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.184027777778 (10.0, 5.0, 39.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(C,A) (0.1840277777777778, 10.0) > (0.15773809523809526, 10.0)
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.233796296296 (11.0, 7.0, 37.0, 3.0) 0.701388888889 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(C,B) (0.23379629629629628, 11.0) > (0.1840277777777778, 10.0)
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(C,B) [0.233796296296]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.233796296296
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.184027777778
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.157738095238
+[DEBUG] rnvc98(A,B) :- some98(A,C) 0.157738095238
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.157738095238
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.157738095238
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.157738095238
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.138020833333
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.138020833333
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- somenot98(C,B), some98(A,C) 0.552083333333 (10.0, 1.0, 43.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(C,B), some98(A,C) (0.5520833333333334, 10.0) > (0.23379629629629628, 11.0)
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.263020833333 (11.0, 6.0, 38.0, 3.0) 0.701388888889 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.263020833333 (11.0, 6.0, 38.0, 3.0) 0.701388888889 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.263020833333 (11.0, 6.0, 38.0, 3.0) 0.701388888889 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.263020833333 (11.0, 6.0, 38.0, 3.0) 0.701388888889 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.263020833333 (11.0, 6.0, 38.0, 3.0) 0.701388888889 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.263020833333 (11.0, 6.0, 38.0, 3.0) 0.701388888889 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(C,B), some98(A,C) [0.552083333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), some98(A,C) 0.552083333333
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(A,C) 0.263020833333
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+all98(C,A) 0.263020833333
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+some98(C,A) 0.263020833333
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(A,C) 0.263020833333
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+no98(C,A) 0.263020833333
+[DEBUG] rnvc98(A,B) :- somenot98(C,B), \+somenot98(C,A) 0.263020833333
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- somenot98(C,B), some98(A,C) 0.913793103448
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.0851063829787]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.0851063829787
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.155015197568 (11.0, 6.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,A) (0.15501519756838905, 11.0) > (0.0851063829787234, 14.0)
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.155015197568 (11.0, 6.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.135638297872 (11.0, 7.0, 37.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.155015197568 (11.0, 6.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.155015197568 (11.0, 6.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(B,C) 0.135638297872 (11.0, 7.0, 37.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,A) 0.18085106383 (11.0, 5.0, 39.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(C,A) (0.18085106382978722, 11.0) > (0.15501519756838905, 11.0)
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.135638297872 (11.0, 7.0, 37.0, 3.0) 0.542553191489 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(C,A) [0.18085106383]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(C,A) 0.18085106383
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.155015197568
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.155015197568
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.155015197568
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.155015197568
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.135638297872
+[DEBUG] rnvc98(A,B) :- somenot98(B,C) 0.135638297872
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.135638297872
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- somenot98(C,A), somenot98(B,C) 0.542553191489 (11.0, 1.0, 43.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(C,A), somenot98(B,C) (0.5425531914893617, 11.0) > (0.18085106382978722, 11.0)
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(C,A), somenot98(B,C) [0.542553191489]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(C,A), somenot98(B,C) 0.542553191489
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- somenot98(C,A), somenot98(B,C) 0.931034482759
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.0652173913043]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.0652173913043
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(C,A) 0.152173913043 (12.0, 6.0, 38.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,A) (0.15217391304347827, 12.0) > (0.06521739130434782, 14.0)
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.152173913043 (12.0, 6.0, 38.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(B,C) 0.133152173913 (12.0, 7.0, 37.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.152173913043 (12.0, 6.0, 38.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.152173913043 (12.0, 6.0, 38.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.133152173913 (12.0, 7.0, 37.0, 2.0) 0.532608695652 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- all98(C,A) [0.152173913043]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- all98(C,A) 0.152173913043
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.152173913043
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.152173913043
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.152173913043
+[DEBUG] rnvc98(A,B) :- no98(B,C) 0.133152173913
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.133152173913
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- all98(C,A), no98(B,C) 0.532608695652 (12.0, 1.0, 43.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- all98(C,A), no98(B,C) (0.532608695652174, 12.0) > (0.15217391304347827, 12.0)
+[DEBUG] Best rule so far: rnvc98(A,B) :- all98(C,A), no98(B,C) [0.532608695652]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- all98(C,A), no98(B,C) 0.532608695652
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- all98(C,A), no98(B,C) 0.948275862069
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- some98(C,B) 0.149206349206 (13.0, 6.0, 38.0, 1.0) 0.522222222222 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- some98(C,B) (0.1492063492063492, 13.0) > (0.0, 14.0)
+[LVL9] rnvc98(A,B) :- no98(C,A) 0.149206349206 (13.0, 6.0, 38.0, 1.0) 0.522222222222 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.149206349206 (13.0, 6.0, 38.0, 1.0) 0.522222222222 [ACCEPT]
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.130555555556 (13.0, 7.0, 37.0, 1.0) 0.522222222222 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- some98(C,B) [0.149206349206]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- some98(C,B) 0.149206349206
+[DEBUG] rnvc98(A,B) :- no98(C,A) 0.149206349206
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.149206349206
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.130555555556
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- some98(C,B), no98(C,A) 0.522222222222 (13.0, 1.0, 43.0, 1.0) 0.522222222222 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- some98(C,B), no98(C,A) (0.5222222222222223, 13.0) > (0.1492063492063492, 13.0)
+[DEBUG] Best rule so far: rnvc98(A,B) :- some98(C,B), no98(C,A) [0.522222222222]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- some98(C,B), no98(C,A) 0.522222222222
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- some98(C,B), no98(C,A) 0.965517241379
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.0227272727273]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.0227272727273
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- somenot98(A,C) 0.146103896104 (14.0, 6.0, 38.0, 0.0) 0.511363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(A,C) (0.1461038961038961, 14.0) > (0.022727272727272728, 14.0)
+[LVL9] rnvc98(A,B) :- somenot98(C,B) 0.127840909091 (14.0, 7.0, 37.0, 0.0) 0.511363636364 [ACCEPT]
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(A,C) [0.146103896104]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(A,C) 0.146103896104
+[DEBUG] rnvc98(A,B) :- somenot98(C,B) 0.127840909091
+[DEBUG] ==================================
+[LVL9] rnvc98(A,B) :- somenot98(A,C), somenot98(C,B) 0.511363636364 (14.0, 1.0, 43.0, 0.0) 0.511363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc98(A,B) :- somenot98(A,C), somenot98(C,B) (0.5113636363636364, 14.0) > (0.1461038961038961, 14.0)
+[DEBUG] Best rule so far: rnvc98(A,B) :- somenot98(A,C), somenot98(C,B) [0.511363636364]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- somenot98(A,C), somenot98(C,B) 0.511363636364
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- somenot98(A,C), somenot98(C,B) 0.98275862069
+[DEBUG] Best rule so far: rnvc98(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc98(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc98(A,B) :- true 0.98275862069

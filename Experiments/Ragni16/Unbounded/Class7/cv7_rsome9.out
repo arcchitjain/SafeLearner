@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_9.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rsome9.log
+              target:	rsome9/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome9(A,B) :- somenot9(C,A), somenot9(B,C)
+rsome9(A,B) :- all9(B,C), somenot9(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.905172413793
+           Precision:	 1.0
+              Recall:	 0.153846153846
+================== STATISTICS ==================
+    Rule evaluations:	47786
+          Total time:	4147.1855s

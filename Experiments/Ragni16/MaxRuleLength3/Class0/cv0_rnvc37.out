@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_37.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc37.log
+              target:	rnvc37/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc37(A,B) :- no37(B,C)
+rnvc37(A,B) :- somenot37(B,C)
+rnvc37(A,B) :- some37(C,B), \+no37(C,A)
+rnvc37(A,B) :- no37(C,B), \+all37(A,C)
+rnvc37(A,B) :- somenot37(C,B), \+all37(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.766666666667
+           Precision:	 1.0
+              Recall:	 0.72
+================== STATISTICS ==================
+    Rule evaluations:	3818
+          Total time:	54.2359s

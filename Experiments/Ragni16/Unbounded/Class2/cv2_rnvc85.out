@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_85.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc85.log
+              target:	rnvc85/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc85(A,B) :- no85(C,A), \+all85(B,C), \+some85(B,C)
+rnvc85(A,B) :- no85(A,C), \+all85(B,C)
+rnvc85(A,B) :- some85(A,C), \+all85(C,B), \+no85(C,B), \+no85(B,C)
+rnvc85(A,B) :- somenot85(C,A), \+all85(B,C), \+some85(B,C)
+rnvc85(A,B) :- some85(C,A), \+all85(B,C), \+some85(B,C)
+rnvc85(A,B) :- somenot85(A,C), \+all85(B,C), \+no85(B,C)
+rnvc85(A,B) :- all85(A,C), \+all85(C,B), \+some85(C,B), \+no85(C,B), \+no85(B,C), \+somenot85(C,B), \+somenot85(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.980769230769
+           Precision:	 1.0
+              Recall:	 0.965517241379
+================== STATISTICS ==================
+    Rule evaluations:	9718
+          Total time:	333.9389s

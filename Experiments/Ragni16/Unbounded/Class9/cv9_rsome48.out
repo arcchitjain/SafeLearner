@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_48.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsome48.log
+              target:	rsome48/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome48(A,B) :- somenot48(B,C), \+no48(C,A), \+all48(A,C), \+some48(A,C), \+somenot48(C,A)
+rsome48(A,B) :- somenot48(C,A), some48(C,B)
+rsome48(A,B) :- somenot48(C,B), no48(C,A)
+rsome48(A,B) :- all48(B,C), \+all48(A,C), \+all48(C,A), \+some48(A,C), \+no48(C,A), \+no48(A,C)
+rsome48(A,B) :- no48(A,C), some48(C,B)
+rsome48(A,B) :- all48(C,A), some48(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.901960784314
+           Precision:	 0.923076923077
+              Recall:	 0.571428571429
+================== STATISTICS ==================
+    Rule evaluations:	78937
+          Total time:	1140.0873s

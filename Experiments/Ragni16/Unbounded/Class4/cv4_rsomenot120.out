@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_120.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsomenot120.log
+              target:	rsomenot120/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot120(A,B) :- somenot120(B,C), no120(A,C)
+rsomenot120(A,B) :- somenot120(C,A), no120(C,B)
+rsomenot120(A,B) :- some120(C,A), all120(C,B)
+rsomenot120(A,B) :- somenot120(C,B), some120(A,C)
+rsomenot120(A,B) :- some120(B,C), somenot120(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.822033898305
+           Precision:	 1.0
+              Recall:	 0.25
+================== STATISTICS ==================
+    Rule evaluations:	102728
+          Total time:	1446.0040s

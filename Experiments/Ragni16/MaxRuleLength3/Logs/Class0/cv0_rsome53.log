@@ -1,0 +1,1052 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.0710023376988
+[INFO] Computing scores: 0.1001s
+[INFO] Number of examples (M): 110
+[INFO] Positive weight (P): 19.0000
+[INFO] Negative weight (N): 91.0000
+[DEBUG] Best rule so far: rsome53(A,B) :- true [0.172727272727]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- true 0.172727272727
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- all53(A,C) 0.0 (1.0, 11.0, 80.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C) 0.244055944056 (3.0, 9.0, 82.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(B,C) (0.24405594405594405, 3.0) > (0.17272727272727273, 19.0)
+[LVL9] rsome53(A,B) :- all53(C,A) 0.0 (1.0, 10.0, 81.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B) 0.264393939394 (3.0, 8.0, 83.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(C,B) (0.2643939393939394, 3.0) > (0.24405594405594405, 3.0)
+[LVL9] rsome53(A,B) :- some53(A,C) 0.186631016043 (3.0, 13.0, 78.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(B,C) 0.0 (1.0, 15.0, 76.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A) 0.0 (2.0, 13.0, 78.0, 17.0) 0.724242424242 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B) 0.385795454545 (6.0, 9.0, 82.0, 13.0) 0.881818181818 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- some53(C,B) (0.38579545454545455, 6.0) > (0.2643939393939394, 3.0)
+[LVL9] rsome53(A,B) :- no53(A,C) 0.198295454545 (3.0, 12.0, 79.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C) 0.0 (2.0, 13.0, 78.0, 17.0) 0.724242424242 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(C,B) 0.0 (1.0, 14.0, 77.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C) 0.298051948052 (4.0, 9.0, 82.0, 15.0) 0.834545454545 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C) 0.0 (2.0, 11.0, 80.0, 17.0) 0.724242424242 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A) 0.369480519481 (5.0, 8.0, 83.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,B) 0.0 (1.0, 12.0, 79.0, 18.0) 0.586363636364 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- some53(C,B) [0.385795454545]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- some53(C,B) 0.385795454545
+[DEBUG] rsome53(A,B) :- somenot53(C,A) 0.369480519481
+[DEBUG] rsome53(A,B) :- somenot53(A,C) 0.298051948052
+[DEBUG] rsome53(A,B) :- all53(C,B) 0.264393939394
+[DEBUG] rsome53(A,B) :- all53(B,C) 0.244055944056
+[DEBUG] rsome53(A,B) :- no53(A,C) 0.198295454545
+[DEBUG] rsome53(A,B) :- some53(A,C) 0.186631016043
+[DEBUG] rsome53(A,B) :- some53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- some53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,A) 0.390909090909 (1.0, 1.0, 90.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- some53(C,B), all53(C,A) (0.39090909090909093, 1.0) > (0.38579545454545455, 6.0)
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,D) 0.390909090909 (1.0, 1.0, 90.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(D,A) 0.390909090909 (1.0, 1.0, 90.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,C) 0.390909090909 (1.0, 1.0, 90.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,D) 0.390909090909 (1.0, 1.0, 90.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(D,C) 0.390909090909 (1.0, 1.0, 90.0, 18.0) 0.586363636364 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), no53(A,C) 0.586363636364 (1.0, 0.0, 91.0, 18.0) 0.586363636364 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome53(A,B) :- some53(C,B), no53(A,C) (0.5863636363636364, 1.0) > (0.39090909090909093, 1.0)
+[LVL9] rsome53(A,B) :- some53(C,B), somenot53(C,A) 0.724242424242 (2.0, 0.0, 91.0, 17.0) 0.724242424242 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome53(A,B) :- some53(C,B), somenot53(C,A) (0.7242424242424242, 2.0) > (0.5863636363636364, 1.0)
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.440909090909 (6.0, 7.0, 84.0, 13.0) 0.881818181818 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.369480519481 (5.0, 8.0, 83.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.369480519481 (5.0, 8.0, 83.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.440909090909 (6.0, 7.0, 84.0, 13.0) 0.881818181818 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.440909090909 (6.0, 7.0, 84.0, 13.0) 0.881818181818 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.369480519481 (5.0, 8.0, 83.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.397902097902 (5.0, 7.0, 84.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.431060606061 (5.0, 6.0, 85.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.431060606061 (5.0, 6.0, 85.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+no53(B,C) 0.347727272727 (4.0, 7.0, 84.0, 15.0) 0.834545454545 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.431060606061 (5.0, 6.0, 85.0, 14.0) 0.862121212121 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.264393939394 (3.0, 8.0, 83.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.264393939394 (3.0, 8.0, 83.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.347727272727 (4.0, 7.0, 84.0, 15.0) 0.834545454545 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.264393939394 (3.0, 8.0, 83.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.264393939394 (3.0, 8.0, 83.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.320979020979 (4.0, 8.0, 83.0, 15.0) 0.834545454545 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.347727272727 (4.0, 7.0, 84.0, 15.0) 0.834545454545 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.288429752066 (3.0, 7.0, 84.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.317272727273 (3.0, 6.0, 85.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.317272727273 (3.0, 6.0, 85.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.288429752066 (3.0, 7.0, 84.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.264393939394 (3.0, 8.0, 83.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.288429752066 (3.0, 7.0, 84.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.288429752066 (3.0, 7.0, 84.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.264393939394 (3.0, 8.0, 83.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.226623376623 (3.0, 10.0, 81.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.226623376623 (3.0, 10.0, 81.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.226623376623 (3.0, 10.0, 81.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.226623376623 (3.0, 10.0, 81.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.226623376623 (3.0, 10.0, 81.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.211515151515 (3.0, 11.0, 80.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.211515151515 (3.0, 11.0, 80.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.211515151515 (3.0, 11.0, 80.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.211515151515 (3.0, 11.0, 80.0, 16.0) 0.793181818182 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.211515151515 (3.0, 11.0, 80.0, 16.0) 0.793181818182 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- some53(C,B), somenot53(C,A) [0.724242424242]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.440909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.440909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.440909090909
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.431060606061
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.431060606061
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.431060606061
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.397902097902
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,A) 0.390909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,D) 0.390909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(D,A) 0.390909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,C) 0.390909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,D) 0.390909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(D,C) 0.390909090909
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.369480519481
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.369480519481
+[DEBUG] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.369480519481
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+no53(B,C) 0.347727272727
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.347727272727
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.347727272727
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.320979020979
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.317272727273
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.317272727273
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.288429752066
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.288429752066
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.288429752066
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.288429752066
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.264393939394
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.264393939394
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.264393939394
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.264393939394
+[DEBUG] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.264393939394
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.264393939394
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.226623376623
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.226623376623
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.226623376623
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.226623376623
+[DEBUG] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.226623376623
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.211515151515
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.211515151515
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.211515151515
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.211515151515
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.211515151515
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome53(A,B) :- some53(C,B), somenot53(C,A) 0.845454545455
+[DEBUG] Best rule so far: rsome53(A,B) :- true [0.157407407407]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- true 0.157407407407
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- all53(A,C) 0.0 (3.0, 11.0, 80.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C) 0.242877492877 (5.0, 9.0, 82.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(B,C) (0.24287749287749288, 5.0) > (0.1574074074074074, 19.0)
+[LVL9] rsome53(A,B) :- all53(C,A) 0.0 (3.0, 10.0, 81.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(C,B) (0.2631172839506173, 5.0) > (0.24287749287749288, 5.0)
+[LVL9] rsome53(A,B) :- some53(A,C) 0.185729847495 (5.0, 13.0, 78.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(B,C) 0.0 (3.0, 15.0, 76.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A) 0.0 (4.0, 13.0, 78.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B) 0.296957671958 (6.0, 9.0, 82.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- some53(C,B) (0.296957671957672, 6.0) > (0.2631172839506173, 5.0)
+[LVL9] rsome53(A,B) :- no53(A,C) 0.197337962963 (5.0, 12.0, 79.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C) 0.0 (4.0, 13.0, 78.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(C,B) 0.0 (3.0, 14.0, 77.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C) 0.296957671958 (6.0, 9.0, 82.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,B) 0.0 (3.0, 12.0, 79.0, 16.0) 0.578703703704 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- some53(C,B) [0.296957671958]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- some53(C,B) 0.296957671958
+[DEBUG] rsome53(A,B) :- somenot53(A,C) 0.296957671958
+[DEBUG] rsome53(A,B) :- all53(C,B) 0.263117283951
+[DEBUG] rsome53(A,B) :- somenot53(C,A) 0.263117283951
+[DEBUG] rsome53(A,B) :- all53(B,C) 0.242877492877
+[DEBUG] rsome53(A,B) :- no53(A,C) 0.197337962963
+[DEBUG] rsome53(A,B) :- some53(A,C) 0.185729847495
+[DEBUG] rsome53(A,B) :- some53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- some53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,A) 0.385802469136 (3.0, 1.0, 90.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- some53(C,B), all53(C,A) (0.38580246913580246, 3.0) > (0.296957671957672, 6.0)
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,D) 0.385802469136 (3.0, 1.0, 90.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(D,A) 0.385802469136 (3.0, 1.0, 90.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,C) 0.385802469136 (3.0, 1.0, 90.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,D) 0.385802469136 (3.0, 1.0, 90.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(D,C) 0.385802469136 (3.0, 1.0, 90.0, 16.0) 0.578703703704 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), no53(A,C) 0.578703703704 (3.0, 0.0, 91.0, 16.0) 0.578703703704 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsome53(A,B) :- some53(C,B), no53(A,C) (0.5787037037037037, 3.0) > (0.38580246913580246, 3.0)
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.346450617284 (6.0, 7.0, 84.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.346450617284 (6.0, 7.0, 84.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.346450617284 (6.0, 7.0, 84.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.346450617284 (6.0, 7.0, 84.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.319800569801 (6.0, 8.0, 83.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.346450617284 (6.0, 7.0, 84.0, 13.0) 0.831481481481 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.287037037037 (5.0, 7.0, 84.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.315740740741 (5.0, 6.0, 85.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(A,C) 0.215740740741 (4.0, 7.0, 84.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(C,A) 0.215740740741 (4.0, 7.0, 84.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.315740740741 (5.0, 6.0, 85.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.287037037037 (5.0, 7.0, 84.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.287037037037 (5.0, 7.0, 84.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.315740740741 (5.0, 6.0, 85.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.315740740741 (5.0, 6.0, 85.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+no53(B,C) 0.215740740741 (4.0, 7.0, 84.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.315740740741 (5.0, 6.0, 85.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.196127946128 (4.0, 8.0, 83.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.196127946128 (4.0, 8.0, 83.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.287037037037 (5.0, 7.0, 84.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.287037037037 (5.0, 7.0, 84.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.196127946128 (4.0, 8.0, 83.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.263117283951 (5.0, 8.0, 83.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.225529100529 (5.0, 10.0, 81.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.225529100529 (5.0, 10.0, 81.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+some53(B,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.225529100529 (5.0, 10.0, 81.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.225529100529 (5.0, 10.0, 81.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+somenot53(C,B) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.225529100529 (5.0, 10.0, 81.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(C,B) 0.0 (4.0, 12.0, 79.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(B,C) 0.0 (4.0, 12.0, 79.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(C,B) 0.0 (4.0, 12.0, 79.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.21049382716 (5.0, 11.0, 80.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.21049382716 (5.0, 11.0, 80.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.21049382716 (5.0, 11.0, 80.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.21049382716 (5.0, 11.0, 80.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.21049382716 (5.0, 11.0, 80.0, 14.0) 0.789351851852 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(C,B) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(B,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(C,B) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(B,C) 0.0 (4.0, 12.0, 79.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(C,B) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(B,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(A,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(C,A) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+some53(A,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+some53(C,A) 0.0 (4.0, 12.0, 79.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(A,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(C,A) 0.0 (4.0, 11.0, 80.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+some53(A,C) 0.179783950617 (4.0, 9.0, 82.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+some53(C,A) 0.179783950617 (4.0, 9.0, 82.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+no53(A,C) 0.179783950617 (4.0, 9.0, 82.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+no53(C,A) 0.179783950617 (4.0, 9.0, 82.0, 15.0) 0.719135802469 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+somenot53(A,C) 0.179783950617 (4.0, 9.0, 82.0, 15.0) 0.719135802469 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- some53(C,B), no53(A,C) [0.578703703704]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,A) 0.385802469136
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,D) 0.385802469136
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(D,A) 0.385802469136
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,C) 0.385802469136
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,D) 0.385802469136
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(D,C) 0.385802469136
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.346450617284
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.346450617284
+[DEBUG] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.346450617284
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.346450617284
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.346450617284
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.319800569801
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.315740740741
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.315740740741
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.315740740741
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.315740740741
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.315740740741
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.287037037037
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.287037037037
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.287037037037
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.287037037037
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.287037037037
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.263117283951
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.263117283951
+[DEBUG] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.263117283951
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.263117283951
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.263117283951
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.263117283951
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.263117283951
+[DEBUG] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.263117283951
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.263117283951
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.225529100529
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.225529100529
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.225529100529
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.225529100529
+[DEBUG] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.225529100529
+[DEBUG] rsome53(A,B) :- all53(C,B), \+some53(A,C) 0.215740740741
+[DEBUG] rsome53(A,B) :- all53(C,B), \+some53(C,A) 0.215740740741
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+no53(B,C) 0.215740740741
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.21049382716
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.21049382716
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.21049382716
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.21049382716
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.21049382716
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.196127946128
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.196127946128
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.196127946128
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+some53(A,C) 0.179783950617
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+some53(C,A) 0.179783950617
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+no53(A,C) 0.179783950617
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+no53(C,A) 0.179783950617
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+somenot53(A,C) 0.179783950617
+[DEBUG] rsome53(A,B) :- no53(A,C), \+some53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(A,C), \+somenot53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(A,C), \+all53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(A,C), \+all53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(C,A), \+some53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(C,A), \+some53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- some53(C,A), \+no53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(C,A), \+no53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- some53(C,A), \+somenot53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(C,A), \+somenot53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C), \+all53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C), \+all53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C), \+some53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C), \+some53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C), \+no53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C), \+no53(C,A) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome53(A,B) :- some53(C,B), no53(A,C) 0.854545454545
+[DEBUG] Best rule so far: rsome53(A,B) :- true [0.14953271028]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- true 0.14953271028
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- all53(A,C) 0.0 (4.0, 11.0, 80.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C) 0.242271746945 (6.0, 9.0, 82.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(B,C) (0.24227174694464415, 6.0) > (0.14953271028037382, 19.0)
+[LVL9] rsome53(A,B) :- all53(C,A) 0.0 (4.0, 10.0, 81.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(C,B) (0.26246105919003115, 6.0) > (0.24227174694464415, 6.0)
+[LVL9] rsome53(A,B) :- some53(A,C) 0.185266630016 (6.0, 13.0, 78.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(B,C) 0.0 (4.0, 15.0, 76.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A) 0.0 (5.0, 13.0, 78.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B) 0.242271746945 (6.0, 9.0, 82.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C) 0.0 (5.0, 12.0, 79.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C) 0.0 (5.0, 13.0, 78.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(C,B) 0.0 (4.0, 14.0, 77.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C) 0.296395193591 (7.0, 9.0, 82.0, 12.0) 0.829906542056 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- somenot53(A,C) (0.2963951935914553, 7.0) > (0.26246105919003115, 6.0)
+[LVL9] rsome53(A,B) :- somenot53(B,C) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,B) 0.0 (4.0, 12.0, 79.0, 15.0) 0.57476635514 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- somenot53(A,C) [0.296395193591]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- somenot53(A,C) 0.296395193591
+[DEBUG] rsome53(A,B) :- all53(C,B) 0.26246105919
+[DEBUG] rsome53(A,B) :- somenot53(C,A) 0.26246105919
+[DEBUG] rsome53(A,B) :- all53(B,C) 0.242271746945
+[DEBUG] rsome53(A,B) :- some53(C,B) 0.242271746945
+[DEBUG] rsome53(A,B) :- some53(A,C) 0.185266630016
+[DEBUG] rsome53(A,B) :- somenot53(B,C) 0.153538050734
+[DEBUG] rsome53(A,B) :- some53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- no53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- some53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(B,C) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- somenot53(A,C), all53(B,C) (0.38317757009345793, 4.0) > (0.2963951935914553, 7.0)
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(B,D) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(D,C) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(C,B) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(C,D) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(D,B) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(C,B) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(B,C) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(C,D) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(B,D) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(D,C) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(D,B) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.345794392523 (7.0, 7.0, 84.0, 12.0) 0.829906542056 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.319194823868 (7.0, 8.0, 83.0, 12.0) 0.829906542056 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.345794392523 (7.0, 7.0, 84.0, 12.0) 0.829906542056 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(A,C) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(C,A) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(A,D) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(C,D) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(D,A) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(D,C) 0.383177570093 (4.0, 1.0, 90.0, 15.0) 0.57476635514 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), somenot53(C,A) 0.57476635514 (4.0, 0.0, 91.0, 15.0) 0.57476635514 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rsome53(A,B) :- all53(C,B), somenot53(C,A) (0.5747663551401869, 4.0) > (0.38317757009345793, 4.0)
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.314953271028 (6.0, 6.0, 85.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(A,C) 0.214953271028 (5.0, 7.0, 84.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(C,A) 0.214953271028 (5.0, 7.0, 84.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.314953271028 (6.0, 6.0, 85.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.314953271028 (6.0, 6.0, 85.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.314953271028 (6.0, 6.0, 85.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+no53(B,C) 0.214953271028 (5.0, 7.0, 84.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.314953271028 (6.0, 6.0, 85.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.195412064571 (5.0, 8.0, 83.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.195412064571 (5.0, 8.0, 83.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.195412064571 (5.0, 8.0, 83.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.26246105919 (6.0, 8.0, 83.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.195412064571 (5.0, 8.0, 83.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.195412064571 (5.0, 8.0, 83.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.28632115548 (6.0, 7.0, 84.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.195412064571 (5.0, 8.0, 83.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(C,B) 0.0 (5.0, 12.0, 79.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(B,C) 0.0 (5.0, 12.0, 79.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(C,B) 0.0 (5.0, 12.0, 79.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.209968847352 (6.0, 11.0, 80.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.209968847352 (6.0, 11.0, 80.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.209968847352 (6.0, 11.0, 80.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.209968847352 (6.0, 11.0, 80.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.209968847352 (6.0, 11.0, 80.0, 13.0) 0.78738317757 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+some53(A,C) 0.179127725857 (5.0, 9.0, 82.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+some53(C,A) 0.179127725857 (5.0, 9.0, 82.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+no53(A,C) 0.179127725857 (5.0, 9.0, 82.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+no53(C,A) 0.179127725857 (5.0, 9.0, 82.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+somenot53(A,C) 0.179127725857 (5.0, 9.0, 82.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(C,B) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(B,C) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(C,B) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(B,C) 0.0 (5.0, 12.0, 79.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(C,B) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(B,C) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.165348670022 (5.0, 10.0, 81.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.165348670022 (5.0, 10.0, 81.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.165348670022 (5.0, 10.0, 81.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.165348670022 (5.0, 10.0, 81.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.165348670022 (5.0, 10.0, 81.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(A,C) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(C,A) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+some53(A,C) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+some53(C,A) 0.0 (5.0, 12.0, 79.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(A,C) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(C,A) 0.153538050734 (5.0, 11.0, 80.0, 14.0) 0.716510903427 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- all53(C,B), somenot53(C,A) [0.57476635514]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(B,C) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(B,D) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(D,C) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(C,B) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(C,D) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(D,B) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(C,B) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(B,C) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(C,D) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(B,D) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(D,C) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(D,B) 0.383177570093
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(A,C) 0.383177570093
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(C,A) 0.383177570093
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(A,D) 0.383177570093
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(C,D) 0.383177570093
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(D,A) 0.383177570093
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(D,C) 0.383177570093
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.345794392523
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.345794392523
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.319194823868
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.314953271028
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.314953271028
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.314953271028
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.314953271028
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.314953271028
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.28632115548
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.28632115548
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.28632115548
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.28632115548
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.28632115548
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.28632115548
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.28632115548
+[DEBUG] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.28632115548
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.26246105919
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.26246105919
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.26246105919
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.26246105919
+[DEBUG] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.26246105919
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.26246105919
+[DEBUG] rsome53(A,B) :- all53(C,B), \+some53(A,C) 0.214953271028
+[DEBUG] rsome53(A,B) :- all53(C,B), \+some53(C,A) 0.214953271028
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+no53(B,C) 0.214953271028
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.209968847352
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.209968847352
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.209968847352
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.209968847352
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.209968847352
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.195412064571
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.195412064571
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.195412064571
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.195412064571
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.195412064571
+[DEBUG] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.195412064571
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+some53(A,C) 0.179127725857
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+some53(C,A) 0.179127725857
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+no53(A,C) 0.179127725857
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+no53(C,A) 0.179127725857
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+somenot53(A,C) 0.179127725857
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.165348670022
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.165348670022
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.165348670022
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.165348670022
+[DEBUG] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.165348670022
+[DEBUG] rsome53(A,B) :- some53(C,A), \+some53(C,B) 0.153538050734
+[DEBUG] rsome53(A,B) :- some53(C,A), \+some53(B,C) 0.153538050734
+[DEBUG] rsome53(A,B) :- some53(C,A), \+no53(C,B) 0.153538050734
+[DEBUG] rsome53(A,B) :- some53(C,A), \+somenot53(C,B) 0.153538050734
+[DEBUG] rsome53(A,B) :- some53(C,A), \+somenot53(B,C) 0.153538050734
+[DEBUG] rsome53(A,B) :- no53(B,C), \+all53(A,C) 0.153538050734
+[DEBUG] rsome53(A,B) :- no53(B,C), \+all53(C,A) 0.153538050734
+[DEBUG] rsome53(A,B) :- no53(B,C), \+some53(A,C) 0.153538050734
+[DEBUG] rsome53(A,B) :- no53(B,C), \+no53(A,C) 0.153538050734
+[DEBUG] rsome53(A,B) :- no53(B,C), \+no53(C,A) 0.153538050734
+[DEBUG] rsome53(A,B) :- some53(A,C), \+all53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(A,C), \+all53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- some53(C,A), \+no53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C), \+some53(C,A) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome53(A,B) :- all53(C,B), somenot53(C,A) 0.863636363636
+[DEBUG] Best rule so far: rsome53(A,B) :- true [0.141509433962]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- true 0.141509433962
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- all53(A,C) 0.0 (5.0, 11.0, 80.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C) 0.241654571843 (7.0, 9.0, 82.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(B,C) (0.24165457184325106, 7.0) > (0.14150943396226415, 19.0)
+[LVL9] rsome53(A,B) :- all53(C,A) 0.0 (5.0, 10.0, 81.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C) 0.184794672586 (7.0, 13.0, 78.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(B,C) 0.0 (5.0, 15.0, 76.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A) 0.0 (6.0, 13.0, 78.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B) 0.241654571843 (7.0, 9.0, 82.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C) 0.142767295597 (6.0, 12.0, 79.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C) 0.0 (6.0, 13.0, 78.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(C,B) 0.0 (5.0, 14.0, 77.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C) 0.295822102426 (8.0, 9.0, 82.0, 11.0) 0.828301886792 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- somenot53(A,C) (0.29582210242587603, 8.0) > (0.24165457184325106, 7.0)
+[LVL9] rsome53(A,B) :- somenot53(B,C) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,B) 0.0 (5.0, 12.0, 79.0, 14.0) 0.570754716981 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- somenot53(A,C) [0.295822102426]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- somenot53(A,C) 0.295822102426
+[DEBUG] rsome53(A,B) :- all53(B,C) 0.241654571843
+[DEBUG] rsome53(A,B) :- some53(C,B) 0.241654571843
+[DEBUG] rsome53(A,B) :- all53(C,B) 0.194682675815
+[DEBUG] rsome53(A,B) :- somenot53(C,A) 0.194682675815
+[DEBUG] rsome53(A,B) :- some53(A,C) 0.184794672586
+[DEBUG] rsome53(A,B) :- somenot53(B,C) 0.152964959569
+[DEBUG] rsome53(A,B) :- no53(A,C) 0.142767295597
+[DEBUG] rsome53(A,B) :- some53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- no53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- some53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(B,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- somenot53(A,C), all53(B,C) (0.3805031446540881, 5.0) > (0.29582210242587603, 8.0)
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(B,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(C,B) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(C,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(D,B) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(C,B) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(B,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(C,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(B,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(D,B) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.26179245283 (7.0, 8.0, 83.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.26179245283 (7.0, 8.0, 83.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.345125786164 (8.0, 7.0, 84.0, 11.0) 0.828301886792 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.26179245283 (7.0, 8.0, 83.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.26179245283 (7.0, 8.0, 83.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.318577648766 (8.0, 8.0, 83.0, 11.0) 0.828301886792 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.345125786164 (8.0, 7.0, 84.0, 11.0) 0.828301886792 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(A,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(C,A) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(A,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(C,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(D,A) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), somenot53(A,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), somenot53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.26179245283 (7.0, 8.0, 83.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.285591766724 (7.0, 7.0, 84.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.285591766724 (7.0, 7.0, 84.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.26179245283 (7.0, 8.0, 83.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,A) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(D,A) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), somenot53(A,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), somenot53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.285591766724 (7.0, 7.0, 84.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.285591766724 (7.0, 7.0, 84.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.285591766724 (7.0, 7.0, 84.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.194682675815 (6.0, 8.0, 83.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(A,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(C,A) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(A,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(C,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(D,A) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.214150943396 (6.0, 7.0, 84.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.237945492662 (6.0, 6.0, 85.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(A,C) 0.0 (5.0, 7.0, 84.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(C,A) 0.0 (5.0, 7.0, 84.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.237945492662 (6.0, 6.0, 85.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.214150943396 (6.0, 7.0, 84.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), no53(B,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), no53(B,D) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), no53(D,C) 0.380503144654 (5.0, 1.0, 90.0, 14.0) 0.570754716981 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), somenot53(B,C) 0.570754716981 (5.0, 0.0, 91.0, 14.0) 0.570754716981 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rsome53(A,B) :- somenot53(C,A), somenot53(B,C) (0.5707547169811321, 5.0) > (0.3805031446540881, 5.0)
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.214150943396 (6.0, 7.0, 84.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.237945492662 (6.0, 6.0, 85.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.237945492662 (6.0, 6.0, 85.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.237945492662 (6.0, 6.0, 85.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(C,B) 0.142767295597 (6.0, 12.0, 79.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(B,C) 0.142767295597 (6.0, 12.0, 79.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(C,B) 0.142767295597 (6.0, 12.0, 79.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.209433962264 (7.0, 11.0, 80.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.209433962264 (7.0, 11.0, 80.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.209433962264 (7.0, 11.0, 80.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.209433962264 (7.0, 11.0, 80.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.209433962264 (7.0, 11.0, 80.0, 12.0) 0.785377358491 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+some53(A,C) 0.178459119497 (6.0, 9.0, 82.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+some53(C,A) 0.178459119497 (6.0, 9.0, 82.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+no53(A,C) 0.178459119497 (6.0, 9.0, 82.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+no53(C,A) 0.178459119497 (6.0, 9.0, 82.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), \+somenot53(A,C) 0.178459119497 (6.0, 9.0, 82.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.16473149492 (6.0, 10.0, 81.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.16473149492 (6.0, 10.0, 81.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.16473149492 (6.0, 10.0, 81.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.16473149492 (6.0, 10.0, 81.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.16473149492 (6.0, 10.0, 81.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(C,B) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(B,C) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(C,B) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(B,C) 0.142767295597 (6.0, 12.0, 79.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(C,B) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(B,C) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(A,C) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(C,A) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+some53(A,C) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+some53(C,A) 0.142767295597 (6.0, 12.0, 79.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(A,C) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(C,A) 0.152964959569 (6.0, 11.0, 80.0, 13.0) 0.713836477987 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- somenot53(C,A), somenot53(B,C) [0.570754716981]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(B,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(B,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(C,B) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(C,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(D,B) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(C,B) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(B,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(C,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(B,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(D,B) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(A,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(C,A) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(A,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(C,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(D,A) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), somenot53(A,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(B,C), somenot53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,A) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(D,A) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), somenot53(A,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- some53(C,B), somenot53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(A,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(C,A) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(A,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(C,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(D,A) 0.380503144654
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(C,A), no53(B,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(C,A), no53(B,D) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(C,A), no53(D,C) 0.380503144654
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.345125786164
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.345125786164
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.318577648766
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.285591766724
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.285591766724
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.285591766724
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.285591766724
+[DEBUG] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.285591766724
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.26179245283
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.26179245283
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.26179245283
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.26179245283
+[DEBUG] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.26179245283
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.26179245283
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.237945492662
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.237945492662
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+some53(B,C) 0.237945492662
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+no53(C,B) 0.237945492662
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+somenot53(C,B) 0.237945492662
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.214150943396
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.214150943396
+[DEBUG] rsome53(A,B) :- somenot53(C,A), \+all53(B,C) 0.214150943396
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.209433962264
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.209433962264
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.209433962264
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.209433962264
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.209433962264
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.194682675815
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.194682675815
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.194682675815
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.194682675815
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.194682675815
+[DEBUG] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.194682675815
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+some53(A,C) 0.178459119497
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+some53(C,A) 0.178459119497
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+no53(A,C) 0.178459119497
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+no53(C,A) 0.178459119497
+[DEBUG] rsome53(A,B) :- somenot53(B,C), \+somenot53(A,C) 0.178459119497
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.16473149492
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.16473149492
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.16473149492
+[DEBUG] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.16473149492
+[DEBUG] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.16473149492
+[DEBUG] rsome53(A,B) :- some53(C,A), \+some53(C,B) 0.152964959569
+[DEBUG] rsome53(A,B) :- some53(C,A), \+some53(B,C) 0.152964959569
+[DEBUG] rsome53(A,B) :- some53(C,A), \+no53(C,B) 0.152964959569
+[DEBUG] rsome53(A,B) :- some53(C,A), \+somenot53(C,B) 0.152964959569
+[DEBUG] rsome53(A,B) :- some53(C,A), \+somenot53(B,C) 0.152964959569
+[DEBUG] rsome53(A,B) :- no53(B,C), \+all53(A,C) 0.152964959569
+[DEBUG] rsome53(A,B) :- no53(B,C), \+all53(C,A) 0.152964959569
+[DEBUG] rsome53(A,B) :- no53(B,C), \+some53(A,C) 0.152964959569
+[DEBUG] rsome53(A,B) :- no53(B,C), \+no53(A,C) 0.152964959569
+[DEBUG] rsome53(A,B) :- no53(B,C), \+no53(C,A) 0.152964959569
+[DEBUG] rsome53(A,B) :- some53(A,C), \+all53(C,B) 0.142767295597
+[DEBUG] rsome53(A,B) :- some53(A,C), \+all53(B,C) 0.142767295597
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(C,B) 0.142767295597
+[DEBUG] rsome53(A,B) :- some53(C,A), \+no53(B,C) 0.142767295597
+[DEBUG] rsome53(A,B) :- no53(B,C), \+some53(C,A) 0.142767295597
+[DEBUG] rsome53(A,B) :- all53(C,B), \+some53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(C,B), \+some53(C,A) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome53(A,B) :- somenot53(C,A), somenot53(B,C) 0.872727272727
+[DEBUG] Best rule so far: rsome53(A,B) :- true [0.133333333333]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- true 0.133333333333
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- all53(A,C) 0.0 (6.0, 11.0, 80.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C) 0.241025641026 (8.0, 9.0, 82.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- all53(B,C) (0.24102564102564103, 8.0) > (0.13333333333333333, 19.0)
+[LVL9] rsome53(A,B) :- all53(C,A) 0.0 (6.0, 10.0, 81.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B) 0.193939393939 (7.0, 8.0, 83.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C) 0.18431372549 (8.0, 13.0, 78.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(B,C) 0.0 (6.0, 15.0, 76.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A) 0.133333333333 (7.0, 13.0, 78.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B) 0.241025641026 (8.0, 9.0, 82.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C) 0.142222222222 (7.0, 12.0, 79.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C) 0.133333333333 (7.0, 13.0, 78.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(C,B) 0.0 (6.0, 14.0, 77.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C) 0.295238095238 (9.0, 9.0, 82.0, 10.0) 0.826666666667 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- somenot53(A,C) (0.29523809523809524, 9.0) > (0.24102564102564103, 8.0)
+[LVL9] rsome53(A,B) :- somenot53(B,C) 0.0 (6.0, 11.0, 80.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A) 0.0 (6.0, 8.0, 83.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,B) 0.0 (6.0, 12.0, 79.0, 13.0) 0.566666666667 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- somenot53(A,C) [0.295238095238]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- somenot53(A,C) 0.295238095238
+[DEBUG] rsome53(A,B) :- all53(B,C) 0.241025641026
+[DEBUG] rsome53(A,B) :- some53(C,B) 0.241025641026
+[DEBUG] rsome53(A,B) :- all53(C,B) 0.193939393939
+[DEBUG] rsome53(A,B) :- some53(A,C) 0.18431372549
+[DEBUG] rsome53(A,B) :- no53(A,C) 0.142222222222
+[DEBUG] rsome53(A,B) :- some53(C,A) 0.133333333333
+[DEBUG] rsome53(A,B) :- no53(B,C) 0.133333333333
+[DEBUG] rsome53(A,B) :- all53(A,C) 0.0
+[DEBUG] rsome53(A,B) :- all53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- some53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- no53(C,B) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(B,C) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(C,A) 0.0
+[DEBUG] rsome53(A,B) :- somenot53(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(B,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] BETTER RULE rsome53(A,B) :- somenot53(A,C), all53(B,C) (0.37777777777777777, 6.0) > (0.29523809523809524, 9.0)
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(B,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), all53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(C,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), some53(D,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(C,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(B,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(B,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), no53(D,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.261111111111 (8.0, 8.0, 83.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.261111111111 (8.0, 8.0, 83.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.344444444444 (9.0, 7.0, 84.0, 10.0) 0.826666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.261111111111 (8.0, 8.0, 83.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.261111111111 (8.0, 8.0, 83.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.317948717949 (9.0, 8.0, 83.0, 10.0) 0.826666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.344444444444 (9.0, 7.0, 84.0, 10.0) 0.826666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(A,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(C,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(D,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), some53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), somenot53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), somenot53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.261111111111 (8.0, 8.0, 83.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.193939393939 (7.0, 8.0, 83.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.193939393939 (7.0, 8.0, 83.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.284848484848 (8.0, 7.0, 84.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.284848484848 (8.0, 7.0, 84.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.193939393939 (7.0, 8.0, 83.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.261111111111 (8.0, 8.0, 83.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), all53(D,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), some53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), somenot53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), somenot53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.284848484848 (8.0, 7.0, 84.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.193939393939 (7.0, 8.0, 83.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.193939393939 (7.0, 8.0, 83.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.284848484848 (8.0, 7.0, 84.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.284848484848 (8.0, 7.0, 84.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.193939393939 (7.0, 8.0, 83.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(A,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(C,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(D,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), some53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.213333333333 (7.0, 7.0, 84.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.237037037037 (7.0, 6.0, 85.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(A,C) 0.0 (6.0, 7.0, 84.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+some53(C,A) 0.0 (6.0, 7.0, 84.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.237037037037 (7.0, 6.0, 85.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.213333333333 (7.0, 7.0, 84.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), all53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), all53(B,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), all53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), all53(D,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), some53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), some53(D,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(C,B) 0.142222222222 (7.0, 12.0, 79.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+all53(B,C) 0.142222222222 (7.0, 12.0, 79.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(C,B) 0.142222222222 (7.0, 12.0, 79.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.208888888889 (8.0, 11.0, 80.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.208888888889 (8.0, 11.0, 80.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.208888888889 (8.0, 11.0, 80.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.208888888889 (8.0, 11.0, 80.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.208888888889 (8.0, 11.0, 80.0, 11.0) 0.783333333333 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), some53(B,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), some53(B,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), some53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), somenot53(C,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), somenot53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), somenot53(D,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.164102564103 (7.0, 10.0, 81.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+all53(B,C) 0.164102564103 (7.0, 10.0, 81.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+some53(B,C) 0.0 (6.0, 11.0, 80.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(C,B) 0.164102564103 (7.0, 10.0, 81.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+no53(B,C) 0.164102564103 (7.0, 10.0, 81.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+somenot53(C,B) 0.0 (6.0, 11.0, 80.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(A,C), \+somenot53(B,C) 0.164102564103 (7.0, 10.0, 81.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), all53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), all53(B,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), all53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), all53(D,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+all53(C,B) 0.0 (6.0, 12.0, 79.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+all53(B,C) 0.0 (6.0, 12.0, 79.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(C,B) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+some53(B,C) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(C,B) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+no53(B,C) 0.142222222222 (7.0, 12.0, 79.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(C,B) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(C,A), \+somenot53(B,C) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), somenot53(C,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), somenot53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), somenot53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), somenot53(D,A) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), somenot53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(A,C) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+all53(C,A) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+some53(A,C) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(A,C) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(B,C), \+no53(C,A) 0.152380952381 (7.0, 11.0, 80.0, 12.0) 0.711111111111 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(A,C), somenot53(B,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(A,C), somenot53(B,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(A,C), somenot53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,A), some53(C,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- all53(C,A), some53(D,B) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(B,C), no53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- some53(B,C), no53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(C,B), somenot53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- no53(C,B), somenot53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), all53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(B,C), all53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), no53(B,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,A), no53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,B), no53(A,D) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[LVL9] rsome53(A,B) :- somenot53(C,B), no53(D,C) 0.377777777778 (6.0, 1.0, 90.0, 13.0) 0.566666666667 [ACCEPT]
+[DEBUG] Best rule so far: rsome53(A,B) :- somenot53(A,C), all53(B,C) [0.377777777778]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(B,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(B,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), all53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(C,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), some53(D,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(C,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(B,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(B,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), no53(D,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(A,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(C,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(D,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), some53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), somenot53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(B,C), somenot53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), all53(D,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), some53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), somenot53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,B), somenot53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(A,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(C,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(D,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,B), some53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(A,C), all53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(A,C), all53(B,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(A,C), all53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(A,C), all53(D,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(A,C), some53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(A,C), some53(D,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(A,C), some53(B,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(A,C), some53(B,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(A,C), some53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(A,C), somenot53(C,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(A,C), somenot53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(A,C), somenot53(D,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,A), all53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,A), all53(B,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,A), all53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(C,A), all53(D,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(B,C), somenot53(C,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(B,C), somenot53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(B,C), somenot53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(B,C), somenot53(D,A) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(B,C), somenot53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(A,C), somenot53(B,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(A,C), somenot53(B,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(A,C), somenot53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,A), some53(C,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- all53(C,A), some53(D,B) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(B,C), no53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- some53(B,C), no53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(C,B), somenot53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- no53(C,B), somenot53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(B,C), all53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(B,C), all53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(C,A), no53(B,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(C,A), no53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(C,B), no53(A,D) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(C,B), no53(D,C) 0.377777777778
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(B,C) 0.344444444444
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(B,C) 0.344444444444
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+somenot53(C,B) 0.317948717949
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(A,C) 0.284848484848
+[DEBUG] rsome53(A,B) :- all53(B,C), \+no53(C,A) 0.284848484848
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(A,C) 0.284848484848
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(C,A) 0.284848484848
+[DEBUG] rsome53(A,B) :- some53(C,B), \+no53(C,A) 0.284848484848
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+all53(B,C) 0.261111111111
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+some53(C,B) 0.261111111111
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(C,B) 0.261111111111
+[DEBUG] rsome53(A,B) :- somenot53(A,C), \+no53(B,C) 0.261111111111
+[DEBUG] rsome53(A,B) :- all53(B,C), \+all53(C,A) 0.261111111111
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(C,A) 0.261111111111
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(C,A) 0.237037037037
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(A,C) 0.237037037037
+[DEBUG] rsome53(A,B) :- all53(C,B), \+all53(A,C) 0.213333333333
+[DEBUG] rsome53(A,B) :- all53(C,B), \+no53(C,A) 0.213333333333
+[DEBUG] rsome53(A,B) :- some53(A,C), \+some53(B,C) 0.208888888889
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(C,B) 0.208888888889
+[DEBUG] rsome53(A,B) :- some53(A,C), \+no53(B,C) 0.208888888889
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(C,B) 0.208888888889
+[DEBUG] rsome53(A,B) :- some53(A,C), \+somenot53(B,C) 0.208888888889
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(A,C) 0.193939393939
+[DEBUG] rsome53(A,B) :- all53(B,C), \+some53(C,A) 0.193939393939
+[DEBUG] rsome53(A,B) :- all53(B,C), \+somenot53(A,C) 0.193939393939
+[DEBUG] rsome53(A,B) :- some53(C,B), \+all53(C,A) 0.193939393939
+[DEBUG] rsome53(A,B) :- some53(C,B), \+some53(A,C) 0.193939393939
+[DEBUG] rsome53(A,B) :- some53(C,B), \+somenot53(A,C) 0.193939393939
+[DEBUG] rsome53(A,B) :- no53(A,C), \+all53(C,B) 0.164102564103
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome53(A,B) :- somenot53(A,C), all53(B,C) 0.872727272727

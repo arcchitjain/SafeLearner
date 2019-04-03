@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_92.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rnvc92.log
+              target:	rnvc92/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc92(A,B) :- somenot92(C,A), \+all92(C,B), \+no92(B,C), \+somenot92(B,C)
+rnvc92(A,B) :- no92(B,C), \+all92(A,C), \+all92(C,A), \+no92(A,C), \+somenot92(A,C), \+somenot92(C,A)
+rnvc92(A,B) :- some92(B,C), \+all92(A,C), \+all92(C,A), \+some92(C,A), \+no92(A,C), \+no92(C,A)
+rnvc92(A,B) :- no92(C,A), \+all92(C,B), \+all92(B,C), \+some92(C,B), \+some92(B,C), \+somenot92(B,C)
+rnvc92(A,B) :- somenot92(B,C), all92(C,A)
+rnvc92(A,B) :- some92(C,A), somenot92(B,C)
+rnvc92(A,B) :- somenot92(C,B), no92(A,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	26720
+          Total time:	259.7562s

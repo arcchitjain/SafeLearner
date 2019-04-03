@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_131.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rnvc131.log
+              target:	rnvc131/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc131(A,B) :- somenot131(B,C), \+all131(A,C), \+all131(C,A), \+some131(A,C), \+some131(C,A), \+no131(C,A), \+somenot131(C,A)
+rnvc131(A,B) :- some131(C,B), somenot131(C,A)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	2528
+          Total time:	46.8199s

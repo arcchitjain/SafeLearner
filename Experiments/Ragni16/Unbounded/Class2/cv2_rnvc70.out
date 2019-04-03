@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_70.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc70.log
+              target:	rnvc70/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc70(A,B) :- all70(A,C), \+some70(B,C), \+somenot70(C,B), \+somenot70(B,C)
+rnvc70(A,B) :- no70(C,A), \+all70(C,B), \+some70(B,C), \+somenot70(C,B)
+rnvc70(A,B) :- somenot70(C,A), \+all70(C,B), \+some70(C,B), \+some70(B,C), \+somenot70(B,C)
+rnvc70(A,B) :- some70(A,C), \+all70(B,C), \+some70(C,B), \+some70(B,C), \+no70(C,B), \+no70(B,C), \+somenot70(C,B)
+rnvc70(A,B) :- no70(A,C), \+all70(C,B), \+all70(B,C), \+some70(B,C), \+no70(C,B), \+no70(B,C), \+somenot70(B,C)
+rnvc70(A,B) :- no70(B,C), all70(C,A)
+rnvc70(A,B) :- somenot70(A,C), some70(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	25206
+          Total time:	890.3326s

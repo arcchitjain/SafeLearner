@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_70.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rno70.log
+              target:	rno70/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rno70(A,B) :- all70(B,C), all70(C,A)
+rno70(A,B) :- no70(A,C), some70(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	530
+          Total time:	35.0264s

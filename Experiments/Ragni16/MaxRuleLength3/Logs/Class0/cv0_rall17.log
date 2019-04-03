@@ -1,0 +1,387 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.245430129273
+[INFO] Computing scores: 0.1126s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 6.0000
+[INFO] Negative weight (N): 114.0000
+[DEBUG] Best rule so far: rall17(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall17(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rall17(A,B) :- all17(A,C) 0.120588235294 (2.0, 14.0, 100.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] BETTER RULE rall17(A,B) :- all17(A,C) (0.12058823529411763, 2.0) > (0.0, 6.0)
+[LVL9] rall17(A,B) :- all17(B,C) 0.120588235294 (2.0, 14.0, 100.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A) 0.065625 (1.0, 14.0, 100.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B) 0.128125 (2.0, 13.0, 101.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] BETTER RULE rall17(A,B) :- all17(C,B) (0.128125, 2.0) > (0.12058823529411763, 2.0)
+[LVL9] rall17(A,B) :- no17(A,C) 0.128125 (2.0, 13.0, 101.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C) 0.128125 (2.0, 13.0, 101.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A) 0.07 (1.0, 13.0, 101.0, 5.0) 0.525 [ACCEPT]
+[DEBUG] Best rule so far: rall17(A,B) :- all17(C,B) [0.128125]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall17(A,B) :- all17(C,B) 0.128125
+[DEBUG] rall17(A,B) :- no17(A,C) 0.128125
+[DEBUG] rall17(A,B) :- no17(B,C) 0.128125
+[DEBUG] rall17(A,B) :- all17(A,C) 0.120588235294
+[DEBUG] rall17(A,B) :- all17(B,C) 0.120588235294
+[DEBUG] rall17(A,B) :- no17(C,A) 0.07
+[DEBUG] rall17(A,B) :- all17(C,A) 0.065625
+[DEBUG] ==================================
+[LVL9] rall17(A,B) :- all17(C,B), all17(A,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] BETTER RULE rall17(A,B) :- all17(C,B), all17(A,C) (0.35000000000000003, 1.0) > (0.128125, 2.0)
+[LVL9] rall17(A,B) :- all17(C,B), all17(A,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), all17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), no17(A,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), no17(A,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), no17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+all17(A,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+all17(C,A) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+some17(A,C) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+some17(C,A) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+no17(A,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+no17(C,A) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+somenot17(A,C) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+somenot17(C,A) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(B,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(C,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(B,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(D,B) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+all17(C,B) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+all17(B,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+some17(C,B) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+some17(B,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+no17(C,B) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+no17(B,C) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+somenot17(C,B) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+somenot17(B,C) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(A,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(C,A) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(A,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(C,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(D,A) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+all17(A,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+all17(C,A) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+some17(A,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+some17(C,A) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+no17(A,C) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+no17(C,A) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+somenot17(A,C) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+somenot17(C,A) 0.146428571429 (2.0, 11.0, 103.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), all17(C,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), all17(D,B) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), no17(B,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), no17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+all17(C,B) 0.07 (1.0, 13.0, 101.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+all17(B,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+some17(C,B) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+some17(B,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+no17(C,B) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+no17(B,C) 0.07 (1.0, 13.0, 101.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+somenot17(C,B) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+somenot17(B,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(C,A) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(A,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(C,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(D,A) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+all17(A,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+all17(C,A) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+some17(A,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+some17(C,A) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+no17(A,C) 0.07 (1.0, 13.0, 101.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+no17(C,A) 0.07 (1.0, 13.0, 101.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+somenot17(A,C) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+somenot17(C,A) 0.136666666667 (2.0, 12.0, 102.0, 4.0) 0.683333333333 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), all17(B,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), all17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+all17(C,B) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+some17(C,B) 0.0807692307692 (1.0, 11.0, 103.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+some17(B,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+no17(C,B) 0.0807692307692 (1.0, 11.0, 103.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+no17(B,C) 0.0807692307692 (1.0, 11.0, 103.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+somenot17(C,B) 0.0807692307692 (1.0, 11.0, 103.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+somenot17(B,C) 0.0807692307692 (1.0, 11.0, 103.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), no17(B,D) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), no17(D,C) 0.35 (1.0, 1.0, 113.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+all17(C,B) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+all17(B,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+some17(C,B) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+some17(B,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+no17(C,B) 0.07 (1.0, 13.0, 101.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+somenot17(C,B) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+somenot17(B,C) 0.075 (1.0, 12.0, 102.0, 5.0) 0.525 [ACCEPT]
+[DEBUG] Best rule so far: rall17(A,B) :- all17(C,B), all17(A,C) [0.35]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall17(A,B) :- all17(C,B), all17(A,C) 0.35
+[DEBUG] rall17(A,B) :- all17(C,B), all17(A,D) 0.35
+[DEBUG] rall17(A,B) :- all17(C,B), all17(D,C) 0.35
+[DEBUG] rall17(A,B) :- all17(C,B), no17(A,C) 0.35
+[DEBUG] rall17(A,B) :- all17(C,B), no17(A,D) 0.35
+[DEBUG] rall17(A,B) :- all17(C,B), no17(D,C) 0.35
+[DEBUG] rall17(A,B) :- no17(A,C), all17(B,C) 0.35
+[DEBUG] rall17(A,B) :- no17(A,C), all17(C,D) 0.35
+[DEBUG] rall17(A,B) :- no17(A,C), all17(B,D) 0.35
+[DEBUG] rall17(A,B) :- no17(A,C), all17(D,C) 0.35
+[DEBUG] rall17(A,B) :- no17(A,C), all17(D,B) 0.35
+[DEBUG] rall17(A,B) :- no17(B,C), all17(A,C) 0.35
+[DEBUG] rall17(A,B) :- no17(B,C), all17(C,A) 0.35
+[DEBUG] rall17(A,B) :- no17(B,C), all17(A,D) 0.35
+[DEBUG] rall17(A,B) :- no17(B,C), all17(C,D) 0.35
+[DEBUG] rall17(A,B) :- no17(B,C), all17(D,A) 0.35
+[DEBUG] rall17(A,B) :- no17(B,C), all17(D,C) 0.35
+[DEBUG] rall17(A,B) :- all17(A,C), all17(C,D) 0.35
+[DEBUG] rall17(A,B) :- all17(A,C), all17(D,B) 0.35
+[DEBUG] rall17(A,B) :- all17(A,C), no17(B,D) 0.35
+[DEBUG] rall17(A,B) :- all17(A,C), no17(D,C) 0.35
+[DEBUG] rall17(A,B) :- all17(B,C), no17(C,A) 0.35
+[DEBUG] rall17(A,B) :- all17(B,C), no17(A,D) 0.35
+[DEBUG] rall17(A,B) :- all17(B,C), no17(C,D) 0.35
+[DEBUG] rall17(A,B) :- all17(B,C), no17(D,A) 0.35
+[DEBUG] rall17(A,B) :- all17(B,C), no17(D,C) 0.35
+[DEBUG] rall17(A,B) :- no17(C,A), all17(B,D) 0.35
+[DEBUG] rall17(A,B) :- no17(C,A), all17(D,C) 0.35
+[DEBUG] rall17(A,B) :- all17(C,A), no17(B,D) 0.35
+[DEBUG] rall17(A,B) :- all17(C,A), no17(D,C) 0.35
+[DEBUG] rall17(A,B) :- all17(C,B), \+all17(C,A) 0.146428571429
+[DEBUG] rall17(A,B) :- all17(C,B), \+some17(A,C) 0.146428571429
+[DEBUG] rall17(A,B) :- all17(C,B), \+some17(C,A) 0.146428571429
+[DEBUG] rall17(A,B) :- all17(C,B), \+somenot17(A,C) 0.146428571429
+[DEBUG] rall17(A,B) :- all17(C,B), \+somenot17(C,A) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(A,C), \+some17(C,B) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(A,C), \+no17(C,B) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(A,C), \+no17(B,C) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(A,C), \+somenot17(C,B) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(A,C), \+somenot17(B,C) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(B,C), \+some17(C,A) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(B,C), \+no17(A,C) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(B,C), \+no17(C,A) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(B,C), \+somenot17(A,C) 0.146428571429
+[DEBUG] rall17(A,B) :- no17(B,C), \+somenot17(C,A) 0.146428571429
+[DEBUG] rall17(A,B) :- all17(C,B), \+no17(C,A) 0.136666666667
+[DEBUG] rall17(A,B) :- no17(A,C), \+some17(B,C) 0.136666666667
+[DEBUG] rall17(A,B) :- no17(B,C), \+some17(A,C) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(A,C), \+all17(B,C) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(A,C), \+some17(C,B) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(A,C), \+some17(B,C) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(A,C), \+no17(C,B) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(A,C), \+somenot17(C,B) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(A,C), \+somenot17(B,C) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(B,C), \+all17(A,C) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(B,C), \+all17(C,A) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(B,C), \+some17(A,C) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(B,C), \+some17(C,A) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(B,C), \+somenot17(A,C) 0.136666666667
+[DEBUG] rall17(A,B) :- all17(B,C), \+somenot17(C,A) 0.136666666667
+[DEBUG] rall17(A,B) :- no17(C,A), \+some17(C,B) 0.0807692307692
+[DEBUG] rall17(A,B) :- no17(C,A), \+no17(C,B) 0.0807692307692
+[DEBUG] rall17(A,B) :- no17(C,A), \+no17(B,C) 0.0807692307692
+[DEBUG] rall17(A,B) :- no17(C,A), \+somenot17(C,B) 0.0807692307692
+[DEBUG] rall17(A,B) :- no17(C,A), \+somenot17(B,C) 0.0807692307692
+[DEBUG] rall17(A,B) :- all17(C,B), \+all17(A,C) 0.075
+[DEBUG] rall17(A,B) :- all17(C,B), \+no17(A,C) 0.075
+[DEBUG] rall17(A,B) :- no17(A,C), \+all17(C,B) 0.075
+[DEBUG] rall17(A,B) :- no17(A,C), \+all17(B,C) 0.075
+[DEBUG] rall17(A,B) :- no17(B,C), \+all17(A,C) 0.075
+[DEBUG] rall17(A,B) :- no17(B,C), \+all17(C,A) 0.075
+[DEBUG] rall17(A,B) :- no17(C,A), \+all17(C,B) 0.075
+[DEBUG] rall17(A,B) :- no17(C,A), \+some17(B,C) 0.075
+[DEBUG] rall17(A,B) :- all17(C,A), \+all17(C,B) 0.075
+[DEBUG] rall17(A,B) :- all17(C,A), \+all17(B,C) 0.075
+[DEBUG] rall17(A,B) :- all17(C,A), \+some17(C,B) 0.075
+[DEBUG] rall17(A,B) :- all17(C,A), \+some17(B,C) 0.075
+[DEBUG] rall17(A,B) :- all17(C,A), \+somenot17(C,B) 0.075
+[DEBUG] rall17(A,B) :- all17(C,A), \+somenot17(B,C) 0.075
+[DEBUG] rall17(A,B) :- all17(A,C), \+all17(C,B) 0.07
+[DEBUG] rall17(A,B) :- all17(A,C), \+no17(B,C) 0.07
+[DEBUG] rall17(A,B) :- all17(B,C), \+no17(A,C) 0.07
+[DEBUG] rall17(A,B) :- all17(B,C), \+no17(C,A) 0.07
+[DEBUG] rall17(A,B) :- all17(C,A), \+no17(C,B) 0.07
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall17(A,B) :- all17(C,B), all17(A,C) 0.95
+[DEBUG] Best rule so far: rall17(A,B) :- true [0.0423728813559]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall17(A,B) :- true 0.0423728813559
+[DEBUG] ==================================
+[LVL9] rall17(A,B) :- all17(A,C) 0.0694915254237 (2.0, 14.0, 100.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] BETTER RULE rall17(A,B) :- all17(A,C) (0.0694915254237288, 2.0) > (0.04237288135593221, 6.0)
+[LVL9] rall17(A,B) :- all17(B,C) 0.120139581256 (3.0, 15.0, 99.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] BETTER RULE rall17(A,B) :- all17(B,C) (0.1201395812562313, 3.0) > (0.0694915254237288, 2.0)
+[LVL9] rall17(A,B) :- all17(C,A) 0.0651483050847 (2.0, 15.0, 99.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C) 0.127648305085 (3.0, 14.0, 100.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] BETTER RULE rall17(A,B) :- no17(A,C) (0.12764830508474576, 3.0) > (0.1201395812562313, 3.0)
+[LVL9] rall17(A,B) :- no17(B,C) 0.127648305085 (3.0, 14.0, 100.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A) 0.0694915254237 (2.0, 14.0, 100.0, 4.0) 0.521186440678 [ACCEPT]
+[DEBUG] Best rule so far: rall17(A,B) :- no17(A,C) [0.127648305085]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall17(A,B) :- no17(A,C) 0.127648305085
+[DEBUG] rall17(A,B) :- no17(B,C) 0.127648305085
+[DEBUG] rall17(A,B) :- all17(B,C) 0.120139581256
+[DEBUG] rall17(A,B) :- all17(C,B) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(A,C) 0.0694915254237
+[DEBUG] rall17(A,B) :- no17(C,A) 0.0694915254237
+[DEBUG] rall17(A,B) :- all17(C,A) 0.0651483050847
+[DEBUG] ==================================
+[LVL9] rall17(A,B) :- no17(A,C), all17(C,B) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] BETTER RULE rall17(A,B) :- no17(A,C), all17(C,B) (0.34745762711864403, 2.0) > (0.12764830508474576, 3.0)
+[LVL9] rall17(A,B) :- no17(A,C), all17(B,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(C,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(B,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(D,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), all17(D,B) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+all17(C,B) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+all17(B,C) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+some17(C,B) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+some17(B,C) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+no17(C,B) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+no17(B,C) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+somenot17(C,B) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(A,C), \+somenot17(B,C) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(A,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(C,A) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(A,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(C,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(D,A) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), all17(D,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+all17(A,C) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+all17(C,A) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+some17(A,C) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+some17(C,A) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+no17(A,C) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+no17(C,A) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+somenot17(A,C) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(B,C), \+somenot17(C,A) 0.14588377724 (3.0, 12.0, 102.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(C,A) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(A,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(C,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(D,A) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), no17(D,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+all17(A,C) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+all17(C,A) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+some17(A,C) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+some17(C,A) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+no17(A,C) 0.0694915254237 (2.0, 14.0, 100.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+no17(C,A) 0.0694915254237 (2.0, 14.0, 100.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+somenot17(A,C) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(B,C), \+somenot17(C,A) 0.13615819209 (3.0, 13.0, 101.0, 3.0) 0.680790960452 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), no17(A,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), no17(D,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+all17(C,A) 0.0868644067797 (2.0, 11.0, 103.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+some17(A,C) 0.0868644067797 (2.0, 11.0, 103.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+some17(C,A) 0.0868644067797 (2.0, 11.0, 103.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+no17(C,A) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+somenot17(A,C) 0.0868644067797 (2.0, 11.0, 103.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,B), \+somenot17(C,A) 0.0868644067797 (2.0, 11.0, 103.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), no17(B,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), no17(D,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+all17(B,C) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+some17(C,B) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+some17(B,C) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+no17(C,B) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+somenot17(C,B) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(A,C), \+somenot17(B,C) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), all17(B,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), all17(D,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+all17(C,B) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+some17(C,B) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+some17(B,C) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+no17(C,B) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+no17(B,C) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+somenot17(C,B) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- no17(C,A), \+somenot17(B,C) 0.0801825293351 (2.0, 12.0, 102.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), no17(B,D) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), no17(D,C) 0.347457627119 (2.0, 2.0, 112.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+all17(C,B) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+all17(B,C) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+some17(C,B) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+some17(B,C) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+no17(C,B) 0.0694915254237 (2.0, 14.0, 100.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+somenot17(C,B) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[LVL9] rall17(A,B) :- all17(C,A), \+somenot17(B,C) 0.0744552058111 (2.0, 13.0, 101.0, 4.0) 0.521186440678 [ACCEPT]
+[DEBUG] Best rule so far: rall17(A,B) :- no17(A,C), all17(C,B) [0.347457627119]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall17(A,B) :- no17(A,C), all17(C,B) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(A,C), all17(B,C) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(A,C), all17(C,D) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(A,C), all17(B,D) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(A,C), all17(D,C) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(A,C), all17(D,B) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(B,C), all17(A,C) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(B,C), all17(C,A) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(B,C), all17(A,D) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(B,C), all17(C,D) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(B,C), all17(D,A) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(B,C), all17(D,C) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(B,C), no17(C,A) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(B,C), no17(A,D) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(B,C), no17(C,D) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(B,C), no17(D,A) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(B,C), no17(D,C) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(C,B), no17(A,D) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(C,B), no17(D,C) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(A,C), no17(B,D) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(A,C), no17(D,C) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(C,A), all17(B,D) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(C,A), all17(D,C) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(C,A), no17(B,D) 0.347457627119
+[DEBUG] rall17(A,B) :- all17(C,A), no17(D,C) 0.347457627119
+[DEBUG] rall17(A,B) :- no17(A,C), \+some17(C,B) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(A,C), \+no17(C,B) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(A,C), \+no17(B,C) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(A,C), \+somenot17(C,B) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(A,C), \+somenot17(B,C) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(B,C), \+some17(C,A) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(B,C), \+no17(A,C) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(B,C), \+no17(C,A) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(B,C), \+somenot17(A,C) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(B,C), \+somenot17(C,A) 0.14588377724
+[DEBUG] rall17(A,B) :- no17(A,C), \+some17(B,C) 0.13615819209
+[DEBUG] rall17(A,B) :- no17(B,C), \+some17(A,C) 0.13615819209
+[DEBUG] rall17(A,B) :- all17(B,C), \+all17(A,C) 0.13615819209
+[DEBUG] rall17(A,B) :- all17(B,C), \+all17(C,A) 0.13615819209
+[DEBUG] rall17(A,B) :- all17(B,C), \+some17(A,C) 0.13615819209
+[DEBUG] rall17(A,B) :- all17(B,C), \+some17(C,A) 0.13615819209
+[DEBUG] rall17(A,B) :- all17(B,C), \+somenot17(A,C) 0.13615819209
+[DEBUG] rall17(A,B) :- all17(B,C), \+somenot17(C,A) 0.13615819209
+[DEBUG] rall17(A,B) :- all17(C,B), \+all17(C,A) 0.0868644067797
+[DEBUG] rall17(A,B) :- all17(C,B), \+some17(A,C) 0.0868644067797
+[DEBUG] rall17(A,B) :- all17(C,B), \+some17(C,A) 0.0868644067797
+[DEBUG] rall17(A,B) :- all17(C,B), \+somenot17(A,C) 0.0868644067797
+[DEBUG] rall17(A,B) :- all17(C,B), \+somenot17(C,A) 0.0868644067797
+[DEBUG] rall17(A,B) :- all17(C,B), \+no17(C,A) 0.0801825293351
+[DEBUG] rall17(A,B) :- all17(A,C), \+all17(B,C) 0.0801825293351
+[DEBUG] rall17(A,B) :- all17(A,C), \+some17(C,B) 0.0801825293351
+[DEBUG] rall17(A,B) :- all17(A,C), \+some17(B,C) 0.0801825293351
+[DEBUG] rall17(A,B) :- all17(A,C), \+no17(C,B) 0.0801825293351
+[DEBUG] rall17(A,B) :- all17(A,C), \+somenot17(C,B) 0.0801825293351
+[DEBUG] rall17(A,B) :- all17(A,C), \+somenot17(B,C) 0.0801825293351
+[DEBUG] rall17(A,B) :- no17(C,A), \+some17(C,B) 0.0801825293351
+[DEBUG] rall17(A,B) :- no17(C,A), \+no17(C,B) 0.0801825293351
+[DEBUG] rall17(A,B) :- no17(C,A), \+no17(B,C) 0.0801825293351
+[DEBUG] rall17(A,B) :- no17(C,A), \+somenot17(C,B) 0.0801825293351
+[DEBUG] rall17(A,B) :- no17(C,A), \+somenot17(B,C) 0.0801825293351
+[DEBUG] rall17(A,B) :- no17(A,C), \+all17(C,B) 0.0744552058111
+[DEBUG] rall17(A,B) :- no17(A,C), \+all17(B,C) 0.0744552058111
+[DEBUG] rall17(A,B) :- no17(B,C), \+all17(A,C) 0.0744552058111
+[DEBUG] rall17(A,B) :- no17(B,C), \+all17(C,A) 0.0744552058111
+[DEBUG] rall17(A,B) :- no17(C,A), \+all17(C,B) 0.0744552058111
+[DEBUG] rall17(A,B) :- no17(C,A), \+some17(B,C) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(C,A), \+all17(C,B) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(C,A), \+all17(B,C) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(C,A), \+some17(C,B) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(C,A), \+some17(B,C) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(C,A), \+somenot17(C,B) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(C,A), \+somenot17(B,C) 0.0744552058111
+[DEBUG] rall17(A,B) :- all17(B,C), \+no17(A,C) 0.0694915254237
+[DEBUG] rall17(A,B) :- all17(B,C), \+no17(C,A) 0.0694915254237
+[DEBUG] rall17(A,B) :- all17(C,A), \+no17(C,B) 0.0694915254237
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall17(A,B) :- no17(A,C), all17(C,B) 0.95

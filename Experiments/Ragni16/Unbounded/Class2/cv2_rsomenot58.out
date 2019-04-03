@@ -1,0 +1,22 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_58.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsomenot58.log
+              target:	rsomenot58/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot58(A,B) :- somenot58(A,C), some58(B,C)
+rsomenot58(A,B) :- somenot58(A,C), all58(B,C)
+rsomenot58(A,B) :- some58(C,A), all58(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.848214285714
+           Precision:	 1.0
+              Recall:	 0.190476190476
+================== STATISTICS ==================
+    Rule evaluations:	66892
+          Total time:	1118.0118s

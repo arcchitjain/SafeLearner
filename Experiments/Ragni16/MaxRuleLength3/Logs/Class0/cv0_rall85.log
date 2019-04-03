@@ -1,0 +1,281 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.407675144604
+[INFO] Computing scores: 0.0455s
+[INFO] Number of examples (M): 116
+[INFO] Positive weight (P): 6.0000
+[INFO] Negative weight (N): 110.0000
+[DEBUG] Best rule so far: rall85(A,B) :- true [0.051724137931]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall85(A,B) :- true 0.051724137931
+[DEBUG] ==================================
+[LVL9] rall85(A,B) :- all85(A,C) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] BETTER RULE rall85(A,B) :- all85(A,C) (0.1367816091954023, 2.0) > (0.05172413793103448, 6.0)
+[LVL9] rall85(A,B) :- all85(B,C) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(C,B) 0.0657327586207 (1.0, 14.0, 96.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] BETTER RULE rall85(A,B) :- some85(B,C) (0.14655172413793105, 2.0) > (0.1367816091954023, 2.0)
+[LVL9] rall85(A,B) :- no85(A,C) 0.120689655172 (2.0, 14.0, 96.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C) 0.0618661257606 (1.0, 15.0, 95.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A) 0.128232758621 (2.0, 13.0, 97.0, 4.0) 0.683908045977 [ACCEPT]
+[DEBUG] Best rule so far: rall85(A,B) :- some85(B,C) [0.146551724138]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall85(A,B) :- some85(B,C) 0.146551724138
+[DEBUG] rall85(A,B) :- all85(A,C) 0.136781609195
+[DEBUG] rall85(A,B) :- all85(B,C) 0.136781609195
+[DEBUG] rall85(A,B) :- no85(C,A) 0.128232758621
+[DEBUG] rall85(A,B) :- no85(A,C) 0.120689655172
+[DEBUG] rall85(A,B) :- all85(C,B) 0.0657327586207
+[DEBUG] rall85(A,B) :- no85(B,C) 0.0618661257606
+[DEBUG] ==================================
+[LVL9] rall85(A,B) :- some85(B,C), no85(A,C) 0.350574712644 (1.0, 1.0, 109.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] BETTER RULE rall85(A,B) :- some85(B,C), no85(A,C) (0.3505747126436782, 1.0) > (0.14655172413793105, 2.0)
+[LVL9] rall85(A,B) :- some85(B,C), no85(C,A) 0.350574712644 (1.0, 1.0, 109.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(A,D) 0.350574712644 (1.0, 1.0, 109.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(C,D) 0.350574712644 (1.0, 1.0, 109.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(D,A) 0.350574712644 (1.0, 1.0, 109.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(D,C) 0.350574712644 (1.0, 1.0, 109.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+all85(A,C) 0.170977011494 (2.0, 9.0, 101.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+all85(C,A) 0.170977011494 (2.0, 9.0, 101.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+some85(C,A) 0.170977011494 (2.0, 9.0, 101.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+no85(A,C) 0.0876436781609 (1.0, 10.0, 100.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+no85(C,A) 0.0876436781609 (1.0, 10.0, 100.0, 5.0) 0.525862068966 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+somenot85(A,C) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+somenot85(C,A) 0.170977011494 (2.0, 9.0, 101.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), all85(C,B) 0.525862068966 (1.0, 0.0, 110.0, 5.0) 0.525862068966 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rall85(A,B) :- all85(A,C), all85(C,B) (0.5258620689655172, 1.0) > (0.3505747126436782, 1.0)
+[LVL9] rall85(A,B) :- all85(A,C), \+all85(B,C) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+some85(C,B) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+some85(B,C) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+no85(C,B) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+somenot85(C,B) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+somenot85(B,C) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+all85(A,C) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+all85(C,A) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+some85(A,C) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+some85(C,A) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+somenot85(A,C) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+somenot85(C,A) 0.157824933687 (2.0, 10.0, 100.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+all85(C,B) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+some85(C,B) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+no85(C,B) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+no85(B,C) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+somenot85(C,B) 0.146551724138 (2.0, 11.0, 99.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+somenot85(B,C) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+all85(C,B) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+some85(C,B) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+no85(C,B) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+no85(B,C) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+somenot85(C,B) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+somenot85(B,C) 0.136781609195 (2.0, 12.0, 98.0, 4.0) 0.683908045977 [ACCEPT]
+[DEBUG] Best rule so far: rall85(A,B) :- all85(A,C), all85(C,B) [0.525862068966]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall85(A,B) :- some85(B,C), no85(A,C) 0.350574712644
+[DEBUG] rall85(A,B) :- some85(B,C), no85(C,A) 0.350574712644
+[DEBUG] rall85(A,B) :- some85(B,C), no85(A,D) 0.350574712644
+[DEBUG] rall85(A,B) :- some85(B,C), no85(C,D) 0.350574712644
+[DEBUG] rall85(A,B) :- some85(B,C), no85(D,A) 0.350574712644
+[DEBUG] rall85(A,B) :- some85(B,C), no85(D,C) 0.350574712644
+[DEBUG] rall85(A,B) :- some85(B,C), \+all85(A,C) 0.170977011494
+[DEBUG] rall85(A,B) :- some85(B,C), \+all85(C,A) 0.170977011494
+[DEBUG] rall85(A,B) :- some85(B,C), \+some85(C,A) 0.170977011494
+[DEBUG] rall85(A,B) :- some85(B,C), \+somenot85(C,A) 0.170977011494
+[DEBUG] rall85(A,B) :- some85(B,C), \+somenot85(A,C) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(A,C), \+all85(B,C) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(A,C), \+some85(C,B) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(A,C), \+some85(B,C) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(A,C), \+no85(C,B) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(A,C), \+somenot85(C,B) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(B,C), \+all85(A,C) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(B,C), \+some85(A,C) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(B,C), \+some85(C,A) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(B,C), \+somenot85(C,A) 0.157824933687
+[DEBUG] rall85(A,B) :- all85(A,C), \+somenot85(B,C) 0.146551724138
+[DEBUG] rall85(A,B) :- all85(B,C), \+all85(C,A) 0.146551724138
+[DEBUG] rall85(A,B) :- all85(B,C), \+somenot85(A,C) 0.146551724138
+[DEBUG] rall85(A,B) :- no85(C,A), \+all85(C,B) 0.146551724138
+[DEBUG] rall85(A,B) :- no85(C,A), \+some85(C,B) 0.146551724138
+[DEBUG] rall85(A,B) :- no85(C,A), \+no85(C,B) 0.146551724138
+[DEBUG] rall85(A,B) :- no85(C,A), \+no85(B,C) 0.146551724138
+[DEBUG] rall85(A,B) :- no85(C,A), \+somenot85(C,B) 0.146551724138
+[DEBUG] rall85(A,B) :- no85(C,A), \+somenot85(B,C) 0.136781609195
+[DEBUG] rall85(A,B) :- no85(A,C), \+all85(C,B) 0.136781609195
+[DEBUG] rall85(A,B) :- no85(A,C), \+some85(C,B) 0.136781609195
+[DEBUG] rall85(A,B) :- no85(A,C), \+no85(C,B) 0.136781609195
+[DEBUG] rall85(A,B) :- no85(A,C), \+no85(B,C) 0.136781609195
+[DEBUG] rall85(A,B) :- no85(A,C), \+somenot85(C,B) 0.136781609195
+[DEBUG] rall85(A,B) :- no85(A,C), \+somenot85(B,C) 0.136781609195
+[DEBUG] rall85(A,B) :- some85(B,C), \+no85(A,C) 0.0876436781609
+[DEBUG] rall85(A,B) :- some85(B,C), \+no85(C,A) 0.0876436781609
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall85(A,B) :- all85(A,C), all85(C,B) 0.956896551724
+[DEBUG] Best rule so far: rall85(A,B) :- true [0.0434782608696]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rall85(A,B) :- true 0.0434782608696
+[DEBUG] ==================================
+[LVL9] rall85(A,B) :- all85(A,C) 0.0745341614907 (2.0, 12.0, 98.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] BETTER RULE rall85(A,B) :- all85(A,C) (0.07453416149068323, 2.0) > (0.043478260869565216, 6.0)
+[LVL9] rall85(A,B) :- all85(B,C) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] BETTER RULE rall85(A,B) :- all85(B,C) (0.13623188405797101, 3.0) > (0.07453416149068323, 2.0)
+[LVL9] rall85(A,B) :- some85(B,C) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] BETTER RULE rall85(A,B) :- some85(B,C) (0.14596273291925468, 3.0) > (0.13623188405797101, 3.0)
+[LVL9] rall85(A,B) :- no85(A,C) 0.120204603581 (3.0, 14.0, 96.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C) 0.0613810741688 (2.0, 15.0, 95.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A) 0.127717391304 (3.0, 13.0, 97.0, 3.0) 0.68115942029 [ACCEPT]
+[DEBUG] Best rule so far: rall85(A,B) :- some85(B,C) [0.145962732919]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rall85(A,B) :- some85(B,C) 0.145962732919
+[DEBUG] rall85(A,B) :- all85(B,C) 0.136231884058
+[DEBUG] rall85(A,B) :- no85(C,A) 0.127717391304
+[DEBUG] rall85(A,B) :- no85(A,C) 0.120204603581
+[DEBUG] rall85(A,B) :- all85(A,C) 0.0745341614907
+[DEBUG] rall85(A,B) :- no85(B,C) 0.0613810741688
+[DEBUG] ==================================
+[LVL9] rall85(A,B) :- some85(B,C), no85(A,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] BETTER RULE rall85(A,B) :- some85(B,C), no85(A,C) (0.34782608695652173, 2.0) > (0.14596273291925468, 3.0)
+[LVL9] rall85(A,B) :- some85(B,C), no85(C,A) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(A,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(C,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(D,A) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), no85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+all85(A,C) 0.170289855072 (3.0, 9.0, 101.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+all85(C,A) 0.170289855072 (3.0, 9.0, 101.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+some85(C,A) 0.170289855072 (3.0, 9.0, 101.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+no85(A,C) 0.0869565217391 (2.0, 10.0, 100.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+no85(C,A) 0.0869565217391 (2.0, 10.0, 100.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+somenot85(A,C) 0.157190635452 (3.0, 10.0, 100.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- some85(B,C), \+somenot85(C,A) 0.170289855072 (3.0, 9.0, 101.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), no85(A,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), no85(C,A) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), no85(A,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), no85(C,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), no85(D,A) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), no85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+all85(A,C) 0.157190635452 (3.0, 10.0, 100.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+all85(C,A) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+some85(A,C) 0.157190635452 (3.0, 10.0, 100.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+some85(C,A) 0.157190635452 (3.0, 10.0, 100.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+no85(A,C) 0.0802675585284 (2.0, 11.0, 99.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+no85(C,A) 0.0802675585284 (2.0, 11.0, 99.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+somenot85(A,C) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(B,C), \+somenot85(C,A) 0.157190635452 (3.0, 10.0, 100.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), all85(B,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), all85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), some85(B,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), some85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+all85(C,B) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+all85(B,C) 0.0745341614907 (2.0, 12.0, 98.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+some85(C,B) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+some85(B,C) 0.0745341614907 (2.0, 12.0, 98.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+no85(C,B) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+no85(B,C) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+somenot85(C,B) 0.145962732919 (3.0, 11.0, 99.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(C,A), \+somenot85(B,C) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), all85(B,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), all85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), some85(B,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), some85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+all85(C,B) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+all85(B,C) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+some85(C,B) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+some85(B,C) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+no85(C,B) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+no85(B,C) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+somenot85(C,B) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(A,C), \+somenot85(B,C) 0.136231884058 (3.0, 12.0, 98.0, 3.0) 0.68115942029 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), no85(B,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), no85(B,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), no85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+all85(B,C) 0.0869565217391 (2.0, 10.0, 100.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+some85(C,B) 0.0869565217391 (2.0, 10.0, 100.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+some85(B,C) 0.0869565217391 (2.0, 10.0, 100.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+no85(C,B) 0.0869565217391 (2.0, 10.0, 100.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+somenot85(C,B) 0.0869565217391 (2.0, 10.0, 100.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- all85(A,C), \+somenot85(B,C) 0.0802675585284 (2.0, 11.0, 99.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), all85(A,D) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), all85(D,C) 0.347826086957 (2.0, 1.0, 109.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), \+all85(C,A) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), \+some85(A,C) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), \+some85(C,A) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), \+no85(A,C) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), \+no85(C,A) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), \+somenot85(A,C) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[LVL9] rall85(A,B) :- no85(B,C), \+somenot85(C,A) 0.0695652173913 (2.0, 13.0, 97.0, 4.0) 0.521739130435 [ACCEPT]
+[DEBUG] Best rule so far: rall85(A,B) :- some85(B,C), no85(A,C) [0.347826086957]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rall85(A,B) :- some85(B,C), no85(A,C) 0.347826086957
+[DEBUG] rall85(A,B) :- some85(B,C), no85(C,A) 0.347826086957
+[DEBUG] rall85(A,B) :- some85(B,C), no85(A,D) 0.347826086957
+[DEBUG] rall85(A,B) :- some85(B,C), no85(C,D) 0.347826086957
+[DEBUG] rall85(A,B) :- some85(B,C), no85(D,A) 0.347826086957
+[DEBUG] rall85(A,B) :- some85(B,C), no85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(B,C), no85(A,C) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(B,C), no85(C,A) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(B,C), no85(A,D) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(B,C), no85(C,D) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(B,C), no85(D,A) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(B,C), no85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(C,A), all85(B,D) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(C,A), all85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(C,A), some85(B,D) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(C,A), some85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(A,C), all85(B,D) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(A,C), all85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(A,C), some85(B,D) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(A,C), some85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(A,C), no85(B,C) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(A,C), no85(B,D) 0.347826086957
+[DEBUG] rall85(A,B) :- all85(A,C), no85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(B,C), all85(A,D) 0.347826086957
+[DEBUG] rall85(A,B) :- no85(B,C), all85(D,C) 0.347826086957
+[DEBUG] rall85(A,B) :- some85(B,C), \+all85(A,C) 0.170289855072
+[DEBUG] rall85(A,B) :- some85(B,C), \+all85(C,A) 0.170289855072
+[DEBUG] rall85(A,B) :- some85(B,C), \+some85(C,A) 0.170289855072
+[DEBUG] rall85(A,B) :- some85(B,C), \+somenot85(C,A) 0.170289855072
+[DEBUG] rall85(A,B) :- some85(B,C), \+somenot85(A,C) 0.157190635452
+[DEBUG] rall85(A,B) :- all85(B,C), \+all85(A,C) 0.157190635452
+[DEBUG] rall85(A,B) :- all85(B,C), \+some85(A,C) 0.157190635452
+[DEBUG] rall85(A,B) :- all85(B,C), \+some85(C,A) 0.157190635452
+[DEBUG] rall85(A,B) :- all85(B,C), \+somenot85(C,A) 0.157190635452
+[DEBUG] rall85(A,B) :- all85(B,C), \+all85(C,A) 0.145962732919
+[DEBUG] rall85(A,B) :- all85(B,C), \+somenot85(A,C) 0.145962732919
+[DEBUG] rall85(A,B) :- no85(C,A), \+all85(C,B) 0.145962732919
+[DEBUG] rall85(A,B) :- no85(C,A), \+some85(C,B) 0.145962732919
+[DEBUG] rall85(A,B) :- no85(C,A), \+no85(C,B) 0.145962732919
+[DEBUG] rall85(A,B) :- no85(C,A), \+no85(B,C) 0.145962732919
+[DEBUG] rall85(A,B) :- no85(C,A), \+somenot85(C,B) 0.145962732919
+[DEBUG] rall85(A,B) :- no85(C,A), \+somenot85(B,C) 0.136231884058
+[DEBUG] rall85(A,B) :- no85(A,C), \+all85(C,B) 0.136231884058
+[DEBUG] rall85(A,B) :- no85(A,C), \+some85(C,B) 0.136231884058
+[DEBUG] rall85(A,B) :- no85(A,C), \+no85(C,B) 0.136231884058
+[DEBUG] rall85(A,B) :- no85(A,C), \+no85(B,C) 0.136231884058
+[DEBUG] rall85(A,B) :- no85(A,C), \+somenot85(C,B) 0.136231884058
+[DEBUG] rall85(A,B) :- no85(A,C), \+somenot85(B,C) 0.136231884058
+[DEBUG] rall85(A,B) :- some85(B,C), \+no85(A,C) 0.0869565217391
+[DEBUG] rall85(A,B) :- some85(B,C), \+no85(C,A) 0.0869565217391
+[DEBUG] rall85(A,B) :- all85(A,C), \+all85(B,C) 0.0869565217391
+[DEBUG] rall85(A,B) :- all85(A,C), \+some85(C,B) 0.0869565217391
+[DEBUG] rall85(A,B) :- all85(A,C), \+some85(B,C) 0.0869565217391
+[DEBUG] rall85(A,B) :- all85(A,C), \+no85(C,B) 0.0869565217391
+[DEBUG] rall85(A,B) :- all85(A,C), \+somenot85(C,B) 0.0869565217391
+[DEBUG] rall85(A,B) :- all85(B,C), \+no85(A,C) 0.0802675585284
+[DEBUG] rall85(A,B) :- all85(B,C), \+no85(C,A) 0.0802675585284
+[DEBUG] rall85(A,B) :- all85(A,C), \+somenot85(B,C) 0.0802675585284
+[DEBUG] rall85(A,B) :- no85(C,A), \+all85(B,C) 0.0745341614907
+[DEBUG] rall85(A,B) :- no85(C,A), \+some85(B,C) 0.0745341614907
+[DEBUG] rall85(A,B) :- no85(A,C), \+all85(B,C) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(A,C), \+some85(B,C) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(B,C), \+all85(C,A) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(B,C), \+some85(A,C) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(B,C), \+some85(C,A) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(B,C), \+no85(A,C) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(B,C), \+no85(C,A) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(B,C), \+somenot85(A,C) 0.0695652173913
+[DEBUG] rall85(A,B) :- no85(B,C), \+somenot85(C,A) 0.0695652173913
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rall85(A,B) :- some85(B,C), no85(A,C) 0.956896551724

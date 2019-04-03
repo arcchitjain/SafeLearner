@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_20.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome20.log
+              target:	rsome20/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome20(A,B) :- some20(C,B), \+some20(C,A), \+no20(C,A), \+all20(A,C), \+some20(A,C)
+rsome20(A,B) :- somenot20(C,B), no20(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.875
+           Precision:	 1.0
+              Recall:	 0.333333333333
+================== STATISTICS ==================
+    Rule evaluations:	48872
+          Total time:	2566.8755s

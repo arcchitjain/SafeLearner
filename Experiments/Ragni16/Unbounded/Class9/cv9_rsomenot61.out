@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_61.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsomenot61.log
+              target:	rsomenot61/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot61(A,B) :- no61(B,C), \+all61(A,C), \+all61(C,A), \+some61(A,C), \+no61(A,C), \+no61(C,A)
+rsomenot61(A,B) :- some61(A,C), somenot61(C,B)
+rsomenot61(A,B) :- some61(B,C), somenot61(A,C)
+rsomenot61(A,B) :- some61(C,A), all61(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.913793103448
+           Precision:	 1.0
+              Recall:	 0.473684210526
+================== STATISTICS ==================
+    Rule evaluations:	63172
+          Total time:	1511.2724s

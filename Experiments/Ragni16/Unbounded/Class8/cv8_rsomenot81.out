@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_81.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rsomenot81.log
+              target:	rsomenot81/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot81(A,B) :- somenot81(A,C), somenot81(C,B)
+rsomenot81(A,B) :- all81(C,A), some81(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.909836065574
+           Precision:	 1.0
+              Recall:	 0.214285714286
+================== STATISTICS ==================
+    Rule evaluations:	49000
+          Total time:	514.5249s

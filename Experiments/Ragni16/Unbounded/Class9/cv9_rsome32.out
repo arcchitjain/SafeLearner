@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_32.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsome32.log
+              target:	rsome32/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome32(A,B) :- some32(B,C), somenot32(C,A)
+rsome32(A,B) :- all32(C,B), some32(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.918181818182
+           Precision:	 1.0
+              Recall:	 0.181818181818
+================== STATISTICS ==================
+    Rule evaluations:	46786
+          Total time:	8376.6712s

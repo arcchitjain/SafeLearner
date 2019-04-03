@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_108.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc108.log
+              target:	rnvc108/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc108(A,B) :- some108(B,C), \+all108(A,C), \+all108(C,A), \+some108(A,C), \+no108(A,C), \+somenot108(C,A)
+rnvc108(A,B) :- some108(C,A), \+all108(C,B), \+all108(B,C), \+some108(C,B), \+no108(C,B), \+somenot108(C,B)
+rnvc108(A,B) :- no108(C,B), \+all108(A,C), \+all108(C,A), \+some108(C,A), \+somenot108(A,C), \+somenot108(C,A)
+rnvc108(A,B) :- somenot108(C,A), \+all108(C,B), \+all108(B,C), \+some108(B,C), \+no108(C,B), \+no108(B,C)
+rnvc108(A,B) :- some108(A,C), somenot108(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	15990
+          Total time:	225.2369s

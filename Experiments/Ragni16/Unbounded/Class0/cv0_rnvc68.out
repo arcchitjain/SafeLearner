@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_68.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc68.log
+              target:	rnvc68/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc68(A,B) :- somenot68(C,A), \+all68(C,B)
+rnvc68(A,B) :- somenot68(A,C), \+all68(B,C), \+no68(C,B)
+rnvc68(A,B) :- some68(A,C), \+all68(C,B), \+no68(C,B), \+no68(B,C)
+rnvc68(A,B) :- no68(C,A), \+all68(B,C), \+some68(C,B), \+some68(B,C)
+rnvc68(A,B) :- some68(C,A), \+all68(C,B)
+rnvc68(A,B) :- all68(A,C), \+all68(C,B), \+no68(C,B), \+no68(B,C)
+rnvc68(A,B) :- no68(A,C), \+all68(C,B), \+all68(B,C), \+some68(C,B), \+some68(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.982456140351
+           Precision:	 1.0
+              Recall:	 0.970588235294
+================== STATISTICS ==================
+    Rule evaluations:	8006
+          Total time:	120.8911s

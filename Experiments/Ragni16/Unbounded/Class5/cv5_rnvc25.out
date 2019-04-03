@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_25.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rnvc25.log
+              target:	rnvc25/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc25(A,B) :- somenot25(B,C), \+all25(A,C), \+all25(C,A), \+some25(C,A), \+no25(C,A), \+somenot25(C,A)
+rnvc25(A,B) :- somenot25(A,C), some25(B,C)
+rnvc25(A,B) :- no25(A,C), no25(B,C)
+rnvc25(A,B) :- no25(C,A), no25(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	5283
+          Total time:	373.9231s

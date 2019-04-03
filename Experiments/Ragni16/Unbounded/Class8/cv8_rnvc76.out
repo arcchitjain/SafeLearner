@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_76.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rnvc76.log
+              target:	rnvc76/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc76(A,B) :- no76(C,B), \+all76(C,A), \+some76(A,C), \+some76(C,A), \+somenot76(A,C)
+rnvc76(A,B) :- all76(B,C), \+all76(C,A), \+some76(A,C), \+some76(C,A), \+no76(A,C), \+no76(C,A)
+rnvc76(A,B) :- some76(B,C), \+all76(A,C), \+all76(C,A), \+some76(C,A), \+somenot76(A,C), \+somenot76(C,A)
+rnvc76(A,B) :- no76(B,C), \+all76(A,C), \+all76(C,A), \+some76(A,C), \+some76(C,A), \+somenot76(C,A)
+rnvc76(A,B) :- some76(C,B), \+all76(A,C), \+all76(C,A), \+some76(A,C), \+no76(A,C), \+no76(C,A), \+somenot76(A,C)
+rnvc76(A,B) :- some76(A,C), somenot76(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	34422
+          Total time:	718.4829s

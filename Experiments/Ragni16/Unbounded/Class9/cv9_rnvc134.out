@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_134.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rnvc134.log
+              target:	rnvc134/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc134(A,B) :- somenot134(C,A), \+all134(B,C), \+some134(C,B), \+some134(B,C), \+no134(B,C), \+somenot134(C,B)
+rnvc134(A,B) :- no134(C,A), somenot134(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	1550
+          Total time:	36.1938s

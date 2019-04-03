@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_106.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsomenot106.log
+              target:	rsomenot106/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot106(A,B) :- some106(B,C), some106(C,A)
+rsomenot106(A,B) :- somenot106(B,C), no106(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.866071428571
+           Precision:	 1.0
+              Recall:	 0.117647058824
+================== STATISTICS ==================
+    Rule evaluations:	66741
+          Total time:	1044.7117s

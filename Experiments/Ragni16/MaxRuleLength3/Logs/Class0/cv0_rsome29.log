@@ -1,0 +1,501 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.464337799138
+[INFO] Computing scores: 0.0631s
+[INFO] Number of examples (M): 108
+[INFO] Positive weight (P): 15.0000
+[INFO] Negative weight (N): 93.0000
+[DEBUG] Best rule so far: rsome29(A,B) :- true [0.138888888889]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome29(A,B) :- true 0.138888888889
+[DEBUG] ==================================
+[LVL9] rsome29(A,B) :- all29(A,C) 0.0 (1.0, 13.0, 80.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] BETTER RULE rsome29(A,B) :- all29(C,A) (0.17824074074074073, 2.0) > (0.1388888888888889, 15.0)
+[LVL9] rsome29(A,B) :- all29(C,B) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C) 0.142592592593 (2.0, 12.0, 81.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C) 0.209259259259 (3.0, 11.0, 82.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] BETTER RULE rsome29(A,B) :- some29(B,C) (0.20925925925925926, 3.0) > (0.17824074074074073, 2.0)
+[LVL9] rsome29(A,B) :- some29(C,A) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B) 0.241452991453 (3.0, 9.0, 84.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] BETTER RULE rsome29(A,B) :- some29(C,B) (0.24145299145299146, 3.0) > (0.20925925925925926, 3.0)
+[LVL9] rsome29(A,B) :- no29(A,C) 0.0 (1.0, 14.0, 79.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A) 0.0 (2.0, 13.0, 80.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B) 0.0 (2.0, 13.0, 80.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C) 0.196180555556 (3.0, 12.0, 81.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C) 0.196180555556 (3.0, 12.0, 81.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[DEBUG] Best rule so far: rsome29(A,B) :- some29(C,B) [0.241452991453]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome29(A,B) :- some29(C,B) 0.241452991453
+[DEBUG] rsome29(A,B) :- some29(B,C) 0.209259259259
+[DEBUG] rsome29(A,B) :- somenot29(A,C) 0.196180555556
+[DEBUG] rsome29(A,B) :- somenot29(B,C) 0.196180555556
+[DEBUG] rsome29(A,B) :- all29(C,A) 0.178240740741
+[DEBUG] rsome29(A,B) :- all29(C,B) 0.178240740741
+[DEBUG] rsome29(A,B) :- some29(C,A) 0.16452991453
+[DEBUG] rsome29(A,B) :- somenot29(C,A) 0.16452991453
+[DEBUG] rsome29(A,B) :- somenot29(C,B) 0.16452991453
+[DEBUG] rsome29(A,B) :- some29(A,C) 0.142592592593
+[DEBUG] rsome29(A,B) :- no29(C,A) 0.0
+[DEBUG] rsome29(A,B) :- no29(C,B) 0.0
+[DEBUG] rsome29(A,B) :- all29(A,C) 0.0
+[DEBUG] rsome29(A,B) :- no29(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsome29(A,B) :- some29(C,B), all29(A,C) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] BETTER RULE rsome29(A,B) :- some29(C,B), all29(A,C) (0.3796296296296296, 1.0) > (0.24145299145299146, 3.0)
+[LVL9] rsome29(A,B) :- some29(C,B), all29(A,D) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), all29(D,C) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(A,C) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(C,A) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(A,D) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(D,A) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(D,C) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+all29(A,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+all29(C,A) 0.261574074074 (3.0, 8.0, 85.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+some29(A,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+some29(C,A) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+no29(A,C) 0.285353535354 (3.0, 7.0, 86.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+no29(C,A) 0.261574074074 (3.0, 8.0, 85.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+somenot29(A,C) 0.261574074074 (3.0, 8.0, 85.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+somenot29(C,A) 0.261574074074 (3.0, 8.0, 85.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), some29(C,A) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), some29(C,D) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), some29(D,A) 0.37962962963 (1.0, 1.0, 92.0, 14.0) 0.569444444444 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), no29(A,C) 0.569444444444 (1.0, 0.0, 93.0, 14.0) 0.569444444444 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsome29(A,B) :- some29(B,C), no29(A,C) (0.5694444444444444, 1.0) > (0.3796296296296296, 1.0)
+[LVL9] rsome29(A,B) :- some29(B,C), \+all29(A,C) 0.241452991453 (3.0, 9.0, 84.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+all29(C,A) 0.241452991453 (3.0, 9.0, 84.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+some29(A,C) 0.241452991453 (3.0, 9.0, 84.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+some29(C,A) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+no29(C,A) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+somenot29(A,C) 0.241452991453 (3.0, 9.0, 84.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+somenot29(C,A) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+all29(C,B) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+all29(B,C) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+some29(C,B) 0.209259259259 (3.0, 11.0, 82.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+some29(B,C) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+no29(C,B) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+no29(B,C) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+somenot29(C,B) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+somenot29(B,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+all29(A,C) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+all29(C,A) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+some29(A,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+some29(C,A) 0.209259259259 (3.0, 11.0, 82.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+no29(A,C) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+no29(C,A) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+somenot29(A,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+somenot29(C,A) 0.224206349206 (3.0, 10.0, 83.0, 12.0) 0.784722222222 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+all29(B,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+some29(C,B) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+some29(B,C) 0.213888888889 (2.0, 7.0, 86.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+no29(B,C) 0.213888888889 (2.0, 7.0, 86.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+somenot29(C,B) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+all29(A,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+some29(A,C) 0.213888888889 (2.0, 7.0, 86.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+some29(C,A) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+no29(A,C) 0.213888888889 (2.0, 7.0, 86.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+somenot29(C,A) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+all29(C,B) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+all29(B,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+no29(C,B) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+no29(B,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+somenot29(C,B) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+somenot29(B,C) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+all29(C,B) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+all29(B,C) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+some29(C,B) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+some29(B,C) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+no29(B,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+somenot29(B,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+all29(A,C) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+all29(C,A) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+some29(A,C) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+some29(C,A) 0.178240740741 (2.0, 9.0, 84.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+no29(A,C) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+no29(C,A) 0.194444444444 (2.0, 8.0, 85.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), \+all29(C,B) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), \+all29(B,C) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), \+some29(B,C) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), \+no29(C,B) 0.16452991453 (2.0, 10.0, 83.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), \+no29(B,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), \+somenot29(C,B) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), \+all29(B,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), \+some29(C,B) 0.142592592593 (2.0, 12.0, 81.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), \+no29(C,B) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), \+no29(B,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), \+somenot29(C,B) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), \+somenot29(B,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), \+all29(A,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), \+some29(A,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), \+some29(C,A) 0.142592592593 (2.0, 12.0, 81.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), \+no29(A,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), \+no29(C,A) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), \+somenot29(A,C) 0.152777777778 (2.0, 11.0, 82.0, 13.0) 0.712962962963 [ACCEPT]
+[DEBUG] Best rule so far: rsome29(A,B) :- some29(B,C), no29(A,C) [0.569444444444]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome29(A,B) :- some29(C,B), all29(A,C) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), all29(A,D) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), all29(D,C) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(A,C) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(C,A) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(A,D) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(D,A) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(D,C) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(B,C), some29(C,A) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(B,C), some29(C,D) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(B,C), some29(D,A) 0.37962962963
+[DEBUG] rsome29(A,B) :- some29(C,B), \+no29(A,C) 0.285353535354
+[DEBUG] rsome29(A,B) :- some29(C,B), \+all29(C,A) 0.261574074074
+[DEBUG] rsome29(A,B) :- some29(C,B), \+no29(C,A) 0.261574074074
+[DEBUG] rsome29(A,B) :- some29(C,B), \+somenot29(A,C) 0.261574074074
+[DEBUG] rsome29(A,B) :- some29(C,B), \+somenot29(C,A) 0.261574074074
+[DEBUG] rsome29(A,B) :- some29(B,C), \+all29(A,C) 0.241452991453
+[DEBUG] rsome29(A,B) :- some29(B,C), \+all29(C,A) 0.241452991453
+[DEBUG] rsome29(A,B) :- some29(B,C), \+some29(A,C) 0.241452991453
+[DEBUG] rsome29(A,B) :- some29(B,C), \+somenot29(A,C) 0.241452991453
+[DEBUG] rsome29(A,B) :- some29(B,C), \+somenot29(C,A) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+all29(B,C) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+some29(B,C) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+no29(C,B) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+no29(B,C) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+all29(A,C) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+no29(A,C) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+no29(C,A) 0.224206349206
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+somenot29(C,A) 0.224206349206
+[DEBUG] rsome29(A,B) :- all29(C,A), \+some29(B,C) 0.213888888889
+[DEBUG] rsome29(A,B) :- all29(C,A), \+no29(B,C) 0.213888888889
+[DEBUG] rsome29(A,B) :- all29(C,B), \+some29(A,C) 0.213888888889
+[DEBUG] rsome29(A,B) :- all29(C,B), \+no29(A,C) 0.213888888889
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+some29(C,B) 0.209259259259
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+some29(C,A) 0.209259259259
+[DEBUG] rsome29(A,B) :- some29(C,B), \+all29(A,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- some29(C,B), \+some29(A,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- some29(C,B), \+some29(C,A) 0.194444444444
+[DEBUG] rsome29(A,B) :- all29(C,A), \+all29(B,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- all29(C,A), \+some29(C,B) 0.194444444444
+[DEBUG] rsome29(A,B) :- all29(C,A), \+somenot29(C,B) 0.194444444444
+[DEBUG] rsome29(A,B) :- all29(C,B), \+all29(A,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- all29(C,B), \+some29(C,A) 0.194444444444
+[DEBUG] rsome29(A,B) :- all29(C,B), \+somenot29(C,A) 0.194444444444
+[DEBUG] rsome29(A,B) :- some29(C,A), \+all29(B,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- some29(C,A), \+no29(B,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+no29(B,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+somenot29(B,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+no29(A,C) 0.194444444444
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+no29(C,A) 0.194444444444
+[DEBUG] rsome29(A,B) :- some29(C,A), \+all29(C,B) 0.178240740741
+[DEBUG] rsome29(A,B) :- some29(C,A), \+no29(C,B) 0.178240740741
+[DEBUG] rsome29(A,B) :- some29(C,A), \+somenot29(C,B) 0.178240740741
+[DEBUG] rsome29(A,B) :- some29(C,A), \+somenot29(B,C) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+all29(C,B) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+all29(B,C) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+some29(C,B) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+some29(B,C) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+all29(A,C) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+all29(C,A) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+some29(A,C) 0.178240740741
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+some29(C,A) 0.178240740741
+[DEBUG] rsome29(A,B) :- some29(B,C), \+some29(C,A) 0.16452991453
+[DEBUG] rsome29(A,B) :- some29(B,C), \+no29(C,A) 0.16452991453
+[DEBUG] rsome29(A,B) :- some29(A,C), \+all29(C,B) 0.16452991453
+[DEBUG] rsome29(A,B) :- some29(A,C), \+all29(B,C) 0.16452991453
+[DEBUG] rsome29(A,B) :- some29(A,C), \+some29(B,C) 0.16452991453
+[DEBUG] rsome29(A,B) :- some29(A,C), \+no29(C,B) 0.16452991453
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+all29(C,B) 0.152777777778
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+somenot29(C,B) 0.152777777778
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+somenot29(B,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+all29(C,A) 0.152777777778
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+some29(A,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+somenot29(A,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- some29(A,C), \+no29(B,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- some29(A,C), \+somenot29(C,B) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,A), \+all29(B,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,A), \+no29(C,B) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,A), \+no29(B,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,A), \+somenot29(C,B) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,A), \+somenot29(B,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,B), \+all29(A,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,B), \+some29(A,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,B), \+no29(A,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,B), \+no29(C,A) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,B), \+somenot29(A,C) 0.152777777778
+[DEBUG] rsome29(A,B) :- no29(C,A), \+some29(C,B) 0.142592592593
+[DEBUG] rsome29(A,B) :- no29(C,B), \+some29(C,A) 0.142592592593
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome29(A,B) :- some29(B,C), no29(A,C) 0.87037037037
+[DEBUG] Best rule so far: rsome29(A,B) :- true [0.130841121495]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome29(A,B) :- true 0.130841121495
+[DEBUG] ==================================
+[LVL9] rsome29(A,B) :- all29(A,C) 0.0 (2.0, 13.0, 80.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] BETTER RULE rsome29(A,B) :- all29(C,A) (0.17757009345794392, 3.0) > (0.13084112149532712, 15.0)
+[LVL9] rsome29(A,B) :- all29(C,B) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C) 0.142056074766 (3.0, 12.0, 81.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C) 0.15220293725 (3.0, 11.0, 82.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A) 0.1639108555 (3.0, 10.0, 83.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B) 0.240833932423 (4.0, 9.0, 84.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] BETTER RULE rsome29(A,B) :- some29(C,B) (0.24083393242271744, 4.0) > (0.17757009345794392, 3.0)
+[LVL9] rsome29(A,B) :- no29(C,A) 0.133177570093 (3.0, 13.0, 80.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B) 0.133177570093 (3.0, 13.0, 80.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C) 0.195677570093 (4.0, 12.0, 81.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C) 0.195677570093 (4.0, 12.0, 81.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A) 0.1639108555 (3.0, 10.0, 83.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B) 0.1639108555 (3.0, 10.0, 83.0, 12.0) 0.710280373832 [ACCEPT]
+[DEBUG] Best rule so far: rsome29(A,B) :- some29(C,B) [0.240833932423]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome29(A,B) :- some29(C,B) 0.240833932423
+[DEBUG] rsome29(A,B) :- somenot29(A,C) 0.195677570093
+[DEBUG] rsome29(A,B) :- somenot29(B,C) 0.195677570093
+[DEBUG] rsome29(A,B) :- all29(C,A) 0.177570093458
+[DEBUG] rsome29(A,B) :- all29(C,B) 0.177570093458
+[DEBUG] rsome29(A,B) :- some29(C,A) 0.1639108555
+[DEBUG] rsome29(A,B) :- somenot29(C,A) 0.1639108555
+[DEBUG] rsome29(A,B) :- somenot29(C,B) 0.1639108555
+[DEBUG] rsome29(A,B) :- some29(B,C) 0.15220293725
+[DEBUG] rsome29(A,B) :- some29(A,C) 0.142056074766
+[DEBUG] rsome29(A,B) :- no29(C,A) 0.133177570093
+[DEBUG] rsome29(A,B) :- no29(C,B) 0.133177570093
+[DEBUG] rsome29(A,B) :- all29(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsome29(A,B) :- some29(C,B), all29(A,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] BETTER RULE rsome29(A,B) :- some29(C,B), all29(A,C) (0.37694704049844235, 2.0) > (0.24083393242271744, 4.0)
+[LVL9] rsome29(A,B) :- some29(C,B), all29(A,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), all29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(A,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(C,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(A,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), some29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+all29(A,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+all29(C,A) 0.260903426791 (4.0, 8.0, 85.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+some29(A,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+some29(C,A) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+no29(A,C) 0.284621920136 (4.0, 7.0, 86.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+no29(C,A) 0.260903426791 (4.0, 8.0, 85.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+somenot29(A,C) 0.260903426791 (4.0, 8.0, 85.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,B), \+somenot29(C,A) 0.260903426791 (4.0, 8.0, 85.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), all29(C,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), all29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), all29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), somenot29(C,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), somenot29(B,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), somenot29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), somenot29(B,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), somenot29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+all29(C,B) 0.15220293725 (3.0, 11.0, 82.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+all29(B,C) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+some29(C,B) 0.208722741433 (4.0, 11.0, 82.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+some29(B,C) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+no29(C,B) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+no29(B,C) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+somenot29(C,B) 0.15220293725 (3.0, 11.0, 82.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(A,C), \+somenot29(B,C) 0.15220293725 (3.0, 11.0, 82.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), all29(C,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), all29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), all29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), some29(A,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), some29(A,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), some29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), somenot29(A,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+all29(A,C) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+all29(C,A) 0.15220293725 (3.0, 11.0, 82.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+some29(A,C) 0.15220293725 (3.0, 11.0, 82.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+some29(C,A) 0.208722741433 (4.0, 11.0, 82.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+no29(A,C) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+no29(C,A) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+somenot29(A,C) 0.15220293725 (3.0, 11.0, 82.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(B,C), \+somenot29(C,A) 0.223631508678 (4.0, 10.0, 83.0, 11.0) 0.782710280374 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), no29(C,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), no29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), no29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), somenot29(B,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), somenot29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+all29(B,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+some29(C,B) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+some29(B,C) 0.21308411215 (3.0, 7.0, 86.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+no29(C,B) 0.0 (2.0, 8.0, 85.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+no29(B,C) 0.21308411215 (3.0, 7.0, 86.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+somenot29(C,B) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,A), \+somenot29(B,C) 0.0 (2.0, 8.0, 85.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), no29(C,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), no29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), no29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), somenot29(A,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), somenot29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+all29(A,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+some29(A,C) 0.21308411215 (3.0, 7.0, 86.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+some29(C,A) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+no29(A,C) 0.21308411215 (3.0, 7.0, 86.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+no29(C,A) 0.0 (2.0, 8.0, 85.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+somenot29(A,C) 0.0 (2.0, 8.0, 85.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(C,B), \+somenot29(C,A) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), some29(B,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), some29(B,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), some29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), some29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+all29(C,B) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+all29(B,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+some29(C,B) 0.0 (2.0, 9.0, 84.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+some29(B,C) 0.0 (2.0, 9.0, 84.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+no29(C,B) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+no29(B,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+somenot29(C,B) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(C,A), \+somenot29(B,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), no29(C,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), no29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), no29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), somenot29(C,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), somenot29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+all29(C,B) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+all29(B,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+some29(C,B) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+some29(B,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+no29(C,B) 0.0 (2.0, 9.0, 84.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+no29(B,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+somenot29(C,B) 0.0 (2.0, 9.0, 84.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,A), \+somenot29(B,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), somenot29(A,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), somenot29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), somenot29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+all29(A,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+all29(C,A) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+some29(A,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+some29(C,A) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+no29(A,C) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- somenot29(C,B), \+no29(C,A) 0.193712829227 (3.0, 8.0, 85.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), some29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), some29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), no29(C,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), no29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), no29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+all29(A,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+all29(C,A) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+some29(A,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(B,C), \+somenot29(A,C) 0.177570093458 (3.0, 9.0, 84.0, 12.0) 0.710280373832 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), some29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), some29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), somenot29(B,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- some29(A,C), somenot29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), all29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), all29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), some29(B,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,A), some29(D,C) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), all29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), all29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), somenot29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- no29(C,B), somenot29(D,A) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(A,C), some29(C,D) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[LVL9] rsome29(A,B) :- all29(A,C), some29(D,B) 0.376947040498 (2.0, 1.0, 92.0, 13.0) 0.565420560748 [ACCEPT]
+[DEBUG] Best rule so far: rsome29(A,B) :- some29(C,B), all29(A,C) [0.376947040498]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome29(A,B) :- some29(C,B), all29(A,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), all29(A,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), all29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(A,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(C,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(A,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), some29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), all29(C,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), all29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), all29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), somenot29(C,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), somenot29(B,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), somenot29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), somenot29(B,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(A,C), somenot29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(B,C), all29(C,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(B,C), all29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(B,C), all29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(B,C), some29(A,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(B,C), some29(A,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(B,C), some29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(B,C), somenot29(A,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,A), no29(C,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,A), no29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,A), no29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,A), somenot29(B,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,A), somenot29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,B), no29(C,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,B), no29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,B), no29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,B), somenot29(A,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(C,B), somenot29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,A), some29(B,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,A), some29(B,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,A), some29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,A), some29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,A), no29(C,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,A), no29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,A), no29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,A), somenot29(C,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,A), somenot29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,B), somenot29(A,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,B), somenot29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- somenot29(C,B), somenot29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(B,C), some29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(B,C), some29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(B,C), no29(C,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(B,C), no29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(B,C), no29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(A,C), some29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(A,C), some29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(A,C), somenot29(B,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(A,C), somenot29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,A), all29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,A), all29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,A), some29(B,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,A), some29(D,C) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,B), all29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,B), all29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,B), somenot29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- no29(C,B), somenot29(D,A) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(A,C), some29(C,D) 0.376947040498
+[DEBUG] rsome29(A,B) :- all29(A,C), some29(D,B) 0.376947040498
+[DEBUG] rsome29(A,B) :- some29(C,B), \+no29(A,C) 0.284621920136
+[DEBUG] rsome29(A,B) :- some29(C,B), \+all29(C,A) 0.260903426791
+[DEBUG] rsome29(A,B) :- some29(C,B), \+no29(C,A) 0.260903426791
+[DEBUG] rsome29(A,B) :- some29(C,B), \+somenot29(A,C) 0.260903426791
+[DEBUG] rsome29(A,B) :- some29(C,B), \+somenot29(C,A) 0.260903426791
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+all29(B,C) 0.223631508678
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+some29(B,C) 0.223631508678
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+no29(C,B) 0.223631508678
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+no29(B,C) 0.223631508678
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+all29(A,C) 0.223631508678
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+no29(A,C) 0.223631508678
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+no29(C,A) 0.223631508678
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+somenot29(C,A) 0.223631508678
+[DEBUG] rsome29(A,B) :- all29(C,A), \+some29(B,C) 0.21308411215
+[DEBUG] rsome29(A,B) :- all29(C,A), \+no29(B,C) 0.21308411215
+[DEBUG] rsome29(A,B) :- all29(C,B), \+some29(A,C) 0.21308411215
+[DEBUG] rsome29(A,B) :- all29(C,B), \+no29(A,C) 0.21308411215
+[DEBUG] rsome29(A,B) :- somenot29(A,C), \+some29(C,B) 0.208722741433
+[DEBUG] rsome29(A,B) :- somenot29(B,C), \+some29(C,A) 0.208722741433
+[DEBUG] rsome29(A,B) :- some29(C,B), \+all29(A,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- some29(C,B), \+some29(A,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- some29(C,B), \+some29(C,A) 0.193712829227
+[DEBUG] rsome29(A,B) :- all29(C,A), \+all29(B,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- all29(C,A), \+some29(C,B) 0.193712829227
+[DEBUG] rsome29(A,B) :- all29(C,A), \+somenot29(C,B) 0.193712829227
+[DEBUG] rsome29(A,B) :- all29(C,B), \+all29(A,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- all29(C,B), \+some29(C,A) 0.193712829227
+[DEBUG] rsome29(A,B) :- all29(C,B), \+somenot29(C,A) 0.193712829227
+[DEBUG] rsome29(A,B) :- some29(C,A), \+all29(B,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- some29(C,A), \+no29(B,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+no29(B,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- somenot29(C,A), \+somenot29(B,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+no29(A,C) 0.193712829227
+[DEBUG] rsome29(A,B) :- somenot29(C,B), \+no29(C,A) 0.193712829227
+[DEBUG] rsome29(A,B) :- some29(C,A), \+all29(C,B) 0.177570093458
+[DEBUG] rsome29(A,B) :- some29(C,A), \+no29(C,B) 0.177570093458
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome29(A,B) :- some29(C,B), all29(A,C) 0.87037037037

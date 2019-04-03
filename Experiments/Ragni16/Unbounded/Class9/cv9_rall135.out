@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_135.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rall135.log
+              target:	rall135/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall135(A,B) :- no135(B,C), \+no135(A,C), \+somenot135(A,C), \+all135(A,C), \+all135(C,A), \+some135(A,C), \+somenot135(C,A)
+rall135(A,B) :- all135(B,C), no135(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.931034482759
+           Precision:	 1.0
+              Recall:	 0.272727272727
+================== STATISTICS ==================
+    Rule evaluations:	41434
+          Total time:	2147.9753s

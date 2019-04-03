@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class3/cv3_train_91.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class3/cv3_rnvc91.log
+              target:	rnvc91/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc91(A,B) :- somenot91(C,A), \+all91(C,B)
+rnvc91(A,B) :- no91(B,C), \+all91(A,C), \+no91(C,A), \+somenot91(A,C)
+rnvc91(A,B) :- no91(C,B), \+all91(A,C), \+all91(C,A), \+somenot91(A,C)
+rnvc91(A,B) :- somenot91(B,C), \+some91(C,A), \+no91(C,A)
+rnvc91(A,B) :- no91(C,A), \+all91(C,B), \+some91(B,C), \+no91(B,C), \+somenot91(B,C)
+rnvc91(A,B) :- somenot91(A,C), \+all91(B,C), \+some91(B,C), \+no91(C,B), \+no91(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.950819672131
+           Precision:	 1.0
+              Recall:	 0.888888888889
+================== STATISTICS ==================
+    Rule evaluations:	17106
+          Total time:	832.4938s

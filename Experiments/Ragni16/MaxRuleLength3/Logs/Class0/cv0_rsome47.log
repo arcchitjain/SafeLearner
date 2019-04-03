@@ -1,0 +1,505 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.362126448104
+[INFO] Computing scores: 0.0706s
+[INFO] Number of examples (M): 116
+[INFO] Positive weight (P): 11.0000
+[INFO] Negative weight (N): 105.0000
+[DEBUG] Best rule so far: rsome47(A,B) :- true [0.0948275862069]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome47(A,B) :- true 0.0948275862069
+[DEBUG] ==================================
+[LVL9] rsome47(A,B) :- all47(C,A) 0.130926724138 (2.0, 13.0, 92.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- all47(C,A) (0.13092672413793102, 2.0) > (0.09482758620689655, 11.0)
+[LVL9] rsome47(A,B) :- all47(C,B) 0.130926724138 (2.0, 13.0, 92.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C) 0.130926724138 (2.0, 13.0, 92.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C) 0.0 (1.0, 14.0, 91.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A) 0.240872210953 (4.0, 12.0, 93.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- some47(C,A) (0.24087221095334688, 4.0) > (0.13092672413793102, 2.0)
+[LVL9] rsome47(A,B) :- some47(C,B) 0.299695740365 (5.0, 11.0, 94.0, 6.0) 0.849137931034 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- some47(C,B) (0.2996957403651116, 5.0) > (0.24087221095334688, 4.0)
+[LVL9] rsome47(A,B) :- no47(A,C) 0.0 (1.0, 14.0, 91.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(C,A) 0.0 (1.0, 14.0, 91.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[DEBUG] Best rule so far: rsome47(A,B) :- some47(C,B) [0.299695740365]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome47(A,B) :- some47(C,B) 0.299695740365
+[DEBUG] rsome47(A,B) :- some47(C,A) 0.240872210953
+[DEBUG] rsome47(A,B) :- somenot47(C,B) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,A) 0.130926724138
+[DEBUG] rsome47(A,B) :- all47(C,B) 0.130926724138
+[DEBUG] rsome47(A,B) :- some47(A,C) 0.130926724138
+[DEBUG] rsome47(A,B) :- some47(B,C) 0.0
+[DEBUG] rsome47(A,B) :- no47(A,C) 0.0
+[DEBUG] rsome47(A,B) :- no47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- somenot47(B,C) 0.0
+[DEBUG] rsome47(A,B) :- somenot47(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsome47(A,B) :- some47(C,B), all47(C,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- some47(C,B), all47(C,A) (0.3649425287356322, 1.0) > (0.2996957403651116, 5.0)
+[LVL9] rsome47(A,B) :- some47(C,B), all47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), all47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(A,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(C,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(A,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(D,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(A,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(C,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(A,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(D,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+all47(A,C) 0.339655172414 (5.0, 9.0, 96.0, 6.0) 0.849137931034 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+all47(C,A) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+some47(A,C) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+some47(C,A) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+no47(A,C) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+no47(C,A) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+somenot47(A,C) 0.339655172414 (5.0, 9.0, 96.0, 6.0) 0.849137931034 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+somenot47(C,A) 0.339655172414 (5.0, 9.0, 96.0, 6.0) 0.849137931034 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(B,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(B,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(D,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(C,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(B,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(B,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(D,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+all47(C,B) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+all47(B,C) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+some47(C,B) 0.20632183908 (3.0, 11.0, 94.0, 8.0) 0.773706896552 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+some47(B,C) 0.20632183908 (3.0, 11.0, 94.0, 8.0) 0.773706896552 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+no47(C,B) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+no47(B,C) 0.272988505747 (4.0, 10.0, 95.0, 7.0) 0.818965517241 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+somenot47(C,B) 0.20632183908 (3.0, 11.0, 94.0, 8.0) 0.773706896552 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+somenot47(B,C) 0.20632183908 (3.0, 11.0, 94.0, 8.0) 0.773706896552 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(A,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(A,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(D,C) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+all47(A,C) 0.161140583554 (2.0, 10.0, 95.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+all47(C,A) 0.174568965517 (2.0, 9.0, 96.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+some47(A,C) 0.0 (1.0, 10.0, 95.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+some47(C,A) 0.0 (1.0, 10.0, 95.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+no47(A,C) 0.174568965517 (2.0, 9.0, 96.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+no47(C,A) 0.174568965517 (2.0, 9.0, 96.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+somenot47(A,C) 0.174568965517 (2.0, 9.0, 96.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), all47(C,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), all47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), some47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), some47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+all47(C,B) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+all47(B,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+some47(C,B) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+some47(B,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+no47(C,B) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+no47(B,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+somenot47(C,B) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+somenot47(B,C) 0.139655172414 (2.0, 12.0, 93.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), all47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), somenot47(C,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), somenot47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), somenot47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+all47(A,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+all47(C,A) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+some47(A,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+some47(C,A) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+no47(A,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+no47(C,A) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+somenot47(A,C) 0.139655172414 (2.0, 12.0, 93.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+somenot47(C,A) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), some47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), some47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), somenot47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), somenot47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+all47(C,B) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+all47(B,C) 0.139655172414 (2.0, 12.0, 93.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+some47(C,B) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+some47(B,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+no47(C,B) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+no47(B,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+somenot47(C,B) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+somenot47(B,C) 0.149630541872 (2.0, 11.0, 94.0, 9.0) 0.698275862069 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), some47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), some47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+all47(A,C) 0.0 (1.0, 13.0, 92.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+all47(C,A) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+some47(A,C) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+no47(A,C) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+no47(C,A) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+somenot47(A,C) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+somenot47(C,A) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), some47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), some47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+all47(C,B) 0.0 (1.0, 12.0, 93.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(C,A), some47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(C,A), some47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), some47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), some47(D,A) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), all47(C,D) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), all47(D,B) 0.364942528736 (1.0, 1.0, 104.0, 10.0) 0.547413793103 [ACCEPT]
+[DEBUG] Best rule so far: rsome47(A,B) :- some47(C,B), all47(C,A) [0.364942528736]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome47(A,B) :- some47(C,B), all47(C,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), all47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), all47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(A,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(C,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(A,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(D,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(A,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(C,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(A,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(D,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(B,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(B,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(D,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(C,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(B,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(B,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(D,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(A,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(A,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(D,C) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,A), all47(C,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,A), all47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,A), some47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,A), some47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,B), all47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,B), somenot47(C,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,B), somenot47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- all47(C,B), somenot47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(A,C), some47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(A,C), some47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(A,C), somenot47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(A,C), somenot47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(B,C), some47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(B,C), some47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- no47(A,C), some47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- no47(A,C), some47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- no47(C,A), some47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- no47(C,A), some47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(B,C), some47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(B,C), some47(D,A) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(C,A), all47(C,D) 0.364942528736
+[DEBUG] rsome47(A,B) :- somenot47(C,A), all47(D,B) 0.364942528736
+[DEBUG] rsome47(A,B) :- some47(C,B), \+all47(A,C) 0.339655172414
+[DEBUG] rsome47(A,B) :- some47(C,B), \+somenot47(A,C) 0.339655172414
+[DEBUG] rsome47(A,B) :- some47(C,B), \+somenot47(C,A) 0.339655172414
+[DEBUG] rsome47(A,B) :- some47(C,B), \+all47(C,A) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,B), \+some47(A,C) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,B), \+some47(C,A) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,B), \+no47(A,C) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,B), \+no47(C,A) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,A), \+all47(C,B) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,A), \+all47(B,C) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,A), \+no47(C,B) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,A), \+no47(B,C) 0.272988505747
+[DEBUG] rsome47(A,B) :- some47(C,A), \+some47(C,B) 0.20632183908
+[DEBUG] rsome47(A,B) :- some47(C,A), \+some47(B,C) 0.20632183908
+[DEBUG] rsome47(A,B) :- some47(C,A), \+somenot47(C,B) 0.20632183908
+[DEBUG] rsome47(A,B) :- some47(C,A), \+somenot47(B,C) 0.20632183908
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+all47(C,A) 0.174568965517
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+no47(A,C) 0.174568965517
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+no47(C,A) 0.174568965517
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+somenot47(A,C) 0.174568965517
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+all47(A,C) 0.161140583554
+[DEBUG] rsome47(A,B) :- all47(C,A), \+all47(B,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,A), \+some47(B,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,A), \+no47(C,B) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,A), \+no47(B,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,A), \+somenot47(C,B) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,B), \+all47(A,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,B), \+some47(A,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,B), \+some47(C,A) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,B), \+no47(A,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,B), \+no47(C,A) 0.149630541872
+[DEBUG] rsome47(A,B) :- some47(A,C), \+all47(C,B) 0.149630541872
+[DEBUG] rsome47(A,B) :- some47(A,C), \+some47(B,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- some47(A,C), \+no47(C,B) 0.149630541872
+[DEBUG] rsome47(A,B) :- some47(A,C), \+no47(B,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- some47(A,C), \+somenot47(B,C) 0.149630541872
+[DEBUG] rsome47(A,B) :- all47(C,A), \+somenot47(B,C) 0.139655172414
+[DEBUG] rsome47(A,B) :- all47(C,B), \+somenot47(A,C) 0.139655172414
+[DEBUG] rsome47(A,B) :- some47(A,C), \+all47(B,C) 0.139655172414
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+some47(A,C) 0.0
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+some47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- all47(C,A), \+all47(C,B) 0.0
+[DEBUG] rsome47(A,B) :- all47(C,A), \+some47(C,B) 0.0
+[DEBUG] rsome47(A,B) :- all47(C,B), \+all47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- all47(C,B), \+somenot47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- some47(A,C), \+some47(C,B) 0.0
+[DEBUG] rsome47(A,B) :- some47(A,C), \+somenot47(C,B) 0.0
+[DEBUG] rsome47(A,B) :- some47(B,C), \+all47(A,C) 0.0
+[DEBUG] rsome47(A,B) :- some47(B,C), \+all47(C,A) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome47(A,B) :- some47(C,B), all47(C,A) 0.905172413793
+[DEBUG] Best rule so far: rsome47(A,B) :- true [0.0877192982456]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsome47(A,B) :- true 0.0877192982456
+[DEBUG] ==================================
+[LVL9] rsome47(A,B) :- all47(C,A) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B) 0.13048245614 (3.0, 14.0, 91.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- all47(C,B) (0.13048245614035087, 3.0) > (0.08771929824561404, 11.0)
+[LVL9] rsome47(A,B) :- some47(A,C) 0.13048245614 (3.0, 14.0, 91.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C) 0.0 (2.0, 15.0, 90.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A) 0.240454076367 (5.0, 13.0, 92.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- some47(C,A) (0.24045407636738905, 5.0) > (0.13048245614035087, 3.0)
+[LVL9] rsome47(A,B) :- some47(C,B) 0.272514619883 (5.0, 11.0, 94.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- some47(C,B) (0.27251461988304093, 5.0) > (0.24045407636738905, 5.0)
+[LVL9] rsome47(A,B) :- no47(A,C) 0.0 (2.0, 15.0, 90.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(C,A) 0.0 (2.0, 15.0, 90.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[DEBUG] Best rule so far: rsome47(A,B) :- some47(C,B) [0.272514619883]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsome47(A,B) :- some47(C,B) 0.272514619883
+[DEBUG] rsome47(A,B) :- some47(C,A) 0.240454076367
+[DEBUG] rsome47(A,B) :- somenot47(C,B) 0.149122807018
+[DEBUG] rsome47(A,B) :- all47(C,B) 0.13048245614
+[DEBUG] rsome47(A,B) :- some47(A,C) 0.13048245614
+[DEBUG] rsome47(A,B) :- all47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- some47(B,C) 0.0
+[DEBUG] rsome47(A,B) :- no47(A,C) 0.0
+[DEBUG] rsome47(A,B) :- no47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- somenot47(B,C) 0.0
+[DEBUG] rsome47(A,B) :- somenot47(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsome47(A,B) :- some47(C,B), some47(A,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] BETTER RULE rsome47(A,B) :- some47(C,B), some47(A,C) (0.3625730994152047, 2.0) > (0.27251461988304093, 5.0)
+[LVL9] rsome47(A,B) :- some47(C,B), some47(C,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(A,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(D,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), some47(D,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(A,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(C,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(A,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(D,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), no47(D,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+all47(A,C) 0.314439946019 (5.0, 9.0, 96.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+some47(A,C) 0.237516869096 (4.0, 10.0, 95.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+some47(C,A) 0.237516869096 (4.0, 10.0, 95.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+no47(A,C) 0.237516869096 (4.0, 10.0, 95.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+no47(C,A) 0.237516869096 (4.0, 10.0, 95.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+somenot47(A,C) 0.314439946019 (5.0, 9.0, 96.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,B), \+somenot47(C,A) 0.314439946019 (5.0, 9.0, 96.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(B,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(B,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(D,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), some47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(C,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(B,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(B,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(D,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), somenot47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+all47(C,B) 0.272514619883 (5.0, 11.0, 94.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+all47(B,C) 0.272514619883 (5.0, 11.0, 94.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+some47(C,B) 0.205847953216 (4.0, 12.0, 93.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+some47(B,C) 0.205847953216 (4.0, 12.0, 93.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+no47(C,B) 0.272514619883 (5.0, 11.0, 94.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+no47(B,C) 0.272514619883 (5.0, 11.0, 94.0, 6.0) 0.817543859649 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+somenot47(C,B) 0.205847953216 (4.0, 12.0, 93.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(C,A), \+somenot47(B,C) 0.205847953216 (4.0, 12.0, 93.0, 7.0) 0.771929824561 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(A,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(A,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(D,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), some47(D,C) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+all47(A,C) 0.160593792173 (3.0, 11.0, 94.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+all47(C,A) 0.173976608187 (3.0, 10.0, 95.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+some47(A,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+some47(C,A) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+no47(A,C) 0.173976608187 (3.0, 10.0, 95.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+no47(C,A) 0.173976608187 (3.0, 10.0, 95.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,B), \+somenot47(A,C) 0.173976608187 (3.0, 10.0, 95.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), all47(C,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), all47(D,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), somenot47(C,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), somenot47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), somenot47(D,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+all47(A,C) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+all47(C,A) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+some47(A,C) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+some47(C,A) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+no47(A,C) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+no47(C,A) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+somenot47(A,C) 0.13918128655 (3.0, 13.0, 92.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,B), \+somenot47(C,A) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), some47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), some47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), somenot47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), somenot47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+all47(C,B) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+all47(B,C) 0.13918128655 (3.0, 13.0, 92.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+some47(C,B) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+some47(B,C) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+no47(C,B) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+no47(B,C) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+somenot47(C,B) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(A,C), \+somenot47(B,C) 0.149122807018 (3.0, 12.0, 93.0, 8.0) 0.695906432749 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), all47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+all47(B,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+some47(B,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+no47(C,B) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+no47(B,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+somenot47(C,B) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- all47(C,A), \+somenot47(B,C) 0.0 (2.0, 12.0, 93.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), some47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), some47(D,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+all47(A,C) 0.0 (2.0, 14.0, 91.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+all47(C,A) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+some47(A,C) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+no47(A,C) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+no47(C,A) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+somenot47(A,C) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- some47(B,C), \+somenot47(C,A) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), some47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), some47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+all47(C,B) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+all47(B,C) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+some47(B,C) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+no47(C,B) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+no47(B,C) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+somenot47(C,B) 0.0 (2.0, 13.0, 92.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(A,C), \+somenot47(B,C) 0.0 (2.0, 14.0, 91.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(C,A), some47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- no47(C,A), some47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), some47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), some47(D,A) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), \+all47(A,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), \+some47(A,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), \+somenot47(A,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(B,C), \+somenot47(C,A) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), all47(C,D) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), all47(D,B) 0.362573099415 (2.0, 2.0, 103.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), \+some47(C,B) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), \+some47(B,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), \+no47(C,B) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), \+no47(B,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[LVL9] rsome47(A,B) :- somenot47(C,A), \+somenot47(B,C) 0.0906432748538 (2.0, 11.0, 94.0, 9.0) 0.543859649123 [ACCEPT]
+[DEBUG] Best rule so far: rsome47(A,B) :- some47(C,B), some47(A,C) [0.362573099415]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(A,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(C,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(A,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(D,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), some47(D,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(A,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(C,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(A,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(D,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), no47(D,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(B,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(B,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(D,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), some47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(C,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(B,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(B,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(D,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,A), somenot47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(A,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(A,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(D,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(C,B), some47(D,C) 0.362573099415
+[DEBUG] rsome47(A,B) :- all47(C,B), all47(C,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- all47(C,B), all47(D,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- all47(C,B), somenot47(C,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- all47(C,B), somenot47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- all47(C,B), somenot47(D,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(A,C), some47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(A,C), some47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(A,C), somenot47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(A,C), somenot47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- all47(C,A), all47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(B,C), some47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(B,C), some47(D,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- no47(A,C), some47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- no47(A,C), some47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- no47(C,A), some47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- no47(C,A), some47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(B,C), some47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(B,C), some47(D,A) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(C,A), all47(C,D) 0.362573099415
+[DEBUG] rsome47(A,B) :- somenot47(C,A), all47(D,B) 0.362573099415
+[DEBUG] rsome47(A,B) :- some47(C,B), \+all47(A,C) 0.314439946019
+[DEBUG] rsome47(A,B) :- some47(C,B), \+somenot47(A,C) 0.314439946019
+[DEBUG] rsome47(A,B) :- some47(C,B), \+somenot47(C,A) 0.314439946019
+[DEBUG] rsome47(A,B) :- some47(C,A), \+all47(C,B) 0.272514619883
+[DEBUG] rsome47(A,B) :- some47(C,A), \+all47(B,C) 0.272514619883
+[DEBUG] rsome47(A,B) :- some47(C,A), \+no47(C,B) 0.272514619883
+[DEBUG] rsome47(A,B) :- some47(C,A), \+no47(B,C) 0.272514619883
+[DEBUG] rsome47(A,B) :- some47(C,B), \+some47(A,C) 0.237516869096
+[DEBUG] rsome47(A,B) :- some47(C,B), \+some47(C,A) 0.237516869096
+[DEBUG] rsome47(A,B) :- some47(C,B), \+no47(A,C) 0.237516869096
+[DEBUG] rsome47(A,B) :- some47(C,B), \+no47(C,A) 0.237516869096
+[DEBUG] rsome47(A,B) :- some47(C,A), \+some47(C,B) 0.205847953216
+[DEBUG] rsome47(A,B) :- some47(C,A), \+some47(B,C) 0.205847953216
+[DEBUG] rsome47(A,B) :- some47(C,A), \+somenot47(C,B) 0.205847953216
+[DEBUG] rsome47(A,B) :- some47(C,A), \+somenot47(B,C) 0.205847953216
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+all47(C,A) 0.173976608187
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+no47(A,C) 0.173976608187
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+no47(C,A) 0.173976608187
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+somenot47(A,C) 0.173976608187
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+all47(A,C) 0.160593792173
+[DEBUG] rsome47(A,B) :- all47(C,B), \+all47(A,C) 0.149122807018
+[DEBUG] rsome47(A,B) :- all47(C,B), \+some47(A,C) 0.149122807018
+[DEBUG] rsome47(A,B) :- all47(C,B), \+some47(C,A) 0.149122807018
+[DEBUG] rsome47(A,B) :- all47(C,B), \+no47(A,C) 0.149122807018
+[DEBUG] rsome47(A,B) :- all47(C,B), \+no47(C,A) 0.149122807018
+[DEBUG] rsome47(A,B) :- some47(A,C), \+all47(C,B) 0.149122807018
+[DEBUG] rsome47(A,B) :- some47(A,C), \+some47(B,C) 0.149122807018
+[DEBUG] rsome47(A,B) :- some47(A,C), \+no47(C,B) 0.149122807018
+[DEBUG] rsome47(A,B) :- some47(A,C), \+no47(B,C) 0.149122807018
+[DEBUG] rsome47(A,B) :- some47(A,C), \+somenot47(B,C) 0.149122807018
+[DEBUG] rsome47(A,B) :- all47(C,B), \+somenot47(A,C) 0.13918128655
+[DEBUG] rsome47(A,B) :- some47(A,C), \+all47(B,C) 0.13918128655
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+some47(A,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(C,B), \+some47(C,A) 0.0906432748538
+[DEBUG] rsome47(A,B) :- all47(C,A), \+all47(B,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- all47(C,A), \+some47(B,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- all47(C,A), \+no47(C,B) 0.0906432748538
+[DEBUG] rsome47(A,B) :- all47(C,A), \+no47(B,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- all47(C,A), \+somenot47(C,B) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(B,C), \+all47(A,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(B,C), \+some47(A,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(B,C), \+somenot47(A,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(B,C), \+somenot47(C,A) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(C,A), \+some47(C,B) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(C,A), \+some47(B,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(C,A), \+no47(C,B) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(C,A), \+no47(B,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- somenot47(C,A), \+somenot47(B,C) 0.0906432748538
+[DEBUG] rsome47(A,B) :- all47(C,B), \+all47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- all47(C,B), \+somenot47(C,A) 0.0
+[DEBUG] rsome47(A,B) :- some47(A,C), \+some47(C,B) 0.0
+[DEBUG] rsome47(A,B) :- some47(A,C), \+somenot47(C,B) 0.0
+[DEBUG] rsome47(A,B) :- all47(C,A), \+somenot47(B,C) 0.0
+[DEBUG] rsome47(A,B) :- some47(B,C), \+all47(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsome47(A,B) :- some47(C,B), some47(A,C) 0.905172413793

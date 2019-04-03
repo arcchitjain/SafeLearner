@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_7.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rno7.log
+              target:	rno7/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rno7(A,B) :- all7(A,C), no7(B,C)
+rno7(A,B) :- all7(C,B), somenot7(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.833333333333
+           Precision:	 1.0
+              Recall:	 0.0952380952381
+================== STATISTICS ==================
+    Rule evaluations:	81898
+          Total time:	4981.6491s

@@ -1,0 +1,554 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.400363005673
+[INFO] Computing scores: 0.1085s
+[INFO] Number of examples (M): 118
+[INFO] Positive weight (P): 14.0000
+[INFO] Negative weight (N): 104.0000
+[DEBUG] Best rule so far: rsomenot7(A,B) :- true [0.118644067797]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot7(A,B) :- true 0.118644067797
+[DEBUG] ==================================
+[LVL9] rsomenot7(A,B) :- all7(A,C) 0.0 (1.0, 13.0, 91.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C) 0.141242937853 (2.0, 12.0, 92.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- all7(B,C) (0.14124293785310735, 2.0) > (0.11864406779661017, 14.0)
+[LVL9] rsomenot7(A,B) :- all7(C,A) 0.0 (1.0, 15.0, 89.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B) 0.124626121635 (2.0, 14.0, 90.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C) 0.132415254237 (2.0, 13.0, 91.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A) 0.194915254237 (3.0, 12.0, 92.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- some7(C,A) (0.19491525423728814, 3.0) > (0.14124293785310735, 2.0)
+[LVL9] rsomenot7(A,B) :- some7(C,B) 0.194915254237 (3.0, 12.0, 92.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C) 0.132415254237 (2.0, 13.0, 91.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C) 0.132415254237 (2.0, 13.0, 91.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,A) 0.0 (1.0, 13.0, 91.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B) 0.141242937853 (2.0, 12.0, 92.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C) 0.141242937853 (2.0, 12.0, 92.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(B,C) 0.0 (1.0, 13.0, 91.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A) 0.132415254237 (2.0, 13.0, 91.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B) 0.132415254237 (2.0, 13.0, 91.0, 12.0) 0.706214689266 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot7(A,B) :- some7(C,A) [0.194915254237]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot7(A,B) :- some7(C,A) 0.194915254237
+[DEBUG] rsomenot7(A,B) :- some7(C,B) 0.194915254237
+[DEBUG] rsomenot7(A,B) :- all7(B,C) 0.141242937853
+[DEBUG] rsomenot7(A,B) :- no7(C,B) 0.141242937853
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C) 0.141242937853
+[DEBUG] rsomenot7(A,B) :- some7(A,C) 0.132415254237
+[DEBUG] rsomenot7(A,B) :- no7(A,C) 0.132415254237
+[DEBUG] rsomenot7(A,B) :- no7(B,C) 0.132415254237
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A) 0.132415254237
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B) 0.132415254237
+[DEBUG] rsomenot7(A,B) :- all7(C,B) 0.124626121635
+[DEBUG] rsomenot7(A,B) :- all7(A,C) 0.0
+[DEBUG] rsomenot7(A,B) :- all7(C,A) 0.0
+[DEBUG] rsomenot7(A,B) :- no7(C,A) 0.0
+[DEBUG] rsomenot7(A,B) :- somenot7(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot7(A,B) :- some7(C,A), all7(B,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- some7(C,A), all7(B,C) (0.37288135593220334, 1.0) > (0.19491525423728814, 3.0)
+[LVL9] rsomenot7(A,B) :- some7(C,A), all7(B,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), all7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), some7(C,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), some7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), no7(C,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), no7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), no7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+all7(C,B) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+all7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+some7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+some7(B,C) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+no7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+no7(B,C) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+somenot7(C,B) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+somenot7(B,C) 0.20790960452 (3.0, 11.0, 93.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), some7(D,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), no7(A,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), no7(A,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), no7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), somenot7(C,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), somenot7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), somenot7(D,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+all7(A,C) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+all7(C,A) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+some7(A,C) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+some7(C,A) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+no7(A,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+no7(C,A) 0.222760290557 (3.0, 10.0, 94.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+somenot7(A,C) 0.20790960452 (3.0, 11.0, 93.0, 11.0) 0.779661016949 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+somenot7(C,A) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), some7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), some7(D,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), somenot7(A,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), somenot7(A,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), somenot7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+all7(A,C) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+all7(C,A) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+some7(A,C) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+some7(C,A) 0.0 (1.0, 11.0, 93.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+no7(A,C) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+no7(C,A) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+somenot7(A,C) 0.0 (1.0, 11.0, 93.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), \+somenot7(C,A) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), some7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), some7(D,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), no7(C,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), no7(D,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+all7(A,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+all7(C,A) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+some7(A,C) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+some7(C,A) 0.0 (1.0, 11.0, 93.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+no7(A,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+no7(C,A) 0.0 (1.0, 11.0, 93.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+somenot7(A,C) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+somenot7(C,A) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), all7(B,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), all7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+all7(C,B) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+all7(B,C) 0.0 (1.0, 11.0, 93.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+some7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+some7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+no7(C,B) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+no7(B,C) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+somenot7(C,B) 0.1629726206 (2.0, 10.0, 94.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+somenot7(B,C) 0.0 (1.0, 11.0, 93.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), all7(C,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), all7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), all7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), no7(B,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), no7(B,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), no7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+all7(C,B) 0.0 (1.0, 12.0, 92.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+all7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+some7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+some7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+no7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+no7(B,C) 0.0 (1.0, 12.0, 92.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+somenot7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+somenot7(B,C) 0.141242937853 (2.0, 12.0, 92.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), all7(C,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), all7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), all7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), some7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), some7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+all7(C,B) 0.0 (1.0, 12.0, 92.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+all7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+some7(C,B) 0.0 (1.0, 12.0, 92.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+some7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+no7(C,B) 0.141242937853 (2.0, 12.0, 92.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+no7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+somenot7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+somenot7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), all7(A,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), all7(A,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), all7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), some7(A,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), some7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+all7(C,A) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+some7(C,A) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+no7(A,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+no7(C,A) 0.141242937853 (2.0, 12.0, 92.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+somenot7(A,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+somenot7(C,A) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), some7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), some7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), somenot7(C,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), somenot7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+all7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+some7(B,C) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+no7(C,B) 0.151331719128 (2.0, 11.0, 93.0, 12.0) 0.706214689266 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), all7(C,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), all7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), all7(D,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), somenot7(D,A) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), some7(A,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), some7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), no7(A,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), no7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(A,C), no7(B,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(A,C), no7(D,C) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,A), somenot7(C,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,A), somenot7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,A), no7(D,B) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(B,C), somenot7(A,D) 0.372881355932 (1.0, 1.0, 103.0, 13.0) 0.559322033898 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot7(A,B) :- some7(C,A), all7(B,C) [0.372881355932]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot7(A,B) :- some7(C,A), all7(B,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), all7(B,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), all7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), some7(C,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), some7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), no7(C,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), no7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), no7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,B), some7(D,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,B), no7(A,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,B), no7(A,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,B), no7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,B), somenot7(C,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,B), somenot7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,B), somenot7(D,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(B,C), some7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(B,C), some7(D,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(B,C), somenot7(A,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(B,C), somenot7(A,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(B,C), somenot7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(C,B), some7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(C,B), some7(D,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(C,B), no7(C,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(C,B), no7(D,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), all7(B,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), all7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(A,C), all7(C,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(A,C), all7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(A,C), all7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(A,C), no7(B,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(A,C), no7(B,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(A,C), no7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(A,C), all7(C,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(A,C), all7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(A,C), all7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(A,C), some7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(A,C), some7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(B,C), all7(A,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(B,C), all7(A,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(B,C), all7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(B,C), some7(A,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(B,C), some7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), some7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), some7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), somenot7(C,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), somenot7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), all7(C,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), all7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), all7(D,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), somenot7(D,A) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(C,B), some7(A,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(C,B), some7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(C,B), no7(A,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(C,B), no7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(A,C), no7(B,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(A,C), no7(D,C) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(C,A), somenot7(C,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- all7(C,A), somenot7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- no7(C,A), no7(D,B) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- somenot7(B,C), somenot7(A,D) 0.372881355932
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+all7(C,B) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+some7(B,C) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+no7(B,C) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+somenot7(C,B) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+all7(A,C) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+all7(C,A) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+some7(A,C) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+no7(C,A) 0.222760290557
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+somenot7(B,C) 0.20790960452
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+somenot7(A,C) 0.20790960452
+[DEBUG] rsomenot7(A,B) :- all7(B,C), \+all7(A,C) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- all7(B,C), \+all7(C,A) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- all7(B,C), \+some7(A,C) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- all7(B,C), \+no7(A,C) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+all7(C,A) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+some7(A,C) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+somenot7(A,C) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+somenot7(C,A) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+all7(C,B) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+no7(C,B) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+no7(B,C) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+somenot7(C,B) 0.1629726206
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+all7(B,C) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+some7(C,B) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+no7(C,B) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+some7(C,A) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+no7(A,C) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+somenot7(C,A) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- all7(B,C), \+no7(C,A) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- all7(B,C), \+somenot7(C,A) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+all7(A,C) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+no7(A,C) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+some7(C,B) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+some7(B,C) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+all7(B,C) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+some7(C,B) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+some7(B,C) 0.151331719128
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+no7(C,B) 0.151331719128
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot7(A,B) :- some7(C,A), all7(B,C) 0.881355932203
+[DEBUG] Best rule so far: rsomenot7(A,B) :- true [0.112068965517]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot7(A,B) :- true 0.112068965517
+[DEBUG] ==================================
+[LVL9] rsomenot7(A,B) :- all7(A,C) 0.0 (2.0, 14.0, 90.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C) 0.0 (2.0, 12.0, 92.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,A) 0.0 (2.0, 16.0, 88.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B) 0.124239350913 (3.0, 15.0, 89.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- all7(C,B) (0.12423935091277892, 3.0) > (0.11206896551724138, 14.0)
+[LVL9] rsomenot7(A,B) :- some7(A,C) 0.132004310345 (3.0, 14.0, 90.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- some7(A,C) (0.1320043103448276, 3.0) > (0.12423935091277892, 3.0)
+[LVL9] rsomenot7(A,B) :- some7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- some7(C,A) (0.15086206896551727, 3.0) > (0.1320043103448276, 3.0)
+[LVL9] rsomenot7(A,B) :- some7(C,B) 0.194504310345 (4.0, 13.0, 91.0, 10.0) 0.778017241379 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- some7(C,B) (0.1945043103448276, 4.0) > (0.15086206896551727, 3.0)
+[LVL9] rsomenot7(A,B) :- no7(A,C) 0.132004310345 (3.0, 14.0, 90.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C) 0.132004310345 (3.0, 14.0, 90.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,A) 0.0 (2.0, 14.0, 90.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B) 0.140804597701 (3.0, 13.0, 91.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C) 0.140804597701 (3.0, 13.0, 91.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(B,C) 0.0 (2.0, 14.0, 90.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A) 0.132004310345 (3.0, 14.0, 90.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B) 0.132004310345 (3.0, 14.0, 90.0, 11.0) 0.704022988506 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot7(A,B) :- some7(C,B) [0.194504310345]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot7(A,B) :- some7(C,B) 0.194504310345
+[DEBUG] rsomenot7(A,B) :- some7(C,A) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(C,B) 0.140804597701
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C) 0.140804597701
+[DEBUG] rsomenot7(A,B) :- some7(A,C) 0.132004310345
+[DEBUG] rsomenot7(A,B) :- no7(A,C) 0.132004310345
+[DEBUG] rsomenot7(A,B) :- no7(B,C) 0.132004310345
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A) 0.132004310345
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B) 0.132004310345
+[DEBUG] rsomenot7(A,B) :- all7(C,B) 0.124239350913
+[DEBUG] rsomenot7(A,B) :- all7(A,C) 0.0
+[DEBUG] rsomenot7(A,B) :- all7(B,C) 0.0
+[DEBUG] rsomenot7(A,B) :- all7(C,A) 0.0
+[DEBUG] rsomenot7(A,B) :- no7(C,A) 0.0
+[DEBUG] rsomenot7(A,B) :- somenot7(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot7(A,B) :- some7(C,B), some7(C,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] BETTER RULE rsomenot7(A,B) :- some7(C,B), some7(C,A) (0.37068965517241376, 2.0) > (0.1945043103448276, 4.0)
+[LVL9] rsomenot7(A,B) :- some7(C,B), some7(D,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), no7(A,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), no7(A,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), no7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), somenot7(C,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), somenot7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), somenot7(D,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+all7(A,C) 0.222290640394 (4.0, 11.0, 93.0, 10.0) 0.778017241379 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+all7(C,A) 0.222290640394 (4.0, 11.0, 93.0, 10.0) 0.778017241379 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+some7(A,C) 0.222290640394 (4.0, 11.0, 93.0, 10.0) 0.778017241379 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+some7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+no7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+no7(C,A) 0.222290640394 (4.0, 11.0, 93.0, 10.0) 0.778017241379 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+somenot7(A,C) 0.207471264368 (4.0, 12.0, 92.0, 10.0) 0.778017241379 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,B), \+somenot7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), some7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), no7(C,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), no7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), no7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+all7(C,B) 0.176005747126 (3.0, 10.0, 94.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+some7(C,B) 0.0 (2.0, 11.0, 93.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+some7(B,C) 0.176005747126 (3.0, 10.0, 94.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+no7(C,B) 0.0 (2.0, 11.0, 93.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+no7(B,C) 0.176005747126 (3.0, 10.0, 94.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+somenot7(C,B) 0.176005747126 (3.0, 10.0, 94.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(C,A), \+somenot7(B,C) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), some7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), some7(D,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), no7(C,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), no7(D,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+all7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+all7(C,A) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+some7(A,C) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+some7(C,A) 0.0 (2.0, 12.0, 92.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+no7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+no7(C,A) 0.0 (2.0, 12.0, 92.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+somenot7(A,C) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,B), \+somenot7(C,A) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), all7(B,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), all7(B,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), all7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+all7(C,B) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+all7(B,C) 0.0 (2.0, 12.0, 92.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+some7(C,B) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+some7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+no7(C,B) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+no7(B,C) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+somenot7(C,B) 0.162466843501 (3.0, 11.0, 93.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(A,C), \+somenot7(B,C) 0.0 (2.0, 12.0, 92.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), all7(C,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), all7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), all7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), no7(B,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), no7(B,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), no7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+all7(C,B) 0.0 (2.0, 13.0, 91.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+all7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+some7(C,B) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+some7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+no7(C,B) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+no7(B,C) 0.0 (2.0, 13.0, 91.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+somenot7(C,B) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- some7(A,C), \+somenot7(B,C) 0.140804597701 (3.0, 13.0, 91.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), all7(C,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), all7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), all7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), some7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), some7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+all7(C,B) 0.0 (2.0, 13.0, 91.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+all7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+some7(C,B) 0.0 (2.0, 13.0, 91.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+some7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+no7(C,B) 0.140804597701 (3.0, 13.0, 91.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+no7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+somenot7(C,B) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(A,C), \+somenot7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), all7(A,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), all7(A,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), all7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), some7(A,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), some7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+all7(A,C) 0.0 (2.0, 13.0, 91.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+all7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+some7(A,C) 0.0 (2.0, 13.0, 91.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+some7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+no7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+no7(C,A) 0.140804597701 (3.0, 13.0, 91.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+somenot7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(B,C), \+somenot7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), some7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), some7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), somenot7(C,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), somenot7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+all7(C,B) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+all7(B,C) 0.140804597701 (3.0, 13.0, 91.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+some7(C,B) 0.0 (2.0, 13.0, 91.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+some7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+no7(C,B) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+no7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,A), \+somenot7(B,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), all7(C,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), all7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), all7(D,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), somenot7(D,A) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), \+all7(A,C) 0.140804597701 (3.0, 13.0, 91.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), \+some7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), \+some7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), \+no7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), \+no7(C,A) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(C,B), \+somenot7(A,C) 0.150862068966 (3.0, 12.0, 92.0, 11.0) 0.704022988506 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), some7(A,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), some7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), no7(A,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,B), no7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(A,C), no7(B,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(A,C), no7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), somenot7(A,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(B,C), somenot7(D,C) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,A), somenot7(C,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- all7(C,A), somenot7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- no7(C,A), no7(D,B) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[LVL9] rsomenot7(A,B) :- somenot7(B,C), somenot7(A,D) 0.370689655172 (2.0, 2.0, 102.0, 12.0) 0.556034482759 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot7(A,B) :- some7(C,B), some7(C,A) [0.370689655172]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot7(A,B) :- some7(C,B), some7(C,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), some7(D,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), no7(A,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), no7(A,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), no7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), somenot7(C,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), somenot7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), somenot7(D,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,A), some7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,A), no7(C,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,A), no7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,A), no7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(C,B), some7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(C,B), some7(D,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(C,B), no7(C,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(C,B), no7(D,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), all7(B,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), all7(B,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), all7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), somenot7(B,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(A,C), all7(C,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(A,C), all7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(A,C), all7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(A,C), no7(B,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(A,C), no7(B,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(A,C), no7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(A,C), all7(C,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(A,C), all7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(A,C), all7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(A,C), some7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(A,C), some7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(B,C), all7(A,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(B,C), all7(A,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(B,C), all7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(B,C), some7(A,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(B,C), some7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), some7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), some7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), somenot7(C,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), somenot7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), all7(C,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), all7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), all7(D,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(C,B), somenot7(D,A) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(C,B), some7(A,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(C,B), some7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(C,B), no7(A,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(C,B), no7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(A,C), no7(B,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(A,C), no7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(B,C), somenot7(A,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(B,C), somenot7(D,C) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(C,A), somenot7(C,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- all7(C,A), somenot7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- no7(C,A), no7(D,B) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- somenot7(B,C), somenot7(A,D) 0.370689655172
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+all7(A,C) 0.222290640394
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+all7(C,A) 0.222290640394
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+some7(A,C) 0.222290640394
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+no7(C,A) 0.222290640394
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+somenot7(A,C) 0.207471264368
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+all7(C,B) 0.176005747126
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+some7(B,C) 0.176005747126
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+no7(B,C) 0.176005747126
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+somenot7(C,B) 0.176005747126
+[DEBUG] rsomenot7(A,B) :- some7(C,A), \+somenot7(B,C) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+all7(C,A) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+some7(A,C) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+somenot7(A,C) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+somenot7(C,A) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+all7(C,B) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+no7(C,B) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+no7(B,C) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+somenot7(C,B) 0.162466843501
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+some7(C,A) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+no7(A,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- some7(C,B), \+somenot7(C,A) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+all7(A,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(C,B), \+no7(A,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+some7(C,B) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- somenot7(A,C), \+some7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+all7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+some7(C,B) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+some7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+no7(C,B) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- some7(A,C), \+somenot7(C,B) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(A,C), \+all7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(A,C), \+some7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(A,C), \+no7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(A,C), \+somenot7(C,B) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(A,C), \+somenot7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(B,C), \+all7(C,A) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(B,C), \+some7(C,A) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(B,C), \+no7(A,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(B,C), \+somenot7(A,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- no7(B,C), \+somenot7(C,A) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), \+all7(C,B) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), \+some7(B,C) 0.150862068966
+[DEBUG] rsomenot7(A,B) :- somenot7(C,A), \+no7(C,B) 0.150862068966
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot7(A,B) :- some7(C,B), some7(C,A) 0.881355932203

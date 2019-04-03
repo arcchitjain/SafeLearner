@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_2.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc2.log
+              target:	rnvc2/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc2(A,B) :- some2(A,C), \+all2(B,C), \+no2(C,B), \+somenot2(C,B)
+rnvc2(A,B) :- no2(C,A), \+all2(C,B), \+some2(B,C), \+no2(B,C), \+somenot2(B,C)
+rnvc2(A,B) :- some2(B,C), \+all2(C,A), \+no2(C,A), \+somenot2(C,A)
+rnvc2(A,B) :- somenot2(A,C), \+all2(B,C), \+some2(C,B), \+no2(C,B), \+somenot2(C,B)
+rnvc2(A,B) :- no2(A,C), no2(B,C)
+rnvc2(A,B) :- somenot2(B,C), all2(A,C)
+rnvc2(A,B) :- somenot2(C,A), somenot2(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	16967
+          Total time:	243.4791s

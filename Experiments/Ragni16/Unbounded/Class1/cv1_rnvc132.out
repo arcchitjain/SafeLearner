@@ -1,0 +1,24 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_132.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rnvc132.log
+              target:	rnvc132/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc132(A,B) :- no132(B,C), \+some132(A,C), \+some132(C,A), \+no132(C,A)
+rnvc132(A,B) :- some132(C,B), \+all132(A,C), \+all132(C,A), \+some132(A,C), \+some132(C,A), \+no132(A,C), \+no132(C,A)
+rnvc132(A,B) :- all132(C,A), all132(C,B)
+rnvc132(A,B) :- some132(A,C), no132(C,B)
+rnvc132(A,B) :- some132(C,A), somenot132(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	6670
+          Total time:	137.8240s

@@ -1,0 +1,348 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.207756310873
+[INFO] Computing scores: 0.0742s
+[INFO] Number of examples (M): 118
+[INFO] Positive weight (P): 9.0000
+[INFO] Negative weight (N): 109.0000
+[DEBUG] Best rule so far: rsomenot5(A,B) :- true [0.0762711864407]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot5(A,B) :- true 0.0762711864407
+[DEBUG] ==================================
+[LVL9] rsomenot5(A,B) :- all5(A,C) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A) 0.192266949153 (3.0, 12.0, 97.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] BETTER RULE rsomenot5(A,B) :- all5(C,A) (0.19226694915254236, 3.0) > (0.07627118644067797, 9.0)
+[LVL9] rsomenot5(A,B) :- some5(A,C) 0.180957128614 (3.0, 13.0, 96.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C) 0.0 (1.0, 15.0, 94.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A) 0.159713168188 (2.0, 10.0, 99.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,B) 0.0827900912647 (1.0, 11.0, 98.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C) 0.122133599202 (2.0, 14.0, 95.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B) 0.192266949153 (3.0, 12.0, 97.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C) 0.0 (1.0, 13.0, 96.0, 8.0) 0.53813559322 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(C,B) 0.0 (1.0, 15.0, 94.0, 8.0) 0.53813559322 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot5(A,B) :- all5(C,A) [0.192266949153]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot5(A,B) :- all5(C,A) 0.192266949153
+[DEBUG] rsomenot5(A,B) :- no5(C,B) 0.192266949153
+[DEBUG] rsomenot5(A,B) :- some5(A,C) 0.180957128614
+[DEBUG] rsomenot5(A,B) :- some5(C,A) 0.159713168188
+[DEBUG] rsomenot5(A,B) :- no5(B,C) 0.122133599202
+[DEBUG] rsomenot5(A,B) :- some5(C,B) 0.0827900912647
+[DEBUG] rsomenot5(A,B) :- all5(A,C) 0.0
+[DEBUG] rsomenot5(A,B) :- some5(B,C) 0.0
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C) 0.0
+[DEBUG] rsomenot5(A,B) :- somenot5(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot5(A,B) :- all5(C,A), some5(C,B) 0.53813559322 (1.0, 0.0, 109.0, 8.0) 0.53813559322 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot5(A,B) :- all5(C,A), some5(C,B) (0.538135593220339, 1.0) > (0.19226694915254236, 3.0)
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+all5(C,B) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+all5(B,C) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+some5(B,C) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+no5(C,B) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+no5(B,C) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+somenot5(C,B) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+somenot5(B,C) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+all5(A,C) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+all5(C,A) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+some5(A,C) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+some5(C,A) 0.148305084746 (2.0, 11.0, 98.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+no5(A,C) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+no5(C,A) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+somenot5(A,C) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+somenot5(C,A) 0.219733656174 (3.0, 10.0, 99.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+all5(C,B) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+all5(B,C) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+some5(C,B) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+some5(B,C) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+no5(C,B) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+no5(B,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+somenot5(C,B) 0.205084745763 (3.0, 11.0, 98.0, 6.0) 0.76906779661 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+somenot5(B,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+all5(C,B) 0.17302259887 (2.0, 9.0, 100.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+all5(B,C) 0.17302259887 (2.0, 9.0, 100.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+some5(B,C) 0.18875192604 (2.0, 8.0, 101.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+somenot5(C,B) 0.18875192604 (2.0, 8.0, 101.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+somenot5(B,C) 0.18875192604 (2.0, 8.0, 101.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+all5(A,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+all5(C,A) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+no5(A,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+no5(C,A) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+somenot5(A,C) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+somenot5(C,A) 0.138418079096 (2.0, 12.0, 97.0, 7.0) 0.69209039548 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot5(A,B) :- all5(C,A), some5(C,B) [0.53813559322]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+all5(C,B) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+all5(B,C) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+no5(B,C) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+somenot5(C,B) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+somenot5(B,C) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+all5(A,C) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+no5(A,C) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+no5(C,A) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+somenot5(C,A) 0.219733656174
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+somenot5(A,C) 0.205084745763
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+all5(C,B) 0.205084745763
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+all5(B,C) 0.205084745763
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+some5(C,B) 0.205084745763
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+some5(B,C) 0.205084745763
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+somenot5(C,B) 0.205084745763
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+some5(B,C) 0.18875192604
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+somenot5(C,B) 0.18875192604
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+somenot5(B,C) 0.18875192604
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+all5(C,B) 0.17302259887
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+all5(B,C) 0.17302259887
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+some5(B,C) 0.148305084746
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+no5(C,B) 0.148305084746
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+all5(C,A) 0.148305084746
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+some5(A,C) 0.148305084746
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+some5(C,A) 0.148305084746
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+no5(C,B) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+no5(B,C) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+somenot5(B,C) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+all5(A,C) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+all5(C,A) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+no5(A,C) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+no5(C,A) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+somenot5(A,C) 0.138418079096
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+somenot5(C,A) 0.138418079096
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot5(A,B) :- all5(C,A), some5(C,B) 0.932203389831
+[DEBUG] Best rule so far: rsomenot5(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot5(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot5(A,B) :- all5(A,C) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] BETTER RULE rsomenot5(A,B) :- all5(A,C) (0.07122507122507123, 2.0) > (0.0, 9.0)
+[LVL9] rsomenot5(A,B) :- all5(C,A) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] BETTER RULE rsomenot5(A,B) :- all5(C,A) (0.1378917378917379, 3.0) > (0.07122507122507123, 2.0)
+[LVL9] rsomenot5(A,B) :- some5(A,C) 0.180492709904 (4.0, 13.0, 96.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] BETTER RULE rsomenot5(A,B) :- some5(A,C) (0.18049270990447464, 4.0) > (0.1378917378917379, 3.0)
+[LVL9] rsomenot5(A,B) :- some5(B,C) 0.0 (2.0, 15.0, 94.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A) 0.159105851414 (3.0, 10.0, 99.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C) 0.121669180493 (3.0, 14.0, 95.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B) 0.191773504274 (4.0, 12.0, 97.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] BETTER RULE rsomenot5(A,B) :- no5(C,B) (0.19177350427350429, 4.0) > (0.18049270990447464, 4.0)
+[LVL9] rsomenot5(A,B) :- somenot5(B,C) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(C,B) 0.0 (2.0, 15.0, 94.0, 7.0) 0.534188034188 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot5(A,B) :- no5(C,B) [0.191773504274]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot5(A,B) :- no5(C,B) 0.191773504274
+[DEBUG] rsomenot5(A,B) :- some5(A,C) 0.180492709904
+[DEBUG] rsomenot5(A,B) :- some5(C,A) 0.159105851414
+[DEBUG] rsomenot5(A,B) :- all5(C,A) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- no5(B,C) 0.121669180493
+[DEBUG] rsomenot5(A,B) :- all5(A,C) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C) 0.0
+[DEBUG] rsomenot5(A,B) :- somenot5(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot5(A,B) :- no5(C,B), all5(C,A) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] BETTER RULE rsomenot5(A,B) :- no5(C,B), all5(C,A) (0.3561253561253561, 2.0) > (0.19177350427350429, 4.0)
+[LVL9] rsomenot5(A,B) :- no5(C,B), all5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), all5(D,A) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), some5(A,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), some5(C,A) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), some5(A,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), some5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), some5(D,A) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), some5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+all5(A,C) 0.21916971917 (4.0, 10.0, 99.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+all5(C,A) 0.147741147741 (3.0, 11.0, 98.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+some5(A,C) 0.147741147741 (3.0, 11.0, 98.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+some5(C,A) 0.147741147741 (3.0, 11.0, 98.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+no5(A,C) 0.21916971917 (4.0, 10.0, 99.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+no5(C,A) 0.21916971917 (4.0, 10.0, 99.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+somenot5(A,C) 0.204558404558 (4.0, 11.0, 98.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(C,B), \+somenot5(C,A) 0.21916971917 (4.0, 10.0, 99.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), no5(B,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), no5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), no5(B,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), no5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), no5(D,B) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), somenot5(B,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), somenot5(B,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), somenot5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+all5(C,B) 0.204558404558 (4.0, 11.0, 98.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+all5(B,C) 0.204558404558 (4.0, 11.0, 98.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+some5(C,B) 0.204558404558 (4.0, 11.0, 98.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+some5(B,C) 0.204558404558 (4.0, 11.0, 98.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+no5(C,B) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+no5(B,C) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+somenot5(C,B) 0.204558404558 (4.0, 11.0, 98.0, 5.0) 0.767094017094 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(A,C), \+somenot5(B,C) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), no5(B,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), no5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), no5(B,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), no5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), no5(D,B) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+all5(C,B) 0.172364672365 (3.0, 9.0, 100.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+all5(B,C) 0.172364672365 (3.0, 9.0, 100.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+some5(B,C) 0.188034188034 (3.0, 8.0, 101.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+no5(C,B) 0.0971250971251 (2.0, 9.0, 100.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+no5(B,C) 0.0971250971251 (2.0, 9.0, 100.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+somenot5(C,B) 0.188034188034 (3.0, 8.0, 101.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(C,A), \+somenot5(B,C) 0.188034188034 (3.0, 8.0, 101.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), some5(B,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), some5(B,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), some5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), no5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), no5(D,B) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+all5(C,B) 0.159105851414 (3.0, 10.0, 99.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+all5(B,C) 0.159105851414 (3.0, 10.0, 99.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+some5(B,C) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+no5(C,B) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+no5(B,C) 0.159105851414 (3.0, 10.0, 99.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+somenot5(C,B) 0.159105851414 (3.0, 10.0, 99.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(C,A), \+somenot5(B,C) 0.159105851414 (3.0, 10.0, 99.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), some5(A,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), some5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), some5(D,A) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), some5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+all5(A,C) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+all5(C,A) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+some5(A,C) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+some5(C,A) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+no5(A,C) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+no5(C,A) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+somenot5(A,C) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- no5(B,C), \+somenot5(C,A) 0.137891737892 (3.0, 12.0, 97.0, 6.0) 0.689458689459 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), somenot5(C,B) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), somenot5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), somenot5(D,B) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), \+all5(C,B) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), \+all5(B,C) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), \+some5(C,B) 0.0763125763126 (2.0, 12.0, 97.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), \+some5(B,C) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), \+no5(C,B) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), \+no5(B,C) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- all5(A,C), \+somenot5(B,C) 0.0763125763126 (2.0, 12.0, 97.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), some5(A,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), some5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), \+all5(A,C) 0.0763125763126 (2.0, 12.0, 97.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), \+all5(C,A) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), \+some5(C,A) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), \+no5(A,C) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), \+no5(C,A) 0.0763125763126 (2.0, 12.0, 97.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), \+somenot5(A,C) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(B,C), \+somenot5(C,A) 0.0821827744905 (2.0, 11.0, 98.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), all5(C,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), all5(D,A) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), \+all5(A,C) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), \+some5(A,C) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), \+some5(C,A) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), \+no5(A,C) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), \+no5(C,A) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), \+somenot5(A,C) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- some5(B,C), \+somenot5(C,A) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(C,B), all5(A,D) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(C,B), all5(D,C) 0.356125356125 (2.0, 1.0, 108.0, 7.0) 0.534188034188 [ACCEPT]
+[LVL9] rsomenot5(A,B) :- somenot5(C,B), \+all5(C,A) 0.0712250712251 (2.0, 13.0, 96.0, 7.0) 0.534188034188 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot5(A,B) :- no5(C,B), all5(C,A) [0.356125356125]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot5(A,B) :- no5(C,B), all5(C,A) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), all5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), all5(D,A) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), some5(A,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), some5(C,A) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), some5(A,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), some5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), some5(D,A) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), some5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), no5(B,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), no5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), no5(B,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), no5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), no5(D,B) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), somenot5(B,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), somenot5(B,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(A,C), somenot5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(C,A), no5(B,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(C,A), no5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(C,A), no5(B,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(C,A), no5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(C,A), no5(D,B) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(C,A), some5(B,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(C,A), some5(B,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(C,A), some5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(C,A), no5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(C,A), no5(D,B) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(B,C), some5(A,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(B,C), some5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(B,C), some5(D,A) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(B,C), some5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(A,C), somenot5(C,B) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(A,C), somenot5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- all5(A,C), somenot5(D,B) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), some5(A,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), some5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(B,C), all5(C,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- some5(B,C), all5(D,A) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- somenot5(C,B), all5(A,D) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- somenot5(C,B), all5(D,C) 0.356125356125
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+all5(A,C) 0.21916971917
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+no5(A,C) 0.21916971917
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+no5(C,A) 0.21916971917
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+somenot5(C,A) 0.21916971917
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+somenot5(A,C) 0.204558404558
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+all5(C,B) 0.204558404558
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+all5(B,C) 0.204558404558
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+some5(C,B) 0.204558404558
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+some5(B,C) 0.204558404558
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+somenot5(C,B) 0.204558404558
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+some5(B,C) 0.188034188034
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+somenot5(C,B) 0.188034188034
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+somenot5(B,C) 0.188034188034
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+all5(C,B) 0.172364672365
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+all5(B,C) 0.172364672365
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+all5(C,B) 0.159105851414
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+all5(B,C) 0.159105851414
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+no5(B,C) 0.159105851414
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+somenot5(C,B) 0.159105851414
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+somenot5(B,C) 0.159105851414
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+all5(C,A) 0.147741147741
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+some5(A,C) 0.147741147741
+[DEBUG] rsomenot5(A,B) :- no5(C,B), \+some5(C,A) 0.147741147741
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+no5(C,B) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+no5(B,C) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- some5(A,C), \+somenot5(B,C) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+all5(A,C) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+all5(C,A) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+no5(A,C) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+no5(C,A) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+somenot5(A,C) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+somenot5(C,A) 0.137891737892
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+no5(C,B) 0.0971250971251
+[DEBUG] rsomenot5(A,B) :- some5(C,A), \+no5(B,C) 0.0971250971251
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+some5(B,C) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- all5(C,A), \+no5(C,B) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- all5(A,C), \+all5(C,B) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- all5(A,C), \+all5(B,C) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- all5(A,C), \+some5(B,C) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- all5(A,C), \+no5(C,B) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- all5(A,C), \+no5(B,C) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), \+all5(C,A) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), \+some5(C,A) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), \+no5(A,C) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), \+somenot5(A,C) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), \+somenot5(C,A) 0.0821827744905
+[DEBUG] rsomenot5(A,B) :- all5(A,C), \+some5(C,B) 0.0763125763126
+[DEBUG] rsomenot5(A,B) :- all5(A,C), \+somenot5(B,C) 0.0763125763126
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), \+all5(A,C) 0.0763125763126
+[DEBUG] rsomenot5(A,B) :- somenot5(B,C), \+no5(C,A) 0.0763125763126
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+some5(A,C) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- no5(B,C), \+some5(C,A) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C), \+all5(A,C) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C), \+some5(A,C) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C), \+some5(C,A) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C), \+no5(A,C) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C), \+no5(C,A) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C), \+somenot5(A,C) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- some5(B,C), \+somenot5(C,A) 0.0712250712251
+[DEBUG] rsomenot5(A,B) :- somenot5(C,B), \+all5(C,A) 0.0712250712251
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot5(A,B) :- no5(C,B), all5(C,A) 0.932203389831

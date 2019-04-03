@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_36.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rall36.log
+              target:	rall36/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall36(A,B) :- all36(B,C), no36(C,A)
+rall36(A,B) :- no36(B,C), some36(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.916666666667
+           Precision:	 1.0
+              Recall:	 0.181818181818
+================== STATISTICS ==================
+    Rule evaluations:	43728
+          Total time:	3717.2439s

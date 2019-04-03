@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_122.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rnvc122.log
+              target:	rnvc122/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc122(A,B) :- somenot122(B,C)
+rnvc122(A,B) :- somenot122(A,C), \+all122(B,C)
+rnvc122(A,B) :- somenot122(C,A), \+all122(B,C)
+rnvc122(A,B) :- no122(A,C), \+all122(C,B), \+all122(B,C), \+no122(B,C)
+rnvc122(A,B) :- no122(C,A), \+all122(C,B), \+all122(B,C), \+some122(C,B)
+rnvc122(A,B) :- some122(A,C), \+all122(C,B), \+all122(B,C), \+somenot122(C,B)
+rnvc122(A,B) :- some122(C,A), \+all122(C,B), \+all122(B,C), \+no122(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	7704
+          Total time:	235.3489s

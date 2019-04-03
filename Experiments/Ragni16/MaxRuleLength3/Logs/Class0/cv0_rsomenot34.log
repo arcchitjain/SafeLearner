@@ -1,0 +1,1953 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.150760586411
+[INFO] Computing scores: 0.0695s
+[INFO] Number of examples (M): 120
+[INFO] Positive weight (P): 33.0000
+[INFO] Negative weight (N): 87.0000
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.3296875 (5.0, 10.0, 77.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.3296875, 5.0) > (0.0, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.0 (3.0, 12.0, 75.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (3.0, 12.0, 75.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.3296875 (5.0, 10.0, 77.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.3921875 (6.0, 9.0, 78.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(A,C) (0.3921875, 6.0) > (0.3296875, 5.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.4546875 (7.0, 8.0, 79.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C) (0.4546875, 7.0) > (0.3921875, 6.0)
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.3921875 (6.0, 9.0, 78.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.0 (4.0, 11.0, 76.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (1.0, 14.0, 73.0, 32.0) 0.6375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (3.0, 12.0, 75.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.3296875 (5.0, 10.0, 77.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.4546875 (7.0, 8.0, 79.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.0 (4.0, 11.0, 76.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.4546875 (7.0, 8.0, 79.0, 26.0) 0.909375 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- some34(B,C) [0.4546875]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.4546875
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.4546875
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.4546875
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.3921875
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.3921875
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.3296875
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.3296875
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.3296875
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(A,C) 0.425 (1.0, 1.0, 86.0, 32.0) 0.6375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(C,A) 0.758333333333 (2.0, 0.0, 87.0, 31.0) 0.758333333333 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C), all34(C,A) (0.7583333333333333, 2.0) > (0.4546875, 7.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.485 (7.0, 7.0, 80.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.519642857143 (7.0, 6.0, 81.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.519642857143 (7.0, 6.0, 81.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.519642857143 (7.0, 6.0, 81.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.519642857143 (7.0, 6.0, 81.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.519642857143 (7.0, 6.0, 81.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.519642857143 (7.0, 6.0, 81.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.485 (7.0, 7.0, 80.0, 26.0) 0.909375 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.418333333333 (6.0, 8.0, 79.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.448214285714 (6.0, 7.0, 80.0, 27.0) 0.896428571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.351666666667 (5.0, 9.0, 78.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.351666666667 (5.0, 9.0, 78.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.376785714286 (5.0, 8.0, 79.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.351666666667 (5.0, 9.0, 78.0, 28.0) 0.879166666667 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.305357142857 (4.0, 9.0, 78.0, 29.0) 0.855 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0 (3.0, 11.0, 76.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), \+all34(C,B) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), \+all34(B,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), \+some34(C,B) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), \+no34(C,B) 0.0 (3.0, 11.0, 76.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), \+no34(B,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), \+somenot34(B,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0 (3.0, 11.0, 76.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0 (3.0, 10.0, 77.0, 30.0) 0.81875 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- some34(B,C), all34(C,A) [0.758333333333]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.519642857143
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.519642857143
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.519642857143
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.519642857143
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.519642857143
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.519642857143
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.485
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.485
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.448214285714
+[DEBUG] rsomenot34(A,B) :- some34(B,C), all34(A,C) 0.425
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.418333333333
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.376785714286
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.351666666667
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.351666666667
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.351666666667
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.305357142857
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A), \+all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A), \+no34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A), \+no34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A), \+somenot34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- some34(B,C), all34(C,A) 0.741666666667
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.328919491525 (7.0, 10.0, 77.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.3289194915254237, 7.0) > (0.0, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.0 (5.0, 12.0, 75.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (3.0, 12.0, 75.0, 30.0) 0.631355932203 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.328919491525 (7.0, 10.0, 77.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.391419491525 (8.0, 9.0, 78.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(A,C) (0.3914194915254237, 8.0) > (0.3289194915254237, 7.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.391419491525 (8.0, 9.0, 78.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.266419491525 (6.0, 11.0, 76.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (3.0, 14.0, 73.0, 30.0) 0.631355932203 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (5.0, 12.0, 75.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.328919491525 (7.0, 10.0, 77.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.453919491525 (9.0, 8.0, 79.0, 24.0) 0.907838983051 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C) (0.4539194915254237, 9.0) > (0.3914194915254237, 8.0)
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.266419491525 (6.0, 11.0, 76.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.453919491525 (9.0, 8.0, 79.0, 24.0) 0.907838983051 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C) [0.453919491525]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.453919491525
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.453919491525
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.391419491525
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.391419491525
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.328919491525
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.328919491525
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.328919491525
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.266419491525
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.266419491525
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(A,C) 0.754237288136 (4.0, 0.0, 87.0, 29.0) 0.754237288136 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C), some34(A,C) (0.7542372881355933, 4.0) > (0.4539194915254237, 9.0)
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.518765133172 (9.0, 6.0, 81.0, 24.0) 0.907838983051 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.518765133172 (9.0, 6.0, 81.0, 24.0) 0.907838983051 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.518765133172 (9.0, 6.0, 81.0, 24.0) 0.907838983051 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.518765133172 (9.0, 6.0, 81.0, 24.0) 0.907838983051 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.48418079096 (9.0, 7.0, 80.0, 24.0) 0.907838983051 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.417514124294 (8.0, 8.0, 79.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.447336561743 (8.0, 7.0, 80.0, 25.0) 0.894673123487 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.355225988701 (6.0, 7.0, 80.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.355225988701 (6.0, 7.0, 80.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.40482398957 (7.0, 7.0, 80.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.438559322034 (7.0, 6.0, 81.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.438559322034 (7.0, 6.0, 81.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.355225988701 (6.0, 7.0, 80.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.350847457627 (7.0, 9.0, 78.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.350847457627 (7.0, 9.0, 78.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.375907990315 (7.0, 8.0, 79.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.350847457627 (7.0, 9.0, 78.0, 26.0) 0.877118644068 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.304479418886 (6.0, 9.0, 78.0, 27.0) 0.852542372881 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0 (5.0, 11.0, 76.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0 (5.0, 11.0, 76.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0 (5.0, 10.0, 77.0, 28.0) 0.815677966102 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C), some34(A,C) [0.754237288136]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.518765133172
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.518765133172
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.518765133172
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.518765133172
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.48418079096
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.447336561743
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.438559322034
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.438559322034
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.417514124294
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.40482398957
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.375907990315
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.355225988701
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.355225988701
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.355225988701
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.350847457627
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.350847457627
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.350847457627
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.304479418886
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- somenot34(B,C), some34(A,C) 0.758333333333
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.25]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.25
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.328125 (9.0, 10.0, 77.0, 24.0) 0.875 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.328125, 9.0) > (0.25, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.0 (7.0, 12.0, 75.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (5.0, 12.0, 75.0, 28.0) 0.625 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.328125 (9.0, 10.0, 77.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C) (0.375, 9.0) > (0.328125, 9.0)
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.390625 (10.0, 9.0, 78.0, 23.0) 0.892857142857 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(C,A) (0.390625, 10.0) > (0.375, 9.0)
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.265625 (8.0, 11.0, 76.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (5.0, 14.0, 73.0, 28.0) 0.625 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (7.0, 12.0, 75.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.328125 (9.0, 10.0, 77.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.265625 (8.0, 11.0, 76.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.453125 (11.0, 8.0, 79.0, 22.0) 0.90625 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(C,B) (0.453125, 11.0) > (0.390625, 10.0)
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(C,B) [0.453125]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.453125
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.390625
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.328125
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.328125
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.328125
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.265625
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.265625
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), all34(A,C) 0.75 (6.0, 0.0, 87.0, 27.0) 0.75 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(C,B), all34(A,C) (0.75, 6.0) > (0.453125, 11.0)
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.446428571429 (10.0, 7.0, 80.0, 23.0) 0.892857142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.446428571429 (10.0, 7.0, 80.0, 23.0) 0.892857142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.517857142857 (11.0, 6.0, 81.0, 22.0) 0.90625 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.517857142857 (11.0, 6.0, 81.0, 22.0) 0.90625 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.483333333333 (11.0, 7.0, 80.0, 22.0) 0.90625 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.446428571429 (10.0, 7.0, 80.0, 23.0) 0.892857142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.416666666667 (10.0, 8.0, 79.0, 23.0) 0.892857142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.446428571429 (10.0, 7.0, 80.0, 23.0) 0.892857142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.446428571429 (10.0, 7.0, 80.0, 23.0) 0.892857142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.403846153846 (9.0, 7.0, 80.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.4375 (9.0, 6.0, 81.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.4375 (9.0, 6.0, 81.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.4375 (9.0, 6.0, 81.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.4375 (9.0, 6.0, 81.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.35 (9.0, 9.0, 78.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.35 (9.0, 9.0, 78.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.375 (9.0, 8.0, 79.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.35 (9.0, 9.0, 78.0, 24.0) 0.875 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.270833333333 (7.0, 8.0, 79.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.270833333333 (7.0, 8.0, 79.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.354166666667 (8.0, 7.0, 80.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.270833333333 (7.0, 8.0, 79.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.303571428571 (8.0, 9.0, 78.0, 25.0) 0.85 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0 (7.0, 11.0, 76.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0 (7.0, 11.0, 76.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0 (7.0, 10.0, 77.0, 26.0) 0.8125 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(C,B), all34(A,C) [0.75]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.517857142857
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.517857142857
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.483333333333
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.446428571429
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.446428571429
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.446428571429
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.446428571429
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.446428571429
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.4375
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.4375
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.4375
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.4375
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.416666666667
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.403846153846
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.375
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.375
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.375
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.375
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.375
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.375
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.375
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.375
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.354166666667
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.35
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.35
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.35
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.303571428571
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.270833333333
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.270833333333
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.270833333333
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- somenot34(C,B), all34(A,C) 0.775
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.236842105263]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.236842105263
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.0 (9.0, 12.0, 75.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (7.0, 12.0, 75.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.327302631579 (11.0, 10.0, 77.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(C,B) (0.32730263157894735, 11.0) > (0.23684210526315788, 33.0)
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C) (0.3740601503759398, 11.0) > (0.32730263157894735, 11.0)
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.389802631579 (12.0, 9.0, 78.0, 21.0) 0.890977443609 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(C,A) (0.38980263157894735, 12.0) > (0.3740601503759398, 11.0)
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.264802631579 (10.0, 11.0, 76.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (7.0, 14.0, 73.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (9.0, 12.0, 75.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.327302631579 (11.0, 10.0, 77.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.264802631579 (10.0, 11.0, 76.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- some34(C,A) [0.389802631579]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.389802631579
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.327302631579
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.327302631579
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.264802631579
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.264802631579
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(C,B) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(C,A), all34(C,B) (0.41228070175438597, 7.0) > (0.38980263157894735, 12.0)
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(B,C) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(C,D) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(B,D) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(D,C) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(D,B) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), some34(C,B) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), some34(D,B) 0.412280701754 (7.0, 1.0, 86.0, 26.0) 0.618421052632 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), somenot34(C,B) 0.745614035088 (8.0, 0.0, 87.0, 25.0) 0.745614035088 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(C,A), somenot34(C,B) (0.7456140350877193, 8.0) > (0.41228070175438597, 7.0)
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.415789473684 (12.0, 8.0, 79.0, 21.0) 0.890977443609 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.445488721805 (12.0, 7.0, 80.0, 21.0) 0.890977443609 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.445488721805 (12.0, 7.0, 80.0, 21.0) 0.890977443609 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.402834008097 (11.0, 7.0, 80.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.436403508772 (11.0, 6.0, 81.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.436403508772 (11.0, 6.0, 81.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.436403508772 (11.0, 6.0, 81.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.436403508772 (11.0, 6.0, 81.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.436403508772 (11.0, 6.0, 81.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.436403508772 (11.0, 6.0, 81.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.402834008097 (11.0, 7.0, 80.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.349122807018 (11.0, 9.0, 78.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.374060150376 (11.0, 8.0, 79.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.349122807018 (11.0, 9.0, 78.0, 22.0) 0.872807017544 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.269736842105 (9.0, 8.0, 79.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.269736842105 (9.0, 8.0, 79.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.353070175439 (10.0, 7.0, 80.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.269736842105 (9.0, 8.0, 79.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.302631578947 (10.0, 9.0, 78.0, 23.0) 0.847368421053 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.269736842105 (9.0, 8.0, 79.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.269736842105 (9.0, 8.0, 79.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.248987854251 (9.0, 9.0, 78.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.269736842105 (9.0, 8.0, 79.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0 (9.0, 11.0, 76.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0 (9.0, 11.0, 76.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0 (9.0, 10.0, 77.0, 24.0) 0.809210526316 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- some34(C,A), somenot34(C,B) [0.745614035088]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.445488721805
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.445488721805
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.436403508772
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.436403508772
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.436403508772
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.436403508772
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.436403508772
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.436403508772
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.415789473684
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(C,B) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(B,C) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(C,D) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(B,D) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(D,C) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(D,B) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(C,A), some34(C,B) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(C,A), some34(D,B) 0.412280701754
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.402834008097
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.402834008097
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.374060150376
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.353070175439
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.349122807018
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.349122807018
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.302631578947
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.269736842105
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.269736842105
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.269736842105
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.269736842105
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.269736842105
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.269736842105
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.248987854251
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- some34(C,A), somenot34(C,B) 0.791666666667
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.2302295918367347, 11.0) > (0.0, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.0 (11.0, 12.0, 75.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (9.0, 12.0, 75.0, 24.0) 0.611607142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.326450892857 (13.0, 10.0, 77.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(C,B) (0.32645089285714285, 13.0) > (0.2302295918367347, 11.0)
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C) (0.37308673469387754, 13.0) > (0.32645089285714285, 13.0)
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.263950892857 (12.0, 11.0, 76.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (9.0, 14.0, 73.0, 24.0) 0.611607142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (11.0, 12.0, 75.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.326450892857 (13.0, 10.0, 77.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.263950892857 (12.0, 11.0, 76.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- some34(B,C) [0.373086734694]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.326450892857
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.326450892857
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.263950892857
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.263950892857
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(A,C) 0.407738095238 (9.0, 1.0, 86.0, 24.0) 0.611607142857 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C), all34(A,C) (0.4077380952380953, 9.0) > (0.37308673469387754, 13.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(A,D) 0.407738095238 (9.0, 1.0, 86.0, 24.0) 0.611607142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(D,C) 0.407738095238 (9.0, 1.0, 86.0, 24.0) 0.611607142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), some34(A,C) 0.407738095238 (9.0, 1.0, 86.0, 24.0) 0.611607142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), some34(A,D) 0.407738095238 (9.0, 1.0, 86.0, 24.0) 0.611607142857 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), no34(C,A) 0.741071428571 (10.0, 0.0, 87.0, 23.0) 0.741071428571 [REJECT* fp] 8.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C), no34(C,A) (0.7410714285714285, 10.0) > (0.4077380952380953, 9.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.401785714286 (13.0, 7.0, 80.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.435267857143 (13.0, 6.0, 81.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.435267857143 (13.0, 6.0, 81.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.435267857143 (13.0, 6.0, 81.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.435267857143 (13.0, 6.0, 81.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.348214285714 (13.0, 9.0, 78.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.373086734694 (13.0, 8.0, 79.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.348214285714 (13.0, 9.0, 78.0, 20.0) 0.870535714286 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.324862637363 (12.0, 8.0, 79.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.35193452381 (12.0, 7.0, 80.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.322321428571 (11.0, 6.0, 81.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.322321428571 (11.0, 6.0, 81.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.293019480519 (11.0, 7.0, 80.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.301658163265 (12.0, 9.0, 78.0, 21.0) 0.844642857143 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.24793956044 (11.0, 9.0, 78.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.268601190476 (11.0, 8.0, 79.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0 (11.0, 11.0, 76.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0 (11.0, 11.0, 76.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.230229591837 (11.0, 10.0, 77.0, 22.0) 0.805803571429 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- some34(B,C), no34(C,A) [0.741071428571]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.435267857143
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.435267857143
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.435267857143
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.435267857143
+[DEBUG] rsomenot34(A,B) :- some34(B,C), all34(A,C) 0.407738095238
+[DEBUG] rsomenot34(A,B) :- some34(B,C), all34(A,D) 0.407738095238
+[DEBUG] rsomenot34(A,B) :- some34(B,C), all34(D,C) 0.407738095238
+[DEBUG] rsomenot34(A,B) :- some34(B,C), some34(A,C) 0.407738095238
+[DEBUG] rsomenot34(A,B) :- some34(B,C), some34(A,D) 0.407738095238
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.401785714286
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.373086734694
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.35193452381
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.348214285714
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.348214285714
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.324862637363
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.322321428571
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.322321428571
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.301658163265
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.293019480519
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.268601190476
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.24793956044
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(B,C) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+some34(C,B) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(C,B) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+no34(B,C) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+somenot34(C,B) 0.230229591837
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A), \+all34(C,B) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- some34(B,C), no34(C,A) 0.808333333333
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.209090909091]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.209090909091
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.2292207792207792, 13.0) > (0.2090909090909091, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.0 (13.0, 12.0, 75.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (11.0, 12.0, 75.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.325568181818 (15.0, 10.0, 77.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(C,B) (0.3255681818181818, 15.0) > (0.2292207792207792, 13.0)
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.263068181818 (14.0, 11.0, 76.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (11.0, 14.0, 73.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (11.0, 12.0, 75.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.325568181818 (15.0, 10.0, 77.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.372077922078 (15.0, 8.0, 79.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C) (0.37207792207792206, 15.0) > (0.3255681818181818, 15.0)
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.263068181818 (14.0, 11.0, 76.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C) [0.372077922078]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.372077922078
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.325568181818
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.325568181818
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.263068181818
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.263068181818
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C), some34(C,A) (0.403030303030303, 11.0) > (0.37207792207792206, 15.0)
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.40303030303 (11.0, 1.0, 86.0, 22.0) 0.604545454545 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(C,A) 0.604545454545 (11.0, 0.0, 87.0, 22.0) 0.604545454545 [REJECT* fp] 10.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C), somenot34(C,A) (0.6045454545454545, 11.0) > (0.403030303030303, 11.0)
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.434090909091 (15.0, 6.0, 81.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.434090909091 (15.0, 6.0, 81.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), somenot34(A,C) 0.736363636364 (12.0, 0.0, 87.0, 21.0) 0.736363636364 [REJECT* fp] 10.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(C,B), somenot34(A,C) (0.7363636363636363, 12.0) > (0.6045454545454545, 11.0)
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.372077922078 (15.0, 8.0, 79.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.372077922078 (15.0, 8.0, 79.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.372077922078 (15.0, 8.0, 79.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.347272727273 (15.0, 9.0, 78.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.372077922078 (15.0, 8.0, 79.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.372077922078 (15.0, 8.0, 79.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.372077922078 (15.0, 8.0, 79.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.347272727273 (15.0, 9.0, 78.0, 18.0) 0.868181818182 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.323776223776 (14.0, 8.0, 79.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.350757575758 (14.0, 7.0, 80.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.29173553719 (13.0, 7.0, 80.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.320909090909 (13.0, 6.0, 81.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.320909090909 (13.0, 6.0, 81.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.320909090909 (13.0, 6.0, 81.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.320909090909 (13.0, 6.0, 81.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.29173553719 (13.0, 7.0, 80.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.300649350649 (14.0, 9.0, 78.0, 19.0) 0.841818181818 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.246853146853 (13.0, 9.0, 78.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.267424242424 (13.0, 8.0, 79.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.213939393939 (13.0, 11.0, 76.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.229220779221 (13.0, 10.0, 77.0, 20.0) 0.802272727273 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- all34(C,B), somenot34(A,C) [0.736363636364]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.434090909091
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.434090909091
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.40303030303
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.372077922078
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.372077922078
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.372077922078
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.372077922078
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.372077922078
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.372077922078
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.350757575758
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.347272727273
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.347272727273
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.323776223776
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.320909090909
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.320909090909
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.320909090909
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.320909090909
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.300649350649
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.29173553719
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.29173553719
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.267424242424
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.246853146853
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.229220779221
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.213939393939
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- all34(C,B), somenot34(A,C) 0.825
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.2281746031746032, 15.0) > (0.0, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.199652777778 (15.0, 12.0, 75.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (13.0, 12.0, 75.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(A,C) (0.2996031746031746, 16.0) > (0.2281746031746032, 15.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.262152777778 (16.0, 11.0, 76.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (13.0, 14.0, 73.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (13.0, 12.0, 75.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.371031746032 (17.0, 8.0, 79.0, 16.0) 0.865740740741 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C) (0.37103174603174605, 17.0) > (0.2996031746031746, 16.0)
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.262152777778 (16.0, 11.0, 76.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C) [0.371031746032]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.371031746032
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.262152777778
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.262152777778
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.199652777778
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C), some34(C,A) (0.39814814814814814, 13.0) > (0.37103174603174605, 17.0)
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.398148148148 (13.0, 1.0, 86.0, 20.0) 0.597222222222 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(C,A) 0.597222222222 (13.0, 0.0, 87.0, 20.0) 0.597222222222 [REJECT* fp] 12.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C), somenot34(C,A) (0.5972222222222222, 13.0) > (0.39814814814814814, 13.0)
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.43287037037 (17.0, 6.0, 81.0, 16.0) 0.865740740741 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.43287037037 (17.0, 6.0, 81.0, 16.0) 0.865740740741 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.32264957265 (16.0, 8.0, 79.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.349537037037 (16.0, 7.0, 80.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.219444444444 (14.0, 7.0, 80.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.219444444444 (14.0, 7.0, 80.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.290404040404 (15.0, 7.0, 80.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.319444444444 (15.0, 6.0, 81.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.319444444444 (15.0, 6.0, 81.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.219444444444 (14.0, 7.0, 80.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.219444444444 (14.0, 7.0, 80.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.219444444444 (14.0, 7.0, 80.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.319444444444 (15.0, 6.0, 81.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.319444444444 (15.0, 6.0, 81.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.290404040404 (15.0, 7.0, 80.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.219444444444 (14.0, 7.0, 80.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.299603174603 (16.0, 9.0, 78.0, 17.0) 0.838888888889 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.245726495726 (15.0, 9.0, 78.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.245726495726 (15.0, 9.0, 78.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.266203703704 (15.0, 8.0, 79.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.245726495726 (15.0, 9.0, 78.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.0 (14.0, 9.0, 78.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+some34(A,C) 0.0 (14.0, 11.0, 76.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+some34(C,A) 0.0 (14.0, 11.0, 76.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.212962962963 (15.0, 11.0, 76.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(A,C) 0.0 (14.0, 11.0, 76.0, 19.0) 0.731481481481 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.228174603175 (15.0, 10.0, 77.0, 18.0) 0.798611111111 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C), somenot34(C,A) [0.597222222222]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.43287037037
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.43287037037
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.398148148148
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.349537037037
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.32264957265
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.319444444444
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.319444444444
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.319444444444
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.319444444444
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.299603174603
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.290404040404
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.290404040404
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.266203703704
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.245726495726
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.245726495726
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.245726495726
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.228174603175
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.219444444444
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.219444444444
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.219444444444
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.219444444444
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.219444444444
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.219444444444
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.212962962963
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+some34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- somenot34(B,C), somenot34(C,A) 0.833333333333
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.18691588785]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.18691588785
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.22763684913217624, 16.0) > (0.18691588785046728, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.199182242991 (16.0, 12.0, 75.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (14.0, 12.0, 75.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.299065420561 (17.0, 9.0, 78.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(A,C) (0.29906542056074764, 17.0) > (0.22763684913217624, 16.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.299065420561 (17.0, 9.0, 78.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.261682242991 (17.0, 11.0, 76.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (14.0, 14.0, 73.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (14.0, 12.0, 75.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.322070452912 (17.0, 8.0, 79.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C) (0.3220704529115744, 17.0) > (0.29906542056074764, 17.0)
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.21246105919 (16.0, 11.0, 76.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C) [0.322070452912]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.322070452912
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.299065420561
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.299065420561
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.261682242991
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.21246105919
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.199182242991
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C), some34(C,A) (0.3956386292834891, 14.0) > (0.3220704529115744, 17.0)
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,D) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.380628717077 (17.0, 6.0, 81.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.380628717077 (17.0, 6.0, 81.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.289719626168 (16.0, 7.0, 80.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.289719626168 (16.0, 7.0, 80.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.289719626168 (16.0, 7.0, 80.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.289719626168 (16.0, 7.0, 80.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), all34(B,C) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), all34(B,D) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), all34(D,C) 0.395638629283 (14.0, 1.0, 86.0, 19.0) 0.593457943925 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), some34(C,B) 0.593457943925 (14.0, 0.0, 87.0, 19.0) 0.593457943925 [REJECT* fp] 13.0
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(A,C), some34(C,B) (0.5934579439252337, 14.0) > (0.3956386292834891, 14.0)
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.348909657321 (17.0, 7.0, 80.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.348909657321 (17.0, 7.0, 80.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.348909657321 (17.0, 7.0, 80.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.322070452912 (17.0, 8.0, 79.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.348909657321 (17.0, 7.0, 80.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.348909657321 (17.0, 7.0, 80.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.218691588785 (15.0, 7.0, 80.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.218691588785 (15.0, 7.0, 80.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.289719626168 (16.0, 7.0, 80.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.318691588785 (16.0, 6.0, 81.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.318691588785 (16.0, 6.0, 81.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.218691588785 (15.0, 7.0, 80.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.218691588785 (15.0, 7.0, 80.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.218691588785 (15.0, 7.0, 80.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.318691588785 (16.0, 6.0, 81.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.318691588785 (16.0, 6.0, 81.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.289719626168 (16.0, 7.0, 80.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.218691588785 (15.0, 7.0, 80.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.299065420561 (17.0, 9.0, 78.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.299065420561 (17.0, 9.0, 78.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.299065420561 (17.0, 9.0, 78.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.299065420561 (17.0, 9.0, 78.0, 16.0) 0.83738317757 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.245147375988 (16.0, 9.0, 78.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.245147375988 (16.0, 9.0, 78.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.265576323988 (16.0, 8.0, 79.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.245147375988 (16.0, 9.0, 78.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.0 (15.0, 9.0, 78.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0 (15.0, 10.0, 77.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.245147375988 (16.0, 9.0, 78.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.245147375988 (16.0, 9.0, 78.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0 (15.0, 10.0, 77.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.245147375988 (16.0, 9.0, 78.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.245147375988 (16.0, 9.0, 78.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0 (15.0, 10.0, 77.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+some34(A,C) 0.0 (15.0, 11.0, 76.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+some34(C,A) 0.0 (15.0, 11.0, 76.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.21246105919 (16.0, 11.0, 76.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(A,C) 0.0 (15.0, 11.0, 76.0, 18.0) 0.728971962617 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.227636849132 (16.0, 10.0, 77.0, 17.0) 0.796728971963 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- some34(A,C), some34(C,B) [0.593457943925]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,D) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- some34(A,C), all34(B,C) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- some34(A,C), all34(B,D) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- some34(A,C), all34(D,C) 0.395638629283
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.380628717077
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.380628717077
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.348909657321
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.348909657321
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.348909657321
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.348909657321
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.348909657321
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.322070452912
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.318691588785
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.318691588785
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.318691588785
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.318691588785
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(C,A) 0.299065420561
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(A,C) 0.299065420561
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+no34(C,A) 0.299065420561
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(C,A) 0.299065420561
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.289719626168
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.289719626168
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.289719626168
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.289719626168
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.289719626168
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.289719626168
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.265576323988
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.245147375988
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.245147375988
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.245147375988
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(B,C) 0.245147375988
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(C,B) 0.245147375988
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(C,B) 0.245147375988
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+no34(B,C) 0.245147375988
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+all34(A,C) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+some34(C,A) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- some34(C,B), \+somenot34(A,C) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(A,C) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+all34(C,A) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(C,A) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(C,A) 0.227636849132
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.218691588785
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.218691588785
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.218691588785
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.218691588785
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.218691588785
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.218691588785
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+no34(A,C) 0.21246105919
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(C,B), \+somenot34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+all34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+some34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+all34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+some34(B,C) 0.0
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), \+somenot34(C,B) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+some34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+some34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- all34(B,C), \+somenot34(A,C) 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- some34(A,C), some34(C,B) 0.841666666667
+[DEBUG] Best rule so far: rsomenot34(A,B) :- true [0.179245283019]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- true 0.179245283019
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- all34(A,C) 0.227088948787 (17.0, 10.0, 77.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- all34(A,C) (0.22708894878706198, 17.0) > (0.17924528301886794, 33.0)
+[LVL9] rsomenot34(A,B) :- all34(B,C) 0.198702830189 (17.0, 12.0, 75.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A) 0.0 (15.0, 12.0, 75.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B) 0.227088948787 (17.0, 10.0, 77.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C) 0.244557329463 (17.0, 9.0, 78.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(A,C) (0.24455732946298983, 17.0) > (0.22708894878706198, 17.0)
+[LVL9] rsomenot34(A,B) :- some34(B,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(B,C) (0.26493710691823896, 17.0) > (0.24455732946298983, 17.0)
+[LVL9] rsomenot34(A,B) :- some34(C,A) 0.298517520216 (18.0, 9.0, 78.0, 15.0) 0.835849056604 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- some34(C,A) (0.29851752021563344, 18.0) > (0.26493710691823896, 17.0)
+[LVL9] rsomenot34(A,B) :- some34(C,B) 0.211949685535 (17.0, 11.0, 76.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C) 0.0 (15.0, 14.0, 73.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A) 0.0 (15.0, 12.0, 75.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C) 0.227088948787 (17.0, 10.0, 77.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C) 0.321480406386 (18.0, 8.0, 79.0, 15.0) 0.835849056604 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C) (0.32148040638606673, 18.0) > (0.29851752021563344, 18.0)
+[LVL9] rsomenot34(A,B) :- somenot34(C,A) 0.211949685535 (17.0, 11.0, 76.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C) [0.321480406386]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C) 0.321480406386
+[DEBUG] rsomenot34(A,B) :- some34(C,A) 0.298517520216
+[DEBUG] rsomenot34(A,B) :- some34(B,C) 0.264937106918
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B) 0.264937106918
+[DEBUG] rsomenot34(A,B) :- some34(A,C) 0.244557329463
+[DEBUG] rsomenot34(A,B) :- all34(A,C) 0.227088948787
+[DEBUG] rsomenot34(A,B) :- all34(C,B) 0.227088948787
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C) 0.227088948787
+[DEBUG] rsomenot34(A,B) :- some34(C,B) 0.211949685535
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A) 0.211949685535
+[DEBUG] rsomenot34(A,B) :- all34(B,C) 0.198702830189
+[DEBUG] rsomenot34(A,B) :- all34(C,A) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(A,C) 0.0
+[DEBUG] rsomenot34(A,B) :- no34(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] BETTER RULE rsomenot34(A,B) :- somenot34(B,C), some34(C,A) (0.39308176100628933, 15.0) > (0.32148040638606673, 18.0)
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.379931389365 (18.0, 6.0, 81.0, 15.0) 0.835849056604 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.379931389365 (18.0, 6.0, 81.0, 15.0) 0.835849056604 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(C,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(B,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), all34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), some34(C,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), some34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), somenot34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), somenot34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(C,B) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+all34(B,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(C,B) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.321480406386 (18.0, 8.0, 79.0, 15.0) 0.835849056604 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.348270440252 (18.0, 7.0, 80.0, 15.0) 0.835849056604 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.348270440252 (18.0, 7.0, 80.0, 15.0) 0.835849056604 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,A), \+somenot34(B,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(A,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), all34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), some34(A,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), some34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), somenot34(C,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), somenot34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), somenot34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+all34(A,C) 0.217924528302 (16.0, 7.0, 80.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(A,C) 0.217924528302 (16.0, 7.0, 80.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+some34(C,A) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.317924528302 (17.0, 6.0, 81.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.317924528302 (17.0, 6.0, 81.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(B,C), \+somenot34(C,A) 0.217924528302 (16.0, 7.0, 80.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), all34(C,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), all34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), all34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), some34(A,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), some34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), some34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), somenot34(C,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), somenot34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+all34(C,A) 0.217924528302 (16.0, 7.0, 80.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+some34(A,C) 0.217924528302 (16.0, 7.0, 80.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.317924528302 (17.0, 6.0, 81.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.317924528302 (17.0, 6.0, 81.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(A,C) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,B), \+somenot34(C,A) 0.217924528302 (16.0, 7.0, 80.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), all34(B,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), all34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), all34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), some34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), somenot34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), somenot34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(C,B) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+all34(B,C) 0.198113207547 (16.0, 8.0, 79.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+some34(B,C) 0.198113207547 (16.0, 8.0, 79.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(C,B) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+no34(B,C) 0.289022298456 (17.0, 7.0, 80.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(A,C), \+somenot34(C,B) 0.198113207547 (16.0, 8.0, 79.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), all34(C,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), all34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), all34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), some34(C,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), some34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), some34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), some34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), some34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(C,B) 0.181603773585 (16.0, 9.0, 78.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+all34(B,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(C,B) 0.181603773585 (16.0, 9.0, 78.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+some34(B,C) 0.181603773585 (16.0, 9.0, 78.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(C,B) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+no34(B,C) 0.244557329463 (17.0, 9.0, 78.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(A,C), \+somenot34(B,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), all34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), all34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), some34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), some34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), somenot34(C,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), somenot34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), somenot34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(A,C) 0.181603773585 (16.0, 9.0, 78.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+all34(C,A) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(A,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+some34(C,A) 0.181603773585 (16.0, 9.0, 78.0, 17.0) 0.72641509434 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(A,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,B), \+no34(C,A) 0.244557329463 (17.0, 9.0, 78.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), all34(B,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), all34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), all34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), some34(C,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), some34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), some34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), somenot34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+some34(B,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(C,B) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+no34(B,C) 0.264937106918 (17.0, 8.0, 79.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(A,C), \+somenot34(C,B) 0.244557329463 (17.0, 9.0, 78.0, 16.0) 0.794811320755 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), all34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), all34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), some34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), somenot34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- some34(C,B), somenot34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), all34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), all34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), some34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), some34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- somenot34(C,A), somenot34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), some34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), some34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), some34(D,A) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), some34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), somenot34(A,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(B,C), somenot34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), somenot34(C,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- all34(C,A), somenot34(D,B) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C), somenot34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(A,C), somenot34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), somenot34(B,D) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[LVL9] rsomenot34(A,B) :- no34(C,A), somenot34(D,C) 0.393081761006 (15.0, 1.0, 86.0, 18.0) 0.589622641509 [ACCEPT]
+[DEBUG] Best rule so far: rsomenot34(A,B) :- somenot34(B,C), some34(C,A) [0.393081761006]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), some34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), no34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), somenot34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(C,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(B,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), all34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), some34(C,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), some34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), somenot34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,A), somenot34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), all34(A,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), all34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), all34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), some34(A,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), some34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), somenot34(C,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), somenot34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(B,C), somenot34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), all34(C,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), all34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), all34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), some34(A,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), some34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), some34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), somenot34(C,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), somenot34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(A,C), all34(B,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(A,C), all34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(A,C), all34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(A,C), some34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(A,C), somenot34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(A,C), somenot34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), all34(C,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), all34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), all34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), some34(C,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), some34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), some34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), some34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(A,C), some34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,B), all34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,B), all34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,B), some34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,B), some34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,B), somenot34(C,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,B), somenot34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,B), somenot34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), all34(B,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), all34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), all34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), some34(C,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), some34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), some34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(A,C), somenot34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,B), all34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,B), all34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,B), some34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,B), somenot34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- some34(C,B), somenot34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), all34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), all34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), some34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), some34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(C,A), somenot34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(B,C), some34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(B,C), some34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(B,C), some34(D,A) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(B,C), some34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(B,C), somenot34(A,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(B,C), somenot34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,A), somenot34(C,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- all34(C,A), somenot34(D,B) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- no34(A,C), somenot34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- no34(A,C), somenot34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- no34(C,A), somenot34(B,D) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- no34(C,A), somenot34(D,C) 0.393081761006
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(A,C) 0.379931389365
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+all34(C,A) 0.379931389365
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(C,B) 0.348270440252
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+no34(B,C) 0.348270440252
+[DEBUG] rsomenot34(A,B) :- some34(C,A), \+some34(B,C) 0.321480406386
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+no34(A,C) 0.317924528302
+[DEBUG] rsomenot34(A,B) :- some34(B,C), \+somenot34(A,C) 0.317924528302
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(A,C) 0.317924528302
+[DEBUG] rsomenot34(A,B) :- somenot34(C,B), \+no34(C,A) 0.317924528302
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+some34(C,A) 0.289022298456
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(A,C) 0.289022298456
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+no34(C,A) 0.289022298456
+[DEBUG] rsomenot34(A,B) :- somenot34(B,C), \+somenot34(A,C) 0.289022298456
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rsomenot34(A,B) :- somenot34(B,C), some34(C,A) 0.841666666667

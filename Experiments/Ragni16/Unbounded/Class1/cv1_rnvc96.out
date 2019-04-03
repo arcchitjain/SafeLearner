@@ -1,0 +1,27 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_96.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rnvc96.log
+              target:	rnvc96/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc96(A,B) :- no96(C,A), \+all96(B,C), \+some96(B,C), \+no96(B,C), \+somenot96(B,C)
+rnvc96(A,B) :- somenot96(A,C), \+all96(C,B), \+some96(C,B), \+no96(C,B), \+somenot96(C,B)
+rnvc96(A,B) :- all96(A,C), \+all96(C,B), \+some96(C,B), \+some96(B,C), \+no96(C,B), \+somenot96(C,B)
+rnvc96(A,B) :- some96(A,C), \+all96(C,B), \+all96(B,C), \+some96(C,B), \+no96(C,B), \+somenot96(C,B)
+rnvc96(A,B) :- somenot96(C,A), \+all96(C,B), \+all96(B,C), \+some96(B,C), \+no96(B,C), \+somenot96(B,C)
+rnvc96(A,B) :- all96(C,A), \+some96(B,C), \+no96(C,B), \+no96(B,C), \+somenot96(B,C)
+rnvc96(A,B) :- somenot96(C,B), some96(C,A)
+rnvc96(A,B) :- some96(B,C), no96(A,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	36015
+          Total time:	2541.6930s

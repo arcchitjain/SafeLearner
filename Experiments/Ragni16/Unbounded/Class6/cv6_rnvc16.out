@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_16.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rnvc16.log
+              target:	rnvc16/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc16(A,B) :- no16(A,C), \+all16(B,C)
+rnvc16(A,B) :- no16(C,A), \+all16(B,C)
+rnvc16(A,B) :- somenot16(B,C), \+all16(C,A), \+somenot16(C,A)
+rnvc16(A,B) :- somenot16(C,A), \+all16(B,C), \+somenot16(B,C)
+rnvc16(A,B) :- somenot16(A,C), \+all16(B,C), \+some16(C,B), \+no16(C,B)
+rnvc16(A,B) :- no16(C,B), \+all16(A,C), \+some16(A,C), \+somenot16(A,C)
+rnvc16(A,B) :- all16(A,C), \+all16(C,B), \+some16(C,B), \+no16(C,B), \+no16(B,C), \+somenot16(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.948275862069
+           Precision:	 1.0
+              Recall:	 0.903225806452
+================== STATISTICS ==================
+    Rule evaluations:	18160
+          Total time:	784.0072s

@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class1/cv1_train_113.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class1/cv1_rnvc113.log
+              target:	rnvc113/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc113(A,B) :- somenot113(C,B), \+all113(C,A)
+rnvc113(A,B) :- no113(A,C), \+all113(B,C), \+some113(C,B)
+rnvc113(A,B) :- no113(C,A), \+all113(C,B), \+all113(B,C), \+some113(B,C)
+rnvc113(A,B) :- somenot113(A,C), \+all113(C,B), \+all113(B,C), \+some113(C,B), \+some113(B,C)
+rnvc113(A,B) :- somenot113(C,A), \+all113(C,B), \+all113(B,C), \+some113(B,C), \+no113(C,B), \+somenot113(B,C)
+rnvc113(A,B) :- no113(C,B), some113(A,C)
+rnvc113(A,B) :- all113(A,C), all113(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	10787
+          Total time:	220.6036s

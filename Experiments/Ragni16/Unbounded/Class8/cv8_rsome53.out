@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class8/cv8_train_53.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class8/cv8_rsome53.log
+              target:	rsome53/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome53(A,B) :- some53(C,B), \+all53(A,C), \+some53(C,A), \+no53(C,A), \+some53(A,C), \+all53(C,A)
+rsome53(A,B) :- somenot53(C,A), all53(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.868421052632
+           Precision:	 0.857142857143
+              Recall:	 0.3
+================== STATISTICS ==================
+    Rule evaluations:	45015
+          Total time:	476.8860s

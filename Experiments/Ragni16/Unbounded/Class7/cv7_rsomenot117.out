@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_117.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rsomenot117.log
+              target:	rsomenot117/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot117(A,B) :- somenot117(C,B), \+some117(C,A), \+no117(A,C), \+somenot117(A,C), \+somenot117(C,A), \+some117(A,C)
+rsomenot117(A,B) :- somenot117(A,C), no117(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.901785714286
+           Precision:	 1.0
+              Recall:	 0.214285714286
+================== STATISTICS ==================
+    Rule evaluations:	43371
+          Total time:	979.8895s

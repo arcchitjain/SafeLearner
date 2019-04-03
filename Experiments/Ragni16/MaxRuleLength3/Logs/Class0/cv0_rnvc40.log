@@ -1,0 +1,76 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.794284912108
+[INFO] Computing scores: 0.0513s
+[INFO] Number of examples (M): 55
+[INFO] Positive weight (P): 3.0000
+[INFO] Negative weight (N): 52.0000
+[DEBUG] Best rule so far: rnvc40(A,B) :- true [0.0545454545455]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc40(A,B) :- true 0.0545454545455
+[DEBUG] ==================================
+[LVL9] rnvc40(A,B) :- all40(B,C) 0.150649350649 (1.0, 5.0, 47.0, 2.0) 0.527272727273 [ACCEPT]
+[LVL9] BETTER RULE rnvc40(A,B) :- all40(B,C) (0.15064935064935064, 1.0) > (0.05454545454545455, 3.0)
+[LVL9] rnvc40(A,B) :- all40(C,A) 0.131818181818 (1.0, 6.0, 46.0, 2.0) 0.527272727273 [ACCEPT]
+[LVL9] rnvc40(A,B) :- some40(B,C) 0.131818181818 (1.0, 6.0, 46.0, 2.0) 0.527272727273 [ACCEPT]
+[LVL9] rnvc40(A,B) :- no40(C,A) 0.131818181818 (1.0, 6.0, 46.0, 2.0) 0.527272727273 [ACCEPT]
+[LVL9] rnvc40(A,B) :- somenot40(A,C) 0.131818181818 (1.0, 6.0, 46.0, 2.0) 0.527272727273 [ACCEPT]
+[LVL9] rnvc40(A,B) :- somenot40(B,C) 0.150649350649 (1.0, 5.0, 47.0, 2.0) 0.527272727273 [ACCEPT]
+[DEBUG] Best rule so far: rnvc40(A,B) :- all40(B,C) [0.150649350649]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc40(A,B) :- all40(B,C) 0.150649350649
+[DEBUG] rnvc40(A,B) :- somenot40(B,C) 0.150649350649
+[DEBUG] rnvc40(A,B) :- all40(C,A) 0.131818181818
+[DEBUG] rnvc40(A,B) :- some40(B,C) 0.131818181818
+[DEBUG] rnvc40(A,B) :- no40(C,A) 0.131818181818
+[DEBUG] rnvc40(A,B) :- somenot40(A,C) 0.131818181818
+[DEBUG] ==================================
+[LVL9] rnvc40(A,B) :- all40(B,C), no40(C,A) 0.527272727273 (1.0, 0.0, 52.0, 2.0) 0.527272727273 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc40(A,B) :- all40(B,C), no40(C,A) (0.5272727272727272, 1.0) > (0.15064935064935064, 1.0)
+[INFO] RULE LEARNED: rnvc40(A,B) :- all40(B,C), no40(C,A) 0.963636363636
+[DEBUG] Best rule so far: rnvc40(A,B) :- true [0.037037037037]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc40(A,B) :- true 0.037037037037
+[DEBUG] ==================================
+[LVL9] rnvc40(A,B) :- all40(C,A) 0.12962962963 (2.0, 6.0, 46.0, 1.0) 0.518518518519 [ACCEPT]
+[LVL9] BETTER RULE rnvc40(A,B) :- all40(C,A) (0.12962962962962962, 2.0) > (0.03703703703703704, 3.0)
+[LVL9] rnvc40(A,B) :- some40(B,C) 0.12962962963 (2.0, 6.0, 46.0, 1.0) 0.518518518519 [ACCEPT]
+[LVL9] rnvc40(A,B) :- somenot40(A,C) 0.12962962963 (2.0, 6.0, 46.0, 1.0) 0.518518518519 [ACCEPT]
+[LVL9] rnvc40(A,B) :- somenot40(B,C) 0.148148148148 (2.0, 5.0, 47.0, 1.0) 0.518518518519 [ACCEPT]
+[LVL9] BETTER RULE rnvc40(A,B) :- somenot40(B,C) (0.14814814814814814, 2.0) > (0.12962962962962962, 2.0)
+[DEBUG] Best rule so far: rnvc40(A,B) :- somenot40(B,C) [0.148148148148]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc40(A,B) :- somenot40(B,C) 0.148148148148
+[DEBUG] rnvc40(A,B) :- all40(C,A) 0.12962962963
+[DEBUG] rnvc40(A,B) :- some40(B,C) 0.12962962963
+[DEBUG] rnvc40(A,B) :- somenot40(A,C) 0.12962962963
+[DEBUG] ==================================
+[LVL9] rnvc40(A,B) :- somenot40(B,C), all40(C,A) 0.518518518519 (2.0, 0.0, 52.0, 1.0) 0.518518518519 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc40(A,B) :- somenot40(B,C), all40(C,A) (0.5185185185185185, 2.0) > (0.14814814814814814, 2.0)
+[INFO] RULE LEARNED: rnvc40(A,B) :- somenot40(B,C), all40(C,A) 0.981818181818
+[DEBUG] Best rule so far: rnvc40(A,B) :- true [0.0188679245283]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc40(A,B) :- true 0.0188679245283
+[DEBUG] ==================================
+[LVL9] rnvc40(A,B) :- some40(B,C) 0.127358490566 (3.0, 6.0, 46.0, 0.0) 0.509433962264 [ACCEPT]
+[LVL9] BETTER RULE rnvc40(A,B) :- some40(B,C) (0.12735849056603774, 3.0) > (0.018867924528301886, 3.0)
+[LVL9] rnvc40(A,B) :- somenot40(A,C) 0.127358490566 (3.0, 6.0, 46.0, 0.0) 0.509433962264 [ACCEPT]
+[DEBUG] Best rule so far: rnvc40(A,B) :- some40(B,C) [0.127358490566]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc40(A,B) :- some40(B,C) 0.127358490566
+[DEBUG] rnvc40(A,B) :- somenot40(A,C) 0.127358490566
+[DEBUG] ==================================
+[LVL9] rnvc40(A,B) :- some40(B,C), somenot40(A,C) 0.509433962264 (3.0, 0.0, 52.0, 0.0) 0.509433962264 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc40(A,B) :- some40(B,C), somenot40(A,C) (0.5094339622641509, 3.0) > (0.12735849056603774, 3.0)
+[INFO] RULE LEARNED: rnvc40(A,B) :- some40(B,C), somenot40(A,C) 1.0
+[DEBUG] Best rule so far: rnvc40(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc40(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc40(A,B) :- true 1.0

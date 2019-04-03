@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class5/cv5_train_138.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class5/cv5_rsome138.log
+              target:	rsome138/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome138(A,B) :- no138(A,C), \+all138(B,C), \+no138(C,B), \+some138(B,C), \+all138(C,B), \+some138(C,B)
+rsome138(A,B) :- all138(C,B), no138(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.805555555556
+           Precision:	 1.0
+              Recall:	 0.125
+================== STATISTICS ==================
+    Rule evaluations:	86400
+          Total time:	1476.4693s

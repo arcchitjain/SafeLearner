@@ -1,0 +1,1027 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.109915970977
+[INFO] Computing scores: 0.0198s
+[INFO] Number of examples (M): 60
+[INFO] Positive weight (P): 14.0000
+[INFO] Negative weight (N): 46.0000
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(A,C) 0.0 (1.0, 7.0, 39.0, 13.0) 0.616666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.404166666667 (3.0, 4.0, 42.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.4041666666666667, 3.0) > (0.0, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.404166666667 (3.0, 4.0, 42.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (1.0, 7.0, 39.0, 13.0) 0.616666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.47037037037 (4.0, 4.0, 42.0, 10.0) 0.846666666667 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A) (0.4703703703703704, 4.0) > (0.4041666666666667, 3.0)
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.319047619048 (2.0, 4.0, 42.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.0 (1.0, 6.0, 40.0, 13.0) 0.616666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (1.0, 7.0, 39.0, 13.0) 0.616666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B) 0.248148148148 (2.0, 6.0, 40.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.359259259259 (3.0, 5.0, 41.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.248148148148 (2.0, 6.0, 40.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.0 (1.0, 6.0, 40.0, 13.0) 0.616666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.248148148148 (2.0, 6.0, 40.0, 12.0) 0.744444444444 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,A) [0.47037037037]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.47037037037
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.404166666667
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.404166666667
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.359259259259
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.319047619048
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- no104(C,B) 0.248148148148
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.248148148148
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.248148148148
+[DEBUG] rnvc104(A,B) :- all104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(C,A), all104(B,C) 0.616666666667 (1.0, 0.0, 46.0, 13.0) 0.616666666667 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A), all104(B,C) (0.6166666666666667, 1.0) > (0.4703703703703704, 4.0)
+[LVL9] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.529166666667 (4.0, 3.0, 43.0, 10.0) 0.846666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.529166666667 (4.0, 3.0, 43.0, 10.0) 0.846666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.529166666667 (4.0, 3.0, 43.0, 10.0) 0.846666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.529166666667 (4.0, 3.0, 43.0, 10.0) 0.846666666667 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.461904761905 (3.0, 3.0, 43.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.404166666667 (3.0, 4.0, 42.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.404166666667 (3.0, 4.0, 42.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.404166666667 (3.0, 4.0, 42.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.404166666667 (3.0, 4.0, 42.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.404166666667 (3.0, 4.0, 42.0, 11.0) 0.808333333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+all104(A,C) 0.372222222222 (2.0, 3.0, 43.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+some104(A,C) 0.372222222222 (2.0, 3.0, 43.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+no104(A,C) 0.372222222222 (2.0, 3.0, 43.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+somenot104(A,C) 0.372222222222 (2.0, 3.0, 43.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.319047619048 (2.0, 4.0, 42.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.319047619048 (2.0, 4.0, 42.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.319047619048 (2.0, 4.0, 42.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.319047619048 (2.0, 4.0, 42.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.319047619048 (2.0, 4.0, 42.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+all104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+some104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+no104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+no104(C,A) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+somenot104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+somenot104(C,A) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.279166666667 (2.0, 5.0, 41.0, 12.0) 0.744444444444 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,A), all104(B,C) [0.616666666667]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.529166666667
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.529166666667
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.529166666667
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.529166666667
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.461904761905
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.461904761905
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.461904761905
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.461904761905
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.461904761905
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.461904761905
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.461904761905
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.461904761905
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.404166666667
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.404166666667
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.404166666667
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.404166666667
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.404166666667
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+all104(A,C) 0.372222222222
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+some104(A,C) 0.372222222222
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+no104(A,C) 0.372222222222
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+somenot104(A,C) 0.372222222222
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.319047619048
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.319047619048
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.319047619048
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.319047619048
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.319047619048
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+all104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+some104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+no104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+no104(C,A) 0.279166666667
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+somenot104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+somenot104(C,A) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.279166666667
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.279166666667
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- some104(C,A), all104(B,C) 0.783333333333
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.220338983051]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.220338983051
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(A,C) 0.0 (2.0, 7.0, 39.0, 12.0) 0.610169491525 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.317191283293 (3.0, 4.0, 42.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.3171912832929782, 3.0) > (0.22033898305084745, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.402542372881 (4.0, 4.0, 42.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(C,A) (0.4025423728813559, 4.0) > (0.3171912832929782, 3.0)
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (2.0, 7.0, 39.0, 12.0) 0.610169491525 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.402542372881 (4.0, 4.0, 42.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.317191283293 (3.0, 4.0, 42.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.0 (2.0, 6.0, 40.0, 12.0) 0.610169491525 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (2.0, 7.0, 39.0, 12.0) 0.610169491525 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B) 0.24670433145 (3.0, 6.0, 40.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.357815442561 (4.0, 5.0, 41.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.24670433145 (3.0, 6.0, 40.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.0 (2.0, 6.0, 40.0, 12.0) 0.610169491525 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.24670433145 (3.0, 6.0, 40.0, 11.0) 0.74011299435 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- all104(C,A) [0.402542372881]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.402542372881
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.402542372881
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.357815442561
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.317191283293
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.317191283293
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- no104(C,B) 0.24670433145
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.24670433145
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.24670433145
+[DEBUG] rnvc104(A,B) :- all104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(C,A), no104(C,B) 0.610169491525 (2.0, 0.0, 46.0, 12.0) 0.610169491525 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(C,A), no104(C,B) (0.6101694915254238, 2.0) > (0.4025423728813559, 4.0)
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.46004842615 (4.0, 3.0, 43.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.402542372881 (4.0, 4.0, 42.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.402542372881 (4.0, 4.0, 42.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.402542372881 (4.0, 4.0, 42.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.402542372881 (4.0, 4.0, 42.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.402542372881 (4.0, 4.0, 42.0, 10.0) 0.805084745763 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+all104(A,C) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+some104(A,C) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+no104(A,C) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+somenot104(A,C) 0.370056497175 (3.0, 3.0, 43.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.317191283293 (3.0, 4.0, 42.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.317191283293 (3.0, 4.0, 42.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.317191283293 (3.0, 4.0, 42.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.317191283293 (3.0, 4.0, 42.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.317191283293 (3.0, 4.0, 42.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+all104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+some104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+no104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+no104(C,A) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+somenot104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B), \+somenot104(C,A) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.277542372881 (3.0, 5.0, 41.0, 11.0) 0.74011299435 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- all104(C,A), no104(C,B) [0.610169491525]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.46004842615
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.46004842615
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.46004842615
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.46004842615
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.46004842615
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.46004842615
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.46004842615
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.46004842615
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.402542372881
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.402542372881
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.402542372881
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.402542372881
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.402542372881
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.370056497175
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.370056497175
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.370056497175
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.370056497175
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+all104(A,C) 0.370056497175
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+some104(A,C) 0.370056497175
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+no104(A,C) 0.370056497175
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+somenot104(A,C) 0.370056497175
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.317191283293
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.317191283293
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.317191283293
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.317191283293
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.317191283293
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+all104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+some104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+no104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+no104(C,A) 0.277542372881
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+somenot104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- no104(C,B), \+somenot104(C,A) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.277542372881
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.277542372881
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- all104(C,A), no104(C,B) 0.8
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.206896551724]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.206896551724
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(A,C) 0.0 (3.0, 7.0, 39.0, 11.0) 0.603448275862 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.31527093596059114, 4.0) > (0.20689655172413796, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (3.0, 7.0, 39.0, 11.0) 0.603448275862 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.400862068966 (5.0, 4.0, 42.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A) (0.40086206896551724, 5.0) > (0.31527093596059114, 4.0)
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.0 (3.0, 6.0, 40.0, 11.0) 0.603448275862 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (3.0, 7.0, 39.0, 11.0) 0.603448275862 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B) 0.0 (3.0, 6.0, 40.0, 11.0) 0.603448275862 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.35632183908 (5.0, 5.0, 41.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.245210727969 (4.0, 6.0, 40.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.0 (3.0, 6.0, 40.0, 11.0) 0.603448275862 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.245210727969 (4.0, 6.0, 40.0, 10.0) 0.735632183908 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,A) [0.400862068966]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.400862068966
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.35632183908
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.315270935961
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.315270935961
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.315270935961
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.245210727969
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.245210727969
+[DEBUG] rnvc104(A,B) :- all104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(C,B) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(C,A), some104(C,B) 0.603448275862 (3.0, 0.0, 46.0, 11.0) 0.603448275862 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A), some104(C,B) (0.603448275862069, 3.0) > (0.40086206896551724, 5.0)
+[LVL9] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.458128078818 (5.0, 3.0, 43.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.458128078818 (5.0, 3.0, 43.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.458128078818 (5.0, 3.0, 43.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.458128078818 (5.0, 3.0, 43.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.400862068966 (5.0, 4.0, 42.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.400862068966 (5.0, 4.0, 42.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.400862068966 (5.0, 4.0, 42.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.400862068966 (5.0, 4.0, 42.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.400862068966 (5.0, 4.0, 42.0, 9.0) 0.801724137931 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+all104(A,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+some104(A,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+no104(A,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B), \+somenot104(A,C) 0.367816091954 (4.0, 3.0, 43.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.315270935961 (4.0, 4.0, 42.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.275862068966 (4.0, 5.0, 41.0, 10.0) 0.735632183908 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,A), some104(C,B) [0.603448275862]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.458128078818
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.458128078818
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.458128078818
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.458128078818
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.400862068966
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.400862068966
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.400862068966
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.400862068966
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.400862068966
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.367816091954
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.367816091954
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.367816091954
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+all104(A,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+some104(A,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+no104(A,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- some104(C,B), \+somenot104(A,C) 0.367816091954
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.315270935961
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.315270935961
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.315270935961
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.315270935961
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.315270935961
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.275862068966
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.275862068966
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- some104(C,A), some104(C,B) 0.816666666667
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.19298245614]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.19298245614
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(A,C) 0.0 (4.0, 7.0, 39.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.31328320802005016, 5.0) > (0.19298245614035087, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (4.0, 7.0, 39.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.198830409357 (4.0, 4.0, 42.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.0 (4.0, 6.0, 40.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (4.0, 7.0, 39.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B) 0.0 (4.0, 6.0, 40.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.35477582846 (6.0, 5.0, 41.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(A,C) (0.354775828460039, 6.0) > (0.31328320802005016, 5.0)
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.243664717349 (5.0, 6.0, 40.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.0 (4.0, 6.0, 40.0, 10.0) 0.59649122807 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.243664717349 (5.0, 6.0, 40.0, 9.0) 0.730994152047 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- somenot104(A,C) [0.35477582846]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.35477582846
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.31328320802
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.31328320802
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.31328320802
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.243664717349
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.243664717349
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.198830409357
+[DEBUG] rnvc104(A,B) :- all104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(C,B) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- somenot104(A,C), all104(B,C) 0.59649122807 (4.0, 0.0, 46.0, 10.0) 0.59649122807 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(A,C), all104(B,C) (0.5964912280701754, 4.0) > (0.354775828460039, 6.0)
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.399122807018 (6.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.399122807018 (6.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.399122807018 (6.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.399122807018 (6.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.399122807018 (6.0, 4.0, 42.0, 8.0) 0.798245614035 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.365497076023 (5.0, 3.0, 43.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.31328320802 (5.0, 4.0, 42.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.274122807018 (5.0, 5.0, 41.0, 9.0) 0.730994152047 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- somenot104(A,C), all104(B,C) [0.59649122807]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.399122807018
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.399122807018
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.399122807018
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.399122807018
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.399122807018
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(A,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+all104(C,A) 0.365497076023
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(A,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- all104(B,C), \+no104(C,A) 0.365497076023
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.365497076023
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.365497076023
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.365497076023
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.31328320802
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.31328320802
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.31328320802
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.31328320802
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.31328320802
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.274122807018
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.274122807018
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- somenot104(A,C), all104(B,C) 0.833333333333
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.178571428571]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.178571428571
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(A,C) 0.0 (5.0, 7.0, 39.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.196428571429 (5.0, 4.0, 42.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.19642857142857142, 5.0) > (0.17857142857142858, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(C,A) (0.3112244897959183, 6.0) > (0.19642857142857142, 5.0)
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (5.0, 7.0, 39.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.196428571429 (5.0, 4.0, 42.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.0 (5.0, 6.0, 40.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (5.0, 7.0, 39.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B) 0.0 (5.0, 6.0, 40.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.242063492063 (6.0, 6.0, 40.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.0 (5.0, 6.0, 40.0, 9.0) 0.589285714286 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.242063492063 (6.0, 6.0, 40.0, 8.0) 0.72619047619 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- all104(C,A) [0.311224489796]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.311224489796
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.311224489796
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.242063492063
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.242063492063
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.196428571429
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.196428571429
+[DEBUG] rnvc104(A,B) :- all104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(C,B) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(C,A), somenot104(C,B) 0.589285714286 (5.0, 0.0, 46.0, 9.0) 0.589285714286 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(C,A), somenot104(C,B) (0.5892857142857143, 5.0) > (0.3112244897959183, 6.0)
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.363095238095 (6.0, 3.0, 43.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.311224489796 (6.0, 4.0, 42.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.272321428571 (6.0, 5.0, 41.0, 8.0) 0.72619047619 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- all104(C,A), somenot104(C,B) [0.589285714286]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(C,B) 0.363095238095
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+all104(B,C) 0.363095238095
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+some104(B,C) 0.363095238095
+[DEBUG] rnvc104(A,B) :- all104(C,A), \+no104(B,C) 0.363095238095
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.363095238095
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.363095238095
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.363095238095
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.363095238095
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.311224489796
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.311224489796
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.311224489796
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.311224489796
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.311224489796
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.311224489796
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.311224489796
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.311224489796
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.311224489796
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.311224489796
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+all104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+some104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+no104(C,A) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(A,C) 0.272321428571
+[DEBUG] rnvc104(A,B) :- somenot104(C,B), \+somenot104(C,A) 0.272321428571
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- all104(C,A), somenot104(C,B) 0.85
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.163636363636]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.163636363636
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(A,C) 0.0 (6.0, 7.0, 39.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.193939393939 (6.0, 4.0, 42.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.19393939393939394, 6.0) > (0.16363636363636364, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.193939393939 (6.0, 4.0, 42.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (6.0, 7.0, 39.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(B,C) (0.27045454545454545, 7.0) > (0.19393939393939394, 6.0)
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A) (0.3090909090909091, 7.0) > (0.27045454545454545, 7.0)
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.193939393939 (6.0, 4.0, 42.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.0 (6.0, 6.0, 40.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (6.0, 7.0, 39.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(C,B) 0.0 (6.0, 6.0, 40.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.240404040404 (7.0, 6.0, 40.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.0 (6.0, 6.0, 40.0, 8.0) 0.581818181818 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.0 (6.0, 6.0, 40.0, 8.0) 0.581818181818 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,A) [0.309090909091]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.309090909091
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.270454545455
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.270454545455
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.240404040404
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.193939393939
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.193939393939
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.193939393939
+[DEBUG] rnvc104(A,B) :- all104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(C,B) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(C,A), no104(C,B) 0.581818181818 (6.0, 0.0, 46.0, 8.0) 0.581818181818 [REJECT* fp] 5.0
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A), no104(C,B) (0.5818181818181818, 6.0) > (0.3090909090909091, 7.0)
+[LVL9] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.360606060606 (7.0, 3.0, 43.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.360606060606 (7.0, 3.0, 43.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.360606060606 (7.0, 3.0, 43.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.360606060606 (7.0, 3.0, 43.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.309090909091 (7.0, 4.0, 42.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.270454545455 (7.0, 5.0, 41.0, 7.0) 0.721212121212 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,A), no104(C,B) [0.581818181818]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+all104(C,B) 0.360606060606
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+some104(B,C) 0.360606060606
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+no104(B,C) 0.360606060606
+[DEBUG] rnvc104(A,B) :- some104(C,A), \+somenot104(B,C) 0.360606060606
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.309090909091
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.309090909091
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.309090909091
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.309090909091
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.309090909091
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.309090909091
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.309090909091
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.309090909091
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.309090909091
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.309090909091
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.270454545455
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.270454545455
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.270454545455
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.270454545455
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.270454545455
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.270454545455
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- some104(C,A), no104(C,B) 0.866666666667
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.148148148148]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.148148148148
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(A,C) 0.0 (7.0, 7.0, 39.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.191358024691 (7.0, 4.0, 42.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.19135802469135801, 7.0) > (0.14814814814814817, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.191358024691 (7.0, 4.0, 42.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (7.0, 7.0, 39.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(B,C) (0.2685185185185185, 8.0) > (0.19135802469135801, 7.0)
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.191358024691 (7.0, 4.0, 42.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.191358024691 (7.0, 4.0, 42.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.0 (7.0, 6.0, 40.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (7.0, 7.0, 39.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.238683127572 (8.0, 6.0, 40.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.0 (7.0, 6.0, 40.0, 7.0) 0.574074074074 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.0 (7.0, 6.0, 40.0, 7.0) 0.574074074074 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(B,C) [0.268518518519]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.268518518519
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.268518518519
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.238683127572
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.191358024691
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.191358024691
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.191358024691
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.191358024691
+[DEBUG] rnvc104(A,B) :- all104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.0
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(B,C), all104(A,C) 0.574074074074 (7.0, 0.0, 46.0, 7.0) 0.574074074074 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(B,C), all104(A,C) (0.5740740740740741, 7.0) > (0.2685185185185185, 8.0)
+[LVL9] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.306878306878 (8.0, 4.0, 42.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.268518518519 (8.0, 5.0, 41.0, 6.0) 0.716049382716 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(B,C), all104(A,C) [0.574074074074]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+all104(C,A) 0.306878306878
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(A,C) 0.306878306878
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+some104(C,A) 0.306878306878
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+no104(C,A) 0.306878306878
+[DEBUG] rnvc104(A,B) :- some104(B,C), \+somenot104(C,A) 0.306878306878
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.306878306878
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.306878306878
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.306878306878
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.306878306878
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.306878306878
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.268518518519
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.268518518519
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.268518518519
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.268518518519
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.268518518519
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.268518518519
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- some104(B,C), all104(A,C) 0.883333333333
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.132075471698]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.132075471698
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.188679245283 (8.0, 4.0, 42.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.18867924528301885, 8.0) > (0.1320754716981132, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.188679245283 (8.0, 4.0, 42.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.0 (8.0, 7.0, 39.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(B,C) 0.161725067385 (8.0, 5.0, 41.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.188679245283 (8.0, 4.0, 42.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.188679245283 (8.0, 4.0, 42.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.141509433962 (8.0, 6.0, 40.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.0 (8.0, 7.0, 39.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.266509433962 (9.0, 5.0, 41.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(A,C) (0.2665094339622642, 9.0) > (0.18867924528301885, 8.0)
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.236897274633 (9.0, 6.0, 40.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.141509433962 (8.0, 6.0, 40.0, 6.0) 0.566037735849 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.141509433962 (8.0, 6.0, 40.0, 6.0) 0.566037735849 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- somenot104(A,C) [0.266509433962]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.266509433962
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.236897274633
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.188679245283
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.188679245283
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.188679245283
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.188679245283
+[DEBUG] rnvc104(A,B) :- some104(B,C) 0.161725067385
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.141509433962
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.141509433962
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.141509433962
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.0
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- somenot104(A,C), some104(B,C) 0.566037735849 (8.0, 0.0, 46.0, 6.0) 0.566037735849 [REJECT* fp] 7.0
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(A,C), some104(B,C) (0.5660377358490566, 8.0) > (0.2665094339622642, 9.0)
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.304582210243 (9.0, 4.0, 42.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.304582210243 (9.0, 4.0, 42.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.304582210243 (9.0, 4.0, 42.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.304582210243 (9.0, 4.0, 42.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.304582210243 (9.0, 4.0, 42.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.266509433962 (9.0, 5.0, 41.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.266509433962 (9.0, 5.0, 41.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.266509433962 (9.0, 5.0, 41.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.266509433962 (9.0, 5.0, 41.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.266509433962 (9.0, 5.0, 41.0, 5.0) 0.710691823899 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.266509433962 (9.0, 5.0, 41.0, 5.0) 0.710691823899 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- somenot104(A,C), some104(B,C) [0.566037735849]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+all104(C,B) 0.304582210243
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+some104(C,B) 0.304582210243
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+no104(C,B) 0.304582210243
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(C,B) 0.304582210243
+[DEBUG] rnvc104(A,B) :- somenot104(A,C), \+somenot104(B,C) 0.304582210243
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.266509433962
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.266509433962
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.266509433962
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.266509433962
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.266509433962
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.266509433962
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- somenot104(A,C), some104(B,C) 0.9
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.185897435897 (9.0, 4.0, 42.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.1858974358974359, 9.0) > (0.0, 14.0)
+[LVL9] rnvc104(A,B) :- all104(C,A) 0.185897435897 (9.0, 4.0, 42.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.123931623932 (9.0, 7.0, 39.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.185897435897 (9.0, 4.0, 42.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.185897435897 (9.0, 4.0, 42.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.139423076923 (9.0, 6.0, 40.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.123931623932 (9.0, 7.0, 39.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.159340659341 (9.0, 5.0, 41.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.235042735043 (10.0, 6.0, 40.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(B,C) (0.23504273504273504, 10.0) > (0.1858974358974359, 9.0)
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.139423076923 (9.0, 6.0, 40.0, 5.0) 0.557692307692 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.139423076923 (9.0, 6.0, 40.0, 5.0) 0.557692307692 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- somenot104(B,C) [0.235042735043]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.235042735043
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.185897435897
+[DEBUG] rnvc104(A,B) :- all104(C,A) 0.185897435897
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.185897435897
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.185897435897
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.159340659341
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.139423076923
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.139423076923
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.139423076923
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.123931623932
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.123931623932
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- somenot104(B,C), all104(C,A) 0.557692307692 (9.0, 0.0, 46.0, 5.0) 0.557692307692 [REJECT* fp] 8.0
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(B,C), all104(C,A) (0.5576923076923077, 9.0) > (0.23504273504273504, 10.0)
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.264423076923 (10.0, 5.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.264423076923 (10.0, 5.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.264423076923 (10.0, 5.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.264423076923 (10.0, 5.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.264423076923 (10.0, 5.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.264423076923 (10.0, 5.0, 41.0, 4.0) 0.705128205128 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- somenot104(B,C), all104(C,A) [0.557692307692]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+all104(A,C) 0.264423076923
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(A,C) 0.264423076923
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+some104(C,A) 0.264423076923
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+no104(C,A) 0.264423076923
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(A,C) 0.264423076923
+[DEBUG] rnvc104(A,B) :- somenot104(B,C), \+somenot104(C,A) 0.264423076923
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- somenot104(B,C), all104(C,A) 0.916666666667
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.0980392156863]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.0980392156863
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(B,C) 0.183006535948 (10.0, 4.0, 42.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C) (0.18300653594771243, 10.0) > (0.09803921568627451, 14.0)
+[LVL9] rnvc104(A,B) :- some104(A,C) 0.122004357298 (10.0, 7.0, 39.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.183006535948 (10.0, 4.0, 42.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.183006535948 (10.0, 4.0, 42.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.137254901961 (10.0, 6.0, 40.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.122004357298 (10.0, 7.0, 39.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.156862745098 (10.0, 5.0, 41.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.137254901961 (10.0, 6.0, 40.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.137254901961 (10.0, 6.0, 40.0, 4.0) 0.549019607843 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.137254901961 (10.0, 6.0, 40.0, 4.0) 0.549019607843 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- all104(B,C) [0.183006535948]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- all104(B,C) 0.183006535948
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.183006535948
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.183006535948
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.156862745098
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.137254901961
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.137254901961
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.137254901961
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.137254901961
+[DEBUG] rnvc104(A,B) :- some104(A,C) 0.122004357298
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.122004357298
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- all104(B,C), some104(A,C) 0.549019607843 (10.0, 0.0, 46.0, 4.0) 0.549019607843 [REJECT* fp] 9.0
+[LVL9] BETTER RULE rnvc104(A,B) :- all104(B,C), some104(A,C) (0.5490196078431373, 10.0) > (0.18300653594771243, 10.0)
+[INFO] RULE LEARNED: rnvc104(A,B) :- all104(B,C), some104(A,C) 0.933333333333
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.08]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.08
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(C,A) 0.18 (11.0, 4.0, 42.0, 3.0) 0.54 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A) (0.18000000000000002, 11.0) > (0.08, 14.0)
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.18 (11.0, 4.0, 42.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.135 (11.0, 6.0, 40.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.12 (11.0, 7.0, 39.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.154285714286 (11.0, 5.0, 41.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.135 (11.0, 6.0, 40.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.135 (11.0, 6.0, 40.0, 3.0) 0.54 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,B) 0.135 (11.0, 6.0, 40.0, 3.0) 0.54 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,A) [0.18]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,A) 0.18
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.18
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.154285714286
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.135
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.135
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.135
+[DEBUG] rnvc104(A,B) :- somenot104(C,B) 0.135
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.12
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(C,A), somenot104(C,B) 0.54 (11.0, 0.0, 46.0, 3.0) 0.54 [REJECT* fp] 10.0
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,A), somenot104(C,B) (0.54, 11.0) > (0.18000000000000002, 11.0)
+[INFO] RULE LEARNED: rnvc104(A,B) :- some104(C,A), somenot104(C,B) 0.95
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.0612244897959]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.0612244897959
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(C,B) 0.176870748299 (12.0, 4.0, 42.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,B) (0.17687074829931973, 12.0) > (0.061224489795918366, 14.0)
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.132653061224 (12.0, 6.0, 40.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.1179138322 (12.0, 7.0, 39.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.151603498542 (12.0, 5.0, 41.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.132653061224 (12.0, 6.0, 40.0, 2.0) 0.530612244898 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(C,A) 0.132653061224 (12.0, 6.0, 40.0, 2.0) 0.530612244898 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- some104(C,B) [0.176870748299]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- some104(C,B) 0.176870748299
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.151603498542
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.132653061224
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.132653061224
+[DEBUG] rnvc104(A,B) :- somenot104(C,A) 0.132653061224
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.1179138322
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- some104(C,B), somenot104(C,A) 0.530612244898 (12.0, 0.0, 46.0, 2.0) 0.530612244898 [REJECT* fp] 11.0
+[LVL9] BETTER RULE rnvc104(A,B) :- some104(C,B), somenot104(C,A) (0.5306122448979592, 12.0) > (0.17687074829931973, 12.0)
+[INFO] RULE LEARNED: rnvc104(A,B) :- some104(C,B), somenot104(C,A) 0.966666666667
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.0416666666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.0416666666667
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.130208333333 (13.0, 6.0, 40.0, 1.0) 0.520833333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- no104(A,C) (0.13020833333333334, 13.0) > (0.041666666666666664, 14.0)
+[LVL9] rnvc104(A,B) :- no104(B,C) 0.115740740741 (13.0, 7.0, 39.0, 1.0) 0.520833333333 [ACCEPT]
+[LVL9] rnvc104(A,B) :- somenot104(A,C) 0.14880952381 (13.0, 5.0, 41.0, 1.0) 0.520833333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(A,C) (0.1488095238095238, 13.0) > (0.13020833333333334, 13.0)
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.130208333333 (13.0, 6.0, 40.0, 1.0) 0.520833333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- somenot104(A,C) [0.14880952381]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- somenot104(A,C) 0.14880952381
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.130208333333
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.130208333333
+[DEBUG] rnvc104(A,B) :- no104(B,C) 0.115740740741
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- somenot104(A,C), no104(B,C) 0.520833333333 (13.0, 0.0, 46.0, 1.0) 0.520833333333 [REJECT* fp] 12.0
+[LVL9] BETTER RULE rnvc104(A,B) :- somenot104(A,C), no104(B,C) (0.5208333333333334, 13.0) > (0.1488095238095238, 13.0)
+[INFO] RULE LEARNED: rnvc104(A,B) :- somenot104(A,C), no104(B,C) 0.983333333333
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.0212765957447]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.0212765957447
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- no104(A,C) 0.127659574468 (14.0, 6.0, 40.0, 0.0) 0.510638297872 [ACCEPT]
+[LVL9] BETTER RULE rnvc104(A,B) :- no104(A,C) (0.1276595744680851, 14.0) > (0.02127659574468085, 14.0)
+[LVL9] rnvc104(A,B) :- somenot104(B,C) 0.127659574468 (14.0, 6.0, 40.0, 0.0) 0.510638297872 [ACCEPT]
+[DEBUG] Best rule so far: rnvc104(A,B) :- no104(A,C) [0.127659574468]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- no104(A,C) 0.127659574468
+[DEBUG] rnvc104(A,B) :- somenot104(B,C) 0.127659574468
+[DEBUG] ==================================
+[LVL9] rnvc104(A,B) :- no104(A,C), somenot104(B,C) 0.510638297872 (14.0, 0.0, 46.0, 0.0) 0.510638297872 [REJECT* fp] 13.0
+[LVL9] BETTER RULE rnvc104(A,B) :- no104(A,C), somenot104(B,C) (0.5106382978723404, 14.0) > (0.1276595744680851, 14.0)
+[INFO] RULE LEARNED: rnvc104(A,B) :- no104(A,C), somenot104(B,C) 1.0
+[DEBUG] Best rule so far: rnvc104(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc104(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc104(A,B) :- true 1.0

@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_107.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rnvc107.log
+              target:	rnvc107/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc107(A,B) :- somenot107(B,C), \+all107(C,A), \+no107(C,A)
+rnvc107(A,B) :- all107(B,C), \+some107(A,C), \+some107(C,A), \+no107(A,C), \+no107(C,A)
+rnvc107(A,B) :- some107(C,B), \+all107(A,C), \+all107(C,A), \+some107(A,C), \+somenot107(A,C)
+rnvc107(A,B) :- no107(B,C), \+all107(A,C), \+all107(C,A), \+some107(C,A), \+no107(C,A), \+somenot107(A,C)
+rnvc107(A,B) :- some107(B,C), \+all107(A,C), \+all107(C,A), \+some107(C,A), \+no107(A,C), \+no107(C,A), \+somenot107(C,A)
+rnvc107(A,B) :- no107(C,A), no107(C,B)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	24189
+          Total time:	399.8891s

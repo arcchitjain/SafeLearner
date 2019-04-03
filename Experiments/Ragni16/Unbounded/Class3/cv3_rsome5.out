@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class3/cv3_train_5.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class3/cv3_rsome5.log
+              target:	rsome5/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome5(A,B) :- some5(B,C), \+all5(C,A), \+all5(A,C), \+some5(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.913793103448
+           Precision:	 0.5
+              Recall:	 0.4
+================== STATISTICS ==================
+    Rule evaluations:	47663
+          Total time:	646.4739s

@@ -1,0 +1,20 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_63.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsomenot63.log
+              target:	rsomenot63/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot63(A,B) :- all63(B,C), \+all63(A,C), \+no63(A,C), \+no63(C,A), \+somenot63(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.936363636364
+           Precision:	 0.5
+              Recall:	 0.571428571429
+================== STATISTICS ==================
+    Rule evaluations:	45650
+          Total time:	540.7654s

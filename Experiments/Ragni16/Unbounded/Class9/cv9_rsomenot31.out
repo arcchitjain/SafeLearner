@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_31.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsomenot31.log
+              target:	rsomenot31/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot31(A,B) :- some31(A,C), somenot31(B,C)
+rsomenot31(A,B) :- somenot31(A,C), some31(C,B)
+rsomenot31(A,B) :- somenot31(C,B), all31(A,C)
+rsomenot31(A,B) :- some31(C,A), some31(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.91
+           Precision:	 1.0
+              Recall:	 0.357142857143
+================== STATISTICS ==================
+    Rule evaluations:	60586
+          Total time:	9974.3951s

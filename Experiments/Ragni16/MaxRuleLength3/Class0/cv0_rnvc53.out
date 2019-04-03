@@ -1,0 +1,27 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_53.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc53.log
+              target:	rnvc53/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc53(A,B) :- somenot53(B,C), no53(C,A)
+rnvc53(A,B) :- somenot53(C,B), some53(A,C)
+rnvc53(A,B) :- some53(C,A), some53(C,B)
+rnvc53(A,B) :- no53(B,C), all53(C,A)
+rnvc53(A,B) :- somenot53(B,C), somenot53(A,C)
+rnvc53(A,B) :- somenot53(C,A), somenot53(C,B)
+rnvc53(A,B) :- some53(C,A), some53(B,C)
+rnvc53(A,B) :- no53(A,C), no53(B,C)
+==================== SCORES ====================
+            Accuracy:	 1.0
+           Precision:	 1.0
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	4780
+          Total time:	95.5260s

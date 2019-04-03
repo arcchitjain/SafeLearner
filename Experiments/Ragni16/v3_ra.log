@@ -1,0 +1,744 @@
+[LVL9] Output level						: 9
+[INFO] Arguments						: Data/Ragni16/processed/ragni_v3.pl -t ra/2 --log Experiments/Ragni16/v3_ra.log -v -v -v --cwLearning
+[INFO] Beam Size                        : 5
+[INFO] m-estimate Parameter             : 1
+[INFO] Tolerance Parameter              : 1e-12
+[INFO] Max Increments                   : [0.001, 0.0002]
+[INFO] Learning Rate                    : [0.001, 0.0001]
+[INFO] Closed World Negatives' Factor   : 1
+[INFO] Open World Negatives' Factor     : 1
+[INFO] #Iterations in SGD               : 10000
+[INFO] Misclassification Cost of -ves   : 1
+[INFO] Min Significance                 : None
+[INFO] Max Rule Length                  : None
+[INFO] Open World Setting               : True
+[DEBUG] Created PSQL Database           : ragni_v3
+[DEBUG] Time - initialize PSQLDB        : 0.7s
+[INFO] Number of examples (M)           : 17792
+[INFO] Positive probabilistic part (P)  : 1093.0000
+[INFO] Negative probabilistic part (N)  : 16699.0000
+[INFO] Target Base List                 : ['object', 'object']
+[INFO] Predicate Dict                   : {'a': ['object', 'object'], 'e': ['object', 'object'], 'i': ['object', 'object'], 'o': ['object', 'object'], 're': ['object', 'object'], 'nvc': ['object', 'object'], 'ra': ['object', 'object'], 'ro': ['object', 'object'], 'ri': ['object', 'object']}
+[DEBUG] Time - readFile                 : 23.3s
+[DEBUG] Running AMIE+ : java -jar amie_plus.jar -minhc 1e-05 -minpca 1e-05 -htr '<ra>' -bexr '<ra>' -oute Data/Ragni16/processed/ragni_v3_amie.tsv
+[DEBUG] ================ Candidate Rules obtained from AMIE+ ================
+[DEBUG] (ra(A,B), [a(C,B), a(A,C)])	0.087831656	0.345323741	1
+[DEBUG] (ra(A,B), [a(B,C), e(C,A)])	0.084172004	0.330935252	1
+[DEBUG] (ra(A,B), [a(A,C), e(B,C)])	0.064958829	0.255395683	1
+[DEBUG] (ra(A,B), [a(C,A), e(B,C)])	0.061299177	0.241007194	1
+[DEBUG] (ra(A,B), [a(B,C), e(A,C)])	0.052150046	0.205035971	1
+[DEBUG] (ra(A,B), [a(C,B), e(C,A)])	0.044830741	0.176258993	1
+[DEBUG] (ra(A,B), [a(C,A), e(C,B)])	0.032936871	0.129496403	1
+[DEBUG] (ra(A,B), [e(C,A), e(B,C)])	0.032936871	0.129496403	1
+[DEBUG] (ra(A,B), [e(B,C), i(C,A)])	0.032021958	0.125899281	1
+[DEBUG] (ra(A,B), [a(C,B), e(A,C)])	0.031107045	0.122302158	1
+[DEBUG] (ra(A,B), [a(C,A), a(B,C)])	0.030192132	0.118705036	1
+[DEBUG] (ra(A,B), [e(B,C), i(A,C)])	0.022872827	0.089928058	1
+[DEBUG] (ra(A,B), [e(C,A), i(B,C)])	0.021043001	0.082733813	1
+[DEBUG] (ra(A,B), [a(A,C), e(C,B)])	0.019213175	0.075539568	1
+[DEBUG] (ra(A,B), [e(C,A), i(C,B)])	0.018298262	0.071942446	1
+[DEBUG] (ra(A,B), [e(C,B), e(A,C)])	0.018298262	0.071942446	1
+[DEBUG] (ra(A,B), [e(B,C), o(C,A)])	0.017383349	0.068345324	1
+[DEBUG] (ra(A,B), [e(A,C), i(B,C)])	0.015553522	0.061151079	1
+[DEBUG] (ra(A,B), [e(C,A), o(C,B)])	0.013723696	0.053956835	1
+[DEBUG] (ra(A,B), [e(C,B), i(C,A)])	0.012808783	0.050359712	1
+[DEBUG] (ra(A,B), [e(A,C), i(C,B)])	0.012808783	0.050359712	1
+[DEBUG] (ra(A,B), [e(C,B), o(C,A)])	0.009149131	0.035971223	1
+[DEBUG] (ra(A,B), [e(A,C), o(B,C)])	0.009149131	0.035971223	1
+[DEBUG] (ra(A,B), [e(C,A), o(B,C)])	0.008234218	0.032374101	1
+[DEBUG] (ra(A,B), [e(C,B), o(A,C)])	0.007319305	0.028776978	1
+[DEBUG] (ra(A,B), [e(B,C), o(A,C)])	0.007319305	0.028776978	1
+[DEBUG] (ra(A,B), [i(C,B), o(A,C)])	0.006404392	0.025179856	1
+[DEBUG] (ra(A,B), [a(C,B), o(C,A)])	0.006404392	0.025179856	1
+[DEBUG] (ra(A,B), [e(C,B), i(A,C)])	0.006404392	0.025179856	1
+[DEBUG] (ra(A,B), [e(A,C), o(C,B)])	0.006404392	0.025179856	1
+[DEBUG] (ra(A,B), [a(A,C), o(B,C)])	0.006404392	0.025179856	1
+[DEBUG] (ra(A,B), [i(C,A), o(C,B)])	0.005489478	0.021582734	1
+[DEBUG] (ra(A,B), [a(C,B), o(A,C)])	0.005489478	0.021582734	1
+[DEBUG] (ra(A,B), [i(A,C), o(C,B)])	0.004574565	0.017985612	1
+[DEBUG] (ra(A,B), [a(B,C), i(A,C)])	0.004574565	0.017985612	1
+[DEBUG] (ra(A,B), [a(B,C), i(C,A)])	0.004574565	0.017985612	1
+[DEBUG] (ra(A,B), [a(A,C), i(B,C)])	0.004574565	0.017985612	1
+[DEBUG] (ra(A,B), [a(C,A), i(C,B)])	0.003659652	0.014388489	1
+[DEBUG] (ra(A,B), [a(C,A), o(C,B)])	0.003659652	0.014388489	1
+[DEBUG] (ra(A,B), [a(C,A), o(B,C)])	0.003659652	0.014388489	1
+[DEBUG] (ra(A,B), [a(C,A), a(C,B)])	0.049405306	0.0117724	0.209302326
+[DEBUG] (ra(A,B), [a(C,B), i(A,C)])	0.002744739	0.010791367	1
+[DEBUG] (ra(A,B), [a(B,C), o(A,C)])	0.002744739	0.010791367	1
+[DEBUG] (ra(A,B), [i(B,C), o(A,C)])	0.002744739	0.010791367	1
+[DEBUG] (ra(A,B), [i(B,C), o(C,A)])	0.002744739	0.010791367	1
+[DEBUG] (ra(A,B), [i(A,C), o(B,C)])	0.002744739	0.010791367	1
+[DEBUG] (ra(A,B), [a(A,C), a(B,C)])	0.040256176	0.009592326	0.151202749
+[DEBUG] (ra(A,B), [o(C,B), o(A,C)])	0.001829826	0.007194245	1
+[DEBUG] (ra(A,B), [i(C,B), i(A,C)])	0.001829826	0.007194245	1
+[DEBUG] (ra(A,B), [a(A,C), i(C,B)])	0.001829826	0.007194245	1
+[DEBUG] (ra(A,B), [a(C,A), i(B,C)])	0.001829826	0.007194245	1
+[DEBUG] (ra(A,B), [i(C,A), i(B,C)])	0.001829826	0.007194245	1
+[DEBUG] (ra(A,B), [e(C,A), e(C,B)])	0.016468435	0.003924133	0.064285714
+[DEBUG] (ra(A,B), [a(C,B), i(C,A)])	0.000914913	0.003597122	1
+[DEBUG] (ra(A,B), [a(A,C), o(C,B)])	0.000914913	0.003597122	1
+[DEBUG] (ra(A,B), [a(B,C), o(C,A)])	0.000914913	0.003597122	1
+[DEBUG] (ra(A,B), [o(C,A), o(B,C)])	0.000914913	0.003597122	1
+[DEBUG] (ra(A,B), [i(C,A), o(B,C)])	0.000914913	0.003597122	1
+[DEBUG] (ra(A,B), [e(A,C), e(B,C)])	0.013723696	0.003270111	0.079365079
+[DEBUG] (ra(A,B), [i(A,C), i(B,C)])	0.004574565	0.001090037	0.083333333
+[DEBUG] (ra(A,B), [o(A,C), o(B,C)])	0.003659652	0.00087203	0.088888889
+[DEBUG] (ra(A,B), [i(C,A), i(C,B)])	0.002744739	0.000654022	0.042857143
+[DEBUG] (ra(A,B), [o(C,A), o(C,B)])	0.001829826	0.000436015	0.044444444
+[DEBUG] ====================================================================
+[INFO] Total positive examples (#P)     : 17792
+[LVL9] CREATE TABLE dummyA AS (select distinct * from (select distinct ra.v0 as v0 from ra union select distinct a.v0 as v0 from a union select distinct a.v1 as v0 from a union select distinct e.v0 as v0 from e union select distinct e.v1 as v0 from e union select distinct i.v0 as v0 from i union select distinct i.v1 as v0 from i union select distinct o.v0 as v0 from o union select distinct o.v1 as v0 from o union select distinct re.v0 as v0 from re union select distinct re.v1 as v0 from re union select distinct nvc.v0 as v0 from nvc union select distinct nvc.v1 as v0 from nvc union select distinct ro.v0 as v0 from ro union select distinct ro.v1 as v0 from ro union select distinct ri.v0 as v0 from ri union select distinct ri.v1 as v0 from ri) as a);
+[LVL9] CREATE TABLE dummyB AS (select distinct * from (select distinct ra.v1 as v0 from ra union select distinct a.v0 as v0 from a union select distinct a.v1 as v0 from a union select distinct e.v0 as v0 from e union select distinct e.v1 as v0 from e union select distinct i.v0 as v0 from i union select distinct i.v1 as v0 from i union select distinct o.v0 as v0 from o union select distinct o.v1 as v0 from o union select distinct re.v0 as v0 from re union select distinct re.v1 as v0 from re union select distinct nvc.v0 as v0 from nvc union select distinct nvc.v1 as v0 from nvc union select distinct ro.v0 as v0 from ro union select distinct ro.v1 as v0 from ro union select distinct ri.v0 as v0 from ri union select distinct ri.v1 as v0 from ri) as a);
+[LVL9] CREATE TABLE dummy0 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from o as table0 inner join o as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy1 AS (select distinct v1 as v0, v2 as v1 from dummy0);
+[LVL9] CREATE TABLE dummy2 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from i as table0 inner join i as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy3 AS (select distinct v1 as v0, v2 as v1 from dummy2);
+[LVL9] CREATE TABLE dummy4 AS (select distinct dummy1.v0 as v0, dummy1.v1 as v1 from dummy1 union select distinct dummy3.v0 as v0, dummy3.v1 as v1 from dummy3);
+[LVL9] CREATE TABLE dummy5 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from o as table0 inner join o as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy6 AS (select distinct v0 as v0, v2 as v1 from dummy5);
+[LVL9] CREATE TABLE dummy7 AS (select distinct dummy4.v0 as v0, dummy4.v1 as v1 from dummy4 union select distinct dummy6.v0 as v0, dummy6.v1 as v1 from dummy6);
+[LVL9] CREATE TABLE dummy8 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from i as table0 inner join i as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy9 AS (select distinct v0 as v0, v2 as v1 from dummy8);
+[LVL9] CREATE TABLE dummy10 AS (select distinct dummy7.v0 as v0, dummy7.v1 as v1 from dummy7 union select distinct dummy9.v0 as v0, dummy9.v1 as v1 from dummy9);
+[LVL9] CREATE TABLE dummy11 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from e as table0 inner join e as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy12 AS (select distinct v0 as v0, v2 as v1 from dummy11);
+[LVL9] CREATE TABLE dummy13 AS (select distinct dummy10.v0 as v0, dummy10.v1 as v1 from dummy10 union select distinct dummy12.v0 as v0, dummy12.v1 as v1 from dummy12);
+[LVL9] CREATE TABLE dummy14 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v0 = o.v1);
+[LVL9] CREATE TABLE dummy15 AS (select distinct v1 as v0, v2 as v1 from dummy14);
+[LVL9] CREATE TABLE dummy16 AS (select distinct dummy13.v0 as v0, dummy13.v1 as v1 from dummy13 union select distinct dummy15.v0 as v0, dummy15.v1 as v1 from dummy15);
+[LVL9] CREATE TABLE dummy17 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from o as table0 inner join o as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy18 AS (select distinct v1 as v0, v2 as v1 from dummy17);
+[LVL9] CREATE TABLE dummy19 AS (select distinct dummy16.v0 as v0, dummy16.v1 as v1 from dummy16 union select distinct dummy18.v0 as v0, dummy18.v1 as v1 from dummy18);
+[LVL9] CREATE TABLE dummy20 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v1 = o.v0);
+[LVL9] CREATE TABLE dummy21 AS (select distinct v2 as v0, v0 as v1 from dummy20);
+[LVL9] CREATE TABLE dummy22 AS (select distinct dummy19.v0 as v0, dummy19.v1 as v1 from dummy19 union select distinct dummy21.v0 as v0, dummy21.v1 as v1 from dummy21);
+[LVL9] CREATE TABLE dummy23 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v1 = o.v0);
+[LVL9] CREATE TABLE dummy24 AS (select distinct v0 as v0, v2 as v1 from dummy23);
+[LVL9] CREATE TABLE dummy25 AS (select distinct dummy22.v0 as v0, dummy22.v1 as v1 from dummy22 union select distinct dummy24.v0 as v0, dummy24.v1 as v1 from dummy24);
+[LVL9] CREATE TABLE dummy26 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v0 = i.v0);
+[LVL9] CREATE TABLE dummy27 AS (select distinct v2 as v0, v1 as v1 from dummy26);
+[LVL9] CREATE TABLE dummy28 AS (select distinct dummy25.v0 as v0, dummy25.v1 as v1 from dummy25 union select distinct dummy27.v0 as v0, dummy27.v1 as v1 from dummy27);
+[LVL9] CREATE TABLE dummy29 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from e as table0 inner join e as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy30 AS (select distinct v1 as v0, v2 as v1 from dummy29);
+[LVL9] CREATE TABLE dummy31 AS (select distinct dummy28.v0 as v0, dummy28.v1 as v1 from dummy28 union select distinct dummy30.v0 as v0, dummy30.v1 as v1 from dummy30);
+[LVL9] CREATE TABLE dummy32 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from i as table0 inner join i as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy33 AS (select distinct v1 as v0, v2 as v1 from dummy32);
+[LVL9] CREATE TABLE dummy34 AS (select distinct dummy31.v0 as v0, dummy31.v1 as v1 from dummy31 union select distinct dummy33.v0 as v0, dummy33.v1 as v1 from dummy33);
+[LVL9] CREATE TABLE dummy35 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v0 = i.v1);
+[LVL9] CREATE TABLE dummy36 AS (select distinct v1 as v0, v2 as v1 from dummy35);
+[LVL9] CREATE TABLE dummy37 AS (select distinct dummy34.v0 as v0, dummy34.v1 as v1 from dummy34 union select distinct dummy36.v0 as v0, dummy36.v1 as v1 from dummy36);
+[LVL9] CREATE TABLE dummy38 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v1 = i.v0);
+[LVL9] CREATE TABLE dummy39 AS (select distinct v0 as v0, v2 as v1 from dummy38);
+[LVL9] CREATE TABLE dummy40 AS (select distinct dummy37.v0 as v0, dummy37.v1 as v1 from dummy37 union select distinct dummy39.v0 as v0, dummy39.v1 as v1 from dummy39);
+[LVL9] CREATE TABLE dummy41 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from i as table0 inner join i as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy42 AS (select distinct v2 as v0, v1 as v1 from dummy41);
+[LVL9] CREATE TABLE dummy43 AS (select distinct dummy40.v0 as v0, dummy40.v1 as v1 from dummy40 union select distinct dummy42.v0 as v0, dummy42.v1 as v1 from dummy42);
+[LVL9] CREATE TABLE dummy44 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from o as table0 inner join o as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy45 AS (select distinct v2 as v0, v1 as v1 from dummy44);
+[LVL9] CREATE TABLE dummy46 AS (select distinct dummy43.v0 as v0, dummy43.v1 as v1 from dummy43 union select distinct dummy45.v0 as v0, dummy45.v1 as v1 from dummy45);
+[LVL9] CREATE TABLE dummy47 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy48 AS (select distinct v0 as v0, v2 as v1 from dummy47);
+[LVL9] CREATE TABLE dummy49 AS (select distinct dummy46.v0 as v0, dummy46.v1 as v1 from dummy46 union select distinct dummy48.v0 as v0, dummy48.v1 as v1 from dummy48);
+[LVL9] CREATE TABLE dummy50 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v1 = o.v1);
+[LVL9] CREATE TABLE dummy51 AS (select distinct v0 as v0, v2 as v1 from dummy50);
+[LVL9] CREATE TABLE dummy52 AS (select distinct dummy49.v0 as v0, dummy49.v1 as v1 from dummy49 union select distinct dummy51.v0 as v0, dummy51.v1 as v1 from dummy51);
+[LVL9] CREATE TABLE dummy53 AS (select distinct i.v0 as v0, i.v1 as v1, o.v1 as v2 from i as i inner join o as o on i.v1 = o.v0);
+[LVL9] CREATE TABLE dummy54 AS (select distinct v2 as v0, v0 as v1 from dummy53);
+[LVL9] CREATE TABLE dummy55 AS (select distinct dummy52.v0 as v0, dummy52.v1 as v1 from dummy52 union select distinct dummy54.v0 as v0, dummy54.v1 as v1 from dummy54);
+[LVL9] CREATE TABLE dummy56 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v1 = o.v1);
+[LVL9] CREATE TABLE dummy57 AS (select distinct v2 as v0, v0 as v1 from dummy56);
+[LVL9] CREATE TABLE dummy58 AS (select distinct dummy55.v0 as v0, dummy55.v1 as v1 from dummy55 union select distinct dummy57.v0 as v0, dummy57.v1 as v1 from dummy57);
+[LVL9] CREATE TABLE dummy59 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v1 = o.v1);
+[LVL9] CREATE TABLE dummy60 AS (select distinct v2 as v0, v0 as v1 from dummy59);
+[LVL9] CREATE TABLE dummy61 AS (select distinct dummy58.v0 as v0, dummy58.v1 as v1 from dummy58 union select distinct dummy60.v0 as v0, dummy60.v1 as v1 from dummy60);
+[LVL9] CREATE TABLE dummy62 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v0 = i.v1);
+[LVL9] CREATE TABLE dummy63 AS (select distinct v2 as v0, v1 as v1 from dummy62);
+[LVL9] CREATE TABLE dummy64 AS (select distinct dummy61.v0 as v0, dummy61.v1 as v1 from dummy61 union select distinct dummy63.v0 as v0, dummy63.v1 as v1 from dummy63);
+[LVL9] CREATE TABLE dummy65 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy66 AS (select distinct v1 as v0, v2 as v1 from dummy65);
+[LVL9] CREATE TABLE dummy67 AS (select distinct dummy64.v0 as v0, dummy64.v1 as v1 from dummy64 union select distinct dummy66.v0 as v0, dummy66.v1 as v1 from dummy66);
+[LVL9] CREATE TABLE dummy68 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v0 = o.v1);
+[LVL9] CREATE TABLE dummy69 AS (select distinct v1 as v0, v2 as v1 from dummy68);
+[LVL9] CREATE TABLE dummy70 AS (select distinct dummy67.v0 as v0, dummy67.v1 as v1 from dummy67 union select distinct dummy69.v0 as v0, dummy69.v1 as v1 from dummy69);
+[LVL9] CREATE TABLE dummy71 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v0 = o.v0);
+[LVL9] CREATE TABLE dummy72 AS (select distinct v1 as v0, v2 as v1 from dummy71);
+[LVL9] CREATE TABLE dummy73 AS (select distinct dummy70.v0 as v0, dummy70.v1 as v1 from dummy70 union select distinct dummy72.v0 as v0, dummy72.v1 as v1 from dummy72);
+[LVL9] CREATE TABLE dummy74 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v0 = i.v0);
+[LVL9] CREATE TABLE dummy75 AS (select distinct v1 as v0, v2 as v1 from dummy74);
+[LVL9] CREATE TABLE dummy76 AS (select distinct dummy73.v0 as v0, dummy73.v1 as v1 from dummy73 union select distinct dummy75.v0 as v0, dummy75.v1 as v1 from dummy75);
+[LVL9] CREATE TABLE dummy77 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v1 = i.v1);
+[LVL9] CREATE TABLE dummy78 AS (select distinct v0 as v0, v2 as v1 from dummy77);
+[LVL9] CREATE TABLE dummy79 AS (select distinct dummy76.v0 as v0, dummy76.v1 as v1 from dummy76 union select distinct dummy78.v0 as v0, dummy78.v1 as v1 from dummy78);
+[LVL9] CREATE TABLE dummy80 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v1 = i.v0);
+[LVL9] CREATE TABLE dummy81 AS (select distinct v2 as v0, v0 as v1 from dummy80);
+[LVL9] CREATE TABLE dummy82 AS (select distinct dummy79.v0 as v0, dummy79.v1 as v1 from dummy79 union select distinct dummy81.v0 as v0, dummy81.v1 as v1 from dummy81);
+[LVL9] CREATE TABLE dummy83 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v1 = i.v1);
+[LVL9] CREATE TABLE dummy84 AS (select distinct v2 as v0, v0 as v1 from dummy83);
+[LVL9] CREATE TABLE dummy85 AS (select distinct dummy82.v0 as v0, dummy82.v1 as v1 from dummy82 union select distinct dummy84.v0 as v0, dummy84.v1 as v1 from dummy84);
+[LVL9] CREATE TABLE dummy86 AS (select distinct i.v0 as v0, i.v1 as v1, o.v1 as v2 from i as i inner join o as o on i.v1 = o.v0);
+[LVL9] CREATE TABLE dummy87 AS (select distinct v0 as v0, v2 as v1 from dummy86);
+[LVL9] CREATE TABLE dummy88 AS (select distinct dummy85.v0 as v0, dummy85.v1 as v1 from dummy85 union select distinct dummy87.v0 as v0, dummy87.v1 as v1 from dummy87);
+[LVL9] CREATE TABLE dummy89 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v0 = o.v1);
+[LVL9] CREATE TABLE dummy90 AS (select distinct v2 as v0, v1 as v1 from dummy89);
+[LVL9] CREATE TABLE dummy91 AS (select distinct dummy88.v0 as v0, dummy88.v1 as v1 from dummy88 union select distinct dummy90.v0 as v0, dummy90.v1 as v1 from dummy90);
+[LVL9] CREATE TABLE dummy92 AS (select distinct i.v0 as v0, i.v1 as v1, o.v1 as v2 from i as i inner join o as o on i.v0 = o.v0);
+[LVL9] CREATE TABLE dummy93 AS (select distinct v1 as v0, v2 as v1 from dummy92);
+[LVL9] CREATE TABLE dummy94 AS (select distinct dummy91.v0 as v0, dummy91.v1 as v1 from dummy91 union select distinct dummy93.v0 as v0, dummy93.v1 as v1 from dummy93);
+[LVL9] CREATE TABLE dummy95 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v1 = o.v1);
+[LVL9] CREATE TABLE dummy96 AS (select distinct v0 as v0, v2 as v1 from dummy95);
+[LVL9] CREATE TABLE dummy97 AS (select distinct dummy94.v0 as v0, dummy94.v1 as v1 from dummy94 union select distinct dummy96.v0 as v0, dummy96.v1 as v1 from dummy96);
+[LVL9] CREATE TABLE dummy98 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v1 = o.v0);
+[LVL9] CREATE TABLE dummy99 AS (select distinct v0 as v0, v2 as v1 from dummy98);
+[LVL9] CREATE TABLE dummy100 AS (select distinct dummy97.v0 as v0, dummy97.v1 as v1 from dummy97 union select distinct dummy99.v0 as v0, dummy99.v1 as v1 from dummy99);
+[LVL9] CREATE TABLE dummy101 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v0 = i.v1);
+[LVL9] CREATE TABLE dummy102 AS (select distinct v2 as v0, v1 as v1 from dummy101);
+[LVL9] CREATE TABLE dummy103 AS (select distinct dummy100.v0 as v0, dummy100.v1 as v1 from dummy100 union select distinct dummy102.v0 as v0, dummy102.v1 as v1 from dummy102);
+[LVL9] CREATE TABLE dummy104 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v0 = o.v0);
+[LVL9] CREATE TABLE dummy105 AS (select distinct v2 as v0, v1 as v1 from dummy104);
+[LVL9] CREATE TABLE dummy106 AS (select distinct dummy103.v0 as v0, dummy103.v1 as v1 from dummy103 union select distinct dummy105.v0 as v0, dummy105.v1 as v1 from dummy105);
+[LVL9] CREATE TABLE dummy107 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v0 = o.v1);
+[LVL9] CREATE TABLE dummy108 AS (select distinct v2 as v0, v1 as v1 from dummy107);
+[LVL9] CREATE TABLE dummy109 AS (select distinct dummy106.v0 as v0, dummy106.v1 as v1 from dummy106 union select distinct dummy108.v0 as v0, dummy108.v1 as v1 from dummy108);
+[LVL9] CREATE TABLE dummy110 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v1 = o.v1);
+[LVL9] CREATE TABLE dummy111 AS (select distinct v2 as v0, v0 as v1 from dummy110);
+[LVL9] CREATE TABLE dummy112 AS (select distinct dummy109.v0 as v0, dummy109.v1 as v1 from dummy109 union select distinct dummy111.v0 as v0, dummy111.v1 as v1 from dummy111);
+[LVL9] CREATE TABLE dummy113 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v0 = o.v1);
+[LVL9] CREATE TABLE dummy114 AS (select distinct v2 as v0, v1 as v1 from dummy113);
+[LVL9] CREATE TABLE dummy115 AS (select distinct dummy112.v0 as v0, dummy112.v1 as v1 from dummy112 union select distinct dummy114.v0 as v0, dummy114.v1 as v1 from dummy114);
+[LVL9] CREATE TABLE dummy116 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v0 = o.v1);
+[LVL9] CREATE TABLE dummy117 AS (select distinct v1 as v0, v2 as v1 from dummy116);
+[LVL9] CREATE TABLE dummy118 AS (select distinct dummy115.v0 as v0, dummy115.v1 as v1 from dummy115 union select distinct dummy117.v0 as v0, dummy117.v1 as v1 from dummy117);
+[LVL9] CREATE TABLE dummy119 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v1 = o.v1);
+[LVL9] CREATE TABLE dummy120 AS (select distinct v0 as v0, v2 as v1 from dummy119);
+[LVL9] CREATE TABLE dummy121 AS (select distinct dummy118.v0 as v0, dummy118.v1 as v1 from dummy118 union select distinct dummy120.v0 as v0, dummy120.v1 as v1 from dummy120);
+[LVL9] CREATE TABLE dummy122 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v0 = o.v0);
+[LVL9] CREATE TABLE dummy123 AS (select distinct v2 as v0, v1 as v1 from dummy122);
+[LVL9] CREATE TABLE dummy124 AS (select distinct dummy121.v0 as v0, dummy121.v1 as v1 from dummy121 union select distinct dummy123.v0 as v0, dummy123.v1 as v1 from dummy123);
+[LVL9] CREATE TABLE dummy125 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v1 = i.v0);
+[LVL9] CREATE TABLE dummy126 AS (select distinct v0 as v0, v2 as v1 from dummy125);
+[LVL9] CREATE TABLE dummy127 AS (select distinct dummy124.v0 as v0, dummy124.v1 as v1 from dummy124 union select distinct dummy126.v0 as v0, dummy126.v1 as v1 from dummy126);
+[LVL9] CREATE TABLE dummy128 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v0 = i.v0);
+[LVL9] CREATE TABLE dummy129 AS (select distinct v2 as v0, v1 as v1 from dummy128);
+[LVL9] CREATE TABLE dummy130 AS (select distinct dummy127.v0 as v0, dummy127.v1 as v1 from dummy127 union select distinct dummy129.v0 as v0, dummy129.v1 as v1 from dummy129);
+[LVL9] CREATE TABLE dummy131 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v0 = o.v0);
+[LVL9] CREATE TABLE dummy132 AS (select distinct v1 as v0, v2 as v1 from dummy131);
+[LVL9] CREATE TABLE dummy133 AS (select distinct dummy130.v0 as v0, dummy130.v1 as v1 from dummy130 union select distinct dummy132.v0 as v0, dummy132.v1 as v1 from dummy132);
+[LVL9] CREATE TABLE dummy134 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v1 = i.v1);
+[LVL9] CREATE TABLE dummy135 AS (select distinct v0 as v0, v2 as v1 from dummy134);
+[LVL9] CREATE TABLE dummy136 AS (select distinct dummy133.v0 as v0, dummy133.v1 as v1 from dummy133 union select distinct dummy135.v0 as v0, dummy135.v1 as v1 from dummy135);
+[LVL9] CREATE TABLE dummy137 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v1 = o.v0);
+[LVL9] CREATE TABLE dummy138 AS (select distinct v2 as v0, v0 as v1 from dummy137);
+[LVL9] CREATE TABLE dummy139 AS (select distinct dummy136.v0 as v0, dummy136.v1 as v1 from dummy136 union select distinct dummy138.v0 as v0, dummy138.v1 as v1 from dummy138);
+[LVL9] CREATE TABLE dummy140 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from e as table0 inner join e as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy141 AS (select distinct v2 as v0, v1 as v1 from dummy140);
+[LVL9] CREATE TABLE dummy142 AS (select distinct dummy139.v0 as v0, dummy139.v1 as v1 from dummy139 union select distinct dummy141.v0 as v0, dummy141.v1 as v1 from dummy141);
+[LVL9] CREATE TABLE dummy143 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v0 = i.v0);
+[LVL9] CREATE TABLE dummy144 AS (select distinct v1 as v0, v2 as v1 from dummy143);
+[LVL9] CREATE TABLE dummy145 AS (select distinct dummy142.v0 as v0, dummy142.v1 as v1 from dummy142 union select distinct dummy144.v0 as v0, dummy144.v1 as v1 from dummy144);
+[LVL9] CREATE TABLE dummy146 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v1 = e.v0);
+[LVL9] CREATE TABLE dummy147 AS (select distinct v0 as v0, v2 as v1 from dummy146);
+[LVL9] CREATE TABLE dummy148 AS (select distinct dummy145.v0 as v0, dummy145.v1 as v1 from dummy145 union select distinct dummy147.v0 as v0, dummy147.v1 as v1 from dummy147);
+[LVL9] CREATE TABLE dummy149 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v0 = i.v1);
+[LVL9] CREATE TABLE dummy150 AS (select distinct v1 as v0, v2 as v1 from dummy149);
+[LVL9] CREATE TABLE dummy151 AS (select distinct dummy148.v0 as v0, dummy148.v1 as v1 from dummy148 union select distinct dummy150.v0 as v0, dummy150.v1 as v1 from dummy150);
+[LVL9] CREATE TABLE dummy152 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v1 = i.v1);
+[LVL9] CREATE TABLE dummy153 AS (select distinct v2 as v0, v0 as v1 from dummy152);
+[LVL9] CREATE TABLE dummy154 AS (select distinct dummy151.v0 as v0, dummy151.v1 as v1 from dummy151 union select distinct dummy153.v0 as v0, dummy153.v1 as v1 from dummy153);
+[LVL9] CREATE TABLE dummy155 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy156 AS (select distinct v1 as v0, v2 as v1 from dummy155);
+[LVL9] CREATE TABLE dummy157 AS (select distinct dummy154.v0 as v0, dummy154.v1 as v1 from dummy154 union select distinct dummy156.v0 as v0, dummy156.v1 as v1 from dummy156);
+[LVL9] CREATE TABLE dummy158 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v0 = e.v1);
+[LVL9] CREATE TABLE dummy159 AS (select distinct v2 as v0, v1 as v1 from dummy158);
+[LVL9] CREATE TABLE dummy160 AS (select distinct dummy157.v0 as v0, dummy157.v1 as v1 from dummy157 union select distinct dummy159.v0 as v0, dummy159.v1 as v1 from dummy159);
+[LVL9] CREATE TABLE dummy161 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v1 = i.v0);
+[LVL9] CREATE TABLE dummy162 AS (select distinct v2 as v0, v0 as v1 from dummy161);
+[LVL9] CREATE TABLE dummy163 AS (select distinct dummy160.v0 as v0, dummy160.v1 as v1 from dummy160 union select distinct dummy162.v0 as v0, dummy162.v1 as v1 from dummy162);
+[LVL9] CREATE TABLE dummy164 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from e as table0 inner join e as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy165 AS (select distinct v1 as v0, v2 as v1 from dummy164);
+[LVL9] CREATE TABLE dummy166 AS (select distinct dummy163.v0 as v0, dummy163.v1 as v1 from dummy163 union select distinct dummy165.v0 as v0, dummy165.v1 as v1 from dummy165);
+[LVL9] CREATE TABLE dummy167 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v0 = e.v0);
+[LVL9] CREATE TABLE dummy168 AS (select distinct v1 as v0, v2 as v1 from dummy167);
+[LVL9] CREATE TABLE dummy169 AS (select distinct dummy166.v0 as v0, dummy166.v1 as v1 from dummy166 union select distinct dummy168.v0 as v0, dummy168.v1 as v1 from dummy168);
+[LVL9] CREATE TABLE dummy170 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v0 = e.v0);
+[LVL9] CREATE TABLE dummy171 AS (select distinct v2 as v0, v1 as v1 from dummy170);
+[LVL9] CREATE TABLE dummy172 AS (select distinct dummy169.v0 as v0, dummy169.v1 as v1 from dummy169 union select distinct dummy171.v0 as v0, dummy171.v1 as v1 from dummy171);
+[LVL9] CREATE TABLE dummy173 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v1 = e.v1);
+[LVL9] CREATE TABLE dummy174 AS (select distinct v2 as v0, v0 as v1 from dummy173);
+[LVL9] CREATE TABLE dummy175 AS (select distinct dummy172.v0 as v0, dummy172.v1 as v1 from dummy172 union select distinct dummy174.v0 as v0, dummy174.v1 as v1 from dummy174);
+[LVL9] CREATE TABLE dummy176 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v0 = e.v1);
+[LVL9] CREATE TABLE dummy177 AS (select distinct v1 as v0, v2 as v1 from dummy176);
+[LVL9] CREATE TABLE dummy178 AS (select distinct dummy175.v0 as v0, dummy175.v1 as v1 from dummy175 union select distinct dummy177.v0 as v0, dummy177.v1 as v1 from dummy177);
+[LVL9] CREATE TABLE dummy179 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v1 = e.v1);
+[LVL9] CREATE TABLE dummy180 AS (select distinct v0 as v0, v2 as v1 from dummy179);
+[LVL9] CREATE TABLE dummy181 AS (select distinct dummy178.v0 as v0, dummy178.v1 as v1 from dummy178 union select distinct dummy180.v0 as v0, dummy180.v1 as v1 from dummy180);
+[LVL9] CREATE TABLE dummy182 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v1 = e.v0);
+[LVL9] CREATE TABLE dummy183 AS (select distinct v2 as v0, v0 as v1 from dummy182);
+[LVL9] CREATE TABLE dummy184 AS (select distinct dummy181.v0 as v0, dummy181.v1 as v1 from dummy181 union select distinct dummy183.v0 as v0, dummy183.v1 as v1 from dummy183);
+[LVL9] CREATE TABLE dummy185 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy186 AS (select distinct v2 as v0, v1 as v1 from dummy185);
+[LVL9] CREATE TABLE dummy187 AS (select distinct dummy184.v0 as v0, dummy184.v1 as v1 from dummy184 union select distinct dummy186.v0 as v0, dummy186.v1 as v1 from dummy186);
+[LVL9] CREATE TABLE dummy188 AS (select distinct v0, v1 from dummy187);
+[INFO] Total CW Predictions             : 44202
+[LVL9] CREATE TABLE dummy189 AS (select distinct dummy188.v0, dummy188.v1 from dummy188 where not exists (select 1 from ra where ra.v0 = dummy188.v0 and ra.v1 = dummy188.v1));
+[INFO] Total CW Negative Predictions    : 26688
+[LVL9] select * from dummy189 order by random() limit 35584;
+[INFO] Total CW negative examples       : 17792
+[LVL9] CW Negative Weight               : 1.5
+[LVL9] #CW Negative Examples            : 17792
+[LVL9] CREATE TABLE dummy190 AS (select distinct dummy188.v0 as v0, dummy188.v1 as v1 from dummy188 union select distinct ra.v0 as v0, ra.v1 as v1 from ra);
+[INFO] Total OW negative examples       : 712204864
+[LVL9] OW Negative Weight               : 40029.5
+[LVL9] #OW Negative Examples            : 17792
+[LVL9] Total time in getting negatives  : 35.3485970497s
+[INFO] Self.lams                        : {'p_62': 0.000654022, 'p_60': 0.001090037, 'p_27': 0.025179856, 'p_10': 0.122302158, 'p_11': 0.118705036, 'p_12': 0.089928058, 'p_13': 0.082733813, 'p_14': 0.075539568, 'p_15': 0.071942446, 'p_16': 0.071942446, 'p_17': 0.068345324, 'p_18': 0.061151079, 'p_19': 0.053956835, 'p_34': 0.017985612, 'p_35': 0.017985612, 'p_32': 0.021582734, 'p_33': 0.021582734, 'p_30': 0.025179856, 'p_31': 0.025179856, 're': 0, 'p_58': 0.003597122, 'p_59': 0.003270111, 'p_54': 0.003597122, 'p_55': 0.003597122, 'p_56': 0.003597122, 'ro': 0, 'p_50': 0.007194245, 'ri': 0, 'p_52': 0.007194245, 'p_53': 0.003924133, 'p_29': 0.025179856, 'p_61': 0.00087203, 'p_39': 0.014388489, 'p_48': 0.007194245, 'nvc': 0, 'p_8': 0.129496403, 'p_9': 0.125899281, 'p_6': 0.176258993, 'p_7': 0.129496403, 'p_4': 0.241007194, 'p_5': 0.205035971, 'p_2': 0.330935252, 'p_3': 0.255395683, 'p_0': 2.498001598721023e-05, 'p_1': 0.345323741, 'a': 0, 'p_28': 0.025179856, 'p_57': 0.003597122, 'e': 0, 'p_38': 0.014388489, 'p_63': 0.000436015, 'p_36': 0.017985612, 'i': 0, 'p_20': 0.050359712, 'p_23': 0.035971223, 'p_22': 0.035971223, 'p_25': 0.028776978, 'p_24': 0.032374101, 'o': 0, 'p_26': 0.028776978, 'p_51': 0.007194245, 'p_21': 0.050359712, 'p_49': 0.007194245, 'p_37': 0.017985612, 'p_47': 0.009592326, 'p_46': 0.010791367, 'p_45': 0.010791367, 'p_44': 0.010791367, 'p_43': 0.010791367, 'p_42': 0.010791367, 'p_41': 0.0117724, 'p_40': 0.014388489}
+[INFO] Hypothesis                       : [ra(A,B) :- fail, ra(A,B) :- true, ra(A,B) :- a(C,B), a(A,C), ra(A,B) :- a(B,C), e(C,A), ra(A,B) :- a(A,C), e(B,C), ra(A,B) :- a(C,A), e(B,C), ra(A,B) :- a(B,C), e(A,C), ra(A,B) :- a(C,B), e(C,A), ra(A,B) :- a(C,A), e(C,B), ra(A,B) :- e(C,A), e(B,C), ra(A,B) :- e(B,C), i(C,A), ra(A,B) :- a(C,B), e(A,C), ra(A,B) :- a(C,A), a(B,C), ra(A,B) :- e(B,C), i(A,C), ra(A,B) :- e(C,A), i(B,C), ra(A,B) :- a(A,C), e(C,B), ra(A,B) :- e(C,A), i(C,B), ra(A,B) :- e(C,B), e(A,C), ra(A,B) :- e(B,C), o(C,A), ra(A,B) :- e(A,C), i(B,C), ra(A,B) :- e(C,A), o(C,B), ra(A,B) :- e(C,B), i(C,A), ra(A,B) :- e(A,C), i(C,B), ra(A,B) :- e(C,B), o(C,A), ra(A,B) :- e(A,C), o(B,C), ra(A,B) :- e(C,A), o(B,C), ra(A,B) :- e(C,B), o(A,C), ra(A,B) :- e(B,C), o(A,C), ra(A,B) :- i(C,B), o(A,C), ra(A,B) :- a(C,B), o(C,A), ra(A,B) :- e(C,B), i(A,C), ra(A,B) :- e(A,C), o(C,B), ra(A,B) :- a(A,C), o(B,C), ra(A,B) :- i(C,A), o(C,B), ra(A,B) :- a(C,B), o(A,C), ra(A,B) :- i(A,C), o(C,B), ra(A,B) :- a(B,C), i(A,C), ra(A,B) :- a(B,C), i(C,A), ra(A,B) :- a(A,C), i(B,C), ra(A,B) :- a(C,A), i(C,B), ra(A,B) :- a(C,A), o(C,B), ra(A,B) :- a(C,A), o(B,C), ra(A,B) :- a(C,A), a(C,B), ra(A,B) :- a(C,B), i(A,C), ra(A,B) :- a(B,C), o(A,C), ra(A,B) :- i(B,C), o(A,C), ra(A,B) :- i(B,C), o(C,A), ra(A,B) :- i(A,C), o(B,C), ra(A,B) :- a(A,C), a(B,C), ra(A,B) :- o(C,B), o(A,C), ra(A,B) :- i(C,B), i(A,C), ra(A,B) :- a(A,C), i(C,B), ra(A,B) :- a(C,A), i(B,C), ra(A,B) :- i(C,A), i(B,C), ra(A,B) :- e(C,A), e(C,B), ra(A,B) :- a(C,B), i(C,A), ra(A,B) :- a(A,C), o(C,B), ra(A,B) :- a(B,C), o(C,A), ra(A,B) :- o(C,A), o(B,C), ra(A,B) :- i(C,A), o(B,C), ra(A,B) :- e(A,C), e(B,C), ra(A,B) :- i(A,C), i(B,C), ra(A,B) :- o(A,C), o(B,C), ra(A,B) :- i(C,A), i(C,B), ra(A,B) :- o(C,A), o(C,B)]
+[INFO] Probability List                 : [0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999, 0.999999999999]
+[INFO] Body List                        : [[], [a(C,B), a(A,C)], [a(B,C), e(C,A)], [a(A,C), e(B,C)], [a(C,A), e(B,C)], [a(B,C), e(A,C)], [a(C,B), e(C,A)], [a(C,A), e(C,B)], [e(C,A), e(B,C)], [e(B,C), i(C,A)], [a(C,B), e(A,C)], [a(C,A), a(B,C)], [e(B,C), i(A,C)], [e(C,A), i(B,C)], [a(A,C), e(C,B)], [e(C,A), i(C,B)], [e(C,B), e(A,C)], [e(B,C), o(C,A)], [e(A,C), i(B,C)], [e(C,A), o(C,B)], [e(C,B), i(C,A)], [e(A,C), i(C,B)], [e(C,B), o(C,A)], [e(A,C), o(B,C)], [e(C,A), o(B,C)], [e(C,B), o(A,C)], [e(B,C), o(A,C)], [i(C,B), o(A,C)], [a(C,B), o(C,A)], [e(C,B), i(A,C)], [e(A,C), o(C,B)], [a(A,C), o(B,C)], [i(C,A), o(C,B)], [a(C,B), o(A,C)], [i(A,C), o(C,B)], [a(B,C), i(A,C)], [a(B,C), i(C,A)], [a(A,C), i(B,C)], [a(C,A), i(C,B)], [a(C,A), o(C,B)], [a(C,A), o(B,C)], [a(C,A), a(C,B)], [a(C,B), i(A,C)], [a(B,C), o(A,C)], [i(B,C), o(A,C)], [i(B,C), o(C,A)], [i(A,C), o(B,C)], [a(A,C), a(B,C)], [o(C,B), o(A,C)], [i(C,B), i(A,C)], [a(A,C), i(C,B)], [a(C,A), i(B,C)], [i(C,A), i(B,C)], [e(C,A), e(C,B)], [a(C,B), i(C,A)], [a(A,C), o(C,B)], [a(B,C), o(C,A)], [o(C,A), o(B,C)], [i(C,A), o(B,C)], [e(A,C), e(B,C)], [i(A,C), i(B,C)], [o(A,C), o(B,C)], [i(C,A), i(C,B)], [o(C,A), o(C,B)]]
+[INFO] Predicate List                   : ['a', 'e', 'i', 'o', 'p_0', 'p_1', 'p_2', 'p_3', 'p_4', 'p_5', 'p_6', 'p_7', 'p_8', 'p_9', 'p_10', 'p_11', 'p_12', 'p_13', 'p_14', 'p_15', 'p_16', 'p_17', 'p_18', 'p_19', 'p_20', 'p_21', 'p_22', 'p_23', 'p_24', 'p_25', 'p_26', 'p_27', 'p_28', 'p_29', 'p_30', 'p_31', 'p_32', 'p_33', 'p_34', 'p_35', 'p_36', 'p_37', 'p_38', 'p_39', 'p_40', 'p_41', 'p_42', 'p_43', 'p_44', 'p_45', 'p_46', 'p_47', 'p_48', 'p_49', 'p_50', 'p_51', 'p_52', 'p_53', 'p_54', 'p_55', 'p_56', 'p_57', 'p_58', 'p_59', 'p_60', 'p_61', 'p_62', 'p_63']
+[INFO] Time - parseRules                : 0.1s
+[INFO] Body List                        : [[p_0(V0)], [a(V1,B), a(A,V1), p_1(V2)], [a(B,V3), e(V3,A), p_2(V4)], [a(A,V5), e(B,V5), p_3(V6)], [a(V7,A), e(B,V7), p_4(V8)], [a(B,V9), e(A,V9), p_5(V10)], [a(V11,B), e(V11,A), p_6(V12)], [a(V13,A), e(V13,B), p_7(V14)], [e(V15,A), e(B,V15), p_8(V16)], [e(B,V17), i(V17,A), p_9(V18)], [a(V19,B), e(A,V19), p_10(V20)], [a(V21,A), a(B,V21), p_11(V22)], [e(B,V23), i(A,V23), p_12(V24)], [e(V25,A), i(B,V25), p_13(V26)], [a(A,V27), e(V27,B), p_14(V28)], [e(V29,A), i(V29,B), p_15(V30)], [e(V31,B), e(A,V31), p_16(V32)], [e(B,V33), o(V33,A), p_17(V34)], [e(A,V35), i(B,V35), p_18(V36)], [e(V37,A), o(V37,B), p_19(V38)], [e(V39,B), i(V39,A), p_20(V40)], [e(A,V41), i(V41,B), p_21(V42)], [e(V43,B), o(V43,A), p_22(V44)], [e(A,V45), o(B,V45), p_23(V46)], [e(V47,A), o(B,V47), p_24(V48)], [e(V49,B), o(A,V49), p_25(V50)], [e(B,V51), o(A,V51), p_26(V52)], [i(V53,B), o(A,V53), p_27(V54)], [a(V55,B), o(V55,A), p_28(V56)], [e(V57,B), i(A,V57), p_29(V58)], [e(A,V59), o(V59,B), p_30(V60)], [a(A,V61), o(B,V61), p_31(V62)], [i(V63,A), o(V63,B), p_32(V64)], [a(V65,B), o(A,V65), p_33(V66)], [i(A,V67), o(V67,B), p_34(V68)], [a(B,V69), i(A,V69), p_35(V70)], [a(B,V71), i(V71,A), p_36(V72)], [a(A,V73), i(B,V73), p_37(V74)], [a(V75,A), i(V75,B), p_38(V76)], [a(V77,A), o(V77,B), p_39(V78)], [a(V79,A), o(B,V79), p_40(V80)], [a(V81,A), a(V81,B), p_41(V82)], [a(V83,B), i(A,V83), p_42(V84)], [a(B,V85), o(A,V85), p_43(V86)], [i(B,V87), o(A,V87), p_44(V88)], [i(B,V89), o(V89,A), p_45(V90)], [i(A,V91), o(B,V91), p_46(V92)], [a(A,V93), a(B,V93), p_47(V94)], [o(V95,B), o(A,V95), p_48(V96)], [i(V97,B), i(A,V97), p_49(V98)], [a(A,V99), i(V99,B), p_50(V100)], [a(V101,A), i(B,V101), p_51(V102)], [i(V103,A), i(B,V103), p_52(V104)], [e(V105,A), e(V105,B), p_53(V106)], [a(V107,B), i(V107,A), p_54(V108)], [a(A,V109), o(V109,B), p_55(V110)], [a(B,V111), o(V111,A), p_56(V112)], [o(V113,A), o(B,V113), p_57(V114)], [i(V115,A), o(B,V115), p_58(V116)], [e(A,V117), e(B,V117), p_59(V118)], [i(A,V119), i(B,V119), p_60(V120)], [o(A,V121), o(B,V121), p_61(V122)], [i(V123,A), i(V123,B), p_62(V124)], [o(V125,A), o(V125,B), p_63(V126)]]
+[INFO] Query String                     : p_0(V0) v a(V1,B),a(A,V1),p_1(V2) v a(B,V3),e(V3,A),p_2(V4) v a(A,V5),e(B,V5),p_3(V6) v a(V7,A),e(B,V7),p_4(V8) v a(B,V9),e(A,V9),p_5(V10) v a(V11,B),e(V11,A),p_6(V12) v a(V13,A),e(V13,B),p_7(V14) v e(V15,A),e(B,V15),p_8(V16) v e(B,V17),i(V17,A),p_9(V18) v a(V19,B),e(A,V19),p_10(V20) v a(V21,A),a(B,V21),p_11(V22) v e(B,V23),i(A,V23),p_12(V24) v e(V25,A),i(B,V25),p_13(V26) v a(A,V27),e(V27,B),p_14(V28) v e(V29,A),i(V29,B),p_15(V30) v e(V31,B),e(A,V31),p_16(V32) v e(B,V33),o(V33,A),p_17(V34) v e(A,V35),i(B,V35),p_18(V36) v e(V37,A),o(V37,B),p_19(V38) v e(V39,B),i(V39,A),p_20(V40) v e(A,V41),i(V41,B),p_21(V42) v e(V43,B),o(V43,A),p_22(V44) v e(A,V45),o(B,V45),p_23(V46) v e(V47,A),o(B,V47),p_24(V48) v e(V49,B),o(A,V49),p_25(V50) v e(B,V51),o(A,V51),p_26(V52) v i(V53,B),o(A,V53),p_27(V54) v a(V55,B),o(V55,A),p_28(V56) v e(V57,B),i(A,V57),p_29(V58) v e(A,V59),o(V59,B),p_30(V60) v a(A,V61),o(B,V61),p_31(V62) v i(V63,A),o(V63,B),p_32(V64) v a(V65,B),o(A,V65),p_33(V66) v i(A,V67),o(V67,B),p_34(V68) v a(B,V69),i(A,V69),p_35(V70) v a(B,V71),i(V71,A),p_36(V72) v a(A,V73),i(B,V73),p_37(V74) v a(V75,A),i(V75,B),p_38(V76) v a(V77,A),o(V77,B),p_39(V78) v a(V79,A),o(B,V79),p_40(V80) v a(V81,A),a(V81,B),p_41(V82) v a(V83,B),i(A,V83),p_42(V84) v a(B,V85),o(A,V85),p_43(V86) v i(B,V87),o(A,V87),p_44(V88) v i(B,V89),o(V89,A),p_45(V90) v i(A,V91),o(B,V91),p_46(V92) v a(A,V93),a(B,V93),p_47(V94) v o(V95,B),o(A,V95),p_48(V96) v i(V97,B),i(A,V97),p_49(V98) v a(A,V99),i(V99,B),p_50(V100) v a(V101,A),i(B,V101),p_51(V102) v i(V103,A),i(B,V103),p_52(V104) v e(V105,A),e(V105,B),p_53(V106) v a(V107,B),i(V107,A),p_54(V108) v a(A,V109),o(V109,B),p_55(V110) v a(B,V111),o(V111,A),p_56(V112) v o(V113,A),o(B,V113),p_57(V114) v i(V115,A),o(B,V115),p_58(V116) v e(A,V117),e(B,V117),p_59(V118) v i(A,V119),i(B,V119),p_60(V120) v o(A,V121),o(B,V121),p_61(V122) v i(V123,A),i(V123,B),p_62(V124) v o(V125,A),o(V125,B),p_63(V126)
+[INFO] Time - getQueryString            : 0.0s
+[LVL9] [ra(A,B) :- fail, ra(A,B) :- true, ra(A,B) :- a(C,B), a(A,C), ra(A,B) :- a(B,C), e(C,A), ra(A,B) :- a(A,C), e(B,C), ra(A,B) :- a(C,A), e(B,C), ra(A,B) :- a(B,C), e(A,C), ra(A,B) :- a(C,B), e(C,A), ra(A,B) :- a(C,A), e(C,B), ra(A,B) :- e(C,A), e(B,C), ra(A,B) :- e(B,C), i(C,A), ra(A,B) :- a(C,B), e(A,C), ra(A,B) :- a(C,A), a(B,C), ra(A,B) :- e(B,C), i(A,C), ra(A,B) :- e(C,A), i(B,C), ra(A,B) :- a(A,C), e(C,B), ra(A,B) :- e(C,A), i(C,B), ra(A,B) :- e(C,B), e(A,C), ra(A,B) :- e(B,C), o(C,A), ra(A,B) :- e(A,C), i(B,C), ra(A,B) :- e(C,A), o(C,B), ra(A,B) :- e(C,B), i(C,A), ra(A,B) :- e(A,C), i(C,B), ra(A,B) :- e(C,B), o(C,A), ra(A,B) :- e(A,C), o(B,C), ra(A,B) :- e(C,A), o(B,C), ra(A,B) :- e(C,B), o(A,C), ra(A,B) :- e(B,C), o(A,C), ra(A,B) :- i(C,B), o(A,C), ra(A,B) :- a(C,B), o(C,A), ra(A,B) :- e(C,B), i(A,C), ra(A,B) :- e(A,C), o(C,B), ra(A,B) :- a(A,C), o(B,C), ra(A,B) :- i(C,A), o(C,B), ra(A,B) :- a(C,B), o(A,C), ra(A,B) :- i(A,C), o(C,B), ra(A,B) :- a(B,C), i(A,C), ra(A,B) :- a(B,C), i(C,A), ra(A,B) :- a(A,C), i(B,C), ra(A,B) :- a(C,A), i(C,B), ra(A,B) :- a(C,A), o(C,B), ra(A,B) :- a(C,A), o(B,C), ra(A,B) :- a(C,A), a(C,B), ra(A,B) :- a(C,B), i(A,C), ra(A,B) :- a(B,C), o(A,C), ra(A,B) :- i(B,C), o(A,C), ra(A,B) :- i(B,C), o(C,A), ra(A,B) :- i(A,C), o(B,C), ra(A,B) :- a(A,C), a(B,C), ra(A,B) :- o(C,B), o(A,C), ra(A,B) :- i(C,B), i(A,C), ra(A,B) :- a(A,C), i(C,B), ra(A,B) :- a(C,A), i(B,C), ra(A,B) :- i(C,A), i(B,C), ra(A,B) :- e(C,A), e(C,B), ra(A,B) :- a(C,B), i(C,A), ra(A,B) :- a(A,C), o(C,B), ra(A,B) :- a(B,C), o(C,A), ra(A,B) :- o(C,A), o(B,C), ra(A,B) :- i(C,A), o(B,C), ra(A,B) :- e(A,C), e(B,C), ra(A,B) :- i(A,C), i(B,C), ra(A,B) :- o(A,C), o(B,C), ra(A,B) :- i(C,A), i(C,B), ra(A,B) :- o(C,A), o(C,B)]
+[LVL9] CREATE TABLE dummy191 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy192 AS (select distinct v2 as v0, v1 as v1 from dummy191);
+[LVL9] CREATE TABLE dummy193 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy192 as dummy192 on ra.v0 = dummy192.v0 and ra.v1 = dummy192.v1);
+[LVL9] # Predictions of Rule0 intersected with examples: 278.0
+[LVL9] # Predictions of Rule0           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), a(A,C) is 0.345323741
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), a(A,C) is 1.0
+[LVL9] CREATE TABLE dummy194 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v1 = e.v0);
+[LVL9] CREATE TABLE dummy195 AS (select distinct v2 as v0, v0 as v1 from dummy194);
+[LVL9] CREATE TABLE dummy196 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy195 as dummy195 on ra.v0 = dummy195.v0 and ra.v1 = dummy195.v1);
+[LVL9] # Predictions of Rule1 intersected with examples: 278.0
+[LVL9] # Predictions of Rule1           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(B,C), e(C,A) is 0.330935252
+[LVL9] Conditional Probability for ra(A,B) :- a(B,C), e(C,A) is 1.0
+[LVL9] CREATE TABLE dummy197 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v1 = e.v1);
+[LVL9] CREATE TABLE dummy198 AS (select distinct v0 as v0, v2 as v1 from dummy197);
+[LVL9] CREATE TABLE dummy199 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy198 as dummy198 on ra.v0 = dummy198.v0 and ra.v1 = dummy198.v1);
+[LVL9] # Predictions of Rule2 intersected with examples: 278.0
+[LVL9] # Predictions of Rule2           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(A,C), e(B,C) is 0.255395683
+[LVL9] Conditional Probability for ra(A,B) :- a(A,C), e(B,C) is 1.0
+[LVL9] CREATE TABLE dummy200 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v0 = e.v1);
+[LVL9] CREATE TABLE dummy201 AS (select distinct v1 as v0, v2 as v1 from dummy200);
+[LVL9] CREATE TABLE dummy202 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy201 as dummy201 on ra.v0 = dummy201.v0 and ra.v1 = dummy201.v1);
+[LVL9] # Predictions of Rule3 intersected with examples: 278.0
+[LVL9] # Predictions of Rule3           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), e(B,C) is 0.241007194
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), e(B,C) is 1.0
+[LVL9] CREATE TABLE dummy203 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v1 = e.v1);
+[LVL9] CREATE TABLE dummy204 AS (select distinct v2 as v0, v0 as v1 from dummy203);
+[LVL9] CREATE TABLE dummy205 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy204 as dummy204 on ra.v0 = dummy204.v0 and ra.v1 = dummy204.v1);
+[LVL9] # Predictions of Rule4 intersected with examples: 278.0
+[LVL9] # Predictions of Rule4           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(B,C), e(A,C) is 0.205035971
+[LVL9] Conditional Probability for ra(A,B) :- a(B,C), e(A,C) is 1.0
+[LVL9] CREATE TABLE dummy206 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v0 = e.v0);
+[LVL9] CREATE TABLE dummy207 AS (select distinct v2 as v0, v1 as v1 from dummy206);
+[LVL9] CREATE TABLE dummy208 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy207 as dummy207 on ra.v0 = dummy207.v0 and ra.v1 = dummy207.v1);
+[LVL9] # Predictions of Rule5 intersected with examples: 278.0
+[LVL9] # Predictions of Rule5           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), e(C,A) is 0.176258993
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), e(C,A) is 1.0
+[LVL9] CREATE TABLE dummy209 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v0 = e.v0);
+[LVL9] CREATE TABLE dummy210 AS (select distinct v1 as v0, v2 as v1 from dummy209);
+[LVL9] CREATE TABLE dummy211 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy210 as dummy210 on ra.v0 = dummy210.v0 and ra.v1 = dummy210.v1);
+[LVL9] # Predictions of Rule6 intersected with examples: 278.0
+[LVL9] # Predictions of Rule6           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), e(C,B) is 0.129496403
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), e(C,B) is 1.0
+[LVL9] CREATE TABLE dummy212 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from e as table0 inner join e as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy213 AS (select distinct v1 as v0, v2 as v1 from dummy212);
+[LVL9] CREATE TABLE dummy214 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy213 as dummy213 on ra.v0 = dummy213.v0 and ra.v1 = dummy213.v1);
+[LVL9] # Predictions of Rule7 intersected with examples: 278.0
+[LVL9] # Predictions of Rule7           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,A), e(B,C) is 0.129496403
+[LVL9] Conditional Probability for ra(A,B) :- e(C,A), e(B,C) is 1.0
+[LVL9] CREATE TABLE dummy215 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v1 = i.v0);
+[LVL9] CREATE TABLE dummy216 AS (select distinct v2 as v0, v0 as v1 from dummy215);
+[LVL9] CREATE TABLE dummy217 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy216 as dummy216 on ra.v0 = dummy216.v0 and ra.v1 = dummy216.v1);
+[LVL9] # Predictions of Rule8 intersected with examples: 278.0
+[LVL9] # Predictions of Rule8           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(B,C), i(C,A) is 0.125899281
+[LVL9] Conditional Probability for ra(A,B) :- e(B,C), i(C,A) is 1.0
+[LVL9] CREATE TABLE dummy218 AS (select distinct a.v0 as v0, a.v1 as v1, e.v0 as v2 from a as a inner join e as e on a.v0 = e.v1);
+[LVL9] CREATE TABLE dummy219 AS (select distinct v2 as v0, v1 as v1 from dummy218);
+[LVL9] CREATE TABLE dummy220 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy219 as dummy219 on ra.v0 = dummy219.v0 and ra.v1 = dummy219.v1);
+[LVL9] # Predictions of Rule9 intersected with examples: 278.0
+[LVL9] # Predictions of Rule9           : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), e(A,C) is 0.122302158
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), e(A,C) is 1.0
+[LVL9] CREATE TABLE dummy221 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy222 AS (select distinct v1 as v0, v2 as v1 from dummy221);
+[LVL9] CREATE TABLE dummy223 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy222 as dummy222 on ra.v0 = dummy222.v0 and ra.v1 = dummy222.v1);
+[LVL9] # Predictions of Rule10 intersected with examples: 278.0
+[LVL9] # Predictions of Rule10          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), a(B,C) is 0.118705036
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), a(B,C) is 1.0
+[LVL9] CREATE TABLE dummy224 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v1 = i.v1);
+[LVL9] CREATE TABLE dummy225 AS (select distinct v2 as v0, v0 as v1 from dummy224);
+[LVL9] CREATE TABLE dummy226 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy225 as dummy225 on ra.v0 = dummy225.v0 and ra.v1 = dummy225.v1);
+[LVL9] # Predictions of Rule11 intersected with examples: 278.0
+[LVL9] # Predictions of Rule11          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(B,C), i(A,C) is 0.089928058
+[LVL9] Conditional Probability for ra(A,B) :- e(B,C), i(A,C) is 1.0
+[LVL9] CREATE TABLE dummy227 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v0 = i.v1);
+[LVL9] CREATE TABLE dummy228 AS (select distinct v1 as v0, v2 as v1 from dummy227);
+[LVL9] CREATE TABLE dummy229 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy228 as dummy228 on ra.v0 = dummy228.v0 and ra.v1 = dummy228.v1);
+[LVL9] # Predictions of Rule12 intersected with examples: 278.0
+[LVL9] # Predictions of Rule12          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,A), i(B,C) is 0.082733813
+[LVL9] Conditional Probability for ra(A,B) :- e(C,A), i(B,C) is 1.0
+[LVL9] CREATE TABLE dummy230 AS (select distinct a.v0 as v0, a.v1 as v1, e.v1 as v2 from a as a inner join e as e on a.v1 = e.v0);
+[LVL9] CREATE TABLE dummy231 AS (select distinct v0 as v0, v2 as v1 from dummy230);
+[LVL9] CREATE TABLE dummy232 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy231 as dummy231 on ra.v0 = dummy231.v0 and ra.v1 = dummy231.v1);
+[LVL9] # Predictions of Rule13 intersected with examples: 278.0
+[LVL9] # Predictions of Rule13          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(A,C), e(C,B) is 0.075539568
+[LVL9] Conditional Probability for ra(A,B) :- a(A,C), e(C,B) is 1.0
+[LVL9] CREATE TABLE dummy233 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v0 = i.v0);
+[LVL9] CREATE TABLE dummy234 AS (select distinct v1 as v0, v2 as v1 from dummy233);
+[LVL9] CREATE TABLE dummy235 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy234 as dummy234 on ra.v0 = dummy234.v0 and ra.v1 = dummy234.v1);
+[LVL9] # Predictions of Rule14 intersected with examples: 278.0
+[LVL9] # Predictions of Rule14          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,A), i(C,B) is 0.071942446
+[LVL9] Conditional Probability for ra(A,B) :- e(C,A), i(C,B) is 1.0
+[LVL9] CREATE TABLE dummy236 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from e as table0 inner join e as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy237 AS (select distinct v2 as v0, v1 as v1 from dummy236);
+[LVL9] CREATE TABLE dummy238 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy237 as dummy237 on ra.v0 = dummy237.v0 and ra.v1 = dummy237.v1);
+[LVL9] # Predictions of Rule15 intersected with examples: 278.0
+[LVL9] # Predictions of Rule15          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,B), e(A,C) is 0.071942446
+[LVL9] Conditional Probability for ra(A,B) :- e(C,B), e(A,C) is 1.0
+[LVL9] CREATE TABLE dummy239 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v1 = o.v0);
+[LVL9] CREATE TABLE dummy240 AS (select distinct v2 as v0, v0 as v1 from dummy239);
+[LVL9] CREATE TABLE dummy241 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy240 as dummy240 on ra.v0 = dummy240.v0 and ra.v1 = dummy240.v1);
+[LVL9] # Predictions of Rule16 intersected with examples: 278.0
+[LVL9] # Predictions of Rule16          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(B,C), o(C,A) is 0.068345324
+[LVL9] Conditional Probability for ra(A,B) :- e(B,C), o(C,A) is 1.0
+[LVL9] CREATE TABLE dummy242 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v1 = i.v1);
+[LVL9] CREATE TABLE dummy243 AS (select distinct v0 as v0, v2 as v1 from dummy242);
+[LVL9] CREATE TABLE dummy244 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy243 as dummy243 on ra.v0 = dummy243.v0 and ra.v1 = dummy243.v1);
+[LVL9] # Predictions of Rule17 intersected with examples: 278.0
+[LVL9] # Predictions of Rule17          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(A,C), i(B,C) is 0.061151079
+[LVL9] Conditional Probability for ra(A,B) :- e(A,C), i(B,C) is 1.0
+[LVL9] CREATE TABLE dummy245 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v0 = o.v0);
+[LVL9] CREATE TABLE dummy246 AS (select distinct v1 as v0, v2 as v1 from dummy245);
+[LVL9] CREATE TABLE dummy247 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy246 as dummy246 on ra.v0 = dummy246.v0 and ra.v1 = dummy246.v1);
+[LVL9] # Predictions of Rule18 intersected with examples: 278.0
+[LVL9] # Predictions of Rule18          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,A), o(C,B) is 0.053956835
+[LVL9] Conditional Probability for ra(A,B) :- e(C,A), o(C,B) is 1.0
+[LVL9] CREATE TABLE dummy248 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v0 = i.v0);
+[LVL9] CREATE TABLE dummy249 AS (select distinct v2 as v0, v1 as v1 from dummy248);
+[LVL9] CREATE TABLE dummy250 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy249 as dummy249 on ra.v0 = dummy249.v0 and ra.v1 = dummy249.v1);
+[LVL9] # Predictions of Rule19 intersected with examples: 278.0
+[LVL9] # Predictions of Rule19          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,B), i(C,A) is 0.050359712
+[LVL9] Conditional Probability for ra(A,B) :- e(C,B), i(C,A) is 1.0
+[LVL9] CREATE TABLE dummy251 AS (select distinct e.v0 as v0, e.v1 as v1, i.v1 as v2 from e as e inner join i as i on e.v1 = i.v0);
+[LVL9] CREATE TABLE dummy252 AS (select distinct v0 as v0, v2 as v1 from dummy251);
+[LVL9] CREATE TABLE dummy253 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy252 as dummy252 on ra.v0 = dummy252.v0 and ra.v1 = dummy252.v1);
+[LVL9] # Predictions of Rule20 intersected with examples: 278.0
+[LVL9] # Predictions of Rule20          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(A,C), i(C,B) is 0.050359712
+[LVL9] Conditional Probability for ra(A,B) :- e(A,C), i(C,B) is 1.0
+[LVL9] CREATE TABLE dummy254 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v0 = o.v0);
+[LVL9] CREATE TABLE dummy255 AS (select distinct v2 as v0, v1 as v1 from dummy254);
+[LVL9] CREATE TABLE dummy256 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy255 as dummy255 on ra.v0 = dummy255.v0 and ra.v1 = dummy255.v1);
+[LVL9] # Predictions of Rule21 intersected with examples: 278.0
+[LVL9] # Predictions of Rule21          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,B), o(C,A) is 0.035971223
+[LVL9] Conditional Probability for ra(A,B) :- e(C,B), o(C,A) is 1.0
+[LVL9] CREATE TABLE dummy257 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v1 = o.v1);
+[LVL9] CREATE TABLE dummy258 AS (select distinct v0 as v0, v2 as v1 from dummy257);
+[LVL9] CREATE TABLE dummy259 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy258 as dummy258 on ra.v0 = dummy258.v0 and ra.v1 = dummy258.v1);
+[LVL9] # Predictions of Rule22 intersected with examples: 278.0
+[LVL9] # Predictions of Rule22          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(A,C), o(B,C) is 0.035971223
+[LVL9] Conditional Probability for ra(A,B) :- e(A,C), o(B,C) is 1.0
+[LVL9] CREATE TABLE dummy260 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v0 = o.v1);
+[LVL9] CREATE TABLE dummy261 AS (select distinct v1 as v0, v2 as v1 from dummy260);
+[LVL9] CREATE TABLE dummy262 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy261 as dummy261 on ra.v0 = dummy261.v0 and ra.v1 = dummy261.v1);
+[LVL9] # Predictions of Rule23 intersected with examples: 278.0
+[LVL9] # Predictions of Rule23          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,A), o(B,C) is 0.032374101
+[LVL9] Conditional Probability for ra(A,B) :- e(C,A), o(B,C) is 1.0
+[LVL9] CREATE TABLE dummy263 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v0 = o.v1);
+[LVL9] CREATE TABLE dummy264 AS (select distinct v2 as v0, v1 as v1 from dummy263);
+[LVL9] CREATE TABLE dummy265 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy264 as dummy264 on ra.v0 = dummy264.v0 and ra.v1 = dummy264.v1);
+[LVL9] # Predictions of Rule24 intersected with examples: 278.0
+[LVL9] # Predictions of Rule24          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,B), o(A,C) is 0.028776978
+[LVL9] Conditional Probability for ra(A,B) :- e(C,B), o(A,C) is 1.0
+[LVL9] CREATE TABLE dummy266 AS (select distinct e.v0 as v0, e.v1 as v1, o.v0 as v2 from e as e inner join o as o on e.v1 = o.v1);
+[LVL9] CREATE TABLE dummy267 AS (select distinct v2 as v0, v0 as v1 from dummy266);
+[LVL9] CREATE TABLE dummy268 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy267 as dummy267 on ra.v0 = dummy267.v0 and ra.v1 = dummy267.v1);
+[LVL9] # Predictions of Rule25 intersected with examples: 278.0
+[LVL9] # Predictions of Rule25          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(B,C), o(A,C) is 0.028776978
+[LVL9] Conditional Probability for ra(A,B) :- e(B,C), o(A,C) is 1.0
+[LVL9] CREATE TABLE dummy269 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v0 = o.v1);
+[LVL9] CREATE TABLE dummy270 AS (select distinct v2 as v0, v1 as v1 from dummy269);
+[LVL9] CREATE TABLE dummy271 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy270 as dummy270 on ra.v0 = dummy270.v0 and ra.v1 = dummy270.v1);
+[LVL9] # Predictions of Rule26 intersected with examples: 278.0
+[LVL9] # Predictions of Rule26          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(C,B), o(A,C) is 0.025179856
+[LVL9] Conditional Probability for ra(A,B) :- i(C,B), o(A,C) is 1.0
+[LVL9] CREATE TABLE dummy272 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v0 = o.v0);
+[LVL9] CREATE TABLE dummy273 AS (select distinct v2 as v0, v1 as v1 from dummy272);
+[LVL9] CREATE TABLE dummy274 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy273 as dummy273 on ra.v0 = dummy273.v0 and ra.v1 = dummy273.v1);
+[LVL9] # Predictions of Rule27 intersected with examples: 278.0
+[LVL9] # Predictions of Rule27          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), o(C,A) is 0.025179856
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), o(C,A) is 1.0
+[LVL9] CREATE TABLE dummy275 AS (select distinct e.v0 as v0, e.v1 as v1, i.v0 as v2 from e as e inner join i as i on e.v0 = i.v1);
+[LVL9] CREATE TABLE dummy276 AS (select distinct v2 as v0, v1 as v1 from dummy275);
+[LVL9] CREATE TABLE dummy277 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy276 as dummy276 on ra.v0 = dummy276.v0 and ra.v1 = dummy276.v1);
+[LVL9] # Predictions of Rule28 intersected with examples: 278.0
+[LVL9] # Predictions of Rule28          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,B), i(A,C) is 0.025179856
+[LVL9] Conditional Probability for ra(A,B) :- e(C,B), i(A,C) is 1.0
+[LVL9] CREATE TABLE dummy278 AS (select distinct e.v0 as v0, e.v1 as v1, o.v1 as v2 from e as e inner join o as o on e.v1 = o.v0);
+[LVL9] CREATE TABLE dummy279 AS (select distinct v0 as v0, v2 as v1 from dummy278);
+[LVL9] CREATE TABLE dummy280 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy279 as dummy279 on ra.v0 = dummy279.v0 and ra.v1 = dummy279.v1);
+[LVL9] # Predictions of Rule29 intersected with examples: 278.0
+[LVL9] # Predictions of Rule29          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(A,C), o(C,B) is 0.025179856
+[LVL9] Conditional Probability for ra(A,B) :- e(A,C), o(C,B) is 1.0
+[LVL9] CREATE TABLE dummy281 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v1 = o.v1);
+[LVL9] CREATE TABLE dummy282 AS (select distinct v0 as v0, v2 as v1 from dummy281);
+[LVL9] CREATE TABLE dummy283 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy282 as dummy282 on ra.v0 = dummy282.v0 and ra.v1 = dummy282.v1);
+[LVL9] # Predictions of Rule30 intersected with examples: 278.0
+[LVL9] # Predictions of Rule30          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(A,C), o(B,C) is 0.025179856
+[LVL9] Conditional Probability for ra(A,B) :- a(A,C), o(B,C) is 1.0
+[LVL9] CREATE TABLE dummy284 AS (select distinct i.v0 as v0, i.v1 as v1, o.v1 as v2 from i as i inner join o as o on i.v0 = o.v0);
+[LVL9] CREATE TABLE dummy285 AS (select distinct v1 as v0, v2 as v1 from dummy284);
+[LVL9] CREATE TABLE dummy286 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy285 as dummy285 on ra.v0 = dummy285.v0 and ra.v1 = dummy285.v1);
+[LVL9] # Predictions of Rule31 intersected with examples: 278.0
+[LVL9] # Predictions of Rule31          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(C,A), o(C,B) is 0.021582734
+[LVL9] Conditional Probability for ra(A,B) :- i(C,A), o(C,B) is 1.0
+[LVL9] CREATE TABLE dummy287 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v0 = o.v1);
+[LVL9] CREATE TABLE dummy288 AS (select distinct v2 as v0, v1 as v1 from dummy287);
+[LVL9] CREATE TABLE dummy289 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy288 as dummy288 on ra.v0 = dummy288.v0 and ra.v1 = dummy288.v1);
+[LVL9] # Predictions of Rule32 intersected with examples: 278.0
+[LVL9] # Predictions of Rule32          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), o(A,C) is 0.021582734
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), o(A,C) is 1.0
+[LVL9] CREATE TABLE dummy290 AS (select distinct i.v0 as v0, i.v1 as v1, o.v1 as v2 from i as i inner join o as o on i.v1 = o.v0);
+[LVL9] CREATE TABLE dummy291 AS (select distinct v0 as v0, v2 as v1 from dummy290);
+[LVL9] CREATE TABLE dummy292 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy291 as dummy291 on ra.v0 = dummy291.v0 and ra.v1 = dummy291.v1);
+[LVL9] # Predictions of Rule33 intersected with examples: 278.0
+[LVL9] # Predictions of Rule33          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(A,C), o(C,B) is 0.017985612
+[LVL9] Conditional Probability for ra(A,B) :- i(A,C), o(C,B) is 1.0
+[LVL9] CREATE TABLE dummy293 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v1 = i.v1);
+[LVL9] CREATE TABLE dummy294 AS (select distinct v2 as v0, v0 as v1 from dummy293);
+[LVL9] CREATE TABLE dummy295 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy294 as dummy294 on ra.v0 = dummy294.v0 and ra.v1 = dummy294.v1);
+[LVL9] # Predictions of Rule34 intersected with examples: 278.0
+[LVL9] # Predictions of Rule34          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(B,C), i(A,C) is 0.017985612
+[LVL9] Conditional Probability for ra(A,B) :- a(B,C), i(A,C) is 1.0
+[LVL9] CREATE TABLE dummy296 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v1 = i.v0);
+[LVL9] CREATE TABLE dummy297 AS (select distinct v2 as v0, v0 as v1 from dummy296);
+[LVL9] CREATE TABLE dummy298 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy297 as dummy297 on ra.v0 = dummy297.v0 and ra.v1 = dummy297.v1);
+[LVL9] # Predictions of Rule35 intersected with examples: 278.0
+[LVL9] # Predictions of Rule35          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(B,C), i(C,A) is 0.017985612
+[LVL9] Conditional Probability for ra(A,B) :- a(B,C), i(C,A) is 1.0
+[LVL9] CREATE TABLE dummy299 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v1 = i.v1);
+[LVL9] CREATE TABLE dummy300 AS (select distinct v0 as v0, v2 as v1 from dummy299);
+[LVL9] CREATE TABLE dummy301 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy300 as dummy300 on ra.v0 = dummy300.v0 and ra.v1 = dummy300.v1);
+[LVL9] # Predictions of Rule36 intersected with examples: 278.0
+[LVL9] # Predictions of Rule36          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(A,C), i(B,C) is 0.017985612
+[LVL9] Conditional Probability for ra(A,B) :- a(A,C), i(B,C) is 1.0
+[LVL9] CREATE TABLE dummy302 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v0 = i.v0);
+[LVL9] CREATE TABLE dummy303 AS (select distinct v1 as v0, v2 as v1 from dummy302);
+[LVL9] CREATE TABLE dummy304 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy303 as dummy303 on ra.v0 = dummy303.v0 and ra.v1 = dummy303.v1);
+[LVL9] # Predictions of Rule37 intersected with examples: 278.0
+[LVL9] # Predictions of Rule37          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), i(C,B) is 0.014388489
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), i(C,B) is 1.0
+[LVL9] CREATE TABLE dummy305 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v0 = o.v0);
+[LVL9] CREATE TABLE dummy306 AS (select distinct v1 as v0, v2 as v1 from dummy305);
+[LVL9] CREATE TABLE dummy307 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy306 as dummy306 on ra.v0 = dummy306.v0 and ra.v1 = dummy306.v1);
+[LVL9] # Predictions of Rule38 intersected with examples: 278.0
+[LVL9] # Predictions of Rule38          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), o(C,B) is 0.014388489
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), o(C,B) is 1.0
+[LVL9] CREATE TABLE dummy308 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v0 = o.v1);
+[LVL9] CREATE TABLE dummy309 AS (select distinct v1 as v0, v2 as v1 from dummy308);
+[LVL9] CREATE TABLE dummy310 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy309 as dummy309 on ra.v0 = dummy309.v0 and ra.v1 = dummy309.v1);
+[LVL9] # Predictions of Rule39 intersected with examples: 278.0
+[LVL9] # Predictions of Rule39          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), o(B,C) is 0.014388489
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), o(B,C) is 1.0
+[LVL9] CREATE TABLE dummy311 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from a as table0 inner join a as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy312 AS (select distinct v1 as v0, v2 as v1 from dummy311);
+[LVL9] CREATE TABLE dummy313 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy312 as dummy312 on ra.v0 = dummy312.v0 and ra.v1 = dummy312.v1);
+[LVL9] # Predictions of Rule40 intersected with examples: 278.0
+[LVL9] # Predictions of Rule40          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), a(C,B) is 0.0117724
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), a(C,B) is 0.0606060606061
+[LVL9] CREATE TABLE dummy314 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v0 = i.v1);
+[LVL9] CREATE TABLE dummy315 AS (select distinct v2 as v0, v1 as v1 from dummy314);
+[LVL9] CREATE TABLE dummy316 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy315 as dummy315 on ra.v0 = dummy315.v0 and ra.v1 = dummy315.v1);
+[LVL9] # Predictions of Rule41 intersected with examples: 278.0
+[LVL9] # Predictions of Rule41          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), i(A,C) is 0.010791367
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), i(A,C) is 1.0
+[LVL9] CREATE TABLE dummy317 AS (select distinct a.v0 as v0, a.v1 as v1, o.v0 as v2 from a as a inner join o as o on a.v1 = o.v1);
+[LVL9] CREATE TABLE dummy318 AS (select distinct v2 as v0, v0 as v1 from dummy317);
+[LVL9] CREATE TABLE dummy319 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy318 as dummy318 on ra.v0 = dummy318.v0 and ra.v1 = dummy318.v1);
+[LVL9] # Predictions of Rule42 intersected with examples: 278.0
+[LVL9] # Predictions of Rule42          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(B,C), o(A,C) is 0.010791367
+[LVL9] Conditional Probability for ra(A,B) :- a(B,C), o(A,C) is 1.0
+[LVL9] CREATE TABLE dummy320 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v1 = o.v1);
+[LVL9] CREATE TABLE dummy321 AS (select distinct v2 as v0, v0 as v1 from dummy320);
+[LVL9] CREATE TABLE dummy322 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy321 as dummy321 on ra.v0 = dummy321.v0 and ra.v1 = dummy321.v1);
+[LVL9] # Predictions of Rule43 intersected with examples: 278.0
+[LVL9] # Predictions of Rule43          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(B,C), o(A,C) is 0.010791367
+[LVL9] Conditional Probability for ra(A,B) :- i(B,C), o(A,C) is 1.0
+[LVL9] CREATE TABLE dummy323 AS (select distinct i.v0 as v0, i.v1 as v1, o.v1 as v2 from i as i inner join o as o on i.v1 = o.v0);
+[LVL9] CREATE TABLE dummy324 AS (select distinct v2 as v0, v0 as v1 from dummy323);
+[LVL9] CREATE TABLE dummy325 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy324 as dummy324 on ra.v0 = dummy324.v0 and ra.v1 = dummy324.v1);
+[LVL9] # Predictions of Rule44 intersected with examples: 278.0
+[LVL9] # Predictions of Rule44          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(B,C), o(C,A) is 0.010791367
+[LVL9] Conditional Probability for ra(A,B) :- i(B,C), o(C,A) is 1.0
+[LVL9] CREATE TABLE dummy326 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v1 = o.v1);
+[LVL9] CREATE TABLE dummy327 AS (select distinct v0 as v0, v2 as v1 from dummy326);
+[LVL9] CREATE TABLE dummy328 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy327 as dummy327 on ra.v0 = dummy327.v0 and ra.v1 = dummy327.v1);
+[LVL9] # Predictions of Rule45 intersected with examples: 278.0
+[LVL9] # Predictions of Rule45          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(A,C), o(B,C) is 0.010791367
+[LVL9] Conditional Probability for ra(A,B) :- i(A,C), o(B,C) is 1.0
+[LVL9] CREATE TABLE dummy329 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from a as table0 inner join a as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy330 AS (select distinct v0 as v0, v2 as v1 from dummy329);
+[LVL9] CREATE TABLE dummy331 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy330 as dummy330 on ra.v0 = dummy330.v0 and ra.v1 = dummy330.v1);
+[LVL9] # Predictions of Rule46 intersected with examples: 278.0
+[LVL9] # Predictions of Rule46          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(A,C), a(B,C) is 0.009592326
+[LVL9] Conditional Probability for ra(A,B) :- a(A,C), a(B,C) is 0.0606060606061
+[LVL9] CREATE TABLE dummy332 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from o as table0 inner join o as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy333 AS (select distinct v2 as v0, v1 as v1 from dummy332);
+[LVL9] CREATE TABLE dummy334 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy333 as dummy333 on ra.v0 = dummy333.v0 and ra.v1 = dummy333.v1);
+[LVL9] # Predictions of Rule47 intersected with examples: 278.0
+[LVL9] # Predictions of Rule47          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- o(C,B), o(A,C) is 0.007194245
+[LVL9] Conditional Probability for ra(A,B) :- o(C,B), o(A,C) is 1.0
+[LVL9] CREATE TABLE dummy335 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from i as table0 inner join i as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy336 AS (select distinct v2 as v0, v1 as v1 from dummy335);
+[LVL9] CREATE TABLE dummy337 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy336 as dummy336 on ra.v0 = dummy336.v0 and ra.v1 = dummy336.v1);
+[LVL9] # Predictions of Rule48 intersected with examples: 278.0
+[LVL9] # Predictions of Rule48          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(C,B), i(A,C) is 0.007194245
+[LVL9] Conditional Probability for ra(A,B) :- i(C,B), i(A,C) is 1.0
+[LVL9] CREATE TABLE dummy338 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v1 = i.v0);
+[LVL9] CREATE TABLE dummy339 AS (select distinct v0 as v0, v2 as v1 from dummy338);
+[LVL9] CREATE TABLE dummy340 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy339 as dummy339 on ra.v0 = dummy339.v0 and ra.v1 = dummy339.v1);
+[LVL9] # Predictions of Rule49 intersected with examples: 278.0
+[LVL9] # Predictions of Rule49          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(A,C), i(C,B) is 0.007194245
+[LVL9] Conditional Probability for ra(A,B) :- a(A,C), i(C,B) is 1.0
+[LVL9] CREATE TABLE dummy341 AS (select distinct a.v0 as v0, a.v1 as v1, i.v0 as v2 from a as a inner join i as i on a.v0 = i.v1);
+[LVL9] CREATE TABLE dummy342 AS (select distinct v1 as v0, v2 as v1 from dummy341);
+[LVL9] CREATE TABLE dummy343 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy342 as dummy342 on ra.v0 = dummy342.v0 and ra.v1 = dummy342.v1);
+[LVL9] # Predictions of Rule50 intersected with examples: 278.0
+[LVL9] # Predictions of Rule50          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,A), i(B,C) is 0.007194245
+[LVL9] Conditional Probability for ra(A,B) :- a(C,A), i(B,C) is 1.0
+[LVL9] CREATE TABLE dummy344 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from i as table0 inner join i as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy345 AS (select distinct v1 as v0, v2 as v1 from dummy344);
+[LVL9] CREATE TABLE dummy346 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy345 as dummy345 on ra.v0 = dummy345.v0 and ra.v1 = dummy345.v1);
+[LVL9] # Predictions of Rule51 intersected with examples: 278.0
+[LVL9] # Predictions of Rule51          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(C,A), i(B,C) is 0.007194245
+[LVL9] Conditional Probability for ra(A,B) :- i(C,A), i(B,C) is 1.0
+[LVL9] CREATE TABLE dummy347 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from e as table0 inner join e as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy348 AS (select distinct v1 as v0, v2 as v1 from dummy347);
+[LVL9] CREATE TABLE dummy349 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy348 as dummy348 on ra.v0 = dummy348.v0 and ra.v1 = dummy348.v1);
+[LVL9] # Predictions of Rule52 intersected with examples: 278.0
+[LVL9] # Predictions of Rule52          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(C,A), e(C,B) is 0.003924133
+[LVL9] Conditional Probability for ra(A,B) :- e(C,A), e(C,B) is 0.0606060606061
+[LVL9] CREATE TABLE dummy350 AS (select distinct a.v0 as v0, a.v1 as v1, i.v1 as v2 from a as a inner join i as i on a.v0 = i.v0);
+[LVL9] CREATE TABLE dummy351 AS (select distinct v2 as v0, v1 as v1 from dummy350);
+[LVL9] CREATE TABLE dummy352 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy351 as dummy351 on ra.v0 = dummy351.v0 and ra.v1 = dummy351.v1);
+[LVL9] # Predictions of Rule53 intersected with examples: 278.0
+[LVL9] # Predictions of Rule53          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(C,B), i(C,A) is 0.003597122
+[LVL9] Conditional Probability for ra(A,B) :- a(C,B), i(C,A) is 1.0
+[LVL9] CREATE TABLE dummy353 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v1 = o.v0);
+[LVL9] CREATE TABLE dummy354 AS (select distinct v0 as v0, v2 as v1 from dummy353);
+[LVL9] CREATE TABLE dummy355 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy354 as dummy354 on ra.v0 = dummy354.v0 and ra.v1 = dummy354.v1);
+[LVL9] # Predictions of Rule54 intersected with examples: 278.0
+[LVL9] # Predictions of Rule54          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(A,C), o(C,B) is 0.003597122
+[LVL9] Conditional Probability for ra(A,B) :- a(A,C), o(C,B) is 1.0
+[LVL9] CREATE TABLE dummy356 AS (select distinct a.v0 as v0, a.v1 as v1, o.v1 as v2 from a as a inner join o as o on a.v1 = o.v0);
+[LVL9] CREATE TABLE dummy357 AS (select distinct v2 as v0, v0 as v1 from dummy356);
+[LVL9] CREATE TABLE dummy358 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy357 as dummy357 on ra.v0 = dummy357.v0 and ra.v1 = dummy357.v1);
+[LVL9] # Predictions of Rule55 intersected with examples: 278.0
+[LVL9] # Predictions of Rule55          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- a(B,C), o(C,A) is 0.003597122
+[LVL9] Conditional Probability for ra(A,B) :- a(B,C), o(C,A) is 1.0
+[LVL9] CREATE TABLE dummy359 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from o as table0 inner join o as table1 on table0.v0 = table1.v1);
+[LVL9] CREATE TABLE dummy360 AS (select distinct v1 as v0, v2 as v1 from dummy359);
+[LVL9] CREATE TABLE dummy361 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy360 as dummy360 on ra.v0 = dummy360.v0 and ra.v1 = dummy360.v1);
+[LVL9] # Predictions of Rule56 intersected with examples: 278.0
+[LVL9] # Predictions of Rule56          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- o(C,A), o(B,C) is 0.003597122
+[LVL9] Conditional Probability for ra(A,B) :- o(C,A), o(B,C) is 1.0
+[LVL9] CREATE TABLE dummy362 AS (select distinct i.v0 as v0, i.v1 as v1, o.v0 as v2 from i as i inner join o as o on i.v0 = o.v1);
+[LVL9] CREATE TABLE dummy363 AS (select distinct v1 as v0, v2 as v1 from dummy362);
+[LVL9] CREATE TABLE dummy364 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy363 as dummy363 on ra.v0 = dummy363.v0 and ra.v1 = dummy363.v1);
+[LVL9] # Predictions of Rule57 intersected with examples: 278.0
+[LVL9] # Predictions of Rule57          : 278.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(C,A), o(B,C) is 0.003597122
+[LVL9] Conditional Probability for ra(A,B) :- i(C,A), o(B,C) is 1.0
+[LVL9] CREATE TABLE dummy365 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from e as table0 inner join e as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy366 AS (select distinct v0 as v0, v2 as v1 from dummy365);
+[LVL9] CREATE TABLE dummy367 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy366 as dummy366 on ra.v0 = dummy366.v0 and ra.v1 = dummy366.v1);
+[LVL9] # Predictions of Rule58 intersected with examples: 278.0
+[LVL9] # Predictions of Rule58          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- e(A,C), e(B,C) is 0.003270111
+[LVL9] Conditional Probability for ra(A,B) :- e(A,C), e(B,C) is 0.0606060606061
+[LVL9] CREATE TABLE dummy368 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from i as table0 inner join i as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy369 AS (select distinct v0 as v0, v2 as v1 from dummy368);
+[LVL9] CREATE TABLE dummy370 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy369 as dummy369 on ra.v0 = dummy369.v0 and ra.v1 = dummy369.v1);
+[LVL9] # Predictions of Rule59 intersected with examples: 278.0
+[LVL9] # Predictions of Rule59          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(A,C), i(B,C) is 0.001090037
+[LVL9] Conditional Probability for ra(A,B) :- i(A,C), i(B,C) is 0.0606060606061
+[LVL9] CREATE TABLE dummy371 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v0 as v2 from o as table0 inner join o as table1 on table0.v1 = table1.v1);
+[LVL9] CREATE TABLE dummy372 AS (select distinct v0 as v0, v2 as v1 from dummy371);
+[LVL9] CREATE TABLE dummy373 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy372 as dummy372 on ra.v0 = dummy372.v0 and ra.v1 = dummy372.v1);
+[LVL9] # Predictions of Rule60 intersected with examples: 278.0
+[LVL9] # Predictions of Rule60          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- o(A,C), o(B,C) is 0.00087203
+[LVL9] Conditional Probability for ra(A,B) :- o(A,C), o(B,C) is 0.0606060606061
+[LVL9] CREATE TABLE dummy374 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from i as table0 inner join i as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy375 AS (select distinct v1 as v0, v2 as v1 from dummy374);
+[LVL9] CREATE TABLE dummy376 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy375 as dummy375 on ra.v0 = dummy375.v0 and ra.v1 = dummy375.v1);
+[LVL9] # Predictions of Rule61 intersected with examples: 278.0
+[LVL9] # Predictions of Rule61          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- i(C,A), i(C,B) is 0.000654022
+[LVL9] Conditional Probability for ra(A,B) :- i(C,A), i(C,B) is 0.0606060606061
+[LVL9] CREATE TABLE dummy377 AS (select distinct table0.v0 as v0, table0.v1 as v1, table1.v1 as v2 from o as table0 inner join o as table1 on table0.v0 = table1.v0);
+[LVL9] CREATE TABLE dummy378 AS (select distinct v1 as v0, v2 as v1 from dummy377);
+[LVL9] CREATE TABLE dummy379 AS (select distinct ra.v0 as v0, ra.v1 as v1 from ra as ra inner join dummy378 as dummy378 on ra.v0 = dummy378.v0 and ra.v1 = dummy378.v1);
+[LVL9] # Predictions of Rule62 intersected with examples: 278.0
+[LVL9] # Predictions of Rule62          : 4587.0
+[LVL9] Amie Confidence Value for ra(A,B) :- o(C,A), o(C,B) is 0.000436015
+[LVL9] Conditional Probability for ra(A,B) :- o(C,A), o(C,B) is 0.0606060606061
+[INFO] Lambdas initialized to           : [0.0, 0.0, 0.0, 0.0, 2.498001598721023e-05, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.06060606060606061, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.06060606060606061, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.06060606060606061, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.999999999995, 0.06060606060606061, 0.06060606060606061, 0.06060606060606061, 0.06060606060606061, 0.06060606060606061]

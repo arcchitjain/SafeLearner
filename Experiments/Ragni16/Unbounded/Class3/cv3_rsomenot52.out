@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class3/cv3_train_52.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class3/cv3_rsomenot52.log
+              target:	rsomenot52/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsomenot52(A,B) :- some52(C,B), all52(C,A)
+rsomenot52(A,B) :- somenot52(B,C), some52(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.925
+           Precision:	 1.0
+              Recall:	 0.181818181818
+================== STATISTICS ==================
+    Rule evaluations:	40516
+          Total time:	477.5769s

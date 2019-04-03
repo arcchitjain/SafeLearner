@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class6/cv6_train_135.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class6/cv6_rsome135.log
+              target:	rsome135/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome135(A,B) :- some135(C,B), somenot135(A,C)
+rsome135(A,B) :- some135(B,C), some135(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.929824561404
+           Precision:	 1.0
+              Recall:	 0.272727272727
+================== STATISTICS ==================
+    Rule evaluations:	34007
+          Total time:	391.0942s

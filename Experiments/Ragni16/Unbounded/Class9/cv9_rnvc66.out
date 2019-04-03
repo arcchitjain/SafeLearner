@@ -1,0 +1,26 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_66.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rnvc66.log
+              target:	rnvc66/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc66(A,B) :- no66(C,B), \+all66(A,C), \+some66(A,C)
+rnvc66(A,B) :- somenot66(B,C), \+no66(A,C)
+rnvc66(A,B) :- somenot66(C,B), \+all66(A,C)
+rnvc66(A,B) :- some66(C,B), \+all66(C,A), \+some66(A,C)
+rnvc66(A,B) :- no66(B,C), \+some66(A,C), \+somenot66(A,C)
+rnvc66(A,B) :- some66(B,C), \+all66(C,A), \+no66(C,A), \+somenot66(C,A)
+rnvc66(A,B) :- all66(B,C), \+all66(A,C), \+all66(C,A), \+some66(A,C), \+some66(C,A), \+no66(A,C), \+somenot66(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.981818181818
+           Precision:	 1.0
+              Recall:	 0.96875
+================== STATISTICS ==================
+    Rule evaluations:	10278
+          Total time:	167.8583s

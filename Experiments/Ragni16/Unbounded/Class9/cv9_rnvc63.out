@@ -1,0 +1,25 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_63.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rnvc63.log
+              target:	rnvc63/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc63(A,B) :- no63(C,B), \+all63(A,C), \+all63(C,A)
+rnvc63(A,B) :- somenot63(B,C), \+all63(C,A)
+rnvc63(A,B) :- somenot63(C,B), \+all63(A,C), \+all63(C,A), \+no63(C,A)
+rnvc63(A,B) :- some63(C,B), \+all63(A,C), \+some63(A,C), \+no63(A,C)
+rnvc63(A,B) :- some63(B,C), \+all63(C,A), \+somenot63(A,C), \+somenot63(C,A)
+rnvc63(A,B) :- no63(B,C), \+all63(C,A), \+some63(A,C), \+no63(C,A)
+==================== SCORES ====================
+            Accuracy:	 0.963636363636
+           Precision:	 1.0
+              Recall:	 0.928571428571
+================== STATISTICS ==================
+    Rule evaluations:	8229
+          Total time:	158.3941s

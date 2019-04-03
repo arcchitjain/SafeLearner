@@ -1,0 +1,108 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.962305131662
+[INFO] Computing scores: 0.0302s
+[INFO] Number of examples (M): 53
+[INFO] Positive weight (P): 3.0000
+[INFO] Negative weight (N): 50.0000
+[DEBUG] Best rule so far: rnvc56(A,B) :- true [0.0566037735849]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- true 0.0566037735849
+[DEBUG] ==================================
+[LVL9] rnvc56(A,B) :- all56(B,C) 0.132075471698 (1.0, 6.0, 44.0, 2.0) 0.528301886792 [ACCEPT]
+[LVL9] BETTER RULE rnvc56(A,B) :- all56(B,C) (0.1320754716981132, 1.0) > (0.05660377358490566, 3.0)
+[LVL9] rnvc56(A,B) :- no56(B,C) 0.257075471698 (2.0, 5.0, 45.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] BETTER RULE rnvc56(A,B) :- no56(B,C) (0.25707547169811323, 2.0) > (0.1320754716981132, 1.0)
+[LVL9] rnvc56(A,B) :- somenot56(A,C) 0.150943396226 (1.0, 5.0, 45.0, 2.0) 0.528301886792 [ACCEPT]
+[LVL9] rnvc56(A,B) :- somenot56(C,A) 0.293800539084 (2.0, 4.0, 46.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] BETTER RULE rnvc56(A,B) :- somenot56(C,A) (0.29380053908355797, 2.0) > (0.25707547169811323, 2.0)
+[DEBUG] Best rule so far: rnvc56(A,B) :- somenot56(C,A) [0.293800539084]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- somenot56(C,A) 0.293800539084
+[DEBUG] rnvc56(A,B) :- no56(B,C) 0.257075471698
+[DEBUG] rnvc56(A,B) :- somenot56(A,C) 0.150943396226
+[DEBUG] rnvc56(A,B) :- all56(B,C) 0.132075471698
+[DEBUG] ==================================
+[LVL9] rnvc56(A,B) :- somenot56(C,A), all56(B,C) 0.528301886792 (1.0, 0.0, 50.0, 2.0) 0.528301886792 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc56(A,B) :- somenot56(C,A), all56(B,C) (0.5283018867924528, 1.0) > (0.29380053908355797, 2.0)
+[LVL9] rnvc56(A,B) :- somenot56(C,A), \+all56(C,B) 0.342767295597 (2.0, 3.0, 47.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- somenot56(C,A), \+some56(C,B) 0.342767295597 (2.0, 3.0, 47.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- somenot56(C,A), \+some56(B,C) 0.342767295597 (2.0, 3.0, 47.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- somenot56(C,A), \+no56(C,B) 0.342767295597 (2.0, 3.0, 47.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+all56(A,C) 0.293800539084 (2.0, 4.0, 46.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+all56(C,A) 0.293800539084 (2.0, 4.0, 46.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+some56(C,A) 0.293800539084 (2.0, 4.0, 46.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+no56(A,C) 0.293800539084 (2.0, 4.0, 46.0, 1.0) 0.685534591195 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+no56(C,A) 0.293800539084 (2.0, 4.0, 46.0, 1.0) 0.685534591195 [ACCEPT]
+[DEBUG] Best rule so far: rnvc56(A,B) :- somenot56(C,A), all56(B,C) [0.528301886792]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- somenot56(C,A), \+all56(C,B) 0.342767295597
+[DEBUG] rnvc56(A,B) :- somenot56(C,A), \+some56(C,B) 0.342767295597
+[DEBUG] rnvc56(A,B) :- somenot56(C,A), \+some56(B,C) 0.342767295597
+[DEBUG] rnvc56(A,B) :- somenot56(C,A), \+no56(C,B) 0.342767295597
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+all56(A,C) 0.293800539084
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+all56(C,A) 0.293800539084
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+some56(C,A) 0.293800539084
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+no56(A,C) 0.293800539084
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+no56(C,A) 0.293800539084
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc56(A,B) :- somenot56(C,A), all56(B,C) 0.962264150943
+[DEBUG] Best rule so far: rnvc56(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc56(A,B) :- no56(B,C) 0.254807692308 (3.0, 5.0, 45.0, 0.0) 0.679487179487 [ACCEPT]
+[LVL9] BETTER RULE rnvc56(A,B) :- no56(B,C) (0.2548076923076923, 3.0) > (0.0, 3.0)
+[LVL9] rnvc56(A,B) :- somenot56(A,C) 0.148351648352 (2.0, 5.0, 45.0, 1.0) 0.519230769231 [ACCEPT]
+[LVL9] rnvc56(A,B) :- somenot56(C,A) 0.173076923077 (2.0, 4.0, 46.0, 1.0) 0.519230769231 [ACCEPT]
+[DEBUG] Best rule so far: rnvc56(A,B) :- no56(B,C) [0.254807692308]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- no56(B,C) 0.254807692308
+[DEBUG] rnvc56(A,B) :- somenot56(C,A) 0.173076923077
+[DEBUG] rnvc56(A,B) :- somenot56(A,C) 0.148351648352
+[DEBUG] ==================================
+[LVL9] rnvc56(A,B) :- no56(B,C), somenot56(A,C) 0.519230769231 (2.0, 0.0, 50.0, 1.0) 0.519230769231 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc56(A,B) :- no56(B,C), somenot56(A,C) (0.5192307692307693, 2.0) > (0.2548076923076923, 3.0)
+[LVL9] rnvc56(A,B) :- no56(B,C), \+all56(A,C) 0.291208791209 (3.0, 4.0, 46.0, 0.0) 0.679487179487 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+all56(C,A) 0.291208791209 (3.0, 4.0, 46.0, 0.0) 0.679487179487 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+some56(C,A) 0.291208791209 (3.0, 4.0, 46.0, 0.0) 0.679487179487 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+no56(A,C) 0.291208791209 (3.0, 4.0, 46.0, 0.0) 0.679487179487 [ACCEPT]
+[LVL9] rnvc56(A,B) :- no56(B,C), \+no56(C,A) 0.291208791209 (3.0, 4.0, 46.0, 0.0) 0.679487179487 [ACCEPT]
+[DEBUG] Best rule so far: rnvc56(A,B) :- no56(B,C), somenot56(A,C) [0.519230769231]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+all56(A,C) 0.291208791209
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+all56(C,A) 0.291208791209
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+some56(C,A) 0.291208791209
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+no56(A,C) 0.291208791209
+[DEBUG] rnvc56(A,B) :- no56(B,C), \+no56(C,A) 0.291208791209
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc56(A,B) :- no56(B,C), somenot56(A,C) 0.981132075472
+[DEBUG] Best rule so far: rnvc56(A,B) :- true [0.0196078431373]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- true 0.0196078431373
+[DEBUG] ==================================
+[LVL9] rnvc56(A,B) :- no56(B,C) 0.145658263305 (3.0, 5.0, 45.0, 0.0) 0.509803921569 [ACCEPT]
+[LVL9] BETTER RULE rnvc56(A,B) :- no56(B,C) (0.1456582633053221, 3.0) > (0.0196078431372549, 3.0)
+[LVL9] rnvc56(A,B) :- somenot56(C,A) 0.169934640523 (3.0, 4.0, 46.0, 0.0) 0.509803921569 [ACCEPT]
+[LVL9] BETTER RULE rnvc56(A,B) :- somenot56(C,A) (0.1699346405228758, 3.0) > (0.1456582633053221, 3.0)
+[DEBUG] Best rule so far: rnvc56(A,B) :- somenot56(C,A) [0.169934640523]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- somenot56(C,A) 0.169934640523
+[DEBUG] rnvc56(A,B) :- no56(B,C) 0.145658263305
+[DEBUG] ==================================
+[LVL9] rnvc56(A,B) :- somenot56(C,A), no56(B,C) 0.509803921569 (3.0, 0.0, 50.0, 0.0) 0.509803921569 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc56(A,B) :- somenot56(C,A), no56(B,C) (0.5098039215686274, 3.0) > (0.1699346405228758, 3.0)
+[INFO] RULE LEARNED: rnvc56(A,B) :- somenot56(C,A), no56(B,C) 1.0
+[DEBUG] Best rule so far: rnvc56(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc56(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc56(A,B) :- true 1.0

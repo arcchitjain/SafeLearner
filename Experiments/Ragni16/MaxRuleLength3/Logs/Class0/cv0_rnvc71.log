@@ -1,0 +1,1061 @@
+[LVL9] Output level: 9
+[INFO] Random seed: 0.857003781884
+[INFO] Computing scores: 0.0486s
+[INFO] Number of examples (M): 58
+[INFO] Positive weight (P): 15.0000
+[INFO] Negative weight (N): 43.0000
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.258620689655]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.258620689655
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.362068965517 (3.0, 5.0, 38.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.3620689655172414, 3.0) > (0.25862068965517243, 15.0)
+[LVL9] rnvc71(A,B) :- some71(B,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(B,C) (0.4073275862068966, 3.0) > (0.3620689655172414, 3.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (1.0, 6.0, 37.0, 14.0) 0.629310344828 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.362068965517 (3.0, 5.0, 38.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (1.0, 7.0, 36.0, 14.0) 0.629310344828 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (1.0, 7.0, 36.0, 14.0) 0.629310344828 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.376436781609 (2.0, 3.0, 40.0, 13.0) 0.752873563218 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.362068965517 (3.0, 5.0, 38.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.532327586207 (4.0, 3.0, 40.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(A,C) (0.5323275862068966, 4.0) > (0.4073275862068966, 3.0)
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.362068965517 (3.0, 5.0, 38.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.473180076628 (4.0, 4.0, 39.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.376436781609 (2.0, 3.0, 40.0, 13.0) 0.752873563218 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(A,C) [0.532327586207]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.532327586207
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.473180076628
+[DEBUG] rnvc71(A,B) :- some71(B,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.376436781609
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.376436781609
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.362068965517
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.362068965517
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.362068965517
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.362068965517
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(A,C), some71(C,B) 0.629310344828 (1.0, 0.0, 43.0, 14.0) 0.629310344828 [REJECT* fp] 0.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(A,C), some71(C,B) (0.6293103448275862, 1.0) > (0.5323275862068966, 4.0)
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.608374384236 (4.0, 2.0, 41.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.608374384236 (4.0, 2.0, 41.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.608374384236 (4.0, 2.0, 41.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.532327586207 (4.0, 3.0, 40.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.532327586207 (4.0, 3.0, 40.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.532327586207 (4.0, 3.0, 40.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.532327586207 (4.0, 3.0, 40.0, 11.0) 0.851724137931 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.465517241379 (3.0, 3.0, 40.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.465517241379 (3.0, 3.0, 40.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.465517241379 (3.0, 3.0, 40.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.465517241379 (3.0, 3.0, 40.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.451724137931 (2.0, 2.0, 41.0, 13.0) 0.752873563218 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.451724137931 (2.0, 2.0, 41.0, 13.0) 0.752873563218 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.451724137931 (2.0, 2.0, 41.0, 13.0) 0.752873563218 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.451724137931 (2.0, 2.0, 41.0, 13.0) 0.752873563218 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.451724137931 (2.0, 2.0, 41.0, 13.0) 0.752873563218 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.451724137931 (2.0, 2.0, 41.0, 13.0) 0.752873563218 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+all71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+all71(C,A) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+some71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+no71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+no71(C,A) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.407327586207 (3.0, 4.0, 39.0, 12.0) 0.814655172414 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(A,C), some71(C,B) [0.629310344828]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.608374384236
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.608374384236
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.608374384236
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.532327586207
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.532327586207
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.532327586207
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.532327586207
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.465517241379
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.465517241379
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.465517241379
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.465517241379
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.451724137931
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.451724137931
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.451724137931
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.451724137931
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.451724137931
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.451724137931
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+all71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+all71(C,A) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+some71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+no71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+no71(C,A) 0.407327586207
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.407327586207
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.407327586207
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.407327586207
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.407327586207
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.407327586207
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.407327586207
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(A,C), some71(C,B) 0.758620689655
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.245614035088]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.245614035088
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.360623781676 (4.0, 5.0, 38.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.36062378167641324, 4.0) > (0.24561403508771928, 15.0)
+[LVL9] rnvc71(A,B) :- some71(B,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(B,C) (0.4057017543859649, 4.0) > (0.36062378167641324, 4.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (2.0, 6.0, 37.0, 13.0) 0.622807017544 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.280701754386 (3.0, 5.0, 38.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (2.0, 7.0, 36.0, 13.0) 0.622807017544 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (2.0, 7.0, 36.0, 13.0) 0.622807017544 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.374269005848 (3.0, 3.0, 40.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.360623781676 (4.0, 5.0, 38.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.46365914787 (4.0, 3.0, 40.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(A,C) (0.46365914786967416, 4.0) > (0.4057017543859649, 4.0)
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.360623781676 (4.0, 5.0, 38.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.471734892788 (5.0, 4.0, 39.0, 10.0) 0.849122807018 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A) (0.47173489278752434, 5.0) > (0.46365914786967416, 4.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.374269005848 (3.0, 3.0, 40.0, 12.0) 0.748538011696 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,A) [0.471734892788]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.471734892788
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.46365914787
+[DEBUG] rnvc71(A,B) :- some71(B,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.374269005848
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.374269005848
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.360623781676
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.360623781676
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.360623781676
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.280701754386
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(C,A), some71(C,B) 0.622807017544 (2.0, 0.0, 43.0, 13.0) 0.622807017544 [REJECT* fp] 1.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A), some71(C,B) (0.6228070175438596, 2.0) > (0.47173489278752434, 5.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.530701754386 (5.0, 3.0, 40.0, 10.0) 0.849122807018 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.530701754386 (5.0, 3.0, 40.0, 10.0) 0.849122807018 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.530701754386 (5.0, 3.0, 40.0, 10.0) 0.849122807018 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.530701754386 (5.0, 3.0, 40.0, 10.0) 0.849122807018 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.540935672515 (4.0, 2.0, 41.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.540935672515 (4.0, 2.0, 41.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.540935672515 (4.0, 2.0, 41.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.46365914787 (4.0, 3.0, 40.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.46365914787 (4.0, 3.0, 40.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.46365914787 (4.0, 3.0, 40.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.46365914787 (4.0, 3.0, 40.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.449122807018 (3.0, 2.0, 41.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.449122807018 (3.0, 2.0, 41.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.449122807018 (3.0, 2.0, 41.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.449122807018 (3.0, 2.0, 41.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.449122807018 (3.0, 2.0, 41.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.449122807018 (3.0, 2.0, 41.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.405701754386 (4.0, 4.0, 39.0, 11.0) 0.811403508772 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+all71(A,C) 0.320802005013 (3.0, 4.0, 39.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+all71(C,A) 0.320802005013 (3.0, 4.0, 39.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+some71(A,C) 0.320802005013 (3.0, 4.0, 39.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+no71(A,C) 0.320802005013 (3.0, 4.0, 39.0, 12.0) 0.748538011696 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B), \+no71(C,A) 0.320802005013 (3.0, 4.0, 39.0, 12.0) 0.748538011696 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,A), some71(C,B) [0.622807017544]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.540935672515
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.540935672515
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.540935672515
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.530701754386
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.530701754386
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.530701754386
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.530701754386
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.46365914787
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.46365914787
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.46365914787
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.46365914787
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.449122807018
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.449122807018
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.449122807018
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.449122807018
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.449122807018
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.449122807018
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.405701754386
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.405701754386
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.405701754386
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.405701754386
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.405701754386
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.405701754386
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.405701754386
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.405701754386
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.405701754386
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+all71(A,C) 0.320802005013
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+all71(C,A) 0.320802005013
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+some71(A,C) 0.320802005013
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+no71(A,C) 0.320802005013
+[DEBUG] rnvc71(A,B) :- some71(C,B), \+no71(C,A) 0.320802005013
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(C,A), some71(C,B) 0.775862068966
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.232142857143]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.232142857143
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.359126984127 (5.0, 5.0, 38.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.35912698412698413, 5.0) > (0.23214285714285715, 15.0)
+[LVL9] rnvc71(A,B) :- some71(B,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(B,C) (0.40401785714285715, 5.0) > (0.35912698412698413, 5.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (3.0, 6.0, 37.0, 12.0) 0.616071428571 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.0 (3.0, 5.0, 38.0, 12.0) 0.616071428571 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (3.0, 7.0, 36.0, 12.0) 0.616071428571 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (3.0, 7.0, 36.0, 12.0) 0.616071428571 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.372023809524 (4.0, 3.0, 40.0, 11.0) 0.744047619048 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.359126984127 (5.0, 5.0, 38.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(A,C) (0.461734693877551, 5.0) > (0.40401785714285715, 5.0)
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.359126984127 (5.0, 5.0, 38.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.372023809524 (4.0, 3.0, 40.0, 11.0) 0.744047619048 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(A,C) [0.461734693878]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.461734693878
+[DEBUG] rnvc71(A,B) :- some71(B,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.404017857143
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.372023809524
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.372023809524
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.359126984127
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.359126984127
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.359126984127
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(A,C), some71(B,C) 0.616071428571 (3.0, 0.0, 43.0, 12.0) 0.616071428571 [REJECT* fp] 2.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(A,C), some71(B,C) (0.6160714285714286, 3.0) > (0.461734693877551, 5.0)
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.53869047619 (5.0, 2.0, 41.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.53869047619 (5.0, 2.0, 41.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.53869047619 (5.0, 2.0, 41.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.461734693878 (5.0, 3.0, 40.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.446428571429 (4.0, 2.0, 41.0, 11.0) 0.744047619048 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.446428571429 (4.0, 2.0, 41.0, 11.0) 0.744047619048 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.446428571429 (4.0, 2.0, 41.0, 11.0) 0.744047619048 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.446428571429 (4.0, 2.0, 41.0, 11.0) 0.744047619048 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.446428571429 (4.0, 2.0, 41.0, 11.0) 0.744047619048 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.446428571429 (4.0, 2.0, 41.0, 11.0) 0.744047619048 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.404017857143 (5.0, 4.0, 39.0, 10.0) 0.808035714286 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(A,C), some71(B,C) [0.616071428571]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.53869047619
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.53869047619
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.53869047619
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.461734693878
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.461734693878
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.461734693878
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.461734693878
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.461734693878
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.461734693878
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.461734693878
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.461734693878
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.446428571429
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.446428571429
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.446428571429
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.446428571429
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.446428571429
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.446428571429
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.404017857143
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.404017857143
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.404017857143
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.404017857143
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.404017857143
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.404017857143
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.404017857143
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.404017857143
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.404017857143
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(A,C), some71(B,C) 0.793103448276
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.218181818182]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.218181818182
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.357575757576 (6.0, 5.0, 38.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.3575757575757576, 6.0) > (0.2181818181818182, 15.0)
+[LVL9] rnvc71(A,B) :- some71(B,C) 0.316883116883 (5.0, 4.0, 39.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (4.0, 6.0, 37.0, 11.0) 0.609090909091 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.0 (4.0, 5.0, 38.0, 11.0) 0.609090909091 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (4.0, 7.0, 36.0, 11.0) 0.609090909091 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (4.0, 7.0, 36.0, 11.0) 0.609090909091 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.369696969697 (5.0, 3.0, 40.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,A) (0.3696969696969697, 5.0) > (0.3575757575757576, 6.0)
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.357575757576 (6.0, 5.0, 38.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.369696969697 (5.0, 3.0, 40.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.357575757576 (6.0, 5.0, 38.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A) (0.4022727272727273, 6.0) > (0.3696969696969697, 5.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.369696969697 (5.0, 3.0, 40.0, 10.0) 0.739393939394 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,A) [0.402272727273]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.402272727273
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.369696969697
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.369696969697
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.369696969697
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.357575757576
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.357575757576
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.357575757576
+[DEBUG] rnvc71(A,B) :- some71(B,C) 0.316883116883
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(C,A), some71(B,C) 0.609090909091 (4.0, 0.0, 43.0, 11.0) 0.609090909091 [REJECT* fp] 3.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A), some71(B,C) (0.6090909090909091, 4.0) > (0.4022727272727273, 6.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.45974025974 (6.0, 3.0, 40.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.45974025974 (6.0, 3.0, 40.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.45974025974 (6.0, 3.0, 40.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.45974025974 (6.0, 3.0, 40.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.443636363636 (5.0, 2.0, 41.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.402272727273 (6.0, 4.0, 39.0, 9.0) 0.804545454545 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.369696969697 (5.0, 3.0, 40.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.369696969697 (5.0, 3.0, 40.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.369696969697 (5.0, 3.0, 40.0, 10.0) 0.739393939394 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.369696969697 (5.0, 3.0, 40.0, 10.0) 0.739393939394 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,A), some71(B,C) [0.609090909091]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.45974025974
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.45974025974
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.45974025974
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.45974025974
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.443636363636
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.443636363636
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.443636363636
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.443636363636
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.443636363636
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.443636363636
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.443636363636
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.443636363636
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.443636363636
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.402272727273
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.402272727273
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.402272727273
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.402272727273
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.402272727273
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.402272727273
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.402272727273
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.402272727273
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.402272727273
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.402272727273
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.402272727273
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.402272727273
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.402272727273
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.402272727273
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.402272727273
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(A,C) 0.369696969697
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+all71(C,A) 0.369696969697
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+some71(C,A) 0.369696969697
+[DEBUG] rnvc71(A,B) :- some71(B,C), \+no71(A,C) 0.369696969697
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(C,A), some71(B,C) 0.810344827586
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.203703703704]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.203703703704
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.355967078189 (7.0, 5.0, 38.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.3559670781893004, 7.0) > (0.20370370370370372, 15.0)
+[LVL9] rnvc71(A,B) :- some71(B,C) 0.0 (5.0, 4.0, 39.0, 10.0) 0.601851851852 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (5.0, 6.0, 37.0, 10.0) 0.601851851852 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.0 (5.0, 5.0, 38.0, 10.0) 0.601851851852 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (5.0, 7.0, 36.0, 10.0) 0.601851851852 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (5.0, 7.0, 36.0, 10.0) 0.601851851852 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.367283950617 (6.0, 3.0, 40.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,A) (0.36728395061728397, 6.0) > (0.3559670781893004, 7.0)
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.355967078189 (7.0, 5.0, 38.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.367283950617 (6.0, 3.0, 40.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.355967078189 (7.0, 5.0, 38.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.314814814815 (6.0, 4.0, 39.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.367283950617 (6.0, 3.0, 40.0, 9.0) 0.734567901235 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- no71(C,A) [0.367283950617]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.367283950617
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.367283950617
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.367283950617
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.355967078189
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.355967078189
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.355967078189
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.314814814815
+[DEBUG] rnvc71(A,B) :- some71(B,C) 0.0
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- no71(C,A), no71(C,B) 0.601851851852 (5.0, 0.0, 43.0, 10.0) 0.601851851852 [REJECT* fp] 4.0
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,A), no71(C,B) (0.6018518518518519, 5.0) > (0.36728395061728397, 6.0)
+[LVL9] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.440740740741 (6.0, 2.0, 41.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.400462962963 (7.0, 4.0, 39.0, 8.0) 0.800925925926 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.367283950617 (6.0, 3.0, 40.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.367283950617 (6.0, 3.0, 40.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.367283950617 (6.0, 3.0, 40.0, 9.0) 0.734567901235 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.367283950617 (6.0, 3.0, 40.0, 9.0) 0.734567901235 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- no71(C,A), no71(C,B) [0.601851851852]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+all71(B,C) 0.440740740741
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+some71(C,B) 0.440740740741
+[DEBUG] rnvc71(A,B) :- no71(C,A), \+somenot71(B,C) 0.440740740741
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.440740740741
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.440740740741
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.440740740741
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.440740740741
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.440740740741
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.440740740741
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.400462962963
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.400462962963
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.400462962963
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.400462962963
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.400462962963
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.400462962963
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.400462962963
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.400462962963
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.400462962963
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.400462962963
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.400462962963
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.400462962963
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.400462962963
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.400462962963
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.400462962963
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.367283950617
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.367283950617
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.367283950617
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.367283950617
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- no71(C,A), no71(C,B) 0.827586206897
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.188679245283]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.188679245283
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.35429769392 (8.0, 5.0, 38.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.35429769392033544, 8.0) > (0.18867924528301888, 15.0)
+[LVL9] rnvc71(A,B) :- some71(B,C) 0.198113207547 (6.0, 4.0, 39.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (6.0, 6.0, 37.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.0 (6.0, 5.0, 38.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (6.0, 7.0, 36.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (6.0, 7.0, 36.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.237735849057 (6.0, 3.0, 40.0, 9.0) 0.594339622642 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.27358490566 (7.0, 5.0, 38.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.364779874214 (7.0, 3.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(A,C) (0.36477987421383645, 7.0) > (0.35429769392033544, 8.0)
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.35429769392 (8.0, 5.0, 38.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.312668463612 (7.0, 4.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.364779874214 (7.0, 3.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(A,C) [0.364779874214]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.364779874214
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.364779874214
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.35429769392
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.35429769392
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.312668463612
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.27358490566
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.237735849057
+[DEBUG] rnvc71(A,B) :- some71(B,C) 0.198113207547
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(A,C), somenot71(C,B) 0.594339622642 (6.0, 0.0, 43.0, 9.0) 0.594339622642 [REJECT* fp] 5.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(A,C), somenot71(C,B) (0.5943396226415094, 6.0) > (0.36477987421383645, 7.0)
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.437735849057 (7.0, 2.0, 41.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.437735849057 (7.0, 2.0, 41.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.437735849057 (7.0, 2.0, 41.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.437735849057 (7.0, 2.0, 41.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.437735849057 (7.0, 2.0, 41.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.437735849057 (7.0, 2.0, 41.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.39858490566 (8.0, 4.0, 39.0, 7.0) 0.797169811321 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.364779874214 (7.0, 3.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.364779874214 (7.0, 3.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.364779874214 (7.0, 3.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.364779874214 (7.0, 3.0, 40.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.312668463612 (7.0, 4.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.312668463612 (7.0, 4.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.312668463612 (7.0, 4.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.312668463612 (7.0, 4.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.312668463612 (7.0, 4.0, 39.0, 8.0) 0.729559748428 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(A,C), somenot71(C,B) [0.594339622642]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+all71(B,C) 0.437735849057
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(C,B) 0.437735849057
+[DEBUG] rnvc71(A,B) :- somenot71(A,C), \+no71(B,C) 0.437735849057
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+all71(A,C) 0.437735849057
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+no71(A,C) 0.437735849057
+[DEBUG] rnvc71(A,B) :- somenot71(C,B), \+somenot71(C,A) 0.437735849057
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.39858490566
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.39858490566
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.39858490566
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.39858490566
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.39858490566
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.39858490566
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.39858490566
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.39858490566
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.39858490566
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.39858490566
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.364779874214
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.364779874214
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.364779874214
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.364779874214
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.312668463612
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.312668463612
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.312668463612
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.312668463612
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.312668463612
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(A,C), somenot71(C,B) 0.844827586207
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.173076923077]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.173076923077
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.352564102564 (9.0, 5.0, 38.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.35256410256410253, 9.0) > (0.17307692307692307, 15.0)
+[LVL9] rnvc71(A,B) :- some71(B,C) 0.195512820513 (7.0, 4.0, 39.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (7.0, 6.0, 37.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.0 (7.0, 5.0, 38.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (7.0, 7.0, 36.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (7.0, 7.0, 36.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.234615384615 (7.0, 3.0, 40.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.271634615385 (8.0, 5.0, 38.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.234615384615 (7.0, 3.0, 40.0, 8.0) 0.586538461538 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.352564102564 (9.0, 5.0, 38.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.31043956044 (8.0, 4.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.234615384615 (7.0, 3.0, 40.0, 8.0) 0.586538461538 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- some71(A,C) [0.352564102564]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.352564102564
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.352564102564
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.31043956044
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.271634615385
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.234615384615
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.234615384615
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.234615384615
+[DEBUG] rnvc71(A,B) :- some71(B,C) 0.195512820513
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C), some71(B,C) 0.586538461538 (7.0, 0.0, 43.0, 8.0) 0.586538461538 [REJECT* fp] 6.0
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C), some71(B,C) (0.5865384615384616, 7.0) > (0.35256410256410253, 9.0)
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.396634615385 (9.0, 4.0, 39.0, 6.0) 0.793269230769 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.362179487179 (8.0, 3.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.362179487179 (8.0, 3.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.362179487179 (8.0, 3.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.362179487179 (8.0, 3.0, 40.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.31043956044 (8.0, 4.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.31043956044 (8.0, 4.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.31043956044 (8.0, 4.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.31043956044 (8.0, 4.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.31043956044 (8.0, 4.0, 39.0, 7.0) 0.724358974359 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- some71(A,C), some71(B,C) [0.586538461538]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.396634615385
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.396634615385
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.396634615385
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.396634615385
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.396634615385
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.396634615385
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.396634615385
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.396634615385
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.396634615385
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.396634615385
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.362179487179
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.362179487179
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.362179487179
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.362179487179
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.31043956044
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.31043956044
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.31043956044
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.31043956044
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.31043956044
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- some71(A,C), some71(B,C) 0.862068965517
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.156862745098]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.156862745098
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.269607843137 (9.0, 5.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.2696078431372549, 9.0) > (0.1568627450980392, 15.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.0 (8.0, 6.0, 37.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.165266106443 (8.0, 5.0, 38.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (8.0, 7.0, 36.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (8.0, 7.0, 36.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.23137254902 (8.0, 3.0, 40.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.269607843137 (9.0, 5.0, 38.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.23137254902 (8.0, 3.0, 40.0, 7.0) 0.578431372549 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.350762527233 (10.0, 5.0, 38.0, 5.0) 0.789215686275 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(B,C) (0.35076252723311546, 10.0) > (0.2696078431372549, 9.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.23137254902 (8.0, 3.0, 40.0, 7.0) 0.578431372549 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(B,C) [0.350762527233]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.350762527233
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.3081232493
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.269607843137
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.269607843137
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.23137254902
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.23137254902
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.23137254902
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.165266106443
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.0
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(B,C), some71(A,C) 0.578431372549 (8.0, 0.0, 43.0, 7.0) 0.578431372549 [REJECT* fp] 7.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(B,C), some71(A,C) (0.5784313725490196, 8.0) > (0.35076252723311546, 10.0)
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.394607843137 (10.0, 4.0, 39.0, 5.0) 0.789215686275 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.394607843137 (10.0, 4.0, 39.0, 5.0) 0.789215686275 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.394607843137 (10.0, 4.0, 39.0, 5.0) 0.789215686275 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.394607843137 (10.0, 4.0, 39.0, 5.0) 0.789215686275 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.394607843137 (10.0, 4.0, 39.0, 5.0) 0.789215686275 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.359477124183 (9.0, 3.0, 40.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.359477124183 (9.0, 3.0, 40.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.359477124183 (9.0, 3.0, 40.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.359477124183 (9.0, 3.0, 40.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.3081232493 (9.0, 4.0, 39.0, 6.0) 0.718954248366 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(B,C), some71(A,C) [0.578431372549]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.394607843137
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.394607843137
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.394607843137
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.394607843137
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.394607843137
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.359477124183
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.359477124183
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.359477124183
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.359477124183
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(C,B) 0.3081232493
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+all71(B,C) 0.3081232493
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+some71(C,B) 0.3081232493
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(C,B) 0.3081232493
+[DEBUG] rnvc71(A,B) :- some71(A,C), \+no71(B,C) 0.3081232493
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.3081232493
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.3081232493
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.3081232493
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.3081232493
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.3081232493
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(B,C), some71(A,C) 0.879310344828
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.162857142857 (9.0, 5.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.16285714285714287, 9.0) > (0.0, 15.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.1425 (9.0, 6.0, 37.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.162857142857 (9.0, 5.0, 38.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.0 (9.0, 7.0, 36.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.0 (9.0, 7.0, 36.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.228 (9.0, 3.0, 40.0, 6.0) 0.57 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,A) (0.22800000000000004, 9.0) > (0.16285714285714287, 9.0)
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.2675 (10.0, 5.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,B) (0.2675, 10.0) > (0.22800000000000004, 9.0)
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.228 (9.0, 3.0, 40.0, 6.0) 0.57 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.2675 (10.0, 5.0, 38.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A) (0.3057142857142857, 10.0) > (0.2675, 10.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.228 (9.0, 3.0, 40.0, 6.0) 0.57 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,A) [0.305714285714]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.305714285714
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.2675
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.2675
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.228
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.228
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.228
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.162857142857
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.162857142857
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.1425
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.0
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(C,A), no71(C,B) 0.57 (9.0, 0.0, 43.0, 6.0) 0.57 [REJECT* fp] 8.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A), no71(C,B) (0.5700000000000001, 9.0) > (0.3057142857142857, 10.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.356666666667 (10.0, 3.0, 40.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.356666666667 (10.0, 3.0, 40.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.356666666667 (10.0, 3.0, 40.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.356666666667 (10.0, 3.0, 40.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.305714285714 (10.0, 4.0, 39.0, 5.0) 0.713333333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,A), no71(C,B) [0.57]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(C,B) 0.356666666667
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+all71(B,C) 0.356666666667
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+no71(B,C) 0.356666666667
+[DEBUG] rnvc71(A,B) :- somenot71(C,A), \+somenot71(C,B) 0.356666666667
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(A,C) 0.305714285714
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+all71(C,A) 0.305714285714
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(A,C) 0.305714285714
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+some71(C,A) 0.305714285714
+[DEBUG] rnvc71(A,B) :- no71(C,B), \+somenot71(A,C) 0.305714285714
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.305714285714
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.305714285714
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.305714285714
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.305714285714
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.305714285714
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(C,A), no71(C,B) 0.896551724138
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.122448979592]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.122448979592
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.160349854227 (10.0, 5.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.16034985422740525, 10.0) > (0.12244897959183673, 15.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.140306122449 (10.0, 6.0, 37.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.160349854227 (10.0, 5.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.124716553288 (10.0, 7.0, 36.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.124716553288 (10.0, 7.0, 36.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.224489795918 (10.0, 3.0, 40.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,A) (0.22448979591836732, 10.0) > (0.16034985422740525, 10.0)
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.160349854227 (10.0, 5.0, 38.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(A,C) 0.224489795918 (10.0, 3.0, 40.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.265306122449 (11.0, 5.0, 38.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(B,C) (0.2653061224489796, 11.0) > (0.22448979591836732, 10.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.187074829932 (10.0, 4.0, 39.0, 5.0) 0.561224489796 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.224489795918 (10.0, 3.0, 40.0, 5.0) 0.561224489796 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(B,C) [0.265306122449]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.265306122449
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.224489795918
+[DEBUG] rnvc71(A,B) :- somenot71(A,C) 0.224489795918
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.224489795918
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.187074829932
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.160349854227
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.160349854227
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.160349854227
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.140306122449
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.124716553288
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.124716553288
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(B,C), somenot71(A,C) 0.561224489796 (10.0, 0.0, 43.0, 5.0) 0.561224489796 [REJECT* fp] 9.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(B,C), somenot71(A,C) (0.5612244897959183, 10.0) > (0.2653061224489796, 11.0)
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.303206997085 (11.0, 4.0, 39.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.303206997085 (11.0, 4.0, 39.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.303206997085 (11.0, 4.0, 39.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.303206997085 (11.0, 4.0, 39.0, 4.0) 0.707482993197 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.303206997085 (11.0, 4.0, 39.0, 4.0) 0.707482993197 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(B,C), somenot71(A,C) [0.561224489796]
+[DEBUG] Candidates for iteration 3:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(A,C) 0.303206997085
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+all71(C,A) 0.303206997085
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+some71(C,A) 0.303206997085
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(A,C) 0.303206997085
+[DEBUG] rnvc71(A,B) :- somenot71(B,C), \+no71(C,A) 0.303206997085
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(B,C), somenot71(A,C) 0.913793103448
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.104166666667]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.104166666667
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.157738095238 (11.0, 5.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.15773809523809526, 11.0) > (0.10416666666666667, 15.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.138020833333 (11.0, 6.0, 37.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.157738095238 (11.0, 5.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.122685185185 (11.0, 7.0, 36.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(B,C) 0.122685185185 (11.0, 7.0, 36.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,A) 0.220833333333 (11.0, 3.0, 40.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,A) (0.22083333333333335, 11.0) > (0.15773809523809526, 11.0)
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.157738095238 (11.0, 5.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.157738095238 (11.0, 5.0, 38.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.184027777778 (11.0, 4.0, 39.0, 4.0) 0.552083333333 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.220833333333 (11.0, 3.0, 40.0, 4.0) 0.552083333333 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- no71(C,A) [0.220833333333]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- no71(C,A) 0.220833333333
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.220833333333
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.184027777778
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.157738095238
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.157738095238
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.157738095238
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.157738095238
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.138020833333
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.122685185185
+[DEBUG] rnvc71(A,B) :- no71(B,C) 0.122685185185
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- no71(C,A), no71(B,C) 0.552083333333 (11.0, 0.0, 43.0, 4.0) 0.552083333333 [REJECT* fp] 10.0
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,A), no71(B,C) (0.5520833333333334, 11.0) > (0.22083333333333335, 11.0)
+[INFO] RULE LEARNED: rnvc71(A,B) :- no71(C,A), no71(B,C) 0.931034482759
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.0851063829787]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.0851063829787
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(A,C) 0.155015197568 (12.0, 5.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(A,C) (0.15501519756838905, 12.0) > (0.0851063829787234, 15.0)
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.135638297872 (12.0, 6.0, 37.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.155015197568 (12.0, 5.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.120567375887 (12.0, 7.0, 36.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.155015197568 (12.0, 5.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.155015197568 (12.0, 5.0, 38.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.18085106383 (12.0, 4.0, 39.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A) (0.18085106382978722, 12.0) > (0.15501519756838905, 12.0)
+[LVL9] rnvc71(A,B) :- somenot71(C,B) 0.217021276596 (12.0, 3.0, 40.0, 3.0) 0.542553191489 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,B) (0.21702127659574466, 12.0) > (0.18085106382978722, 12.0)
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,B) [0.217021276596]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(C,B) 0.217021276596
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.18085106383
+[DEBUG] rnvc71(A,B) :- some71(A,C) 0.155015197568
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.155015197568
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.155015197568
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.155015197568
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.135638297872
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.120567375887
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(C,B), some71(A,C) 0.542553191489 (12.0, 0.0, 43.0, 3.0) 0.542553191489 [REJECT* fp] 11.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,B), some71(A,C) (0.5425531914893617, 12.0) > (0.21702127659574466, 12.0)
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(C,B), some71(A,C) 0.948275862069
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.0652173913043]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.0652173913043
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.133152173913 (13.0, 6.0, 37.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(C,A) (0.1331521739130435, 13.0) > (0.06521739130434782, 15.0)
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.152173913043 (13.0, 5.0, 38.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(C,B) (0.15217391304347827, 13.0) > (0.1331521739130435, 13.0)
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.118357487923 (13.0, 7.0, 36.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.152173913043 (13.0, 5.0, 38.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(B,C) 0.152173913043 (13.0, 5.0, 38.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] rnvc71(A,B) :- somenot71(C,A) 0.177536231884 (13.0, 4.0, 39.0, 2.0) 0.532608695652 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A) (0.17753623188405798, 13.0) > (0.15217391304347827, 13.0)
+[DEBUG] Best rule so far: rnvc71(A,B) :- somenot71(C,A) [0.177536231884]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- somenot71(C,A) 0.177536231884
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.152173913043
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.152173913043
+[DEBUG] rnvc71(A,B) :- somenot71(B,C) 0.152173913043
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.133152173913
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.118357487923
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- somenot71(C,A), somenot71(B,C) 0.532608695652 (13.0, 0.0, 43.0, 2.0) 0.532608695652 [REJECT* fp] 12.0
+[LVL9] BETTER RULE rnvc71(A,B) :- somenot71(C,A), somenot71(B,C) (0.532608695652174, 13.0) > (0.17753623188405798, 13.0)
+[INFO] RULE LEARNED: rnvc71(A,B) :- somenot71(C,A), somenot71(B,C) 0.965517241379
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.0
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(C,A) 0.130555555556 (14.0, 6.0, 37.0, 1.0) 0.522222222222 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(C,A) (0.13055555555555556, 14.0) > (0.0, 15.0)
+[LVL9] rnvc71(A,B) :- some71(C,B) 0.149206349206 (14.0, 5.0, 38.0, 1.0) 0.522222222222 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(C,B) (0.1492063492063492, 14.0) > (0.13055555555555556, 14.0)
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.116049382716 (14.0, 7.0, 36.0, 1.0) 0.522222222222 [ACCEPT]
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.149206349206 (14.0, 5.0, 38.0, 1.0) 0.522222222222 [ACCEPT]
+[DEBUG] Best rule so far: rnvc71(A,B) :- some71(C,B) [0.149206349206]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- some71(C,B) 0.149206349206
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.149206349206
+[DEBUG] rnvc71(A,B) :- some71(C,A) 0.130555555556
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.116049382716
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- some71(C,B), some71(C,A) 0.522222222222 (14.0, 0.0, 43.0, 1.0) 0.522222222222 [REJECT* fp] 13.0
+[LVL9] BETTER RULE rnvc71(A,B) :- some71(C,B), some71(C,A) (0.5222222222222223, 14.0) > (0.1492063492063492, 14.0)
+[INFO] RULE LEARNED: rnvc71(A,B) :- some71(C,B), some71(C,A) 0.98275862069
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.0227272727273]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.0227272727273
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- no71(A,C) 0.113636363636 (15.0, 7.0, 36.0, 0.0) 0.511363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(A,C) (0.11363636363636363, 15.0) > (0.022727272727272728, 15.0)
+[LVL9] rnvc71(A,B) :- no71(C,B) 0.146103896104 (15.0, 5.0, 38.0, 0.0) 0.511363636364 [ACCEPT]
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,B) (0.1461038961038961, 15.0) > (0.11363636363636363, 15.0)
+[DEBUG] Best rule so far: rnvc71(A,B) :- no71(C,B) [0.146103896104]
+[DEBUG] Candidates for iteration 2:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- no71(C,B) 0.146103896104
+[DEBUG] rnvc71(A,B) :- no71(A,C) 0.113636363636
+[DEBUG] ==================================
+[LVL9] rnvc71(A,B) :- no71(C,B), no71(A,C) 0.511363636364 (15.0, 0.0, 43.0, 0.0) 0.511363636364 [REJECT* fp] 14.0
+[LVL9] BETTER RULE rnvc71(A,B) :- no71(C,B), no71(A,C) (0.5113636363636364, 15.0) > (0.1461038961038961, 15.0)
+[INFO] RULE LEARNED: rnvc71(A,B) :- no71(C,B), no71(A,C) 1.0
+[DEBUG] Best rule so far: rnvc71(A,B) :- true [0.0]
+[DEBUG] Candidates for iteration 1:
+[DEBUG] ==================================
+[DEBUG] rnvc71(A,B) :- true 0.0
+[DEBUG] ==================================
+[INFO] RULE LEARNED: rnvc71(A,B) :- true 1.0

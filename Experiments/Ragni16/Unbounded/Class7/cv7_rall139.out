@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class7/cv7_train_139.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class7/cv7_rall139.log
+              target:	rall139/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall139(A,B) :- somenot139(A,C), \+all139(B,C), \+some139(C,B), \+some139(B,C), \+somenot139(B,C), \+no139(B,C), \+all139(C,B)
+rall139(A,B) :- some139(A,C), no139(B,C)
+==================== SCORES ====================
+            Accuracy:	 0.905172413793
+           Precision:	 1.0
+              Recall:	 0.214285714286
+================== STATISTICS ==================
+    Rule evaluations:	45901
+          Total time:	2358.5420s

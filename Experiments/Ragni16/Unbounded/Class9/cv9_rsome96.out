@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class9/cv9_train_96.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class9/cv9_rsome96.log
+              target:	rsome96/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome96(A,B) :- somenot96(C,A), somenot96(B,C)
+rsome96(A,B) :- all96(C,B), somenot96(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.906779661017
+           Precision:	 1.0
+              Recall:	 0.153846153846
+================== STATISTICS ==================
+    Rule evaluations:	49158
+          Total time:	2671.9917s

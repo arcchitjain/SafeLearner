@@ -1,0 +1,31 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_112.pl']
+             verbose:	3
+                   l:	3
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rnvc112.log
+              target:	rnvc112/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rnvc112(A,B) :- no112(C,B), \+all112(A,C)
+rnvc112(A,B) :- no112(B,C), some112(C,A)
+rnvc112(A,B) :- no112(C,A), all112(C,B)
+rnvc112(A,B) :- somenot112(C,B), all112(C,A)
+rnvc112(A,B) :- no112(B,C), no112(A,C)
+rnvc112(A,B) :- no112(C,A), some112(C,B)
+rnvc112(A,B) :- somenot112(A,C), all112(B,C)
+rnvc112(A,B) :- somenot112(C,B), somenot112(C,A)
+rnvc112(A,B) :- no112(B,C), no112(C,A)
+rnvc112(A,B) :- all112(C,A), all112(C,B)
+rnvc112(A,B) :- somenot112(A,C), somenot112(B,C)
+rnvc112(A,B) :- all112(B,C), all112(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.981132075472
+           Precision:	 0.9375
+              Recall:	 1.0
+================== STATISTICS ==================
+    Rule evaluations:	8816
+          Total time:	96.2231s

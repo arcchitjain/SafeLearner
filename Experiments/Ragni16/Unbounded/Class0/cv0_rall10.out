@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class0/cv0_train_10.pl']
+             verbose:	3
+                   l:	7
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class0/cv0_rall10.log
+              target:	rall10/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rall10(A,B) :- all10(C,B), all10(A,C)
+rall10(A,B) :- somenot10(A,C), no10(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.946428571429
+           Precision:	 1.0
+              Recall:	 0.25
+================== STATISTICS ==================
+    Rule evaluations:	35047
+          Total time:	563.6477s

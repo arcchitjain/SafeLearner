@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_15.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsome15.log
+              target:	rsome15/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome15(A,B) :- all15(C,B), \+somenot15(C,A), \+all15(A,C), \+all15(C,A), \+somenot15(A,C)
+rsome15(A,B) :- no15(C,B), no15(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.830188679245
+           Precision:	 1.0
+              Recall:	 0.28
+================== STATISTICS ==================
+    Rule evaluations:	54267
+          Total time:	1425.9664s

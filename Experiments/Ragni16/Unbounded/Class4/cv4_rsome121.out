@@ -1,0 +1,21 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class4/cv4_train_121.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class4/cv4_rsome121.log
+              target:	rsome121/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome121(A,B) :- some121(C,B), \+no121(A,C), \+no121(C,A), \+all121(A,C), \+all121(C,A), \+some121(A,C), \+some121(C,A)
+rsome121(A,B) :- somenot121(C,B), all121(A,C)
+==================== SCORES ====================
+            Accuracy:	 0.879310344828
+           Precision:	 1.0
+              Recall:	 0.263157894737
+================== STATISTICS ==================
+    Rule evaluations:	69569
+          Total time:	2815.0873s

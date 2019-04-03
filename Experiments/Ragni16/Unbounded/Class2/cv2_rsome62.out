@@ -1,0 +1,23 @@
+================ SETTINGS ================
+               files:	['./Data/Ragni/Class2/cv2_train_62.pl']
+             verbose:	3
+                   l:	None
+                   p:	0.8
+           beam_size:	100
+                seed:	None
+                 log:	./Logs/Ragni/Class2/cv2_rsome62.log
+              target:	rsome62/2
+   symmetry_breaking:	False
+           probfoil1:	False
+================= FINAL THEORY =================
+rsome62(A,B) :- no62(A,C), all62(C,B)
+rsome62(A,B) :- some62(C,B), no62(C,A)
+rsome62(A,B) :- all62(A,C), \+all62(C,B), \+all62(B,C), \+some62(C,B), \+no62(C,B), \+no62(B,C), \+somenot62(C,B)
+rsome62(A,B) :- some62(A,C), somenot62(C,B)
+==================== SCORES ====================
+            Accuracy:	 0.836363636364
+           Precision:	 1.0
+              Recall:	 0.28
+================== STATISTICS ==================
+    Rule evaluations:	84785
+          Total time:	3251.7922s
