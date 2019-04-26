@@ -5,10 +5,10 @@
 from collections import defaultdict
 import itertools
 import nltk
-import algorithm
+from symbolic_slimshot import algorithm
+
 
 class Graph(object):
-
     def __init__(self, adjacencyList={}):
         self.adjacencyList = adjacencyList
 
@@ -36,7 +36,6 @@ class Graph(object):
 
 
 class Component(object):
-
     def __init__(self, relations=[]):
         self.relations = relations
 
@@ -58,17 +57,18 @@ class Component(object):
         return self.relations
 
     def getProbabilisticRelations(self):
-        return filter(lambda x: not x.isDeterministic(), self.relations)
+        return list(filter(lambda x: not x.isDeterministic(), self.relations))
 
     def getDeterministicRelations(self):
-        return filter(lambda x: x.isDeterministic(), self.relations)
+        return list(filter(lambda x: x.isDeterministic(), self.relations))
 
     def getProbabilisticRelationSymbols(self):
-        return map(
-            lambda x: x.getName(),
-            filter(
-                lambda x: not x.isDeterministic(),
-                self.relations))
+        return list(
+            map(
+                lambda x: x.getName(),
+                list(filter(lambda x: not x.isDeterministic(), self.relations)),
+            )
+        )
 
     def getRelationSymbols(self):
         return [rel.getName() for rel in self.getRelations()]
@@ -78,6 +78,7 @@ class Component(object):
 
     def getVariables(self):
         return set([x for rel in self.relations for x in rel.getVariables()])
+
     # Returns a dictionary: {Var : { RelName : set([varPos1, [varPos2, ...]])
     # }}
 
@@ -103,8 +104,7 @@ class Component(object):
         c2Vars = com2.getVariables()
         byVarMaps = []
         for var in c2Vars:
-            byVarMaps.append(
-                [pair for pair in itertools.product([var], c1Vars)])
+            byVarMaps.append([pair for pair in itertools.product([var], c1Vars)])
         mappings = [h for h in itertools.product(*byVarMaps)]
         for mapping in mappings:
             h = dict((x, y) for x, y in list(mapping))
@@ -125,12 +125,14 @@ class Component(object):
         for rel in self.getRelations():
             relStr = "%s:%s" % (
                 rel.getNameWithEqualityConstraints(),
-                ','.join(rel.getVariablesForHomomorphism()))
+                ",".join(rel.getVariablesForHomomorphism()),
+            )
             relDict[relStr] = True
         for rel in com2.getRelations():
             relStr = "%s:%s" % (
                 rel.getNameWithEqualityConstraints(),
-                ','.join(rel.getVariablesForHomomorphism()))
+                ",".join(rel.getVariablesForHomomorphism()),
+            )
             if relStr not in relDict:
                 return False
         return True
@@ -172,22 +174,25 @@ class Component(object):
                 # add any relations without vars as singleton components
                 adjList[rel].add(rel)
         for var in varsToRels.keys():
-            [adjList[rel1].add(rel2) for rel1 in varsToRels[var]
-             for rel2 in varsToRels[var]]
+            [
+                adjList[rel1].add(rel2)
+                for rel1 in varsToRels[var]
+                for rel2 in varsToRels[var]
+            ]
         return adjList
 
     def quantifiersProver9(self, formula):
         quantifiedFormula = []
         for v in self.getVariables():
-            quantifiedFormula.append('exists %s.(' % v.getVar())
+            quantifiedFormula.append("exists %s.(" % v.getVar())
         quantifiedFormula.append(formula)
-        quantifiedFormula.append(')' * len(self.getVariables()))
-        return ''.join(quantifiedFormula)
+        quantifiedFormula.append(")" * len(self.getVariables()))
+        return "".join(quantifiedFormula)
 
     def toProver9(self):
-        return self.quantifiersProver9(" and ".join(
-            ["(%s)" % x.toProver9()
-             for x in self.relations]))
+        return self.quantifiersProver9(
+            " and ".join(["(%s)" % x.toProver9() for x in self.relations])
+        )
 
     def prettyPrint(self):
         return "%s" % ", ".join([x.__repr__() for x in self.relations])
@@ -201,7 +206,6 @@ class Component(object):
 
 # Conjunction of components
 class ConjunctiveQuery(object):
-
     def __init__(self, components=[]):
         self.components = components
 
@@ -210,8 +214,8 @@ class ConjunctiveQuery(object):
 
     def copyWithDeterminism(self, relsToMakeDeterministic):
         return ConjunctiveQuery(
-            [c.copyWithDeterminism(relsToMakeDeterministic)
-             for c in self.components])
+            [c.copyWithDeterminism(relsToMakeDeterministic) for c in self.components]
+        )
 
     def getComponents(self):
         return self.components
@@ -251,25 +255,29 @@ class ConjunctiveQuery(object):
     def getSeparator(self):
         componentsWithVars = [c for c in self.components if c.hasVariables()]
         varPositions = [c.getVarPositions() for c in componentsWithVars]
-        componentVars = [c.keys()
-                         for c in varPositions]  # used to fix an ordering
+        componentVars = [c.keys() for c in varPositions]  # used to fix an ordering
         for potentialSep in itertools.product(*componentVars):
             potentialMap = {}
             validMap = True
             for ind, var in enumerate(potentialSep):
-                relationsWithThisVarInThisComponent = set(
-                    varPositions[ind][var].keys())
+                relationsWithThisVarInThisComponent = set(varPositions[ind][var].keys())
                 probabilisticRelationsInThisComponent = set(
-                    componentsWithVars[ind].getProbabilisticRelations())
-                if (len(probabilisticRelationsInThisComponent.difference(
-                        relationsWithThisVarInThisComponent))):
+                    componentsWithVars[ind].getProbabilisticRelations()
+                )
+                if len(
+                    probabilisticRelationsInThisComponent.difference(
+                        relationsWithThisVarInThisComponent
+                    )
+                ):
                     validMap = False
                     break
 
                 deterministicRelationsInThisComponent = set(
-                    self.components[ind].getDeterministicRelations())
+                    self.components[ind].getDeterministicRelations()
+                )
                 for detR in deterministicRelationsInThisComponent.difference(
-                        relationsWithThisVarInThisComponent):
+                    relationsWithThisVarInThisComponent
+                ):
                     if detR.getName() in potentialMap:
                         del potentialMap[detR.getName()]
 
@@ -278,21 +286,26 @@ class ConjunctiveQuery(object):
                     if rel.getName() not in potentialMap:
                         # haven't seen this relation before, add it to potential separator
                         # mapping
-                        potentialMap[
-                            rel.getName()] = varPositions[ind][var][rel]
+                        potentialMap[rel.getName()] = varPositions[ind][var][rel]
                     # we have seen this relation before, see if the potential separator
                     # positions intersect with those seen before
-                    elif len(potentialMap[rel.getName()].intersection(varPositions[ind][var][rel])) == 0:
+                    elif (
+                        len(
+                            potentialMap[rel.getName()].intersection(
+                                varPositions[ind][var][rel]
+                            )
+                        )
+                        == 0
+                    ):
                         if not rel.isDeterministic():
                             validMap = False
                             break
                         elif rel.getName() in potentialMap:
                             del potentialMap[rel.getName()]
                     else:
-                        potentialMap[
-                            rel.getName()] = potentialMap[
-                            rel.getName()].intersection(
-                            varPositions[ind][var][rel])
+                        potentialMap[rel.getName()] = potentialMap[
+                            rel.getName()
+                        ].intersection(varPositions[ind][var][rel])
                 if not validMap:
                     break
             if validMap:
@@ -327,17 +340,16 @@ class ConjunctiveQuery(object):
         return "(%s)" % " ^ ".join([x.prettyPrint() for x in self.components])
 
     def prettyPrintCNF(self):
-        return "(%s)" % " v ".join(
-            [x.prettyPrintCNF() for x in self.components])
+        return "(%s)" % " v ".join([x.prettyPrintCNF() for x in self.components])
 
     def __repr__(self):
         return "c(%s)" % " ^ ".join([x.__repr__() for x in self.components])
+
 
 # Disjunction of components
 
 
 class DisjunctiveQuery(object):
-
     def __init__(self, components=[]):
         self.components = components
 
@@ -398,25 +410,29 @@ class DisjunctiveQuery(object):
     def getSeparator(self):
         componentsWithVars = [c for c in self.components if c.hasVariables()]
         varPositions = [c.getVarPositions() for c in componentsWithVars]
-        componentVars = [c.keys()
-                         for c in varPositions]  # used to fix an ordering
+        componentVars = [c.keys() for c in varPositions]  # used to fix an ordering
         for potentialSep in itertools.product(*componentVars):
             potentialMap = {}
             validMap = True
             for ind, var in enumerate(potentialSep):
-                relationsWithThisVarInThisComponent = set(
-                    varPositions[ind][var].keys())
+                relationsWithThisVarInThisComponent = set(varPositions[ind][var].keys())
                 probabilisticRelationsInThisComponent = set(
-                    componentsWithVars[ind].getProbabilisticRelations())
-                if (len(probabilisticRelationsInThisComponent.difference(
-                        relationsWithThisVarInThisComponent))):
+                    componentsWithVars[ind].getProbabilisticRelations()
+                )
+                if len(
+                    probabilisticRelationsInThisComponent.difference(
+                        relationsWithThisVarInThisComponent
+                    )
+                ):
                     validMap = False
                     break
 
                 deterministicRelationsInThisComponent = set(
-                    self.components[ind].getDeterministicRelations())
+                    self.components[ind].getDeterministicRelations()
+                )
                 for detR in deterministicRelationsInThisComponent.difference(
-                        relationsWithThisVarInThisComponent):
+                    relationsWithThisVarInThisComponent
+                ):
                     if detR.getName() in potentialMap:
                         del potentialMap[detR.getName()]
 
@@ -425,21 +441,26 @@ class DisjunctiveQuery(object):
                     if rel.getName() not in potentialMap:
                         # haven't seen this relation before, add it to potential separator
                         # mapping
-                        potentialMap[
-                            rel.getName()] = varPositions[ind][var][rel]
+                        potentialMap[rel.getName()] = varPositions[ind][var][rel]
                     # we have seen this relation before, see if the potential separator
                     # positions intersect with those seen before
-                    elif len(potentialMap[rel.getName()].intersection(varPositions[ind][var][rel])) == 0:
+                    elif (
+                        len(
+                            potentialMap[rel.getName()].intersection(
+                                varPositions[ind][var][rel]
+                            )
+                        )
+                        == 0
+                    ):
                         if not rel.isDeterministic():
                             validMap = False
                             break
                         elif rel.getName() in potentialMap:
                             del potentialMap[rel.getName()]
                     else:
-                        potentialMap[
-                            rel.getName()] = potentialMap[
-                            rel.getName()].intersection(
-                            varPositions[ind][var][rel])
+                        potentialMap[rel.getName()] = potentialMap[
+                            rel.getName()
+                        ].intersection(varPositions[ind][var][rel])
                 if not validMap:
                     break
             if validMap:
@@ -456,11 +477,17 @@ class DisjunctiveQuery(object):
             if all(r.isDeterministic() for r in c.getRelations()):
                 pass
             else:
-                [relsToComponents[rel.getRelationNameForAdjacency()].add(c)
-                 for rel in c.getRelations() if not rel.isDeterministic()]
+                [
+                    relsToComponents[rel.getRelationNameForAdjacency()].add(c)
+                    for rel in c.getRelations()
+                    if not rel.isDeterministic()
+                ]
         for rel in relsToComponents.keys():
-            [adjList[c1].add(c2) for c1 in relsToComponents[rel]
-             for c2 in relsToComponents[rel]]
+            [
+                adjList[c1].add(c2)
+                for c1 in relsToComponents[rel]
+                for c2 in relsToComponents[rel]
+            ]
         # TODO(ericgribkoff) Fix this hack
         for c in self.components:
             if c not in adjList:
@@ -474,18 +501,16 @@ class DisjunctiveQuery(object):
         return "(%s)" % " v ".join([x.prettyPrint() for x in self.components])
 
     def prettyPrintCNF(self):
-        return "(%s)" % " ^ ".join(
-            [x.prettyPrintCNF() for x in self.components])
+        return "(%s)" % " ^ ".join([x.prettyPrintCNF() for x in self.components])
 
     def __repr__(self):
-        return "d(\n%s)" % " v \n".join(
-            [x.__repr__() for x in self.components])
+        return "d(\n%s)" % " v \n".join([x.__repr__() for x in self.components])
+
 
 # Disjunction of conjuctive queries
 
 
 class DNF(object):
-
     def __init__(self, conjuncts=[]):
         self.conjuncts = conjuncts
 
@@ -494,8 +519,8 @@ class DNF(object):
 
     def copyWithDeterminism(self, relsToMakeDeterministic):
         return DNF(
-            [c.copyWithDeterminism(relsToMakeDeterministic)
-             for c in self.conjuncts])
+            [c.copyWithDeterminism(relsToMakeDeterministic) for c in self.conjuncts]
+        )
 
     def containedIn(self, dnf2):
         for con in self.getConjuncts():
@@ -553,11 +578,16 @@ class DNF(object):
             if all(r.isDeterministic() for r in d.getRelations()):
                 pass
             else:
-                [relsToConjuncts[rel.getRelationNameForAdjacency()].add(d)
-                 for rel in d.getRelations()]
+                [
+                    relsToConjuncts[rel.getRelationNameForAdjacency()].add(d)
+                    for rel in d.getRelations()
+                ]
         for rel in relsToConjuncts.keys():
-            [adjList[d1].add(d2) for d1 in relsToConjuncts[rel]
-             for d2 in relsToConjuncts[rel]]
+            [
+                adjList[d1].add(d2)
+                for d1 in relsToConjuncts[rel]
+                for d2 in relsToConjuncts[rel]
+            ]
         # TODO(ericgribkoff) Fix this hack
         for d in self.conjuncts:
             if d not in adjList:
@@ -577,8 +607,9 @@ class DNF(object):
             else:
                 disjuncts.append(
                     DisjunctiveQuery(
-                        [self.conjuncts[i].getComponent(j) for(i, j) in
-                         stack]))
+                        [self.conjuncts[i].getComponent(j) for (i, j) in stack]
+                    )
+                )
                 (lastConj, lastCom) = stack.pop()
                 if lastCom + 1 < len(self.conjuncts[lastConj].getComponents()):
                     stack.append((lastConj, lastCom + 1))
@@ -586,8 +617,7 @@ class DNF(object):
                     while stack:
                         (lastConj, lastCom) = stack.pop()
                         conjI = conjI - 1
-                        if lastCom + 1 < len(
-                                self.conjuncts[lastConj].getComponents()):
+                        if lastCom + 1 < len(self.conjuncts[lastConj].getComponents()):
                             stack.append((lastConj, lastCom + 1))
                             break
                     if not stack:
@@ -598,18 +628,16 @@ class DNF(object):
         return "(%s)" % " v ".join([x.prettyPrint() for x in self.conjuncts])
 
     def prettyPrintCNF(self):
-        return "(%s)" % " ^ ".join(
-            [x.prettyPrintCNF() for x in self.conjuncts])
+        return "(%s)" % " ^ ".join([x.prettyPrintCNF() for x in self.conjuncts])
 
     def __repr__(self):
-        return "dnf(\n%s\n)" % "\n v ".join(
-            [x.__repr__() for x in self.conjuncts])
+        return "dnf(\n%s\n)" % "\n v ".join([x.__repr__() for x in self.conjuncts])
+
 
 # Conjunction of disjunctive queries
 
 
 class CNF(object):
-
     def __init__(self, disjuncts=[]):
         self.disjuncts = [d.minimize() for d in disjuncts]
 
@@ -679,11 +707,16 @@ class CNF(object):
             if all(r.isDeterministic() for r in d.getRelations()):
                 pass
             else:
-                [relsToDisjuncts[rel.getRelationNameForAdjacency()].add(d)
-                 for rel in d.getRelations()]
+                [
+                    relsToDisjuncts[rel.getRelationNameForAdjacency()].add(d)
+                    for rel in d.getRelations()
+                ]
         for rel in relsToDisjuncts.keys():
-            [adjList[d1].add(d2) for d1 in relsToDisjuncts[rel]
-             for d2 in relsToDisjuncts[rel]]
+            [
+                adjList[d1].add(d2)
+                for d1 in relsToDisjuncts[rel]
+                for d2 in relsToDisjuncts[rel]
+            ]
         # TODO(ericgribkoff) Fix this hack
         for d in self.disjuncts:
             if d not in adjList:
@@ -697,12 +730,10 @@ class CNF(object):
         return "(%s)" % " ^ ".join([x.prettyPrint() for x in self.disjuncts])
 
     def prettyPrintCNF(self):
-        return "(%s)" % " v ".join(
-            [x.prettyPrintCNF() for x in self.disjuncts])
+        return "(%s)" % " v ".join([x.prettyPrintCNF() for x in self.disjuncts])
 
     def __repr__(self):
-        return "cnf(\n%s\n)" % " ^ \n".join(
-            [x.__repr__() for x in self.disjuncts])
+        return "cnf(\n%s\n)" % " ^ \n".join([x.__repr__() for x in self.disjuncts])
 
 
 def decomposeComponent(orig):

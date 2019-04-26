@@ -1,5 +1,4 @@
 class Variable(object):
-
     def __init__(self, var, inequality=None):
         self.var = var
         self.inequalityConstraint = inequality
@@ -42,7 +41,6 @@ class Variable(object):
 
 
 class Constant(object):
-
     def __init__(self, constant):
         self.constant = constant
 
@@ -51,7 +49,6 @@ class Constant(object):
 
 
 class Constraint(object):
-
     def __init__(self, constant):
         self.originalConstant = constant
 
@@ -60,25 +57,25 @@ class Constraint(object):
         self.equality = False
         self.generic = False
 
-        if constant == '*':
+        if constant == "*":
             self.wildcard = True
             self.constant = None
         elif constant.isalpha():
             self.generic = True
             self.equality = True
             self.constant = constant
-        elif constant[0] == '-' and constant[1:].isalpha():
+        elif constant[0] == "-" and constant[1:].isalpha():
             self.generic = True
             self.inequality = True
             self.constant = constant[1:]
-        elif constant[0] == '-' and constant[1:].isdigit():
+        elif constant[0] == "-" and constant[1:].isdigit():
             self.inequality = True
             self.constant = int(constant[1:])
         elif constant.isdigit():
             self.equality = True
             self.constant = int(constant)
         else:
-            raise Exception('Invalid constraint')
+            raise Exception("Invalid constraint")
 
     def getOriginalConstant(self):
         return self.getOriginalConstant
@@ -105,7 +102,7 @@ class Constraint(object):
         if self.wildcard:
             return "*"
         elif self.inequality:
-            return 'not%s' % str(self.constant)
+            return "not%s" % str(self.constant)
         else:
             return str(self.constant)
 
@@ -114,19 +111,18 @@ class Constraint(object):
             if self.equality:
                 return self.constant.upper()
             else:
-                return 'not%s' % self.constant
+                return "not%s" % self.constant
         elif self.wildcard:
-            return 'any'
+            return "any"
         else:
             if self.equality:
                 return str(self.constant)
             else:
-                return 'not%d' % (self.constant)
+                return "not%d" % (self.constant)
 
 
 class SeparatorVariable(object):
-
-    def __init__(self, separator, replacement=''):
+    def __init__(self, separator, replacement=""):
         self.separator = separator
         self.replacementConstant = replacement
 
@@ -138,20 +134,22 @@ class SeparatorVariable(object):
 
     def __repr__(self):
         return "SeparatorVariable: separator: %s replacement constant: %s)" % (
-            self.separator, self.replacementConstant)
+            self.separator,
+            self.replacementConstant,
+        )
 
 
 class Relation(object):
-
     def __init__(
-            self,
-            name='rel',
-            arguments=[],
-            signature=[],
-            constraints=[],
-            deterministic=False,
-            sampled=False,
-            negated=False):
+        self,
+        name="rel",
+        arguments=[],
+        signature=[],
+        constraints=[],
+        deterministic=False,
+        sampled=False,
+        negated=False,
+    ):
         self.name = name
         self.arguments = arguments
         self.signature = signature
@@ -180,7 +178,8 @@ class Relation(object):
             self.constraints[:],
             self.deterministic,
             self.sampled,
-            self.negated)
+            self.negated,
+        )
 
     def getName(self):
         return self.name
@@ -195,14 +194,10 @@ class Relation(object):
         return self.signature
 
     def getConstants(self):
-        return filter(lambda x: isinstance(x, Constant), self.arguments)
+        return list(filter(lambda x: isinstance(x, Constant), self.arguments))
 
     def getSeparatorReplacements(self):
-        return filter(
-            lambda x: isinstance(
-                x,
-                SeparatorVariable),
-            self.arguments)
+        return list(filter(lambda x: isinstance(x, SeparatorVariable), self.arguments))
 
     def getConstraints(self):
         return self.constraints
@@ -220,7 +215,7 @@ class Relation(object):
         return self.sampled
 
     def getVariables(self):
-        return filter(lambda x: isinstance(x, Variable), self.arguments)
+        return list(filter(lambda x: isinstance(x, Variable), self.arguments))
 
     def getVariablesForHomomorphism(self):
         varsForH = []
@@ -228,7 +223,7 @@ class Relation(object):
             if isinstance(a, Variable):
                 varsForH.append(a.getVar())
             elif isinstance(a, Constant):
-                varsForH.append('_c' + a.getConstant())
+                varsForH.append("_c" + a.getConstant())
             elif isinstance(a, SeparatorVariable):
                 varsForH.append("_s" + str(a.getReplacement()))
             else:
@@ -248,12 +243,11 @@ class Relation(object):
 
     def applySeparator(self, separator, separatorReplacement):
         for i in range(len(self.arguments)):
-            if isinstance(
-                    self.arguments[i],
-                    Variable) and \
-                    self.arguments[i].getVar() == separator.getVar():
-                self.arguments[i] = SeparatorVariable(
-                    separator, separatorReplacement)
+            if (
+                isinstance(self.arguments[i], Variable)
+                and self.arguments[i].getVar() == separator.getVar()
+            ):
+                self.arguments[i] = SeparatorVariable(separator, separatorReplacement)
 
     def hasVariables(self):
         return len(self.getVariables()) > 0
@@ -261,9 +255,7 @@ class Relation(object):
     def usesSeparator(self, subId):
         retVal = False
         for a in self.arguments:
-            if isinstance(
-                    a,
-                    SeparatorVariable) and a.getReplacement() == subId:
+            if isinstance(a, SeparatorVariable) and a.getReplacement() == subId:
                 retVal = True
                 break
         return retVal
@@ -290,17 +282,15 @@ class Relation(object):
         return isinstance(self.arguments[ind], SeparatorVariable)
 
     def getSeparatorReplacementValues(self):
-        return map(
-            lambda x: x.getReplacement(),
-            self.getSeparatorReplacements())
+        return list(map(lambda x: x.getReplacement(), self.getSeparatorReplacements()))
 
     def getConstraintsString(self):
-        constantRep = map(formatEqualityConstraints, self.constraints)
-        return "[%s]" % ','.join(constantRep)
+        constantRep = list(map(formatEqualityConstraints, self.constraints))
+        return "[%s]" % ",".join(constantRep)
 
     def getConstraintsStringProver9(self):
-        constantRep = map(formatEqualityConstraintsProver9, self.constraints)
-        return ''.join(constantRep)
+        constantRep = list(map(formatEqualityConstraintsProver9, self.constraints))
+        return "".join(constantRep)
 
     def getRelationNameForAdjacency(self):
         if self.constraints:
@@ -315,13 +305,13 @@ class Relation(object):
             pred = self.name
 
         if self.negated:
-            pred = '~' + pred
+            pred = "~" + pred
 
         return pred
 
     def toProver9(self):
         if self.negated:
-            stringRep = '!' + self.name
+            stringRep = "!" + self.name
         else:
             stringRep = self.name
         argumentRep = []
@@ -332,14 +322,13 @@ class Relation(object):
             elif self.isConstant(i):
                 argumentRep.append(str(self.arguments[i].getConstant()))
             elif self.isSeparatorReplacement(i):
-                argumentRep.append(
-                    "_" + str(self.arguments[i].getReplacement()))
+                argumentRep.append("_" + str(self.arguments[i].getReplacement()))
             else:
                 argumentRep.append("%" + str(self.arguments[i]))
         if not argumentRep:
             argumentRep = self.getConstraintsStringProver9()
         else:
-            argumentRep = ','.join(argumentRep)
+            argumentRep = ",".join(argumentRep)
         if len(self.constraints):
             constantString = self.getConstraintsStringProver9()
         else:
@@ -349,9 +338,9 @@ class Relation(object):
     def __repr__(self):
         stringRep = self.name
         if self.deterministic:
-            stringRep = stringRep + '_d'
+            stringRep = stringRep + "_d"
         if self.negated:
-            stringRep = '~' + stringRep
+            stringRep = "~" + stringRep
         argumentRep = []
         constantRep = []
         for i in range(len(self.arguments)):
@@ -360,15 +349,14 @@ class Relation(object):
             elif self.isConstant(i):
                 argumentRep.append("_c" + str(self.arguments[i].getConstant()))
             elif self.isSeparatorReplacement(i):
-                argumentRep.append(
-                    "_s" + str(self.arguments[i].getReplacement()))
+                argumentRep.append("_s" + str(self.arguments[i].getReplacement()))
             else:
                 argumentRep.append("%" + str(self.arguments[i]))
         if len(self.constraints):
             constantString = self.getConstraintsString()
         else:
             constantString = ""
-        return "%s%s(%s)" % (stringRep, constantString, ','.join(argumentRep))
+        return "%s%s(%s)" % (stringRep, constantString, ",".join(argumentRep))
 
 
 def formatEqualityConstraints(eq):
@@ -377,19 +365,19 @@ def formatEqualityConstraints(eq):
     elif eq:
         return str(eq)
     else:
-        return '*'
+        return "*"
 
 
 def formatEqualityConstraintsProver9(eq):
     if isinstance(eq, Constraint):
         return eq.getProver9Format()
-    elif eq == 'c':
-        return 'C'
-    elif eq == '-c':
-        return 'notC'
+    elif eq == "c":
+        return "C"
+    elif eq == "-c":
+        return "notC"
     elif eq and eq > 0:
         return str(eq)
     elif eq and eq < 0:
         return "not" + str(-1 * eq)
     else:
-        return 'any'
+        return "any"

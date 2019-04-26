@@ -2,75 +2,66 @@ from __future__ import print_function
 from logging import getLogger
 from math import exp, log
 
-'''
-def main(argv=sys.argv[1:]):
-    args = argparser().parse_args(argv)
-
-def argparser():
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument('model')
-    parser.add_argument('data')
-    return parser
-'''
 
 def getLogList(expression):
     i = 4
-    logLocation = []
-    logList = []
-    roundCounter = 0
+    log_location = []
+    log_list = []
+    round_counter = 0
     while i < len(expression):
-        if expression[i-3:i] == "log" and roundCounter == 0:
+        if expression[i - 3 : i] == "log" and round_counter == 0:
             i += 1
             start = i
-            roundCounter = 1
-            while roundCounter != 0 and i < len(expression):
+            round_counter = 1
+            while round_counter != 0 and i < len(expression):
                 if expression[i] == "(":
-                    roundCounter += 1
+                    round_counter += 1
                 elif expression[i] == ")":
-                    roundCounter -= 1
+                    round_counter -= 1
                 i += 1
             end = i - 1
-            logLocation.append((start-4, end+1))
-            logList.append(expression[start:end])
+            log_location.append((start - 4, end + 1))
+            log_list.append(expression[start:end])
         i += 1
-    return logList, logLocation
+    return log_list, log_location
 
-def evaluateExpression(expression):
+
+def evaluate_expression(expression):
     try:
         ans = eval(expression)
         return ans
-        #print("correct answer")
+        # print("correct answer")
     except:
-        logList, logLocation = getLogList(expression)
-        logOutput = []
-        for item in logList:
+        log_list, log_location = getLogList(expression)
+        log_output = []
+        for item in log_list:
             try:
                 output = eval(item)
             except:
-                getLogger("probfoil").warning("Exception occurred in logOutput")
+                getLogger("probfoil").warning("Exception occurred in log_output")
                 getLogger("probfoil").warning("item\t\t\t\t:" + item)
                 output = 0.0
-            logOutput.append(output)     
-        
-        #At each logLocation, replace the log with either the output or with -Inf
+            log_output.append(output)
+
+        # At each log_location, replace the log with either the output or with -Inf
         start = 0
-        approximateExpression = ""
-        for i, (j, k) in enumerate(logLocation):
-            approximateExpression = approximateExpression + expression[start:j]
-            if logOutput[i] > 0:
-                approximateExpression = approximateExpression + "log(" + str(logOutput[i]) + ")"
+        approximate_expression = ""
+        for i, (j, k) in enumerate(log_location):
+            approximate_expression = approximate_expression + expression[start:j]
+            if log_output[i] > 0:
+                approximate_expression = (
+                    approximate_expression + "log(" + str(log_output[i]) + ")"
+                )
             else:
-                approximateExpression = approximateExpression + "-float('inf')"
+                approximate_expression = approximate_expression + "-float('inf')"
             start = k
-        approximateExpression = approximateExpression + expression[start:]
-        #approximateExpression = approximateExpression + expression[k:]
+        approximate_expression = approximate_expression + expression[start:]
+        # approximate_expression = approximate_expression + expression[k:]
         try:
-            ans = eval(approximateExpression)
+            ans = eval(approximate_expression)
             return ans
         except:
-            getLogger("probfoil").warning('Exception\t\t\t\t\t\t: %s' % approximateExpression)
+            getLogger("probfoil").warning(
+                "Exception\t\t\t\t\t\t: %s" % approximate_expression
+            )
             return None
-
-if __name__ == '__main__':
-    main()

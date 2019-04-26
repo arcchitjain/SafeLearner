@@ -1,9 +1,7 @@
-import algorithm
-import query_exp
-from sympy import symbols
+from symbolic_slimshot import algorithm, query_exp
+
 
 class IndependentProject(object):
-
     def __init__(self, query, disjunctiveQuery, separator, init=True):
         self.query = query.copy()
         self.disjunctiveQuery = disjunctiveQuery
@@ -34,8 +32,14 @@ class IndependentProject(object):
         # constraint everywhere
 
         representativeSeparator = self.separator[0]
-        if representativeSeparator.isInequality() and representativeSeparator.getInequalityConstraint().isGeneric():
-            self.replacementVal = "generic_%s" % representativeSeparator.getInequalityConstraint().getConstant()
+        if (
+            representativeSeparator.isInequality()
+            and representativeSeparator.getInequalityConstraint().isGeneric()
+        ):
+            self.replacementVal = (
+                "generic_%s"
+                % representativeSeparator.getInequalityConstraint().getConstant()
+            )
         else:
             self.replacementVal = algorithm.attCounter()
 
@@ -57,48 +61,63 @@ class IndependentProject(object):
             self.childDNF = d
 
         if init:
-            self.child = algorithm.getSafeOpenQueryPlanNaive(self.childDNF)
-            symbolString = str(algorithm.dom) + "_" + str(representativeSeparator)
-            self.lam = symbols(symbolString)* self.child.lam
+            self.child = algorithm.getSafeQueryPlan(self.childDNF)
         else:
             self.child = None
 
     def generateSQL_DNF(self, separatorSubs=None):
-        #print separatorSubs
+        # print "Generating sql for universal quantifier"
         if separatorSubs is None:
             separatorSubs = []
         replacementVal = algorithm.attCounter()
 
         groupBy = ["c%d" % i for (i, x) in separatorSubs]
         if len(groupBy):
-            groupByString = 'group by ' + ', '.join(groupBy)
+            groupByString = "group by " + ", ".join(groupBy)
         else:
-            groupByString = ''
-        selectString = ', '.join(groupBy + ["l_ior_n(COALESCE(pUse,0))"])
+            groupByString = ""
+        selectString = ", ".join(groupBy + ["ior(COALESCE(pUse,0))"])
         separatorSubs.append((self.replacementVal, self.separator))
 
         childSQL = self.child.generateSQL_DNF(separatorSubs[:])
-        sql = "\n select %s as pUse from (%s\n) as q%d \n %s \n" % (selectString, childSQL, algorithm.counter(), groupByString)
+        sql = "\n -- independent project \n select %s as pUse from (%s) as q%d %s " % (
+            selectString,
+            childSQL,
+            algorithm.counter(),
+            groupByString,
+        )
 
         if self.child.hasGenericConstant():
             genericConstantStr = self.child.getGenericConstantStr()
             self.genericConstantStr = genericConstantStr
             groupBy.append(genericConstantStr)
-            groupByString = 'group by ' + ', '.join(groupBy)
-            sql = "\n select %s, %s as pUse from (%s\n) as q%d \n %s \n" % (genericConstantStr, selectString, childSQL, algorithm.counter(), groupByString)
+            groupByString = "group by " + ", ".join(groupBy)
+            sql = (
+                "\n -- independent project \n select %s, %s as pUse from (%s) as q%d %s "
+                % (
+                    genericConstantStr,
+                    selectString,
+                    childSQL,
+                    algorithm.counter(),
+                    groupByString,
+                )
+            )
         else:
-            #Ground Tuple: self.child.groundTuple.name
-            add_line = ','.join(groupBy + ["pUse + <%s> * (<%s_%s> - ct ) as pUse" % (self.child.lam, algorithm.dom, separatorSubs[-1][1][0])])
-            sql = "\n select %s from (\n select %s as pUse, count(*) as ct from (%s\n) as q%d \n %s \n) as q%d \n" % (add_line, selectString, childSQL, algorithm.counter(), groupByString, algorithm.counter())
-
+            sql = (
+                "\n -- independent project \n select %s as pUse from (%s) as q%d %s "
+                % (selectString, childSQL, algorithm.counter(), groupByString)
+            )
+        # print sql
         return sql
 
     def isInequalityVar(self, separatorVar):
         return separatorVar[0].isInequality()
 
     def isGenericInequalityVar(self, separatorVar):
-        return self.isInequalityVar(separatorVar) and self.separator[
-            0].getInequalityConstraint().isGeneric()
+        return (
+            self.isInequalityVar(separatorVar)
+            and self.separator[0].getInequalityConstraint().isGeneric()
+        )
 
     def generateSQL_CNF(self, params):
         replacementVal = algorithm.attCounter()
@@ -107,25 +126,25 @@ class IndependentProject(object):
         self.trueOnMissing = self.child.trueOnMissing
 
         self.genericIdentifiers = self.child.genericIdentifiers.copy()
-        subqueryAlias = 'q%d' % algorithm.counter()
+        subqueryAlias = "q%d" % algorithm.counter()
 
         # this steps replaces a universally (\forall) quantified variable
         # with a product - if some tuples can be missing, we need to count
         # and invalidate any products with too few terms (missing terms =
         # false terms)
-        if params['missingTuples']:
+        if params["missingTuples"]:
 
             # for webkb
             if self.effectiveDomainSize:
                 effectiveDomainSize = self.effectiveDomainSize
             else:
-                effectiveDomainSize = params['domainSize']
+                effectiveDomainSize = params["domainSize"]
             if self.isInequalityVar(self.separator):
                 effectiveDomainSize = effectiveDomainSize - 1
 
         groupByAttributes = []
         selectAttributes = []
-        joinClause = ''
+        joinClause = ""
 
         # take care of generic constants, which have been projected out but
         # must still be "bubbled up" to the previous level
@@ -135,9 +154,12 @@ class IndependentProject(object):
 
         if self.isGenericInequalityVar(self.separator):
             genericConstantIdentifier = "sep_var_%s" % str(self.replacementVal)
-            selectAttributes.append('A.v0 as %s' % genericConstantIdentifier)
-            joinClause = ', A WHERE A.v0 != %s.%s' % (subqueryAlias, genericConstantIdentifier)
-            groupByAttributes.append('A.v0')
+            selectAttributes.append("A.v0 as %s" % genericConstantIdentifier)
+            joinClause = ", A WHERE A.v0 != %s.%s" % (
+                subqueryAlias,
+                genericConstantIdentifier,
+            )
+            groupByAttributes.append("A.v0")
             self.genericIdentifiers.add(genericConstantIdentifier)
 
         for storedReplacementVal in self.usedSeparatorVars:
@@ -145,39 +167,59 @@ class IndependentProject(object):
             groupByAttributes.append("sep_var_%s" % str(storedReplacementVal))
 
         if len(groupByAttributes):
-            groupByClause = 'group by ' + (', ' . join(groupByAttributes))
+            groupByClause = "group by " + (", ".join(groupByAttributes))
         else:
-            groupByClause = ''
+            groupByClause = ""
 
-        havingClause = ''
-        if params['useLog']:
+        havingClause = ""
+        if params["useLog"]:
             if self.trueOnMissing:
-                if params['useNull']:
-                    selectAttributes.append('CASE WHEN COUNT(*) = COUNT(pUse) THEN SUM(pUse) ELSE NULL END AS pUse')
+                if params["useNull"]:
+                    selectAttributes.append(
+                        "CASE WHEN COUNT(*) = COUNT(pUse) THEN SUM(pUse) ELSE NULL END AS pUse"
+                    )
                     # if the result is empty and trueOnMissing=True, we should
                     # return empty set (true)
-                    havingClause = ' HAVING COUNT(*) > 0'
+                    havingClause = " HAVING COUNT(*) > 0"
                 else:
-                    selectAttributes.append('SUM(pUse) AS pUse')
+                    selectAttributes.append("SUM(pUse) AS pUse")
             else:
-                if params['useNull']:
-                    if params['missingTuples']:
-                        selectAttributes.append('CASE WHEN COUNT(*) = COUNT(pUse) and COUNT(*) = %d THEN SUM(pUse) ELSE NULL END AS pUse' % effectiveDomainSize)
+                if params["useNull"]:
+                    if params["missingTuples"]:
+                        selectAttributes.append(
+                            "CASE WHEN COUNT(*) = COUNT(pUse) and COUNT(*) = %d THEN SUM(pUse) ELSE NULL END AS pUse"
+                            % effectiveDomainSize
+                        )
                     else:
-                        selectAttributes.append('CASE WHEN COUNT(*) = COUNT(pUse) THEN SUM(pUse) ELSE NULL END AS pUse')
+                        selectAttributes.append(
+                            "CASE WHEN COUNT(*) = COUNT(pUse) THEN SUM(pUse) ELSE NULL END AS pUse"
+                        )
                 else:
-                    if params['missingTuples']:
-                        selectAttributes.append("CASE WHEN COUNT(*) = %d THEN SUM(pUse) ELSE '-Infinity' END AS pUse" % effectiveDomainSize)
+                    if params["missingTuples"]:
+                        selectAttributes.append(
+                            "CASE WHEN COUNT(*) = %d THEN SUM(pUse) ELSE '-Infinity' END AS pUse"
+                            % effectiveDomainSize
+                        )
                     else:
-                        selectAttributes.append('SUM(pUse) AS pUse')
+                        selectAttributes.append("SUM(pUse) AS pUse")
         else:
-            if not self.trueOnMissing and params['missingTuples']:
-                selectAttributes.append("CASE WHEN COUNT(*) = %d THEN prod_double(pUse) ELSE 0 END AS pUse" % effectiveDomainSize)
+            if not self.trueOnMissing and params["missingTuples"]:
+                selectAttributes.append(
+                    "CASE WHEN COUNT(*) = %d THEN prod_double(pUse) ELSE 0 END AS pUse"
+                    % effectiveDomainSize
+                )
             else:
-                selectAttributes.append('prod_double(pUse) AS pUse')
-        selectClause = ', '.join(selectAttributes)
+                selectAttributes.append("prod_double(pUse) AS pUse")
+        selectClause = ", ".join(selectAttributes)
 
-        sql = "\n select %s from (%s) as %s%s %s %s" % (selectClause, childSQL, subqueryAlias, joinClause, groupByClause, havingClause)
+        sql = "\n -- independent project \n select %s from (%s) as %s%s %s %s" % (
+            selectClause,
+            childSQL,
+            subqueryAlias,
+            joinClause,
+            groupByClause,
+            havingClause,
+        )
         return sql
 
     def usesSeparator(self, sep):
@@ -190,8 +232,14 @@ class IndependentProject(object):
         return newId
 
     def getLabel(self):
-        separatorStrs = map(lambda x: x.getVar(), self.separator)
-        return "Independent Project: %s\n%s" % (', '.join(separatorStrs), self.query.prettyPrintCNF())
+        separatorStrs = list(map(lambda x: x.getVar(), self.separator))
+        return "Independent Project: %s\n%s" % (
+            ", ".join(separatorStrs),
+            self.query.prettyPrintCNF(),
+        )
 
     def __repr__(self):
-        return "Independent Project (true on missing = %s): %s" % (self.trueOnMissing, self.child.__repr__())
+        return "Independent Project (true on missing = %s): %s" % (
+            self.trueOnMissing,
+            self.child.__repr__(),
+        )

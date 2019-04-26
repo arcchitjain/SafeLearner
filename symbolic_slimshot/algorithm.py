@@ -2,21 +2,20 @@ import itertools
 import nltk
 import sqlparse
 
-import ground_tup
-import ground_tup_open
-import incl_excl
-import incl_excl_open
-import ind_join
-import ind_join_open
-import ind_proj
-import ind_proj_open
-import ind_union
-import ind_union_open
-import query_exp
-#from sympy import symbols
+from symbolic_slimshot import (
+    ground_tup,
+    ground_tup_open,
+    incl_excl,
+    incl_excl_open,
+    ind_join,
+    ind_join_open,
+    ind_proj,
+    ind_proj_open,
+    ind_union,
+    ind_union_open,
+    query_exp,
+)
 
-#lam = symbols('x')
-#dom=0
 
 def getSafeOpenQueryPlanNaive(dnf):
     if isinstance(dnf, query_exp.DNF):
@@ -45,9 +44,10 @@ def getSafeOpenQueryPlanNaive(dnf):
             if len(x):
                 termList.append(
                     query_exp.CNF(
-                        [query_exp.DisjunctiveQuery(
-                            [c.copy() for d in x for c in d.getComponents()]
-                        )
+                        [
+                            query_exp.DisjunctiveQuery(
+                                [c.copy() for d in x for c in d.getComponents()]
+                            )
                         ]
                     )
                 )
@@ -62,10 +62,8 @@ def getSafeOpenQueryPlanNaive(dnf):
                     continue
                 p9termI = lexpr(termList[i].toProver9())
                 p9termJ = lexpr(termList[j].toProver9())
-                proverItoJ = nltk.Prover9Command(
-                    p9termJ, assumptions=[p9termI])
-                proverJtoI = nltk.Prover9Command(
-                    p9termI, assumptions=[p9termJ])
+                proverItoJ = nltk.Prover9Command(p9termJ, assumptions=[p9termI])
+                proverJtoI = nltk.Prover9Command(p9termI, assumptions=[p9termJ])
                 if proverItoJ.prove() and proverJtoI.prove():
                     coeffList[i] += coeffList[j]
                     coeffList[j] = 0
@@ -86,9 +84,9 @@ def getSafeOpenQueryPlanNaive(dnf):
     # independent union
     if len(symbolComponents) > 1:
         termList = [
-            query_exp.CNF(
-                [query_exp.DisjunctiveQuery(list(s))]
-            ) for s in symbolComponents]
+            query_exp.CNF([query_exp.DisjunctiveQuery(list(s))])
+            for s in symbolComponents
+        ]
 
         return ind_union_open.IndependentUnion(cnf, termList)
 
@@ -122,13 +120,21 @@ def getSafeOpenQueryPlanNaive(dnf):
             p9component = lexpr(proposedComponent.toProver9())
             prover = nltk.Prover9Command(p9d, assumptions=[p9component])
             componentFalse = nltk.Prover9Command(
-                lexpr(r'False'), assumptions=[p9component])
-            if (prover.prove() and not componentFalse.prove() and not any(
-                [proposedComponent.containedIn(c) for c in d.getComponents()]
-            )):
+                lexpr(r"False"), assumptions=[p9component]
+            )
+            if (
+                prover.prove()
+                and not componentFalse.prove()
+                and not any(
+                    [proposedComponent.containedIn(c) for c in d.getComponents()]
+                )
+            ):
                 newConjQueries = []
-                newConjQueries.append(query_exp.ConjunctiveQuery(
-                    query_exp.decomposeComponent(proposedComponent)))
+                newConjQueries.append(
+                    query_exp.ConjunctiveQuery(
+                        query_exp.decomposeComponent(proposedComponent)
+                    )
+                )
                 for c in d.getComponents():
                     newConjQueries.append(query_exp.ConjunctiveQuery([c]))
                 newDNF = query_exp.DNF(newConjQueries)
@@ -163,9 +169,10 @@ def getSafeQueryPlan(dnf):
             if len(x):
                 termList.append(
                     query_exp.CNF(
-                        [query_exp.DisjunctiveQuery(
-                            [c.copy() for d in x for c in d.getComponents()]
-                        )
+                        [
+                            query_exp.DisjunctiveQuery(
+                                [c.copy() for d in x for c in d.getComponents()]
+                            )
                         ]
                     )
                 )
@@ -180,10 +187,8 @@ def getSafeQueryPlan(dnf):
                     continue
                 p9termI = lexpr(termList[i].toProver9())
                 p9termJ = lexpr(termList[j].toProver9())
-                proverItoJ = nltk.Prover9Command(
-                    p9termJ, assumptions=[p9termI])
-                proverJtoI = nltk.Prover9Command(
-                    p9termI, assumptions=[p9termJ])
+                proverItoJ = nltk.Prover9Command(p9termJ, assumptions=[p9termI])
+                proverJtoI = nltk.Prover9Command(p9termI, assumptions=[p9termJ])
                 if proverItoJ.prove() and proverJtoI.prove():
                     coeffList[i] += coeffList[j]
                     coeffList[j] = 0
@@ -204,9 +209,9 @@ def getSafeQueryPlan(dnf):
     # independent union
     if len(symbolComponents) > 1:
         termList = [
-            query_exp.CNF(
-                [query_exp.DisjunctiveQuery(list(s))]
-            ) for s in symbolComponents]
+            query_exp.CNF([query_exp.DisjunctiveQuery(list(s))])
+            for s in symbolComponents
+        ]
 
         return ind_union.IndependentUnion(cnf, termList)
 
@@ -224,7 +229,6 @@ def getSafeQueryPlan(dnf):
     lexpr = nltk.Expression.fromstring
     p9d = lexpr(d.toProver9())
 
-
     for x in powerset(d.getRelations()):
         if len(x) > 1:
             proposedComponent = query_exp.Component(x)
@@ -241,13 +245,21 @@ def getSafeQueryPlan(dnf):
             p9component = lexpr(proposedComponent.toProver9())
             prover = nltk.Prover9Command(p9d, assumptions=[p9component])
             componentFalse = nltk.Prover9Command(
-                lexpr(r'False'), assumptions=[p9component])
-            if (prover.prove() and not componentFalse.prove() and not any(
-                [proposedComponent.containedIn(c) for c in d.getComponents()]
-            )):
+                lexpr(r"False"), assumptions=[p9component]
+            )
+            if (
+                prover.prove()
+                and not componentFalse.prove()
+                and not any(
+                    [proposedComponent.containedIn(c) for c in d.getComponents()]
+                )
+            ):
                 newConjQueries = []
-                newConjQueries.append(query_exp.ConjunctiveQuery(
-                    query_exp.decomposeComponent(proposedComponent)))
+                newConjQueries.append(
+                    query_exp.ConjunctiveQuery(
+                        query_exp.decomposeComponent(proposedComponent)
+                    )
+                )
                 for c in d.getComponents():
                     newConjQueries.append(query_exp.ConjunctiveQuery([c]))
                 newDNF = query_exp.DNF(newConjQueries)
@@ -283,7 +295,7 @@ def findSafeResidualQuery(dnf):
 
 
 def getPrettySQL(sql):
-    return sqlparse.format(sql,  reindent=True, keyword_case='upper')
+    return sqlparse.format(sql, reindent=True, keyword_case="upper")
 
 
 class UnsafeException(Exception):
@@ -294,7 +306,8 @@ def powerset(iterable):
     "powerset([1,2,3]) --> () (1,) (2,) (3,) (1,2) (1,3) (2,3) (1,2,3)"
     s = list(iterable)
     return itertools.chain.from_iterable(
-        itertools.combinations(s, r) for r in range(len(s) + 1))
+        itertools.combinations(s, r) for r in range(len(s) + 1)
+    )
 
 
 def resetCounters():
@@ -305,10 +318,14 @@ def resetCounters():
 def counter():
     counter.counter += 1
     return counter.counter
+
+
 counter.counter = 0
 
 
 def attCounter():
     attCounter.counter += 1
     return attCounter.counter
+
+
 attCounter.counter = 0

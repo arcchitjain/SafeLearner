@@ -1,3 +1,7 @@
+from symbolic_slimshot import algorithm
+from sympy import ln, symbols
+
+
 class GroundTuple(object):
     # ground tuples are leaf nodes
     nodes = []
@@ -12,6 +16,10 @@ class GroundTuple(object):
         self.genericIdentifiers = set()
         # True means that missing tuples in the output count as True
         self.trueOnMissing = False
+
+        # Open world value
+        symbolString = str(algorithm.lam) + "_" + groundTuple.name
+        self.lam = ln(1 - symbols(symbolString))
 
         if init:
             # this call must be last for initialization purposes
@@ -40,10 +48,10 @@ class GroundTuple(object):
             alwaysTrue = False
 
         if rel.isSampled():
-            pColumn = "p"
+            pColumn = "ln(1-p)"
             self.isSampled = True
         else:
-            pColumn = "p"
+            pColumn = "ln(1-p)"
 
         if rel.isNegated():
             pColumn = "(1 - %s)" % pColumn
@@ -54,18 +62,22 @@ class GroundTuple(object):
         selectAttributes = []
         relArgs = rel.getArguments()
 
+        # Going to not worry about constraints for the purposes of open world stuff, should never come up
         if rel.getConstraints():
             # may have some equality constraints and some variable arguments
             # (None or not equals x)
             tablePos = 0
             argPos = 0
             for constant in rel.getConstraints():
-                if (not constant or
-                        (type(constant) == int and constant < 0)
-                        or constant == '-c'):
+                if (
+                    not constant
+                    or (type(constant) == int and constant < 0)
+                    or constant == "-c"
+                ):
                     selectAttributes.append(
-                        "<%s>.v%d as c%d" %
-                        (relSym, tablePos, relArgs[argPos].getReplacement()))
+                        "<%s>.v%d as c%d"
+                        % (relSym, tablePos, relArgs[argPos].getReplacement())
+                    )
                     argPos += 1
                 tablePos += 1
         else:
@@ -76,20 +88,20 @@ class GroundTuple(object):
                     raise Exception("A ground tuple can't have constants!")
                 else:
                     selectAttributes.append(
-                        "<%s>.v%d as c%d" %
-                        (relSym, i, relArgs[i].getReplacement()))
+                        "<%s>.v%d as c%d" % (relSym, i, relArgs[i].getReplacement())
+                    )
 
         whereConditions = []
         extraSelectAttribute = ""
         whereExtraTableStr = ""
         for i, constant in enumerate(rel.getConstraints()):
-            if constant == 'c':
+            if constant == "c":
                 extraSelectAttribute = "A.v0 as cTemplate"
                 self.genericConstantStr = "cTemplate"
                 whereExtraTableStr = ", A"
                 # necessary for S[c,-c](x), e.g.
                 whereConditions.append("<%s>.v%d = A.v0" % (relSym, i))
-            elif constant == '-c':
+            elif constant == "-c":
                 extraSelectAttribute = "A.v0 as cTemplate"
                 self.genericConstantStr = "cTemplate"
                 whereExtraTableStr = ", A"
@@ -99,38 +111,45 @@ class GroundTuple(object):
             elif constant > 0:
                 whereConditions.append("<%s>.v%d = %d" % (relSym, i, constant))
             else:
-                whereConditions.append(
-                    "<%s>.v%d != %d" % (relSym, i, -1 * constant))
+                whereConditions.append("<%s>.v%d != %d" % (relSym, i, -1 * constant))
 
         if len(extraSelectAttribute):
             selectAttributes.append(extraSelectAttribute)
 
         if len(whereConditions):
-            whereClause = ' where ' + (' and ' . join(whereConditions))
+            whereClause = " where " + (" and ".join(whereConditions))
         else:
-            whereClause = ''
+            whereClause = ""
 
         # no variables in original atom, just constants w/ equality
         if rel.isSampled() and not len(relArgs):
             selectClauseBase = "%s as pUse" % pColumn
             if len(selectAttributes):
-                selectClause = "%s, %s" % (', '.join(selectAttributes), selectClauseBase)
+                selectClause = "%s, %s" % (
+                    ", ".join(selectAttributes),
+                    selectClauseBase,
+                )
             else:
                 selectClause = selectClauseBase
         else:
             if len(selectAttributes):
-                selectClause = "%s, %s as pUse" % (', '.join(selectAttributes), pColumn)
+                selectClause = "%s, %s as pUse" % (", ".join(selectAttributes), pColumn)
             else:
                 selectClause = "%s as pUse" % pColumn
 
-        sql = "\n -- ground tuple \n select %s from <%s> %s %s" % (selectClause, relSym, whereExtraTableStr, whereClause)
+        sql = "\n select %s from <%s> %s %s" % (
+            selectClause,
+            relSym,
+            whereExtraTableStr,
+            whereClause,
+        )
         return sql
 
     # depending on parameters, the generated SQL may denote 0 with NULL
     # or -Infinity
     def getZeroGivenParams(self, params):
-        if params['useLog']:
-            if params['useNull']:
+        if params["useLog"]:
+            if params["useNull"]:
                 return "NULL"
             else:
                 return "'-Infinity'"
@@ -138,7 +157,7 @@ class GroundTuple(object):
             return "0"
 
     def getOneGivenParams(self, params):
-        if params['useLog']:
+        if params["useLog"]:
             return "0"  # logarithm of one is zero
         else:
             return "1"
@@ -161,7 +180,7 @@ class GroundTuple(object):
                 pColumn = self.getZeroGivenParams(params)
         else:
             if rel.isSampled():
-                if params['missingTuples']:
+                if params["missingTuples"]:
                     pColumn = "pSample"
                     relSym = "%sNot" % rel.getName()
                 else:
@@ -174,9 +193,12 @@ class GroundTuple(object):
             if not positiveAtom:
                 pColumn = "1-%s" % pColumn
 
-            if params['useLog']:
+            if params["useLog"]:
                 pColumn = "CASE WHEN %s > 0 THEN ln(%s) ELSE %s END" % (
-                    pColumn, pColumn, self.getZeroGivenParams(params))
+                    pColumn,
+                    pColumn,
+                    self.getZeroGivenParams(params),
+                )
 
         # build up the SELECT part of the query
         selectAttributes = []
@@ -188,19 +210,23 @@ class GroundTuple(object):
                 # if it is a non-generic equality constraint, e.g., =5,
                 # don't include in select clause otherwise, include it here
                 if constraint.isWildcard() or constraint.isInequality():
-                    selectAttributes.append("%s.v%d as sep_var_%s" % (
-                        relSym, tableColumn,
-                        str(
-                            rel.getArguments()[argumentIndex].getReplacement()
-                        )))
+                    selectAttributes.append(
+                        "%s.v%d as sep_var_%s"
+                        % (
+                            relSym,
+                            tableColumn,
+                            str(rel.getArguments()[argumentIndex].getReplacement()),
+                        )
+                    )
                     argumentIndex += 1
                 elif constraint.isEquality() and constraint.isGeneric():
                     genericConstantsStr = "sep_var_generic_%s" % (
-                        constraint.getConstant())
+                        constraint.getConstant()
+                    )
                     self.genericIdentifiers.add(genericConstantsStr)
                     selectAttributes.append(
-                        "%s.v%d as %s" %
-                        (relSym, tableColumn, genericConstantsStr))
+                        "%s.v%d as %s" % (relSym, tableColumn, genericConstantsStr)
+                    )
         else:  # no constraints, just variables (now separator variables)
             for i in range(len(rel.getArguments())):
                 if rel.isVariable(i):
@@ -208,30 +234,30 @@ class GroundTuple(object):
                 elif rel.isConstant(i):
                     raise Exception("A ground tuple can't have constants!")
                 else:
-                    selectAttributes.append("%s.v%d as sep_var_%s" % (
-                        relSym, i,
-                        str(rel.getArguments()[i].getReplacement())))
+                    selectAttributes.append(
+                        "%s.v%d as sep_var_%s"
+                        % (relSym, i, str(rel.getArguments()[i].getReplacement()))
+                    )
         selectAttributes.append("%s as pUse" % pColumn)
-        selectClause = ', '.join(selectAttributes)
+        selectClause = ", ".join(selectAttributes)
 
         # build up the WHERE part of the query
         whereConditions = []
         for tableColumn, constraint in enumerate(rel.getConstraints()):
             if constraint.isEquality() and not constraint.isGeneric():
                 whereConditions.append(
-                    "%s.v%d = %d" %
-                    (relSym, tableColumn, constraint.getConstant()))
+                    "%s.v%d = %d" % (relSym, tableColumn, constraint.getConstant())
+                )
             elif constraint.isInequality() and not constraint.isGeneric():
                 whereConditions.append(
-                    "%s.v%d != %d" %
-                    (relSym, tableColumn, constraint.getConstant()))
+                    "%s.v%d != %d" % (relSym, tableColumn, constraint.getConstant())
+                )
         if len(whereConditions):
-            whereClause = 'where ' + (' and ' . join(whereConditions))
+            whereClause = "where " + (" and ".join(whereConditions))
         else:
-            whereClause = ''
+            whereClause = ""
 
-        sql = "\n -- ground tuple \n select %s from %s %s" % \
-            (selectClause, relSym, whereClause)
+        sql = "\n select %s from %s %s" % (selectClause, relSym, whereClause)
         return sql
 
     def usesSeparator(self, sep):

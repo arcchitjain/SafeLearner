@@ -1,9 +1,8 @@
-import algorithm
+from symbolic_slimshot import algorithm
 import itertools
-from sympy import ln, E
+
 
 class InclusionExclusion(object):
-
     def __init__(self, query, subqueries, coeffs, init=True):
         self.query = query
         self.subqueries = subqueries
@@ -30,28 +29,14 @@ class InclusionExclusion(object):
     def getSafeQueryPlan(self, init=True):
         self.usedSeparatorVars = self.query.getUsedSeparators()
         self.formattedUsedSeparators = [
-            self.formatSeparatorVariable(sep)
-            for sep in self.usedSeparatorVars]
+            self.formatSeparatorVariable(sep) for sep in self.usedSeparatorVars
+        ]
 
         self.children = []
         if init:
             for ind, term in enumerate(self.subqueries):
-                plan = algorithm.getSafeOpenQueryPlanNaive(term)
+                plan = algorithm.getSafeQueryPlan(term)
                 self.children.append(plan)
-
-            # Set our lambda
-            self.lam = 0
-            for x, c in sorted(zip(self.children, self.coeffs),key=lambda x:x[1]):
-                #print self.lam
-                if c == -1:
-                    #self.lam = scipy.misc.logsumexp([self.lam, x.lam, 0], b=[1,1,-1])
-                    self.lam = ln(E**(self.lam) + E**(x.lam) - 1)
-                    
-                    #self.lam = reduce(lambda x,y: scipy.misc.logsumexp([x,y,x+y], b=[1,1,-1]), [x.lam for x in self.children])
-                    #self.lam = reduce(lambda x,y: ln(E**(x) + E**(y) - E**(x+y)), [x.lam for x in self.children])
-                elif c == 1:
-                    #self.lam = scipy.misc.logsumexp([self.lam, x.lam, 0], b=[1,-1,1])
-                    self.lam = ln(E**(self.lam) - E**(x.lam) + 1)
 
     def generateSQL_DNF(self, separatorSubs=None):
         if separatorSubs is None:
@@ -76,35 +61,48 @@ class InclusionExclusion(object):
 
         if self.hasGenericConstant():
             selectAtts.append(
-                "q%d.%s" % (genericConstantStrIdent, self.genericConstantStr))
+                "q%d.%s" % (genericConstantStrIdent, self.genericConstantStr)
+            )
 
-        subqueryPairs = [pair for pair in itertools.product(
-            counters, counters) if pair[0] < pair[1]]
+        subqueryPairs = [
+            pair for pair in itertools.product(counters, counters) if pair[0] < pair[1]
+        ]
 
         joinConditions = []
         for (j1, j2) in subqueryPairs:
-            if (j1 in counterIdentToGenericConstantStr and
-                    j2 in counterIdentToGenericConstantStr):
+            if (
+                j1 in counterIdentToGenericConstantStr
+                and j2 in counterIdentToGenericConstantStr
+            ):
                 joinConditions.append(
-                    "q%d.%s = q%d.%s" %
-                    (j1, counterIdentToGenericConstantStr[j1],
-                     j2, counterIdentToGenericConstantStr[j2]))
+                    "q%d.%s = q%d.%s"
+                    % (
+                        j1,
+                        counterIdentToGenericConstantStr[j1],
+                        j2,
+                        counterIdentToGenericConstantStr[j2],
+                    )
+                )
         if len(joinConditions):
-            joinCondition = "where %s" % ' and '.join(joinConditions)
+            joinCondition = "where %s" % " and ".join(joinConditions)
         else:
             joinCondition = ""
 
         subqueries = []
         previousIdent = False
         for (sql, ident) in results:
-            newSubquery = "(%s\n) as q%d \n" % (sql, ident)
+            newSubquery = "(%s) as q%d" % (sql, ident)
             if previousIdent:
                 if len(separatorSubs):
                     condition = "ON %s" % " and ".join(
-                        ["q%d.c%d = q%d.c%d" % (previousIdent, i, ident, i)
-                         for(i, x) in separatorSubs])
+                        [
+                            "q%d.c%d = q%d.c%d" % (previousIdent, i, ident, i)
+                            for (i, x) in separatorSubs
+                        ]
+                    )
                     subqueries.append(
-                        "FULL OUTER JOIN %s %s" % (newSubquery, condition))
+                        "FULL OUTER JOIN %s %s" % (newSubquery, condition)
+                    )
                 else:
                     subqueries.append(newSubquery)
             else:
@@ -116,44 +114,35 @@ class InclusionExclusion(object):
         else:
             subqueryString = ", ".join(subqueries)
 
-        red_list = [(self.coeffs[ind],"q%d.pUse" % i) for ind, i in enumerate(counters)]
-        red_list = sorted(red_list, key=lambda x:x[0], reverse=True)
-
-        # recursive function for creating the correct sql code
-        def collapse_func(red_list,ind=None):
-            if ind is None:
-                ind = len(red_list) - 1
-            if ind == 0:
-                if red_list[ind][0] == -1:
-                    return "l1sum(0," + red_list[ind][1] + ")"
-                elif red_list[ind][0] == 1:
-                    return "l1diff(0," + red_list[ind][1] + ")"
-            if red_list[ind][0] == -1:
-                return "l1sum(" + collapse_func(red_list, ind - 1) + "," + red_list[ind][1] + ")"
-            elif red_list[ind][0] == 1:
-                return "l1diff(" + collapse_func(red_list, ind - 1) + "," + red_list[ind][1] + ")"
-        pString = collapse_func(red_list)
-        # pString = ' + '.join(["( -1 * %d * q%d.pUse)" %
-        #                       (self.coeffs[ind],
-        #                        i) for ind, i in enumerate(counters)])
+        pString = " + ".join(
+            [
+                "( -1 * %d * q%d.pUse)" % (self.coeffs[ind], i)
+                for ind, i in enumerate(counters)
+            ]
+        )
 
         for (i, x) in separatorSubs:
-            selectAtts.append("COALESCE(%s) as c%d" % (
-                ", ".join(["q%d.c%d" % (ident, i) for ident in counters]), i))
-        attString = ', '.join(selectAtts)
+            selectAtts.append(
+                "COALESCE(%s) as c%d"
+                % (", ".join(["q%d.c%d" % (ident, i) for ident in counters]), i)
+            )
+        attString = ", ".join(selectAtts)
 
         if attString:
-            selectString = '%s, %s as pUse' % (attString, pString)
+            selectString = "%s, %s as pUse" % (attString, pString)
         else:
-            selectString = '%s as pUse' % (pString)
+            selectString = "%s as pUse" % (pString)
 
-        sql = "\n select %s from %s %s" % (
-            selectString, subqueryString, joinCondition)
+        sql = "\n -- inclusion/exclusion \n select %s from %s %s" % (
+            selectString,
+            subqueryString,
+            joinCondition,
+        )
         return sql
 
     def generateSQL_CNF(self, params):
-        if params['useLog']:
-            if params['useNull']:
+        if params["useLog"]:
+            if params["useNull"]:
                 defaultValue = "NULL"
             else:
                 defaultValue = "'-Infinity'"
@@ -209,67 +198,64 @@ class InclusionExclusion(object):
             tableAliasToCoeffMap[tableAlias] = self.coeffs[i]
 
             childGenericIdentifiers = child.genericIdentifiers.copy()
-            tableAliasToGenericIdentifiersMap[
-                tableAlias] = childGenericIdentifiers
+            tableAliasToGenericIdentifiersMap[tableAlias] = childGenericIdentifiers
             self.genericIdentifiers.update(childGenericIdentifiers)
 
             for genericIdentifier in childGenericIdentifiers:
                 if genericIdentifier in genericIdentifierToTableAliasMap:
-                    genericIdentifierToTableAliasMap[
-                        genericIdentifier].add(tableAlias)
+                    genericIdentifierToTableAliasMap[genericIdentifier].add(tableAlias)
                 else:
-                    genericIdentifierToTableAliasMap[
-                        genericIdentifier] = set([tableAlias])
+                    genericIdentifierToTableAliasMap[genericIdentifier] = set(
+                        [tableAlias]
+                    )
                 if genericIdentifier in variableToTableAliasMap:
                     variableToTableAliasMap[genericIdentifier].add(tableAlias)
                 else:
-                    variableToTableAliasMap[
-                        genericIdentifier] = set([tableAlias])
+                    variableToTableAliasMap[genericIdentifier] = set([tableAlias])
 
             usesAllSeparators = True
             tableAliasToUsedSeparatorsMap[tableAlias] = set()
             for usedSeparatorVariable in self.usedSeparatorVars:
                 if child.usesSeparator(usedSeparatorVariable):
                     formattedSeparator = self.formatSeparatorVariable(
-                        usedSeparatorVariable)
-                    tableAliasToUsedSeparatorsMap[
-                        tableAlias].add(formattedSeparator)
+                        usedSeparatorVariable
+                    )
+                    tableAliasToUsedSeparatorsMap[tableAlias].add(formattedSeparator)
                     if formattedSeparator in usedSeparatorToTableAliasMap:
-                        usedSeparatorToTableAliasMap[
-                            formattedSeparator].add(tableAlias)
+                        usedSeparatorToTableAliasMap[formattedSeparator].add(tableAlias)
                     else:
-                        usedSeparatorToTableAliasMap[
-                            formattedSeparator] = set([tableAlias])
+                        usedSeparatorToTableAliasMap[formattedSeparator] = set(
+                            [tableAlias]
+                        )
                     if formattedSeparator in variableToTableAliasMap:
-                        variableToTableAliasMap[
-                            formattedSeparator].add(tableAlias)
+                        variableToTableAliasMap[formattedSeparator].add(tableAlias)
                     else:
-                        variableToTableAliasMap[
-                            formattedSeparator] = set([tableAlias])
+                        variableToTableAliasMap[formattedSeparator] = set([tableAlias])
                 else:
                     usesAllSeparators = False
             if usesAllSeparators:
                 tableAliasesUsingAllSeparators.add(tableAlias)
 
-            tableAliasToVariablesMap[tableAlias] = \
-                tableAliasToUsedSeparatorsMap[tableAlias].\
-                union(childGenericIdentifiers)
+            tableAliasToVariablesMap[tableAlias] = tableAliasToUsedSeparatorsMap[
+                tableAlias
+            ].union(childGenericIdentifiers)
 
         if not tableAliasesUsingAllSeparators:
             raise Exception("No subquery containing all separators!")
 
         for tableAlias in tableAliases:
-            tableAliasToMissingGenericIdentifiersMap[tableAlias] = \
-                self.genericIdentifiers.difference(
-                tableAliasToGenericIdentifiersMap[tableAlias])
+            tableAliasToMissingGenericIdentifiersMap[
+                tableAlias
+            ] = self.genericIdentifiers.difference(
+                tableAliasToGenericIdentifiersMap[tableAlias]
+            )
             tableAliasToMissingSeparatorsMap[tableAlias] = set(
-                self.formattedUsedSeparators).difference(
-                tableAliasToUsedSeparatorsMap[tableAlias])
+                self.formattedUsedSeparators
+            ).difference(tableAliasToUsedSeparatorsMap[tableAlias])
             if tableAliasToMissingGenericIdentifiersMap[tableAlias]:
                 restOfTableAliases.add(tableAlias)
             elif tableAlias in tableAliasesUsingAllSeparators:
-                tableAliasesUsingAllSeparatorsAndGenericIdentifiers.add(
-                    tableAlias)
+                tableAliasesUsingAllSeparatorsAndGenericIdentifiers.add(tableAlias)
             else:
                 restOfTableAliases.add(tableAlias)
 
@@ -301,40 +287,43 @@ class InclusionExclusion(object):
                 # we need to cross product with the active domain to fill-in
                 # the missing generic vars
                 aliasForMissingGenericVarsTable = "%s_missing_generic_vars" % (
-                    tableAlias)
+                    tableAlias
+                )
                 withClauses.append(
-                    "%s as (%s)" %
-                    (aliasForMissingGenericVarsTable,
-                     tableAliasToSubquerySQLMap[tableAlias]))
+                    "%s as (%s)"
+                    % (
+                        aliasForMissingGenericVarsTable,
+                        tableAliasToSubquerySQLMap[tableAlias],
+                    )
+                )
                 index = 1
                 extraDomainSelectVars = []
                 extraDomainTables = []
-                for missingGenericVariable in \
-                        tableAliasToMissingGenericIdentifiersMap[tableAlias]:
+                for missingGenericVariable in tableAliasToMissingGenericIdentifiersMap[
+                    tableAlias
+                ]:
                     extraDomainAlias = "A_%d" % index
                     extraDomainSelectVars.append(
-                        "%s.v0 as %s" %
-                        (extraDomainAlias, missingGenericVariable))
+                        "%s.v0 as %s" % (extraDomainAlias, missingGenericVariable)
+                    )
                     extraDomainTables.append("A %s" % extraDomainAlias)
                     index += 1
                     # now this generic identifier is in the table alias
-                    tableAliasToVariablesMap[tableAlias].add(
-                        missingGenericVariable)
-                    variableToTableAliasMap[
-                        missingGenericVariable].add(tableAlias)
-                extraDomainSelectClause = "*, %s" % ", ".join(
-                    extraDomainSelectVars)
+                    tableAliasToVariablesMap[tableAlias].add(missingGenericVariable)
+                    variableToTableAliasMap[missingGenericVariable].add(tableAlias)
+                extraDomainSelectClause = "*, %s" % ", ".join(extraDomainSelectVars)
                 extraDomainFromClause = "%s, %s" % (
-                    aliasForMissingGenericVarsTable, ", ".join(
-                        extraDomainTables))
+                    aliasForMissingGenericVarsTable,
+                    ", ".join(extraDomainTables),
+                )
                 withClauses.append(
-                    "%s as (select %s from %s)" %
-                    (tableAlias, extraDomainSelectClause,
-                     extraDomainFromClause))
+                    "%s as (select %s from %s)"
+                    % (tableAlias, extraDomainSelectClause, extraDomainFromClause)
+                )
             else:
                 withClauses.append(
-                    "%s as (%s)" %
-                    (tableAlias, tableAliasToSubquerySQLMap[tableAlias]))
+                    "%s as (%s)" % (tableAlias, tableAliasToSubquerySQLMap[tableAlias])
+                )
 
         joinSubqueries = []
         previousAliases = []
@@ -348,18 +337,17 @@ class InclusionExclusion(object):
                     for previousAlias in previousAliases:
                         if variable in tableAliasToVariablesMap[previousAlias]:
                             joinConditions.append(
-                                "%s.%s = %s.%s" % (
-                                    tableAlias, variable,
-                                    previousAlias, variable
-                                ))
+                                "%s.%s = %s.%s"
+                                % (tableAlias, variable, previousAlias, variable)
+                            )
                             break
                 if joinConditions:
                     joinConditionsString = " AND ".join(joinConditions)
                 else:
                     joinConditionsString = "TRUE"
                 joinSubqueries.append(
-                    " INNER JOIN %s ON %s" %
-                    (tableAlias, joinConditionsString))
+                    " INNER JOIN %s ON %s" % (tableAlias, joinConditionsString)
+                )
             previousAliases.append(tableAlias)
 
         if previousAliases:
@@ -394,30 +382,32 @@ class InclusionExclusion(object):
                                 falseOnMissingJoinAliases.append(previousAlias)
                     if trueOnMissingJoinAlias:
                         joinConditions.append(
-                            "%s.%s = %s.%s" %
-                            (
-                                tableAlias, variable,
-                                trueOnMissingJoinAlias, variable
-                            ))
+                            "%s.%s = %s.%s"
+                            % (tableAlias, variable, trueOnMissingJoinAlias, variable)
+                        )
                     elif falseOnMissingJoinAliases:
                         falseOnMissingJoinAliasesString = ", ".join(
-                            ["%s.%s" % (alias, variable)
-                             for alias in falseOnMissingJoinAliases])
+                            [
+                                "%s.%s" % (alias, variable)
+                                for alias in falseOnMissingJoinAliases
+                            ]
+                        )
                         joinConditions.append(
-                            "%s.%s = COALESCE(%s)" %
-                            (tableAlias, variable,
-                             falseOnMissingJoinAliasesString))
+                            "%s.%s = COALESCE(%s)"
+                            % (tableAlias, variable, falseOnMissingJoinAliasesString)
+                        )
                 if joinConditions:
                     joinConditionsString = " AND ".join(joinConditions)
                 else:
                     joinConditionsString = "TRUE"
                 joinSubqueries.append(
-                    " %s JOIN %s ON %s" %
-                    (joinType, tableAlias, joinConditionsString))
+                    " %s JOIN %s ON %s" % (joinType, tableAlias, joinConditionsString)
+                )
             previousAliases.append(tableAlias)
 
         selectVariables = set(self.formattedUsedSeparators).union(
-            self.genericIdentifiers)
+            self.genericIdentifiers
+        )
         selectClause = []
         for variable in selectVariables:
             falseOnMissingTableAliases = []
@@ -433,71 +423,87 @@ class InclusionExclusion(object):
                 else:
                     falseOnMissingTableAliases.append(tableAlias)
             if trueOnMissingTableAlias:
-                selectClause.append(
-                    "%s.%s" % (trueOnMissingTableAlias, variable))
+                selectClause.append("%s.%s" % (trueOnMissingTableAlias, variable))
             else:
                 falseOnMissingTableAliasesString = ", ".join(
-                    ["%s.%s" % (alias, variable) for alias in
-                     falseOnMissingTableAliases])
+                    [
+                        "%s.%s" % (alias, variable)
+                        for alias in falseOnMissingTableAliases
+                    ]
+                )
                 selectClause.append(
-                    "COALESCE(%s) as %s" %
-                    (falseOnMissingTableAliasesString, variable))
+                    "COALESCE(%s) as %s" % (falseOnMissingTableAliasesString, variable)
+                )
 
-        if params['useLog']:
-            if params['useNull']:
+        if params["useLog"]:
+            if params["useNull"]:
                 pUseTemplate = "(1-exp(%%s.pUse))"
             else:
-                pUseTemplate = "CASE WHEN %s.pUse != '-Infinity'" + \
-                               "THEN 1-exp(%s.pUse) ELSE 1 END"
+                pUseTemplate = (
+                    "CASE WHEN %s.pUse != '-Infinity'"
+                    + "THEN 1-exp(%s.pUse) ELSE 1 END"
+                )
         else:
             pUseTemplate = "(1-%%s.pUse)"
         pSelect = []
         pCoeff = []
         for tableAlias in tableAliases:
             pCoeff.append(tableAliasToCoeffMap[tableAlias])
-            if params['useLog']:
-                if params['useNull']:
-                    pSelect.append("COALESCE(cast(exp(%s.pUse) as text), '0')" % tableAlias)
+            if params["useLog"]:
+                if params["useNull"]:
+                    pSelect.append("COALESCE(exp(%s.pUse), 0)" % tableAlias)
                 else:
                     pSelect.append(
-                        "COALESCE(CASE WHEN %s.pUse != " +
-                        "'-Infinity' THEN cast(exp(%s.pUse) as text) ELSE '0' END, '0')"
-                        % (tableAlias, tableAlias))
+                        "COALESCE(CASE WHEN %s.pUse != "
+                        + "'-Infinity' THEN exp(%s.pUse) ELSE 0 END, 0)"
+                        % (tableAlias, tableAlias)
+                    )
             else:
-                pSelect.append("COALESCE(cast(%s.pUse as text), '0')" % tableAlias)
+                pSelect.append("COALESCE(%s.pUse, 0)" % tableAlias)
 
         # for webkb
         if constantInSelectClause:
-            pUseString = "( %s + %d)" % (' + '.join(
-                ["( -1 * %d * %s)" %
-                 (pCoeff[i],
-                  pSelect[i]) for i in range(
-                     len(pSelect))]),
-                constantInSelectClause)
+            pUseString = "( %s + %d)" % (
+                " + ".join(
+                    [
+                        "( -1 * %d * %s)" % (pCoeff[i], pSelect[i])
+                        for i in range(len(pSelect))
+                    ]
+                ),
+                constantInSelectClause,
+            )
         else:
             pUseString = "( %s )" % (
-                ' + '.join(["( -1 * %d * %s)" %
-                            (pCoeff[i], pSelect[i])
-                            for i in range(len(pSelect))]))
+                " + ".join(
+                    [
+                        "( -1 * %d * %s)" % (pCoeff[i], pSelect[i])
+                        for i in range(len(pSelect))
+                    ]
+                )
+            )
 
-        if params['useLog']:
-            if params['useNull']:
+        if params["useLog"]:
+            if params["useNull"]:
                 selectClause.append(
-                    "CASE WHEN %s > 0 THEN ln(%s) ELSE NULL END AS pUse" %
-                    (pUseString, pUseString))
+                    "CASE WHEN %s > 0 THEN ln(%s) ELSE NULL END AS pUse"
+                    % (pUseString, pUseString)
+                )
             else:
                 selectClause.append(
                     "CASE WHEN %s > 0 THEN ln(%s) ELSE '-Infinity' END AS pUse"
-                    %
-                    (pUseString, pUseString))
+                    % (pUseString, pUseString)
+                )
         else:
             selectClause.append("%s as pUse" % pUseString)
 
         fromString = "".join(joinSubqueries)
         selectString = ", ".join(selectClause)
         withString = ",\n".join(withClauses)
-        joinSQL = "\nWITH %s\nselect %s from %s" % (
-            withString, selectString, fromString)
+        joinSQL = "\n -- inclusion/exclusion \nWITH %s\nselect %s from %s" % (
+            withString,
+            selectString,
+            fromString,
+        )
 
         return joinSQL
 
@@ -515,8 +521,7 @@ class InclusionExclusion(object):
                 else:
                     T.add_edge(newId, "false", label="%+d" % self.coeffs[i])
             else:
-                T.add_edge(newId, n.buildTree(T, self), label="%+d" %
-                           self.coeffs[i])
+                T.add_edge(newId, n.buildTree(T, self), label="%+d" % self.coeffs[i])
         return newId
 
     def getLabel(self):
@@ -524,6 +529,8 @@ class InclusionExclusion(object):
 
     def __repr__(self):
         return "Inclusion/Exclusion: %s" % " + ".join(
-            ["%+d * (%s)" % (self.coeffs[i],
-                             x.__repr__())
-             for(i, x) in enumerate(self.children)])
+            [
+                "%+d * (%s)" % (self.coeffs[i], x.__repr__())
+                for (i, x) in enumerate(self.children)
+            ]
+        )

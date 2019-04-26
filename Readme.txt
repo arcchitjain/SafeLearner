@@ -2,14 +2,14 @@ This is a documentation on how to install and use the codes for 'SafeLearner':
 
 1. Check Pre-Requisites:
 	a. Python 2.7: 
-		Essential: problog, psycopg2, ad, nltk (Prover9), sqlparse
-		Standard : logging, copy, sys, argparse, os, random, time, subprocess
-		Optional : scipy, pickle, numpy. 
+		Essential: problog, psycopg2, ad, nltk (Prover9), sqlparse, sympy
+		Standard : logging, copy, sys, argparse, os, random, time, subprocess, pickle
+		Optional : scipy, numpy.
 			You may need to comment out few lines of code or change some parameters, if you are running without optional packages.
 	b. Java
 	c. PostgreSQL (Preferably > 9.1)
 
-	>> Steos to install ‘Prover9’ - Python module for ‘nltk’
+	>> Steps to install ‘Prover9’ - Python module for ‘nltk’
 			This is a non-standard package which gets installed by the following steps:
 				i)  Download  LADR-2009-11A.tar.gz from https://www.cs.unm.edu/~mccune/prover9/download/
 				ii) Extract it files and run ‘make all’

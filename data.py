@@ -1,7 +1,6 @@
 
 from problog.engine import DefaultEngine
 from problog.logic import Term
-from problog import get_evaluatable
 
 
 class DataFile(object):
