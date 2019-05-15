@@ -34,11 +34,11 @@ class SafeLearner(LearnEntail):
         db_pass="postgres",  # Password of user for connection to the database
         db_user="postgres",  # Username for connection to the database
         disable_typing=False,  #
-        global_score="cross_entropy",
+        score="cross_entropy",
         # Which global scoring function should be used: "cross_entropy", "squared_loss", "accuracy"
         iterations=10000,  # Total number of iterations for SGD for parameter learning
         l=None,  # Maximum rule length
-        lr=0.001,  # Learning rate for rule weights
+        lr=0.00001,  # Learning rate for rule weights
         max_amie_rules=None,  # Maximum number of AMIE learned rules to consider as candidates
         minhc=0.00001,  # Parameter of AMIE: Minimum head coverage
         minpca=0.00001,  # Parameter of AMIE: Minimum PCA Confidence
@@ -54,7 +54,7 @@ class SafeLearner(LearnEntail):
         LearnEntail.__init__(self, data, logger="log", **kwargs)
 
         self.max_length = l
-        self.global_score = global_score
+        self.global_score = score
         self.minpca = minpca
         self.minhc = minhc
         self.tolerance = 1e-12
@@ -2518,20 +2518,19 @@ def argparser():
     )
     parser.add_argument("--log", help="write log to file", default=None)
     parser.add_argument(
-        "-g",
-        "--global-score",
+        "-s",
+        "--score",
         type=str,
         default="cross_entropy",
         help="specify global scoring function as either 'accuracy', 'squared_loss', or 'cross_entropy' (Default is 'cross_entropy')",
     )
     parser.add_argument(
-        "-w",
+        "-c",
         "--cost",
         type=float,
         default=1.0,
         help="Misclassification Cost for negative examples",
     )
-    # TODO: parser.add_argument('--test', type = str, help='Test Dataset File', default=None)
     parser.add_argument(
         "--minpca",
         type=float,
