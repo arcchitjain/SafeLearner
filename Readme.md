@@ -101,7 +101,7 @@ More details about the paper can be found at [https://openreview.net/forum?id=Hk
 
 ## Acknowledgements
 
-The authors express their sincere regards to Anton Dries and Sebastijan Dumancic for their invaluable input, and the reviewers for their useful suggestions. This work has received funding from the European Research Council under the European Union's Horizon 2020 research and innovation programme (#694980 SYNTH: Synthesising Inductive Data Models), from the various grants of Research Foundation - Flanders, NSF grants #IIS-1657613, #IIS-1633857, #CCF-1837129, NEC Research, and a gift from Intel.
+The authors express their sincere regards to Anton Dries and Sebastijan Dumancic for their invaluable input, and the reviewers for their useful suggestions. This work has received funding from the European Research Council under the European Union's Horizon 2020 research and innovation programme (#694980 SYNTH: Synthesising Inductive Data Models), from the various grants of Research Foundation - Flanders, NSF grants #IIS-1657613, #IIS-1633857, #CCF-1837129, NEC Research, and a gift from Intel.
 
 ## Contact
 
