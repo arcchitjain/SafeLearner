@@ -213,11 +213,11 @@ class SafeLearner(LearnEntail):
                 host=self.db_localhost,
             )
         except Exception as e:
-            getLogger("log").warning(
+            getLogger("log").error(
                 "The database " + self.db_name + " is not initialized before."
             )
-            getLogger("log").warning(e)
-            return
+            getLogger("log").error(e)
+            raise (e)
 
         self.conn.autocommit = True
         self.conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)

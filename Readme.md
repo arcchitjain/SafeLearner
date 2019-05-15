@@ -17,17 +17,20 @@ It is licensed under  [Apache-2.0 license](https://github.com/arcchitjain/SafeLe
 pip install pipenv
 ```
 2. Clone this repository to your local machine
+```
+git clone -b AKBC19 --single-branch https://github.com/arcchitjain/SafeLearner.git
+```
 3. Move to this repository and install all the required packages:
 ```
 pipenv install
 ```
 This should install the following packages in a virtual environment of Python 3.6 for you:
-* ad
-* nltk
-* problog
-* psycopg2
-* sqlparse
-* sympy
+* *ad*
+* *nltk*
+* *problog*
+* *psycopg2*
+* *sqlparse*
+* *sympy*
 
 4. Now, to activate the virtual environment, run the following:
 ```
@@ -54,36 +57,38 @@ This is a non-standard package which gets installed by the following steps:
 
 Argument | Description
 -------|------
-```file``` | Input file with location (Required Argument)
-```-t``` | Target predicate with arity (Eg: -t "coauthor/2")
-```-l``` | Maximum rule length; Maximum number of total literals in a rule (including head)
-```--log``` | Logger file with location 
-```-v``` | Verbosty level of the log (Use -v -v -v for full verbosity)
-```-s``` | Specify scoring/loss function for SGD (Default: "cross_entropy", Other options: "accuracy", "squared_loss")
-```--lr``` | Specify earning rate parameter of SGD
-```-i``` | Specify number of iterations of SGD
-```-c``` | Cost of misclassification for negative examples (Default: 1.0)
-```-q``` | Input -q to denote an input file with facts enclosed in double quotes
-```--minpca``` | Minimum PCA Confidence Threshold for *Amie+*
-```--minhc``` | Minimum Standard Confidence Threshold for *Amie+*
-```-r``` | Allow recursive rules to be learned
-```-a``` | Specify maximum number of *Amie+* to be considered as candidate rules
-```-d``` | Disable/ignore typing of predicates while pruning *Amie+* rules
-```--db_name``` | Specify the name of the database to be used	
-```--db_user``` | Specify the username that can access the database
-```--db_pass``` | Specify the passowrd to access the database
-```--db_localhost``` | Specify the localhost to can access the database
+`file` | Input file with location (Required Argument)
+`-t` | Target predicate with arity (Eg: -t "coauthor/2")
+`-l` | Maximum rule length; Maximum number of total literals in a rule (including head)
+`--log` | Logger file with location 
+`-v` | Verbosity level of the log (Use -v -v -v for full verbosity)
+`-s` | Specify scoring/loss function for SGD (Default: "cross_entropy", Other options: "accuracy", "squared_loss")
+`--lr` | Specify earning rate parameter of SGD
+`-i` | Specify number of iterations of SGD
+`-c` | Cost of misclassification for negative examples (Default: 1.0)
+`-q` | Input -q to denote an input file with facts enclosed in double quotes
+`--minpca` | Minimum PCA Confidence Threshold for *Amie+*
+`--minhc` | Minimum Standard Confidence Threshold for *Amie+*
+`-r` | Allow recursive rules to be learned
+`-a` | Specify maximum number of *Amie+* to be considered as candidate rules
+`-d` | Disable/ignore typing of predicates while pruning *Amie+* rules
+`--db_name` | Specify the name of the database to be used	
+`--db_user` | Specify the username that can access the database
+`--db_pass` | Specify the password to access the database
+`--db_localhost` | Specify the localhost to can access the database
 
 
 ## Example
 
 You need to create a PostgreSQL Database first before running **SafeLearner**:
 ```
-createdb test_name
+psql
+CREATE DATABASE test_dbname;
+\q
 ```
-This creates an empty database in *psql* server on your machine.  Now, in the following command,  replace 'test_user' with the username of your *psql* server and add password and localhost name if required.
+This creates an empty database in *psql* server on your machine.  Now, in the following command,  replace 'test_dbuser' with the username of your *psql* server and add password and localhost name if required.
 ```
-python3 safeleaner.py Data/Test-Coauthor/illustrative_example.pl --log test.log -v -v -v -i 10000 --lr 0.00001 --minpca 0.00001 --minhc 0.00001 --db_name test_name --db_user test_user
+python3 safelearner.py Data/Test-Coauthor/illustrative_example.pl --log test.log -v -v -v -i 10000 --lr 0.00001 --minpca 0.00001 --minhc 0.00001 --db_name test_dbname --db_user test_dbuser
 ```
 Running this command will execute **SafeLearner** on a small toy dataset and would ensure that it had got installed correctly.
 
@@ -98,8 +103,8 @@ More details about the paper can be found at [https://openreview.net/forum?id=Hk
 
 ## Contact
 
-Arcchit Jain
-arcchit.jain@cs.kuleuven.be
-Declarative Languages and Artificial Intelligence (DTAI) Research Group
-Department of Computer Science
-KU Leuven
+Arcchit Jain <br>
+arcchit.jain@cs.kuleuven.be <br>
+Declarative Languages and Artificial Intelligence (DTAI) Research Group <br>
+Department of Computer Science <br>
+KU Leuven <br>
