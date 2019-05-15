@@ -36,19 +36,18 @@ This should install the following packages in a virtual environment of Python 3.
 ```
 pipenv shell
 ```
-
-5. Steps to install *Prover9* - Python module for *nltk*
-This is a non-standard package which gets installed by the following steps:
-		1. Download  LADR-2009-11A.tar.gz from [https://www.cs.unm.edu/~mccune/prover9/download/](https://www.cs.unm.edu/~mccune/prover9/download/)
-		2. Extract its files and run ‘make all’
-		3. Copy all the files created in ‘bin’ folder to any of the following locations:
+5. Steps to install *Prover9* - Python module for *nltk* <br>
+*Prover9* is a non-standard package which gets installed by the following steps:
+	1. Download  LADR-2009-11A.tar.gz from [https://www.cs.unm.edu/~mccune/prover9/download/](https://www.cs.unm.edu/~mccune/prover9/download/)
+	2. Extract its files and run ‘make all’
+	3. Copy all the files created in ‘bin’ folder to any of the following locations:
 ``` 
-	/usr/local/bin/prover9 
-	/usr/local/bin/prover9/bin
-	/usr/local/bin
-	/usr/bin
-	/usr/local/prover9
-	/usr/local/share/prover9
+    /usr/local/bin/prover9 
+    /usr/local/bin/prover9/bin
+    /usr/local/bin
+    /usr/bin
+    /usr/local/prover9
+    /usr/local/share/prover9
 ```
 
 ## Input Parameters
@@ -99,7 +98,10 @@ Running this command will execute **SafeLearner** on a small toy dataset and wou
 More details about the paper can be found at [https://openreview.net/forum?id=HkyI-5667](https://openreview.net/forum?id=HkyI-5667)
 
 **SafeLeaner** code was implemented by Arcchit Jain.
-	
+
+## Acknowledgements
+
+The authors express their sincere regards to Anton Dries and Sebastijan Dumancic for their invaluable input, and the reviewers for their useful suggestions. This work has received funding from the European Research Council under the European Union's Horizon 2020 research and innovation programme (#694980 SYNTH: Synthesising Inductive Data Models), from the various grants of Research Foundation - Flanders, NSF grants #IIS-1657613, #IIS-1633857, #CCF-1837129, NEC Research, and a gift from Intel.
 
 ## Contact
 
